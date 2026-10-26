@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-26T19:55:04+00:00",
+  "green": {
+    "events": "data/pulse_events.tsv",
+    "status": "data/pulse_green_status.json"
+  },
+  "notizie": {
+    "articles": "data/news/articles.json",
+    "index": "data/news/index.json"
+  },
+  "repository": "AppInRome/ISTAT-PULSE-DATA",
+  "schema_version": "pulse-data-route-v1",
+  "sections": {
+    "green": {
+      "last_attempt_at": "2026-10-26T19:57:40+00:00",
+      "last_success_at": "2026-10-26T19:57:40+00:00",
+      "status": "ok"
+    },
+    "notizie": {
+      "last_attempt_at": "2026-10-26T19:55:45+00:00",
+      "last_success_at": "2026-10-26T19:55:45+00:00",
+      "status": "ok"
+    },
+    "territori": {
+      "last_attempt_at": "2026-10-26T20:11:50+00:00",
+      "last_success_at": null,
+      "status": "error"
+    }
+  },
+  "territori": {
+    "events": "data/pulse_events.tsv",
+    "manifest": "data/pulse_observations_manifest.json",
+    "observations": "data/pulse_observations.tsv"
+  }
+}

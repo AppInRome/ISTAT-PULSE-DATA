@@ -19,7 +19,7 @@
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
       "publication_year": "2026",
-      "checked_at": "2026-10-24T14:23:32.244470+00:00",
+      "checked_at": "2026-10-26T19:55:51.614097+00:00",
       "provides": [
         {
           "area": "Mobilità sostenibile",
@@ -67,7 +67,7 @@
       "notes": "ARERA RQSII integrata con dati pubblici 2017-2021 da workbook dettagliati e con risultati ufficiali 2022-2023 dalle Relazioni annuali ARERA. Per il 2022: MC1 96,3%, MC2 95,3%; per il 2023: MC1 96,5%, MC2 95,9%. Il mancato rispetto medio degli standard specifici è 3,5% in entrambi gli anni. La delibera 277/2025/R/idr certifica i risultati finali del biennio 2022-2023. 3 notizie/segnali GREEN emessi; il 2023 resta sempre dichiarato come periodo statistico.",
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
-      "checked_at": "2026-10-24T14:23:42.768457+00:00",
+      "checked_at": "2026-10-26T19:56:05.291340+00:00",
       "provides": [
         {
           "area": "Risorse idriche e suolo",
@@ -93,6 +93,33 @@
       ]
     },
     {
+      "name": "Banca d'Italia - Base Dati Statistica A2A",
+      "category": "ECONOMIA_IT",
+      "topics": [
+        "ECONOMIA",
+        "CREDITO",
+        "MONETA"
+      ],
+      "official": true,
+      "url": "https://www.bancaditalia.it/statistiche/basi-dati/bds/index.html",
+      "access_cost": "free",
+      "access_note": "Servizio A2A ufficiale della Base Dati Statistica; acquisizione automatica senza abbonamento.",
+      "integration_status": "connected",
+      "feed_status": "Connettore permanente attivo · dati acquisiti automaticamente · normalizzazione PULSE in corso",
+      "notes": "Export REST A2A ufficiale; snapshot last-known-good e SHA-256 persistiti.",
+      "level": "Dataset ufficiale",
+      "frequency": "Secondo aggiornamento della fonte",
+      "provides": [
+        {
+          "area": "Economia e finanza",
+          "series": "Banche e moneta - serie nazionali",
+          "description": "Pacchetto ufficiale acquisito automaticamente; selezione delle serie PULSE in validazione.",
+          "latest_period": "",
+          "status": "connector_ready"
+        }
+      ]
+    },
+    {
       "name": "Copernicus - Climate Data Store",
       "category": "GREEN_EU",
       "topics": [
@@ -103,13 +130,13 @@
       "green_pillar": "Crisi climatica e decarbonizzazione",
       "access_cost": "free",
       "access_note": "Accesso gratuito; richiede account/token CDS e accettazione dei termini del dataset.",
-      "integration_status": "feed",
-      "feed_status": "Attiva in GREEN · dati acquisiti e segnali PULSE disponibili",
-      "notes": "Copernicus ERA5 attivo come feed PULSE. Ultimo mese acquisito: 2026-09; 30/30 mesi disponibili per il motore statistico. 2 notizie/segnali GREEN emessi. Aggiornamento mensile, normalmente intorno al 6 del mese. ERA5T può essere consolidato 2-3 mesi dopo.",
+      "integration_status": "credential_required",
+      "feed_status": "Connettore pronto · credenziali ufficiali richieste",
+      "notes": "Connettore ERA5 pronto ma download bloccato finché non viene configurata CDS_API_KEY e accettata la licenza del dataset nel Climate Data Store.",
       "level": "Secondo dataset ufficiale",
       "frequency": "Mensile",
       "latest_period": "2026-09",
-      "checked_at": "2026-10-24T14:24:51.828203+00:00",
+      "checked_at": "2026-10-26T19:56:05.291387+00:00",
       "provides": [
         {
           "area": "Crisi climatica e decarbonizzazione",
@@ -145,7 +172,7 @@
       "frequency": "Annuale",
       "latest_period": "2024",
       "publication_date": "2026-04-15",
-      "checked_at": "2026-10-24T14:25:00.193752+00:00",
+      "checked_at": "2026-10-26T19:56:12.253496+00:00",
       "provides": [
         {
           "area": "Crisi climatica e decarbonizzazione",
@@ -172,7 +199,7 @@
       "notes": "RAEE 2026: 20/20 schede regionali acquisite; 3 segnali PULSE da serie TEE 2015-2025.",
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
-      "checked_at": "2026-10-24T14:25:09.273947+00:00",
+      "checked_at": "2026-10-26T19:56:23.248458+00:00",
       "provides": [
         {
           "area": "Transizione energetica",
@@ -332,7 +359,7 @@
       "notes": "3/3 dataset Eurostat collegati; 3 segnali PULSE emessi.",
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
-      "checked_at": "2026-10-24T14:25:11.154170+00:00",
+      "checked_at": "2026-10-26T19:56:26.698832+00:00",
       "provides": [
         {
           "area": "Multi-pilastro GREEN",
@@ -375,7 +402,7 @@
       "frequency": "Annuale",
       "latest_period": "2024",
       "publication_period": "2026-09",
-      "checked_at": "2026-10-24T14:25:11.607710+00:00",
+      "checked_at": "2026-10-26T19:56:27.475225+00:00",
       "provides": [
         {
           "area": "Transizione energetica",
@@ -401,6 +428,33 @@
       ]
     },
     {
+      "name": "INAIL - Malattie professionali mensili",
+      "category": "LAVORO_IT",
+      "topics": [
+        "LAVORO",
+        "SALUTE",
+        "SICUREZZA"
+      ],
+      "official": true,
+      "url": "https://dati.inail.it/portale/it/dataset/malattie-professionali/dati-con-cadenza-mensile/italia.html",
+      "access_cost": "free",
+      "access_note": "Open Data INAIL dal portale ufficiale.",
+      "integration_status": "connected",
+      "feed_status": "Connettore permanente attivo · CSV nazionale mensile acquisito · serie PULSE in preparazione",
+      "notes": "Il connettore scopre il file CSV corrente dalla landing page ufficiale e conserva snapshot e SHA-256.",
+      "level": "Dataset ufficiale",
+      "frequency": "Mensile",
+      "provides": [
+        {
+          "area": "Lavoro e salute",
+          "series": "Malattie professionali denunciate",
+          "description": "Open data nazionale mensile acquisito automaticamente.",
+          "latest_period": "",
+          "status": "connector_ready"
+        }
+      ]
+    },
+    {
       "name": "ISPRA - Catasto nazionale rifiuti",
       "category": "GREEN_IT",
       "topics": [
@@ -417,7 +471,7 @@
       "level": "Secondo dataset ufficiale",
       "frequency": "Annuale",
       "latest_period": "2024",
-      "checked_at": "2026-10-24T14:25:20.649171+00:00",
+      "checked_at": "2026-10-26T19:56:36.473506+00:00",
       "provides": [
         {
           "area": "Economia circolare",
@@ -593,7 +647,7 @@
       "frequency": "Annuale",
       "latest_period": "2024",
       "publication_date": "2025-10-24",
-      "checked_at": "2026-10-24T14:25:22.280127+00:00",
+      "checked_at": "2026-10-26T19:56:40.020407+00:00",
       "provides": [
         {
           "area": "Risorse idriche e suolo",
@@ -761,7 +815,7 @@
       "level": "Comune / Provincia / Regione / Italia",
       "frequency": "Periodico / secondo aggiornamento IFFI-IdroGEO",
       "latest_period": "Inventario corrente",
-      "checked_at": "2026-10-24T14:25:23.266308+00:00",
+      "checked_at": "2026-10-26T19:56:41.480571+00:00",
       "provides": [
         {
           "area": "Risorse idriche e suolo",
@@ -790,7 +844,7 @@
       "frequency": "Annuale",
       "latest_period": "2025",
       "publication_date": "2026-06-30",
-      "checked_at": "2026-10-24T14:25:23.267281+00:00",
+      "checked_at": "2026-10-26T19:56:41.481456+00:00",
       "provides": [
         {
           "area": "Tutela della biodiversità",
@@ -825,7 +879,7 @@
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
       "latest_period": "2024",
-      "checked_at": "2026-10-24T14:25:26.439845+00:00",
+      "checked_at": "2026-10-26T19:56:46.013905+00:00",
       "provides": [
         {
           "area": "Crisi climatica e decarbonizzazione",
@@ -860,7 +914,7 @@
       "level": "Italia / Regione / Distretto idrografico",
       "frequency": "Annuale (stime disponibili anche mensilmente)",
       "latest_period": "2025",
-      "checked_at": "2026-10-24T14:25:28.228059+00:00",
+      "checked_at": "2026-10-26T19:56:48.712088+00:00",
       "provides": [
         {
           "area": "Risorse idriche e suolo",
@@ -902,7 +956,7 @@
       "level": "Stazione / Comune / Provincia / Regione / Italia",
       "frequency": "Annuale; dati quasi-real-time aggiornati giornalmente",
       "latest_period": "2025 (valutazione SNPA); 2022 (CSV strutturati)",
-      "checked_at": "2026-10-24T14:25:32.402498+00:00",
+      "checked_at": "2026-10-26T19:56:58.698569+00:00",
       "provides": [
         {
           "area": "Crisi climatica e decarbonizzazione",
@@ -939,7 +993,7 @@
       "feed_status": "Feed territoriale storico attivo · 396 segnali PULSE verificati + osservazioni comunali ufficiali.",
       "notes": "A misura di Comune collegato alle tavole XLSX ufficiali ISTAT. Le osservazioni comunali alimentano il catalogo dati; un archivio PULSE separato genera segnali storici territoriali mantenendo sempre l'anno statistico reale. Non viene presentato come notizia corrente 2026 quando il dato si riferisce al 2023/2024.",
       "category": "ISTAT",
-      "integration_status": "feed",
+      "integration_status": "partial",
       "latest_period": "2024",
       "publication_period": "2026-05-26"
     },
@@ -961,7 +1015,7 @@
       "frequency": "Annuale",
       "latest_period": "2024",
       "publication_date": "2026-09-09",
-      "checked_at": "2026-10-24T14:25:35.273849+00:00",
+      "checked_at": "2026-10-26T19:57:10.480595+00:00",
       "provides": [
         {
           "area": "Multi-pilastro GREEN",
@@ -4304,7 +4358,7 @@
       "notes": "Dataset Istat SDGs 2004-2026 acquisito: 71 serie nazionali GREEN semanticamente classificate; 36 segnali PULSE.",
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
-      "checked_at": "2026-10-24T14:25:41.275185+00:00",
+      "checked_at": "2026-10-26T19:57:16.464492+00:00",
       "provides": [
         {
           "area": "Multi-pilastro GREEN",
@@ -4982,7 +5036,7 @@
       "level": "Comune / Provincia / Regione / Italia",
       "frequency": "Archivio / snapshot; aggiornamento non corrente",
       "latest_period": "2018-01-01",
-      "checked_at": "2026-10-24T14:25:45.968709+00:00",
+      "checked_at": "2026-10-26T19:57:29.258754+00:00",
       "provides": [
         {
           "area": "Risorse idriche e suolo",
@@ -5024,7 +5078,7 @@
       "level": "Secondo dataset ufficiale",
       "frequency": "Secondo aggiornamento della fonte",
       "publication_date": "2026-03-20",
-      "checked_at": "2026-10-24T14:25:48.901600+00:00",
+      "checked_at": "2026-10-26T19:57:35.916754+00:00",
       "provides": [
         {
           "area": "Risorse idriche e suolo",
@@ -5214,90 +5268,6 @@
           "description": "Serie GREEN ufficiale monitorata automaticamente.",
           "latest_period": "2023",
           "status": "ok"
-        }
-      ]
-    },
-    {
-      "name": "Terna - Portale Dati del sistema elettrico",
-      "category": "GREEN_IT",
-      "topics": [
-        "ENERGIA"
-      ],
-      "official": true,
-      "url": "https://www.terna.it/it/sistema-elettrico/statistiche/pubblicazioni-statistiche/r/nguarda",
-      "green_pillar": "Transizione energetica",
-      "access_cost": "free",
-      "access_note": "Accesso ai dati selezionati senza abbonamento a pagamento; rispettare licenza e condizioni della fonte.",
-      "integration_status": "feed",
-      "feed_status": "Attiva in GREEN · dati acquisiti e segnali PULSE disponibili",
-      "notes": "Terna attiva come feed PULSE tramite la pubblicazione statistica annuale ufficiale 2025. 5 notizie GREEN emesse su produzione netta, potenza efficiente lorda, import, export e fabbisogno. Il Portale Dati resta disponibile per futuri approfondimenti granulari/API.",
-      "level": "Secondo dataset ufficiale",
-      "frequency": "Annuale",
-      "latest_period": "2025",
-      "publication_period": "2026-09",
-      "checked_at": "2026-10-24T14:25:52.237706+00:00",
-      "provides": [
-        {
-          "area": "Transizione energetica",
-          "series": "Produzione netta di energia elettrica",
-          "description": "Serie GREEN ufficiale monitorata automaticamente.",
-          "latest_period": "2025",
-          "status": "latest_public"
-        },
-        {
-          "area": "Transizione energetica",
-          "series": "Potenza efficiente lorda del sistema elettrico",
-          "description": "Serie GREEN ufficiale monitorata automaticamente.",
-          "latest_period": "2025",
-          "status": "latest_public"
-        },
-        {
-          "area": "Transizione energetica",
-          "series": "Importazioni di energia elettrica",
-          "description": "Serie GREEN ufficiale monitorata automaticamente.",
-          "latest_period": "2025",
-          "status": "latest_public"
-        },
-        {
-          "area": "Transizione energetica",
-          "series": "Esportazioni di energia elettrica",
-          "description": "Serie GREEN ufficiale monitorata automaticamente.",
-          "latest_period": "2025",
-          "status": "latest_public"
-        },
-        {
-          "area": "Transizione energetica",
-          "series": "Fabbisogno di energia elettrica",
-          "description": "Serie GREEN ufficiale monitorata automaticamente.",
-          "latest_period": "2025",
-          "status": "latest_public"
-        }
-      ]
-    },
-    {
-      "name": "Banca d'Italia - Base Dati Statistica A2A",
-      "category": "ECONOMIA_IT",
-      "topics": [
-        "ECONOMIA",
-        "CREDITO",
-        "MONETA"
-      ],
-      "official": true,
-      "url": "https://www.bancaditalia.it/statistiche/basi-dati/bds/index.html",
-      "access_cost": "free",
-      "access_note": "Servizio A2A ufficiale della Base Dati Statistica; acquisizione automatica senza abbonamento.",
-      "integration_status": "connected",
-      "feed_status": "Connettore permanente attivo · dati acquisiti automaticamente · normalizzazione PULSE in corso",
-      "notes": "Export REST A2A ufficiale; snapshot last-known-good e SHA-256 persistiti.",
-      "level": "Dataset ufficiale",
-      "frequency": "Secondo aggiornamento della fonte",
-      "provides": [
-        {
-          "area": "Economia e finanza",
-          "series": "Banche e moneta - serie nazionali",
-          "description": "Pacchetto ufficiale acquisito automaticamente; selezione delle serie PULSE in validazione.",
-          "latest_period": "",
-          "status": "connector_ready"
         }
       ]
     },
@@ -5336,29 +5306,59 @@
       ]
     },
     {
-      "name": "INAIL - Malattie professionali mensili",
-      "category": "LAVORO_IT",
+      "name": "Terna - Portale Dati del sistema elettrico",
+      "category": "GREEN_IT",
       "topics": [
-        "LAVORO",
-        "SALUTE",
-        "SICUREZZA"
+        "ENERGIA"
       ],
       "official": true,
-      "url": "https://dati.inail.it/portale/it/dataset/malattie-professionali/dati-con-cadenza-mensile/italia.html",
+      "url": "https://www.terna.it/it/sistema-elettrico/statistiche/pubblicazioni-statistiche/r/nguarda",
+      "green_pillar": "Transizione energetica",
       "access_cost": "free",
-      "access_note": "Open Data INAIL dal portale ufficiale.",
-      "integration_status": "connected",
-      "feed_status": "Connettore permanente attivo · CSV nazionale mensile acquisito · serie PULSE in preparazione",
-      "notes": "Il connettore scopre il file CSV corrente dalla landing page ufficiale e conserva snapshot e SHA-256.",
-      "level": "Dataset ufficiale",
-      "frequency": "Mensile",
+      "access_note": "Accesso ai dati selezionati senza abbonamento a pagamento; rispettare licenza e condizioni della fonte.",
+      "integration_status": "feed",
+      "feed_status": "Attiva in GREEN · dati acquisiti e segnali PULSE disponibili",
+      "notes": "Terna attiva come feed PULSE tramite la pubblicazione statistica annuale ufficiale 2025. 5 notizie GREEN emesse su produzione netta, potenza efficiente lorda, import, export e fabbisogno. Il Portale Dati resta disponibile per futuri approfondimenti granulari/API.",
+      "level": "Secondo dataset ufficiale",
+      "frequency": "Annuale",
+      "latest_period": "2025",
+      "publication_period": "2026-09",
+      "checked_at": "2026-10-26T19:57:40.029901+00:00",
       "provides": [
         {
-          "area": "Lavoro e salute",
-          "series": "Malattie professionali denunciate",
-          "description": "Open data nazionale mensile acquisito automaticamente.",
-          "latest_period": "",
-          "status": "connector_ready"
+          "area": "Transizione energetica",
+          "series": "Produzione netta di energia elettrica",
+          "description": "Serie GREEN ufficiale monitorata automaticamente.",
+          "latest_period": "2025",
+          "status": "latest_public"
+        },
+        {
+          "area": "Transizione energetica",
+          "series": "Potenza efficiente lorda del sistema elettrico",
+          "description": "Serie GREEN ufficiale monitorata automaticamente.",
+          "latest_period": "2025",
+          "status": "latest_public"
+        },
+        {
+          "area": "Transizione energetica",
+          "series": "Importazioni di energia elettrica",
+          "description": "Serie GREEN ufficiale monitorata automaticamente.",
+          "latest_period": "2025",
+          "status": "latest_public"
+        },
+        {
+          "area": "Transizione energetica",
+          "series": "Esportazioni di energia elettrica",
+          "description": "Serie GREEN ufficiale monitorata automaticamente.",
+          "latest_period": "2025",
+          "status": "latest_public"
+        },
+        {
+          "area": "Transizione energetica",
+          "series": "Fabbisogno di energia elettrica",
+          "description": "Serie GREEN ufficiale monitorata automaticamente.",
+          "latest_period": "2025",
+          "status": "latest_public"
         }
       ]
     }
