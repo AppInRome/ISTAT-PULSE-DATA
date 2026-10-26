@@ -261,15 +261,24 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
             "Accept":"application/vnd.sdmx.genericdata+xml;version=2.1",
         },
     )
-    last=None
-    for attempt in range(1,4):
+    # Bound individual API attempts. The previous 3 x 240s retries across
+    # multiple flows could exceed the entire workflow window, hiding progress.
+    # An unavailable service must not erase the previous validated snapshot.
+    last = None
+    max_bytes = 25 * 1024 * 1024
+    for attempt in range(1, 3):
         try:
-            with urllib.request.urlopen(req,timeout=240) as response:
-                return response.read(),url
+            print(f"SDMX REQUEST {flow} attempt {attempt}/2", flush=True)
+            with urllib.request.urlopen(req, timeout=25) as response:
+                raw = response.read(max_bytes + 1)
+                if len(raw) > max_bytes:
+                    raise ValueError(f"SDMX {flow}: response exceeds {max_bytes} bytes")
+                return raw, url
         except Exception as exc:
-            last=exc
-            if attempt<3:
-                time.sleep(3*attempt)
+            last = exc
+            print(f"SDMX REQUEST ERROR {flow} attempt {attempt}/2: {exc!r}", flush=True)
+            if attempt < 2:
+                time.sleep(2)
     raise last
 
 def parse_series(raw: bytes) -> list[dict]:
