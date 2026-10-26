@@ -1,13 +1,7 @@
 {
-  "generated_at": "2026-10-20T12:13:40.806791+00:00",
-  "rows": 51824,
-  "by_source": {
-    "ISTAT - A misura di Comune": 47313,
-    "Noi Italia — ISTAT": 3151,
-    "Bes dei territori — ISTAT": 1340,
-    "IstatData SDMX — ISTAT": 20
-  },
-  "sha256": "2065b89f1d5dabf69182b7ca17d2eaf10f1315e7ef834c67ec50b07f40ec4046",
   "file": "pulse_observations.tsv",
-  "note": "Serie osservate, non micro-notizie PULSE. L'anno nella colonna period e' il riferimento statistico."
+  "generated_at": "2026-10-26T20:40:08+00:00",
+  "note": "Serie osservate con anno statistico originale, aggiornamento incrementale.",
+  "rows": 51825,
+  "sha256": "7f40956d6ba5f9781e03d5eabcf25e12493c94d26f56a9636a43f36f3b5e70fa"
 }

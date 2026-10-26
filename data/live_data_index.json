@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-26T19:55:04+00:00",
+  "checked_at": "2026-10-26T20:36:20+00:00",
   "green": {
     "events": "data/pulse_events.tsv",
     "status": "data/pulse_green_status.json"
@@ -12,8 +12,8 @@
   "schema_version": "pulse-data-route-v1",
   "sections": {
     "green": {
-      "last_attempt_at": "2026-10-26T19:57:40+00:00",
-      "last_success_at": "2026-10-26T19:57:40+00:00",
+      "last_attempt_at": "2026-10-26T20:38:02+00:00",
+      "last_success_at": "2026-10-26T20:38:02+00:00",
       "status": "ok"
     },
     "notizie": {
@@ -22,9 +22,9 @@
       "status": "ok"
     },
     "territori": {
-      "last_attempt_at": "2026-10-26T20:11:50+00:00",
-      "last_success_at": null,
-      "status": "error"
+      "last_attempt_at": "2026-10-26T20:40:08+00:00",
+      "last_success_at": "2026-10-26T20:40:08+00:00",
+      "status": "ok"
     }
   },
   "territori": {
