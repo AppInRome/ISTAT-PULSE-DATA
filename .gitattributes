@@ -1,0 +1,11 @@
+# Tutelare i dati strutturati originali da conversioni involontarie CRLF/LF
+*.tsv -text
+*.csv -text
+*.json -text
+*.dat -text
+*.zip binary
+*.xlsx binary
+*.rdf -text
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

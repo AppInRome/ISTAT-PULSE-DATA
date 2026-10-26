@@ -1,0 +1,18 @@
+# Non riportare nel nuovo repository la cronologia o i workflow precedenti
+.github/
+**/.git/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+*.jks
+*.keystore
+*.pem
+*.p12
+*.pfx
+*.key
+local.properties
+*.log
