@@ -1,0 +1,67 @@
+name: PULSE - aggiorna solo dati e notizie
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+    - cron: '17 16 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Quali dati controllare?'
+        type: choice
+        required: true
+        default: all
+        options:
+          - all
+          - news
+          - stats
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-data-only
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 47
+    env:
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - name: Codice dati (nessuna APK)
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Dipendenze dati essenziali
+        run: |
+          python -m pip install --disable-pip-version-check 'numpy<3' 'pandas<3' 'scipy<2' 'beautifulsoup4<5' 'requests<3' 'openpyxl<4' 'pypdf<7' 'odfpy<2'
+      - name: Convalida snapshot esistente
+        run: python scripts/refresh_daily_safe.py --dry-run
+      - name: Aggiornamento con verifica prima della pubblicazione
+        shell: bash
+        env:
+          MODE_REQUESTED: ${{ github.event.inputs.mode }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          mode="${MODE_REQUESTED:-all}"
+          if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 16 * * *' ]; then mode=news; fi
+          echo "PULSE DATA mode=$mode"
+          python scripts/refresh_daily_safe.py --mode "$mode"
+      - name: Pubblica solo i dati effettivamente validati
+        shell: bash
+        run: |
+          git config user.name 'PULSE Data Bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/news/articles.json data/news/candidates.json data/news/index.json \
+            data/pulse_events.tsv data/pulse_manifest.json data/pulse_observations.tsv \
+            data/pulse_observations_manifest.json data/pulse_events_sdmx_last_good.tsv \
+            data/pulse_green_status.json data/sources_catalog.json data/refresh_status.json data/live_data_index.json
+          if git diff --cached --quiet; then echo 'Nessun dato modificato'; exit 0; fi
+          git commit -m 'PULSE DATA: aggiornamenti verificati delle fonti'
+          git push origin HEAD:main
