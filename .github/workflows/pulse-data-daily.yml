@@ -41,6 +41,8 @@ jobs:
       - name: Dipendenze dati essenziali
         run: |
           python -m pip install --disable-pip-version-check 'numpy<3' 'pandas<3' 'scipy<2' 'beautifulsoup4<5' 'requests<3' 'openpyxl<4' 'pypdf<7' 'odfpy<2'
+      - name: Test redazione originale, grafici e fonti
+        run: python -m unittest discover -s tests -p test_original_editorial.py -v
       - name: Convalida snapshot esistente
         run: python scripts/refresh_daily_safe.py --dry-run
       - name: Aggiornamento con verifica prima della pubblicazione
