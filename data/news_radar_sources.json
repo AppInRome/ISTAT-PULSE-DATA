@@ -136,6 +136,32 @@
       "name": "PULSE Italia - Sud e Isole",
       "url": "https://news.google.com/rss/search?q=(Campania%20OR%20Puglia%20OR%20Calabria%20OR%20Sicilia%20OR%20Sardegna%20OR%20Basilicata)%20(dati%20OR%20statistiche%20OR%20rapporto)%20when%3A2d&hl=it&gl=IT&ceid=IT%3Ait",
       "discovery_region": "italia"
+    },
+    {
+      "name": "RaiNews - Notizie italiane",
+      "url": "https://www.rainews.it/rss/tutti"
+    },
+    {
+      "name": "Il Sole 24 Ore - Economia Industria",
+      "url": "https://www.ilsole24ore.com/rss/economia--industria.xml"
+    },
+    {
+      "name": "Il Sole 24 Ore - Energia Ambiente",
+      "url": "https://www.ilsole24ore.com/rss/economia--energia-e-ambiente.xml"
+    },
+    {
+      "name": "Il Sole 24 Ore - Italia Attualità",
+      "url": "https://www.ilsole24ore.com/rss/italia--attualita.xml"
+    },
+    {
+      "name": "CNR - Notizie ufficiali",
+      "url": "https://www.cnr.it/it/news/rss",
+      "primary_source": true
+    },
+    {
+      "name": "SINAB - Notizie ufficiali bio",
+      "url": "https://sinab.it/feed/",
+      "primary_source": true
     }
   ],
   "official_domains": [
