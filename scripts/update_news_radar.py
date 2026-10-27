@@ -499,10 +499,15 @@ def resolve_primary(discovery_title, discovery_text, topic, numbers, direct_link
         pname=str(producer.get("name") or "").split(" - ")[0].strip()
         pdom=str(producer.get("domain") or "").strip()
         if not pname or not pdom: continue
-        if len(pname) <= 4 and pname.isupper():
-            found=bool(re.search(r"(?<![A-Za-z])"+re.escape(pname)+r"(?![A-Za-z])",combined_title))
-        else:
-            found=bool(re.search(r"(?<!\w)"+re.escape(pname)+r"(?!\w)",combined_title,re.I))
+        aliases=[pname]
+        tokens=re.findall(r"[A-Za-zÀ-ù0-9]+",pname)
+        if tokens:
+            if len(tokens[0]) >= 4 and tokens[0].lower() not in {"ministero","agenzia","istituto","fondazione","dipartimento"}:
+                aliases.append(tokens[0])
+            if len(tokens)>1 and tokens[0].lower() in {"fondazione","istituto","agenzia"}:
+                aliases.append(tokens[1])
+        found=any(bool(re.search(r"(?<!\w)"+re.escape(a)+r"(?!\w)",combined_title,re.I))
+                  for a in aliases if len(a)>=3)
         if found and pdom not in named_domains:
             named_domains.insert(0,pdom)
     allowed=list(dict.fromkeys(institutional+named_domains))
@@ -845,7 +850,9 @@ def main():
         substantive=[v for v in verified_vals if v and not re.fullmatch(r"20\d{2}",v)]
         source=((x.get("public_source") or {}).get("url") or "")
         source_domain=((x.get("public_source") or {}).get("domain") or "").lower()
-        trusted_source=any(source_domain==d or source_domain.endswith("."+d) for d in TRUSTED_PRIMARY_DOMAINS)
+        producers={str(p.get("domain") or "").lower() for p in cfg.get("institutional_producers",[]) if p.get("domain")}
+        trusted_source=any(source_domain==d or source_domain.endswith("."+d)
+                           for d in (TRUSTED_PRIMARY_DOMAINS|producers))
         if x.get("publication_status")=="published" and x.get("editorial_status")!="journalistic_attributed" and (not substantive or not trusted_source):
             continue
         fp=story_fingerprint(source,x.get("topic",""),
