@@ -165,7 +165,11 @@ def news_refresh(temp: Path) -> dict:
     return {"status": "ok", "feeds_configured": len(feeds), "feeds_reached": successes,
             "feeds_failed": len(fail), "articles_total": len(article_list),
             "oggi": len(idx["oggi"]), "ieri": len(idx["ieri"]),
-            "message": "Notizie verificabili; zero articoli recenti non equivale a errore di rete."}
+            "oggi_verificati": int(daily["oggi"].get("original_pulse_verified",0)),
+            "oggi_stampa": int(daily["oggi"].get("media_reports_not_primary_verified",0)),
+            "ieri_verificati": int(daily["ieri"].get("original_pulse_verified",0)),
+            "ieri_stampa": int(daily["ieri"].get("media_reports_not_primary_verified",0)),
+            "message": "Le notizie di stampa sono identificate come segnalazioni: solo dati primari verificati generano grafici PULSE."}
 
 
 def init_statistics_work(work: Path) -> Path:
