@@ -28,6 +28,10 @@ try:
     from scripts.pulse_verified_event_news import augment_with_verified_events
 except ModuleNotFoundError:
     from pulse_verified_event_news import augment_with_verified_events
+try:
+    from scripts.pulse_casefile_news import add_verified_casefiles
+except ModuleNotFoundError:
+    from pulse_casefile_news import add_verified_casefiles
 
 ROOT=Path("data/news")
 CFG=Path("data/news_radar_sources.json")
@@ -859,10 +863,10 @@ def main():
                            for d in (TRUSTED_PRIMARY_DOMAINS|producers))
         if x.get("publication_status")=="published" and x.get("editorial_status")!="journalistic_attributed" and (not substantive or not trusted_source):
             continue
-        fp=(x.get("story_fingerprint") if x.get("origin_kind")=="pulse_verified_event"
+        fp=(x.get("story_fingerprint") if x.get("origin_kind") in {"pulse_verified_event","pulse_casefile"}
             else story_fingerprint(source,x.get("topic",""),
                     x.get("original_discovery_headline") or x.get("headline",""),verified_raw))
-        permanent_id="PULSE-"+fp[:16].upper()
+        permanent_id=(x["id"] if x.get("origin_kind")=="pulse_casefile" else "PULSE-"+fp[:16].upper())
         x=dict(x); x["id"]=permanent_id; x["story_fingerprint"]=fp
         # Historic articles sometimes pointed to a generic institutional home
         # page instead of their actual report. Do not republish them as verified.
@@ -1089,6 +1093,8 @@ def main():
 
     added = augment_with_verified_events(by_id, ROOT.parent / "pulse_events.tsv", now)
     print(f"[PULSE ORIGINALI] nuove analisi da dati già convalidati: {added}", flush=True)
+    casefiles = add_verified_casefiles(by_id, ROOT.parent / "editorial_casefiles.json", now)
+    print(f"[PULSE REPORTAGE] casi documentati pubblicati: {casefiles}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Safety gate: only verified articles may be publicly visible.
     public=[a for a in arts if a.get("publication_status")=="published"
