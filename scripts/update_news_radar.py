@@ -24,6 +24,10 @@ try:
     from scripts.pulse_original_editorial import compose_verified
 except ModuleNotFoundError:
     from pulse_original_editorial import compose_verified
+try:
+    from scripts.pulse_verified_event_news import augment_with_verified_events
+except ModuleNotFoundError:
+    from pulse_verified_event_news import augment_with_verified_events
 
 ROOT=Path("data/news")
 CFG=Path("data/news_radar_sources.json")
@@ -855,8 +859,9 @@ def main():
                            for d in (TRUSTED_PRIMARY_DOMAINS|producers))
         if x.get("publication_status")=="published" and x.get("editorial_status")!="journalistic_attributed" and (not substantive or not trusted_source):
             continue
-        fp=story_fingerprint(source,x.get("topic",""),
-                             x.get("original_discovery_headline") or x.get("headline",""),verified_raw)
+        fp=(x.get("story_fingerprint") if x.get("origin_kind")=="pulse_verified_event"
+            else story_fingerprint(source,x.get("topic",""),
+                    x.get("original_discovery_headline") or x.get("headline",""),verified_raw))
         permanent_id="PULSE-"+fp[:16].upper()
         x=dict(x); x["id"]=permanent_id; x["story_fingerprint"]=fp
         # Historic articles sometimes pointed to a generic institutional home
@@ -1082,6 +1087,8 @@ def main():
     if runtime_exceeded():
         print("[RADAR] runtime budget reached; publishing partial verified results", flush=True)
 
+    added = augment_with_verified_events(by_id, Path("data/pulse_events.tsv"), now)
+    print(f"[PULSE ORIGINALI] nuove analisi da dati già convalidati: {added}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Safety gate: only verified articles may be publicly visible.
     public=[a for a in arts if a.get("publication_status")=="published"
