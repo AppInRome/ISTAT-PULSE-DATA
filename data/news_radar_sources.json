@@ -230,6 +230,366 @@
     {
       "name": "Google News - Disuguaglianze e famiglie",
       "url": "https://news.google.com/rss/search?q=(povert%C3%A0%20OR%20disuguaglianze%20OR%20famiglie%20OR%20prezzi)%20(dati%20OR%20statistiche%20OR%20percentuale%20OR%20rapporto)%20Italia%20when%3A2d&hl=it&gl=IT&ceid=IT%3Ait"
+    },
+    {
+      "name": "PULSE 80 testate · nazionali · gruppo 01",
+      "url": "https://news.google.com/rss/search?q=(site%3Ailsole24ore.com%20OR%20site%3Acorriere.it%20OR%20site%3Arepubblica.it%20OR%20site%3Alastampa.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Il Sole 24 Ore",
+        "Corriere della Sera",
+        "La Repubblica",
+        "La Stampa"
+      ],
+      "covered_domains": [
+        "ilsole24ore.com",
+        "corriere.it",
+        "repubblica.it",
+        "lastampa.it"
+      ],
+      "editorial_group": "nazionali"
+    },
+    {
+      "name": "PULSE 80 testate · nazionali · gruppo 02",
+      "url": "https://news.google.com/rss/search?q=(site%3Ailfattoquotidiano.it%20OR%20site%3Ailmessaggero.it%20OR%20site%3Ailgiornale.it%20OR%20site%3Ailtempo.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Il Fatto Quotidiano",
+        "Il Messaggero",
+        "Il Giornale",
+        "Il Tempo"
+      ],
+      "covered_domains": [
+        "ilfattoquotidiano.it",
+        "ilmessaggero.it",
+        "ilgiornale.it",
+        "iltempo.it"
+      ],
+      "editorial_group": "nazionali"
+    },
+    {
+      "name": "PULSE 80 testate · nazionali · gruppo 03",
+      "url": "https://news.google.com/rss/search?q=(site%3Aliberoquotidiano.it%20OR%20site%3Ailfoglio.it%20OR%20site%3Aavvenire.it%20OR%20site%3Ailmanifesto.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Libero",
+        "Il Foglio",
+        "Avvenire",
+        "Il Manifesto"
+      ],
+      "covered_domains": [
+        "liberoquotidiano.it",
+        "ilfoglio.it",
+        "avvenire.it",
+        "ilmanifesto.it"
+      ],
+      "editorial_group": "nazionali"
+    },
+    {
+      "name": "PULSE 80 testate · nazionali · gruppo 04",
+      "url": "https://news.google.com/rss/search?q=(site%3Aeditorialedomani.it%20OR%20site%3Ailriformista.it%20OR%20site%3Aquotidiano.net%20OR%20site%3Aitaliaoggi.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Domani",
+        "Il Riformista",
+        "Quotidiano Nazionale",
+        "ItaliaOggi"
+      ],
+      "covered_domains": [
+        "editorialedomani.it",
+        "ilriformista.it",
+        "quotidiano.net",
+        "italiaoggi.it"
+      ],
+      "editorial_group": "nazionali"
+    },
+    {
+      "name": "PULSE 80 testate · nazionali · gruppo 05",
+      "url": "https://news.google.com/rss/search?q=(site%3Amilanofinanza.it%20OR%20site%3Awallstreetitalia.com%20OR%20site%3Ainvestiremag.it%20OR%20site%3Alaverita.info)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Milano Finanza",
+        "Wall Street Italia",
+        "Investire Magazine",
+        "La Verità"
+      ],
+      "covered_domains": [
+        "milanofinanza.it",
+        "wallstreetitalia.com",
+        "investiremag.it",
+        "laverita.info"
+      ],
+      "editorial_group": "nazionali"
+    },
+    {
+      "name": "PULSE 80 testate · agenzie · gruppo 06",
+      "url": "https://news.google.com/rss/search?q=(site%3Aansa.it%20OR%20site%3Aagi.it%20OR%20site%3Aadnkronos.com%20OR%20site%3Aaskanews.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "ANSA",
+        "AGI",
+        "Adnkronos",
+        "Askanews"
+      ],
+      "covered_domains": [
+        "ansa.it",
+        "agi.it",
+        "adnkronos.com",
+        "askanews.it"
+      ],
+      "editorial_group": "agenzie"
+    },
+    {
+      "name": "PULSE 80 testate · agenzie · gruppo 07",
+      "url": "https://news.google.com/rss/search?q=(site%3Alapresse.it%20OR%20site%3Aitalpress.com%20OR%20site%3Adire.it%20OR%20site%3Ailsole24ore.com)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "LaPresse",
+        "Italpress",
+        "Agenzia Dire",
+        "Radiocor"
+      ],
+      "covered_domains": [
+        "lapresse.it",
+        "italpress.com",
+        "dire.it",
+        "ilsole24ore.com"
+      ],
+      "editorial_group": "agenzie"
+    },
+    {
+      "name": "PULSE 80 testate · agenzie · gruppo 08",
+      "url": "https://news.google.com/rss/search?q=(site%3Ateleborsa.it%20OR%20site%3Amilanofinanza.it%20OR%20site%3Aagenzianova.com%20OR%20site%3A9colonne.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Teleborsa",
+        "MF Newswires",
+        "Agenzia Nova",
+        "9Colonne"
+      ],
+      "covered_domains": [
+        "teleborsa.it",
+        "milanofinanza.it",
+        "agenzianova.com",
+        "9colonne.it"
+      ],
+      "editorial_group": "agenzie"
+    },
+    {
+      "name": "PULSE 80 testate · agenzie · gruppo 09",
+      "url": "https://news.google.com/rss/search?q=(site%3Aagenparl.eu%20OR%20site%3Aadnkronos.com%20OR%20site%3Ageagency.it%20OR%20site%3Alavoce.info)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Agenparl",
+        "Labitalia",
+        "GEA",
+        "Lavoce.info"
+      ],
+      "covered_domains": [
+        "agenparl.eu",
+        "adnkronos.com",
+        "geagency.it",
+        "lavoce.info"
+      ],
+      "editorial_group": "agenzie"
+    },
+    {
+      "name": "PULSE 80 testate · specializzate · gruppo 10",
+      "url": "https://news.google.com/rss/search?q=(site%3Aopenpolis.it%20OR%20site%3Apagellapolitica.it%20OR%20site%3Afacta.news%20OR%20site%3Atg24.sky.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Openpolis",
+        "Pagella Politica",
+        "Facta",
+        "Sky TG24"
+      ],
+      "covered_domains": [
+        "openpolis.it",
+        "pagellapolitica.it",
+        "facta.news",
+        "tg24.sky.it"
+      ],
+      "editorial_group": "specializzate"
+    },
+    {
+      "name": "PULSE 80 testate · specializzate · gruppo 11",
+      "url": "https://news.google.com/rss/search?q=(site%3Arainews.it%20OR%20site%3Atgcom24.mediaset.it%20OR%20site%3Afanpage.it%20OR%20site%3Atoday.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "RaiNews",
+        "TGcom24",
+        "Fanpage",
+        "Today.it"
+      ],
+      "covered_domains": [
+        "rainews.it",
+        "tgcom24.mediaset.it",
+        "fanpage.it",
+        "today.it"
+      ],
+      "editorial_group": "specializzate"
+    },
+    {
+      "name": "PULSE 80 testate · specializzate · gruppo 12",
+      "url": "https://news.google.com/rss/search?q=(site%3Aopen.online%20OR%20site%3Amoney.it%20OR%20site%3Aquifinanza.it%20OR%20site%3Aformiche.net)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Open",
+        "Money.it",
+        "QuiFinanza",
+        "Formiche.net"
+      ],
+      "covered_domains": [
+        "open.online",
+        "money.it",
+        "quifinanza.it",
+        "formiche.net"
+      ],
+      "editorial_group": "specializzate"
+    },
+    {
+      "name": "PULSE 80 testate · specializzate · gruppo 13",
+      "url": "https://news.google.com/rss/search?q=(site%3Astartmag.it%20OR%20site%3Awired.it%20OR%20site%3Aagendadigitale.eu%20OR%20site%3Agreenme.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Startmag",
+        "Wired Italia",
+        "Agenda Digitale",
+        "GreenMe"
+      ],
+      "covered_domains": [
+        "startmag.it",
+        "wired.it",
+        "agendadigitale.eu",
+        "greenme.it"
+      ],
+      "editorial_group": "specializzate"
+    },
+    {
+      "name": "PULSE 80 testate · specializzate · gruppo 14",
+      "url": "https://news.google.com/rss/search?q=(site%3Aqualenergia.it%20OR%20site%3Aaltreconomia.it%20OR%20site%3Ailpost.it%20OR%20site%3Avaligiablu.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "QualEnergia",
+        "Altreconomia",
+        "Il Post",
+        "Valigia Blu"
+      ],
+      "covered_domains": [
+        "qualenergia.it",
+        "altreconomia.it",
+        "ilpost.it",
+        "valigiablu.it"
+      ],
+      "editorial_group": "specializzate"
+    },
+    {
+      "name": "PULSE 80 testate · specializzate · gruppo 15",
+      "url": "https://news.google.com/rss/search?q=(site%3Ascienzainrete.it%20OR%20site%3Asanitainformazione.it%20OR%20site%3Aquotidianosanita.it%20OR%20site%3Atecnicadellascuola.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Scienza in Rete",
+        "Sanità Informazione",
+        "Quotidiano Sanità",
+        "Tecnica della Scuola"
+      ],
+      "covered_domains": [
+        "scienzainrete.it",
+        "sanitainformazione.it",
+        "quotidianosanita.it",
+        "tecnicadellascuola.it"
+      ],
+      "editorial_group": "specializzate"
+    },
+    {
+      "name": "PULSE 80 testate · locali · gruppo 16",
+      "url": "https://news.google.com/rss/search?q=(site%3Ailmattino.it%20OR%20site%3Ailgazzettino.it%20OR%20site%3Ailgiorno.it%20OR%20site%3Ailrestodelcarlino.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "Il Mattino",
+        "Il Gazzettino",
+        "Il Giorno",
+        "Il Resto del Carlino"
+      ],
+      "covered_domains": [
+        "ilmattino.it",
+        "ilgazzettino.it",
+        "ilgiorno.it",
+        "ilrestodelcarlino.it"
+      ],
+      "editorial_group": "locali"
+    },
+    {
+      "name": "PULSE 80 testate · locali · gruppo 17",
+      "url": "https://news.google.com/rss/search?q=(site%3Alanazione.it%20OR%20site%3Ailsecoloxix.it%20OR%20site%3Ailpiccolo.it%20OR%20site%3Amessaggeroveneto.gelocal.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "La Nazione",
+        "Il Secolo XIX",
+        "Il Piccolo",
+        "Messaggero Veneto"
+      ],
+      "covered_domains": [
+        "lanazione.it",
+        "ilsecoloxix.it",
+        "ilpiccolo.it",
+        "messaggeroveneto.gelocal.it"
+      ],
+      "editorial_group": "locali"
+    },
+    {
+      "name": "PULSE 80 testate · locali · gruppo 18",
+      "url": "https://news.google.com/rss/search?q=(site%3Alarena.it%20OR%20site%3Abresciaoggi.it%20OR%20site%3Aecodibergamo.it%20OR%20site%3Agiornaledibrescia.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "L'Arena",
+        "Bresciaoggi",
+        "L'Eco di Bergamo",
+        "Giornale di Brescia"
+      ],
+      "covered_domains": [
+        "larena.it",
+        "bresciaoggi.it",
+        "ecodibergamo.it",
+        "giornaledibrescia.it"
+      ],
+      "editorial_group": "locali"
+    },
+    {
+      "name": "PULSE 80 testate · locali · gruppo 19",
+      "url": "https://news.google.com/rss/search?q=(site%3Alagazzettadelmezzogiorno.it%20OR%20site%3Alasicilia.it%20OR%20site%3Agds.it%20OR%20site%3Aquotidianodipuglia.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "La Gazzetta del Mezzogiorno",
+        "La Sicilia",
+        "Giornale di Sicilia",
+        "Quotidiano di Puglia"
+      ],
+      "covered_domains": [
+        "lagazzettadelmezzogiorno.it",
+        "lasicilia.it",
+        "gds.it",
+        "quotidianodipuglia.it"
+      ],
+      "editorial_group": "locali"
+    },
+    {
+      "name": "PULSE 80 testate · locali · gruppo 20",
+      "url": "https://news.google.com/rss/search?q=(site%3Alanuovasardegna.it%20OR%20site%3Aunionesarda.it%20OR%20site%3Acorrieredellumbria.it%20OR%20site%3Ailcentro.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca%20OR%20indagine%20OR%20Istat%20OR%20percentuale%20OR%20redditi%20OR%20occupazione)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_only": true,
+      "covered_publishers": [
+        "La Nuova Sardegna",
+        "L'Unione Sarda",
+        "Corriere dell'Umbria",
+        "Il Centro"
+      ],
+      "covered_domains": [
+        "lanuovasardegna.it",
+        "unionesarda.it",
+        "corrieredellumbria.it",
+        "ilcentro.it"
+      ],
+      "editorial_group": "locali"
     }
   ],
   "official_domains": [
@@ -606,5 +966,7 @@
       "name": "Istituto Superiore di Sanità",
       "domain": "iss.it"
     }
-  ]
+  ],
+  "monitoring_registry": "data/media_sources_registry.json",
+  "monitoring_policy": "Broad discovery across all 80 named outlets, via existing direct RSS plus grouped Google News queries. A configured query is not a guarantee of reachable feed or publication verification."
 }
