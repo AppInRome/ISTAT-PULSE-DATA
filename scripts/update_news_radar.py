@@ -44,7 +44,7 @@ CANDIDATES=ROOT/"candidates.json"
 INDEX=ROOT/"index.json"
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/154 Safari/537.36 ISTAT-PULSE-NewsRadar/1.2"
 MAX_RUNTIME_SECONDS=720
-MAX_ITEMS_PER_FEED=18
+MAX_ITEMS_PER_FEED=40
 MAX_CANDIDATES_TOTAL=150
 
 TOPIC_DOMAINS={
@@ -945,7 +945,7 @@ def main():
                                  bucket_date(dt.isoformat(),now)=="IERI",
                                  score,dt.isoformat()),item))
         prioritized.sort(key=lambda x:x[0],reverse=True)
-        feed_items.append((feed,[v for _,v in prioritized[:5]]))
+        feed_items.append((feed,[v for _,v in prioritized[:14]]))
     print(f"[RADAR] RSS scan complete; checked={len(feed_items)}",flush=True)
 
     # FAST EDITORIAL PASS: publish source-attributed statistical news as a
@@ -954,6 +954,8 @@ def main():
     # Only the genuinely source-verified stories get full PULSE status.
     radar_added=0
     for feed, items in feed_items:
+        if feed.get("primary_source"):
+            continue  # official sources have their own verified publication path
         for item in items:
             context=item["title"]+" "+item.get("summary","")
             news_topic=classify_topic(context)
@@ -971,7 +973,7 @@ def main():
 
     # Interleave outlets: first story from every source, then second and so on.
     # Search and verification consume the remaining bounded runtime.
-    for round_idx in range(5):
+    for round_idx in range(3):
         for feed, items in feed_items:
             if runtime_exceeded() or len(candidates)>=MAX_CANDIDATES_TOTAL:
                 break
@@ -1009,13 +1011,17 @@ def main():
             s,nums=score_candidate(discovery)
             if s<45: continue
             processed_in_feed += 1
-            probe=article_probe(item["url"],cfg.get("official_domains",[]),cfg.get("entity_domain_hints",{}))
-            combined=(discovery+" "+probe.get("text",""))[:35000]
-            # Classify original headline/summary only; no footer noise.
+            # Discard duplicates BEFORE initiating costly HTML and primary-source
+            # searches. Political/election, sports and promotional results must
+            # not exhaust the data-verification budget.
             topic=classify_topic(discovery); geos=detect_geo(discovery)
             story_key=semantic_key(item["title"],topic,nums)
             if story_key in seen_story_keys: continue
             seen_story_keys.add(story_key)
+            if not primary_feed and not media_brief(item,feed,now,topic,s,geos):
+                continue
+            probe=article_probe(item["url"],cfg.get("official_domains",[]),cfg.get("entity_domain_hints",{}))
+            combined=(discovery+" "+probe.get("text",""))[:35000]
             official_links=probe.get("official_links",[])
             hints=probe.get("hint_domains",[])
             curated=curated_story_for(item["title"])
