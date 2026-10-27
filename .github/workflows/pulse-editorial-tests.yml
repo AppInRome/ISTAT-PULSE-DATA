@@ -1,0 +1,42 @@
+name: PULSE DATA - test sorgenti ed editoriale (nessuna APK)
+
+on:
+  push:
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/pulse-editorial-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pulse-editorial-tests
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Scarica sorgenti PULSE-DATA
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Solo dipendenze dei test dati - nessun Android
+        run: |
+          python -m pip install --disable-pip-version-check 'numpy<3' 'pandas<3' 'scipy<2' 'beautifulsoup4<5' 'requests<3' 'openpyxl<4' 'pypdf<7' 'pdfplumber<1' 'xlrd<3' 'odfpy<2'
+      - name: Verifica sintassi di tutti gli script
+        run: python -m compileall -q scripts tests
+      - name: Test collaudo editoriale e copertura fonti
+        run: |
+          python -m unittest discover -s tests -p test_original_editorial.py -v
+          python -m unittest discover -s tests -p test_quantity_evidence.py -v
+          python -m unittest discover -s tests -p test_radar_coverage.py -v
+          python -m unittest discover -s tests -p test_observer_daily.py -v
+          python -m unittest discover -s tests -p test_refresh_daily_safe.py -v
+      - name: Verifica snapshot offline senza acquisizioni e senza APK
+        run: python scripts/refresh_daily_safe.py --dry-run
