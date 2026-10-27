@@ -195,6 +195,47 @@ def quantity_evidence(rows, source_url, source_hash, location, unit_hint=""):
         if results: return results
     return results
 
+
+def single_period_evidence(rows, source_url, source_hash, location, unit_hint=""):
+    """A single value may be charted as ONE bar; no invented trend."""
+    results = []
+    if not rows or len(rows)<2:
+        return results
+    for header_idx in range(min(8,len(rows)-1)):
+        headers=[str(c or "").strip() for c in rows[header_idx]]
+        years=[(i,int(y)) for i,h in enumerate(headers) if (y := normalize_year(h))]
+        if len(years)!=1:
+            continue  # comparisons belong to the two-year extractors
+        pos,year=years[0]
+        hint=" ".join(headers)+" "+unit_hint
+        for row_i,row in enumerate(rows[header_idx+1:],start=header_idx+2):
+            if len(row)<=pos or not row:
+                continue
+            indicator=str(row[0] or "").strip()
+            if not 4<=len(indicator)<=125:
+                continue
+            unit="%" if ("%" in indicator or "%" in hint or
+                         "percent" in indicator.casefold() or "percent" in hint.casefold()) else (
+                explicit_quantity_unit(indicator) or explicit_quantity_unit(hint))
+            if not unit:
+                continue
+            value=normalized_percent(row[pos]) if unit=="%" else italian_quantity(row[pos])
+            if value is None:
+                continue
+            results.append({
+                "indicator":indicator, "unit":unit,
+                "observations":[{"period":str(year),"value":value,"raw":str(row[pos])}],
+                "source_url":source_url,"source_sha256":source_hash,
+                "location":f"{location}:row:{row_i}",
+                "extraction_method":"explicit_indicator_unit_single_year_table",
+                "verified":True
+            })
+            if len(results)>=20:
+                return results
+        if results:
+            return results
+    return results
+
 def html_tables(data):
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(data, "html.parser")
@@ -276,6 +317,7 @@ def extract_bytes(data, url, content_type="", filename=""):
     for location, rows, hint in tables:
         evidence.extend(matrix_evidence(rows, url, source_hash, location, hint))
         evidence.extend(quantity_evidence(rows, url, source_hash, location, hint))
+        evidence.extend(single_period_evidence(rows, url, source_hash, location, hint))
         if len(evidence) >= 20:
             break
     return {
