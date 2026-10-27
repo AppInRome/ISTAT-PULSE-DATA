@@ -15,12 +15,16 @@ import time
 import threading
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-BASE = "https://esploradati.istat.it/SDMXWS/rest/v1/data"
+# SDMX REST 2.1 endpoint documented in the ISTAT OpenAPI specification.
+# Never treat /rest/v1/data/{flow}/all/IT1 as a verified REST resource.
+BASE = "https://esploradati.istat.it/SDMXWS/rest/data"
+BATCH_SIZE = 4
 OUT = Path("app/src/main/assets/pulse_events_sdmx.tsv")
 META = Path("app/src/main/assets/pulse_sdmx_meta.json")
 CATALOG = Path("app/src/main/assets/sources_catalog.json")
@@ -277,7 +281,9 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
     flow=dataset["flow"]; start=dataset["start"]
     if _CONSECUTIVE_FAILURES >= _CIRCUIT_BREAKER_LIMIT:
         raise RuntimeError("SDMX upstream unavailable or temporarily rate-limited: circuit breaker open")
-    url=f"{BASE}/{flow}/all/IT1?startPeriod={start}&endPeriod=2026"
+    # Valid agency-qualified SDMX flow reference, with an unbounded latest end
+    # to avoid the ISTAT known endPeriod off-by-one defect.
+    url=f"{BASE}/IT1,{flow}/all?startPeriod={start}"
     req=urllib.request.Request(
         url,
         headers={
@@ -290,11 +296,13 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
     # An unavailable service must not erase the previous validated snapshot.
     last = None
     max_bytes = 25 * 1024 * 1024
-    for attempt in range(1, 3):
+    for attempt in range(1, 2):
         try:
             wait_for_sdmx_slot()
-            print(f"SDMX REQUEST {flow} attempt {attempt}/2", flush=True)
-            with urllib.request.urlopen(req, timeout=25) as response:
+            print(f"SDMX REQUEST {flow} attempt {attempt}/1", flush=True)
+            # IstatData often needs >2 minutes even when its API is healthy.
+            # The bounded batch protects the overall workflow deadline.
+            with urllib.request.urlopen(req, timeout=150) as response:
                 raw = response.read(max_bytes + 1)
                 if len(raw) > max_bytes:
                     raise ValueError(f"SDMX {flow}: response exceeds {max_bytes} bytes")
@@ -302,9 +310,7 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
                 return raw, url
         except Exception as exc:
             last = exc
-            print(f"SDMX REQUEST ERROR {flow} attempt {attempt}/2: {exc!r}", flush=True)
-            if attempt < 2:
-                time.sleep(2)
+            print(f"SDMX REQUEST ERROR {flow} attempt {attempt}/1: {exc!r}", flush=True)
     _CONSECUTIVE_FAILURES += 1
     if _CONSECUTIVE_FAILURES >= _CIRCUIT_BREAKER_LIMIT:
         print("::warning::ISTAT SDMX upstream likely blocked; halt further remote requests and keep last good data",flush=True)
@@ -485,11 +491,18 @@ def main():
     unique={}
     for d in DATASETS:
         unique[(d["flow"],d["start"])]=d
-    fetched={}
-    # ISTATData intermittently throttles/breaks under higher concurrency on hosted runners.
-    # Keep parallelism deliberately low so a refresh is less likely to become partial.
+    # Probe only one rotating batch per run. Reacquiring all 21 large flows
+    # can exceed the GitHub job deadline and risk an ISTAT IP block.
+    keys=sorted(unique)
+    total_batches=max(1,math.ceil(len(keys)/BATCH_SIZE))
+    current=datetime.now(timezone.utc)
+    batch_id=(current.date().toordinal()*2+(1 if current.hour>=12 else 0))%total_batches
+    selected=set(keys[batch_id*BATCH_SIZE:(batch_id+1)*BATCH_SIZE])
+    fetched={key:(b"","",[],"deferred_to_next_batch") for key in keys if key not in selected}
+    print(f"SDMX selective update: batch {batch_id+1}/{total_batches},"
+          f" probing {len(selected)} of {len(keys)} dataflows", flush=True)
     with ThreadPoolExecutor(max_workers=1) as pool:
-        futures={pool.submit(fetch,d):key for key,d in unique.items()}
+        futures={pool.submit(fetch,unique[key]):key for key in keys if key in selected}
         for future in as_completed(futures):
             key=futures[future]
             try:
@@ -522,8 +535,9 @@ def main():
         status="ok"
         event=None
         if error:
-            status="fetch_error"
-            print(f"FETCH FAILED {dataset['name']}: {error}")
+            status="deferred" if error=="deferred_to_next_batch" else "fetch_error"
+            if status=="fetch_error":
+                print(f"FETCH FAILED {dataset['name']}: {error}")
         elif chosen is None:
             status="series_not_found"
             print(f"SERIES NOT FOUND {dataset['name']}: aggregate series not found.")
@@ -539,7 +553,7 @@ def main():
         # Critical resilience rule: network/API failures are not data revisions.
         # If today's run cannot reacquire a series, retain its last verified current
         # event instead of silently dropping it from NOTIZIE.
-        if event is None and status in {"fetch_error","series_not_found","event_not_generated"}:
+        if event is None and status in {"fetch_error","series_not_found","event_not_generated","deferred"}:
             cached_event=last_good.get(dataset["name"])
             if cached_event:
                 events.append(cached_event)
@@ -568,7 +582,7 @@ def main():
             "name":dataset["name"],
             "provides":dataset["provides"],
             "flow":dataset["flow"],
-            "url":url or f"{BASE}/{dataset['flow']}/all/IT1",
+            "url":url or f"{BASE}/IT1,{dataset['flow']}/all?startPeriod={dataset['start']}",
             "status":status,
             "bytes":len(raw),
             "sha256":hashlib.sha256(raw).hexdigest() if raw else "",
@@ -625,6 +639,9 @@ def main():
         # Only fresh SDMX responses count as connected; cached fallback != live.
         "connected_series":sum(1 for s in sources if s["status"] == "ok"),
         "fallback_series":sum(1 for s in sources if s["status"] == "fallback_last_good"),
+        "remote_flow_batches":total_batches,
+        "remote_flow_batch":batch_id + 1,
+        "remote_flows_checked":len(selected),
         "sources":sources,
         "latest_period":latest_period,
     }
