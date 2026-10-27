@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-27T14:20:19.378220+00:00",
+  "generated_at": "2026-10-27T16:54:14.235064+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-10-27T14:20:19.378220+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "published_at": "2026-10-27T16:54:14.235064+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -107,6 +107,111 @@
       "editorial_status": "verified_primary_match",
       "publication_status": "published",
       "verification_tier": "previously_verified_official_single_observation"
+    },
+    {
+      "id": "PULSE-MEDIA-91C94CA02EF32617",
+      "story_fingerprint": "91c94ca02ef326171cdfc9594fc0dac0bcfab4cdd6f6a1e9b7001e362ef759f5",
+      "published_at": "2026-10-27T16:45:37+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "L’Italia soffoca sotto il cemento: nel 2025 persi più di 3 metri quadrati di verde al secondo",
+      "reported_headline": "L’Italia soffoca sotto il cemento: nel 2025 persi più di 3 metri quadrati di verde al secondo",
+      "summary": "La testata open.online segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 22%, 2.100 chilometri quadrati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "L’Italia soffoca sotto il cemento: nel 2025 persi più di 3 metri quadrati di verde al secondo",
+      "pulse_summary": "La testata open.online segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 22%, 2.100 chilometri quadrati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata open.online segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 22%, 2.100 chilometri quadrati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Open - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "AMBIENTE",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://www.open.online/2026/10/27/consumo-suolo-italia-rapporto-ispra-dati/",
+        "domain": "open.online",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "22%",
+          "verified": false
+        },
+        {
+          "raw_value": "2.100 chilometri quadrati",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "open.online",
+        "original_url": "https://www.open.online/2026/10/27/consumo-suolo-italia-rapporto-ispra-dati/",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-035DE462AD4E8BDD",
+      "story_fingerprint": "035de462ad4e8bdd6bf49f6e",
+      "published_at": "2026-10-27T16:45:37+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "AMBIENTE",
+      "pulse_score": 50,
+      "patterns": [],
+      "public_source": {
+        "url": "https://www.open.online/2026/10/27/consumo-suolo-italia-rapporto-ispra-dati/",
+        "domain": "open.online",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "L’Italia soffoca sotto il cemento: nel 2025 persi più di 3 metri quadrati di verde al secondo",
+      "summary": "Secondo l'ultimo rapporto Ispra, il consumo di suolo è aumentato del 22% in un solo anno. Individuati 2.100 chilometri quadrati di aree potenzialmente recuperabili L'articolo L’Italia soffoca sotto il cemento: nel 2025 persi più di 3 metri quadrati di verde al secondo proviene da Open.",
+      "statistical_claims": [
+        {
+          "raw_value": "3 ",
+          "verified": false
+        },
+        {
+          "raw_value": "22%",
+          "verified": false
+        },
+        {
+          "raw_value": "2.100 ",
+          "verified": false
+        },
+        {
+          "raw_value": "3 ",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
     },
     {
       "id": "PULSE-59072DCA55A1DD87",
@@ -564,7 +669,7 @@
       "id": "PULSE-477E659C64B341F7",
       "story_fingerprint": "477e659c64b341f74a45227a",
       "published_at": "2026-10-27T13:04:57+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "MOBILITA",
       "pulse_score": 45,
       "patterns": [],
@@ -598,6 +703,72 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-E1AA84A24AF02D65",
+      "story_fingerprint": "e1aa84a24af02d65723ae7acff0ba954902aba48ff15d909b1c7dc7444309052",
+      "published_at": "2026-10-27T13:04:57+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Mercato auto usate in Italia: -1,4% ad agosto, ma +1,2% nei primi otto mesi del 2026",
+      "reported_headline": "Mercato auto usate in Italia: -1,4% ad agosto, ma +1,2% nei primi otto mesi del 2026 - HDmotori",
+      "summary": "La testata HDmotori segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati -1,4%, +1,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Mercato auto usate in Italia: -1,4% ad agosto, ma +1,2% nei primi otto mesi del 2026",
+      "pulse_summary": "La testata HDmotori segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati -1,4%, +1,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata HDmotori segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati -1,4%, +1,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia ambiente energia mobilità». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "MOBILITA",
+      "pulse_score": 45,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBSjlsQ3pPY0M1dW1IakVrazQ2cTdfR0pHZm1MVU1Nc05VY0FNZ3A2RGxzdy1OeUlHWm5xbE1oeUpCS3dyQkw0UkxuYmE3d0QzcXRRSXhqRWdxVEhZY1pTVVlXVzBsMDlGc1BTOEtuMA?oc=5",
+        "domain": "HDmotori",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "-1,4%",
+          "verified": false
+        },
+        {
+          "raw_value": "+1,2%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "HDmotori",
+        "original_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBSjlsQ3pPY0M1dW1IakVrazQ2cTdfR0pHZm1MVU1Nc05VY0FNZ3A2RGxzdy1OeUlHWm5xbE1oeUpCS3dyQkw0UkxuYmE3d0QzcXRRSXhqRWdxVEhZY1pTVVlXVzBsMDlGc1BTOEtuMA?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-9F984CB01169B619",
@@ -683,7 +854,7 @@
       "id": "PULSE-B2509F5E3CDF8CA4",
       "story_fingerprint": "b2509f5e3cdf8ca4465d1ef5",
       "published_at": "2026-10-27T11:49:02+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 50,
       "patterns": [],
@@ -727,6 +898,189 @@
       "publication_status": "quarantined"
     },
     {
+      "id": "PULSE-MEDIA-641F0887F30CE09D",
+      "story_fingerprint": "641f0887f30ce09d1990cbf55edebcce0b7a4f8a7b0a823488917d10d1e6aa19",
+      "published_at": "2026-10-27T11:49:02+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Export agroalimentare +0,5% in primi 6 mesi 2026, Usa -10,8% - Radio Studio90 Italia",
+      "reported_headline": "Export agroalimentare +0,5% in primi 6 mesi 2026, Usa -10,8% - Radio Studio90 Italia - solo musica italiana",
+      "summary": "La testata solo musica italiana segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, -10,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Export agroalimentare +0,5% in primi 6 mesi 2026, Usa -10,8% - Radio Studio90 Italia",
+      "pulse_summary": "La testata solo musica italiana segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, -10,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata solo musica italiana segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, -10,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXkxRmJpNGxiUjlaNDVlUHRncmFzTzZtNmIydE5RYVZSX2pwQmsyRFdZMmd3TURXdUl1OC11YmVpU3pLcktPOVNlWVo1QWd5cFl3RjZFNlRsQTh6cG5ueS1yTjdpMjc4S2hNUk0zN29VdHJSc21Na1dTUFVKdncwTWR4ckNtMm9nck9YZ3RGanhITjA?oc=5",
+        "domain": "solo musica italiana",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,5%",
+          "verified": false
+        },
+        {
+          "raw_value": "-10,8%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "solo musica italiana",
+        "original_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXkxRmJpNGxiUjlaNDVlUHRncmFzTzZtNmIydE5RYVZSX2pwQmsyRFdZMmd3TURXdUl1OC11YmVpU3pLcktPOVNlWVo1QWd5cFl3RjZFNlRsQTh6cG5ueS1yTjdpMjc4S2hNUk0zN29VdHJSc21Na1dTUFVKdncwTWR4ckNtMm9nck9YZ3RGanhITjA?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-400B64ACDE66D08B",
+      "story_fingerprint": "400b64acde66d08b533b947ae60342e9c895297eb2618d1294e168190772391d",
+      "published_at": "2026-10-27T10:50:53+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Istat, 5,4 milioni di persone in povertà assoluta in Italia nel 2025, pari all'8% delle famiglie totali (8,4% nel 2024)",
+      "reported_headline": "Istat, 5,4 milioni di persone in povertà assoluta in Italia nel 2025, pari all'8% delle famiglie totali (8,4% nel 2024) - Il Giornale d'Italia",
+      "summary": "La testata Il Giornale d'Italia segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5,4 milioni, 8%, 8,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Istat, 5,4 milioni di persone in povertà assoluta in Italia nel 2025, pari all'8% delle famiglie totali (8,4% nel 2024)",
+      "pulse_summary": "La testata Il Giornale d'Italia segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5,4 milioni, 8%, 8,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Il Giornale d'Italia segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5,4 milioni, 8%, 8,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Disuguaglianze e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObVJnTlpoS0ZiZkdXSE4ydEdJVzAxUlRzbFNVVlhRM1VXVHZMZG9hOTM0MHNYT2hQWk9hbUZvRDQ2MzZjdTRLOG12SVg3WjNlX3ZVYjl3YU93LXRCcmUybDhLTUZuZ2VkZHNhUmNUYUVjRXJYSi04WHNSZkN2b1BWbjNKYXNfa2JTYU9wTlg5d1BVWXYtQjBmWlFjSk9lX1FSUXd2TjJSUVJNeDBlM3RBR0xvcndHczNfQVZuR2xSSm5MSFBZYWxfRWtmdVlnRE5sNGpKdVpaSUJTMFNHQzhQVE5BRTJmc2ZGUmJmeWd1NkgyRWdVckhrRG9TbTJEcE5k?oc=5",
+        "domain": "Il Giornale d'Italia",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "8%",
+          "verified": false
+        },
+        {
+          "raw_value": "8,4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Il Giornale d'Italia",
+        "original_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObVJnTlpoS0ZiZkdXSE4ydEdJVzAxUlRzbFNVVlhRM1VXVHZMZG9hOTM0MHNYT2hQWk9hbUZvRDQ2MzZjdTRLOG12SVg3WjNlX3ZVYjl3YU93LXRCcmUybDhLTUZuZ2VkZHNhUmNUYUVjRXJYSi04WHNSZkN2b1BWbjNKYXNfa2JTYU9wTlg5d1BVWXYtQjBmWlFjSk9lX1FSUXd2TjJSUVJNeDBlM3RBR0xvcndHczNfQVZuR2xSSm5MSFBZYWxfRWtmdVlnRE5sNGpKdVpaSUJTMFNHQzhQVE5BRTJmc2ZGUmJmeWd1NkgyRWdVckhrRG9TbTJEcE5k?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-E91015533C2FA71D",
+      "story_fingerprint": "e91015533c2fa71da9ed6757",
+      "published_at": "2026-10-27T10:50:53+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "ALTRO",
+      "pulse_score": 50,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxObVJnTlpoS0ZiZkdXSE4ydEdJVzAxUlRzbFNVVlhRM1VXVHZMZG9hOTM0MHNYT2hQWk9hbUZvRDQ2MzZjdTRLOG12SVg3WjNlX3ZVYjl3YU93LXRCcmUybDhLTUZuZ2VkZHNhUmNUYUVjRXJYSi04WHNSZkN2b1BWbjNKYXNfa2JTYU9wTlg5d1BVWXYtQjBmWlFjSk9lX1FSUXd2TjJSUVJNeDBlM3RBR0xvcndHczNfQVZuR2xSSm5MSFBZYWxfRWtmdVlnRE5sNGpKdVpaSUJTMFNHQzhQVE5BRTJmc2ZGUmJmeWd1NkgyRWdVckhrRG9TbTJEcE5k?oc=5",
+        "domain": "Il Giornale d'Italia",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Istat, 5,4 milioni di persone in povertà assoluta in Italia nel 2025, pari all'8% delle famiglie totali (8,4% nel 2024) - Il Giornale d'Italia",
+      "summary": "Istat, 5,4 milioni di persone in povertà assoluta in Italia nel 2025, pari all'8% delle famiglie totali (8,4% nel 2024) Il Giornale d'Italia",
+      "statistical_claims": [
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "8%",
+          "verified": false
+        },
+        {
+          "raw_value": "8,4%",
+          "verified": false
+        },
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "8%",
+          "verified": false
+        },
+        {
+          "raw_value": "8,4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
       "id": "PULSE-24DA947D98E0C0A2",
       "story_fingerprint": "24da947d98e0c0a22752be2c",
       "published_at": "2026-10-27T10:13:41+00:00",
@@ -754,6 +1108,129 @@
         }
       ],
       "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-4DD20CE06FC52B97",
+      "story_fingerprint": "4dd20ce06fc52b9763025f12dac45cd4da42936a8e5fc666217c2ee2a11675b4",
+      "published_at": "2026-10-27T09:59:46+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Mercato immobiliare Puglia | case in vendita calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente | più marcato a Foggia -8,9 per cento Andria -7,9 per cento e Bari -6,8 per cento",
+      "reported_headline": "Mercato immobiliare Puglia | case in vendita calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente | più marcato a Foggia -8,9 per cento Andria -7,9 per cento e Bari -6,8 per cento - Zazoom Social News",
+      "summary": "La testata Zazoom Social News segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 8,9, 7,9, 6,8. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Mercato immobiliare Puglia | case in vendita calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente | più marcato a Foggia -8,9 per cento Andria -7,9 per cento e Bari -6,8 per cento",
+      "pulse_summary": "La testata Zazoom Social News segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 8,9, 7,9, 6,8. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Zazoom Social News segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 8,9, 7,9, 6,8. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - dati di regioni province comuni». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "CASA",
+      "pulse_score": 60,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOR0RCRVNlc2JZUGlUUHEwMzRuRjRVZjFkLWV1bTNFUW9DLUFocGliSnBEbUZjZi1yeXFheXRsZWxwOTIydUlTZDI0SDViaVZ6Z09FdFl4b29LN0lMbE1EQWtKQTcwWktyZDRpcTlTal9xWHpnSDZEWVhlY1UxMnlJaXJHekppOFJfWWRPUEhBODBkVUlmVEpSZl9SU3FIdGQ1YWJiWGQtUVBBeHJxOXdKVEFIOVBiV0RQZEU3WjVCU1pLSzBwVXVzM0FjMjZBSF81WnR5OGxiaC0tbnhjU2ZGLTFScEFZYkFTN18zX2J5YjlaSG43aUpFdWFHcHpHSDZldHZwOWRtSFlBZUcwYnMtZkcxNlItZHh0V29Fcm5fVXcxaDc4NkZJM1Y2MjQ4bkpXeW50YldTbm1VS1hBZnZRUXczTUU4WW1JUUQ5TUNMNm4?oc=5",
+        "domain": "Zazoom Social News",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "8,9",
+          "verified": false
+        },
+        {
+          "raw_value": "7,9",
+          "verified": false
+        },
+        {
+          "raw_value": "6,8",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "bari",
+        "puglia"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Zazoom Social News",
+        "original_url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOR0RCRVNlc2JZUGlUUHEwMzRuRjRVZjFkLWV1bTNFUW9DLUFocGliSnBEbUZjZi1yeXFheXRsZWxwOTIydUlTZDI0SDViaVZ6Z09FdFl4b29LN0lMbE1EQWtKQTcwWktyZDRpcTlTal9xWHpnSDZEWVhlY1UxMnlJaXJHekppOFJfWWRPUEhBODBkVUlmVEpSZl9SU3FIdGQ1YWJiWGQtUVBBeHJxOXdKVEFIOVBiV0RQZEU3WjVCU1pLSzBwVXVzM0FjMjZBSF81WnR5OGxiaC0tbnhjU2ZGLTFScEFZYkFTN18zX2J5YjlaSG43aUpFdWFHcHpHSDZldHZwOWRtSFlBZUcwYnMtZkcxNlItZHh0V29Fcm5fVXcxaDc4NkZJM1Y2MjQ4bkpXeW50YldTbm1VS1hBZnZRUXczTUU4WW1JUUQ5TUNMNm4?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-82E36FC24CE51B92",
+      "story_fingerprint": "82e36fc24ce51b9298a8f60a",
+      "published_at": "2026-10-27T09:59:46+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "CASA",
+      "pulse_score": 60,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOR0RCRVNlc2JZUGlUUHEwMzRuRjRVZjFkLWV1bTNFUW9DLUFocGliSnBEbUZjZi1yeXFheXRsZWxwOTIydUlTZDI0SDViaVZ6Z09FdFl4b29LN0lMbE1EQWtKQTcwWktyZDRpcTlTal9xWHpnSDZEWVhlY1UxMnlJaXJHekppOFJfWWRPUEhBODBkVUlmVEpSZl9SU3FIdGQ1YWJiWGQtUVBBeHJxOXdKVEFIOVBiV0RQZEU3WjVCU1pLSzBwVXVzM0FjMjZBSF81WnR5OGxiaC0tbnhjU2ZGLTFScEFZYkFTN18zX2J5YjlaSG43aUpFdWFHcHpHSDZldHZwOWRtSFlBZUcwYnMtZkcxNlItZHh0V29Fcm5fVXcxaDc4NkZJM1Y2MjQ4bkpXeW50YldTbm1VS1hBZnZRUXczTUU4WW1JUUQ5TUNMNm4?oc=5",
+        "domain": "Zazoom Social News",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Mercato immobiliare Puglia | case in vendita calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente | più marcato a Foggia -8,9 per cento Andria -7,9 per cento e Bari -6,8 per cento - Zazoom Social News",
+      "summary": "Mercato immobiliare Puglia | case in vendita calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente | più marcato a Foggia -8,9 per cento Andria -7,9 per cento e Bari -6,8 per cento Zazoom Social News",
+      "statistical_claims": [
+        {
+          "raw_value": "-8,9 ",
+          "verified": false
+        },
+        {
+          "raw_value": "-7,9 ",
+          "verified": false
+        },
+        {
+          "raw_value": "-6,8 ",
+          "verified": false
+        },
+        {
+          "raw_value": "-8,9 ",
+          "verified": false
+        },
+        {
+          "raw_value": "-7,9 ",
+          "verified": false
+        },
+        {
+          "raw_value": "-6,8 ",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "bari",
+        "puglia"
+      ],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
     },
@@ -831,7 +1308,7 @@
       "id": "PULSE-E22E0F4916B5BDFB",
       "story_fingerprint": "e22e0f4916b5bdfb09d259a4",
       "published_at": "2026-10-27T09:32:00+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "AMBIENTE",
       "pulse_score": 60,
       "patterns": [],
@@ -865,6 +1342,68 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-69AEB25E182E72E6",
+      "story_fingerprint": "69aeb25e182e72e67ebd5177b49375a82792568c1a45ccaa5be82052c30318e5",
+      "published_at": "2026-10-27T09:32:00+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
+      "reported_headline": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
+      "summary": "La testata ilsole24ore.com segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 102 kmq. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
+      "pulse_summary": "La testata ilsole24ore.com segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 102 kmq. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ilsole24ore.com segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 102 kmq. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Il Sole 24 Ore - Energia Ambiente». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "AMBIENTE",
+      "pulse_score": 60,
+      "public_source": {
+        "url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
+        "domain": "ilsole24ore.com",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "102 kmq",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ilsole24ore.com",
+        "original_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-C4D045C2975084A2",
@@ -1051,7 +1590,7 @@
       "id": "PULSE-5F43595FA4C93E12",
       "story_fingerprint": "5f43595fa4c93e121969f325",
       "published_at": "2026-10-27T01:15:00+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "LAVORO",
       "pulse_score": 49,
       "patterns": [],
@@ -1085,6 +1624,72 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-7D4D4D3761DB9010",
+      "story_fingerprint": "7d4d4d3761db9010c4150c997dea3b7030d9822ab7fd6cbe12b443d8293297e5",
+      "published_at": "2026-10-27T01:15:00+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo",
+      "reported_headline": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
+      "summary": "La testata Sardegnagol segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 13,3%, 11%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo",
+      "pulse_summary": "La testata Sardegnagol segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 13,3%, 11%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Sardegnagol segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 13,3%, 11%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia scuola e università». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 49,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5",
+        "domain": "Sardegnagol",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "13,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "11%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Sardegnagol",
+        "original_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-8A488E4A361ADF0F",
@@ -1169,6 +1774,208 @@
         }
       ],
       "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-22C5C063AB8807CB",
+      "story_fingerprint": "22c5c063ab8807cb0737fd60168ea33ade76a1d40dba522aa6582e823bb0cdd6",
+      "published_at": "2026-10-26T13:46:20+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Istat, nel 2025 oltre 5,4 milioni di persone in uno stato di povertà assoluta. In undici anni è cresciuta del 2,4%",
+      "reported_headline": "Istat, nel 2025 oltre 5,4 milioni di persone in uno stato di povertà assoluta. In undici anni è cresciuta del 2,4% - L'Espresso",
+      "summary": "La testata L'Espresso segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5,4 milioni, 2,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Istat, nel 2025 oltre 5,4 milioni di persone in uno stato di povertà assoluta. In undici anni è cresciuta del 2,4%",
+      "pulse_summary": "La testata L'Espresso segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5,4 milioni, 2,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata L'Espresso segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5,4 milioni, 2,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Tasse redditi casa». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV0s3c3NaUmo5bHBmajM0aE03Ukk0WU53VC15c1ljS0xObkMyT3dHQTdqMEVXNFRGcFZDVlVSSURMemFMdDVZLTlRdFFiZXgwcENiYnB6bW5VLUx6WUtObHFyLW9kdjVJZ1BVejF6Tzg2aFV4SEhzNzZFUFdtcDFSRjJPYWF6M0lONnlOYmVfY2tYTXRHUGFWOQ?oc=5",
+        "domain": "L'Espresso",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "2,4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "L'Espresso",
+        "original_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV0s3c3NaUmo5bHBmajM0aE03Ukk0WU53VC15c1ljS0xObkMyT3dHQTdqMEVXNFRGcFZDVlVSSURMemFMdDVZLTlRdFFiZXgwcENiYnB6bW5VLUx6WUtObHFyLW9kdjVJZ1BVejF6Tzg2aFV4SEhzNzZFUFdtcDFSRjJPYWF6M0lONnlOYmVfY2tYTXRHUGFWOQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-E353239532F784C1",
+      "story_fingerprint": "e353239532f784c1a20bb167",
+      "published_at": "2026-10-26T13:46:20+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "ALTRO",
+      "pulse_score": 50,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV0s3c3NaUmo5bHBmajM0aE03Ukk0WU53VC15c1ljS0xObkMyT3dHQTdqMEVXNFRGcFZDVlVSSURMemFMdDVZLTlRdFFiZXgwcENiYnB6bW5VLUx6WUtObHFyLW9kdjVJZ1BVejF6Tzg2aFV4SEhzNzZFUFdtcDFSRjJPYWF6M0lONnlOYmVfY2tYTXRHUGFWOQ?oc=5",
+        "domain": "L'Espresso",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Istat, nel 2025 oltre 5,4 milioni di persone in uno stato di povertà assoluta. In undici anni è cresciuta del 2,4% - L'Espresso",
+      "summary": "Istat, nel 2025 oltre 5,4 milioni di persone in uno stato di povertà assoluta. In undici anni è cresciuta del 2,4% L'Espresso",
+      "statistical_claims": [
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "2,4%",
+          "verified": false
+        },
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "2,4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-6FC2EC3284C2ECBD",
+      "story_fingerprint": "6fc2ec3284c2ecbd5ddebc0ed66233da2db80ea8ade6538251d243dcaec3b40e",
+      "published_at": "2026-10-26T11:17:35+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali",
+      "reported_headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "summary": "La testata Marcadoc segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 73 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali",
+      "pulse_summary": "La testata Marcadoc segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 73 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Marcadoc segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 73 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Nord e Centro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 49,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+        "domain": "Marcadoc",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "73 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "veneto"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Marcadoc",
+        "original_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-1EE9D48813E2AFCE",
+      "story_fingerprint": "1ee9d48813e2afce8e3a2350",
+      "published_at": "2026-10-26T11:17:35+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "ALTRO",
+      "pulse_score": 49,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+        "domain": "Marcadoc",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "summary": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali Marcadoc",
+      "statistical_claims": [
+        {
+          "raw_value": "73 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "73 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "veneto"
+      ],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
     },
@@ -1324,7 +2131,7 @@
       "id": "PULSE-8C24B9111FFE2EC0",
       "story_fingerprint": "8c24b9111ffe2ec0d6d558cb",
       "published_at": "2026-10-26T10:05:06+00:00",
-      "last_seen_at": "2026-10-27T13:53:29.219068+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "DEMOGRAFIA",
       "pulse_score": 69,
       "patterns": [],
@@ -1414,10 +2221,193 @@
       "publication_status": "published"
     },
     {
+      "id": "PULSE-MEDIA-E13CFA25EBACF379",
+      "story_fingerprint": "e13cfa25ebacf379087e0ff4cf2cd0d5907782742121c4c80677e2031198b83a",
+      "published_at": "2026-10-26T10:05:06+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat",
+      "reported_headline": "Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat - Orizzonte Scuola Notizie",
+      "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 83,7, 5,4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat",
+      "pulse_summary": "La testata Orizzonte Scuola Notizie segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 83,7, 5,4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Orizzonte Scuola Notizie segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 83,7, 5,4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - economia lavoro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "DEMOGRAFIA",
+      "pulse_score": 69,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNazRCVmpjVWx1cF92LW0wbW1EXzg5dWhMN0h4bmZpTFhuTk13dmlDMmhYU2M1VmcwUUxGUmVrbDJKWFdXRy1XRGdPU2FnR3lma29tREg4YjZndm04bV9BZk5TU1l2YWFhWXdNc0YyZWJMaE5xUUdnd0NCSHFmbTZFbk9tSDYxZjJnWlpTUnFhZnpiNjgwQzhoRHlUTWVKNjlHaFl2NUVvLUh6em9DSE9ZMDdWQXFWLXI5SmFES0RPenBNeTFNXzhJMmNjY2dDZGc2bGJqbVJQdWhOel9mcFYtOGR4WmU?oc=5",
+        "domain": "Orizzonte Scuola Notizie",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "83,7",
+          "verified": false
+        },
+        {
+          "raw_value": "5,4 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Orizzonte Scuola Notizie",
+        "original_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNazRCVmpjVWx1cF92LW0wbW1EXzg5dWhMN0h4bmZpTFhuTk13dmlDMmhYU2M1VmcwUUxGUmVrbDJKWFdXRy1XRGdPU2FnR3lma29tREg4YjZndm04bV9BZk5TU1l2YWFhWXdNc0YyZWJMaE5xUUdnd0NCSHFmbTZFbk9tSDYxZjJnWlpTUnFhZnpiNjgwQzhoRHlUTWVKNjlHaFl2NUVvLUh6em9DSE9ZMDdWQXFWLXI5SmFES0RPenBNeTFNXzhJMmNjY2dDZGc2bGJqbVJQdWhOel9mcFYtOGR4WmU?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-1133B1ED93F1E74F",
+      "story_fingerprint": "1133b1ed93f1e74f9e908f235607936b7712f0a9ce2dc4bc86444169d915f0a0",
+      "published_at": "2026-10-26T09:32:13+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat",
+      "reported_headline": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
+      "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 43,1%, 45,5%, 8,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat",
+      "pulse_summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 43,1%, 45,5%, 8,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 43,1%, 45,5%, 8,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia scuola e università». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ISTRUZIONE",
+      "pulse_score": 55,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5",
+        "domain": "Orizzonte Scuola Notizie",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "43,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "45,5%",
+          "verified": false
+        },
+        {
+          "raw_value": "8,2%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Orizzonte Scuola Notizie",
+        "original_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-24E00FAECEF07141",
+      "story_fingerprint": "24e00faecef07141178c449f",
+      "published_at": "2026-10-26T09:32:13+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "ISTRUZIONE",
+      "pulse_score": 55,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5",
+        "domain": "Orizzonte Scuola Notizie",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
+      "summary": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat Orizzonte Scuola Notizie",
+      "statistical_claims": [
+        {
+          "raw_value": "43,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "45,5%",
+          "verified": false
+        },
+        {
+          "raw_value": "8,2%",
+          "verified": false
+        },
+        {
+          "raw_value": "43,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "45,5%",
+          "verified": false
+        },
+        {
+          "raw_value": "8,2%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
       "id": "PULSE-4DADE317EFC55169",
       "story_fingerprint": "4dade317efc55169a11c4f46",
       "published_at": "2026-10-26T09:23:51+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "AMBIENTE",
       "pulse_score": 59,
       "patterns": [],
@@ -1445,6 +2435,70 @@
       ],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-4C6787F23EF4993D",
+      "story_fingerprint": "4c6787f23ef4993dd62be9ca2ba7b6c82805a02348697716513bcbeda123c57b",
+      "published_at": "2026-10-26T09:23:51+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Ambiente ed economia, l’Italia cresce e inquina meno: i dati ISPRA rilevano emissioni di gas serra in calo dell'1,5% nel 2026",
+      "reported_headline": "Ambiente ed economia, l’Italia cresce e inquina meno: i dati ISPRA rilevano emissioni di gas serra in calo dell'1,5% nel 2026 - Hashtag Sicilia",
+      "summary": "La testata Hashtag Sicilia segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 1,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ambiente ed economia, l’Italia cresce e inquina meno: i dati ISPRA rilevano emissioni di gas serra in calo dell'1,5% nel 2026",
+      "pulse_summary": "La testata Hashtag Sicilia segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 1,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Hashtag Sicilia segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 1,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - salute scuola ambiente». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "AMBIENTE",
+      "pulse_score": 59,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMVY2eWZYMnVjOHFIRU9kVnlUU3Z1N1VYTkhPOXNHaXdINm0tQVZLa2J4R3poN212UW5tVGgtTlpIVlNobUlLaG9OT202ZmcyeThDWFY4OXI0MXF6YUxkbGNheEZVTXdjdVZzQU9TY3dFdTRZNWJZY3pPZ25SdnpDeFhZd0tRNmVuMTY5ZUsxaDRuWUl0S3pEWUg2cTUwdG5TYndfaWJ0SURYWjNybkpyeDJSQ1l6UUN1OGJZdWdXLTdTREtfYVFPenRfcC15dXRIU0hLTHAtbFlOYTl5NlZrWW1wSmtkMXhMMzlLcGRLbkVuVGM?oc=5",
+        "domain": "Hashtag Sicilia",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "1,5%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "sicilia"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Hashtag Sicilia",
+        "original_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMVY2eWZYMnVjOHFIRU9kVnlUU3Z1N1VYTkhPOXNHaXdINm0tQVZLa2J4R3poN212UW5tVGgtTlpIVlNobUlLaG9OT202ZmcyeThDWFY4OXI0MXF6YUxkbGNheEZVTXdjdVZzQU9TY3dFdTRZNWJZY3pPZ25SdnpDeFhZd0tRNmVuMTY5ZUsxaDRuWUl0S3pEWUg2cTUwdG5TYndfaWJ0SURYWjNybkpyeDJSQ1l6UUN1OGJZdWdXLTdTREtfYVFPenRfcC15dXRIU0hLTHAtbFlOYTl5NlZrWW1wSmtkMXhMMzlLcGRLbkVuVGM?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-AE2E24A6BB01AB30",
@@ -1719,7 +2773,7 @@
       "id": "PULSE-0F740418F27D4461",
       "story_fingerprint": "0f740418f27d4461e2100351",
       "published_at": "2026-10-26T03:42:17+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "DEMOGRAFIA",
       "pulse_score": 50,
       "patterns": [],
@@ -1753,6 +2807,72 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-8D2BAD5A20562504",
+      "story_fingerprint": "8d2bad5a205625046cefa29e045d3362d5f6a92369755a89a3f0b7e0d43550e7",
+      "published_at": "2026-10-26T03:42:17+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "ISTAT, nel 2025 nascite in calo del 3,8%: la fecondità scende a 1,14 figli per donna",
+      "reported_headline": "ISTAT, nel 2025 nascite in calo del 3,8%: la fecondità scende a 1,14 figli per donna - Assinews.it",
+      "summary": "La testata Assinews.it segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 3,8%, 1,14. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "ISTAT, nel 2025 nascite in calo del 3,8%: la fecondità scende a 1,14 figli per donna",
+      "pulse_summary": "La testata Assinews.it segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 3,8%, 1,14. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Assinews.it segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 3,8%, 1,14. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "DEMOGRAFIA",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOamNVekZsTmRTQUxnZ2RhZ3VUeWVoNG9mNlNWRXNYMFVxaHdzSlJNRGc5TTNEZTlmREZwcEVmZ0Rmd3c1NDVzT05aLUhPXzlqeW1jMHcwRTFHZ0N1OExWZkJLMDdJNlpmRS00TTRwSmV0SnhGcG1WcUl6aHJtcndTTklNVFhTTlJjTFhzNUR4TGpEQ0hQaW40bU5xRVZKRzF6d3VoWDloRGV1UHhYbGVsQjJwaE1vN2M5bzJYb2t4TQ?oc=5",
+        "domain": "Assinews.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "1,14",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Assinews.it",
+        "original_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOamNVekZsTmRTQUxnZ2RhZ3VUeWVoNG9mNlNWRXNYMFVxaHdzSlJNRGc5TTNEZTlmREZwcEVmZ0Rmd3c1NDVzT05aLUhPXzlqeW1jMHcwRTFHZ0N1OExWZkJLMDdJNlpmRS00TTRwSmV0SnhGcG1WcUl6aHJtcndTTklNVFhTTlJjTFhzNUR4TGpEQ0hQaW40bU5xRVZKRzF6d3VoWDloRGV1UHhYbGVsQjJwaE1vN2M5bzJYb2t4TQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-6EA000BE804170F8",
@@ -1965,7 +3085,7 @@
       "id": "PULSE-73FAD5CA3674F9AD",
       "story_fingerprint": "73fad5ca3674f9adbc227327",
       "published_at": "2026-10-25T13:00:48+00:00",
-      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
       "topic": "DEMOGRAFIA",
       "pulse_score": 55,
       "patterns": [],
@@ -2007,6 +3127,80 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-D3C8420EDAF49D67",
+      "story_fingerprint": "d3c8420edaf49d67c8740589a9443c0f86eb3b96b7bdd77d4a59dd5afdad3f7b",
+      "published_at": "2026-10-25T13:00:48+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Crollo delle nascite in Italia: nel 2025 solo 355.772 neonati, giù del 3,8%. Dal 2008 mancano all’appello oltre 220mila bambini (-38,3%). I dati Istat",
+      "reported_headline": "Crollo delle nascite in Italia: nel 2025 solo 355.772 neonati, giù del 3,8%. Dal 2008 mancano all’appello oltre 220mila bambini (-38,3%). I dati Istat - Orizzonte Scuola Notizie",
+      "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 355.772, 3,8%, 220mila, -38,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Crollo delle nascite in Italia: nel 2025 solo 355.772 neonati, giù del 3,8%. Dal 2008 mancano all’appello oltre 220mila bambini (-38,3%). I dati Istat",
+      "pulse_summary": "La testata Orizzonte Scuola Notizie segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 355.772, 3,8%, 220mila, -38,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Orizzonte Scuola Notizie segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 355.772, 3,8%, 220mila, -38,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "DEMOGRAFIA",
+      "pulse_score": 55,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOQUdRYkotUk9VUXYzMDd6ODVLWm9aMXVTN0UtUVBqSVNSWXU2RlF4WGJRRFdYWWdYWDVaY2t0R2NMekkyRm9wQnRBRmNMQnA2ajBHMWZBNmQzaGhqa014bm5FRjhvVWNkcFB1Z2dwSEtDWFFPWWprVV9odjVsMk4yM0Nya242bUhVZ2pJdUhPQjlRbjFZamtaTEhGT3NSamxqdTRmWUdEeTh4NEQtSzE0c3laRm9ZRHl2RVd6Z2JEZjM1OWY4WmdYR1JiOWplR0Z2RUQ1U0QzYVM1Y2RQdnpnWk01VHZMMm5pVFVUQUg2c3R0dW1Sc05LaXQ2UXRCLXc?oc=5",
+        "domain": "Orizzonte Scuola Notizie",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "355.772",
+          "verified": false
+        },
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "220mila",
+          "verified": false
+        },
+        {
+          "raw_value": "-38,3%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Orizzonte Scuola Notizie",
+        "original_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOQUdRYkotUk9VUXYzMDd6ODVLWm9aMXVTN0UtUVBqSVNSWXU2RlF4WGJRRFdYWWdYWDVaY2t0R2NMekkyRm9wQnRBRmNMQnA2ajBHMWZBNmQzaGhqa014bm5FRjhvVWNkcFB1Z2dwSEtDWFFPWWprVV9odjVsMk4yM0Nya242bUhVZ2pJdUhPQjlRbjFZamtaTEhGT3NSamxqdTRmWUdEeTh4NEQtSzE0c3laRm9ZRHl2RVd6Z2JEZjM1OWY4WmdYR1JiOWplR0Z2RUQ1U0QzYVM1Y2RQdnpnWk01VHZMMm5pVFVUQUg2c3R0dW1Sc05LaXQ2UXRCLXc?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-DD3A839B76A2AC5D",
@@ -2075,6 +3269,115 @@
         }
       ],
       "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-49B7704585339BD6",
+      "story_fingerprint": "49b7704585339bd6088bfbdecdd754f614e37855ca45ce68c91e989e29f1e86e",
+      "published_at": "2026-10-25T07:03:00+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "headline": "Natalità in Italia, nuovo minimo storico nel 2025: nascite in calo del 3,8% e appena 1,14 figli per donna. Tutti i dettagli dal report ISTAT",
+      "reported_headline": "Natalità in Italia, nuovo minimo storico nel 2025: nascite in calo del 3,8% e appena 1,14 figli per donna. Tutti i dettagli dal report ISTAT - Hashtag Sicilia",
+      "summary": "La testata Hashtag Sicilia segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 3,8%, 1,14. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Natalità in Italia, nuovo minimo storico nel 2025: nascite in calo del 3,8% e appena 1,14 figli per donna. Tutti i dettagli dal report ISTAT",
+      "pulse_summary": "La testata Hashtag Sicilia segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 3,8%, 1,14. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Hashtag Sicilia segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 3,8%, 1,14. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "DEMOGRAFIA",
+      "pulse_score": 75,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxORkJHaEp0SWFydGxOTUs0V1dtN3lfWkNMdzJDVE5hVUc2RVJaVFFjdERQVnVDQ0hSc0xzR2x1SlZjVzZoZ19Ga1A4OFZuZXRUOGhVM2xXM2JPbG9Dazl1ZVZFSWkwMTRTSHFnMlhFU3RGT28wMnB6STJLUXdFcUtZdnYzNE94clJGV2ZLeHdaa1RZekc3YnBkYkpDcXFlVW43TjJsRG1naDFUYnBpZFRuVzJOV3M0cTRRa3pSYUlfYmdpempMTnlqM05UV3Y4RnU5V3hGWEVBaWY0VUNWUFdqeE9LeTV2MFhBSnBCSFNPeDVxUlhUQ0hhT04yck9Ud0s0X3ZOWGxwTQ?oc=5",
+        "domain": "Hashtag Sicilia",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "1,14",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "sicilia"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Hashtag Sicilia",
+        "original_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxORkJHaEp0SWFydGxOTUs0V1dtN3lfWkNMdzJDVE5hVUc2RVJaVFFjdERQVnVDQ0hSc0xzR2x1SlZjVzZoZ19Ga1A4OFZuZXRUOGhVM2xXM2JPbG9Dazl1ZVZFSWkwMTRTSHFnMlhFU3RGT28wMnB6STJLUXdFcUtZdnYzNE94clJGV2ZLeHdaa1RZekc3YnBkYkpDcXFlVW43TjJsRG1naDFUYnBpZFRuVzJOV3M0cTRRa3pSYUlfYmdpempMTnlqM05UV3Y4RnU5V3hGWEVBaWY0VUNWUFdqeE9LeTV2MFhBSnBCSFNPeDVxUlhUQ0hhT04yck9Ud0s0X3ZOWGxwTQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-4CC1FBE6EA6BECBA",
+      "story_fingerprint": "4cc1fbe6ea6becba1cbe374e",
+      "published_at": "2026-10-25T07:03:00+00:00",
+      "last_seen_at": "2026-10-27T16:54:14.235064+00:00",
+      "topic": "DEMOGRAFIA",
+      "pulse_score": 75,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxORkJHaEp0SWFydGxOTUs0V1dtN3lfWkNMdzJDVE5hVUc2RVJaVFFjdERQVnVDQ0hSc0xzR2x1SlZjVzZoZ19Ga1A4OFZuZXRUOGhVM2xXM2JPbG9Dazl1ZVZFSWkwMTRTSHFnMlhFU3RGT28wMnB6STJLUXdFcUtZdnYzNE94clJGV2ZLeHdaa1RZekc3YnBkYkpDcXFlVW43TjJsRG1naDFUYnBpZFRuVzJOV3M0cTRRa3pSYUlfYmdpempMTnlqM05UV3Y4RnU5V3hGWEVBaWY0VUNWUFdqeE9LeTV2MFhBSnBCSFNPeDVxUlhUQ0hhT04yck9Ud0s0X3ZOWGxwTQ?oc=5",
+        "domain": "Hashtag Sicilia",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Natalità in Italia, nuovo minimo storico nel 2025: nascite in calo del 3,8% e appena 1,14 figli per donna. Tutti i dettagli dal report ISTAT - Hashtag Sicilia",
+      "summary": "Natalità in Italia, nuovo minimo storico nel 2025: nascite in calo del 3,8% e appena 1,14 figli per donna. Tutti i dettagli dal report ISTAT Hashtag Sicilia",
+      "statistical_claims": [
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "1,14 ",
+          "verified": false
+        },
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "1,14 ",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "sicilia"
+      ],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
     },
