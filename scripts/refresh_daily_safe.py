@@ -284,8 +284,9 @@ def main() -> int:
                 print(f"::warning::{name}: {type(exc).__name__}: {exc}",flush=True)
     status["sections"]=sections
     status["latest_check_errors"]=failed
-    status["note"]=("Un controllo giornaliero non significa nuovi dati ogni giorno. "
-                    "L'APK va configurata per leggere AppInRome: il repository non modifica l'APK installata.")
+    status["note"]=("La raccolta Notizie viene controllata ogni tre ore; Green e Territori "
+                    "seguono la frequenza dei rispettivi servizi API. Un controllo non equivale "
+                    "a nuove osservazioni. Le APK installate non sono modificate dal repository.")
     write_json(STATUS,status)
     # Machine-readable routing contract for future Android clients.
     endpoints = {
@@ -293,7 +294,11 @@ def main() -> int:
         "repository": "AppInRome/ISTAT-PULSE-DATA",
         "checked_at": status["last_check_at"],
         "sections": {},
-        "notizie": {"index": "data/news/index.json", "articles": "data/news/articles.json"},
+        "notizie": {"index": "data/news/index.json", "articles": "data/news/articles.json",
+                    "quality": "data/news/editorial_quality_status.json"},
+        "pubblicazioni": {"articles": "data/news/observer_articles.json",
+                          "sources": "data/observer_sources_registry.json",
+                          "status": "data/observer_refresh_status.json"},
         "territori": {"events": "data/pulse_events.tsv", "observations": "data/pulse_observations.tsv",
                        "manifest": "data/pulse_observations_manifest.json"},
         "green": {"events": "data/pulse_events.tsv", "status": "data/pulse_green_status.json"},
