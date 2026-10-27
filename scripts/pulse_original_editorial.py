@@ -37,7 +37,7 @@ def series_for_story(raw, title, primary_url):
         if urlsplit(doc).scheme!="https" or not host or not origin:continue
         if not (origin==host or origin.endswith("."+host) or host.endswith("."+origin)):continue
         obs=record.get("observations")
-        if not isinstance(obs,list) or len(obs)<2:continue
+        if not isinstance(obs,list) or len(obs)<1:continue
         points=[]
         for row in obs[:30]:
             try:
@@ -54,7 +54,8 @@ def series_for_story(raw, title, primary_url):
                          "observations":points[-12:],"source_url":doc,
                          "method":record.get("extraction_method",""),
                          "relevance":len(words(indicator)&title_words)})
-    return sorted(accepted,key=lambda x:(x["relevance"],x["observations"][-1]["period"]),reverse=True)[:2]
+    return sorted(accepted,key=lambda x:(x["relevance"],len(x["observations"]),
+                                         x["observations"][-1]["period"]),reverse=True)[:2]
 
 def compose_verified(article,resolved):
     """Produce an independent original summary; NEVER reproduce newspaper prose."""
@@ -77,33 +78,59 @@ def compose_verified(article,resolved):
     evidence=series_for_story((resolved or {}).get("verified_series",[]),original,primary)
     result["verified_series_relevant"]=evidence
     if evidence:
-        serie=evidence[0]; indicator=serie["indicator"]; unit=serie["unit"]
-        p=serie["observations"]; before,after=p[-2:]
-        delta=after["value"]-before["value"]
-        action="in aumento" if delta>0 else "in diminuzione" if delta<0 else "invariato"
-        result["headline"]=f"{indicator[:1].upper()+indicator[1:]}: dato {action} nel {after['period']}"
-        result["summary"]=(f"Nei dati pubblicati da {domain}, {indicator.lower()} passa "
-                           f"da {fmt(before['value'])} {unit} ({before['period']}) "
-                           f"a {fmt(after['value'])} {unit} ({after['period']}).")
-        difference=(f"{fmt(delta)} punti percentuali" if unit=="%" else f"{fmt(delta)} {unit}")
+        serie=evidence[0]
+        indicator=serie["indicator"]
+        unit=serie["unit"]
+        p=serie["observations"]
+        latest=p[-1]
+        if len(p)>1:
+            before=p[-2]
+            delta=latest["value"]-before["value"]
+            action="in aumento" if delta>0 else "in diminuzione" if delta<0 else "invariato"
+            result["headline"]=f"{indicator[:1].upper()+indicator[1:]}: dato {action} nel {latest['period']}"
+            result["summary"]=(f"Secondo i dati originali di {domain}, {indicator.lower()} "
+                               f"passa da {fmt(before['value'])} {unit} ({before['period']}) "
+                               f"a {fmt(latest['value'])} {unit} ({latest['period']}).")
+            change=(f"{fmt(delta)} punti percentuali" if unit=="%" else f"{fmt(delta)} {unit}")
+            context=(f"Il confronto tra i due ultimi periodi disponibili mostra "
+                     f"una variazione di {change}. Non attribuiamo cause che la fonte "
+                     "non documenta.")
+            result["verification_tier"]="verified_comparable_series"
+        else:
+            result["headline"]=(f"{indicator[:1].upper()+indicator[1:]}: "
+                                f"{fmt(latest['value'])} {unit} nel {latest['period']}")
+            result["summary"]=(f"Il documento statistico originale pubblicato da {domain} "
+                               f"riporta {fmt(latest['value'])} {unit} per "
+                               f"{indicator.lower()} nel {latest['period']}.")
+            context=("La tabella ufficiale disponibile contiene un solo periodo verificabile. "
+                     "Il grafico rappresenta un valore singolo: non è una crescita "
+                     "né una diminuzione e non consente di calcolare una tendenza.")
+            result["verification_tier"]="verified_single_observation"
         result["pulse_article_body"]=[
-          {"heading":"La notizia nei numeri","text":result["summary"]},
-          {"heading":"Che cosa cambia","text":
-           f"La variazione tra i due ultimi periodi confrontabili è di {difference}. "
-           "Il confronto descrive la serie ufficiale, senza attribuire cause non documentate."},
-          {"heading":"Il metodo PULSE","text":
-           f"La rilevazione è attribuita a {domain}. I valori appartengono allo stesso indicatore "
-           "e sono stati estratti da un prospetto strutturato verificabile. "
-           "L'anno del dato non coincide necessariamente con la data di pubblicazione."}
+          {"heading":"I numeri verificati","text":result["summary"]},
+          {"heading":"Come leggere il dato","text":context},
+          {"heading":"Fonte e metodo","text":
+           f"I dati provengono da un prospetto strutturato di {domain}. "
+           "Fonte, indicatore, unità e periodo sono riportati nella tabella. "
+           "La data del fenomeno statistico non coincide necessariamente "
+           "con quella di pubblicazione."}
         ]
-        result["chart_spec"]={"type":"line" if len(p)>2 else "bar","status":"verified",
-                              "title":indicator,"unit":unit,"source_url":serie["source_url"],
-                              "data":[{"period":x["period"],"value":x["value"]} for x in p]}
-        result["table_spec"]={"status":"verified","columns":["Periodo",indicator,"Unità"],
-                              "rows":[[x["period"],fmt(x["value"]),unit] for x in p],
-                              "source_url":serie["source_url"]}
+        result["chart_spec"]={
+            "type":"line" if len(p)>2 else "bar",
+            "status":"verified",
+            "title":indicator,
+            "unit":unit,
+            "source_url":serie["source_url"],
+            "single_observation":len(p)==1,
+            "data":[{"period":x["period"],"value":x["value"]} for x in p]
+        }
+        result["table_spec"]={
+            "status":"verified",
+            "columns":["Periodo",indicator,"Unità"],
+            "rows":[[x["period"],fmt(x["value"]),unit] for x in p],
+            "source_url":serie["source_url"]
+        }
         result["editorial_status"]="verified_primary_match"
-        result["verification_tier"]="verified_comparable_series"
     else:
         # A figure merely occurring on a long web page is NOT proof that we
         # know its unit, period, or indicator. No fabricated graphics.
