@@ -40,6 +40,26 @@ class OriginalEditorialTests(unittest.TestCase):
         self.assertEqual(2, len(value["sources"]))
         self.assertTrue(all(len(p["text"]) > 30 for p in value["pulse_article_body"]))
 
+    def test_one_verified_value_gets_single_bar_not_a_fake_trend(self):
+        candidate=example()
+        candidate["headline"]="Povertà assoluta: nuovi valori nel 2025"
+        ev={"verified_series":[{
+            "verified":True,"indicator":"povertà assoluta","unit":"%",
+            "source_url":"https://www.istat.it/rapporto/povertà-2025",
+            "observations":[{"period":"2025","value":8.2}]
+        }]}
+        output=compose_verified(candidate,ev)
+        self.assertEqual("published",output.get("publication_status","published"))
+        self.assertEqual(True,output["chart_spec"]["single_observation"])
+        self.assertEqual("bar",output["chart_spec"]["type"])
+        self.assertEqual(1,len(output["table_spec"]["rows"]))
+        self.assertIn("solo periodo",output["pulse_article_body"][1]["text"])
+
+    def test_unrelated_figure_is_kept_out_of_oggi(self):
+        result=compose_verified(example(),{"verified_series":[]})
+        self.assertEqual("quarantined",result["publication_status"])
+        self.assertEqual([],result["table_spec"]["rows"])
+
     def test_no_chart_for_unrelated_or_unverified_series(self):
         evidence = {"verified_series": [{
             "verified": True, "indicator": "tasso di occupazione", "unit": "%",
