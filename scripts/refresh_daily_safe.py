@@ -116,7 +116,8 @@ def merge_events(rows: list[dict]) -> int:
 
 def news_refresh(temp: Path) -> dict:
     work = temp / "news"
-    for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json"):
+    for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json",
+                 "green_index.json", "territori_index.json"):
         copy_if_exists(DATA / "news" / name, work / "data" / "news" / name)
     copy_if_exists(DATA / "news_radar_sources.json", work / "data" / "news_radar_sources.json")
     # Previously verified source events are eligible for original PULSE analysis.
@@ -160,7 +161,16 @@ def news_refresh(temp: Path) -> dict:
     daily = audit.get("daily", {})
     if not isinstance(daily, dict) or not all(key in daily for key in ("oggi", "ieri", "archivio")):
         raise ValueError("Contatori OGGI/IERI/ARCHIVIO non presenti nell'audit")
-    for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json"):
+    for sectional in ("green","territori"):
+        section=read_json(base/(sectional+"_index.json"),None)
+        if not isinstance(section,dict) or section.get("type")!="editorial_news_index_not_api_observations":
+            raise ValueError(f"Indice editoriale {sectional} non valido")
+        for bucket in ("oggi","ieri","archivio"):
+            ids=section.get(bucket)
+            if not isinstance(ids,list) or not set(ids).issubset(set(idx[bucket])):
+                raise ValueError(f"{sectional}/{bucket}: indici incoerenti con News")
+    for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json",
+                 "green_index.json", "territori_index.json"):
         copy_if_exists(base / name, DATA / "news" / name)
     return {"status": "ok", "feeds_configured": len(feeds), "feeds_reached": successes,
             "feeds_failed": len(fail), "articles_total": len(article_list),
@@ -299,13 +309,17 @@ def main() -> int:
         "checked_at": status["last_check_at"],
         "sections": {},
         "notizie": {"index": "data/news/index.json", "articles": "data/news/articles.json",
-                    "quality": "data/news/editorial_quality_status.json"},
+                    "quality": "data/news/editorial_quality_status.json",
+                    "green_index": "data/news/green_index.json",
+                    "territori_index": "data/news/territori_index.json"},
         "pubblicazioni": {"articles": "data/news/observer_articles.json",
                           "sources": "data/observer_sources_registry.json",
                           "status": "data/observer_refresh_status.json"},
         "territori": {"events": "data/pulse_events.tsv", "observations": "data/pulse_observations.tsv",
-                       "manifest": "data/pulse_observations_manifest.json"},
-        "green": {"events": "data/pulse_events.tsv", "status": "data/pulse_green_status.json"},
+                       "manifest": "data/pulse_observations_manifest.json",
+                       "editorial_news_index":"data/news/territori_index.json"},
+        "green": {"events": "data/pulse_events.tsv", "status": "data/pulse_green_status.json",
+                  "editorial_news_index":"data/news/green_index.json"},
     }
     for section, info in sections.items():
         endpoints["sections"][section] = {"status": info.get("status", "unknown"),
