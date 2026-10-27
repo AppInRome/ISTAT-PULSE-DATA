@@ -95,6 +95,16 @@ def compose_verified(article,resolved):
             context=(f"Il confronto tra i due ultimi periodi disponibili mostra "
                      f"una variazione di {change}. Non attribuiamo cause che la fonte "
                      "non documenta.")
+            if abs(before["value"])>1e-9:
+                rel=delta/abs(before["value"])*100
+                context+=(f" La variazione relativa rispetto al periodo precedente "
+                          f"è di {fmt(rel)}%.")
+            if len(p)>2:
+                lowest=min(p,key=lambda x:x["value"])
+                highest=max(p,key=lambda x:x["value"])
+                context+=(f" Tra i {len(p)} periodi effettivamente disponibili "
+                          f"il minimo è {fmt(lowest['value'])} {unit} ({lowest['period']}) "
+                          f"e il massimo è {fmt(highest['value'])} {unit} ({highest['period']}).")
             result["verification_tier"]="verified_comparable_series"
         else:
             result["headline"]=(f"{indicator[:1].upper()+indicator[1:]}: "
