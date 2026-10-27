@@ -116,7 +116,7 @@ def merge_events(rows: list[dict]) -> int:
 
 def news_refresh(temp: Path) -> dict:
     work = temp / "news"
-    for name in ("articles.json", "candidates.json", "index.json"):
+    for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json"):
         copy_if_exists(DATA / "news" / name, work / "data" / "news" / name)
     copy_if_exists(DATA / "news_radar_sources.json", work / "data" / "news_radar_sources.json")
     cfg = read_json(DATA / "news_radar_sources.json", {})
@@ -150,7 +150,13 @@ def news_refresh(temp: Path) -> dict:
         raise ValueError("Articoli duplicati fra OGGI/IERI/ARCHIVIO")
     if not idx.get("generated_at"):
         raise ValueError("Nessuna data generazione indice")
-    for name in ("articles.json", "candidates.json", "index.json"):
+    audit = read_json(base / "editorial_quality_status.json", None)
+    if not isinstance(audit, dict) or audit.get("discovery_feeds_reached") != successes:
+        raise ValueError("Diagnostica editoriale nuova incoerente con i feed raggiunti")
+    daily = audit.get("daily", {})
+    if not isinstance(daily, dict) or not all(key in daily for key in ("oggi", "ieri", "archivio")):
+        raise ValueError("Contatori OGGI/IERI/ARCHIVIO non presenti nell'audit")
+    for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json"):
         copy_if_exists(base / name, DATA / "news" / name)
     return {"status": "ok", "feeds_configured": len(feeds), "feeds_reached": successes,
             "feeds_failed": len(fail), "articles_total": len(article_list),
