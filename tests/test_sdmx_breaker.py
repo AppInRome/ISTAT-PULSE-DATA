@@ -19,11 +19,25 @@ class SDMXBreakerTests(unittest.TestCase):
             for _ in range(3):
                 with self.assertRaises(TimeoutError):
                     sdmx.fetch(example)
-            self.assertEqual(6,online.call_count)
+            self.assertEqual(3,online.call_count)
             with self.assertRaisesRegex(RuntimeError,"circuit breaker open"):
                 sdmx.fetch(example)
-            self.assertEqual(6,online.call_count)
+            self.assertEqual(3,online.call_count)
         sdmx._CONSECUTIVE_FAILURES=0
+
+    def test_istatdata_uses_documented_endpoint_without_endperiod(self):
+        class Response:
+            def __enter__(self):return self
+            def __exit__(self,*args):return False
+            def read(self,n):return b"<GenericData/>"
+        sdmx._CONSECUTIVE_FAILURES=0
+        with patch.object(sdmx,"wait_for_sdmx_slot"), \
+             patch.object(sdmx.urllib.request,"urlopen",return_value=Response()) as online:
+            data,url=sdmx.fetch({"flow":"22_289","start":"2024"})
+            self.assertIn("/SDMXWS/rest/data/IT1,22_289/all?",url)
+            self.assertIn("startPeriod=2024",url)
+            self.assertNotIn("endPeriod=",url)
+            self.assertEqual(150,online.call_args.kwargs["timeout"])
 
     def test_success_resets_timeout_history(self):
         class Response:
