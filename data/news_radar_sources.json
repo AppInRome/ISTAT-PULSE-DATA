@@ -116,6 +116,26 @@
       "name": "PULSE osservatori ufficiali 9/9",
       "url": "https://news.google.com/rss/search?q=(site%3Aiss.it)%20(dati%20OR%20statistiche%20OR%20rapporto%20OR%20ricerca)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
       "institutional_discovery": true
+    },
+    {
+      "name": "PULSE Italia - dati di regioni province comuni",
+      "url": "https://news.google.com/rss/search?q=(regioni%20OR%20province%20OR%20comuni%20OR%20citt%C3%A0)%20(statistiche%20OR%20dati%20OR%20rapporto%20OR%20aumento%20OR%20calo)%20when%3A2d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_region": "italia"
+    },
+    {
+      "name": "PULSE Italia - stampa locale e agenzie",
+      "url": "https://news.google.com/rss/search?q=(site%3Arainews.it%20OR%20site%3Ailmessaggero.it%20OR%20site%3Ailmattino.it%20OR%20site%3Ailrestodelcarlino.it%20OR%20site%3Aquotidiano.net)%20(dati%20OR%20indagine%20OR%20rapporto%20OR%20percento)%20when%3A3d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_region": "italia"
+    },
+    {
+      "name": "PULSE Italia - Nord e Centro",
+      "url": "https://news.google.com/rss/search?q=(Lombardia%20OR%20Piemonte%20OR%20Veneto%20OR%20Toscana%20OR%20Emilia-Romagna%20OR%20Lazio)%20(dati%20OR%20statistiche%20OR%20rapporto)%20when%3A2d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_region": "italia"
+    },
+    {
+      "name": "PULSE Italia - Sud e Isole",
+      "url": "https://news.google.com/rss/search?q=(Campania%20OR%20Puglia%20OR%20Calabria%20OR%20Sicilia%20OR%20Sardegna%20OR%20Basilicata)%20(dati%20OR%20statistiche%20OR%20rapporto)%20when%3A2d&hl=it&gl=IT&ceid=IT%3Ait",
+      "discovery_region": "italia"
     }
   ],
   "official_domains": [
