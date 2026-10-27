@@ -848,7 +848,8 @@ def main():
         trusted_source=any(source_domain==d or source_domain.endswith("."+d) for d in TRUSTED_PRIMARY_DOMAINS)
         if x.get("publication_status")=="published" and x.get("editorial_status")!="journalistic_attributed" and (not substantive or not trusted_source):
             continue
-        fp=story_fingerprint(source,x.get("topic",""),x.get("headline",""),verified_raw)
+        fp=story_fingerprint(source,x.get("topic",""),
+                             x.get("original_discovery_headline") or x.get("headline",""),verified_raw)
         permanent_id="PULSE-"+fp[:16].upper()
         x=dict(x); x["id"]=permanent_id; x["story_fingerprint"]=fp
         prev=migrated.get(fp)
