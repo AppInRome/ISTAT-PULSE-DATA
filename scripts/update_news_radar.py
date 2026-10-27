@@ -93,7 +93,12 @@ def rss_items(url):
         def t(tag):
             el=item.find(tag); return (el.text or "").strip() if el is not None else ""
         title=t("title"); link=t("link"); desc=t("description"); pub=t("pubDate")
-        if title and link: out.append({"title":title,"url":link,"summary":clean_text(desc),"published_raw":pub})
+        # Google News includes the originating publisher in <source>.
+        # Prefer that field over a guessed suffix from the article title.
+        source_el=item.find("source")
+        publisher=clean_text(source_el.text or "") if source_el is not None else ""
+        if title and link: out.append({"title":title,"url":link,"summary":clean_text(desc),
+                                       "published_raw":pub,"publisher":publisher})
     return out[:MAX_ITEMS_PER_FEED]
 
 def score_candidate(text):
