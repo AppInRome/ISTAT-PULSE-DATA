@@ -81,6 +81,26 @@ jobs:
           if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 5,17 * * *' ]; then mode=all; fi
           echo "PULSE DATA mode=$mode"
           python scripts/refresh_daily_safe.py --mode "$mode"
+      - name: Controlla integrità OGGI/IERI e divieto di grafici non verificati
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('data/news')
+          ids=json.loads((root/'index.json').read_text())
+          by_id={x['id']:x for x in json.loads((root/'articles.json').read_text())['articles']}
+          for key in ('oggi','ieri','archivio'):
+              values=ids[key]
+              assert len(values)==len(set(values)),f'{key}: articoli duplicati'
+              for rid in values:
+                  article=by_id[rid]
+                  if article.get('origin_kind')=='pulse_media_radar':
+                      assert article['public_source']['role']=='journalistic_source'
+                      assert article['chart_spec']['status']!='verified'
+                      assert article['publication_tier']=='reported_by_media_pending_primary_verification'
+          print('PULSE OGGI:',len(ids['oggi']),'IERI:',len(ids['ieri']),
+                'ARCHIVIO:',len(ids['archivio']))
+          PY
       - name: Collaudo offline degli Osservatori
         run: python -m unittest discover -s tests -p test_observer_daily.py -v
       - name: Aggiorna archivio Osservatori da feed ufficiali
