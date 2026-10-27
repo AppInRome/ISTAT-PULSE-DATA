@@ -32,6 +32,10 @@ try:
     from scripts.pulse_casefile_news import add_verified_casefiles
 except ModuleNotFoundError:
     from pulse_casefile_news import add_verified_casefiles
+try:
+    from scripts.pulse_media_radar import media_brief
+except ModuleNotFoundError:
+    from pulse_media_radar import media_brief
 
 ROOT=Path("data/news")
 CFG=Path("data/news_radar_sources.json")
@@ -861,12 +865,16 @@ def main():
         producers={str(p.get("domain") or "").lower() for p in cfg.get("institutional_producers",[]) if p.get("domain")}
         trusted_source=any(source_domain==d or source_domain.endswith("."+d)
                            for d in (TRUSTED_PRIMARY_DOMAINS|producers))
-        if x.get("publication_status")=="published" and x.get("editorial_status")!="journalistic_attributed" and (not substantive or not trusted_source):
+        if (x.get("publication_status")=="published"
+                and x.get("editorial_status") not in ("journalistic_attributed","journalistic_sourced")
+                and (not substantive or not trusted_source)):
             continue
-        fp=(x.get("story_fingerprint") if x.get("origin_kind") in {"pulse_verified_event","pulse_casefile"}
+        stable_kinds={"pulse_verified_event","pulse_casefile","pulse_media_radar"}
+        fp=(x.get("story_fingerprint") if x.get("origin_kind") in stable_kinds
             else story_fingerprint(source,x.get("topic",""),
                     x.get("original_discovery_headline") or x.get("headline",""),verified_raw))
-        permanent_id=(x["id"] if x.get("origin_kind")=="pulse_casefile" else "PULSE-"+fp[:16].upper())
+        permanent_id=(x["id"] if x.get("origin_kind") in {"pulse_casefile","pulse_media_radar"}
+                      else "PULSE-"+fp[:16].upper())
         x=dict(x); x["id"]=permanent_id; x["story_fingerprint"]=fp
         # Historic articles sometimes pointed to a generic institutional home
         # page instead of their actual report. Do not republish them as verified.
@@ -939,6 +947,28 @@ def main():
         prioritized.sort(key=lambda x:x[0],reverse=True)
         feed_items.append((feed,[v for _,v in prioritized[:5]]))
     print(f"[RADAR] RSS scan complete; checked={len(feed_items)}",flush=True)
+
+    # FAST EDITORIAL PASS: publish source-attributed statistical news as a
+    # clearly labeled, unverified press report. This happens BEFORE expensive
+    # official-document verification. It cannot generate any charts or tables.
+    # Only the genuinely source-verified stories get full PULSE status.
+    radar_added=0
+    for feed, items in feed_items:
+        for item in items:
+            context=item["title"]+" "+item.get("summary","")
+            news_topic=classify_topic(context)
+            brief=media_brief(item,feed,now,news_topic,
+                              score_candidate(context)[0],detect_geo(context))
+            if not brief: continue
+            previous=by_id.get(brief["id"])
+            if previous:
+                # Never relabel a republished old item as today's story.
+                brief["published_at"]=previous.get("published_at") or brief["published_at"]
+            else:
+                radar_added+=1
+            by_id[brief["id"]]=brief
+    print(f"[RADAR] notizie stampa segnalate con attribuzione: {radar_added}", flush=True)
+
     # Interleave outlets: first story from every source, then second and so on.
     # Search and verification consume the remaining bounded runtime.
     for round_idx in range(5):
@@ -1096,12 +1126,22 @@ def main():
     casefiles = add_verified_casefiles(by_id, ROOT.parent / "editorial_casefiles.json", now)
     print(f"[PULSE REPORTAGE] casi documentati pubblicati: {casefiles}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
-    # Safety gate: only verified articles may be publicly visible.
-    public=[a for a in arts if a.get("publication_status")=="published"
-            and a.get("editorial_status") in ("verified","verified_primary_match")
-            and (a.get("public_source") or {}).get("role")=="primary_statistical_source"
-            and ((a.get("discovery") or {}).get("role")!="journalistic_radar"
-                 or (a.get("discovery") or {}).get("evidence_gate")=="strong_primary_match")]
+    # Two explicit tiers in the same dated newsroom index:
+    # 1. primary-source verified PULSE features, eligible for data charts
+    # 2. attributed press alerts, showing UNVERIFIED numbers and no charts
+    # Unattributed/unverified drafts remain quarantined.
+    def publicly_readable(a):
+        if a.get("publication_status")!="published":return False
+        if (a.get("origin_kind")=="pulse_media_radar"
+                and a.get("editorial_status")=="journalistic_sourced"
+                and (a.get("public_source") or {}).get("role")=="journalistic_source"
+                and (a.get("chart_spec") or {}).get("status")=="requires_primary_source"):
+            return True
+        return (a.get("editorial_status") in ("verified","verified_primary_match")
+                and (a.get("public_source") or {}).get("role")=="primary_statistical_source"
+                and ((a.get("discovery") or {}).get("role")!="journalistic_radar"
+                     or (a.get("discovery") or {}).get("evidence_gate")=="strong_primary_match"))
+    public=[a for a in arts if publicly_readable(a)]
     # Prioritise media-discovered, primary-verified stories within the same
     # publication day. If there are too few verified stories, do not invent
     # material to force an arbitrary 99% media quota.
@@ -1140,6 +1180,10 @@ def main():
                 if (a.get("chart_spec") or {}).get("status")=="verified"),
             "media_discovered":sum(1 for a in day_articles
                 if (a.get("discovery") or {}).get("role")=="journalistic_radar"),
+            "media_reports_not_primary_verified":sum(1 for a in day_articles
+                if a.get("publication_tier")=="reported_by_media_pending_primary_verification"),
+            "original_pulse_verified":sum(1 for a in day_articles
+                if (a.get("public_source") or {}).get("role")=="primary_statistical_source"),
             "distinct_primary_domains":len(set(
                 (a.get("public_source") or {}).get("domain","") for a in day_articles))
         }
