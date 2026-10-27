@@ -135,7 +135,8 @@ def news_refresh(temp: Path) -> dict:
     if not isinstance(candidates.get("candidates"), list):
         raise ValueError("Diagnostica RSS assente")
     fail = [c for c in candidates["candidates"] if c.get("status") == "radar_error"]
-    successes = len(feeds) - len(fail)
+    success_records = [c for c in candidates["candidates"] if c.get("status") == "radar_fetched"]
+    successes = len(success_records)
     if successes < 1:
         raise ValueError("Tutti i feed RSS risultano irraggiungibili")
     article_ids = {x.get("id") for x in article_list}
