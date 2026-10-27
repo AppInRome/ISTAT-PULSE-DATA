@@ -60,6 +60,13 @@ jobs:
           python -m unittest discover -s tests -p test_sdmx_breaker.py -v
       - name: Convalida snapshot esistente
         run: python scripts/refresh_daily_safe.py --dry-run
+      - name: Verifica categorie editoriali
+        run: |
+          python - <<'PY'
+          from scripts.pulse_media_radar import eligible, media_brief
+          from scripts.pulse_original_editorial import compose_verified
+          print("PULSE: separazione verificati / stampa operativa")
+          PY
       - name: Aggiornamento con verifica prima della pubblicazione
         shell: bash
         env:
