@@ -24,6 +24,14 @@ class QuantityEvidenceTests(unittest.TestCase):
         self.assertIsNone(italian_quantity("9 abc"))
         self.assertEqual(1234.5,italian_quantity("1.234,50"))
 
+    def test_single_period_chart_never_claims_trend(self):
+        from scripts.pulse_evidence import single_period_evidence
+        rows=[["Indicatore","2025"],["Abitanti residenti","53.700"]]
+        ev=single_period_evidence(rows,"https://www.istat.it/dati/residenti.csv","hash","sheet")
+        self.assertEqual(1,len(ev))
+        self.assertEqual(1,len(ev[0]["observations"]))
+        self.assertEqual(53700,ev[0]["observations"][0]["value"])
+
     def test_source_provenance_in_csv(self):
         data=("Indicatore (tonnellate);2024;2025\n"
               "Rifiuti urbani in tonnellate;1.234;1.350\n").encode()
