@@ -53,6 +53,10 @@ jobs:
           if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 16 * * *' ]; then mode=news; fi
           echo "PULSE DATA mode=$mode"
           python scripts/refresh_daily_safe.py --mode "$mode"
+      - name: Aggiorna archivio Osservatori da feed ufficiali
+        shell: bash
+        run: |
+          python scripts/update_observer_daily.py
       - name: Pubblica solo i dati effettivamente validati
         shell: bash
         run: |
@@ -61,7 +65,8 @@ jobs:
           git add -- data/news/articles.json data/news/candidates.json data/news/index.json \
             data/pulse_events.tsv data/pulse_manifest.json data/pulse_observations.tsv \
             data/pulse_observations_manifest.json data/pulse_events_sdmx_last_good.tsv \
-            data/pulse_green_status.json data/sources_catalog.json data/refresh_status.json data/live_data_index.json
+            data/pulse_green_status.json data/sources_catalog.json data/refresh_status.json data/live_data_index.json \
+            data/news/observer_articles.json data/observer_refresh_status.json
           if git diff --cached --quiet; then echo 'Nessun dato modificato'; exit 0; fi
           git commit -m 'PULSE DATA: aggiornamenti verificati delle fonti'
           git push origin HEAD:main
