@@ -1,40 +1,41 @@
 {
-  "last_check_at": "2026-10-26T20:36:20+00:00",
-  "latest_check_errors": 0,
+  "last_check_at": "2026-10-27T05:41:19+00:00",
+  "latest_check_errors": 1,
   "note": "Un controllo giornaliero non significa nuovi dati ogni giorno. L'APK va configurata per leggere AppInRome: il repository non modifica l'APK installata.",
   "sections": {
     "green": {
       "events_added_or_updated": 0,
-      "events_validated": 425,
-      "last_attempt_at": "2026-10-26T20:38:02+00:00",
-      "last_success_at": "2026-10-26T20:38:02+00:00",
+      "events_validated": 428,
+      "last_attempt_at": "2026-10-27T05:43:28+00:00",
+      "last_success_at": "2026-10-27T05:43:28+00:00",
       "message": "Indicatori aggiornati solo quando la rispettiva fonte ha fornito dati verificati.",
-      "sources_error": 1,
+      "sources_error": 0,
       "sources_total": 19,
-      "sources_with_events": 15,
+      "sources_with_events": 16,
       "status": "ok"
     },
     "notizie": {
-      "articles_total": 227,
+      "articles_total": 231,
       "feeds_configured": 17,
       "feeds_failed": 0,
       "feeds_reached": 17,
-      "ieri": 0,
-      "last_attempt_at": "2026-10-26T19:55:45+00:00",
-      "last_success_at": "2026-10-26T19:55:45+00:00",
+      "ieri": 2,
+      "last_attempt_at": "2026-10-27T05:41:46+00:00",
+      "last_success_at": "2026-10-27T05:41:46+00:00",
       "message": "Notizie verificabili; zero articoli recenti non equivale a errore di rete.",
-      "oggi": 1,
+      "oggi": 0,
       "status": "ok"
     },
     "territori": {
       "connected_series": 21,
+      "error": "pulse_observations_sdmx.tsv: 0 righe inferiori al minimo 1",
       "events_added_or_updated": 0,
       "events_validated": 21,
-      "last_attempt_at": "2026-10-26T20:40:08+00:00",
+      "last_attempt_at": "2026-10-27T05:52:20+00:00",
       "last_success_at": "2026-10-26T20:40:08+00:00",
       "message": "Serie SDMX: i periodi statistici originali restano visibili.",
       "observations_new_or_revised": 1,
-      "status": "ok"
+      "status": "error"
     }
   },
   "version": 1

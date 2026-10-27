@@ -1,6 +1,45 @@
 {
-  "generated_at": "2026-10-26T19:55:05.228414+00:00",
+  "generated_at": "2026-10-27T05:41:19.561107+00:00",
   "articles": [
+    {
+      "id": "PULSE-8A488E4A361ADF0F",
+      "story_fingerprint": "8a488e4a361adf0f3745777c",
+      "published_at": "2026-10-26T20:03:14+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
+      "topic": "SALUTE",
+      "pulse_score": 49,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMG9YZ28xallwdHlySzNMT3l6MlAySER2WXp2T1c5a0M5cm8xVm9aT2s2OFFfNUd6VXVWakZSdnNQbXU2bFNUbHZlY29VYVh4c3RlbkRfbTUzelc4MGh1QnFxSTh1VUJXd3VXQ1A1Ym54ZEQyVENYQlNZRXREQWo1LXVRdUF5MzBJY0VWcU4wX3N3cmR5YzNCemVkYVpoX2ZzYUNjMXdmcWNYYmY4?oc=5",
+        "domain": "Demografica",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Longevità, l’Italia tocca il record di 84 anni di vita: ma la salute si ferma prima dei 60 - Demografica",
+      "summary": "Longevità, l’Italia tocca il record di 84 anni di vita: ma la salute si ferma prima dei 60 Demografica",
+      "statistical_claims": [
+        {
+          "raw_value": "84 ",
+          "verified": false
+        },
+        {
+          "raw_value": "60 ",
+          "verified": false
+        },
+        {
+          "raw_value": "84 ",
+          "verified": false
+        },
+        {
+          "raw_value": "60 ",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
     {
       "id": "PULSE-D2FE0A2ED058DEC0",
       "story_fingerprint": "d2fe0a2ed058dec0366c28f2",
@@ -52,7 +91,7 @@
       "id": "PULSE-C1EC08AF87B89ED0",
       "story_fingerprint": "c1ec08af87b89ed0d788ba0f",
       "published_at": "2026-10-26T11:07:12+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 65,
       "patterns": [],
@@ -80,6 +119,45 @@
         },
         {
           "raw_value": "199",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-A729D6130E235AA8",
+      "story_fingerprint": "a729d6130e235aa8ca68cd48",
+      "published_at": "2026-10-26T11:07:02+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
+      "topic": "ISTRUZIONE",
+      "pulse_score": 65,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNY0cxcGR0dVQxOFkzYmNZR0ZMcHAzMTBhTmZMMkdyOF92VnhiZDloSFhXWnNVZ0g2YnNxX3BZSFl0UDhXbGZLaVM2MGtfMms4VndmNWVLeW02bFR3M2hGRjNDd1R2T2RWS0FvZy1Oby1KSTNCOGFHcGxWbE1FbzBDRkV6STExTkdka2lRbUY3Z1JGMzBXT3FLTXlNM3BQTGstZGtRbGs0b0JQQXF3bTRiVFl6VHVjR0hxZzZtN1lCbUt0cVZXbGRfaVJiNWRDUnJUaDlxdDg3b3BaM0dsNmRDbWw2M2dpbVVmZ2xDZU1wVzRsblYwUjFyZmNhQXRHdw?oc=5",
+        "domain": "Tecnica della Scuola",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Istat, \"il 43% degli studenti di terza media non raggiunge competenze sufficienti in italiano e il 45% in matematica\". Il rapporto Bes 2026 - Tecnica della Scuola",
+      "summary": "Istat, \"il 43% degli studenti di terza media non raggiunge competenze sufficienti in italiano e il 45% in matematica\". Il rapporto Bes 2026 Tecnica della Scuola",
+      "statistical_claims": [
+        {
+          "raw_value": "43%",
+          "verified": false
+        },
+        {
+          "raw_value": "45%",
+          "verified": false
+        },
+        {
+          "raw_value": "43%",
+          "verified": false
+        },
+        {
+          "raw_value": "45%",
           "verified": false
         }
       ],
@@ -158,10 +236,64 @@
       "publication_status": "quarantined"
     },
     {
+      "id": "PULSE-17441EC068DCA956",
+      "story_fingerprint": "17441ec068dca956a08efce5",
+      "published_at": "2026-10-26T10:05:06+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
+      "topic": "LAVORO",
+      "pulse_score": 89,
+      "public_source": {
+        "url": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+        "domain": "istat.it",
+        "role": "primary_statistical_source",
+        "verification_method": "named_or_topic_domain_search",
+        "verification_score": 95
+      },
+      "discovery": {
+        "visible": false,
+        "role": "journalistic_radar",
+        "outlet": "Google News - economia lavoro",
+        "original_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNazRCVmpjVWx1cF92LW0wbW1EXzg5dWhMN0h4bmZpTFhuTk13dmlDMmhYU2M1VmcwUUxGUmVrbDJKWFdXRy1XRGdPU2FnR3lma29tREg4YjZndm04bV9BZk5TU1l2YWFhWXdNc0YyZWJMaE5xUUdnd0NCSHFmbTZFbk9tSDYxZjJnWlpTUnFhZnpiNjgwQzhoRHlUTWVKNjlHaFl2NUVvLUh6em9DSE9ZMDdWQXFWLXI5SmFES0RPenBNeTFNXzhJMmNjY2dDZGc2bGJqbVJQdWhOel9mcFYtOGR4WmU?oc=5",
+        "evidence_gate": "strong_primary_match"
+      },
+      "period_reference": null,
+      "latest_source_update": null,
+      "headline": "Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat",
+      "summary": "La pubblicazione «Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat» contiene dati riscontrati nel documento statistico originale. Valori individuati: 5,4 milioni, 5,4 milioni. Per associare ogni valore al suo indicatore, territorio e periodo di riferimento, consultare la fonte.",
+      "statistical_claims": [
+        {
+          "raw_value": "83,7 ",
+          "verified": false
+        },
+        {
+          "raw_value": "5,4 milioni",
+          "verified": true
+        },
+        {
+          "raw_value": "83,7 ",
+          "verified": false
+        },
+        {
+          "raw_value": "5,4 milioni",
+          "verified": true
+        }
+      ],
+      "verified_series": [],
+      "territories": [],
+      "chart_spec": {
+        "type": "auto",
+        "status": "requires_primary_series",
+        "reason": "candidate_contains_multiple_numeric_values"
+      },
+      "map_spec": null,
+      "editorial_status": "verified_primary_match",
+      "publication_status": "published"
+    },
+    {
       "id": "PULSE-4DADE317EFC55169",
       "story_fingerprint": "4dade317efc55169a11c4f46",
       "published_at": "2026-10-26T09:23:51+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "AMBIENTE",
       "pulse_score": 59,
       "patterns": [],
@@ -194,7 +326,7 @@
       "id": "PULSE-AE2E24A6BB01AB30",
       "story_fingerprint": "ae2e24a6bb01ab30fbc1fa3f",
       "published_at": "2026-10-26T08:27:00+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -292,10 +424,49 @@
       "publication_status": "published"
     },
     {
+      "id": "PULSE-0F740418F27D4461",
+      "story_fingerprint": "0f740418f27d4461e2100351",
+      "published_at": "2026-10-26T03:42:17+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
+      "topic": "DEMOGRAFIA",
+      "pulse_score": 50,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOamNVekZsTmRTQUxnZ2RhZ3VUeWVoNG9mNlNWRXNYMFVxaHdzSlJNRGc5TTNEZTlmREZwcEVmZ0Rmd3c1NDVzT05aLUhPXzlqeW1jMHcwRTFHZ0N1OExWZkJLMDdJNlpmRS00TTRwSmV0SnhGcG1WcUl6aHJtcndTTklNVFhTTlJjTFhzNUR4TGpEQ0hQaW40bU5xRVZKRzF6d3VoWDloRGV1UHhYbGVsQjJwaE1vN2M5bzJYb2t4TQ?oc=5",
+        "domain": "Assinews.it",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "ISTAT, nel 2025 nascite in calo del 3,8%: la fecondità scende a 1,14 figli per donna - Assinews.it",
+      "summary": "ISTAT, nel 2025 nascite in calo del 3,8%: la fecondità scende a 1,14 figli per donna Assinews.it",
+      "statistical_claims": [
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "1,14 ",
+          "verified": false
+        },
+        {
+          "raw_value": "3,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "1,14 ",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
       "id": "PULSE-6EA000BE804170F8",
       "story_fingerprint": "6ea000be804170f8b46c1bc7",
       "published_at": "2026-10-25T19:05:43+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -375,7 +546,7 @@
       "id": "PULSE-E4942BB8D2942176",
       "story_fingerprint": "e4942bb8d2942176163cdc77",
       "published_at": "2026-10-25T16:50:00+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -414,7 +585,7 @@
       "id": "PULSE-EF420147F3A13577",
       "story_fingerprint": "ef420147f3a1357764f8ffa4",
       "published_at": "2026-10-25T15:05:47+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 50,
       "patterns": [],
@@ -461,7 +632,7 @@
       "id": "PULSE-717CA8A8175FCA91",
       "story_fingerprint": "717ca8a8175fca91a1d27e2d",
       "published_at": "2026-10-25T14:58:40+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 65,
       "patterns": [],
@@ -502,7 +673,7 @@
       "id": "PULSE-73FAD5CA3674F9AD",
       "story_fingerprint": "73fad5ca3674f9adbc227327",
       "published_at": "2026-10-25T13:00:48+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 55,
       "patterns": [],
@@ -549,7 +720,7 @@
       "id": "PULSE-DD3A839B76A2AC5D",
       "story_fingerprint": "dd3a839b76a2ac5d5f3624e7",
       "published_at": "2026-10-25T11:16:20+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -580,7 +751,7 @@
       "id": "PULSE-670D9A31CD65181C",
       "story_fingerprint": "670d9a31cd65181cd82e7d26",
       "published_at": "2026-10-25T10:22:00+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -619,7 +790,7 @@
       "id": "PULSE-A83FF10B5442AB22",
       "story_fingerprint": "a83ff10b5442ab22d8d4b401",
       "published_at": "2026-10-24T17:57:16+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -658,7 +829,7 @@
       "id": "PULSE-3580BE1F67D2BD14",
       "story_fingerprint": "3580be1f67d2bd14631288e6",
       "published_at": "2026-10-24T08:50:00+00:00",
-      "last_seen_at": "2026-10-26T19:55:05.228414+00:00",
+      "last_seen_at": "2026-10-27T05:41:19.561107+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 59,
       "patterns": [],
