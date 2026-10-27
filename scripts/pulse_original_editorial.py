@@ -49,7 +49,7 @@ def series_for_story(raw, title, primary_url):
             except (KeyError,TypeError,ValueError):
                 points=[];break
         points.sort(key=lambda x:x["period"])
-        if len(points)<2 or len({x["period"] for x in points})!=len(points):continue
+        if len(points)<1 or len({x["period"] for x in points})!=len(points):continue
         accepted.append({"indicator":indicator[:140],"unit":unit[:40],
                          "observations":points[-12:],"source_url":doc,
                          "method":record.get("extraction_method",""),
