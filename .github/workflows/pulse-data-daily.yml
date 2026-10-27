@@ -65,3 +65,24 @@ jobs:
           if git diff --cached --quiet; then echo 'Nessun dato modificato'; exit 0; fi
           git commit -m 'PULSE DATA: aggiornamenti verificati delle fonti'
           git push origin HEAD:main
+      - name: Riporta errore se una sezione dati e' incompleta
+        if: always()
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          path = pathlib.Path('data/refresh_status.json')
+          if not path.exists():
+              print('::error::Nessun report dati generato')
+              sys.exit(1)
+          report = json.loads(path.read_text(encoding='utf-8'))
+          bad = [(name, section.get('status'))
+                 for name, section in report.get('sections', {}).items()
+                 if section.get('last_attempt_at') and
+                 section['last_attempt_at'] >= report.get('last_check_at', '') and
+                 section.get('status') not in ('ok',)]
+          print('Controllo finale sezioni:', report.get('sections'))
+          if bad or int(report.get('latest_check_errors', 0)):
+              print('::error::Sezioni non aggiornate completamente: ' + str(bad))
+              sys.exit(1)
+          PY
