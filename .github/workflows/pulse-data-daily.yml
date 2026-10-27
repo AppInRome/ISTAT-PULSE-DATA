@@ -46,6 +46,7 @@ jobs:
           python -m unittest discover -s tests -p test_original_editorial.py -v
           python -m unittest discover -s tests -p test_quantity_evidence.py -v
           python -m unittest discover -s tests -p test_radar_coverage.py -v
+          python -m unittest discover -s tests -p test_news_promotion.py -v
       - name: Convalida snapshot esistente
         run: python scripts/refresh_daily_safe.py --dry-run
       - name: Aggiornamento con verifica prima della pubblicazione
