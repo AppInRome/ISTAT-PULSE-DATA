@@ -1,0 +1,649 @@
+{
+  "version": 1,
+  "goal": "Monitoraggio stampa italiana a fini di selezione statistica; le fonti di dati numerici sono verificate separatamente.",
+  "monitoring_mode": "Google News RSS and publisher direct RSS when reachable",
+  "source_count": 80,
+  "unique_domains": 77,
+  "sources": [
+    {
+      "name": "Il Sole 24 Ore",
+      "domain": "ilsole24ore.com",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Corriere della Sera",
+      "domain": "corriere.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "La Repubblica",
+      "domain": "repubblica.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "La Stampa",
+      "domain": "lastampa.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Fatto Quotidiano",
+      "domain": "ilfattoquotidiano.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Messaggero",
+      "domain": "ilmessaggero.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Giornale",
+      "domain": "ilgiornale.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Tempo",
+      "domain": "iltempo.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Libero",
+      "domain": "liberoquotidiano.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Foglio",
+      "domain": "ilfoglio.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Avvenire",
+      "domain": "avvenire.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Manifesto",
+      "domain": "ilmanifesto.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Domani",
+      "domain": "editorialedomani.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Riformista",
+      "domain": "ilriformista.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Quotidiano Nazionale",
+      "domain": "quotidiano.net",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "ItaliaOggi",
+      "domain": "italiaoggi.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Milano Finanza",
+      "domain": "milanofinanza.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Wall Street Italia",
+      "domain": "wallstreetitalia.com",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Investire Magazine",
+      "domain": "investiremag.it",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "La Verità",
+      "domain": "laverita.info",
+      "category": "nazionali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "ANSA",
+      "domain": "ansa.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "AGI",
+      "domain": "agi.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Adnkronos",
+      "domain": "adnkronos.com",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Askanews",
+      "domain": "askanews.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "LaPresse",
+      "domain": "lapresse.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Italpress",
+      "domain": "italpress.com",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Agenzia Dire",
+      "domain": "dire.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Radiocor",
+      "domain": "ilsole24ore.com",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Teleborsa",
+      "domain": "teleborsa.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "MF Newswires",
+      "domain": "milanofinanza.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Agenzia Nova",
+      "domain": "agenzianova.com",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "9Colonne",
+      "domain": "9colonne.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Agenparl",
+      "domain": "agenparl.eu",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Labitalia",
+      "domain": "adnkronos.com",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "GEA",
+      "domain": "geagency.it",
+      "category": "agenzie",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Lavoce.info",
+      "domain": "lavoce.info",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Openpolis",
+      "domain": "openpolis.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Pagella Politica",
+      "domain": "pagellapolitica.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Facta",
+      "domain": "facta.news",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Sky TG24",
+      "domain": "tg24.sky.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "RaiNews",
+      "domain": "rainews.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "TGcom24",
+      "domain": "tgcom24.mediaset.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Fanpage",
+      "domain": "fanpage.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Today.it",
+      "domain": "today.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Open",
+      "domain": "open.online",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Money.it",
+      "domain": "money.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "QuiFinanza",
+      "domain": "quifinanza.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Formiche.net",
+      "domain": "formiche.net",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Startmag",
+      "domain": "startmag.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Wired Italia",
+      "domain": "wired.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Agenda Digitale",
+      "domain": "agendadigitale.eu",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "GreenMe",
+      "domain": "greenme.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "QualEnergia",
+      "domain": "qualenergia.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Altreconomia",
+      "domain": "altreconomia.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Post",
+      "domain": "ilpost.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Valigia Blu",
+      "domain": "valigiablu.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Scienza in Rete",
+      "domain": "scienzainrete.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Sanità Informazione",
+      "domain": "sanitainformazione.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Quotidiano Sanità",
+      "domain": "quotidianosanita.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Tecnica della Scuola",
+      "domain": "tecnicadellascuola.it",
+      "category": "specializzate",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 3
+    },
+    {
+      "name": "Il Mattino",
+      "domain": "ilmattino.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Il Gazzettino",
+      "domain": "ilgazzettino.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Il Giorno",
+      "domain": "ilgiorno.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Il Resto del Carlino",
+      "domain": "ilrestodelcarlino.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "La Nazione",
+      "domain": "lanazione.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Il Secolo XIX",
+      "domain": "ilsecoloxix.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Il Piccolo",
+      "domain": "ilpiccolo.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Messaggero Veneto",
+      "domain": "messaggeroveneto.gelocal.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "L'Arena",
+      "domain": "larena.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Bresciaoggi",
+      "domain": "bresciaoggi.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "L'Eco di Bergamo",
+      "domain": "ecodibergamo.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Giornale di Brescia",
+      "domain": "giornaledibrescia.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "La Gazzetta del Mezzogiorno",
+      "domain": "lagazzettadelmezzogiorno.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "La Sicilia",
+      "domain": "lasicilia.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Giornale di Sicilia",
+      "domain": "gds.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Quotidiano di Puglia",
+      "domain": "quotidianodipuglia.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "La Nuova Sardegna",
+      "domain": "lanuovasardegna.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "L'Unione Sarda",
+      "domain": "unionesarda.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Corriere dell'Umbria",
+      "domain": "corrieredellumbria.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    },
+    {
+      "name": "Il Centro",
+      "domain": "ilcentro.it",
+      "category": "locali",
+      "status": "discovery-configured",
+      "method": "Google News site-domain discovery; direct feed where available",
+      "cadence_hours": 6
+    }
+  ]
+}
