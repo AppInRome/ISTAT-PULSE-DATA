@@ -12,6 +12,7 @@ import json
 import math
 import urllib.request
 import time
+import threading
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -243,6 +244,22 @@ DATASETS = [
     },
 ]
 
+# ISTAT documents a limit of five SDMX queries per minute per IP. Keep
+# a 13-second interval (less than five requests/min) across retries too.
+_REQUEST_LOCK = threading.Lock()
+_NEXT_SDMX_REQUEST = 0.0
+
+
+def wait_for_sdmx_slot() -> None:
+    global _NEXT_SDMX_REQUEST
+    with _REQUEST_LOCK:
+        delay = max(0.0, _NEXT_SDMX_REQUEST - time.monotonic())
+        if delay:
+            print(f"SDMX RATE LIMIT: pause {delay:.1f} s", flush=True)
+            time.sleep(delay)
+        _NEXT_SDMX_REQUEST = time.monotonic() + 13.0
+
+
 TOTALISH = {
     "9","ALL","TOT","TOTAL","WORLD","T","00","0000","0010",
     "45_47_X46","551_553","B-D","B_E","B-E","B_S_X_O","B-S_X-O"
@@ -268,6 +285,7 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
     max_bytes = 25 * 1024 * 1024
     for attempt in range(1, 3):
         try:
+            wait_for_sdmx_slot()
             print(f"SDMX REQUEST {flow} attempt {attempt}/2", flush=True)
             with urllib.request.urlopen(req, timeout=25) as response:
                 raw = response.read(max_bytes + 1)
@@ -459,7 +477,7 @@ def main():
     fetched={}
     # ISTATData intermittently throttles/breaks under higher concurrency on hosted runners.
     # Keep parallelism deliberately low so a refresh is less likely to become partial.
-    with ThreadPoolExecutor(max_workers=2) as pool:
+    with ThreadPoolExecutor(max_workers=1) as pool:
         futures={pool.submit(fetch,d):key for key,d in unique.items()}
         for future in as_completed(futures):
             key=futures[future]
@@ -593,7 +611,9 @@ def main():
         "source_family":"IstatData SDMX — ISTAT",
         "events":len(events),
         "monitored_series":len(DATASETS),
-        "connected_series":sum(1 for s in sources if s["status"] in {"ok","monitored_no_signal","fallback_last_good"}),
+        # Only fresh SDMX responses count as connected; cached fallback != live.
+        "connected_series":sum(1 for s in sources if s["status"] == "ok"),
+        "fallback_series":sum(1 for s in sources if s["status"] == "fallback_last_good"),
         "sources":sources,
         "latest_period":latest_period,
     }
