@@ -119,6 +119,9 @@ def news_refresh(temp: Path) -> dict:
     for name in ("articles.json", "candidates.json", "index.json", "editorial_quality_status.json"):
         copy_if_exists(DATA / "news" / name, work / "data" / "news" / name)
     copy_if_exists(DATA / "news_radar_sources.json", work / "data" / "news_radar_sources.json")
+    # Previously verified source events are eligible for original PULSE analysis.
+    # No live ISTAT request and no redistribution of an entire external article.
+    copy_if_exists(DATA / "pulse_events.tsv", work / "data" / "pulse_events.tsv")
     cfg = read_json(DATA / "news_radar_sources.json", {})
     feeds = cfg.get("feeds", [])
     if not isinstance(feeds, list) or len(feeds) < 2:
