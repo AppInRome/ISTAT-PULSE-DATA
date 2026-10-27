@@ -1087,7 +1087,7 @@ def main():
     if runtime_exceeded():
         print("[RADAR] runtime budget reached; publishing partial verified results", flush=True)
 
-    added = augment_with_verified_events(by_id, Path("data/pulse_events.tsv"), now)
+    added = augment_with_verified_events(by_id, ROOT.parent / "pulse_events.tsv", now)
     print(f"[PULSE ORIGINALI] nuove analisi da dati già convalidati: {added}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Safety gate: only verified articles may be publicly visible.
