@@ -6,9 +6,11 @@ on:
   push:
     paths:
       - ".github/workflows/pulse-data-daily.yml"
+  # Eight runs/day, exactly 3h apart in UTC. GitHub may delay a run.
+  # Full API refreshes twice/day; news/publications on every run.
   schedule:
-    - cron: '17 5 * * *'
-    - cron: '17 16 * * *'
+    - cron: '17 2,8,11,14,20,23 * * *' # Notizie + Pubblicazioni
+    - cron: '17 5,17 * * *'          # Notizie + Green + Territori + Pubblicazioni
   workflow_dispatch:
     inputs:
       mode:
@@ -65,7 +67,8 @@ jobs:
         run: |
           mode="${MODE_REQUESTED:-all}"
           if [ "${{ github.event_name }}" = "push" ]; then mode=news; fi
-          if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 16 * * *' ]; then mode=news; fi
+          if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 2,8,11,14,20,23 * * *' ]; then mode=news; fi
+          if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 5,17 * * *' ]; then mode=all; fi
           echo "PULSE DATA mode=$mode"
           python scripts/refresh_daily_safe.py --mode "$mode"
       - name: Collaudo offline degli Osservatori
