@@ -65,7 +65,9 @@ jobs:
           python - <<'PY'
           from scripts.pulse_media_radar import eligible, media_brief
           from scripts.pulse_original_editorial import compose_verified
-          print("PULSE: separazione verificati / stampa operativa")
+          from scripts import update_news_radar as radar
+          print("PULSE: stampa giornalistica e statistiche verificate sono due categorie distinte")
+          print("PULSE: il radar nazionale usa",radar.MAX_ITEMS_PER_FEED,"notizie RSS per feed")
           PY
       - name: Aggiornamento con verifica prima della pubblicazione
         shell: bash
