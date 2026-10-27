@@ -859,6 +859,14 @@ def main():
                              x.get("original_discovery_headline") or x.get("headline",""),verified_raw)
         permanent_id="PULSE-"+fp[:16].upper()
         x=dict(x); x["id"]=permanent_id; x["story_fingerprint"]=fp
+        # Historic articles sometimes pointed to a generic institutional home
+        # page instead of their actual report. Do not republish them as verified.
+        if x.get("publication_status") == "published":
+            from_url=urllib.parse.urlsplit(source)
+            if from_url.path.strip("/").lower() in ("","it","en","home","homepage","index.html"):
+                x["publication_status"]="quarantined"
+                x["editorial_status"]="needs_specific_primary_document"
+                x["verification_tier"]="homepage_is_not_a_statistical_report"
         prev=migrated.get(fp)
         if prev:
             dates=[d for d in (prev.get("published_at"),x.get("published_at")) if d]
