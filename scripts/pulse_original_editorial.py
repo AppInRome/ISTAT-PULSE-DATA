@@ -122,6 +122,10 @@ def compose_verified(article,resolved):
         result["chart_spec"]={"type":"none","status":"no_verified_comparable_series"}
         result["table_spec"]={"status":"no_verified_comparable_series","columns":[],"rows":[]}
         result["verification_tier"]="primary_page_identified_series_pending"
+        # A page with coincidental matching digits is not sufficient for an
+        # original statistical article. Keep it as a research draft, never OGGI.
+        result["publication_status"]="quarantined"
+        result["editorial_status"]="needs_verified_comparable_series"
     result["pulse_title"]=result["headline"]
     result["pulse_summary"]=result["summary"]
     return result
