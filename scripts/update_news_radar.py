@@ -20,6 +20,10 @@ except ModuleNotFoundError:
     from pulse_evidence_adapters import (
         discover_attachments, parse_sdmx_json, parse_sdmx_xml, load_revision_metadata
     )
+try:
+    from scripts.pulse_original_editorial import compose_verified
+except ModuleNotFoundError:
+    from pulse_original_editorial import compose_verified
 
 ROOT=Path("data/news")
 CFG=Path("data/news_radar_sources.json")
@@ -259,6 +263,10 @@ def extract_verified_year_comparisons(raw, content_type, url):
 
 
 def verify_primary_page(url, numbers, keywords, allowed_domains):
+    # A home page can contain unrelated figures. Never call it a report.
+    page=urllib.parse.urlsplit(url)
+    if page.path.rstrip("/").lower() in ("", "/it", "/en", "/home", "/homepage", "/index.html"):
+        return None
     host=canonical_host(url)
     dom=official_domain(host,allowed_domains)
     if not dom: return None
@@ -485,6 +493,18 @@ def resolve_primary(discovery_title, discovery_text, topic, numbers, direct_link
     institutional=cfg.get("official_domains",[])
     attempts=[]
     named_domains=extract_named_primary_domains(discovery_title+" "+discovery_text[:5000])
+    # Names of the original 65 producers are independent sources, not ISTAT aliases.
+    combined_title=discovery_title+" "+discovery_text[:2500]
+    for producer in cfg.get("institutional_producers", []):
+        pname=str(producer.get("name") or "").split(" - ")[0].strip()
+        pdom=str(producer.get("domain") or "").strip()
+        if not pname or not pdom: continue
+        if len(pname) <= 4 and pname.isupper():
+            found=bool(re.search(r"(?<![A-Za-z])"+re.escape(pname)+r"(?![A-Za-z])",combined_title))
+        else:
+            found=bool(re.search(r"(?<!\w)"+re.escape(pname)+r"(?!\w)",combined_title,re.I))
+        if found and pdom not in named_domains:
+            named_domains.insert(0,pdom)
     allowed=list(dict.fromkeys(institutional+named_domains))
     kws=title_keywords(discovery_title+" "+discovery_text[:1800])
 
@@ -530,7 +550,7 @@ def resolve_primary(discovery_title, discovery_text, topic, numbers, direct_link
             # Do not use the news discovery page itself as primary.
             if any(x in host for x in ("news.google.","repubblica.it","ansa.it","adnkronos.com","ilgiornaleditalia.it","torinonews24.it","zazoom.it","ore12.net")):
                 continue
-            if not any(host==d or host.endswith("."+d) for d in TRUSTED_PRIMARY_DOMAINS):
+            if not any(host==d or host.endswith("."+d) for d in (TRUSTED_PRIMARY_DOMAINS | set(allowed))):
                 continue
             dynamic_allowed=list(dict.fromkeys(allowed+[host]))
             v=verify_primary_page(rr["url"],numbers,kws,dynamic_allowed)
@@ -725,7 +745,13 @@ def derive_headline(topic, primary, geos, numbers):
     return f"{label}, nuovo aggiornamento statistico per {where}"
 
 def classify_topic(text):
-    low=text.lower()
+    # Strip news outlet label: "... - Orizzonte Scuola" must not turn
+    # a story about births into a story about school.
+    low=(text or "").rsplit(" - ",1)[0].lower()
+    if any(x in low for x in ("titoli di stato","debito pubblico","emissioni obbligazion","emissioni di bond")):
+        return "ECONOMIA"
+    if any(x in low for x in ("nascite","natalità","fecondità","mortalità","popolazione residente","speranza di vita","saldo naturale")):
+        return "DEMOGRAFIA"
     rules=[
       ("LAVORO",("lavor","occupaz","disoccup","salari","stipendi")),
       ("ECONOMIA",("pil","inflaz","prezzi","consumi","redditi","imprese","export","import","pressione fiscale","fisco","tasse","profitti","risparmio")),
@@ -847,8 +873,16 @@ def main():
     now=datetime.now(timezone.utc)
     today=now.astimezone(ROME).date().isoformat()
 
-    # Newspaper/agency discovery first. Official RSS remains a validated fallback.
-    feeds = sorted(cfg.get("feeds", []), key=lambda f: not bool(f.get("primary_source", False)))
+    # Rotate diverse national/local media channels between morning and evening.
+    # Previous boolean sort accidentally ALWAYS put ISTAT ahead of newspapers.
+    configured = cfg.get("feeds", [])
+    primary = [f for f in configured if f.get("primary_source")]
+    discovery = [f for f in configured if not f.get("primary_source")]
+    if discovery:
+        offset = ((now.astimezone(ROME).date().toordinal() * 7
+                   + now.astimezone(ROME).hour // 12) % len(discovery))
+        discovery = discovery[offset:] + discovery[:offset]
+    feeds = discovery + primary
     for feed in feeds:
         if runtime_exceeded() or len(candidates) >= MAX_CANDIDATES_TOTAL:
             break
@@ -997,6 +1031,8 @@ def main():
               "editorial_status":"verified_primary_match",
               "publication_status":"published"
             }
+            # Original editorial copy: source verified, no reprint of the media headline.
+            article=compose_verified(article,resolved)
             by_id[aid]=article
 
     if runtime_exceeded():
