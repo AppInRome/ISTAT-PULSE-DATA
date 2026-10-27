@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-27T13:54:23.161492+00:00",
+  "feeds_configured": 4,
+  "feeds_reached": 2,
+  "articles_new": 1,
+  "articles_total": 5860,
+  "sources": {
+    "CNA": {
+      "status": "error",
+      "new": 0,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "CNR": {
+      "status": "ok",
+      "new": 1,
+      "items": 20
+    },
+    "SVIMEZ": {
+      "status": "error",
+      "new": 0,
+      "error": "Redirect verso dominio non autorizzato"
+    },
+    "SINAB": {
+      "status": "ok",
+      "new": 0,
+      "items": 3
+    }
+  },
+  "other_institutions": "not_yet_connected"
+}

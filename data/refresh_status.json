@@ -1,6 +1,6 @@
 {
-  "last_check_at": "2026-10-27T05:41:19+00:00",
-  "latest_check_errors": 1,
+  "last_check_at": "2026-10-27T13:53:29+00:00",
+  "latest_check_errors": 0,
   "note": "Un controllo giornaliero non significa nuovi dati ogni giorno. L'APK va configurata per leggere AppInRome: il repository non modifica l'APK installata.",
   "sections": {
     "green": {
@@ -15,13 +15,13 @@
       "status": "ok"
     },
     "notizie": {
-      "articles_total": 231,
-      "feeds_configured": 17,
+      "articles_total": 248,
+      "feeds_configured": 30,
       "feeds_failed": 0,
-      "feeds_reached": 17,
-      "ieri": 2,
-      "last_attempt_at": "2026-10-27T05:41:46+00:00",
-      "last_success_at": "2026-10-27T05:41:46+00:00",
+      "feeds_reached": 30,
+      "ieri": 1,
+      "last_attempt_at": "2026-10-27T13:54:22+00:00",
+      "last_success_at": "2026-10-27T13:54:22+00:00",
       "message": "Notizie verificabili; zero articoli recenti non equivale a errore di rete.",
       "oggi": 0,
       "status": "ok"
