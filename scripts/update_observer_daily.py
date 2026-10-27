@@ -24,12 +24,13 @@ FEEDS = (
     ("SVIMEZ", "svimez.info", "https://lnx.svimez.info/svimez/feed/"),
     ("SINAB", "sinab.it", "https://sinab.it/feed/"),
 )
-STAT = re.compile(
-    r"\b(dat[io]|statistic[hae]|rapport[oi]|osservator[io]|indagin[ei]|ricerc[hae]"
-    r"|mercat[oi]|rinnovabil[ie]|energ[ia]|ambient[ea]|occupazion[ei]|imprese"
-    r"|salut[ei]|tass[oi]|percentual[ie]|prezz[io]|reddit[io]|pension[ei]"
-    r"|agricoltur[ae]|biologic[oa]|clima|economi[ae]|industria)\b", re.I
+STAT_TERMS = (
+    "dati", "statistic", "rapporto", "osservatorio", "indagine", "ricerca",
+    "mercato", "rinnovabil", "energia", "ambient", "occupazion", "imprese",
+    "salute", "tasso", "percentual", "prezzi", "reddito", "pension",
+    "agricoltur", "biologic", "clima", "economia", "industria"
 )
+
 
 def host_allowed(url: str, domain: str) -> bool:
     try:
@@ -114,7 +115,7 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
                 dt = parse_date(date)
                 if not dt or dt.year != now.year or dt > now + timedelta(hours=6):
                     continue
-                if not host_allowed(link, domain) or not STAT.search(title):
+                if not host_allowed(link, domain) or not any(term in title.casefold() for term in STAT_TERMS):
                     continue
                 uid = "OBS-" + hashlib.sha256((name + "|" + link.split("#", 1)[0]).encode()).hexdigest()[:18].upper()
                 if uid in by_id or link in existing_urls:
