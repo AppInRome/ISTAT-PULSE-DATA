@@ -52,7 +52,10 @@ class NewsRadarCoverageTests(unittest.TestCase):
                 audit=json.loads((root/"editorial_quality_status.json").read_text())
                 self.assertEqual(4,audit["discovery_feeds_reached"])
                 self.assertEqual(0,audit["discovery_feeds_failed"])
-                self.assertEqual(0,json.loads(idx.read_text())["counts"]["oggi"])
+                published=json.loads(idx.read_text())["counts"]["oggi"]
+                self.assertEqual(4,published)
+                self.assertEqual(4,audit["daily"]["oggi"]["media_reports_not_primary_verified"])
+                self.assertEqual(0,audit["daily"]["oggi"]["with_verified_chart"])
             finally:
                 radar.ROOT,radar.CFG,radar.ARTICLES,radar.CANDIDATES,radar.INDEX=old
 
