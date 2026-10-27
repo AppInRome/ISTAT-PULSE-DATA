@@ -54,6 +54,7 @@ jobs:
           python -m unittest discover -s tests -p test_quantity_evidence.py -v
           python -m unittest discover -s tests -p test_radar_coverage.py -v
           python -m unittest discover -s tests -p test_media_radar.py -v
+          python -m unittest discover -s tests -p test_sectional_news.py -v
           python -m unittest discover -s tests -p test_verified_event_news.py -v
           python -m unittest discover -s tests -p test_casefile_news.py -v
           python -m unittest discover -s tests -p test_news_promotion.py -v
@@ -112,7 +113,7 @@ jobs:
         run: |
           git config user.name 'PULSE Data Bot'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- data/news/articles.json data/news/candidates.json data/news/index.json data/news/editorial_quality_status.json \
+          git add -- data/news/articles.json data/news/candidates.json data/news/index.json data/news/editorial_quality_status.json data/news/green_index.json data/news/territori_index.json \
             data/pulse_events.tsv data/pulse_manifest.json data/pulse_observations.tsv \
             data/pulse_observations_manifest.json data/pulse_events_sdmx_last_good.tsv \
             data/pulse_green_status.json data/sources_catalog.json data/refresh_status.json data/live_data_index.json \
