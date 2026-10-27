@@ -1,8 +1,12 @@
 {
-  "version": "0.6-data-current",
-  "generated_at": "2026-10-24T14:27:07.956987+00:00",
-  "feed_sha256": "4bb861c450ff07de68973aa4c8096e13d20ef75c561eae68b02adf75f6258f5e",
-  "source_period": "feed corrente 2026 · ultimo dato 2026-Q2",
+  "annual_radar_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
   "complete_years": [
     2019,
     2020,
@@ -12,18 +16,36 @@
     2024,
     2025
   ],
-  "annual_radar_years": [
-    2020,
-    2021,
-    2022,
-    2023,
-    2024,
-    2025
-  ],
-  "latest_period": "2026-Q2",
-  "latest_period_provisional": true,
-  "quality_A_municipalities": 7493,
+  "current_feed_year": 2026,
+  "disclaimer": "Prototipo indipendente basato su dati pubblici ISTAT. Non è un prodotto ufficiale ISTAT.",
+  "events_by_source": {
+    "ACI - Open data mobilità e parco veicoli": 4,
+    "ARERA - Statistiche del servizio idrico": 3,
+    "Copernicus - Climate Data Store": 2,
+    "DEMO ISTAT — Bilancio demografico mensile": 131,
+    "EEA - Dati ambientali europei": 1,
+    "ENEA - Rapporto annuale efficienza energetica": 3,
+    "Eurostat - Statistiche ambientali ed energia": 3,
+    "GSE - Statistiche delle rinnovabili": 3,
+    "ISPRA - Catasto nazionale rifiuti": 18,
+    "ISPRA - Consumo di suolo e indicatori territoriali": 15,
+    "ISPRA - Indicatori ambientali e biodiversità": 1,
+    "ISPRA - Inventario nazionale delle emissioni": 2,
+    "ISPRA - Risorse idriche": 3,
+    "ISPRA/SNPA - Qualità dell'aria": 1,
+    "ISTAT - Ambiente urbano": 313,
+    "ISTAT - Indicatori SDGs": 36,
+    "ISTAT - Statistiche sull'acqua": 17,
+    "IstatData SDMX — ISTAT": 21,
+    "Terna - Portale Dati del sistema elettrico": 5
+  },
   "feed_events": 582,
+  "feed_sha256": "e7589edf9cdd032367f48b66d9384d95050e9beb8908b417df8f256c76c68597",
+  "generated_at": "2026-10-27T17:55:30+00:00",
+  "green_events": 430,
+  "historical_sources_excluded": [
+    "BES dei territori — ISTAT"
+  ],
   "indicators": [
     "Arrivi turistici",
     "Clima di fiducia delle imprese",
@@ -123,80 +145,443 @@
     "Tasso di occupazione",
     "Vendite al dettaglio"
   ],
-  "sources": [
-    {
-      "year": 2019,
-      "url": "https://demo.istat.it/data/d7b/D7B2019.csv.zip",
-      "method": "legacy_zip",
-      "sha256": "8441755f9f396680d2d7e03bdd2bead2c45779ede3441f3f4289ee91e15fdcef",
-      "bytes": 4312514,
-      "months": 12
-    },
-    {
-      "year": 2020,
-      "url": "https://demo.istat.it/data/d7b/D7B2020.csv.zip",
-      "method": "legacy_zip",
-      "sha256": "cf6c46dd6d990a921c1e0afe5fc486561f6e84a6bd78bafc4a624a6bfcdf588a",
-      "bytes": 4276476,
-      "months": 12
-    },
-    {
-      "year": 2021,
-      "url": "https://demo.istat.it/data/d7b/D7B2021.csv.zip",
-      "method": "legacy_zip",
-      "sha256": "1f068b9d52e24ec52368f69281edf25e67227efb6fe330c0ebc1a8f8a6cca6d0",
-      "bytes": 4298885,
-      "months": 12
-    },
-    {
-      "year": 2022,
-      "url": "https://demo.istat.it/data/d7b/D7B2022.csv.zip",
-      "method": "legacy_zip",
-      "sha256": "e274fe1f054e58e36d7d2123a217fad9d0920c0a9089c9019f1e330a70c53be4",
-      "bytes": 4327591,
-      "months": 12
-    },
-    {
-      "year": 2023,
-      "url": "https://demo.istat.it/data/d7b/D7B2023.csv.zip",
-      "method": "legacy_zip",
-      "sha256": "ef72938c79f5a150ad8bde0aad7571a3996cda502a5cf090f419762fee97d221",
-      "bytes": 4315968,
-      "months": 12
-    },
-    {
-      "year": 2024,
-      "url": "https://demo.istat.it/data/d7b/D7B2024.csv.zip",
-      "method": "legacy_zip",
-      "sha256": "eec56606b16958531c7e8241e5b71bfbf26a0e8137dc29ec4b126c9a70609599",
-      "bytes": 4313199,
-      "months": 12
-    },
-    {
-      "year": 2025,
-      "url": "https://demo.istat.it/app/?a=2025&i=D7B&l=it",
-      "endpoint": "https://demo.istat.it/app/RPCCerca.php",
-      "method": "official_query_api",
-      "months": 12,
-      "provisional": true,
-      "municipality_month_rows": 94752
-    },
-    {
-      "year": 2026,
-      "url": "https://demo.istat.it/app/?a=2026&i=D7B&l=it",
-      "endpoint": "https://demo.istat.it/app/RPCCerca.php",
-      "method": "official_query_api",
-      "months": 7,
-      "provisional": true,
-      "municipality_month_rows": 55258
-    }
-  ],
-  "disclaimer": "Prototipo indipendente basato su dati pubblici ISTAT. Non è un prodotto ufficiale ISTAT.",
-  "current_feed_year": 2026,
-  "historical_sources_excluded": [
-    "BES dei territori — ISTAT"
-  ],
-  "green_events": 430,
+  "istatdata_sdmx": {
+    "connected_series": 21,
+    "events": 21,
+    "latest_period": "2026-09",
+    "monitored_series": 21,
+    "source_family": "IstatData SDMX — ISTAT",
+    "sources": [
+      {
+        "area": "Prezzi e inflazione",
+        "bytes": 6228720,
+        "flow": "167_745_DF_DCSP_NIC1B2025_1",
+        "latest_period": "2026-09",
+        "name": "Prezzi al consumo NIC",
+        "provides": "Indice generale mensile dei prezzi al consumo per l'intera collettività.",
+        "series_key": {
+          "DATA_TYPE": "85",
+          "ECOICOP_2": "00",
+          "FREQ": "M",
+          "MEASURE": "4",
+          "REF_AREA": "IT"
+        },
+        "sha256": "f7a22759798fe6d60b4fe67c0f15a2997debcb2998160304d3a45f965d14598d",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/167_745_DF_DCSP_NIC1B2025_1/all/IT1?startPeriod=2026&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 1566997,
+        "flow": "151_874_DF_DCCV_TAXDISOCCUMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Tasso di disoccupazione",
+        "provides": "Tasso di disoccupazione mensile nazionale.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-74",
+          "DATA_TYPE": "UNEM_R",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "975e98002f35b6d384d26dc36085e56d504cbafb4ba5882b931d025fc752b9cd",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/151_874_DF_DCCV_TAXDISOCCUMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 1574499,
+        "flow": "150_872_DF_DCCV_TAXOCCUMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Tasso di occupazione",
+        "provides": "Tasso di occupazione mensile nazionale.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-64",
+          "DATA_TYPE": "EMP_R",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "658716c9a5bf507ba003ac9023c640c52e2cd3363b91d35a8249942032aadf67",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/150_872_DF_DCCV_TAXOCCUMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 815633,
+        "flow": "150_875_DF_DCCV_OCCUPATIMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Occupati",
+        "provides": "Numero mensile di occupati a livello nazionale.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-89",
+          "DATA_TYPE": "EMP",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "PERM_TEMP_EMPLOYEES": "9",
+          "POSIZ_PROF": "9",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "809f174d6767aec054af2a3d8aaf57f4c703cfa624ae651d4a78e90aba4fcb96",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/150_875_DF_DCCV_OCCUPATIMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 1566997,
+        "flow": "151_874_DF_DCCV_TAXDISOCCUMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Tasso di disoccupazione giovanile",
+        "provides": "Tasso di disoccupazione mensile dei giovani 15-24 anni.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-24",
+          "DATA_TYPE": "UNEM_R",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "975e98002f35b6d384d26dc36085e56d504cbafb4ba5882b931d025fc752b9cd",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/151_874_DF_DCCV_TAXDISOCCUMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 1555678,
+        "flow": "151_877_DF_DCCV_DISOCCUPTMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Disoccupati",
+        "provides": "Numero mensile di persone disoccupate a livello nazionale.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-74",
+          "DATA_TYPE": "UNEMP",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "1b29a2138356a72814ea3d8f3706763d5b761b8b3193783911524d0effa01170",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/151_877_DF_DCCV_DISOCCUPTMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 1575204,
+        "flow": "152_878_DF_DCCV_TAXINATTMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Tasso di inattività",
+        "provides": "Tasso di inattività mensile della popolazione 15-64 anni.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-64",
+          "DATA_TYPE": "INAC_R",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "2e57b2f06be03a97c04f7cf00cfcdf6cd370424d6f3d273808d9dd98bb1d7829",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/152_878_DF_DCCV_TAXINATTMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 1566462,
+        "flow": "152_879_DF_DCCV_INATTIVMENS1_1",
+        "latest_period": "2026-08",
+        "name": "Inattivi",
+        "provides": "Numero mensile di persone inattive tra 15 e 64 anni.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "AGE": "Y15-64",
+          "DATA_TYPE": "INAC",
+          "EDITION": "2026M10G1",
+          "FREQ": "M",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "71554c4f84b4a8f87931bb4fdbcc8ca7989106727d7dd8658dd5435e8844a237",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/152_879_DF_DCCV_INATTIVMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026"
+      },
+      {
+        "area": "Lavoro e mercato del lavoro",
+        "bytes": 591024,
+        "flow": "149_577_DF_DCSC_OROS_1_3",
+        "latest_period": "2026-Q2",
+        "name": "Posizioni lavorative dipendenti",
+        "provides": "Indice trimestrale delle posizioni lavorative dipendenti.",
+        "series_key": {
+          "ADJUSTMENT": "N",
+          "DATA_TYPE": "FT_EMPL_2",
+          "ECON_ACTIVITY_NACE_2007": "0011",
+          "FREQ": "Q",
+          "REF_AREA": "IT"
+        },
+        "sha256": "8c4c98605aceb30a3481aa0cabab498a94b7ae2edc225572aae8c656330ec1ef",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/149_577_DF_DCSC_OROS_1_3/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Imprese e industria",
+        "bytes": 0,
+        "flow": "115_333_DF_DCSC_INDXPRODIND_1_6",
+        "latest_period": "",
+        "name": "Produzione industriale",
+        "provides": "Indice mensile della produzione industriale, base 2021.",
+        "series_key": {},
+        "sha256": "",
+        "signal_emitted": true,
+        "status": "fallback_last_good",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/115_333_DF_DCSC_INDXPRODIND_1_6/all/IT1"
+      },
+      {
+        "area": "Imprese e industria",
+        "bytes": 5302499,
+        "flow": "114_191_DF_DCSC_ORDFATT_9",
+        "latest_period": "2026-07",
+        "name": "Fatturato industriale",
+        "provides": "Indice mensile del valore del fatturato industriale, base 2021.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "DATA_TYPE": "IND_TURN_21",
+          "ECON_ACTIVITY_NACE_2007": "0020",
+          "FREQ": "M",
+          "MARKET": "T",
+          "REF_AREA": "IT"
+        },
+        "sha256": "fcd1180da1e4c9c3ce5ce2bbddb22acd46ccd9d518e5a431c35ac79cf321428e",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/114_191_DF_DCSC_ORDFATT_9/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Imprese e industria",
+        "bytes": 3297847,
+        "flow": "119_367_DF_DCSC_FATTSERVIZ_1_4",
+        "latest_period": "2026-07",
+        "name": "Fatturato dei servizi",
+        "provides": "Indice mensile del fatturato dei servizi, base 2021.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "DATA_TYPE": "SERV_TURN_VAL_21",
+          "ECON_ACTIVITY_NACE_2007": "0014",
+          "FREQ": "M",
+          "REF_AREA": "IT"
+        },
+        "sha256": "8bfc192d4f85413a19481d431da1339f613d4c97db78283d1279e5b956752f0c",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/119_367_DF_DCSC_FATTSERVIZ_1_4/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Potere d'acquisto e consumi",
+        "bytes": 147974,
+        "flow": "120_337_DF_DCSC_COMMDET_1_15",
+        "latest_period": "2026-08",
+        "name": "Vendite al dettaglio",
+        "provides": "Indice mensile del volume delle vendite al dettaglio, base 2021.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "DATA_TYPE": "RTD_TURN_VOL_21",
+          "FREQ": "M",
+          "PERS_EMPL_SIZE_CLASS": "TOTAL",
+          "PRODUCT_SECTOR": "1",
+          "REF_AREA": "IT",
+          "TYPE_OF_SALES": "9"
+        },
+        "sha256": "0fce7d288873981232c474185199665d925342f2d5a0b9719d089f7f580475f8",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/120_337_DF_DCSC_COMMDET_1_15/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Imprese e industria",
+        "bytes": 8108,
+        "flow": "6_64_DF_DCSC_IESI_2",
+        "latest_period": "2026-09",
+        "name": "Clima di fiducia delle imprese",
+        "provides": "Indice mensile sintetico del clima di fiducia delle imprese.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "DATA_TYPE": "IESI_21",
+          "ECON_ACTIVITY_NACE_2007": "C-F-45-47-0017",
+          "FREQ": "M",
+          "REF_AREA": "IT"
+        },
+        "sha256": "76630108f1621d39356fbdf3c511bd3211773f817cefa671e132723cbac5cbde",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/6_64_DF_DCSC_IESI_2/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Imprese e industria",
+        "bytes": 1644297,
+        "flow": "111_40",
+        "latest_period": "2026-09",
+        "name": "Fiducia delle costruzioni",
+        "provides": "Indice mensile di fiducia delle imprese delle costruzioni.",
+        "series_key": {
+          "ADJUSTMENT": "Y",
+          "DATA_TYPE": "CLIMACOS_21",
+          "ECON_ACTIVITY_NACE_2007": "F",
+          "FREQ": "M",
+          "PERS_EMPL_SIZE_CLASS": "TOTAL",
+          "REF_AREA": "IT"
+        },
+        "sha256": "3a594d13bc2b79f942601e8bae662c2729c3f40206f114c5be26bf0e926348e2",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/111_40/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Imprese e industria",
+        "bytes": 0,
+        "flow": "117_266",
+        "latest_period": "",
+        "name": "Fiducia del commercio",
+        "provides": "Indice mensile di fiducia delle imprese del commercio al dettaglio.",
+        "series_key": {},
+        "sha256": "",
+        "signal_emitted": true,
+        "status": "fallback_last_good",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/117_266/all/IT1"
+      },
+      {
+        "area": "Potere d'acquisto e consumi",
+        "bytes": 2610831,
+        "flow": "30_264",
+        "latest_period": "2026-09",
+        "name": "Fiducia dei consumatori",
+        "provides": "Indice mensile del clima di fiducia dei consumatori.",
+        "series_key": {
+          "ADJUSTMENT": "N",
+          "AGE": "TOTAL",
+          "DATA_TYPE": "1_1_WE",
+          "EDU_LEV_HIGHEST": "99",
+          "FREQ": "M",
+          "LABPROF_STATUS_A_FID": "99",
+          "REF_AREA": "IT",
+          "SEX": "9"
+        },
+        "sha256": "bd3c677441452ef068c589dee086bb28d6b149f294c88f53d0a7fe2723e4812d",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/30_264/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Prezzi e inflazione",
+        "bytes": 10636393,
+        "flow": "145_360_DF_DCSC_PREZZPIND_1_4",
+        "latest_period": "2026-08",
+        "name": "Prezzi alla produzione dell'industria",
+        "provides": "Indice mensile dei prezzi alla produzione dell'industria, base 2021.",
+        "series_key": {
+          "ADJUSTMENT": "N",
+          "DATA_TYPE": "IND_PRIC_2021",
+          "ECON_ACTIVITY_NACE_2007": "0020",
+          "FREQ": "M",
+          "MARKET": "T",
+          "REF_AREA": "IT"
+        },
+        "sha256": "8c468016880b35ff1ee4625a5201d22dbf58199e2824a51dc56d60e7e781a7fe",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/145_360_DF_DCSC_PREZZPIND_1_4/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Prezzi e inflazione",
+        "bytes": 2845068,
+        "flow": "143_222_DF_DCSC_PREIMPIND_2",
+        "latest_period": "2026-08",
+        "name": "Prezzi all'importazione",
+        "provides": "Indice mensile dei prezzi all'importazione, base 2021.",
+        "series_key": {
+          "ADJUSTMENT": "N",
+          "DATA_TYPE": "IND_IMPPRIC_2021",
+          "ECON_ACTIVITY_NACE_2007": "0020",
+          "FREQ": "M",
+          "MARKET": "T",
+          "REF_AREA": "IT"
+        },
+        "sha256": "0a34d8f526feaaa3d1349dc90a57903fb0f20e68e18868ddbd1084e8d49e84ba",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/143_222_DF_DCSC_PREIMPIND_2/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Turismo",
+        "bytes": 17195806,
+        "flow": "122_54_DF_DCSC_TUR_3",
+        "latest_period": "2026-08",
+        "name": "Arrivi turistici",
+        "provides": "Arrivi mensili negli esercizi ricettivi italiani.",
+        "series_key": {
+          "ADJUSTMENT": "N",
+          "COASTAL_AREA": "ALL",
+          "COUNTRY_RES_GUESTS": "WORLD",
+          "DATA_TYPE": "AR",
+          "ECON_ACTIVITY_NACE_2007": "551_553",
+          "FREQ": "M",
+          "LOCALITY_TYPE": "ALL",
+          "REF_AREA": "IT",
+          "SIZE_BY_NUMBER_ROOMS": "TOT",
+          "TYPE_ACCOMMODATION": "ALL",
+          "URBANIZ_DEGREE": "ALL"
+        },
+        "sha256": "8cb2294fbc4ec2dd029cb8eaf8ac25fb64da2f7bc226a19cb2f38c918ffdd5c3",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/122_54_DF_DCSC_TUR_3/all/IT1?startPeriod=2022&endPeriod=2026"
+      },
+      {
+        "area": "Turismo",
+        "bytes": 17195806,
+        "flow": "122_54_DF_DCSC_TUR_3",
+        "latest_period": "2026-08",
+        "name": "Presenze turistiche",
+        "provides": "Presenze mensili negli esercizi ricettivi italiani.",
+        "series_key": {
+          "ADJUSTMENT": "N",
+          "COASTAL_AREA": "ALL",
+          "COUNTRY_RES_GUESTS": "WORLD",
+          "DATA_TYPE": "NI",
+          "ECON_ACTIVITY_NACE_2007": "551_553",
+          "FREQ": "M",
+          "LOCALITY_TYPE": "ALL",
+          "REF_AREA": "IT",
+          "SIZE_BY_NUMBER_ROOMS": "TOT",
+          "TYPE_ACCOMMODATION": "ALL",
+          "URBANIZ_DEGREE": "ALL"
+        },
+        "sha256": "8cb2294fbc4ec2dd029cb8eaf8ac25fb64da2f7bc226a19cb2f38c918ffdd5c3",
+        "signal_emitted": true,
+        "status": "ok",
+        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/122_54_DF_DCSC_TUR_3/all/IT1?startPeriod=2022&endPeriod=2026"
+      }
+    ]
+  },
+  "latest_period": "2026-Q2",
+  "latest_period_provisional": true,
+  "note_refresh": "Incrementale: mantiene gli ultimi dati validi; le date dei periodi statistici restano originali.",
+  "quality_A_municipalities": 7493,
   "source_families": [
     "ACI - Open data mobilità e parco veicoli",
     "ARERA - Statistiche del servizio idrico",
@@ -218,458 +603,74 @@
     "IstatData SDMX — ISTAT",
     "Terna - Portale Dati del sistema elettrico"
   ],
-  "events_by_source": {
-    "ISTAT - Ambiente urbano": 313,
-    "DEMO ISTAT — Bilancio demografico mensile": 131,
-    "ISTAT - Indicatori SDGs": 36,
-    "IstatData SDMX — ISTAT": 21,
-    "ISPRA - Catasto nazionale rifiuti": 18,
-    "ISTAT - Statistiche sull'acqua": 17,
-    "ISPRA - Consumo di suolo e indicatori territoriali": 15,
-    "Terna - Portale Dati del sistema elettrico": 5,
-    "ACI - Open data mobilità e parco veicoli": 4,
-    "Eurostat - Statistiche ambientali ed energia": 3,
-    "ENEA - Rapporto annuale efficienza energetica": 3,
-    "GSE - Statistiche delle rinnovabili": 3,
-    "ARERA - Statistiche del servizio idrico": 3,
-    "ISPRA - Risorse idriche": 3,
-    "ISPRA - Inventario nazionale delle emissioni": 2,
-    "Copernicus - Climate Data Store": 2,
-    "EEA - Dati ambientali europei": 1,
-    "ISPRA - Indicatori ambientali e biodiversità": 1,
-    "ISPRA/SNPA - Qualità dell'aria": 1
-  },
-  "istatdata_sdmx": {
-    "source_family": "IstatData SDMX — ISTAT",
-    "events": 21,
-    "monitored_series": 21,
-    "connected_series": 21,
-    "sources": [
-      {
-        "area": "Prezzi e inflazione",
-        "name": "Prezzi al consumo NIC",
-        "provides": "Indice generale mensile dei prezzi al consumo per l'intera collettività.",
-        "flow": "167_745_DF_DCSP_NIC1B2025_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/167_745_DF_DCSP_NIC1B2025_1/all/IT1?startPeriod=2026&endPeriod=2026",
-        "status": "ok",
-        "bytes": 6228720,
-        "sha256": "f7a22759798fe6d60b4fe67c0f15a2997debcb2998160304d3a45f965d14598d",
-        "latest_period": "2026-09",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "85",
-          "MEASURE": "4",
-          "ECOICOP_2": "00"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Tasso di disoccupazione",
-        "provides": "Tasso di disoccupazione mensile nazionale.",
-        "flow": "151_874_DF_DCCV_TAXDISOCCUMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/151_874_DF_DCCV_TAXDISOCCUMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1566997,
-        "sha256": "975e98002f35b6d384d26dc36085e56d504cbafb4ba5882b931d025fc752b9cd",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "UNEM_R",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-74",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Tasso di occupazione",
-        "provides": "Tasso di occupazione mensile nazionale.",
-        "flow": "150_872_DF_DCCV_TAXOCCUMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/150_872_DF_DCCV_TAXOCCUMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1574499,
-        "sha256": "658716c9a5bf507ba003ac9023c640c52e2cd3363b91d35a8249942032aadf67",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "EMP_R",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-64",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Occupati",
-        "provides": "Numero mensile di occupati a livello nazionale.",
-        "flow": "150_875_DF_DCCV_OCCUPATIMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/150_875_DF_DCCV_OCCUPATIMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 815633,
-        "sha256": "809f174d6767aec054af2a3d8aaf57f4c703cfa624ae651d4a78e90aba4fcb96",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "EMP",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-89",
-          "POSIZ_PROF": "9",
-          "PERM_TEMP_EMPLOYEES": "9",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Tasso di disoccupazione giovanile",
-        "provides": "Tasso di disoccupazione mensile dei giovani 15-24 anni.",
-        "flow": "151_874_DF_DCCV_TAXDISOCCUMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/151_874_DF_DCCV_TAXDISOCCUMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1566997,
-        "sha256": "975e98002f35b6d384d26dc36085e56d504cbafb4ba5882b931d025fc752b9cd",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "UNEM_R",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-24",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Disoccupati",
-        "provides": "Numero mensile di persone disoccupate a livello nazionale.",
-        "flow": "151_877_DF_DCCV_DISOCCUPTMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/151_877_DF_DCCV_DISOCCUPTMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1555678,
-        "sha256": "1b29a2138356a72814ea3d8f3706763d5b761b8b3193783911524d0effa01170",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "UNEMP",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-74",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Tasso di inattività",
-        "provides": "Tasso di inattività mensile della popolazione 15-64 anni.",
-        "flow": "152_878_DF_DCCV_TAXINATTMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/152_878_DF_DCCV_TAXINATTMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1575204,
-        "sha256": "2e57b2f06be03a97c04f7cf00cfcdf6cd370424d6f3d273808d9dd98bb1d7829",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "INAC_R",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-64",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Inattivi",
-        "provides": "Numero mensile di persone inattive tra 15 e 64 anni.",
-        "flow": "152_879_DF_DCCV_INATTIVMENS1_1",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/152_879_DF_DCCV_INATTIVMENS1_1/all/IT1?startPeriod=2024&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1566462,
-        "sha256": "71554c4f84b4a8f87931bb4fdbcc8ca7989106727d7dd8658dd5435e8844a237",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "INAC",
-          "ADJUSTMENT": "Y",
-          "SEX": "9",
-          "AGE": "Y15-64",
-          "EDITION": "2026M10G1"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Lavoro e mercato del lavoro",
-        "name": "Posizioni lavorative dipendenti",
-        "provides": "Indice trimestrale delle posizioni lavorative dipendenti.",
-        "flow": "149_577_DF_DCSC_OROS_1_3",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/149_577_DF_DCSC_OROS_1_3/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 591024,
-        "sha256": "8c4c98605aceb30a3481aa0cabab498a94b7ae2edc225572aae8c656330ec1ef",
-        "latest_period": "2026-Q2",
-        "series_key": {
-          "FREQ": "Q",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "FT_EMPL_2",
-          "ADJUSTMENT": "N",
-          "ECON_ACTIVITY_NACE_2007": "0011"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Imprese e industria",
-        "name": "Produzione industriale",
-        "provides": "Indice mensile della produzione industriale, base 2021.",
-        "flow": "115_333_DF_DCSC_INDXPRODIND_1_6",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/115_333_DF_DCSC_INDXPRODIND_1_6/all/IT1",
-        "status": "fallback_last_good",
-        "bytes": 0,
-        "sha256": "",
-        "latest_period": "",
-        "series_key": {},
-        "signal_emitted": true
-      },
-      {
-        "area": "Imprese e industria",
-        "name": "Fatturato industriale",
-        "provides": "Indice mensile del valore del fatturato industriale, base 2021.",
-        "flow": "114_191_DF_DCSC_ORDFATT_9",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/114_191_DF_DCSC_ORDFATT_9/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 5302499,
-        "sha256": "fcd1180da1e4c9c3ce5ce2bbddb22acd46ccd9d518e5a431c35ac79cf321428e",
-        "latest_period": "2026-07",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "IND_TURN_21",
-          "ADJUSTMENT": "Y",
-          "MARKET": "T",
-          "ECON_ACTIVITY_NACE_2007": "0020"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Imprese e industria",
-        "name": "Fatturato dei servizi",
-        "provides": "Indice mensile del fatturato dei servizi, base 2021.",
-        "flow": "119_367_DF_DCSC_FATTSERVIZ_1_4",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/119_367_DF_DCSC_FATTSERVIZ_1_4/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 3297847,
-        "sha256": "8bfc192d4f85413a19481d431da1339f613d4c97db78283d1279e5b956752f0c",
-        "latest_period": "2026-07",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "SERV_TURN_VAL_21",
-          "ADJUSTMENT": "Y",
-          "ECON_ACTIVITY_NACE_2007": "0014"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Potere d'acquisto e consumi",
-        "name": "Vendite al dettaglio",
-        "provides": "Indice mensile del volume delle vendite al dettaglio, base 2021.",
-        "flow": "120_337_DF_DCSC_COMMDET_1_15",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/120_337_DF_DCSC_COMMDET_1_15/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 147974,
-        "sha256": "0fce7d288873981232c474185199665d925342f2d5a0b9719d089f7f580475f8",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "RTD_TURN_VOL_21",
-          "ADJUSTMENT": "Y",
-          "PRODUCT_SECTOR": "1",
-          "TYPE_OF_SALES": "9",
-          "PERS_EMPL_SIZE_CLASS": "TOTAL"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Imprese e industria",
-        "name": "Clima di fiducia delle imprese",
-        "provides": "Indice mensile sintetico del clima di fiducia delle imprese.",
-        "flow": "6_64_DF_DCSC_IESI_2",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/6_64_DF_DCSC_IESI_2/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 8108,
-        "sha256": "76630108f1621d39356fbdf3c511bd3211773f817cefa671e132723cbac5cbde",
-        "latest_period": "2026-09",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "IESI_21",
-          "ADJUSTMENT": "Y",
-          "ECON_ACTIVITY_NACE_2007": "C-F-45-47-0017"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Imprese e industria",
-        "name": "Fiducia delle costruzioni",
-        "provides": "Indice mensile di fiducia delle imprese delle costruzioni.",
-        "flow": "111_40",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/111_40/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 1644297,
-        "sha256": "3a594d13bc2b79f942601e8bae662c2729c3f40206f114c5be26bf0e926348e2",
-        "latest_period": "2026-09",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "CLIMACOS_21",
-          "ADJUSTMENT": "Y",
-          "ECON_ACTIVITY_NACE_2007": "F",
-          "PERS_EMPL_SIZE_CLASS": "TOTAL"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Imprese e industria",
-        "name": "Fiducia del commercio",
-        "provides": "Indice mensile di fiducia delle imprese del commercio al dettaglio.",
-        "flow": "117_266",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/117_266/all/IT1",
-        "status": "fallback_last_good",
-        "bytes": 0,
-        "sha256": "",
-        "latest_period": "",
-        "series_key": {},
-        "signal_emitted": true
-      },
-      {
-        "area": "Potere d'acquisto e consumi",
-        "name": "Fiducia dei consumatori",
-        "provides": "Indice mensile del clima di fiducia dei consumatori.",
-        "flow": "30_264",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/30_264/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 2610831,
-        "sha256": "bd3c677441452ef068c589dee086bb28d6b149f294c88f53d0a7fe2723e4812d",
-        "latest_period": "2026-09",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "1_1_WE",
-          "ADJUSTMENT": "N",
-          "AGE": "TOTAL",
-          "SEX": "9",
-          "EDU_LEV_HIGHEST": "99",
-          "LABPROF_STATUS_A_FID": "99"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Prezzi e inflazione",
-        "name": "Prezzi alla produzione dell'industria",
-        "provides": "Indice mensile dei prezzi alla produzione dell'industria, base 2021.",
-        "flow": "145_360_DF_DCSC_PREZZPIND_1_4",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/145_360_DF_DCSC_PREZZPIND_1_4/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 10636393,
-        "sha256": "8c468016880b35ff1ee4625a5201d22dbf58199e2824a51dc56d60e7e781a7fe",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "IND_PRIC_2021",
-          "ADJUSTMENT": "N",
-          "MARKET": "T",
-          "ECON_ACTIVITY_NACE_2007": "0020"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Prezzi e inflazione",
-        "name": "Prezzi all'importazione",
-        "provides": "Indice mensile dei prezzi all'importazione, base 2021.",
-        "flow": "143_222_DF_DCSC_PREIMPIND_2",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/143_222_DF_DCSC_PREIMPIND_2/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 2845068,
-        "sha256": "0a34d8f526feaaa3d1349dc90a57903fb0f20e68e18868ddbd1084e8d49e84ba",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "IND_IMPPRIC_2021",
-          "ADJUSTMENT": "N",
-          "MARKET": "T",
-          "ECON_ACTIVITY_NACE_2007": "0020"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Turismo",
-        "name": "Arrivi turistici",
-        "provides": "Arrivi mensili negli esercizi ricettivi italiani.",
-        "flow": "122_54_DF_DCSC_TUR_3",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/122_54_DF_DCSC_TUR_3/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 17195806,
-        "sha256": "8cb2294fbc4ec2dd029cb8eaf8ac25fb64da2f7bc226a19cb2f38c918ffdd5c3",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "AR",
-          "ADJUSTMENT": "N",
-          "TYPE_ACCOMMODATION": "ALL",
-          "ECON_ACTIVITY_NACE_2007": "551_553",
-          "COUNTRY_RES_GUESTS": "WORLD",
-          "LOCALITY_TYPE": "ALL",
-          "URBANIZ_DEGREE": "ALL",
-          "COASTAL_AREA": "ALL",
-          "SIZE_BY_NUMBER_ROOMS": "TOT"
-        },
-        "signal_emitted": true
-      },
-      {
-        "area": "Turismo",
-        "name": "Presenze turistiche",
-        "provides": "Presenze mensili negli esercizi ricettivi italiani.",
-        "flow": "122_54_DF_DCSC_TUR_3",
-        "url": "https://esploradati.istat.it/SDMXWS/rest/v1/data/122_54_DF_DCSC_TUR_3/all/IT1?startPeriod=2022&endPeriod=2026",
-        "status": "ok",
-        "bytes": 17195806,
-        "sha256": "8cb2294fbc4ec2dd029cb8eaf8ac25fb64da2f7bc226a19cb2f38c918ffdd5c3",
-        "latest_period": "2026-08",
-        "series_key": {
-          "FREQ": "M",
-          "REF_AREA": "IT",
-          "DATA_TYPE": "NI",
-          "ADJUSTMENT": "N",
-          "TYPE_ACCOMMODATION": "ALL",
-          "ECON_ACTIVITY_NACE_2007": "551_553",
-          "COUNTRY_RES_GUESTS": "WORLD",
-          "LOCALITY_TYPE": "ALL",
-          "URBANIZ_DEGREE": "ALL",
-          "COASTAL_AREA": "ALL",
-          "SIZE_BY_NUMBER_ROOMS": "TOT"
-        },
-        "signal_emitted": true
-      }
-    ],
-    "latest_period": "2026-09"
-  }
+  "source_period": "feed corrente 2026 · ultimo dato 2026-Q2",
+  "sources": [
+    {
+      "bytes": 4312514,
+      "method": "legacy_zip",
+      "months": 12,
+      "sha256": "8441755f9f396680d2d7e03bdd2bead2c45779ede3441f3f4289ee91e15fdcef",
+      "url": "https://demo.istat.it/data/d7b/D7B2019.csv.zip",
+      "year": 2019
+    },
+    {
+      "bytes": 4276476,
+      "method": "legacy_zip",
+      "months": 12,
+      "sha256": "cf6c46dd6d990a921c1e0afe5fc486561f6e84a6bd78bafc4a624a6bfcdf588a",
+      "url": "https://demo.istat.it/data/d7b/D7B2020.csv.zip",
+      "year": 2020
+    },
+    {
+      "bytes": 4298885,
+      "method": "legacy_zip",
+      "months": 12,
+      "sha256": "1f068b9d52e24ec52368f69281edf25e67227efb6fe330c0ebc1a8f8a6cca6d0",
+      "url": "https://demo.istat.it/data/d7b/D7B2021.csv.zip",
+      "year": 2021
+    },
+    {
+      "bytes": 4327591,
+      "method": "legacy_zip",
+      "months": 12,
+      "sha256": "e274fe1f054e58e36d7d2123a217fad9d0920c0a9089c9019f1e330a70c53be4",
+      "url": "https://demo.istat.it/data/d7b/D7B2022.csv.zip",
+      "year": 2022
+    },
+    {
+      "bytes": 4315968,
+      "method": "legacy_zip",
+      "months": 12,
+      "sha256": "ef72938c79f5a150ad8bde0aad7571a3996cda502a5cf090f419762fee97d221",
+      "url": "https://demo.istat.it/data/d7b/D7B2023.csv.zip",
+      "year": 2023
+    },
+    {
+      "bytes": 4313199,
+      "method": "legacy_zip",
+      "months": 12,
+      "sha256": "eec56606b16958531c7e8241e5b71bfbf26a0e8137dc29ec4b126c9a70609599",
+      "url": "https://demo.istat.it/data/d7b/D7B2024.csv.zip",
+      "year": 2024
+    },
+    {
+      "endpoint": "https://demo.istat.it/app/RPCCerca.php",
+      "method": "official_query_api",
+      "months": 12,
+      "municipality_month_rows": 94752,
+      "provisional": true,
+      "url": "https://demo.istat.it/app/?a=2025&i=D7B&l=it",
+      "year": 2025
+    },
+    {
+      "endpoint": "https://demo.istat.it/app/RPCCerca.php",
+      "method": "official_query_api",
+      "months": 7,
+      "municipality_month_rows": 55258,
+      "provisional": true,
+      "url": "https://demo.istat.it/app/?a=2026&i=D7B&l=it",
+      "year": 2026
+    }
+  ],
+  "version": "0.6-data-current"
 }
