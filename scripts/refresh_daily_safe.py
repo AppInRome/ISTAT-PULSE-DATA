@@ -192,11 +192,18 @@ def sdmx_refresh(temp: Path) -> dict:
     run_original("generate_sdmx_events.py", work, seconds=850)
     # SDMX reports individual sources and preserves last-good for offline API gaps.
     records = read_tsv(asset / "pulse_events_sdmx.tsv", EVENT_FIELDS, minimum=1)
-    observations = read_tsv(asset / "pulse_observations_sdmx.tsv", OBS_FIELDS, minimum=1)
+    # A server outage can leave a valid cached event list but NO newly acquired
+    # observations. Preserve previous data and report degraded, not healthy.
+    observations = read_tsv(asset / "pulse_observations_sdmx.tsv", OBS_FIELDS, minimum=0)
     meta = read_json(asset / "pulse_sdmx_meta.json", {})
     connected = int(meta.get("connected_series", 0))
-    if connected < 1:
-        raise ValueError("SDMX: zero serie scaricate; last-good invariato")
+    fallback = int(meta.get("fallback_series", 0))
+    if connected < 1 or not observations:
+        return {"status": "degraded", "connected_series": connected,
+                "fallback_series": fallback,
+                "events_validated": len(records),
+                "observations_new_or_revised": 0,
+                "message": "SDMX senza osservazioni nuove verificabili: mantenuta cache precedente, riprovare al controllo seguente."}
     changes = merge_events(records)
     # Merge observations without erasing other datasets or historical periods.
     old_path = DATA / "pulse_observations.tsv"
@@ -220,8 +227,9 @@ def sdmx_refresh(temp: Path) -> dict:
     copy_if_exists(asset / "sources_catalog.json", DATA / "sources_catalog.json")
     # Keep last-good source cache only after verified inputs.
     copy_if_exists(work / "data" / "pulse_events_sdmx_last_good.tsv", DATA / "pulse_events_sdmx_last_good.tsv")
-    return {"status":"ok", "connected_series":connected,"events_validated":len(records),
-            "events_added_or_updated":changes,"observations_new_or_revised":new_count,
+    return {"status":"ok", "connected_series":connected,"fallback_series":fallback,
+            "events_validated":len(records), "events_added_or_updated":changes,
+            "observations_new_or_revised":new_count,
             "message":"Serie SDMX: i periodi statistici originali restano visibili."}
 
 
@@ -250,14 +258,19 @@ def main() -> int:
             prior=sections.get(name,{})
             try:
                 result=job(Path(tmp))
-                result["last_success_at"]=now_iso()
-                result["last_attempt_at"]=result["last_success_at"]
-                sections[name]=result
+                result["last_attempt_at"] = now_iso()
+                if result.get("status") == "ok":
+                    result["last_success_at"] = result["last_attempt_at"]
+                else:
+                    failed += 1
+                    result["last_success_at"] = prior.get("last_success_at")
+                    print(f"::warning::{name} degradato: {result.get('message', 'dati non aggiornati')}", flush=True)
+                sections[name] = result
             except (Exception,subprocess.TimeoutExpired) as exc:
                 failed+=1
                 sections[name]={**prior,"status":"error","last_attempt_at":now_iso(),
                                 "error":str(exc)[:240]}
-                print(f"[{name}] {type(exc).__name__}: {exc}",flush=True)
+                print(f"::warning::{name}: {type(exc).__name__}: {exc}",flush=True)
     status["sections"]=sections
     status["latest_check_errors"]=failed
     status["note"]=("Un controllo giornaliero non significa nuovi dati ogni giorno. "
@@ -280,8 +293,9 @@ def main() -> int:
             "last_attempt_at": info.get("last_attempt_at")}
     write_json(DATA / "live_data_index.json", endpoints)
     print(json.dumps(status,ensure_ascii=False,indent=2))
-    # Fail workflow when every checked section fails (status still available for logs).
-    return 2 if failed==len(tasks) else 0
+    # Do not discard successful updates if a different section fails. The
+    # workflow commits the diagnostic status and fails in its final check.
+    return 0
 
 
 if __name__=="__main__":
