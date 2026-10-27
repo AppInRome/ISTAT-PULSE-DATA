@@ -1108,6 +1108,31 @@ def main():
     assert not (set(idx["ieri"]) & set(idx["archivio"]))
     idx["counts"]={"oggi":len(idx["oggi"]),"ieri":len(idx["ieri"]),"archivio":len(idx["archivio"]),
                    "withheld":len(arts)-len(public),"candidates":len(candidates)}
+    # Audit is based on publication dates, NOT the time PULSE downloaded data.
+    # Explicit counts prevent the dashboard from treating every RSS as healthy.
+    by_day = {}
+    for label in ("oggi","ieri","archivio"):
+        day_articles = [a for a in public if a["id"] in set(idx[label])]
+        by_day[label] = {
+            "published":len(day_articles),
+            "with_verified_chart":sum(1 for a in day_articles
+                if (a.get("chart_spec") or {}).get("status")=="verified"),
+            "media_discovered":sum(1 for a in day_articles
+                if (a.get("discovery") or {}).get("role")=="journalistic_radar"),
+            "distinct_primary_domains":len(set(
+                (a.get("public_source") or {}).get("domain","") for a in day_articles))
+        }
+    quality = {
+        "generated_at":now.isoformat(),
+        "discovery_feeds_configured":len(feeds),
+        "discovery_feeds_reached":sum(1 for x in candidates if x.get("status")=="radar_fetched"),
+        "discovery_feeds_failed":sum(1 for x in candidates if x.get("status")=="radar_error"),
+        "articles_pending_research":sum(1 for a in arts if a.get("publication_status")=="quarantined"),
+        "daily":by_day,
+        "note":"Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."
+    }
+    (ROOT/"editorial_quality_status.json").write_text(json.dumps(
+         quality,ensure_ascii=False,indent=2)+"\n")
     ARTICLES.write_text(json.dumps({"generated_at":now.isoformat(),"articles":arts},ensure_ascii=False,indent=2)+"\n")
     CANDIDATES.write_text(json.dumps({"generated_at":now.isoformat(),"candidates":candidates},ensure_ascii=False,indent=2)+"\n")
     INDEX.write_text(json.dumps(idx,ensure_ascii=False,indent=2)+"\n")
