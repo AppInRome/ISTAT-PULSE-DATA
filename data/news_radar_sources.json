@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "purpose": "Hidden discovery radar only. Media sources are never shown as the public statistical source.",
+  "purpose": "Ricerca ampia sulla stampa italiana; ogni articolo PULSE indica testata di scoperta e fonte primaria; numeri, confronti e grafici richiedono evidenze distinte.",
   "feeds": [
     {
       "name": "ISTAT - Aggiornamenti ufficiali",
@@ -119,46 +119,86 @@
     }
   ],
   "official_domains": [
-    "istat.it",
-    "bancaditalia.it",
-    "inps.it",
-    "inail.it",
-    "aifa.gov.it",
-    "iss.it",
-    "agenas.gov.it",
+    "aci.it",
+    "adm.gov.it",
+    "aeronautica.difesa.it",
     "agcom.it",
-    "ivass.it",
-    "mef.gov.it",
-    "rgs.mef.gov.it",
+    "agenas.gov.it",
     "agenziaentrate.gov.it",
-    "salute.gov.it",
-    "dati.salute.gov.it",
-    "mur.gov.it",
-    "ustat.mur.gov.it",
+    "agid.gov.it",
+    "aifa.gov.it",
+    "anfia.it",
+    "aniasa.it",
+    "anticorruzione.it",
+    "arera.it",
+    "assoporti.it",
+    "autorita-trasporti.it",
+    "bancaditalia.it",
+    "censis.it",
+    "cgiamestre.com",
+    "climate.copernicus.eu",
+    "cna.it",
+    "cnr.it",
+    "coldiretti.it",
+    "confartigianato.it",
+    "confcommercio.it",
+    "confindustria.it",
+    "consob.it",
+    "covip.it",
+    "crea.gov.it",
+    "dataforce.de",
     "dati-ustat.mur.gov.it",
-    "istruzione.it",
     "dati.istruzione.it",
-    "invalsi.it",
-    "giustizia.it",
+    "dati.salute.gov.it",
     "datiestatistiche.giustizia.it",
+    "ec.europa.eu",
+    "eea.europa.eu",
+    "enac.gov.it",
+    "enea.it",
+    "enit.it",
+    "europa.eu",
+    "excelsior.unioncamere.net",
+    "fao.org",
+    "finanze.gov.it",
+    "gigroupholding.com",
+    "gimbe.org",
+    "giustizia.it",
+    "gse.it",
+    "inail.it",
+    "infocamere.it",
+    "ingv.it",
+    "inps.it",
+    "interno.gov.it",
+    "invalsi.it",
+    "ismea.it",
     "ispraambiente.gov.it",
     "isprambiente.gov.it",
-    "arera.it",
-    "gse.it",
-    "terna.it",
-    "aci.it",
-    "anfia.it",
-    "unrae.it",
-    "unioncamere.gov.it",
+    "iss.it",
+    "istat.it",
+    "istruzione.it",
+    "ivass.it",
+    "legambiente.it",
+    "mef.gov.it",
+    "mercatoelettrico.org",
+    "mim.gov.it",
+    "mimit.gov.it",
+    "mit.gov.it",
+    "mur.gov.it",
+    "nomisma.it",
+    "opencoesione.gov.it",
+    "opencup.gov.it",
     "opengovernment.unioncamere.gov.it",
-    "infocamere.it",
-    "ec.europa.eu",
-    "europa.eu",
-    "eea.europa.eu",
-    "aniasa.it",
+    "rgs.mef.gov.it",
+    "salute.gov.it",
+    "siae.it",
+    "sinab.it",
     "skuola.net",
-    "gigroupholding.com",
-    "dataforce.de"
+    "snam.it",
+    "svimez.info",
+    "terna.it",
+    "unioncamere.gov.it",
+    "unrae.it",
+    "ustat.mur.gov.it"
   ],
   "entity_domain_hints": {
     "istat": "istat.it",
@@ -190,5 +230,267 @@
     "skuola.net": "skuola.net",
     "gi edu": "gigroupholding.com",
     "gi group": "gigroupholding.com"
-  }
+  },
+  "institutional_producers": [
+    {
+      "name": "CENSIS",
+      "domain": "censis.it"
+    },
+    {
+      "name": "CGIA Mestre",
+      "domain": "cgiamestre.com"
+    },
+    {
+      "name": "CNA",
+      "domain": "cna.it"
+    },
+    {
+      "name": "CNR",
+      "domain": "cnr.it"
+    },
+    {
+      "name": "Coldiretti",
+      "domain": "coldiretti.it"
+    },
+    {
+      "name": "Confartigianato",
+      "domain": "confartigianato.it"
+    },
+    {
+      "name": "Confcommercio",
+      "domain": "confcommercio.it"
+    },
+    {
+      "name": "Confindustria",
+      "domain": "confindustria.it"
+    },
+    {
+      "name": "Fondazione GIMBE",
+      "domain": "gimbe.org"
+    },
+    {
+      "name": "Legambiente",
+      "domain": "legambiente.it"
+    },
+    {
+      "name": "Nomisma",
+      "domain": "nomisma.it"
+    },
+    {
+      "name": "SVIMEZ",
+      "domain": "svimez.info"
+    },
+    {
+      "name": "ACI",
+      "domain": "aci.it"
+    },
+    {
+      "name": "AGENAS",
+      "domain": "agenas.gov.it"
+    },
+    {
+      "name": "Aeronautica Militare",
+      "domain": "aeronautica.difesa.it"
+    },
+    {
+      "name": "Agenzia delle Dogane e dei Monopoli",
+      "domain": "adm.gov.it"
+    },
+    {
+      "name": "Agenzia delle Entrate - OMI",
+      "domain": "agenziaentrate.gov.it"
+    },
+    {
+      "name": "AgID",
+      "domain": "agid.gov.it"
+    },
+    {
+      "name": "AGCOM",
+      "domain": "agcom.it"
+    },
+    {
+      "name": "AIFA - OsMed",
+      "domain": "aifa.gov.it"
+    },
+    {
+      "name": "ANAC",
+      "domain": "anticorruzione.it"
+    },
+    {
+      "name": "ANFIA",
+      "domain": "anfia.it"
+    },
+    {
+      "name": "ARERA",
+      "domain": "arera.it"
+    },
+    {
+      "name": "ART",
+      "domain": "autorita-trasporti.it"
+    },
+    {
+      "name": "Assoporti",
+      "domain": "assoporti.it"
+    },
+    {
+      "name": "Banca d'Italia",
+      "domain": "bancaditalia.it"
+    },
+    {
+      "name": "CONSOB",
+      "domain": "consob.it"
+    },
+    {
+      "name": "Copernicus",
+      "domain": "climate.copernicus.eu"
+    },
+    {
+      "name": "COVIP",
+      "domain": "covip.it"
+    },
+    {
+      "name": "CREA - RICA",
+      "domain": "crea.gov.it"
+    },
+    {
+      "name": "Dipartimento delle Finanze",
+      "domain": "finanze.gov.it"
+    },
+    {
+      "name": "DIPE - OpenCUP",
+      "domain": "opencup.gov.it"
+    },
+    {
+      "name": "EEA",
+      "domain": "eea.europa.eu"
+    },
+    {
+      "name": "ENAC",
+      "domain": "enac.gov.it"
+    },
+    {
+      "name": "ENEA",
+      "domain": "enea.it"
+    },
+    {
+      "name": "ENIT",
+      "domain": "enit.it"
+    },
+    {
+      "name": "Eurostat",
+      "domain": "ec.europa.eu"
+    },
+    {
+      "name": "FAO",
+      "domain": "fao.org"
+    },
+    {
+      "name": "GME",
+      "domain": "mercatoelettrico.org"
+    },
+    {
+      "name": "GSE",
+      "domain": "gse.it"
+    },
+    {
+      "name": "INGV",
+      "domain": "ingv.it"
+    },
+    {
+      "name": "INAIL",
+      "domain": "inail.it"
+    },
+    {
+      "name": "INPS",
+      "domain": "inps.it"
+    },
+    {
+      "name": "INVALSI",
+      "domain": "invalsi.it"
+    },
+    {
+      "name": "ISPRA / SNPA",
+      "domain": "isprambiente.gov.it"
+    },
+    {
+      "name": "ISMEA",
+      "domain": "ismea.it"
+    },
+    {
+      "name": "ISTAT",
+      "domain": "istat.it"
+    },
+    {
+      "name": "IVASS",
+      "domain": "ivass.it"
+    },
+    {
+      "name": "MIMIT",
+      "domain": "mimit.gov.it"
+    },
+    {
+      "name": "Ministero dell'Interno",
+      "domain": "interno.gov.it"
+    },
+    {
+      "name": "Ministero della Giustizia - DGStat",
+      "domain": "giustizia.it"
+    },
+    {
+      "name": "Ministero della Salute",
+      "domain": "salute.gov.it"
+    },
+    {
+      "name": "Ministero dell'Istruzione e del Merito",
+      "domain": "mim.gov.it"
+    },
+    {
+      "name": "Ministero dell'Università e della Ricerca",
+      "domain": "mur.gov.it"
+    },
+    {
+      "name": "MIT",
+      "domain": "mit.gov.it"
+    },
+    {
+      "name": "OpenCoesione",
+      "domain": "opencoesione.gov.it"
+    },
+    {
+      "name": "Ragioneria Generale dello Stato - BDAP",
+      "domain": "rgs.mef.gov.it"
+    },
+    {
+      "name": "SIAE - Osservatorio Spettacolo",
+      "domain": "siae.it"
+    },
+    {
+      "name": "SINAB",
+      "domain": "sinab.it"
+    },
+    {
+      "name": "SNAM",
+      "domain": "snam.it"
+    },
+    {
+      "name": "Terna",
+      "domain": "terna.it"
+    },
+    {
+      "name": "Unioncamere / InfoCamere",
+      "domain": "unioncamere.gov.it"
+    },
+    {
+      "name": "UNRAE",
+      "domain": "unrae.it"
+    },
+    {
+      "name": "Unioncamere - Excelsior",
+      "domain": "excelsior.unioncamere.net"
+    },
+    {
+      "name": "Istituto Superiore di Sanità",
+      "domain": "iss.it"
+    }
+  ]
 }
