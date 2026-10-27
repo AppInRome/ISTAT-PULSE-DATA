@@ -21,7 +21,7 @@ STATUS = Path("data/observer_refresh_status.json")
 FEEDS = (
     ("CNA", "cna.it", "https://www.cna.it/feed/"),
     ("CNR", "cnr.it", "https://www.cnr.it/it/news/rss"),
-    ("SVIMEZ", "svimez.info", "https://lnx.svimez.info/svimez/feed/"),
+    ("SVIMEZ", "svimez.it", "https://www.svimez.it/feed/"),
     ("SINAB", "sinab.it", "https://sinab.it/feed/"),
 )
 STAT_TERMS = (
