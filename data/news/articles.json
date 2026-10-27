@@ -1,6 +1,113 @@
 {
-  "generated_at": "2026-10-27T14:04:51.338076+00:00",
+  "generated_at": "2026-10-27T14:20:19.378220+00:00",
   "articles": [
+    {
+      "id": "PULSE-09A775E5DFC74C50",
+      "story_fingerprint": "09a775e5dfc74c5066016ceb",
+      "published_at": "2026-10-27T14:20:19.378220+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "topic": "MOBILITA",
+      "pulse_score": 97,
+      "patterns": [
+        "RECORD_MAX",
+        "ACCELERAZIONE",
+        "ANOMALIA"
+      ],
+      "public_source": {
+        "url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip",
+        "domain": "aci.gov.it",
+        "role": "primary_statistical_source",
+        "verification_method": "previously_validated_source_event",
+        "verification_score": 100
+      },
+      "discovery": {
+        "visible": false,
+        "role": "independent_statistical_analysis"
+      },
+      "origin_kind": "pulse_verified_event",
+      "period_reference": "2025",
+      "headline": "Prime iscrizioni di autovetture elettriche: 94.862 veicoli nel 2025",
+      "summary": "PULSE analizza il dato ufficiale di aci.gov.it relativo a prime iscrizioni di autovetture elettriche: nel 2025 il valore per Italia è 94.862 veicoli. Questa è un'analisi editoriale PULSE, non la data di pubblicazione della fonte.",
+      "pulse_title": "Prime iscrizioni di autovetture elettriche: 94.862 veicoli nel 2025",
+      "pulse_summary": "PULSE analizza il dato ufficiale di aci.gov.it relativo a prime iscrizioni di autovetture elettriche: nel 2025 il valore per Italia è 94.862 veicoli. Questa è un'analisi editoriale PULSE, non la data di pubblicazione della fonte.",
+      "pulse_article_body": [
+        {
+          "heading": "Il dato statistico",
+          "text": "PULSE analizza il dato ufficiale di aci.gov.it relativo a prime iscrizioni di autovetture elettriche: nel 2025 il valore per Italia è 94.862 veicoli. Questa è un'analisi editoriale PULSE, non la data di pubblicazione della fonte."
+        },
+        {
+          "heading": "Come interpretarlo",
+          "text": "Il periodo statistico documentato è 2025. L'indicatore è espresso in veicoli; un singolo valore non permette di dedurre un andamento o le sue cause."
+        },
+        {
+          "heading": "Trasparenza e fonti",
+          "text": "La serie è stata acquisita e validata dal motore PULSE da aci.gov.it. La fonte originale è collegata in questa notizia; la data di PULSE indica l'uscita dell'analisi, non la diffusione del dataset."
+        }
+      ],
+      "byline": "Redazione PULSE",
+      "statistical_claims": [
+        {
+          "raw_value": "94.862 veicoli",
+          "verified": true,
+          "period": "2025",
+          "indicator": "Prime iscrizioni di autovetture elettriche"
+        }
+      ],
+      "verified_series": [
+        {
+          "indicator": "Prime iscrizioni di autovetture elettriche",
+          "unit": "veicoli",
+          "verified": true,
+          "source_url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip",
+          "observations": [
+            {
+              "period": "2025",
+              "value": 94862.0
+            }
+          ]
+        }
+      ],
+      "territories": [
+        "Italia"
+      ],
+      "chart_spec": {
+        "type": "bar",
+        "status": "verified",
+        "title": "Prime iscrizioni di autovetture elettriche",
+        "unit": "veicoli",
+        "single_observation": true,
+        "source_url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip",
+        "data": [
+          {
+            "period": "2025",
+            "value": 94862.0
+          }
+        ]
+      },
+      "table_spec": {
+        "status": "verified",
+        "columns": [
+          "Periodo",
+          "Indicatore",
+          "Territorio",
+          "Valore",
+          "Unità"
+        ],
+        "rows": [
+          [
+            "2025",
+            "Prime iscrizioni di autovetture elettriche",
+            "Italia",
+            "94.862",
+            "veicoli"
+          ]
+        ],
+        "source_url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip"
+      },
+      "editorial_status": "verified_primary_match",
+      "publication_status": "published",
+      "verification_tier": "previously_verified_official_single_observation"
+    },
     {
       "id": "PULSE-59072DCA55A1DD87",
       "story_fingerprint": "59072dca55a1dd87d19eaaed",
@@ -103,113 +210,6 @@
           ]
         ],
         "source_url": "https://www.istat.it/wp-content/uploads/2026/07/Misure-statistiche-2004-2026.xlsx"
-      },
-      "editorial_status": "verified_primary_match",
-      "publication_status": "published",
-      "verification_tier": "previously_verified_official_single_observation"
-    },
-    {
-      "id": "PULSE-09A775E5DFC74C50",
-      "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-10-27T14:04:51.338076+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
-      "topic": "MOBILITA",
-      "pulse_score": 97,
-      "patterns": [
-        "RECORD_MAX",
-        "ACCELERAZIONE",
-        "ANOMALIA"
-      ],
-      "public_source": {
-        "url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip",
-        "domain": "aci.gov.it",
-        "role": "primary_statistical_source",
-        "verification_method": "previously_validated_source_event",
-        "verification_score": 100
-      },
-      "discovery": {
-        "visible": false,
-        "role": "independent_statistical_analysis"
-      },
-      "origin_kind": "pulse_verified_event",
-      "period_reference": "2025",
-      "headline": "Prime iscrizioni di autovetture elettriche: 94.862 veicoli nel 2025",
-      "summary": "PULSE analizza il dato ufficiale di aci.gov.it relativo a prime iscrizioni di autovetture elettriche: nel 2025 il valore per Italia è 94.862 veicoli. Questa è un'analisi editoriale PULSE, non la data di pubblicazione della fonte.",
-      "pulse_title": "Prime iscrizioni di autovetture elettriche: 94.862 veicoli nel 2025",
-      "pulse_summary": "PULSE analizza il dato ufficiale di aci.gov.it relativo a prime iscrizioni di autovetture elettriche: nel 2025 il valore per Italia è 94.862 veicoli. Questa è un'analisi editoriale PULSE, non la data di pubblicazione della fonte.",
-      "pulse_article_body": [
-        {
-          "heading": "Il dato statistico",
-          "text": "PULSE analizza il dato ufficiale di aci.gov.it relativo a prime iscrizioni di autovetture elettriche: nel 2025 il valore per Italia è 94.862 veicoli. Questa è un'analisi editoriale PULSE, non la data di pubblicazione della fonte."
-        },
-        {
-          "heading": "Come interpretarlo",
-          "text": "Il periodo statistico documentato è 2025. L'indicatore è espresso in veicoli; un singolo valore non permette di dedurre un andamento o le sue cause."
-        },
-        {
-          "heading": "Trasparenza e fonti",
-          "text": "La serie è stata acquisita e validata dal motore PULSE da aci.gov.it. La fonte originale è collegata in questa notizia; la data di PULSE indica l'uscita dell'analisi, non la diffusione del dataset."
-        }
-      ],
-      "byline": "Redazione PULSE",
-      "statistical_claims": [
-        {
-          "raw_value": "94.862 veicoli",
-          "verified": true,
-          "period": "2025",
-          "indicator": "Prime iscrizioni di autovetture elettriche"
-        }
-      ],
-      "verified_series": [
-        {
-          "indicator": "Prime iscrizioni di autovetture elettriche",
-          "unit": "veicoli",
-          "verified": true,
-          "source_url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip",
-          "observations": [
-            {
-              "period": "2025",
-              "value": 94862.0
-            }
-          ]
-        }
-      ],
-      "territories": [
-        "Italia"
-      ],
-      "chart_spec": {
-        "type": "bar",
-        "status": "verified",
-        "title": "Prime iscrizioni di autovetture elettriche",
-        "unit": "veicoli",
-        "single_observation": true,
-        "source_url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip",
-        "data": [
-          {
-            "period": "2025",
-            "value": 94862.0
-          }
-        ]
-      },
-      "table_spec": {
-        "status": "verified",
-        "columns": [
-          "Periodo",
-          "Indicatore",
-          "Territorio",
-          "Valore",
-          "Unità"
-        ],
-        "rows": [
-          [
-            "2025",
-            "Prime iscrizioni di autovetture elettriche",
-            "Italia",
-            "94.862",
-            "veicoli"
-          ]
-        ],
-        "source_url": "https://aci.gov.it//app/uploads/2026/05/Annuario-statistico-2026-OD.zip"
       },
       "editorial_status": "verified_primary_match",
       "publication_status": "published",
@@ -431,7 +431,7 @@
       "id": "PULSE-16A847340C06D9CB",
       "story_fingerprint": "16a847340c06d9cb3911fa56",
       "published_at": "2026-10-27T13:31:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 55,
       "patterns": [],
@@ -478,7 +478,7 @@
       "id": "PULSE-27BC1CB670707ACC",
       "story_fingerprint": "27bc1cb670707acc04ed6c19",
       "published_at": "2026-10-27T13:24:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 55,
       "patterns": [],
@@ -525,7 +525,7 @@
       "id": "PULSE-D8C5E24A2CAFFD0E",
       "story_fingerprint": "d8c5e24a2caffd0e9b3e978b",
       "published_at": "2026-10-27T13:11:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -564,7 +564,7 @@
       "id": "PULSE-477E659C64B341F7",
       "story_fingerprint": "477e659c64b341f74a45227a",
       "published_at": "2026-10-27T13:04:57+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "MOBILITA",
       "pulse_score": 45,
       "patterns": [],
@@ -603,7 +603,7 @@
       "id": "PULSE-9F984CB01169B619",
       "story_fingerprint": "9f984cb01169b61909017a1b",
       "published_at": "2026-10-27T12:56:06+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 55,
       "patterns": [],
@@ -650,7 +650,7 @@
       "id": "PULSE-AAA5330E4F10ECC8",
       "story_fingerprint": "aaa5330e4f10ecc877eecc19",
       "published_at": "2026-10-27T11:59:31+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "AMBIENTE",
       "pulse_score": 59,
       "patterns": [],
@@ -683,7 +683,7 @@
       "id": "PULSE-B2509F5E3CDF8CA4",
       "story_fingerprint": "b2509f5e3cdf8ca4465d1ef5",
       "published_at": "2026-10-27T11:49:02+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 50,
       "patterns": [],
@@ -730,7 +730,7 @@
       "id": "PULSE-24DA947D98E0C0A2",
       "story_fingerprint": "24da947d98e0c0a22752be2c",
       "published_at": "2026-10-27T10:13:41+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -761,7 +761,7 @@
       "id": "PULSE-8654609F9434F2E1",
       "story_fingerprint": "8654609f9434f2e1901a06f0",
       "published_at": "2026-10-27T09:53:51+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 59,
       "patterns": [],
@@ -792,7 +792,7 @@
       "id": "PULSE-FB9587D2970254FC",
       "story_fingerprint": "fb9587d2970254fc06be0dd5",
       "published_at": "2026-10-27T09:33:39+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 60,
       "patterns": [],
@@ -831,7 +831,7 @@
       "id": "PULSE-E22E0F4916B5BDFB",
       "story_fingerprint": "e22e0f4916b5bdfb09d259a4",
       "published_at": "2026-10-27T09:32:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "AMBIENTE",
       "pulse_score": 60,
       "patterns": [],
@@ -903,7 +903,7 @@
       "id": "PULSE-C0FA3B9CA6509D68",
       "story_fingerprint": "c0fa3b9ca6509d686eb051ae",
       "published_at": "2026-10-27T08:51:24+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 50,
       "patterns": [],
@@ -946,7 +946,7 @@
       "id": "PULSE-0F0A97DCD8586FC0",
       "story_fingerprint": "0f0a97dcd8586fc07a193e11",
       "published_at": "2026-10-27T08:22:08+00:00",
-      "last_seen_at": "2026-10-27T13:53:29.219068+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 50,
       "patterns": [],
@@ -985,7 +985,7 @@
       "id": "PULSE-88FD5F3661C2562C",
       "story_fingerprint": "88fd5f3661c2562cd44b5006",
       "published_at": "2026-10-27T04:00:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 50,
       "patterns": [],
@@ -1016,7 +1016,7 @@
       "id": "PULSE-7CA9B6539F801B86",
       "story_fingerprint": "7ca9b6539f801b863124db48",
       "published_at": "2026-10-27T04:00:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 49,
       "patterns": [],
@@ -1051,7 +1051,7 @@
       "id": "PULSE-5F43595FA4C93E12",
       "story_fingerprint": "5f43595fa4c93e121969f325",
       "published_at": "2026-10-27T01:15:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "LAVORO",
       "pulse_score": 49,
       "patterns": [],
@@ -1090,7 +1090,7 @@
       "id": "PULSE-8A488E4A361ADF0F",
       "story_fingerprint": "8a488e4a361adf0f3745777c",
       "published_at": "2026-10-26T20:03:14+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "SALUTE",
       "pulse_score": 49,
       "patterns": [],
@@ -1176,7 +1176,7 @@
       "id": "PULSE-C1EC08AF87B89ED0",
       "story_fingerprint": "c1ec08af87b89ed0d788ba0f",
       "published_at": "2026-10-26T11:07:12+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 65,
       "patterns": [],
@@ -1254,7 +1254,7 @@
       "id": "PULSE-98EF7BD387DFF277",
       "story_fingerprint": "98ef7bd387dff27711640608",
       "published_at": "2026-10-26T11:03:46+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 45,
       "patterns": [],
@@ -1417,7 +1417,7 @@
       "id": "PULSE-4DADE317EFC55169",
       "story_fingerprint": "4dade317efc55169a11c4f46",
       "published_at": "2026-10-26T09:23:51+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "AMBIENTE",
       "pulse_score": 59,
       "patterns": [],
@@ -1450,7 +1450,7 @@
       "id": "PULSE-AE2E24A6BB01AB30",
       "story_fingerprint": "ae2e24a6bb01ab30fbc1fa3f",
       "published_at": "2026-10-26T08:27:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -1484,6 +1484,173 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-BES-20261026",
+      "story_fingerprint": "76a255d3d8e7c278ceaa6cb9",
+      "published_at": "2026-10-26T08:00:00+00:00",
+      "publication_time_precision": "day",
+      "source_published_at": "2026-10-26",
+      "period_reference": "2025",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
+      "topic": "ECONOMIA",
+      "origin_kind": "pulse_casefile",
+      "publication_status": "published",
+      "editorial_status": "verified",
+      "verification_tier": "manually_checked_official_release_with_explicit_table",
+      "pulse_score": 92,
+      "byline": "Redazione PULSE",
+      "headline": "BES 2026: il benessere avanza in 54 indicatori, ma i divari restano ampi",
+      "summary": "Il rapporto BES 2026 segnala progressi in 54 dei 132 indicatori confrontabili con l'anno precedente. Altri 55 restano stabili e 23 peggiorano. Il quadro nazionale rimane diseguale: Istat registra differenze persistenti tra Centro-Nord e Mezzogiorno.",
+      "pulse_title": "BES 2026: il benessere avanza in 54 indicatori, ma i divari restano ampi",
+      "pulse_summary": "Il rapporto BES 2026 segnala progressi in 54 dei 132 indicatori confrontabili con l'anno precedente. Altri 55 restano stabili e 23 peggiorano. Il quadro nazionale rimane diseguale: Istat registra differenze persistenti tra Centro-Nord e Mezzogiorno.",
+      "pulse_article_body": [
+        {
+          "heading": "Il bilancio dei 132 indicatori",
+          "text": "Il miglioramento interessa 54 indicatori, pari a circa il 40,9% dei 132 per cui Istat dispone di un confronto con l'anno precedente. Per 55 indicatori la situazione è stabile, mentre 23 mostrano un peggioramento. I tre gruppi esauriscono i 132 casi confrontabili: il bilancio positivo non significa che ogni dimensione del benessere migliori."
+        },
+        {
+          "heading": "La distanza fra territori",
+          "text": "La distribuzione territoriale dei risultati resta disomogenea. Nel Nord e nel Centro quasi tutte le regioni superano la media italiana in almeno metà degli indicatori regionali; il Lazio costituisce un'eccezione. Nel Mezzogiorno, salvo l'Abruzzo, prevalgono indicatori sotto la media nazionale. È una differenza tra insiemi di indicatori, non una classifica uniforme dei comuni."
+        },
+        {
+          "heading": "Dove l'Italia è indietro rispetto all'Europa",
+          "text": "Sui 40 indicatori BES confrontabili con la media UE27, l'Italia registra risultati più favorevoli in 12 e meno favorevoli in 18. I maggiori punti di debolezza riguardano istruzione, lavoro e ricerca. La quota dei giovani NEET è del 13,3% contro l'11,0% dell'UE27, un divario di 2,3 punti percentuali."
+        },
+        {
+          "heading": "Povertà: un dato diverso dal rischio relativo",
+          "text": "Il rapporto è stato ripreso dalla stampa anche per la condizione delle famiglie. Secondo il comunicato ISTAT sulla povertà assoluta nel 2025, le persone coinvolte sono circa 5,4 milioni. La povertà assoluta non va confusa con il rischio di povertà relativo utilizzato nei confronti europei."
+        },
+        {
+          "heading": "Come leggere i grafici",
+          "text": "Le colonne rappresentano il numero di indicatori in tre categorie di andamento, non valori percentuali né una serie temporale. Il periodo statistico prevalente è il 2025, mentre il rapporto è stato pubblicato il 26 ottobre 2026. L'analisi è originale PULSE e rimanda alle pubblicazioni ISTAT per metodologia e tabelle."
+        }
+      ],
+      "territories": [
+        "italia"
+      ],
+      "patterns": [],
+      "sources": [
+        {
+          "role": "statistical_primary",
+          "name": "ISTAT - Rapporto BES 2026",
+          "url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/"
+        },
+        {
+          "role": "statistical_primary",
+          "name": "ISTAT - Povertà assoluta",
+          "url": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/"
+        },
+        {
+          "role": "journalistic_discovery",
+          "name": "Corriere della Sera",
+          "url": "https://www.corriere.it/economia/finanza/26_ottobre_26/istat-migliora-il-benessere-in-italia-ma-5-4-milioni-di-persone-restano-in-poverta-il-divario-con-l-europa-e-il-nord-sud-42ab6c72-dc00-4b42-a73d-84bcf1e30xlk.shtml"
+        }
+      ],
+      "public_source": {
+        "url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/",
+        "domain": "istat.it",
+        "role": "primary_statistical_source",
+        "verification_method": "checked_original_istat_report",
+        "verification_score": 100
+      },
+      "discovery": {
+        "visible": false,
+        "role": "journalistic_radar",
+        "outlet": "Corriere della Sera",
+        "original_url": "https://www.corriere.it/economia/finanza/26_ottobre_26/istat-migliora-il-benessere-in-italia-ma-5-4-milioni-di-persone-restano-in-poverta-il-divario-con-l-europa-e-il-nord-sud-42ab6c72-dc00-4b42-a73d-84bcf1e30xlk.shtml",
+        "evidence_gate": "strong_primary_match"
+      },
+      "statistical_claims": [
+        {
+          "raw_value": "54",
+          "label": "Migliorano",
+          "indicator": "Indicatori BES confrontabili",
+          "period": "2025",
+          "verified": true
+        },
+        {
+          "raw_value": "55",
+          "label": "Stabili",
+          "indicator": "Indicatori BES confrontabili",
+          "period": "2025",
+          "verified": true
+        },
+        {
+          "raw_value": "23",
+          "label": "Peggiorano",
+          "indicator": "Indicatori BES confrontabili",
+          "period": "2025",
+          "verified": true
+        }
+      ],
+      "verified_series": [
+        {
+          "indicator": "Indicatori BES confrontabili",
+          "unit": "indicatori",
+          "observations": [
+            {
+              "period": "Migliorano",
+              "value": 54
+            },
+            {
+              "period": "Stabili",
+              "value": 55
+            },
+            {
+              "period": "Peggiorano",
+              "value": 23
+            }
+          ],
+          "source_url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/",
+          "verified": true
+        }
+      ],
+      "chart_spec": {
+        "type": "bar",
+        "status": "verified",
+        "title": "Andamento degli indicatori BES (numero)",
+        "unit": "indicatori",
+        "source_url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/",
+        "category_axis": true,
+        "data": [
+          {
+            "period": "Migliorano",
+            "value": 54
+          },
+          {
+            "period": "Stabili",
+            "value": 55
+          },
+          {
+            "period": "Peggiorano",
+            "value": 23
+          }
+        ]
+      },
+      "table_spec": {
+        "status": "verified",
+        "columns": [
+          "Andamento",
+          "N. indicatori"
+        ],
+        "rows": [
+          [
+            "Migliorano",
+            "54"
+          ],
+          [
+            "Stabili",
+            "55"
+          ],
+          [
+            "Peggiorano",
+            "23"
+          ]
+        ],
+        "source_url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/"
+      },
+      "map_spec": null
     },
     {
       "id": "PULSE-C2307F0E2CD3D434",
@@ -1552,7 +1719,7 @@
       "id": "PULSE-0F740418F27D4461",
       "story_fingerprint": "0f740418f27d4461e2100351",
       "published_at": "2026-10-26T03:42:17+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "DEMOGRAFIA",
       "pulse_score": 50,
       "patterns": [],
@@ -1591,7 +1758,7 @@
       "id": "PULSE-6EA000BE804170F8",
       "story_fingerprint": "6ea000be804170f8b46c1bc7",
       "published_at": "2026-10-25T19:05:43+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -1632,7 +1799,7 @@
       "id": "PULSE-FE49BFDCEDE6A3A4",
       "story_fingerprint": "fe49bfdcede6a3a4bd46307e",
       "published_at": "2026-10-25T18:45:52+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 49,
       "patterns": [],
@@ -1671,7 +1838,7 @@
       "id": "PULSE-E4942BB8D2942176",
       "story_fingerprint": "e4942bb8d2942176163cdc77",
       "published_at": "2026-10-25T16:50:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -1710,7 +1877,7 @@
       "id": "PULSE-EF420147F3A13577",
       "story_fingerprint": "ef420147f3a1357764f8ffa4",
       "published_at": "2026-10-25T15:05:47+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 50,
       "patterns": [],
@@ -1757,7 +1924,7 @@
       "id": "PULSE-717CA8A8175FCA91",
       "story_fingerprint": "717ca8a8175fca91a1d27e2d",
       "published_at": "2026-10-25T14:58:40+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 65,
       "patterns": [],
@@ -1798,7 +1965,7 @@
       "id": "PULSE-73FAD5CA3674F9AD",
       "story_fingerprint": "73fad5ca3674f9adbc227327",
       "published_at": "2026-10-25T13:00:48+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "DEMOGRAFIA",
       "pulse_score": 55,
       "patterns": [],
@@ -1845,7 +2012,7 @@
       "id": "PULSE-DD3A839B76A2AC5D",
       "story_fingerprint": "dd3a839b76a2ac5d5f3624e7",
       "published_at": "2026-10-25T11:16:20+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -1876,7 +2043,7 @@
       "id": "PULSE-670D9A31CD65181C",
       "story_fingerprint": "670d9a31cd65181cd82e7d26",
       "published_at": "2026-10-25T10:22:00+00:00",
-      "last_seen_at": "2026-10-27T14:04:51.338076+00:00",
+      "last_seen_at": "2026-10-27T14:20:19.378220+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
