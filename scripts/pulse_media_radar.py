@@ -94,20 +94,24 @@ def _normalised_headline(title):
     clean=re.sub(r"[^\wà-ù ]+"," ",clean)
     return " ".join(clean.split())[:190]
 
+def disallowed_headline(title):
+    if EXCLUDED.search(title or ""):
+        return True
+    if (re.search(r"\b(?:manovra|ipotesi contributo|ddl|proposta di legge|"
+                  r"giorgetti|salvini|decreto legge)\b",title or "",re.I)
+        and not re.search(r"\b(?:dati|statistic[hae]|rapport[oi]|indagin[ei]|"
+                          r"rilevazion[ei]|studio)\b",title or "",re.I)):
+        return True
+    return False
+
+
 def eligible(item, now):
     date=item_datetime(item)
     if not date or not timedelta(0) <= now-date <= timedelta(days=3): return False
     title=clean_title(item.get("title",""))
     summary=item.get("summary","")
     if not (28<=len(title)<=260): return False
-    if EXCLUDED.search(title):return False
-    # A minister's proposed tax/budget measure or a product price is not a
-    # statistically observed phenomenon. Keep measured public-interest data.
-    if (re.search(r"\b(?:manovra|ipotesi contributo|ddl|proposta di legge|"
-                  r"giorgetti|salvini|decreto legge)\b", title, re.I)
-        and not re.search(r"\b(?:dati|statistic[hae]|rapport[oi]|indagin[ei]|"
-                          r"rilevazion[ei]|studio)\b",title,re.I)):
-        return False
+    if disallowed_headline(title):return False
     # Avoid global geopolitical/financial headlines merely containing a number.
     context=title+" "+str(summary)[:450]
     if not PUBLIC_INTEREST.search(context):return False
