@@ -44,7 +44,7 @@ CANDIDATES=ROOT/"candidates.json"
 INDEX=ROOT/"index.json"
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/154 Safari/537.36 ISTAT-PULSE-NewsRadar/1.2"
 MAX_RUNTIME_SECONDS=720
-MAX_ITEMS_PER_FEED=40
+MAX_ITEMS_PER_FEED=60
 MAX_CANDIDATES_TOTAL=150
 
 TOPIC_DOMAINS={
@@ -940,12 +940,15 @@ def main():
             except (ValueError,TypeError,OverflowError):
                 continue
             score,_=score_candidate(item["title"]+" "+item.get("summary",""))
-            if score<45 or looks_editorially_irrelevant(item["title"]):continue
+            # Discovery and publication of clearly labeled media reports use
+            # a lower threshold than full statistical verification. Individual
+            # reported figures are never treated as verified data.
+            if score<25 or looks_editorially_irrelevant(item["title"]):continue
             prioritized.append(((bucket_date(dt.isoformat(),now)=="OGGI",
                                  bucket_date(dt.isoformat(),now)=="IERI",
                                  score,dt.isoformat()),item))
         prioritized.sort(key=lambda x:x[0],reverse=True)
-        feed_items.append((feed,[v for _,v in prioritized[:14]]))
+        feed_items.append((feed,[v for _,v in prioritized[:20]]))
     print(f"[RADAR] RSS scan complete; checked={len(feed_items)}",flush=True)
 
     # FAST EDITORIAL PASS: publish source-attributed statistical news as a
