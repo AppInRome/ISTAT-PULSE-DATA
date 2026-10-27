@@ -74,7 +74,7 @@ def clean_text(raw):
     return re.sub(r"\s+"," ",BeautifulSoup(html.unescape(raw or ""),"html.parser").get_text(" ",strip=True)).strip()
 
 def rss_items(url):
-    raw,final,_=fetch(url)
+    raw,final,_=fetch(url,timeout=8)
     root=ET.fromstring(raw)
     out=[]
     for item in root.findall(".//item"):
@@ -884,18 +884,46 @@ def main():
                    + now.astimezone(ROME).hour // 12) % len(discovery))
         discovery = discovery[offset:] + discovery[:offset]
     feeds = discovery + primary
+    # First scan ALL sources with lightweight RSS reads. Previous logic could
+    # spend the entire time budget on verifying only the first two or three.
+    feed_items = []
     for feed in feeds:
-        if runtime_exceeded() or len(candidates) >= MAX_CANDIDATES_TOTAL:
-            break
-        print(f"[RADAR] feed={feed.get('name')} candidates={len(candidates)}", flush=True)
-        try: items=rss_items(feed["url"])
-        except Exception as e:
-            candidates.append({"radar":feed.get("name"),"status":"radar_error","error":str(e)[:180]})
+        if runtime_exceeded(): break
+        print(f"[RADAR] RSS {feed.get('name')}", flush=True)
+        try:
+            items = rss_items(feed["url"])
+            candidates.append({"radar":feed.get("name"),"status":"radar_fetched",
+                               "items_fetched":len(items)})
+        except Exception as exc:
+            candidates.append({"radar":feed.get("name"),"status":"radar_error",
+                               "error":str(exc)[:180]})
             continue
-        processed_in_feed = 0
+        prioritized = []
         for item in items:
-            if runtime_exceeded() or len(candidates) >= MAX_CANDIDATES_TOTAL or processed_in_feed >= 5:
+            try:
+                dt=parsedate_to_datetime(item.get("published_raw",""))
+                if dt.tzinfo is None: continue
+                dt=dt.astimezone(timezone.utc)
+                if not (timedelta(0)<=now-dt<=timedelta(days=3)): continue
+            except (ValueError,TypeError,OverflowError):
+                continue
+            score,_=score_candidate(item["title"]+" "+item.get("summary",""))
+            if score<45 or looks_editorially_irrelevant(item["title"]):continue
+            prioritized.append(((bucket_date(dt.isoformat(),now)=="OGGI",
+                                 bucket_date(dt.isoformat(),now)=="IERI",
+                                 score,dt.isoformat()),item))
+        prioritized.sort(key=lambda x:x[0],reverse=True)
+        feed_items.append((feed,[v for _,v in prioritized[:5]]))
+    print(f"[RADAR] RSS scan complete; checked={len(feed_items)}",flush=True)
+    # Interleave outlets: first story from every source, then second and so on.
+    # Search and verification consume the remaining bounded runtime.
+    for round_idx in range(5):
+        for feed, items in feed_items:
+            if runtime_exceeded() or len(candidates)>=MAX_CANDIDATES_TOTAL:
                 break
+            if round_idx>=len(items):continue
+            item=items[round_idx]
+            processed_in_feed=0
             primary_feed = feed.get("primary_source", False)
             official_published_at = None
             if primary_feed:
