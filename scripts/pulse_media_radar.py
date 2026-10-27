@@ -20,7 +20,9 @@ EXCLUDED = re.compile(
     r"bonus colonnine|ravvedimento speciale|rottamazione|"
     r"backlog|nuov[ea] commess[ae]|opa|titoli azionari|"
     r"trimestrale aziendale|prodotto pubblicitario|"
-    r"previsioni astrologiche)\b", re.I
+    r"previsioni astrologiche|acer predator|console da gioco|"
+    r"prezzi? di smartphone|smartphone gaming|"
+    r"affitti brevi.*salvini|rischio fermate produttive)\b", re.I
 )
 PUBLIC_INTEREST = re.compile(
     r"\b(?:istat|eurostat|censis|ispra|inps|inail|gimbe|"
@@ -79,6 +81,9 @@ def source_from(item, feed):
     url=item.get("url","")
     domain=(urlsplit(url).hostname or "").lower().removeprefix("www.")
     title=item.get("title","")
+    original_publisher=str(item.get("publisher","")).strip()
+    if domain.endswith("news.google.com") and original_publisher:
+        return original_publisher[:90]
     if domain.endswith("news.google.com"):
         if " - " in title: return title.rsplit(" - ",1)[1].strip()[:90]
         return str(feed.get("name","Google News"))
@@ -96,6 +101,13 @@ def eligible(item, now):
     summary=item.get("summary","")
     if not (28<=len(title)<=260): return False
     if EXCLUDED.search(title):return False
+    # A minister's proposed tax/budget measure or a product price is not a
+    # statistically observed phenomenon. Keep measured public-interest data.
+    if (re.search(r"\b(?:manovra|ipotesi contributo|ddl|proposta di legge|"
+                  r"giorgetti|salvini|decreto legge)\b", title, re.I)
+        and not re.search(r"\b(?:dati|statistic[hae]|rapport[oi]|indagin[ei]|"
+                          r"rilevazion[ei]|studio)\b",title,re.I)):
+        return False
     # Avoid global geopolitical/financial headlines merely containing a number.
     context=title+" "+str(summary)[:450]
     if not PUBLIC_INTEREST.search(context):return False
