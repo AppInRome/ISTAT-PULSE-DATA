@@ -36,6 +36,10 @@ try:
     from scripts.pulse_media_radar import media_brief, disallowed_headline
 except ModuleNotFoundError:
     from pulse_media_radar import media_brief, disallowed_headline
+try:
+    from scripts.pulse_sectional_news import save_indices
+except ModuleNotFoundError:
+    from pulse_sectional_news import save_indices
 
 ROOT=Path("data/news")
 CFG=Path("data/news_radar_sources.json")
@@ -1216,6 +1220,9 @@ def main():
     ARTICLES.write_text(json.dumps({"generated_at":now.isoformat(),"articles":arts},ensure_ascii=False,indent=2)+"\n")
     CANDIDATES.write_text(json.dumps({"generated_at":now.isoformat(),"candidates":candidates},ensure_ascii=False,indent=2)+"\n")
     INDEX.write_text(json.dumps(idx,ensure_ascii=False,indent=2)+"\n")
+    sections=save_indices(arts,idx,ROOT)
+    print("[PULSE] notizie GREEN:",sections["green"]["counts"],
+          "TERRITORI:",sections["territori"]["counts"],flush=True)
     print(json.dumps(idx["counts"],ensure_ascii=False))
 
 if __name__=="__main__": main()
