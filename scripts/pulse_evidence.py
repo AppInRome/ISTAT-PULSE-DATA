@@ -109,6 +109,92 @@ def matrix_evidence(rows, source_url, source_hash, location, unit_hint=""):
     return results
 
 
+
+# Non-percentage values require an explicit unit in the original table or row.
+QUANTITY_UNITS = (
+    ("miliardi di euro", "miliardi di euro"), ("milioni di euro", "milioni di euro"),
+    ("migliaia di euro", "migliaia di euro"), ("euro", "euro"),
+    ("tonnellate", "tonnellate"), ("abitanti", "abitanti"),
+    ("persone", "persone"), ("veicoli", "veicoli"),
+    ("gigawattora", "GWh"), ("gwh", "GWh"), ("twh", "TWh"),
+    ("kwh", "kWh"), ("megawatt", "MW"),
+    ("kilometri", "km"), ("chilometri", "km"),
+    ("unità", "unità")
+)
+
+
+def explicit_quantity_unit(text):
+    label = str(text or "").casefold()
+    for expression, unit in QUANTITY_UNITS:
+        if re.search(r"(?<!\w)" + re.escape(expression) + r"(?!\w)", label):
+            return unit
+    if "€" in label:
+        return "euro"
+    return None
+
+
+def italian_quantity(text):
+    """No ambiguous decimal-point interpretation, no prose-derived numbers."""
+    raw = str(text or "").replace("\u00a0", "").replace(" ", "").strip()
+    if raw in MISSING or not raw:
+        return None
+    if re.fullmatch(r"[+-]?\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?", raw):
+        raw = raw.replace(".", "").replace(",", ".")
+    elif re.fullmatch(r"[+-]?\d+(?:,\d{1,2})?", raw):
+        raw = raw.replace(",", ".")
+    else:
+        return None
+    number = float(raw)
+    return number if abs(number) < 1e15 else None
+
+
+def quantity_evidence(rows, source_url, source_hash, location, unit_hint=""):
+    """Compare only values from the same indicator row, with two explicit years."""
+    results = []
+    if not rows or len(rows) < 2:
+        return results
+    for header_idx in range(min(8, len(rows) - 1)):
+        headers = [str(c or "").strip() for c in rows[header_idx]]
+        years = [(i, int(y)) for i, h in enumerate(headers) if (y := normalize_year(h))]
+        if len(years) < 2:
+            continue
+        years.sort(key=lambda x:x[1])
+        before, after = years[-2:]
+        if not (0 < after[1] - before[1] <= 5):
+            continue
+        table_unit = explicit_quantity_unit(" ".join(headers) + " " + unit_hint)
+        for row_num, row in enumerate(rows[header_idx+1:], start=header_idx+2):
+            if not row or len(row) <= max(before[0], after[0]):
+                continue
+            indicator = str(row[0] or "").strip()
+            if not 4 <= len(indicator) <= 125 or not re.search(r"[A-Za-zÀ-ù]", indicator):
+                continue
+            unit = explicit_quantity_unit(indicator) or table_unit
+            if not unit:
+                continue
+            # A percentage is handled by the percentage-specific extractor.
+            if "%" in indicator or "%" in str(unit_hint):
+                continue
+            earlier = italian_quantity(row[before[0]])
+            latest = italian_quantity(row[after[0]])
+            if earlier is None or latest is None:
+                continue
+            results.append({
+                "indicator": indicator, "unit": unit,
+                "observations": [
+                    {"period":str(before[1]),"value":earlier,"raw":str(row[before[0]])},
+                    {"period":str(after[1]),"value":latest,"raw":str(row[after[0]])}],
+                "delta":round(latest-earlier,3),
+                "comparison_unit":unit,
+                "source_url":source_url,"source_sha256":source_hash,
+                "location":f"{location}:row:{row_num}",
+                "extraction_method":"same_row_explicit_year_quantity_table",
+                "verified":True
+            })
+            if len(results)>=20: return results
+        if results: return results
+    return results
+
 def html_tables(data):
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(data, "html.parser")
@@ -189,6 +275,7 @@ def extract_bytes(data, url, content_type="", filename=""):
     evidence = []
     for location, rows, hint in tables:
         evidence.extend(matrix_evidence(rows, url, source_hash, location, hint))
+        evidence.extend(quantity_evidence(rows, url, source_hash, location, hint))
         if len(evidence) >= 20:
             break
     return {
