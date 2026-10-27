@@ -32,11 +32,20 @@ class MediaRadarTests(unittest.TestCase):
           "Israele alle urne, affluenza al 44,9% alle 14 oggi",
           "Venicemarathon 2026 24 mila iscritti da 124 Paesi",
           "Bonus colonnine 2026, lo sportello chiude alle 12",
-          "Somec trimestrale aziendale backlog record di 1,3 miliardi"
+          "Somec trimestrale aziendale backlog record di 1,3 miliardi",
+          "Acer Predator Atlas 8, prezzi fino a 1.600 euro in Italia",
+          "Ipotesi contributo da 4,5 miliardi da banche in Manovra, Giorgetti"
         ]
         for title in rejects:
             with self.subTest(title=title):
                 self.assertIsNone(media_brief(item(title),FEED,NOW,"ALTRO",70,[]))
+
+    def test_google_news_source_metadata_takes_precedence(self):
+        x=item("Istat: povertà assoluta al 9,7% in Italia nel 2025",
+               source="Fonte aggregata non affidabile")
+        x["publisher"]="Corriere della Sera"
+        out=media_brief(x,FEED,NOW,"ECONOMIA",70,["italia"])
+        self.assertEqual("Corriere della Sera",out["public_source"]["domain"])
 
     def test_old_article_cannot_become_today_on_later_crawl(self):
         old=item("Occupazione in Lombardia al 66,3% nel 2025",
