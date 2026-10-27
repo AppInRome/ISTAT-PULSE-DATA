@@ -14,7 +14,7 @@ from urllib.parse import urlsplit
 
 EXCLUDED = re.compile(
     r"\b(?:israele|gaza|hamas|netanyahu|elezioni (?:usa|israeliane)|"
-    r"calcio|serie a|champions|marathon|maratona|scommess|slot|"
+    r"calcio|serie a|champions|venicemarathon|marathon|maratona|scommess|slot|"
     r"pokerstars|bet365|borsa di tokyo|ftse mib|bitcoin|crypto|"
     r"premio nobel|personaggio televisivo|scandalo|omicidio|"
     r"bonus colonnine|ravvedimento speciale|rottamazione|"
