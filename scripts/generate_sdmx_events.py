@@ -248,6 +248,10 @@ DATASETS = [
 # a 13-second interval (less than five requests/min) across retries too.
 _REQUEST_LOCK = threading.Lock()
 _NEXT_SDMX_REQUEST = 0.0
+# When the official service times out repeatedly, stop hammering a possibly
+# throttled IP. Keep the verified observations from the previous successful run.
+_CONSECUTIVE_FAILURES = 0
+_CIRCUIT_BREAKER_LIMIT = 3
 
 
 def wait_for_sdmx_slot() -> None:
@@ -269,7 +273,10 @@ def local(tag: str) -> str:
     return tag.rsplit("}",1)[-1]
 
 def fetch(dataset: dict) -> tuple[bytes,str]:
+    global _CONSECUTIVE_FAILURES
     flow=dataset["flow"]; start=dataset["start"]
+    if _CONSECUTIVE_FAILURES >= _CIRCUIT_BREAKER_LIMIT:
+        raise RuntimeError("SDMX upstream unavailable or temporarily rate-limited: circuit breaker open")
     url=f"{BASE}/{flow}/all/IT1?startPeriod={start}&endPeriod=2026"
     req=urllib.request.Request(
         url,
@@ -291,12 +298,16 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
                 raw = response.read(max_bytes + 1)
                 if len(raw) > max_bytes:
                     raise ValueError(f"SDMX {flow}: response exceeds {max_bytes} bytes")
+                _CONSECUTIVE_FAILURES = 0
                 return raw, url
         except Exception as exc:
             last = exc
             print(f"SDMX REQUEST ERROR {flow} attempt {attempt}/2: {exc!r}", flush=True)
             if attempt < 2:
                 time.sleep(2)
+    _CONSECUTIVE_FAILURES += 1
+    if _CONSECUTIVE_FAILURES >= _CIRCUIT_BREAKER_LIMIT:
+        print("::warning::ISTAT SDMX upstream likely blocked; halt further remote requests and keep last good data",flush=True)
     raise last
 
 def parse_series(raw: bytes) -> list[dict]:
