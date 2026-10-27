@@ -29,7 +29,7 @@ INDEX=ROOT/"index.json"
 UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/154 Safari/537.36 ISTAT-PULSE-NewsRadar/1.2"
 MAX_RUNTIME_SECONDS=720
 MAX_ITEMS_PER_FEED=18
-MAX_CANDIDATES_TOTAL=100
+MAX_CANDIDATES_TOTAL=150
 
 TOPIC_DOMAINS={
  "LAVORO":["istat.it","inps.it","inail.it","unioncamere.gov.it"],
@@ -848,7 +848,7 @@ def main():
     today=now.astimezone(ROME).date().isoformat()
 
     # Newspaper/agency discovery first. Official RSS remains a validated fallback.
-    feeds = sorted(cfg.get("feeds", []), key=lambda f: bool(f.get("primary_source", False)))
+    feeds = sorted(cfg.get("feeds", []), key=lambda f: not bool(f.get("primary_source", False)))
     for feed in feeds:
         if runtime_exceeded() or len(candidates) >= MAX_CANDIDATES_TOTAL:
             break
