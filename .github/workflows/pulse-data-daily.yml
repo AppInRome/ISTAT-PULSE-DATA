@@ -53,6 +53,8 @@ jobs:
           if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 16 * * *' ]; then mode=news; fi
           echo "PULSE DATA mode=$mode"
           python scripts/refresh_daily_safe.py --mode "$mode"
+      - name: Collaudo offline degli Osservatori
+        run: python -m unittest discover -s tests -p test_observer_daily.py -v
       - name: Aggiorna archivio Osservatori da feed ufficiali
         shell: bash
         run: |
