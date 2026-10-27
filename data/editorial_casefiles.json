@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "method": "Manual primary-source-grounded editorial seed; exact statement verified on the original ISTAT publication, not on a newspaper alone. Used as a worked example and independent original article.",
+  "cases": [
+    {
+      "id": "PULSE-BES-20261026",
+      "story_fingerprint": "istat-bes-edizione-2026-20261026",
+      "discovered_from": "https://www.corriere.it/economia/finanza/26_ottobre_26/istat-migliora-il-benessere-in-italia-ma-5-4-milioni-di-persone-restano-in-poverta-il-divario-con-l-europa-e-il-nord-sud-42ab6c72-dc00-4b42-a73d-84bcf1e30xlk.shtml",
+      "statistical_primary": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/",
+      "additional_primary": "https://www.istat.it/comunicato-stampa/la-poverta-in-italia-anno-2025/",
+      "source_publication_day": "2026-10-26",
+      "published_at": "2026-10-26T08:00:00+00:00",
+      "publication_time_precision": "day",
+      "data_reference_period": "2025",
+      "topic": "ECONOMIA",
+      "headline": "BES 2026: il benessere avanza in 54 indicatori, ma i divari restano ampi",
+      "summary": "Il rapporto BES 2026 segnala progressi in 54 dei 132 indicatori confrontabili con l'anno precedente. Altri 55 restano stabili e 23 peggiorano. Il quadro nazionale rimane diseguale: Istat registra differenze persistenti tra Centro-Nord e Mezzogiorno.",
+      "body": [
+        {
+          "heading": "Il bilancio dei 132 indicatori",
+          "text": "Il miglioramento interessa 54 indicatori, pari a circa il 40,9% dei 132 per cui Istat dispone di un confronto con l'anno precedente. Per 55 indicatori la situazione è stabile, mentre 23 mostrano un peggioramento. I tre gruppi esauriscono i 132 casi confrontabili: il bilancio positivo non significa che ogni dimensione del benessere migliori."
+        },
+        {
+          "heading": "La distanza fra territori",
+          "text": "La distribuzione territoriale dei risultati resta disomogenea. Nel Nord e nel Centro quasi tutte le regioni superano la media italiana in almeno metà degli indicatori regionali; il Lazio costituisce un'eccezione. Nel Mezzogiorno, salvo l'Abruzzo, prevalgono indicatori sotto la media nazionale. È una differenza tra insiemi di indicatori, non una classifica uniforme dei comuni."
+        },
+        {
+          "heading": "Dove l'Italia è indietro rispetto all'Europa",
+          "text": "Sui 40 indicatori BES confrontabili con la media UE27, l'Italia registra risultati più favorevoli in 12 e meno favorevoli in 18. I maggiori punti di debolezza riguardano istruzione, lavoro e ricerca. La quota dei giovani NEET è del 13,3% contro l'11,0% dell'UE27, un divario di 2,3 punti percentuali."
+        },
+        {
+          "heading": "Povertà: un dato diverso dal rischio relativo",
+          "text": "Il rapporto è stato ripreso dalla stampa anche per la condizione delle famiglie. Secondo il comunicato ISTAT sulla povertà assoluta nel 2025, le persone coinvolte sono circa 5,4 milioni. La povertà assoluta non va confusa con il rischio di povertà relativo utilizzato nei confronti europei."
+        },
+        {
+          "heading": "Come leggere i grafici",
+          "text": "Le colonne rappresentano il numero di indicatori in tre categorie di andamento, non valori percentuali né una serie temporale. Il periodo statistico prevalente è il 2025, mentre il rapporto è stato pubblicato il 26 ottobre 2026. L'analisi è originale PULSE e rimanda alle pubblicazioni ISTAT per metodologia e tabelle."
+        }
+      ],
+      "chart_categories": [
+        [
+          "Migliorano",
+          54
+        ],
+        [
+          "Stabili",
+          55
+        ],
+        [
+          "Peggiorano",
+          23
+        ]
+      ],
+      "denominator": 132,
+      "comparison_table": [
+        [
+          "Italia",
+          "Giovani NEET (%)",
+          "2025",
+          "13,3"
+        ],
+        [
+          "UE27",
+          "Giovani NEET (%)",
+          "2025",
+          "11,0"
+        ]
+      ],
+      "source_name": "ISTAT - Rapporto BES 2026"
+    }
+  ]
+}
