@@ -41,6 +41,8 @@ class NewsPromotionTests(unittest.TestCase):
         safe.write_json(work/"candidates.json",{"generated_at":"2026-10-27T09:00:00Z",
                                                "candidates":[{"status":"radar_fetched","radar":"A"},
                                                              {"status":"radar_error","radar":"B"}]})
+        from scripts.pulse_sectional_news import save_indices
+        save_indices(original["articles"],safe.read_json(work/"index.json"),work)
         if valid:
             safe.write_json(work/"editorial_quality_status.json",{
                 "generated_at":"2026-10-27T09:00:00Z",
