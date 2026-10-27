@@ -33,9 +33,9 @@ try:
 except ModuleNotFoundError:
     from pulse_casefile_news import add_verified_casefiles
 try:
-    from scripts.pulse_media_radar import media_brief
+    from scripts.pulse_media_radar import media_brief, disallowed_headline
 except ModuleNotFoundError:
-    from pulse_media_radar import media_brief
+    from pulse_media_radar import media_brief, disallowed_headline
 
 ROOT=Path("data/news")
 CFG=Path("data/news_radar_sources.json")
@@ -1147,6 +1147,7 @@ def main():
     def publicly_readable(a):
         if a.get("publication_status")!="published":return False
         if (a.get("origin_kind")=="pulse_media_radar"
+                and not disallowed_headline(a.get("headline",""))
                 and a.get("editorial_status")=="journalistic_sourced"
                 and (a.get("public_source") or {}).get("role")=="journalistic_source"
                 and (a.get("chart_spec") or {}).get("status")=="requires_primary_source"):
