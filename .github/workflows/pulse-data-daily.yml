@@ -1,6 +1,11 @@
 name: PULSE - aggiorna solo dati e notizie
 
 on:
+  # A change to this workflow can run one verification with "news" mode.
+  # Ordinary code/data pushes never trigger extra expensive data jobs.
+  push:
+    paths:
+      - ".github/workflows/pulse-data-daily.yml"
   schedule:
     - cron: '17 5 * * *'
     - cron: '17 16 * * *'
@@ -57,6 +62,7 @@ jobs:
           SCHEDULE: ${{ github.event.schedule }}
         run: |
           mode="${MODE_REQUESTED:-all}"
+          if [ "${{ github.event_name }}" = "push" ]; then mode=news; fi
           if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 16 * * *' ]; then mode=news; fi
           echo "PULSE DATA mode=$mode"
           python scripts/refresh_daily_safe.py --mode "$mode"
