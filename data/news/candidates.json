@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T15:03:01.513795+00:00",
+  "generated_at": "2026-10-28T17:51:52.174959+00:00",
   "candidates": [
     {
       "radar": "Google News - ANSA dati e statistiche",
@@ -54,7 +54,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 53
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -99,12 +99,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 19
+      "items_fetched": 20
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 34
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -114,12 +114,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 37
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 47
+      "items_fetched": 49
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -219,12 +219,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 54
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 53
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -339,7 +339,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 59
     },
     {
       "radar": "Repubblica Economia",
@@ -368,16 +368,56 @@
     },
     {
       "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObFFuM2NuRmh2cHhwc1ZPQ2xDVFNGWmNGN1FYYW1zOHFiODQwRkRwZnliV215SkZmanlZY3Fub1RQVXZTQ0JUTHl5UHZqclBXbGFhLUVEREZ4NEdpQng1VnY5WDY3QmNlNTJzRlpDWWs2cG9EOURnWTBBRVhoMzVPc0lLZWdDdEhQa1A2MHVicGtXZGJTN2dzaGxoaVVnbm9sTDN1QVVpaTdwd3hOZlNQNU5PM3Y4STJzdG5oLXNtc1FxVTFjaEE?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Il largo consumo italiano resiste: inflazione sotto controllo e +2,5% nel 2026 - BusinessCommunity.it",
-      "detected_at": "2026-10-28T15:03:01.513795+00:00",
-      "score_discovery": 49,
+      "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Olio d’oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma su nuovo raccolto pesano clima e costi di produzione - Agricultura.it",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
+      "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "+2,5%",
         "2026 ",
-        "+2,5%",
-        "2026 "
+        "4,30 ",
+        "4,90 ",
+        "2026 ",
+        "4,30 ",
+        "4,90 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia scuola e università",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
+      "score_discovery": 49,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "13,3%",
+        "11%",
+        "13,3%",
+        "11%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHlaNzN1SlhxXzJxZHJ3NTNDQTVuT3hNMmFkTGlzb2JXOXFmWFlVX3ZyRU41WlVQRTBWSHUwb3ktZ1gwRkMzVFdXU21HVHhFdVk1b0lXbHh4X241T2hSX1NMYkxpV0x3UWEtQlJuNmhzMUE2XzYzQ3Z3THctdElXTU5JX3hUWDFZWUVyR005cXd5cWI0cGpBMlN1eHl2UFAtbUVkX1NJcnZTNFdJMjBrM0JtTDJlREdfNDB0SGZibENQd21OSml6UWFsaGZ5YnJCblFKczJqTjFVS3lL?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Consumo di suolo, nel 2025 è record: Brianza prima in Lombardia col 41%, «Pedemontana mangia il territorio - Il Cittadino di Monza e Brianza",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
+      "score_discovery": 64,
+      "topic": "AMBIENTE",
+      "numbers_detected": [
+        "2025 ",
+        "41%",
+        "2025 ",
+        "41%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -389,7 +429,7 @@
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-28T15:03:01.513795+00:00",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -410,7 +450,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
       "discovery_title": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026",
-      "detected_at": "2026-10-28T15:03:01.513795+00:00",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -474,29 +514,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
-      "detected_at": "2026-10-28T15:03:01.513795+00:00",
-      "score_discovery": 49,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "13,3%",
-        "11%",
-        "13,3%",
-        "11%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
       "discovery_title": "Fatturato dell’industria e dei servizi – Agosto 2026",
-      "detected_at": "2026-10-28T15:03:01.513795+00:00",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -560,7 +581,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxPb29DRC1HY0FTSmdld0d4blFnZEVZeUpZT0ZlN1RGZ1ZiN25fbjJuZlJhRDZEZ2ZDN1NEV3k4YXNud1BaTmFLV25TNVB5eEJ2YU96VjNUdjlESUNNTTZkQ3lGYTNiZXJKdVMxemVVSzVlUVh5M1BQOEIxcEFHT2h3enhjU1FDaXBjVTJIUS0xYkJJZmVDS2JnOC1mdFVxbVI0V2dwWXJUeW43emZVbG9TTWNJTnJheUpvMG9SNjFtVS1iUDNGNko2WmphZDBodUxhX096alhvU19TdGZZU1NiSHQzRmowZXhCWkdpOG9pUjh6ZmY4ZmFqVm5QcVQzWU9zU0toV2JDX0tEN0J2dEVIT1k4SU5IdGw3Y0xSRDctLXRuOFM2U2Q1dWZKNXRxd2ZxTmIxR1MwQ3hobWtrTl9uWFRRV2FQTlBEenZZWjZENEF0Rm0yVVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Italiani sempre più longevi, ma 5,6 milioni di cittadini rinunciano alle cure. Medici di famiglia sotto pressione: oltre la metà ha più di 1.500 assistiti. Ecco il Rapporto Bes 2026 dell’Istat - Quotidiano Sanità",
-      "detected_at": "2026-10-28T15:03:01.513795+00:00",
+      "detected_at": "2026-10-28T17:51:52.174959+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
