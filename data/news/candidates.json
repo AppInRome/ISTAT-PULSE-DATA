@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-10-28T08:59:39.119869+00:00",
+  "generated_at": "2026-10-28T11:53:30.203172+00:00",
   "candidates": [
-    {
-      "radar": "Repubblica Economia",
-      "status": "radar_fetched",
-      "items_fetched": 25
-    },
     {
       "radar": "Google News - ANSA dati e statistiche",
       "status": "radar_fetched",
@@ -39,7 +34,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 32
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -49,17 +44,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 34
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 40
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -104,12 +99,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 14
+      "items_fetched": 15
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 34
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -124,7 +119,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 49
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -194,7 +189,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 9
+      "items_fetched": 10
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -224,12 +219,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 56
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 53
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -334,17 +329,22 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 24
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 30
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 58
+    },
+    {
+      "radar": "Repubblica Economia",
+      "status": "radar_fetched",
+      "items_fetched": 25
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -367,61 +367,50 @@
       "items_fetched": 3
     },
     {
-      "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObFFuM2NuRmh2cHhwc1ZPQ2xDVFNGWmNGN1FYYW1zOHFiODQwRkRwZnliV215SkZmanlZY3Fub1RQVXZTQ0JUTHl5UHZqclBXbGFhLUVEREZ4NEdpQng1VnY5WDY3QmNlNTJzRlpDWWs2cG9EOURnWTBBRVhoMzVPc0lLZWdDdEhQa1A2MHVicGtXZGJTN2dzaGxoaVVnbm9sTDN1QVVpaTdwd3hOZlNQNU5PM3Y4STJzdG5oLXNtc1FxVTFjaEE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Il largo consumo italiano resiste: inflazione sotto controllo e +2,5% nel 2026 - BusinessCommunity.it",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
       "score_discovery": 49,
-      "topic": "LAVORO",
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "13,3%",
-        "11%",
-        "13,3%",
-        "11%"
+        "+2,5%",
+        "2026 ",
+        "+2,5%",
+        "2026 "
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2024/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "11%",
-          "11%"
-        ],
-        "matched_non_year_numbers": [
-          "11%",
-          "11%"
-        ],
-        "matched_keywords": [
-          "istat",
-          "resta",
-          "media",
-          "istruzione",
-          "lavoro",
-          "quota"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Livelli di istruzione e ritorni occupazionali – Anno 2024 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore conferma la tu",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"istat resta sotto media istruzione lavoro\" 13,3% 11% 13,3%",
-            "results": 6
-          }
-        ]
-      },
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2JrNm5MOHVDS1prSFBEVHk4WXdOdkFkNnB0NkZNaDh0UGkxU1pVc1Y5YUtBVzVsRHNycUN2czV0QUdvWFN4S2Z2ckp6aE1VeVRrekp1WjV5emxuWkJ2bEYyT0x1OExHS2dqS2hfeWNPV3pYdU1CU3BsVzE3ZndkckVHc3lMRmVYVnlJZlljeDVOOUVtOHByd0NZRXhoY1lFdnJuSldFX3NueWd0bHBLd3ZkekJBS1VoYlkyRE9fcElJZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "In Toscana nascite in calo dal 2008, arriva il contributo di 500 euro per le neo mamme - 055 Firenze",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 50,
+      "topic": "DEMOGRAFIA",
+      "numbers_detected": [
+        "2008",
+        "500 ",
+        "055 ",
+        "2008",
+        "500 ",
+        "055 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
     },
     {
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -439,24 +428,110 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/consumi/26_ottobre_28/consumi-italiani-piu-poveri-e-con-meno-fiducia-acquisti-ai-minimi-da-un-anno-d6dbd3c3-17cb-4dbd-8174-77bca30dbxlk.shtml",
-      "discovery_title": "Consumi, italiani più poveri (e con meno fiducia): acquisti ai minimi da un anno",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
-      "score_discovery": 48,
-      "topic": "LAVORO",
+      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
+      "discovery_title": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 50,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "55%",
-        "59%",
-        "4,4%"
+        "2026 ",
+        "2026 ",
+        "2,9%",
+        "13,8%",
+        "-0,1%",
+        "+3,2%"
+      ],
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/10/PPI_PPC_0926.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/10/serieprezziindustria_09_26.xlsx",
+        "https://www.istat.it/wp-content/uploads/2026/10/serieprezzicostruzioni_09_26.xlsx",
+        "https://www.istat.it/wp-content/uploads/2026/10/NotaInformativa_PPI_10-marzo_2026.pdf",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it",
+        "https://www.istat.it/it/archivio/prezzi+produzione+servizi",
+        "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
+        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
+        "https://www.istat.it/?tag=beni-consumo",
+        "https://www.istat.it/?tag=beni-intermedi",
+        "https://www.istat.it/?tag=beni-strumentali"
+      ],
+      "official_domain_hints": [
+        "istat.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026 ",
+          "2,9%",
+          "13,8%",
+          "-0,1%",
+          "+3,2%"
+        ],
+        "matched_non_year_numbers": [
+          "2,9%",
+          "13,8%",
+          "-0,1%",
+          "+3,2%"
+        ],
+        "matched_keywords": [
+          "prezzi",
+          "alla",
+          "produzione",
+          "dell",
+          "industria",
+          "costruzioni",
+          "settembre",
+          "crescono"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Setting",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Olio d'oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma pesano clima e costi di produzione - Agricultura.it",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "4,30 ",
+        "4,90 ",
+        "2026 ",
+        "4,30 ",
+        "4,90 "
       ],
       "official_links": [],
-      "official_domain_hints": [
-        "aci.it",
-        "iss.it",
-        "istat.it",
-        "terna.it"
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia scuola e università",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 55,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "43,1%",
+        "45,5%",
+        "8,2%",
+        "43,1%",
+        "45,5%",
+        "8,2%"
       ],
+      "official_links": [],
+      "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
@@ -465,7 +540,7 @@
       "radar": "Google News - Disuguaglianze e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYVRqUk1saXFKYXM5djBLcmFUWFlIeDVPdmVnQUtnY0NHQ3pzcE9rOS1Rd0g5VEc1ZVZzZER3bHV3QjhHMWp0N09xNUk4d19zZGNDbkFUVFd6dk9kcG53b1dIRm5zT3o1WWwyclhvR2c3TXlqODlMZEFVZm5Tc3k1WGZVYWQxd1ZTbFJLNG8tT25jUnZKSVZESW5kUGs0M2JORXVodmg5Z19TT1M3U0pmbklKNWFDZ3JhXzRVU1JuWGxJdEY3QTBnQWJYek54bTVfckpYYXRINWVHQURLWVVGOWY1UmZ5M3BL?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat 5,4 milioni di persone in povertà assoluta in Italia nel 2025 pari all' 8% delle famiglie totali 8,4% nel 2024 - Zazoom Social News",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -487,81 +562,105 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
-      "score_discovery": 55,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "43,1%",
-        "45,5%",
-        "8,2%",
-        "43,1%",
-        "45,5%",
-        "8,2%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE Italia - dati di regioni province comuni",
-      "discovery_url": "https://news.google.com/rss/articles/CBMikANBVV95cUxOMUNfOWs2cnM1a1NtT0hWcDJIN2NJbUZTNTNNTUlhVWNIc1hEMUoxTnNtaC0yNGoxN1k3Sk1rTGpWSGxUbUxrQXJCcVJEMzhWWUFTYmQ0WG1HWk9zQkxBQ1RqTXNzbkFiUHZRbGlXYkJRdHgxMklOanp0VGlBWkFDYXh0ODFmcGM2U2hyMHA5d09WZlJKUzFlNERGSEFsTnN3VXRWOHcxbVRfenl2VUdfUjdrVFZZTWtIRXR6S3pUaV9fWmpoZkxROEN3a1JiUHNxd1NKenRMSEpuTjJleERkam1CWnhETmk5RlBmZXF0R2RzTkU2OG55MHZmYlZYVjMxTEVZMmJTSHNzTks4YVJUSHBTWTJJOElvcnI4SnJMdjJFenNwVDNYM2oxMHdKNVhnSnU0V0YxUFNfeGFsX0N3ZENIcnZnUEthQWkwd2tRV1JhUzlScFZEVkl4VHMxWW9UQ1BjZ3FIbGZWYWdIZmZpV2FMbV9abGVCdHlUc1E3eS1kZDBmNGxOV2JiQmREOTdD0gGWA0FVX3lxTE9LbWdNejZqZW1jQnplRFRjeHFISjNBajZHSnBYOUItX2RNV1N3Nms2WnMxSGRVYkhTSkp2LXVoeGlYQnllcHVzemdHN01aRXlMeVdEMTRmd1FRTllkalFjOTBCV1BzN0JWM3RRcGRKX1M3QWVJSFM3TUZYdmw2SG56OGRRZG1rNmRubVpEQzRnWG1OV0MydWxrSHRxbjA5dU1BUEZRUGxnQmlxcWdfVFBXX0s2c2pQRno5VjJvMFY3aWFfOTlDVnE4c2dlLWwzVjdCVXBpTElGTXN0dkU3QWVXNFpfbFEyVDdZZFFGQVp1MndqMHk1eTFqMHdwQVdSZjRzQ2J5ZzZpU2lUanluWTRvclpOOEFxa3l2Ym5sR2JxMEtHV1d1MW1JdlNXMWstLWwycHlYREN3OHk1OG1YUHZMWDFER2VXLTFyRmtJTHFHblFwaEx2ejV0dnFQMFp5Z3RiXzdIbUJlMDI0T2RWOTNFZEdEcTVhNmc3RW1oRXhYVXBlYXBTZENoc2lPV1VySjBsekdfa0E?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Mercato immobiliare, Puglia: case in vendita, calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente: più marcato a Foggia ( - 8,9 per cento), Andria ( - 7,9 per cento) e Bari ( - 6,8 per cento) - Virgilio",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
-      "score_discovery": 60,
-      "topic": "CASA",
+      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
+      "discovery_title": "Fatturato dell’industria e dei servizi – Agosto 2026",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
       "numbers_detected": [
         "2026 ",
-        "8,9 ",
-        "7,9 ",
-        "6,8 ",
-        "2026 ",
-        "8,9 ",
-        "7,9 ",
-        "6,8 "
+        "2026",
+        "4,2%",
+        "2025",
+        "3,6%"
       ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/10/fatturato_202608_it.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/10/Fatturato_202608.xlsx",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
+        "https://www.istat.it/statistiche-per-temi/economia/servizi/",
+        "https://www.istat.it/?tag=attivita-economica",
+        "https://www.istat.it/?tag=fatturato",
+        "https://www.istat.it/?tag=fatturato-industria-e-servizi",
+        "https://www.istat.it/?tag=industria",
+        "https://www.istat.it/?tag=servizi-2",
+        "https://www.istat.it/?tag=comunicati-congiunturali"
+      ],
+      "official_domain_hints": [
+        "istat.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026",
+          "4,2%",
+          "2025",
+          "3,6%"
+        ],
+        "matched_non_year_numbers": [
+          "4,2%",
+          "3,6%"
+        ],
+        "matched_keywords": [
+          "fatturato",
+          "dell",
+          "industria",
+          "servizi",
+          "agosto",
+          "corretto",
+          "effetti",
+          "calendario"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Fatturato dell’industria e dei servizi – Agosto 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma ",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Tasse redditi casa",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNazRCVmpjVWx1cF92LW0wbW1EXzg5dWhMN0h4bmZpTFhuTk13dmlDMmhYU2M1VmcwUUxGUmVrbDJKWFdXRy1XRGdPU2FnR3lma29tREg4YjZndm04bV9BZk5TU1l2YWFhWXdNc0YyZWJMaE5xUUdnd0NCSHFmbTZFbk9tSDYxZjJnWlpTUnFhZnpiNjgwQzhoRHlUTWVKNjlHaFl2NUVvLUh6em9DSE9ZMDdWQXFWLXI5SmFES0RPenBNeTFNXzhJMmNjY2dDZGc2bGJqbVJQdWhOel9mcFYtOGR4WmU?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
-      "score_discovery": 69,
-      "topic": "DEMOGRAFIA",
+      "radar": "Corriere della Sera - Economia",
+      "discovery_url": "https://www.corriere.it/economia/consumi/26_ottobre_28/consumi-italiani-piu-poveri-e-con-meno-fiducia-acquisti-ai-minimi-da-un-anno-d6dbd3c3-17cb-4dbd-8174-77bca30dbxlk.shtml",
+      "discovery_title": "Consumi, italiani più poveri (e con meno fiducia): acquisti ai minimi da un anno",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 48,
+      "topic": "LAVORO",
       "numbers_detected": [
-        "83,7 ",
-        "5,4 milioni",
-        "83,7 ",
-        "5,4 milioni"
+        "55%",
+        "59%",
+        "4,4%"
       ],
       "official_links": [],
-      "official_domain_hints": [],
+      "official_domain_hints": [
+        "aci.it",
+        "iss.it",
+        "istat.it",
+        "terna.it"
+      ],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNY0cxcGR0dVQxOFkzYmNZR0ZMcHAzMTBhTmZMMkdyOF92VnhiZDloSFhXWnNVZ0g2YnNxX3BZSFl0UDhXbGZLaVM2MGtfMms4VndmNWVLeW02bFR3M2hGRjNDd1R2T2RWS0FvZy1Oby1KSTNCOGFHcGxWbE1FbzBDRkV6STExTkdka2lRbUY3Z1JGMzBXT3FLTXlNM3BQTGstZGtRbGs0b0JQQXF3bTRiVFl6VHVjR0hxZzZtN1lCbUt0cVZXbGRfaVJiNWRDUnJUaDlxdDg3b3BaM0dsNmRDbWw2M2dpbVVmZ2xDZU1wVzRsblYwUjFyZmNhQXRHdw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Istat, \"il 43% degli studenti di terza media non raggiunge competenze sufficienti in italiano e il 45% in matematica\". Il rapporto Bes 2026 - Tecnica della Scuola",
-      "detected_at": "2026-10-28T08:59:39.119869+00:00",
-      "score_discovery": 65,
-      "topic": "ISTRUZIONE",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxPb29DRC1HY0FTSmdld0d4blFnZEVZeUpZT0ZlN1RGZ1ZiN25fbjJuZlJhRDZEZ2ZDN1NEV3k4YXNud1BaTmFLV25TNVB5eEJ2YU96VjNUdjlESUNNTTZkQ3lGYTNiZXJKdVMxemVVSzVlUVh5M1BQOEIxcEFHT2h3enhjU1FDaXBjVTJIUS0xYkJJZmVDS2JnOC1mdFVxbVI0V2dwWXJUeW43emZVbG9TTWNJTnJheUpvMG9SNjFtVS1iUDNGNko2WmphZDBodUxhX096alhvU19TdGZZU1NiSHQzRmowZXhCWkdpOG9pUjh6ZmY4ZmFqVm5QcVQzWU9zU0toV2JDX0tEN0J2dEVIT1k4SU5IdGw3Y0xSRDctLXRuOFM2U2Q1dWZKNXRxd2ZxTmIxR1MwQ3hobWtrTl9uWFRRV2FQTlBEenZZWjZENEF0Rm0yVVE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Italiani sempre più longevi, ma 5,6 milioni di cittadini rinunciano alle cure. Medici di famiglia sotto pressione: oltre la metà ha più di 1.500 assistiti. Ecco il Rapporto Bes 2026 dell’Istat - Quotidiano Sanità",
+      "detected_at": "2026-10-28T11:53:30.203172+00:00",
+      "score_discovery": 55,
+      "topic": "SALUTE",
       "numbers_detected": [
-        "43%",
-        "45%",
+        "5,6 milioni",
+        "1.500 ",
         "2026 ",
-        "43%",
-        "45%",
+        "5,6 milioni",
+        "1.500 ",
         "2026 "
       ],
       "official_links": [],
