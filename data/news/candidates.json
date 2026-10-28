@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T02:55:32.487873+00:00",
+  "generated_at": "2026-10-28T05:50:06.685732+00:00",
   "candidates": [
     {
       "radar": "Repubblica Economia",
@@ -39,12 +39,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 42
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 33
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -54,12 +54,12 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 52
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -104,7 +104,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 13
+      "items_fetched": 14
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -124,7 +124,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 58
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -224,12 +224,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 53
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 47
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -334,12 +334,12 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 31
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 58
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,33 @@
       "items_fetched": 3
     },
     {
+      "radar": "Google News - Italia lavoro e imprese",
+      "discovery_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdXkxRmJpNGxiUjlaNDVlUHRncmFzTzZtNmIydE5RYVZSX2pwQmsyRFdZMmd3TURXdUl1OC11YmVpU3pLcktPOVNlWVo1QWd5cFl3RjZFNlRsQTh6cG5ueS1yTjdpMjc4S2hNUk0zN29VdHJSc21Na1dTUFVKdncwTWR4ckNtMm9nck9YZ3RGanhITjA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Export agroalimentare +0,5% in primi 6 mesi 2026, Usa -10,8% - Studio90 Italia",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
+      "score_discovery": 50,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+0,5%",
+        "6 ",
+        "2026",
+        "-10,8%",
+        "+0,5%",
+        "6 ",
+        "2026",
+        "-10,8%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 49,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -378,65 +401,6 @@
         "11%",
         "13,3%",
         "11%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2024/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "11%",
-          "11%"
-        ],
-        "matched_non_year_numbers": [
-          "11%",
-          "11%"
-        ],
-        "matched_keywords": [
-          "istat",
-          "resta",
-          "media",
-          "istruzione",
-          "lavoro",
-          "quota"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Livelli di istruzione e ritorni occupazionali – Anno 2024 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore conferma la tu",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "inps.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"istat resta sotto media istruzione lavoro\" 13,3% 11% 13,3%",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "inps.it",
-            "query": "site:inps.it \"istat resta sotto media istruzione lavoro\" 13,3% 11% 13,3%",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "PULSE Italia - dati di regioni province comuni",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOM3dmaE55VU5sajROZDJWdlVhRjdJRm1pdHE2MXExRWhvVWJGbkpoZ0t5TXI2dk9jXzJLb3hCbnkyWGZTR2lwRGZqUmhqVko4YW1KRm1uZkZWQl85dVRMcC1heHRPamJRaFhIeUxZaHYydGpFVFZ4eHJ1VVphYWlRQnhrcFlocVZCNUE?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Fecondità ai minimi storici in Ue: 1,34 figli per donna nel 2024, Italia tra i più bassi 1,18. I dati Eurostat - ilFarmacistaOnline",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
-      "score_discovery": 45,
-      "topic": "DEMOGRAFIA",
-      "numbers_detected": [
-        "1,34 ",
-        "2024",
-        "1,18",
-        "1,34 ",
-        "2024",
-        "1,18"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -448,7 +412,7 @@
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -469,7 +433,7 @@
       "radar": "Google News - Disuguaglianze e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNYVRqUk1saXFKYXM5djBLcmFUWFlIeDVPdmVnQUtnY0NHQ3pzcE9rOS1Rd0g5VEc1ZVZzZER3bHV3QjhHMWp0N09xNUk4d19zZGNDbkFUVFd6dk9kcG53b1dIRm5zT3o1WWwyclhvR2c3TXlqODlMZEFVZm5Tc3k1WGZVYWQxd1ZTbFJLNG8tT25jUnZKSVZESW5kUGs0M2JORXVodmg5Z19TT1M3U0pmbklKNWFDZ3JhXzRVU1JuWGxJdEY3QTBnQWJYek54bTVfckpYYXRINWVHQURLWVVGOWY1UmZ5M3BL?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat 5,4 milioni di persone in povertà assoluta in Italia nel 2025 pari all' 8% delle famiglie totali 8,4% nel 2024 - Zazoom Social News",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -491,10 +455,29 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOTFBWVnpUQXFJbFk4dEdZNGtCMTFvR1JaQVhpTnkzMDFjME1hU0RZZ19BREU2Ul8xRHl5bmdBRHpfTlNoQnNtWTVtdzlkeVdhYjlKQ3hRWU9PdzlEa2h2UXUwV2RZQzZSaHpKUlVRVUp3R2ZHUWdiTlpJeUdjc2dMSzlCNW9pRzVpdWRVZWloNFF0OG9ITWxFd3ltbmpOcTRGREJrSGVST2haS1ByN2dXMnhRaVF6cUdqcHJMUU9ZOWlKY2xNdDBnMVhfT19NMUxxMkFiZE1nN3ZncDhJQjI0YTMxbU9qMjZDY1hSZG5DWjk5NWxMazRUZEhOWXRLZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "TREND | Estate 2026 positiva per il turismo: flussi +1,8%, rallentano i rincari ma restano gli effetti dell'inflazione accumulata - Turismo Italia News",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "+1,8%",
+        "2026 ",
+        "+1,8%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia ambiente energia mobilità",
       "discovery_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBBSjlsQ3pPY0M1dW1IakVrazQ2cTdfR0pHZm1MVU1Nc05VY0FNZ3A2RGxzdy1OeUlHWm5xbE1oeUpCS3dyQkw0UkxuYmE3d0QzcXRRSXhqRWdxVEhZY1pTVVlXVzBsMDlGc1BTOEtuMA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Mercato auto usate in Italia: -1,4% ad agosto, ma +1,2% nei primi otto mesi del 2026 - HDmotori",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 45,
       "topic": "MOBILITA",
       "numbers_detected": [
@@ -512,10 +495,54 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE Italia - dati di regioni province comuni",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOM3dmaE55VU5sajROZDJWdlVhRjdJRm1pdHE2MXExRWhvVWJGbkpoZ0t5TXI2dk9jXzJLb3hCbnkyWGZTR2lwRGZqUmhqVko4YW1KRm1uZkZWQl85dVRMcC1heHRPamJRaFhIeUxZaHYydGpFVFZ4eHJ1VVphYWlRQnhrcFlocVZCNUE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Fecondità ai minimi storici in Ue: 1,34 figli per donna nel 2024, Italia tra i più bassi 1,18. I dati Eurostat - ilFarmacistaOnline",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
+      "score_discovery": 45,
+      "topic": "DEMOGRAFIA",
+      "numbers_detected": [
+        "1,34 ",
+        "2024",
+        "1,18",
+        "1,34 ",
+        "2024",
+        "1,18"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxOR0RCRVNlc2JZUGlUUHEwMzRuRjRVZjFkLWV1bTNFUW9DLUFocGliSnBEbUZjZi1yeXFheXRsZWxwOTIydUlTZDI0SDViaVZ6Z09FdFl4b29LN0lMbE1EQWtKQTcwWktyZDRpcTlTal9xWHpnSDZEWVhlY1UxMnlJaXJHekppOFJfWWRPUEhBODBkVUlmVEpSZl9SU3FIdGQ1YWJiWGQtUVBBeHJxOXdKVEFIOVBiV0RQZEU3WjVCU1pLSzBwVXVzM0FjMjZBSF81WnR5OGxiaC0tbnhjU2ZGLTFScEFZYkFTN18zX2J5YjlaSG43aUpFdWFHcHpHSDZldHZwOWRtSFlBZUcwYnMtZkcxNlItZHh0V29Fcm5fVXcxaDc4NkZJM1Y2MjQ4bkpXeW50YldTbm1VS1hBZnZRUXczTUU4WW1JUUQ5TUNMNm4?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Mercato immobiliare Puglia | case in vendita calo in tutte le città capoluogo Idealista su dati terzo trimestre 2026 rispetto al precedente | più marcato a Foggia -8,9 per cento Andria -7,9 per cento e Bari -6,8 per cento - Zazoom Social News",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
+      "score_discovery": 60,
+      "topic": "CASA",
+      "numbers_detected": [
+        "2026 ",
+        "-8,9 ",
+        "-7,9 ",
+        "-6,8 ",
+        "2026 ",
+        "-8,9 ",
+        "-7,9 ",
+        "-6,8 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
       "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYkVPcTk1ZlZ0SlpPcEJMVlA2VWtQaDZXRjRDMG0wUGlxUTVwekxPT3hnT1djaFJmTlZvTVlHZkgyWHRocGVzRjFhczFQRFFIZVEybk04N0tVWWRiTDZEX1czR3FrZ1VfZGM4RmltTGk3QTh6V3NQT0l0cUpkS1J6YkJZZGVlV3JZVmlaa3JVM09OSmt0SFJSSDZoem56am5CS3VZMFFoV2tSdw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat, nel 2025 oltre 5,4 milioni di persone in uno stato di povertà assoluta. In undici anni è cresciuta del 2,4% - L'Espresso",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -533,10 +560,29 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - economia lavoro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPell5MkNyZ3V2Y19qWnp5a00tTHZlMmlzbHc5Uk5XTTZnUUxZU2ZITm1qY2JLTDAtRkV2V2NYZmVnekR5U2ZGZ1NoM0ZiWkE3eFRKWW9yMnprRFQ5ZmNFMlJickdjbzBXTlRrOWpNZ1NVbWVodWp2YWROVDJjWUNiY013MHB2WTlWRjNiZEZ2MFBNd3c1QU1iT3NEMlJCZ2t2SGV1SzlORGZadkt5aHBnNW5xcW1MdkFHSHJDTHByRQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Turismo, in Puglia oltre 96mila dipendenti nel 2025: occupazione in crescita - Corriere dell'Economia",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
+      "score_discovery": 49,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "96mila",
+        "2025",
+        "96mila",
+        "2025"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -554,29 +600,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Tasse redditi casa",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNazRCVmpjVWx1cF92LW0wbW1EXzg5dWhMN0h4bmZpTFhuTk13dmlDMmhYU2M1VmcwUUxGUmVrbDJKWFdXRy1XRGdPU2FnR3lma29tREg4YjZndm04bV9BZk5TU1l2YWFhWXdNc0YyZWJMaE5xUUdnd0NCSHFmbTZFbk9tSDYxZjJnWlpTUnFhZnpiNjgwQzhoRHlUTWVKNjlHaFl2NUVvLUh6em9DSE9ZMDdWQXFWLXI5SmFES0RPenBNeTFNXzhJMmNjY2dDZGc2bGJqbVJQdWhOel9mcFYtOGR4WmU?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Speranza di vita record a 83,7 anni ma 5,4 milioni di persone in povertà assoluta: salute, lavoro e redditi nei dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
-      "score_discovery": 69,
-      "topic": "DEMOGRAFIA",
-      "numbers_detected": [
-        "83,7 ",
-        "5,4 milioni",
-        "83,7 ",
-        "5,4 milioni"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxPb29DRC1HY0FTSmdld0d4blFnZEVZeUpZT0ZlN1RGZ1ZiN25fbjJuZlJhRDZEZ2ZDN1NEV3k4YXNud1BaTmFLV25TNVB5eEJ2YU96VjNUdjlESUNNTTZkQ3lGYTNiZXJKdVMxemVVSzVlUVh5M1BQOEIxcEFHT2h3enhjU1FDaXBjVTJIUS0xYkJJZmVDS2JnOC1mdFVxbVI0V2dwWXJUeW43emZVbG9TTWNJTnJheUpvMG9SNjFtVS1iUDNGNko2WmphZDBodUxhX096alhvU19TdGZZU1NiSHQzRmowZXhCWkdpOG9pUjh6ZmY4ZmFqVm5QcVQzWU9zU0toV2JDX0tEN0J2dEVIT1k4SU5IdGw3Y0xSRDctLXRuOFM2U2Q1dWZKNXRxd2ZxTmIxR1MwQ3hobWtrTl9uWFRRV2FQTlBEenZZWjZENEF0Rm0yVVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Italiani sempre più longevi, ma 5,6 milioni di cittadini rinunciano alle cure. Medici di famiglia sotto pressione: oltre la metà ha più di 1.500 assistiti. Ecco il Rapporto Bes 2026 dell’Istat - Quotidiano Sanità",
-      "detected_at": "2026-10-28T02:55:32.487873+00:00",
+      "detected_at": "2026-10-28T05:50:06.685732+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
