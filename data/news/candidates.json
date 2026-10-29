@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-10-29T09:02:18.272705+00:00",
+  "generated_at": "2026-10-29T11:54:08.665458+00:00",
   "candidates": [
-    {
-      "radar": "Google News - Italia lavoro e imprese",
-      "status": "radar_fetched",
-      "items_fetched": 31
-    },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
@@ -14,7 +9,7 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 38
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -24,7 +19,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 27
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -69,7 +64,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 22
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -84,7 +79,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -129,7 +124,7 @@
     {
       "radar": "AGI - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 0
     },
     {
       "radar": "Repubblica - Homepage",
@@ -159,7 +154,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 8
+      "items_fetched": 6
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -189,12 +184,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 57
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -304,12 +299,12 @@
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 55
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 59
+      "items_fetched": 28
     },
     {
       "radar": "Repubblica Economia",
@@ -347,6 +342,11 @@
       "items_fetched": 60
     },
     {
+      "radar": "Google News - Italia lavoro e imprese",
+      "status": "radar_fetched",
+      "items_fetched": 35
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -370,7 +370,7 @@
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -388,10 +388,121 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Corriere della Sera - Economia",
+      "discovery_url": "https://www.corriere.it/economia/chiedi-esperto/casa/compravendita-e-affitti/26-10-29/ritardi-nella-consegna-di-un-appartamento-e-possibile-rinuncia-allacquisto/",
+      "discovery_title": "Ritardi nella consegna di un appartamento e possibile rinuncia all'acquisto",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 50,
+      "topic": "CASA",
+      "numbers_detected": [
+        "60.000 ",
+        "30 ",
+        "2026",
+        "4 ",
+        "2026",
+        "30 ",
+        "2026",
+        "2027",
+        "30 ",
+        "2026 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "iss.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Milano Finanza dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcDVxdG1YX0JMUXhMWVZyZGZuODFSWE8xdDAybDloOWJHQnBFLTlNZ0FZS3ZodHFFOWpBdEJlY1hwa0hjTW9YaldLSVg2UWhEbWFtX1lnNXl4WWJidnpDajNmQ3VjT3Z4WHhxUGxTSkV5RU52T2NkUEFsZExWS3U1aUdUOW9PMjZHdkYyOWVTbS04WEFsT2k0a3JKMVN2UjVVdjlKYkZ4X21uTW5YaGdzUG9WOGNmc2NsR1BGcUtFMFU1ODgydWdRSHp1M3VmMFd1anEtckJDUVE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "*Lavoro: tasso disoccupazione settembre stabile al 6,3%, giovanile cala al 19,9% (Istat) - Milano Finanza",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 49,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "6,3%",
+        "19,9%",
+        "6,3%",
+        "19,9%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Disuguaglianze e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQdzNDdU9zNkptNmhUM1ZRQ0VYY3g4bm5ULW1mci1zODVUMGpXYi1HcUR0d2F4TTl6dXlVUElrN2EzeXEwWWh0R0YweGszcW11RmZrazktOGI5b0tuS2o4dWRkYWN4d0RkdFBuZENTczZyVUNJQ01lWmVTX3NzN1h4UjlzU09KMmxzM3RHTV8tLXJMbXpaY2VmVVFjbFJrcldZUDdYQ0xQNGY3cWVFX2hOWkl2eWNTQUc1Y1EzX0dqNGhmZmx5QTRxMklsbGdFUVdveGlDQmxrZ0d0NW5fTEtqLXBhbkVQVHpJWm5zUk5rMjl1UEdneWs1ZVN3WkVoQWhoR3MxT2ZsWXNGZGdQdVpZblNqR0Q0LVU0UGV3TW00UmFlVTFoUThnWWpmVVhGYjNTNm0zaGNoTlZUZGJHbkVHWEtMY9IByAJBVV95cUxPMHdmZHNLSHB1Y3hvT0NWNHVnSzJiWkxxamI2OTBiampqUkZKMDY2RDg3WjJiYmVTdFR2UUZiZktGeHI5TWdlenkyOVM3M3hXUDloNmtRWERiTzZFTFo2ZFlDSnBHYjlUYS1uc2MxeUNQYWotY3YtR3JkbWQtVm1yYW8xSDNpbFZ6QWJueW9BUmZZY2JfSlZzZFhlRDQ1WlVqTnN4ZUVxWUYydFRHQ2pYZGZHcmtySVNnLWZuNVRwekd5dzFOeV9mR080cnhWakY5cnhRM1d5RnVzcnF5bmtaN3hHOGhBWVZnNGtoNmEzSnh5VzRSOTV6aDNwV2tWRHhEdlpzZVVWOXk5cVJXajdncFFxblBXUnk0Z3J6Y0x5M2dzaW04V2ZmeFc2LUpkY2NCRUJ0eHc4ZHc1MHhzd1lzQTNWTFpCaVd5?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Agenda 2030, in Italia il 58 per cento dei traguardi rischia di non essere raggiunto: 5,4 milioni di persone in povertà assoluta e rinnovabili ferme al 20,5 per cento dei consumi - Corriere della Sera",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 50,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2030",
+        "58 ",
+        "5,4 milioni",
+        "20,5 ",
+        "2030",
+        "58 ",
+        "5,4 milioni",
+        "20,5 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 04",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTGp2Zzg2bUh1dFhxNl84TWZlMkppc1NTaU9hNmVHY18tMFhnV3pZYzFmMG5PV0J2b0RxWjBuXy0tejhaMmVnWFo0Uk5KeGp5Z0hqbEgxbVFyaktFYURkSEk4bDdhNVYwT0pkLXlIMkVWMEppSnVFZDJIUFlTU2xwWl9lRlppRlFKanhrTDdTTHB0WDFzYURBb2pRNEZzMEFYcGgydlRPa2dqVmhicU9rSmZxamkxY1BRR0VYQUdMU0FDeFZsNkVvVFFHdmFqaE5DSkd1QWxqd19YcThic25V?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "L’Istat: occupazione stabile a settembre 2026, tasso al 63%. Disoccupazione in lieve aumento: +6,3% - ItaliaOggi",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 65,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "2026",
+        "63%",
+        "+6,3%",
+        "2026",
+        "63%",
+        "+6,3%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · agenzie · gruppo 06",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUEdLS3I1bXo4ZW9WU2xVSnR4S1dodUZmNE0taC01MFlTak1PU3lIN3Y5WUN4X0RVV1hZOVg1eElrZGhvX01UM2tSX2dUZ1BGaDlDQW55MExFckdrZGh5a09FdXdFUjNNYlpNbWFuZ1pzeW5zVENzOEhZZXhOMVIxTTZ0TWI0MTNPVFdiVURfb0RCcHFKaXA4cUM1UGhrWlRDemxYVjdvUlFnLVdYdmpwM0prMFNDWVJfamtyRkNKOXVIRTZISkxjaUlIZ2V3UF9FZWdvZlJwcEM1al9ESFQ4bllGTWVOeWhQd0VCd9IB8gFBVV95cUxONlVkc3FJbkxabkhDOXEtRmRxVTNaUDFHYk16eXRzOEF5YkZpUWxKYjYxdHB5ckltaXBCVUJGNmRkYlpIMmE0SlRQcXppUE9MZG9GS3o5TjhqUl95U3hBN0wxZnJCSko3NWJpWkRiZHc4eVQyODRBdG5NQWZWZC0tc21CRVlWWHRqRTJCZGRYeHY3d2NZUHZOUGdjNEdpdmY4MVlpVGdHUjZURWRoYUZGX212Q3gybkdBNXRxNGxSeGFqUVduMzhwTzhodlMzTW5iT3h0YVZoUHB6VEppZlgxWmJURTF5dTZDbXNsQkJ5S1JNUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Istat, a settembre export extra Ue -1,3%, import +1,4% sul mese (2) - ANSA",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "-1,3%",
+        "+1,4%",
+        "2",
+        "-1,3%",
+        "+1,4%",
+        "2"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ0hlSW56R05PWVEzb1RhMUZmb0hrb2lKYWtHdHdoSVJkeE9hYm5KaDNhSkE5U1A1WmNqeDhHU0NzMkNpaGFKVGNZMnk0NC1zcnhncXFtV0g3NXRoRGNockM0RkRQbWxraGFpbFFydUdZcmZfTGlVVFVqZkh3Z3N0WGIzb0ZIdEFDM3NfcVlPU3VfcnVIcXZlVXByYUJwTmlZbEtQa1Jva2Q1SlNkOElJTFkzb3ZqTjJBREJZY1RfWDREUHpsRnhUbWNncEw0RXByTkZSSFJVdk94NHM?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Emergenza abitativa in Europa: prezzi delle case +70% dal 2010, in Italia permessi di costruire crollati dell’80% - Autonomie Locali Italiane",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -409,10 +520,181 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/commercio-estero-extra-ue-settembre-2026/",
+      "discovery_title": "Commercio estero extra UE – Settembre 2026",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 60,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "2026 ",
+        "-1,3%",
+        "+1,4%",
+        "+2.826 milioni"
+      ],
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/10/COE-extra-UE_settembre2026.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/10/Serie_storiche_9_2026.xlsx",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/economia/commercio-estero/",
+        "https://www.istat.it/?tag=bilancia-commerciale",
+        "https://www.istat.it/?tag=commercio-estero-extra-ue",
+        "https://www.istat.it/?tag=esportazioni",
+        "https://www.istat.it/?tag=importazioni",
+        "https://www.istat.it/?tag=comunicati-congiunturali",
+        "https://www.istat.it/?s=&filter_category[]=4085",
+        "https://www.istat.it/comunicato-stampa/commercio-estero-extra-ue-settembre-2026/"
+      ],
+      "official_domain_hints": [
+        "istat.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/commercio-estero-extra-ue-settembre-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026 ",
+          "-1,3%",
+          "+1,4%",
+          "+2.826 milioni"
+        ],
+        "matched_non_year_numbers": [
+          "-1,3%",
+          "+1,4%",
+          "+2.826 milioni"
+        ],
+        "matched_keywords": [
+          "commercio",
+          "estero",
+          "extra",
+          "settembre",
+          "stima",
+          "riduzione",
+          "congiunturale",
+          "esportazioni"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Commercio estero extra UE – Settembre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la tua pre",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14758/il-cnr-nella-top2-scientists-2025",
+      "discovery_title": "Il Cnr nella Top2% scientists 2025",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "2025 ",
+        "29",
+        "10",
+        "2026 ",
+        "2025",
+        "8",
+        "2025 "
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14758/il-cnr-nella-top2-scientists-2025#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news"
+      ],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14758/il-cnr-nella-top2-scientists-2025",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "2025 ",
+          "29",
+          "10",
+          "2026 ",
+          "2025",
+          "8"
+        ],
+        "matched_non_year_numbers": [
+          "29",
+          "10",
+          "8"
+        ],
+        "matched_keywords": [
+          "scientists",
+          "pubblicata",
+          "sito",
+          "elsevier",
+          "classifica",
+          "stanford",
+          "university",
+          "https"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Il Cnr nella Top2% scientists 2025 | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture scientifiche Dipartimenti Istituti di ricerc",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHlaNzN1SlhxXzJxZHJ3NTNDQTVuT3hNMmFkTGlzb2JXOXFmWFlVX3ZyRU41WlVQRTBWSHUwb3ktZ1gwRkMzVFdXU21HVHhFdVk1b0lXbHh4X241T2hSX1NMYkxpV0x3UWEtQlJuNmhzMUE2XzYzQ3Z3THctdElXTU5JX3hUWDFZWUVyR005cXd5cWI0cGpBMlN1eHl2UFAtbUVkX1NJcnZTNFdJMjBrM0JtTDJlREdfNDB0SGZibENQd21OSml6UWFsaGZ5YnJCblFKczJqTjFVS3lL?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Consumo di suolo, nel 2025 è record: Brianza prima in Lombardia col 41%, «Pedemontana mangia il territorio - Il Cittadino di Monza e Brianza",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 64,
+      "topic": "AMBIENTE",
+      "numbers_detected": [
+        "2025 ",
+        "41%",
+        "2025 ",
+        "41%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.isprambiente.gov.it/files2025/eventi/suolo/consumo_suolo_2025_web-1.pdf",
+        "domain": "isprambiente.gov.it",
+        "matched_numbers": [
+          "2025 ",
+          "41%",
+          "2025 ",
+          "41%"
+        ],
+        "matched_non_year_numbers": [
+          "41%",
+          "41%"
+        ],
+        "matched_keywords": [
+          "consumo",
+          "suolo",
+          "prima",
+          "lombardia"
+        ],
+        "verification_score": 87,
+        "text_excerpt": "IL CONSUMO DI SUOLO IN ITALIA I dati del Rapporto SNPA 2025 Roma, 24.10.2025 Foto di Matteo Monzali per il concorso fotografico «Uno scatto per raccontare il cambiamento» Michele Munafò (ISPRA) 1.294 7.076 -520 4.653 5.606 6.231 6.219 5.766 6.449 7.168 6.423 7.850 -2.000 0 2.000 4.000 6.000 8.000 2016 2017 2018 2019 2020 2021 2022 2023 2024 [ettari/anno] Consumo di suolo permanente Consumo di suolo reversibile Ripristino Consumo di suolo netto Il consumo di suolo in Italia (2016-2024) 1 appartamento di 159m† Ogni minuto Ogni secondo Ogni ora 25 campi da tennis 2,7 m† 9.555m† Ogni mese Ogni giorno In 1 anno 180 piscine olimpioniche Piø di 2 volte il centro storico di Roma 12.000 campi da calcio 229.315m† 6.975.000m† 83,7km† 0,22% 0,27% 0,29% 0,29% 0,27% 0,30% 0,34% 0,30% 0,37% 2016 2017 2018 2019 2020 2021 2022 2023 2024 Variazione percentuale annua del suolo consumato (2016-2024) Suolo c",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "isprambiente.gov.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "isprambiente.gov.it",
+            "query": "site:isprambiente.gov.it \"consumo suolo record brianza prima lombardia\" 2025  41% 2025",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxPb29DRC1HY0FTSmdld0d4blFnZEVZeUpZT0ZlN1RGZ1ZiN25fbjJuZlJhRDZEZ2ZDN1NEV3k4YXNud1BaTmFLV25TNVB5eEJ2YU96VjNUdjlESUNNTTZkQ3lGYTNiZXJKdVMxemVVSzVlUVh5M1BQOEIxcEFHT2h3enhjU1FDaXBjVTJIUS0xYkJJZmVDS2JnOC1mdFVxbVI0V2dwWXJUeW43emZVbG9TTWNJTnJheUpvMG9SNjFtVS1iUDNGNko2WmphZDBodUxhX096alhvU19TdGZZU1NiSHQzRmowZXhCWkdpOG9pUjh6ZmY4ZmFqVm5QcVQzWU9zU0toV2JDX0tEN0J2dEVIT1k4SU5IdGw3Y0xSRDctLXRuOFM2U2Q1dWZKNXRxd2ZxTmIxR1MwQ3hobWtrTl9uWFRRV2FQTlBEenZZWjZENEF0Rm0yVVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Italiani sempre più longevi, ma 5,6 milioni di cittadini rinunciano alle cure. Medici di famiglia sotto pressione: oltre la metà ha più di 1.500 assistiti. Ecco il Rapporto Bes 2026 dell’Istat - Quotidiano Sanità",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -433,7 +715,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/occupati-e-disoccupati-dati-provvisori-settembre-2026/",
       "discovery_title": "Occupati e disoccupati (dati provvisori)- Settembre 2026",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
       "score_discovery": 53,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -442,9 +724,9 @@
         "6,3%"
       ],
       "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/10/CS_Occupati-e-disoccupati_AGOSTO_2026.pdf",
-        "https://www.istat.it/wp-content/uploads/2026/10/202608_serie-storiche.xlsx",
-        "https://www.istat.it/wp-content/uploads/2026/10/202608_errori_campionari.xlsx",
+        "https://www.istat.it/wp-content/uploads/2026/10/CS_Occupati-e-disoccupati_SETTEMBRE_2026.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/10/202609_serie-storiche.xlsx",
+        "https://www.istat.it/wp-content/uploads/2026/10/202609_errori_campionari.xlsx",
         "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
         "https://contact.istat.it/",
         "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/lavoro-e-retribuzioni/",
@@ -486,218 +768,56 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "ISTAT - Comunicati stampa ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
-      "discovery_title": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
-      "score_discovery": 50,
-      "topic": "ECONOMIA",
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14757/asv-madro-il-drone-marino-di-cnr-inm-che-naviga-in-autonomia",
+      "discovery_title": "ASV-MADRO,il drone marino di Cnr-Inm che naviga in autonomia",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 45,
+      "topic": "MOBILITA",
       "numbers_detected": [
+        "29",
+        "10",
         "2026 ",
-        "2026 ",
-        "2,9%",
-        "13,8%",
-        "-0,1%",
-        "+3,2%"
+        "5 ",
+        "6 "
       ],
       "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/10/PPI_PPC_0926.pdf",
-        "https://www.istat.it/wp-content/uploads/2026/10/serieprezziindustria_09_26.xlsx",
-        "https://www.istat.it/wp-content/uploads/2026/10/serieprezzicostruzioni_09_26.xlsx",
-        "https://www.istat.it/wp-content/uploads/2026/10/NotaInformativa_PPI_10-marzo_2026.pdf",
-        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
-        "https://contact.istat.it",
-        "https://www.istat.it/it/archivio/prezzi+produzione+servizi",
-        "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
-        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
-        "https://www.istat.it/?tag=beni-consumo",
-        "https://www.istat.it/?tag=beni-intermedi",
-        "https://www.istat.it/?tag=beni-strumentali"
+        "https://www.cnr.it/it/news/14757/asv-madro-il-drone-marino-di-cnr-inm-che-naviga-in-autonomia#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.inm.cnr.it/"
       ],
       "official_domain_hints": [
-        "istat.it"
+        "iss.it"
       ],
       "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
-        "domain": "istat.it",
+        "url": "https://www.cnr.it/it/news/14757/asv-madro-il-drone-marino-di-cnr-inm-che-naviga-in-autonomia",
+        "domain": "cnr.it",
         "matched_numbers": [
+          "29",
+          "10",
           "2026 ",
-          "2026 ",
-          "2,9%",
-          "13,8%",
-          "-0,1%",
-          "+3,2%"
+          "5 ",
+          "6 "
         ],
         "matched_non_year_numbers": [
-          "2,9%",
-          "13,8%",
-          "-0,1%",
-          "+3,2%"
+          "29",
+          "10",
+          "5 ",
+          "6 "
         ],
         "matched_keywords": [
-          "prezzi",
-          "alla",
-          "produzione",
-          "dell",
-          "industria",
-          "costruzioni",
-          "settembre",
-          "crescono"
+          "madro",
+          "drone",
+          "marino",
+          "naviga",
+          "autonomia",
+          "sviluppato",
+          "roma",
+          "laser"
         ],
         "verification_score": 95,
-        "text_excerpt": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Setting",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
-      "score_discovery": 55,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "43,1%",
-        "45,5%",
-        "8,2%",
-        "43,1%",
-        "45,5%",
-        "8,2%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHlaNzN1SlhxXzJxZHJ3NTNDQTVuT3hNMmFkTGlzb2JXOXFmWFlVX3ZyRU41WlVQRTBWSHUwb3ktZ1gwRkMzVFdXU21HVHhFdVk1b0lXbHh4X241T2hSX1NMYkxpV0x3UWEtQlJuNmhzMUE2XzYzQ3Z3THctdElXTU5JX3hUWDFZWUVyR005cXd5cWI0cGpBMlN1eHl2UFAtbUVkX1NJcnZTNFdJMjBrM0JtTDJlREdfNDB0SGZibENQd21OSml6UWFsaGZ5YnJCblFKczJqTjFVS3lL?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Consumo di suolo, nel 2025 è record: Brianza prima in Lombardia col 41%, «Pedemontana mangia il territorio - Il Cittadino di Monza e Brianza",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
-      "score_discovery": 64,
-      "topic": "AMBIENTE",
-      "numbers_detected": [
-        "2025 ",
-        "41%",
-        "2025 ",
-        "41%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "AGI - Notizie",
-      "discovery_url": "https://www.agi.it/spettacolo/news/2026-10-29/concerti-live-miliardi-turismo-italia-39751966/",
-      "discovery_title": "Concerti live, boom da 4,3 miliardi in Italia: la musica traina turismo ed economia",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
-      "score_discovery": 80,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "4,3 miliardi",
-        "4,3 miliardi",
-        "11 milioni",
-        "2025 ",
-        "+0,7%",
-        "+9,3%",
-        "+18,5%",
-        "1,06 miliardi",
-        "2025 ",
-        "64 ",
-        "5%",
-        "11,3 milioni"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE 80 testate · specializzate · gruppo 15",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNY0cxcGR0dVQxOFkzYmNZR0ZMcHAzMTBhTmZMMkdyOF92VnhiZDloSFhXWnNVZ0g2YnNxX3BZSFl0UDhXbGZLaVM2MGtfMms4VndmNWVLeW02bFR3M2hGRjNDd1R2T2RWS0FvZy1Oby1KSTNCOGFHcGxWbE1FbzBDRkV6STExTkdka2lRbUY3Z1JGMzBXT3FLTXlNM3BQTGstZGtRbGs0b0JQQXF3bTRiVFl6VHVjR0hxZzZtN1lCbUt0cVZXbGRfaVJiNWRDUnJUaDlxdDg3b3BaM0dsNmRDbWw2M2dpbVVmZ2xDZU1wVzRsblYwUjFyZmNhQXRHdw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Istat, \"il 43% degli studenti di terza media non raggiunge competenze sufficienti in italiano e il 45% in matematica\". Il rapporto Bes 2026 - Tecnica della Scuola",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
-      "score_discovery": 65,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "43%",
-        "45%",
-        "2026 ",
-        "43%",
-        "45%",
-        "2026 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "ISTAT - Comunicati stampa ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
-      "discovery_title": "Fatturato dell’industria e dei servizi – Agosto 2026",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
-      "score_discovery": 50,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "2026 ",
-        "2026",
-        "4,2%",
-        "2025",
-        "3,6%"
-      ],
-      "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/10/fatturato_202608_it.pdf",
-        "https://www.istat.it/wp-content/uploads/2026/10/Fatturato_202608.xlsx",
-        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
-        "https://contact.istat.it/",
-        "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
-        "https://www.istat.it/statistiche-per-temi/economia/servizi/",
-        "https://www.istat.it/?tag=attivita-economica",
-        "https://www.istat.it/?tag=fatturato",
-        "https://www.istat.it/?tag=fatturato-industria-e-servizi",
-        "https://www.istat.it/?tag=industria",
-        "https://www.istat.it/?tag=servizi-2",
-        "https://www.istat.it/?tag=comunicati-congiunturali"
-      ],
-      "official_domain_hints": [
-        "istat.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "2026 ",
-          "2026",
-          "4,2%",
-          "2025",
-          "3,6%"
-        ],
-        "matched_non_year_numbers": [
-          "4,2%",
-          "3,6%"
-        ],
-        "matched_keywords": [
-          "fatturato",
-          "dell",
-          "industria",
-          "servizi",
-          "agosto",
-          "corretto",
-          "effetti",
-          "calendario"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Fatturato dell’industria e dei servizi – Agosto 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma ",
+        "text_excerpt": "ASV-MADRO,il drone marino di Cnr-Inm che naviga in autonomia | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture scientifiche Dipar",
         "verified_series": [],
         "method": "direct_official_rss"
       },
@@ -708,7 +828,7 @@
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Olio d’oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma su nuovo raccolto pesano clima e costi di produzione - Agricultura.it",
-      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -724,6 +844,73 @@
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
+    },
+    {
+      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/fiducia-dei-consumatori-e-delle-imprese-ottobre-2026/",
+      "discovery_title": "Fiducia dei consumatori e delle imprese – Ottobre 2026",
+      "detected_at": "2026-10-29T11:54:08.665458+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "2026 ",
+        "91,2 ",
+        "90,3 ",
+        "95,9 ",
+        "96,6"
+      ],
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/10/CS-fiducia-delle-imprese-e-dei-consumatori-OTTOBRE-2026.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/10/tavole_fiducia_globale_202610.xlsx",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/popolazione/condizioni-economiche-delle-famiglie/",
+        "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
+        "https://www.istat.it/statistiche-per-temi/economia/servizi/",
+        "https://www.istat.it/statistiche-per-temi/popolazione/vita-quotidiana-e-opinioni-dei-cittadini/",
+        "https://www.istat.it/?tag=commercio",
+        "https://www.istat.it/?tag=condizioni-economiche",
+        "https://www.istat.it/?tag=consumi",
+        "https://www.istat.it/?tag=costruzioni"
+      ],
+      "official_domain_hints": [
+        "istat.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/fiducia-dei-consumatori-e-delle-imprese-ottobre-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026 ",
+          "91,2 ",
+          "90,3 ",
+          "95,9 ",
+          "96,6"
+        ],
+        "matched_non_year_numbers": [
+          "91,2 ",
+          "90,3 ",
+          "95,9 ",
+          "96,6"
+        ],
+        "matched_keywords": [
+          "fiducia",
+          "consumatori",
+          "imprese",
+          "ottobre",
+          "clima",
+          "flette",
+          "mentre",
+          "indicatore"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Fiducia dei consumatori e delle imprese – Ottobre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferm",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
     }
   ]
 }
