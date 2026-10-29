@@ -91,15 +91,15 @@
           "area": "Imprese e industria",
           "series": "Produzione industriale",
           "description": "Indice mensile della produzione industriale, base 2021.",
-          "latest_period": "2026-08",
-          "status": "ok"
+          "latest_period": "",
+          "status": "fallback_last_good"
         },
         {
           "area": "Imprese e industria",
           "series": "Fatturato industriale",
           "description": "Indice mensile del valore del fatturato industriale, base 2021.",
-          "latest_period": "2026-08",
-          "status": "ok"
+          "latest_period": "",
+          "status": "fallback_last_good"
         },
         {
           "area": "Imprese e industria",
@@ -112,8 +112,8 @@
           "area": "Potere d'acquisto e consumi",
           "series": "Vendite al dettaglio",
           "description": "Indice mensile del volume delle vendite al dettaglio, base 2021.",
-          "latest_period": "",
-          "status": "fallback_last_good"
+          "latest_period": "2026-08",
+          "status": "ok"
         },
         {
           "area": "Imprese e industria",
@@ -126,15 +126,15 @@
           "area": "Imprese e industria",
           "series": "Fiducia delle costruzioni",
           "description": "Indice mensile di fiducia delle imprese delle costruzioni.",
-          "latest_period": "2026-09",
-          "status": "ok"
+          "latest_period": "",
+          "status": "fallback_last_good"
         },
         {
           "area": "Imprese e industria",
           "series": "Fiducia del commercio",
           "description": "Indice mensile di fiducia delle imprese del commercio al dettaglio.",
-          "latest_period": "2026-09",
-          "status": "ok"
+          "latest_period": "",
+          "status": "fallback_last_good"
         },
         {
           "area": "Potere d'acquisto e consumi",
@@ -154,8 +154,8 @@
           "area": "Prezzi e inflazione",
           "series": "Prezzi all'importazione",
           "description": "Indice mensile dei prezzi all'importazione, base 2021.",
-          "latest_period": "",
-          "status": "fallback_last_good"
+          "latest_period": "2026-08",
+          "status": "ok"
         },
         {
           "area": "Turismo",
