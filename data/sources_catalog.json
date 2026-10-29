@@ -42,15 +42,15 @@
           "area": "Lavoro e mercato del lavoro",
           "series": "Tasso di occupazione",
           "description": "Tasso di occupazione mensile nazionale.",
-          "latest_period": "",
-          "status": "fallback_last_good"
+          "latest_period": "2026-09",
+          "status": "ok"
         },
         {
           "area": "Lavoro e mercato del lavoro",
           "series": "Occupati",
           "description": "Numero mensile di occupati a livello nazionale.",
-          "latest_period": "",
-          "status": "fallback_last_good"
+          "latest_period": "2026-09",
+          "status": "ok"
         },
         {
           "area": "Lavoro e mercato del lavoro",
@@ -84,8 +84,8 @@
           "area": "Lavoro e mercato del lavoro",
           "series": "Posizioni lavorative dipendenti",
           "description": "Indice trimestrale delle posizioni lavorative dipendenti.",
-          "latest_period": "",
-          "status": "fallback_last_good"
+          "latest_period": "2026-Q2",
+          "status": "ok"
         },
         {
           "area": "Imprese e industria",
@@ -112,8 +112,8 @@
           "area": "Potere d'acquisto e consumi",
           "series": "Vendite al dettaglio",
           "description": "Indice mensile del volume delle vendite al dettaglio, base 2021.",
-          "latest_period": "2026-08",
-          "status": "ok"
+          "latest_period": "",
+          "status": "fallback_last_good"
         },
         {
           "area": "Imprese e industria",
@@ -154,8 +154,8 @@
           "area": "Prezzi e inflazione",
           "series": "Prezzi all'importazione",
           "description": "Indice mensile dei prezzi all'importazione, base 2021.",
-          "latest_period": "2026-08",
-          "status": "ok"
+          "latest_period": "",
+          "status": "fallback_last_good"
         },
         {
           "area": "Turismo",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T15:06:08.327375+00:00",
+  "generated_at": "2026-10-29T17:54:27.842053+00:00",
   "candidates": [
     {
       "radar": "Google News - Italia salute e welfare",
@@ -9,7 +9,7 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 45
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -19,7 +19,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -64,7 +64,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 22
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -154,7 +154,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 5
+      "items_fetched": 6
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -184,12 +184,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 27
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -294,17 +294,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 60
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 27
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 29
     },
     {
       "radar": "Repubblica Economia",
@@ -354,7 +354,7 @@
     {
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "status": "radar_error",
-      "error": "<urlopen error timed out>"
+      "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
     },
     {
       "radar": "CNR - Notizie ufficiali",
@@ -370,7 +370,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSmVkQW5KaHRBeUpVdHlwWjAtcXh3LWs0aGVERTkzS2VaWkVQYk5DYXNrZ0xiZjJIb3RzYU8xcEtZZlV3TjB6SmhmNENUWWZKc3FsUmQ5b0RZeWtLandiYmx0dFpWclJydUpNcDc4VzJpSWFxakxjREJ5Ql93SzJWbFNSd3pwX3FIbFZaMk92SGhLSDNFS1JnOXdUMG4xV1V6UWdiM1czTHpsamkzVEJ0YS0wVmREZ09sV2hWVDg1RTZWN0RsdjJqWmF5TzY1aFdmQWg3TkN6QUVuSU5JQmRsOURqRTA3Z0UyY0JaRVg0c0xLSlhYR2JRTWhsRFA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "La Lombardia è la Regione con più stranieri in Italia (1.25 milioni). Il 18% degli studenti proviene da altri Paesi, il 67% è nato in Italia - Tecnica della Scuola",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -388,31 +388,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE Italia - dati di regioni province comuni",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSi00bmJLdWFLdlJ4WEFoU2x4SEdzbW5ZaVJRbENrZjFBOVVtVUg5bVgtMzFkN0hPY3RKVzVCM0hMclU1OFhQWVdTY3hvWHl3bE5FXy13NHFuQlRJYjBKSXh6VllSX1V2dUdtLVFGRFQ2M3Y3akxoTmJZWWVSQ0hRUlNSR3hxRTN5dDI0VzJ4cHFaaWdneDlyTFI5b0NYck1iU0tvdk9pdlJGTENFbzVXbnZGNUotRFI1WE1Dc2RWMVJVd3NoVXdNMGNQY3hLekYzbnJablVuYUZSeUIwR0xpQmtXeUJPa1VaaXc?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Scuola dell’infanzia, nell’Ue la frequenta il 94,4% dei bambini: in Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2% - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
-      "score_discovery": 45,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "94,4%",
-        "97,6%",
-        "88,2%",
-        "94,4%",
-        "97,6%",
-        "88,2%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -454,24 +433,12 @@
         "text_excerpt": "Territori in evoluzione: tra tutela e sviluppo sostenibile. Presentazione del Rapporto sul Consumo di suolo in Italia - Edizione 2026 — Italiano Mappa del sito Accessibilità Contatti Italiano English Istituto Superiore per la Protezione e la Ricerca Ambientale Cerca close Home Istituto Attività Dati e Indicatori Pubblicazioni Servizi Eventi ISPRA News Sala stampa URP Home / Eventi ISPRA / Territori in evoluzione: tra tutela e sviluppo sostenibile. Presentazione del Rapporto sul Consumo di suolo in Italia - Edizione 2026 Territori in evoluzione: tra tutela e sviluppo sostenibile. Presentazione del Rapporto sul Consumo di suolo in Italia - Edizione 2026 Consumo di suolo: in Italia oltre 2.100 km² di opportunità per ridurre il fenomeno Invertire la rotta è possibile: pronta la prima mappatura nazionale delle aree recuperabili Nel 2025 è record di velocità: oltre 3 m² al secondo, 280 mila me",
         "verified_series": [],
         "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
+        "search_domain": "iss.it",
         "attempts": [
           {
             "stage": "domain_search",
             "domain": "iss.it",
             "query": "site:iss.it \"consumo ruolo record coperti suolo avanza\" 2025 102  2025",
-            "results": 6
-          },
-          {
-            "stage": "domain_search",
-            "domain": "isprambiente.gov.it",
-            "query": "site:isprambiente.gov.it \"consumo ruolo record coperti suolo avanza\" 2025 102  2025",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"consumo ruolo record coperti suolo avanza\" 2025 102  2025",
             "results": 6
           }
         ]
@@ -481,26 +448,48 @@
     },
     {
       "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/chiedi-esperto/casa/compravendita-e-affitti/26-10-29/ritardi-nella-consegna-di-un-appartamento-e-possibile-rinuncia-allacquisto/",
-      "discovery_title": "Ritardi nella consegna di un appartamento e possibile rinuncia all'acquisto",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
-      "score_discovery": 50,
-      "topic": "CASA",
+      "discovery_url": "https://www.corriere.it/economia/lavoro/26_ottobre_29/istat-occupazione-stabile-al-63-a-settembre-i-contratti-a-termine-aumentano-5adb8b25-cd93-413a-9035-e6e8b2816xlk.shtml",
+      "discovery_title": "Istat, occupazione stabile al 63% a settembre: i contratti a termine aumentano",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
+      "score_discovery": 60,
+      "topic": "LAVORO",
       "numbers_detected": [
-        "60.000 ",
-        "30 ",
-        "2026",
-        "4 ",
-        "2026",
-        "30 ",
-        "2026",
-        "2027",
-        "30 ",
-        "2026 "
+        "63%",
+        "2 milioni",
+        "567mila",
+        "16 milioni",
+        "490 mila"
       ],
       "official_links": [],
       "official_domain_hints": [
-        "iss.it"
+        "istat.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Il Fatto Quotidiano - Notizie",
+      "discovery_url": "https://www.ilfattoquotidiano.it/2026/10/29/occupazione-contratti-termine-superano-permanenti-notizie/8554378/",
+      "discovery_title": "Lavoro: per la prima volta da febbraio 2022, in Italia i contratti a termine crescono più degli indeterminati",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
+      "score_discovery": 60,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "2022",
+        "2026",
+        "24 milioni",
+        "328mila",
+        "16 milioni",
+        "490mila",
+        "2 milioni",
+        "567mila",
+        "2022"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "istat.it",
+        "terna.it"
       ],
       "primary_resolution": null,
       "editorial_excluded": false,
@@ -510,7 +499,7 @@
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcDVxdG1YX0JMUXhMWVZyZGZuODFSWE8xdDAybDloOWJHQnBFLTlNZ0FZS3ZodHFFOWpBdEJlY1hwa0hjTW9YaldLSVg2UWhEbWFtX1lnNXl4WWJidnpDajNmQ3VjT3Z4WHhxUGxTSkV5RU52T2NkUEFsZExWS3U1aUdUOW9PMjZHdkYyOWVTbS04WEFsT2k0a3JKMVN2UjVVdjlKYkZ4X21uTW5YaGdzUG9WOGNmc2NsR1BGcUtFMFU1ODgydWdRSHp1M3VmMFd1anEtckJDUVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "*Lavoro: tasso disoccupazione settembre stabile al 6,3%, giovanile cala al 19,9% (Istat) - Milano Finanza",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 49,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -529,7 +518,7 @@
       "radar": "Google News - Disuguaglianze e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQdzNDdU9zNkptNmhUM1ZRQ0VYY3g4bm5ULW1mci1zODVUMGpXYi1HcUR0d2F4TTl6dXlVUElrN2EzeXEwWWh0R0YweGszcW11RmZrazktOGI5b0tuS2o4dWRkYWN4d0RkdFBuZENTczZyVUNJQ01lWmVTX3NzN1h4UjlzU09KMmxzM3RHTV8tLXJMbXpaY2VmVVFjbFJrcldZUDdYQ0xQNGY3cWVFX2hOWkl2eWNTQUc1Y1EzX0dqNGhmZmx5QTRxMklsbGdFUVdveGlDQmxrZ0d0NW5fTEtqLXBhbkVQVHpJWm5zUk5rMjl1UEdneWs1ZVN3WkVoQWhoR3MxT2ZsWXNGZGdQdVpZblNqR0Q0LVU0UGV3TW00UmFlVTFoUThnWWpmVVhGYjNTNm0zaGNoTlZUZGJHbkVHWEtMY9IByAJBVV95cUxPMHdmZHNLSHB1Y3hvT0NWNHVnSzJiWkxxamI2OTBiampqUkZKMDY2RDg3WjJiYmVTdFR2UUZiZktGeHI5TWdlenkyOVM3M3hXUDloNmtRWERiTzZFTFo2ZFlDSnBHYjlUYS1uc2MxeUNQYWotY3YtR3JkbWQtVm1yYW8xSDNpbFZ6QWJueW9BUmZZY2JfSlZzZFhlRDQ1WlVqTnN4ZUVxWUYydFRHQ2pYZGZHcmtySVNnLWZuNVRwekd5dzFOeV9mR080cnhWakY5cnhRM1d5RnVzcnF5bmtaN3hHOGhBWVZnNGtoNmEzSnh5VzRSOTV6aDNwV2tWRHhEdlpzZVVWOXk5cVJXajdncFFxblBXUnk0Z3J6Y0x5M2dzaW04V2ZmeFc2LUpkY2NCRUJ0eHc4ZHc1MHhzd1lzQTNWTFpCaVd5?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Agenda 2030, in Italia il 58 per cento dei traguardi rischia di non essere raggiunto: 5,4 milioni di persone in povertà assoluta e rinnovabili ferme al 20,5 per cento dei consumi - Corriere della Sera",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -552,7 +541,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
       "discovery_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ1cwUlgzSHFaMFlZdTZ3ek90REdsaDFmMEg1WWZ4OG1EelBsSmpZZWtlZlM2V2hPUU1FOTZxMldRM0poSC1ESWwxVVd4VmRSWHVqM2hIRmVqNzlpaUdkOU5zUldYcEFFekQwZFh3NFJDT2s1bHlfWWRIS0ZJcDBHMUtHTG9CWHlfTU1MS05wM2VyYnhZNjdFY1p6Rk1MeldER0JueWI1ZnF1Y2QyYUM5bC1KSUo4N0dQQU9CdDRBdmhmUzJwRzJLVQ?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "De Molli \"Sicilia in crescita nell'80% parametri, record di occupazione creata\" - Il Sole 24 ORE",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 64,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -571,7 +560,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 04",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTGp2Zzg2bUh1dFhxNl84TWZlMkppc1NTaU9hNmVHY18tMFhnV3pZYzFmMG5PV0J2b0RxWjBuXy0tejhaMmVnWFo0Uk5KeGp5Z0hqbEgxbVFyaktFYURkSEk4bDdhNVYwT0pkLXlIMkVWMEppSnVFZDJIUFlTU2xwWl9lRlppRlFKanhrTDdTTHB0WDFzYURBb2pRNEZzMEFYcGgydlRPa2dqVmhicU9rSmZxamkxY1BRR0VYQUdMU0FDeFZsNkVvVFFHdmFqaE5DSkd1QWxqd19YcThic25V?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "L’Istat: occupazione stabile a settembre 2026, tasso al 63%. Disoccupazione in lieve aumento: +6,3% - ItaliaOggi",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 65,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -592,7 +581,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
       "discovery_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONlVkc3FJbkxabkhDOXEtRmRxVTNaUDFHYk16eXRzOEF5YkZpUWxKYjYxdHB5ckltaXBCVUJGNmRkYlpIMmE0SlRQcXppUE9MZG9GS3o5TjhqUl95U3hBN0wxZnJCSko3NWJpWkRiZHc4eVQyODRBdG5NQWZWZC0tc21CRVlWWHRqRTJCZGRYeHY3d2NZUHZOUGdjNEdpdmY4MVlpVGdHUjZURWRoYUZGX212Q3gybkdBNXRxNGxSeGFqUVduMzhwTzhodlMzTW5iT3h0YVZoUHB6VEppZlgxWmJURTF5dTZDbXNsQkJ5S1JNUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat, a settembre export extra Ue -1,3%, import +1,4% sul mese (2) - ANSA",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -613,7 +602,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 08",
       "discovery_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOWVjbXg1V1lveW81ZXNwQ3lmS3NmZ0liUUIxVmlwWm1sLUlwd0RRb25UaTVveS16cHdxNmxMa2FTSDNORVhoQ0FrbzEwRGM4X281bEowakx6djFmZGpDVGhkSEpCb1htMFNMX2RKb0Y2dHEzODE0TVh0eU9BWkRZMnFtdUFlSGlwU0xqR0V0Z3JteS05T1UyQnRndl9VWW1VelR0NEozWlRRdXNYdWZmRVZXTHNVRmRQdEE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "De Molli \"Sicilia in crescita nell'80% parametri, record di occupazione creata\" - Milano Finanza",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 52,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -630,7 +619,7 @@
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ0hlSW56R05PWVEzb1RhMUZmb0hrb2lKYWtHdHdoSVJkeE9hYm5KaDNhSkE5U1A1WmNqeDhHU0NzMkNpaGFKVGNZMnk0NC1zcnhncXFtV0g3NXRoRGNockM0RkRQbWxraGFpbFFydUdZcmZfTGlVVFVqZkh3Z3N0WGIzb0ZIdEFDM3NfcVlPU3VfcnVIcXZlVXByYUJwTmlZbEtQa1Jva2Q1SlNkOElJTFkzb3ZqTjJBREJZY1RfWDREUHpsRnhUbWNncEw0RXByTkZSSFJVdk94NHM?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Emergenza abitativa in Europa: prezzi delle case +70% dal 2010, in Italia permessi di costruire crollati dell’80% - Autonomie Locali Italiane",
-      "detected_at": "2026-10-29T15:06:08.327375+00:00",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -640,6 +629,27 @@
         "+70%",
         "2010",
         "80%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia scuola e università",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSi00bmJLdWFLdlJ4WEFoU2x4SEdzbW5ZaVJRbENrZjFBOVVtVUg5bVgtMzFkN0hPY3RKVzVCM0hMclU1OFhQWVdTY3hvWHl3bE5FXy13NHFuQlRJYjBKSXh6VllSX1V2dUdtLVFGRFQ2M3Y3akxoTmJZWWVSQ0hRUlNSR3hxRTN5dDI0VzJ4cHFaaWdneDlyTFI5b0NYck1iU0tvdk9pdlJGTENFbzVXbnZGNUotRFI1WE1Dc2RWMVJVd3NoVXdNMGNQY3hLekYzbnJablVuYUZSeUIwR0xpQmtXeUJPa1VaaXc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Scuola dell’infanzia, nell’Ue la frequenta il 94,4% dei bambini: in Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2% - Orizzonte Scuola Notizie",
+      "detected_at": "2026-10-29T17:54:27.842053+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "94,4%",
+        "97,6%",
+        "88,2%",
+        "94,4%",
+        "97,6%",
+        "88,2%"
       ],
       "official_links": [],
       "official_domain_hints": [],
