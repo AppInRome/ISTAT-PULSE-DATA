@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-29T05:51:01.753144+00:00",
+  "generated_at": "2026-10-29T09:02:18.272705+00:00",
   "candidates": [
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -24,7 +24,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 53
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -69,12 +69,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 21
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 34
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -84,12 +84,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 40
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 60
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -189,12 +189,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -299,17 +299,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 60
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 53
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 59
     },
     {
       "radar": "Repubblica Economia",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,61 +367,10 @@
       "items_fetched": 3
     },
     {
-      "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHlaNzN1SlhxXzJxZHJ3NTNDQTVuT3hNMmFkTGlzb2JXOXFmWFlVX3ZyRU41WlVQRTBWSHUwb3ktZ1gwRkMzVFdXU21HVHhFdVk1b0lXbHh4X241T2hSX1NMYkxpV0x3UWEtQlJuNmhzMUE2XzYzQ3Z3THctdElXTU5JX3hUWDFZWUVyR005cXd5cWI0cGpBMlN1eHl2UFAtbUVkX1NJcnZTNFdJMjBrM0JtTDJlREdfNDB0SGZibENQd21OSml6UWFsaGZ5YnJCblFKczJqTjFVS3lL?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Consumo di suolo, nel 2025 è record: Brianza prima in Lombardia col 41%, «Pedemontana mangia il territorio - Il Cittadino di Monza e Brianza",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
-      "score_discovery": 64,
-      "topic": "AMBIENTE",
-      "numbers_detected": [
-        "2025 ",
-        "41%",
-        "2025 ",
-        "41%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.isprambiente.gov.it/files2025/eventi/suolo/consumo_suolo_2025_web-1.pdf",
-        "domain": "isprambiente.gov.it",
-        "matched_numbers": [
-          "2025 ",
-          "41%",
-          "2025 ",
-          "41%"
-        ],
-        "matched_non_year_numbers": [
-          "41%",
-          "41%"
-        ],
-        "matched_keywords": [
-          "consumo",
-          "suolo",
-          "prima",
-          "lombardia"
-        ],
-        "verification_score": 87,
-        "text_excerpt": "IL CONSUMO DI SUOLO IN ITALIA I dati del Rapporto SNPA 2025 Roma, 24.10.2025 Foto di Matteo Monzali per il concorso fotografico «Uno scatto per raccontare il cambiamento» Michele Munafò (ISPRA) 1.294 7.076 -520 4.653 5.606 6.231 6.219 5.766 6.449 7.168 6.423 7.850 -2.000 0 2.000 4.000 6.000 8.000 2016 2017 2018 2019 2020 2021 2022 2023 2024 [ettari/anno] Consumo di suolo permanente Consumo di suolo reversibile Ripristino Consumo di suolo netto Il consumo di suolo in Italia (2016-2024) 1 appartamento di 159m† Ogni minuto Ogni secondo Ogni ora 25 campi da tennis 2,7 m† 9.555m† Ogni mese Ogni giorno In 1 anno 180 piscine olimpioniche Piø di 2 volte il centro storico di Roma 12.000 campi da calcio 229.315m† 6.975.000m† 83,7km† 0,22% 0,27% 0,29% 0,29% 0,27% 0,30% 0,34% 0,30% 0,37% 2016 2017 2018 2019 2020 2021 2022 2023 2024 Variazione percentuale annua del suolo consumato (2016-2024) Suolo c",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "isprambiente.gov.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "isprambiente.gov.it",
-            "query": "site:isprambiente.gov.it \"consumo suolo record brianza prima lombardia\" 2025  41% 2025",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -439,83 +388,31 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "AGI - Notizie",
-      "discovery_url": "https://www.agi.it/spettacolo/news/2026-10-29/concerti-live-miliardi-turismo-italia-39751966/",
-      "discovery_title": "Concerti live, boom da 4,3 miliardi in Italia: la musica traina turismo ed economia",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
-      "score_discovery": 80,
-      "topic": "ALTRO",
+      "radar": "Google News - Disuguaglianze e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ0hlSW56R05PWVEzb1RhMUZmb0hrb2lKYWtHdHdoSVJkeE9hYm5KaDNhSkE5U1A1WmNqeDhHU0NzMkNpaGFKVGNZMnk0NC1zcnhncXFtV0g3NXRoRGNockM0RkRQbWxraGFpbFFydUdZcmZfTGlVVFVqZkh3Z3N0WGIzb0ZIdEFDM3NfcVlPU3VfcnVIcXZlVXByYUJwTmlZbEtQa1Jva2Q1SlNkOElJTFkzb3ZqTjJBREJZY1RfWDREUHpsRnhUbWNncEw0RXByTkZSSFJVdk94NHM?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Emergenza abitativa in Europa: prezzi delle case +70% dal 2010, in Italia permessi di costruire crollati dell’80% - Autonomie Locali Italiane",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "score_discovery": 50,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "4,3 miliardi",
-        "4,3 miliardi",
-        "11 milioni",
-        "2025 ",
-        "+0,7%",
-        "+9,3%",
-        "+18,5%",
-        "1,06 miliardi",
-        "2025 ",
-        "64 ",
-        "5%",
-        "11,3 milioni"
+        "+70%",
+        "2010",
+        "80%",
+        "+70%",
+        "2010",
+        "80%"
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.siae.it/it/rapporto-siae-2025/",
-        "domain": "siae.it",
-        "matched_numbers": [
-          "4,3 miliardi",
-          "4,3 miliardi",
-          "2025 ",
-          "+0,7%",
-          "2025 ",
-          "64 "
-        ],
-        "matched_non_year_numbers": [
-          "4,3 miliardi",
-          "4,3 miliardi",
-          "+0,7%",
-          "64 ",
-          "5%"
-        ],
-        "matched_keywords": [
-          "concerti",
-          "live",
-          "boom",
-          "miliardi",
-          "musica",
-          "traina",
-          "turismo"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Rapporto SIAE 2025 Autori ed Editori Licenze Chi siamo Cosa facciamo Innovazione digitale Il Repertorio SIAE Rapporto SIAE 2025 Spettacolo, Intrattenimento e Sport: tutti i dati della 90esima edizione del Rapporto SIAE 2025. Rapporto SIAE 2025: cresce il valore dello spettacolo in Italia. La spesa cresce del 7% rispetto al 2024, arrivando a 4,3 miliardi di euro. Record dei Concerti oltre il miliardo di euro. Nel Cinema calano gli spettatori ma tornano i film italiani nella top ten. Il Teatro cresce su tutti gli indicatori. Nello Sport, boom del Tennis. Un sistema maturo, con pubblico stabile, offerta più selettiva e una domanda sempre più orientata verso esperienze dal vivo ad alta intensità culturale, economica e simbolica. Press Kit Comunicato stampa generale Comunicato stampa Musica Comunicato stampa Cinema Comunicato stampa Teatro Comunicato stampa Sport Highlights settoriali Top Ten",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "agenziaentrate.gov.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "siae.it",
-            "query": "site:siae.it \"concerti live boom miliardi musica traina\" 4,3 miliardi 4,3 miliardi 11 milioni",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "agenziaentrate.gov.it",
-            "query": "site:agenziaentrate.gov.it \"concerti live boom miliardi musica traina\" 4,3 miliardi 4,3 miliardi 11 milioni",
-            "results": 6
-          }
-        ]
-      },
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxPb29DRC1HY0FTSmdld0d4blFnZEVZeUpZT0ZlN1RGZ1ZiN25fbjJuZlJhRDZEZ2ZDN1NEV3k4YXNud1BaTmFLV25TNVB5eEJ2YU96VjNUdjlESUNNTTZkQ3lGYTNiZXJKdVMxemVVSzVlUVh5M1BQOEIxcEFHT2h3enhjU1FDaXBjVTJIUS0xYkJJZmVDS2JnOC1mdFVxbVI0V2dwWXJUeW43emZVbG9TTWNJTnJheUpvMG9SNjFtVS1iUDNGNko2WmphZDBodUxhX096alhvU19TdGZZU1NiSHQzRmowZXhCWkdpOG9pUjh6ZmY4ZmFqVm5QcVQzWU9zU0toV2JDX0tEN0J2dEVIT1k4SU5IdGw3Y0xSRDctLXRuOFM2U2Q1dWZKNXRxd2ZxTmIxR1MwQ3hobWtrTl9uWFRRV2FQTlBEenZZWjZENEF0Rm0yVVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Italiani sempre più longevi, ma 5,6 milioni di cittadini rinunciano alle cure. Medici di famiglia sotto pressione: oltre la metà ha più di 1.500 assistiti. Ecco il Rapporto Bes 2026 dell’Istat - Quotidiano Sanità",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -533,31 +430,66 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Olio d’oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma su nuovo raccolto pesano clima e costi di produzione - Agricultura.it",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
-      "score_discovery": 45,
-      "topic": "ECONOMIA",
+      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/occupati-e-disoccupati-dati-provvisori-settembre-2026/",
+      "discovery_title": "Occupati e disoccupati (dati provvisori)- Settembre 2026",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "score_discovery": 53,
+      "topic": "LAVORO",
       "numbers_detected": [
         "2026 ",
-        "4,30 ",
-        "4,90 ",
         "2026 ",
-        "4,30 ",
-        "4,90 "
+        "6,3%"
       ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/10/CS_Occupati-e-disoccupati_AGOSTO_2026.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/10/202608_serie-storiche.xlsx",
+        "https://www.istat.it/wp-content/uploads/2026/10/202608_errori_campionari.xlsx",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/lavoro-e-retribuzioni/",
+        "https://www.istat.it/?tag=disoccupati",
+        "https://www.istat.it/?tag=lavoro",
+        "https://www.istat.it/?tag=occupati",
+        "https://www.istat.it/?tag=occupati-e-disoccupati",
+        "https://www.istat.it/?tag=comunicati-congiunturali",
+        "https://www.istat.it/?s=&filter_category[]=4085"
+      ],
+      "official_domain_hints": [
+        "istat.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/occupati-e-disoccupati-dati-provvisori-settembre-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026 ",
+          "6,3%"
+        ],
+        "matched_non_year_numbers": [
+          "6,3%"
+        ],
+        "matched_keywords": [
+          "occupati",
+          "disoccupati",
+          "provvisori",
+          "settembre",
+          "dell",
+          "occupazione"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Occupati e disoccupati (dati provvisori)- Settembre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore confe",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
       "discovery_title": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -624,7 +556,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -643,18 +575,16 @@
     },
     {
       "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2JrNm5MOHVDS1prSFBEVHk4WXdOdkFkNnB0NkZNaDh0UGkxU1pVc1Y5YUtBVzVsRHNycUN2czV0QUdvWFN4S2Z2ckp6aE1VeVRrekp1WjV5emxuWkJ2bEYyT0x1OExHS2dqS2hfeWNPV3pYdU1CU3BsVzE3ZndkckVHc3lMRmVYVnlJZlljeDVOOUVtOHByd0NZRXhoY1lFdnJuSldFX3NueWd0bHBLd3ZkekJBS1VoYlkyRE9fcElJZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "In Toscana nascite in calo dal 2008, arriva il contributo di 500 euro per le neo mamme - 055 Firenze",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
-      "score_discovery": 50,
-      "topic": "DEMOGRAFIA",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHlaNzN1SlhxXzJxZHJ3NTNDQTVuT3hNMmFkTGlzb2JXOXFmWFlVX3ZyRU41WlVQRTBWSHUwb3ktZ1gwRkMzVFdXU21HVHhFdVk1b0lXbHh4X241T2hSX1NMYkxpV0x3UWEtQlJuNmhzMUE2XzYzQ3Z3THctdElXTU5JX3hUWDFZWUVyR005cXd5cWI0cGpBMlN1eHl2UFAtbUVkX1NJcnZTNFdJMjBrM0JtTDJlREdfNDB0SGZibENQd21OSml6UWFsaGZ5YnJCblFKczJqTjFVS3lL?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Consumo di suolo, nel 2025 è record: Brianza prima in Lombardia col 41%, «Pedemontana mangia il territorio - Il Cittadino di Monza e Brianza",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "score_discovery": 64,
+      "topic": "AMBIENTE",
       "numbers_detected": [
-        "2008",
-        "500 ",
-        "055 ",
-        "2008",
-        "500 ",
-        "055 "
+        "2025 ",
+        "41%",
+        "2025 ",
+        "41%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -663,10 +593,58 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "radar": "AGI - Notizie",
+      "discovery_url": "https://www.agi.it/spettacolo/news/2026-10-29/concerti-live-miliardi-turismo-italia-39751966/",
+      "discovery_title": "Concerti live, boom da 4,3 miliardi in Italia: la musica traina turismo ed economia",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "score_discovery": 80,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "4,3 miliardi",
+        "4,3 miliardi",
+        "11 milioni",
+        "2025 ",
+        "+0,7%",
+        "+9,3%",
+        "+18,5%",
+        "1,06 miliardi",
+        "2025 ",
+        "64 ",
+        "5%",
+        "11,3 milioni"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNY0cxcGR0dVQxOFkzYmNZR0ZMcHAzMTBhTmZMMkdyOF92VnhiZDloSFhXWnNVZ0g2YnNxX3BZSFl0UDhXbGZLaVM2MGtfMms4VndmNWVLeW02bFR3M2hGRjNDd1R2T2RWS0FvZy1Oby1KSTNCOGFHcGxWbE1FbzBDRkV6STExTkdka2lRbUY3Z1JGMzBXT3FLTXlNM3BQTGstZGtRbGs0b0JQQXF3bTRiVFl6VHVjR0hxZzZtN1lCbUt0cVZXbGRfaVJiNWRDUnJUaDlxdDg3b3BaM0dsNmRDbWw2M2dpbVVmZ2xDZU1wVzRsblYwUjFyZmNhQXRHdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Istat, \"il 43% degli studenti di terza media non raggiunge competenze sufficienti in italiano e il 45% in matematica\". Il rapporto Bes 2026 - Tecnica della Scuola",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "score_discovery": 65,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "43%",
+        "45%",
+        "2026 ",
+        "43%",
+        "45%",
+        "2026 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
       "discovery_title": "Fatturato dell’industria e dei servizi – Agosto 2026",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -727,17 +705,19 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQMVY2eWZYMnVjOHFIRU9kVnlUU3Z1N1VYTkhPOXNHaXdINm0tQVZLa2J4R3poN212UW5tVGgtTlpIVlNobUlLaG9OT202ZmcyeThDWFY4OXI0MXF6YUxkbGNheEZVTXdjdVZzQU9TY3dFdTRZNWJZY3pPZ25SdnpDeFhZd0tRNmVuMTY5ZUsxaDRuWUl0S3pEWUg2cTUwdG5TYndfaWJ0SURYWjNybkpyeDJSQ1l6UUN1OGJZdWdXLTdTREtfYVFPenRfcC15dXRIU0hLTHAtbFlOYTl5NlZrWW1wSmtkMXhMMzlLcGRLbkVuVGM?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Ambiente ed economia, l’Italia cresce e inquina meno: i dati ISPRA rilevano emissioni di gas serra in calo dell'1,5% nel 2026 - Hashtag Sicilia",
-      "detected_at": "2026-10-29T05:51:01.753144+00:00",
-      "score_discovery": 59,
-      "topic": "AMBIENTE",
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Olio d’oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma su nuovo raccolto pesano clima e costi di produzione - Agricultura.it",
+      "detected_at": "2026-10-29T09:02:18.272705+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "1,5%",
         "2026 ",
-        "1,5%",
-        "2026 "
+        "4,30 ",
+        "4,90 ",
+        "2026 ",
+        "4,30 ",
+        "4,90 "
       ],
       "official_links": [],
       "official_domain_hints": [],
