@@ -1,45 +1,15 @@
 {
-  "generated_at": "2026-10-28T20:53:13.377288+00:00",
+  "generated_at": "2026-10-29T02:57:05.680521+00:00",
   "candidates": [
-    {
-      "radar": "Google News - ANSA dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Adnkronos dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Sole 24 Ore dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Repubblica dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Corriere dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Italia economia e famiglie",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 25
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -104,7 +74,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 38
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -114,12 +84,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 35
+      "items_fetched": 44
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 58
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -219,12 +189,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 28
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -339,12 +309,42 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 56
     },
     {
       "radar": "Repubblica Economia",
       "status": "radar_fetched",
       "items_fetched": 25
+    },
+    {
+      "radar": "Google News - ANSA dati e statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Adnkronos dati e statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Sole 24 Ore dati e statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Repubblica dati e statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Corriere dati e statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Italia economia e famiglie",
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -358,40 +358,82 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
       "status": "radar_fetched",
-      "items_fetched": 3
+      "items_fetched": 1
     },
     {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Olio d’oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma su nuovo raccolto pesano clima e costi di produzione - Agricultura.it",
-      "detected_at": "2026-10-28T20:53:13.377288+00:00",
-      "score_discovery": 45,
-      "topic": "ECONOMIA",
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQRHlaNzN1SlhxXzJxZHJ3NTNDQTVuT3hNMmFkTGlzb2JXOXFmWFlVX3ZyRU41WlVQRTBWSHUwb3ktZ1gwRkMzVFdXU21HVHhFdVk1b0lXbHh4X241T2hSX1NMYkxpV0x3UWEtQlJuNmhzMUE2XzYzQ3Z3THctdElXTU5JX3hUWDFZWUVyR005cXd5cWI0cGpBMlN1eHl2UFAtbUVkX1NJcnZTNFdJMjBrM0JtTDJlREdfNDB0SGZibENQd21OSml6UWFsaGZ5YnJCblFKczJqTjFVS3lL?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Consumo di suolo, nel 2025 è record: Brianza prima in Lombardia col 41%, «Pedemontana mangia il territorio - Il Cittadino di Monza e Brianza",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
+      "score_discovery": 64,
+      "topic": "AMBIENTE",
       "numbers_detected": [
-        "2026 ",
-        "4,30 ",
-        "4,90 ",
-        "2026 ",
-        "4,30 ",
-        "4,90 "
+        "2025 ",
+        "41%",
+        "2025 ",
+        "41%"
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": null,
+      "primary_resolution": {
+        "url": "https://www.isprambiente.gov.it/files2025/eventi/suolo/consumo_suolo_2025_web-1.pdf",
+        "domain": "isprambiente.gov.it",
+        "matched_numbers": [
+          "2025 ",
+          "41%",
+          "2025 ",
+          "41%"
+        ],
+        "matched_non_year_numbers": [
+          "41%",
+          "41%"
+        ],
+        "matched_keywords": [
+          "consumo",
+          "suolo",
+          "prima",
+          "lombardia"
+        ],
+        "verification_score": 87,
+        "text_excerpt": "IL CONSUMO DI SUOLO IN ITALIA I dati del Rapporto SNPA 2025 Roma, 24.10.2025 Foto di Matteo Monzali per il concorso fotografico «Uno scatto per raccontare il cambiamento» Michele Munafò (ISPRA) 1.294 7.076 -520 4.653 5.606 6.231 6.219 5.766 6.449 7.168 6.423 7.850 -2.000 0 2.000 4.000 6.000 8.000 2016 2017 2018 2019 2020 2021 2022 2023 2024 [ettari/anno] Consumo di suolo permanente Consumo di suolo reversibile Ripristino Consumo di suolo netto Il consumo di suolo in Italia (2016-2024) 1 appartamento di 159m† Ogni minuto Ogni secondo Ogni ora 25 campi da tennis 2,7 m† 9.555m† Ogni mese Ogni giorno In 1 anno 180 piscine olimpioniche Piø di 2 volte il centro storico di Roma 12.000 campi da calcio 229.315m† 6.975.000m† 83,7km† 0,22% 0,27% 0,29% 0,29% 0,27% 0,30% 0,34% 0,30% 0,37% 2016 2017 2018 2019 2020 2021 2022 2023 2024 Variazione percentuale annua del suolo consumato (2016-2024) Suolo c",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "eea.europa.eu",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "isprambiente.gov.it",
+            "query": "site:isprambiente.gov.it \"consumo suolo record brianza prima lombardia\" 2025  41% 2025",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"consumo suolo record brianza prima lombardia\" 2025  41% 2025",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "eea.europa.eu",
+            "query": "site:eea.europa.eu \"consumo suolo record brianza prima lombardia\" 2025  41% 2025",
+            "results": 6
+          }
+        ]
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
       "radar": "Il Sole 24 Ore - Energia Ambiente",
       "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
       "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-28T20:53:13.377288+00:00",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
       "score_discovery": 60,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -412,7 +454,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxPb29DRC1HY0FTSmdld0d4blFnZEVZeUpZT0ZlN1RGZ1ZiN25fbjJuZlJhRDZEZ2ZDN1NEV3k4YXNud1BaTmFLV25TNVB5eEJ2YU96VjNUdjlESUNNTTZkQ3lGYTNiZXJKdVMxemVVSzVlUVh5M1BQOEIxcEFHT2h3enhjU1FDaXBjVTJIUS0xYkJJZmVDS2JnOC1mdFVxbVI0V2dwWXJUeW43emZVbG9TTWNJTnJheUpvMG9SNjFtVS1iUDNGNko2WmphZDBodUxhX096alhvU19TdGZZU1NiSHQzRmowZXhCWkdpOG9pUjh6ZmY4ZmFqVm5QcVQzWU9zU0toV2JDX0tEN0J2dEVIT1k4SU5IdGw3Y0xSRDctLXRuOFM2U2Q1dWZKNXRxd2ZxTmIxR1MwQ3hobWtrTl9uWFRRV2FQTlBEenZZWjZENEF0Rm0yVVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Italiani sempre più longevi, ma 5,6 milioni di cittadini rinunciano alle cure. Medici di famiglia sotto pressione: oltre la metà ha più di 1.500 assistiti. Ecco il Rapporto Bes 2026 dell’Istat - Quotidiano Sanità",
-      "detected_at": "2026-10-28T20:53:13.377288+00:00",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -430,10 +472,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPazlYbDJzdjFwRzgtb0U1VDlrTWxJWnlpTTd2bUROekxqR2JlWlU4a013VURRZ3dCenpxZFpRWnBxa0pfdEJzVWpSN3ZvV0tuc1JYTUw4bTNlcEZiQTkwMUxRc2xJekhhZW8wVHVGZzJ5ZDM1T2x6MXhCbU4zRlEySTZYRmJFQTREOEh2ZHpQQ3hxV29jRG5hb1ktWmw4aC14TTVzQm9QZWhwVU8zcG90RF9qdU9Gb0JHdWJldnpFeVRzZ0NVNklHS3A4V0VqSVIzMGlUbW5qaVo0RGd0UGFUdHdFNGktYWw3bTcxSm50cTR3QndZSVgydy1URnZmSHlFdWNDVzRBSjR0Zk5YbmlwekJsSFU4cXFNMEowRVJSaEFtN1NWQTlZOWdOMExMZmphZXVZM3FmSzZFZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Olio d’oliva. Nel terzi trimestre 2026 rallenta discesa prezzi (tra i 4,30 e i 4,90 euro kg), Italia punta sul Piano Olivicolo ma su nuovo raccolto pesano clima e costi di produzione - Agricultura.it",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "4,30 ",
+        "4,90 ",
+        "2026 ",
+        "4,30 ",
+        "4,90 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-alla-produzione-dellindustria-e-delle-costruzioni-settembre-2026/",
       "discovery_title": "Prezzi alla produzione dell’industria e delle costruzioni – Settembre 2026",
-      "detected_at": "2026-10-28T20:53:13.377288+00:00",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -498,16 +561,39 @@
     },
     {
       "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
-      "detected_at": "2026-10-28T20:53:13.377288+00:00",
-      "score_discovery": 49,
-      "topic": "LAVORO",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQdWZ2akFyN0o5S3FfVWZVV1FINWhGbThYUWkwcHExRG1EMm9taW1FX0pGQTllUXNUUXJSXzJoZnRZOGphOHVUemx0VURDRlZ5U1libkt3d3VpT0xhNUVKUTNnc09oY2lRZFI3N1JReDZLZjdSVHcxVzBjaDVkQzB4RnZhOUZfaVcwN3RlSjYyUGJ5SHI5a0t0TDVHQkh2NzJORUJzb1JqTlZMWkdrOEhCNXBWZ3FpSG5VanBkVm9xUGVfVmJxTEZtV19MbXcyc0p3NjNsNVlHMFJ4dGpMYlVjM1lrZVhmZjBuOXd0T3Q3RkNaUDRkcmk3ejAzTXpGcEppTkE?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "In terza media il 43,1% degli studenti non raggiunge la sufficienza in italiano e il 45,5% in matematica. Abbandono scolastico all’8,2%. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
+      "score_discovery": 55,
+      "topic": "ISTRUZIONE",
       "numbers_detected": [
-        "13,3%",
-        "11%",
-        "13,3%",
-        "11%"
+        "43,1%",
+        "45,5%",
+        "8,2%",
+        "43,1%",
+        "45,5%",
+        "8,2%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNY0cxcGR0dVQxOFkzYmNZR0ZMcHAzMTBhTmZMMkdyOF92VnhiZDloSFhXWnNVZ0g2YnNxX3BZSFl0UDhXbGZLaVM2MGtfMms4VndmNWVLeW02bFR3M2hGRjNDd1R2T2RWS0FvZy1Oby1KSTNCOGFHcGxWbE1FbzBDRkV6STExTkdka2lRbUY3Z1JGMzBXT3FLTXlNM3BQTGstZGtRbGs0b0JQQXF3bTRiVFl6VHVjR0hxZzZtN1lCbUt0cVZXbGRfaVJiNWRDUnJUaDlxdDg3b3BaM0dsNmRDbWw2M2dpbVVmZ2xDZU1wVzRsblYwUjFyZmNhQXRHdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Istat, \"il 43% degli studenti di terza media non raggiunge competenze sufficienti in italiano e il 45% in matematica\". Il rapporto Bes 2026 - Tecnica della Scuola",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
+      "score_discovery": 65,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "43%",
+        "45%",
+        "2026 ",
+        "43%",
+        "45%",
+        "2026 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -519,7 +605,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/fatturato-dellindustria-e-dei-servizi-agosto-2026/",
       "discovery_title": "Fatturato dell’industria e dei servizi – Agosto 2026",
-      "detected_at": "2026-10-28T20:53:13.377288+00:00",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -578,6 +664,25 @@
       },
       "editorial_excluded": false,
       "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - Italia scuola e università",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNZHQ3bXJMNzNMOElpcVVEUk1nNXZoSkdBRVVBZkV0Qjd6TFB4bm9nWTJRa1htVDdRcVI1Q0RKcFN3aHpQR2tKT0c2b29udlFtNUgwbmlPcl92LTh4cGpQZV83cWl3NXVWQ2ctcVp5TERBd2dKWmJEWGRpSXQ0SVlSZGFoTEtnbndhZmJTS3hZMEpVZk5sMzl4elJ0ZE9rM1VTdnloZy1Vd0V4S0dMckROUF9NUVJ2OHZDWDVRNVdQdzJNV3AzWHRwaGhLa2FNTmI0TWRHdA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Rapporto Bes, Istat: l’Italia resta sotto la media Ue su istruzione e lavoro. Quota Neet al 13,3% contro l’11% europeo - Sardegnagol",
+      "detected_at": "2026-10-29T02:57:05.680521+00:00",
+      "score_discovery": 49,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "13,3%",
+        "11%",
+        "13,3%",
+        "11%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
     }
   ]
 }
