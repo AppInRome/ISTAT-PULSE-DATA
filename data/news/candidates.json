@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-10-30T09:02:13.929478+00:00",
+  "generated_at": "2026-10-30T11:52:29.200981+00:00",
   "candidates": [
-    {
-      "radar": "PULSE osservatori ufficiali 3/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "PULSE osservatori ufficiali 4/9",
       "status": "radar_fetched",
@@ -34,12 +29,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 22
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -49,12 +44,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 60
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -89,7 +84,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "AGI - Notizie",
@@ -154,12 +149,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 29
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -264,17 +259,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 20
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 57
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 32
     },
     {
       "radar": "Repubblica Economia",
@@ -319,12 +314,12 @@
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -334,7 +329,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 57
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -347,19 +342,24 @@
       "items_fetched": 60
     },
     {
+      "radar": "PULSE osservatori ufficiali 3/9",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_error",
       "error": "The read operation timed out"
     },
     {
       "radar": "ISTAT - Comunicati stampa ufficiali",
-      "status": "radar_error",
-      "error": "The read operation timed out"
+      "status": "radar_fetched",
+      "items_fetched": 10
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,138 @@
       "items_fetched": 3
     },
     {
+      "radar": "RaiNews - Notizie italiane",
+      "discovery_url": "https://www.rainews.it/articoli/2026/10/istat-linflazione-accelera-ad-ottobre-pil-fermo-nel-terzo-trimestre-d82e44e7-58a3-49c4-8b27-e0b6f8b99334.html",
+      "discovery_title": "Istat, l'inflazione vola ad ottobre: +5,4%. Pil fermo nel terzo trimestre",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 53,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+5,4%",
+        "+31,4%",
+        "+2,5%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "istat.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/wp-content/uploads/2025/10/CS_Prezzi-al-consumo_Prov_Ottobre2025.pdf",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "+5,4%",
+          "+2,5%"
+        ],
+        "matched_non_year_numbers": [
+          "+5,4%",
+          "+2,5%"
+        ],
+        "matched_keywords": [
+          "istat",
+          "inflazione",
+          "vola",
+          "ottobre",
+          "accelerazione"
+        ],
+        "verification_score": 95,
+        "text_excerpt": " 31 ottobre 2025 http://www.istat.it Contact Centre Ufficio Stampa tel. +39 06 4673.2243/4 ufficiostampa@istat.it Ottobre 2025 PREZZI AL CONSUMO Dati provvisori  Secondo le stime preliminari, nel mese di ottobre 2025 l’indice nazionale dei prezzi al consumo per l’intera collettività (NIC), al lordo dei tabacchi, evidenzia una variazione del -0,3% su base mensile e del +1,2% su base annua (da +1,6% nel mese precedente).  La sensibile decelerazione del tasso d’inflazione si deve prevalentemente al marcato rallentamento su base tendenziale dei prezzi degli Energetici regolamentati (da +13,9% a -0,8%), degli Alimentari non lavorati (da +4,8% a +1,9%) e, in misura minore, di quelli dei Servizi relativi ai trasporti (da +2,4% a +2,0%). Tali effetti sono solo in parte compensati dall’accelerazione dei prezzi dei Servizi ricreativi, culturali e per la cura della persona (da +3,1% a +3,3%).  N",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "terna.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"istat inflazione vola ottobre fermo terzo\" +5,4% +31,4% +2,5%",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "terna.it",
+            "query": "site:terna.it \"istat inflazione vola ottobre fermo terzo\" +5,4% +31,4% +2,5%",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Il Fatto Quotidiano - Notizie",
+      "discovery_url": "https://www.ilfattoquotidiano.it/2026/10/30/inflazione-vola-ottobre-pil-fermo-notizie/8555288/",
+      "discovery_title": "A ottobre l’inflazione a +5,4%, ai massimi da agosto 2023. Mattarella: “I conflitti aggrediscono il tenore di vita”. E nel terzo trimestre pil al palo",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 75,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+5,4%",
+        "2023",
+        "5,4%",
+        "4,2%",
+        "2023",
+        "31,4%",
+        "+22,6%",
+        "+5,4%",
+        "2023"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "iss.it",
+        "istat.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "ANSA - Notizie",
+      "discovery_url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/10/30/istat-linflazione-ad-ottobre-sale-al-54i.-il-pil-e-fermo-nel-terzo-trimestre_18189111-ab4d-47c1-aa50-a880181f4b6b.html",
+      "discovery_title": "Istat, l'inflazione ad ottobre sale al 5,4%i. Il Pil è fermo nel terzo trimestre",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 48,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "5,4%",
+        "2026 ",
+        "0,8%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "aci.it",
+        "ec.europa.eu",
+        "inps.it",
+        "istat.it",
+        "terna.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Il Fatto Quotidiano dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNlhxWjBaMG1HLWhXYjI3ZWRpc1FGNnR0M2E2cmlKbnJhT2FlSTFDVS01RUpSdHJPQ2tPMGNrT1lOX1c0RWhrQndDQnZEWjRpUDFQT0VKOWpXVGg1TndPVy1pb0JLSFFjRGN5RjQ2ZXVhMU84b1pyMkVXS2N0bFl6eTNHbGswbU1pUWpIN2JrbFdPSDNjbl9CMFp3?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Istat: a ottobre l’inflazione esplode a +5,4%, ai massimi da agosto 2023. E nel terzo trimestre il pil è rimasto al palo - Il Fatto Quotidiano",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+5,4%",
+        "2023",
+        "+5,4%",
+        "2023"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZE1wa2tfeGNOM0lab1lrSjJkUGFfY1k5MlBLd19UblB4V1dSMS1aNGFxb0tmTWJjQ05NeEFJa2pQcTU1RVR4ZjZITXlGdHRCOFcxNUpOaG01YUZhWHp5TEoxcDJrMlpjNkNkMndrSXBPWlZ2TGxhc2JjSk9NTHlfN01OaDVKU2dtUVhpUTNRcHM2S2lJNFdPc1Z3ZXdQeU8zdHJmMHBPcFhYcl9vYmdyVURQMnZVaUpybWRzRm5GbTZ2a0hNSFJOWUdhUzJZUDk4amUzNUI2dw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "BoJ: resta ferma, inflazione di fondo in linea con obiettivo 2% per 1° volta da 2013 - Milano Finanza",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -388,10 +516,234 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQdzNDdU9zNkptNmhUM1ZRQ0VYY3g4bm5ULW1mci1zODVUMGpXYi1HcUR0d2F4TTl6dXlVUElrN2EzeXEwWWh0R0YweGszcW11RmZrazktOGI5b0tuS2o4dWRkYWN4d0RkdFBuZENTczZyVUNJQ01lWmVTX3NzN1h4UjlzU09KMmxzM3RHTV8tLXJMbXpaY2VmVVFjbFJrcldZUDdYQ0xQNGY3cWVFX2hOWkl2eWNTQUc1Y1EzX0dqNGhmZmx5QTRxMklsbGdFUVdveGlDQmxrZ0d0NW5fTEtqLXBhbkVQVHpJWm5zUk5rMjl1UEdneWs1ZVN3WkVoQWhoR3MxT2ZsWXNGZGdQdVpZblNqR0Q0LVU0UGV3TW00UmFlVTFoUThnWWpmVVhGYjNTNm0zaGNoTlZUZGJHbkVHWEtMY9IByAJBVV95cUxPMHdmZHNLSHB1Y3hvT0NWNHVnSzJiWkxxamI2OTBiampqUkZKMDY2RDg3WjJiYmVTdFR2UUZiZktGeHI5TWdlenkyOVM3M3hXUDloNmtRWERiTzZFTFo2ZFlDSnBHYjlUYS1uc2MxeUNQYWotY3YtR3JkbWQtVm1yYW8xSDNpbFZ6QWJueW9BUmZZY2JfSlZzZFhlRDQ1WlVqTnN4ZUVxWUYydFRHQ2pYZGZHcmtySVNnLWZuNVRwekd5dzFOeV9mR080cnhWakY5cnhRM1d5RnVzcnF5bmtaN3hHOGhBWVZnNGtoNmEzSnh5VzRSOTV6aDNwV2tWRHhEdlpzZVVWOXk5cVJXajdncFFxblBXUnk0Z3J6Y0x5M2dzaW04V2ZmeFc2LUpkY2NCRUJ0eHc4ZHc1MHhzd1lzQTNWTFpCaVd5?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "radar": "PULSE 80 testate · nazionali · gruppo 01",
+      "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xZU1BVDJPRzc1bnVhWlBZRmN3aHhrRXNPOUMxdzNWMlRTN3c2dXJtRncyS3l5UkZJeVFJUWVSQ3NNR1dGUmRUYWUxc25Lb0ZDaTVYSDRzdl9OeElOZGNLRElxVjhoak1Bc2JqcnluaFhiYmE1?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Inflazione: Istat stima +0,9% a ottobre, +5,4% su anno, record da 2023 (RCO) - Il Sole 24 ORE",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 75,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+0,9%",
+        "+5,4%",
+        "2023 ",
+        "24 ",
+        "+0,9%",
+        "+5,4%",
+        "2023 ",
+        "24 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 11",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeGFKRDJDZE9jc2RJTUU4WUZaSkhxVTdFNnRsRENCb2dxR2duMWFEWmxSbWUtRnlGdkNUby1vb3R4Q19VZVdKR3hnVHJkcmJuazhya0ZsVFcwWi1nYXNLU1FmU1lLUEZfTlVld1ZLWGxqXzM2eERUY2o0SFpUOVlTaklvV3hqTVdZZVBwekJoeXZWZWRpanJlZXpR0gFoQVVfeXFMUGR2UUNKZG1tVmpDdGZya000dFg1V0M3NElrWVJSbjV0U3REekJlSmczQklsSVlvM1JYR3RiMVpTRGg2RFppWWZQVjRpd29lVzA0LW0yOEd4OVFmQjczWXlhVWNjM1MxMno?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Istat, l'inflazione a ottobre sale al +5,4%: è il dato più alto da oltre tre anni - Tgcom24",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 47,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+5,4%",
+        "+5,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSmVkQW5KaHRBeUpVdHlwWjAtcXh3LWs0aGVERTkzS2VaWkVQYk5DYXNrZ0xiZjJIb3RzYU8xcEtZZlV3TjB6SmhmNENUWWZKc3FsUmQ5b0RZeWtLandiYmx0dFpWclJydUpNcDc4VzJpSWFxakxjREJ5Ql93SzJWbFNSd3pwX3FIbFZaMk92SGhLSDNFS1JnOXdUMG4xV1V6UWdiM1czTHpsamkzVEJ0YS0wVmREZ09sV2hWVDg1RTZWN0RsdjJqWmF5TzY1aFdmQWg3TkN6QUVuSU5JQmRsOURqRTA3Z0UyY0JaRVg0c0xLSlhYR2JRTWhsRFA?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "La Lombardia è la Regione con più stranieri in Italia (1.25 milioni). Il 18% degli studenti proviene da altri Paesi, il 67% è nato in Italia - Tecnica della Scuola",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 55,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "1.25 milioni",
+        "18%",
+        "67%",
+        "1.25 milioni",
+        "18%",
+        "67%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "ISTAT - Comunicati stampa ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+      "discovery_title": "Prezzi al consumo (dati provvisori) – Ottobre 2026",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 59,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "2026 ",
+        "+0,9%",
+        "+5,4%"
+      ],
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/10/CS_Prezzi-al-consumo_Prov_Ottobre2026.pdf",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it",
+        "https://www.istat.it/it/archivio/30440",
+        "http://rivaluta.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
+        "https://www.istat.it/?tag=consumi",
+        "https://www.istat.it/?tag=inflazione",
+        "https://www.istat.it/?tag=ipca",
+        "https://www.istat.it/?tag=nic",
+        "https://www.istat.it/?tag=prezzi-2",
+        "https://www.istat.it/?tag=prezzi-al-consumo"
+      ],
+      "official_domain_hints": [
+        "istat.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026 ",
+          "+0,9%",
+          "+5,4%"
+        ],
+        "matched_non_year_numbers": [
+          "+0,9%",
+          "+5,4%"
+        ],
+        "matched_keywords": [
+          "prezzi",
+          "consumo",
+          "provvisori",
+          "ottobre",
+          "stime",
+          "preliminari",
+          "indice",
+          "nazionale"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Prezzi al consumo (dati provvisori) – Ottobre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14762/diplomazia-scientifica-internazionale-al-via-gli-incontri-del-programma-eig-concert-japan-su-robotica-e-intelligenza-artificiale",
+      "discovery_title": "Diplomazia scientifica internazionale: al via gli incontri del Programma EIG CONCERT-Japan su Robotica e Intelligenza artificiale",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "30",
+        "10",
+        "2026 ",
+        "27 ",
+        "28 ",
+        "2026"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14762/diplomazia-scientifica-internazionale-al-via-gli-incontri-del-programma-eig-concert-japan-su-robotica-e-intelligenza-artificiale#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news"
+      ],
+      "official_domain_hints": [
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14762/diplomazia-scientifica-internazionale-al-via-gli-incontri-del-programma-eig-concert-japan-su-robotica-e-intelligenza-artificiale",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "30",
+          "10",
+          "2026 ",
+          "27 ",
+          "28 ",
+          "2026"
+        ],
+        "matched_non_year_numbers": [
+          "30",
+          "10",
+          "27 ",
+          "28 "
+        ],
+        "matched_keywords": [
+          "diplomazia",
+          "scientifica",
+          "internazionale",
+          "incontri",
+          "programma",
+          "concert",
+          "japan",
+          "robotica"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Diplomazia scientifica internazionale: al via gli incontri del Programma EIG CONCERT-Japan su Robotica e Intelligenza artificiale | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servi",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Corriere della Sera - Economia",
+      "discovery_url": "https://www.corriere.it/economia/consumi/26_ottobre_30/istat-pil-fermo-nel-terzo-trimestre-la-crescita-annua-rallenta-allo-0-8-7a8bcc15-824a-4ff8-a328-22538b83exlk.shtml",
+      "discovery_title": "Istat, Pil fermo nel terzo trimestre: la crescita annua rallenta a 0,8% (mentre la Germania cresce). L’inflazione vola a +5,4%",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "0,8%",
+        "+5,4%",
+        "+1%",
+        "+5,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "istat.it",
+        "terna.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSi00bmJLdWFLdlJ4WEFoU2x4SEdzbW5ZaVJRbENrZjFBOVVtVUg5bVgtMzFkN0hPY3RKVzVCM0hMclU1OFhQWVdTY3hvWHl3bE5FXy13NHFuQlRJYjBKSXh6VllSX1V2dUdtLVFGRFQ2M3Y3akxoTmJZWWVSQ0hRUlNSR3hxRTN5dDI0VzJ4cHFaaWdneDlyTFI5b0NYck1iU0tvdk9pdlJGTENFbzVXbnZGNUotRFI1WE1Dc2RWMVJVd3NoVXdNMGNQY3hLekYzbnJablVuYUZSeUIwR0xpQmtXeUJPa1VaaXc?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Scuola dell’infanzia, nell’Ue la frequenta il 94,4% dei bambini: in Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2% - Orizzonte Scuola Notizie",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "94,4%",
+        "97,6%",
+        "88,2%",
+        "94,4%",
+        "97,6%",
+        "88,2%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Corriere dati e statistiche",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPMHdmZHNLSHB1Y3hvT0NWNHVnSzJiWkxxamI2OTBiampqUkZKMDY2RDg3WjJiYmVTdFR2UUZiZktGeHI5TWdlenkyOVM3M3hXUDloNmtRWERiTzZFTFo2ZFlDSnBHYjlUYS1uc2MxeUNQYWotY3YtR3JkbWQtVm1yYW8xSDNpbFZ6QWJueW9BUmZZY2JfSlZzZFhlRDQ1WlVqTnN4ZUVxWUYydFRHQ2pYZGZHcmtySVNnLWZuNVRwekd5dzFOeV9mR080cnhWakY5cnhRM1d5RnVzcnF5bmtaN3hHOGhBWVZnNGtoNmEzSnh5VzRSOTV6aDNwV2tWRHhEdlpzZVVWOXk5cVJXajdncFFxblBXUnk0Z3J6Y0x5M2dzaW04V2ZmeFc2LUpkY2NCRUJ0eHc4ZHc1MHhzd1lzQTNWTFpCaVd50gHIAkFVX3lxTE8wd2Zkc0tIcHVjeG9PQ1Y0dWdLMmJaTHFqYjY5MGJqampSRkowNjZEODdaMmJiZVN0VHZRRmJmS0Z4cjlNZ2V6eTI5UzczeFdQOWg2a1FYRGJPNkVMWjZkWUNKcEdiOVRhLW5zYzF5Q1Bhai1jdi1HcmRtZC1WbXJhbzFIM2lsVnpBYm55b0FSZlljYl9KVnNkWGVENDVaVWpOc3hlRXFZRjJ0VEdDalhkZkdya3JJU2ctZm41VHB6R3l3MU55X2ZHTzRyeFZqRjlyeFEzV3lGdXNycXlua1o3eEc4aEFZVmc0a2g2YTNKeHlXNFI5NXpoM3BXa1ZEeER2WnNlVVY5eTlxUldqN2dwUXFuUFdSeTRncnpjTHkzZ3NpbThXZmZ4VzYtSmRjY0JFQnR4dzhkdzUweHN3WXNBM1ZMWkJpV3k?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Agenda 2030, in Italia il 58 per cento dei traguardi rischia di non essere raggiunto: 5,4 milioni di persone in povertà assoluta e rinnovabili ferme al 20,5 per cento dei consumi - Corriere della Sera",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -411,16 +763,43 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · nazionali · gruppo 01",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ1cwUlgzSHFaMFlZdTZ3ek90REdsaDFmMEg1WWZ4OG1EelBsSmpZZWtlZlM2V2hPUU1FOTZxMldRM0poSC1ESWwxVVd4VmRSWHVqM2hIRmVqNzlpaUdkOU5zUldYcEFFekQwZFh3NFJDT2s1bHlfWWRIS0ZJcDBHMUtHTG9CWHlfTU1MS05wM2VyYnhZNjdFY1p6Rk1MeldER0JueWI1ZnF1Y2QyYUM5bC1KSUo4N0dQQU9CdDRBdmhmUzJwRzJLVQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "De Molli \"Sicilia in crescita nell'80% parametri, record di occupazione creata\" - Il Sole 24 ORE",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 64,
-      "topic": "LAVORO",
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRmlJR3NiVHg2d2UtTUo5Rmx2WmlUcTM1NmN3NWhHS3lMVmt6SDA2OVFCWVJ0MmJ2aktic3JtYjJZZHBoQnd1djBEZ3FZWXJ4c3ZSVmJLVUxGR3ZNdWRfRS1rOEFmT3BDejhDSHJlTnF6THlWMDlBTXBuZzlqemZBQWxn?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Crédit Agricole Italia: mutui, erogati 3,1 mld nei primi 9 mesi del 2026. Credito alle imprese +23% - SimplyBiz - Dedicato a chi opera nel mondo del credito",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 55,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "80%",
+        "3,1 ",
+        "9 ",
+        "2026",
+        "+23%",
+        "3,1 ",
+        "9 ",
+        "2026",
+        "+23%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 01",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNa1ctZFdTOW1KbDhhWERQQnZTWTFaRVhDTmFLRkVMRklFc011aDdsSmh3V0RpNXkzU2NTR2tSTGY4eHJ2dVg2MWZ5RTlkRmY4WXV3SGk0MERHZ1lNX3pDYWxnMUxDMmp1emVrMjlLS3RXdTB0RDcxcGJYVmJnT3dGZVppa1VPaTE4dElhU3Y4YThtbXlBckdnSnRqRnZ4aHpJdWN2aXBUR25hZUxMZzFUOUhuU3h0a2NsSm5KcUpHb0ZQU1U4a1FSRjloTWlwQ0tTQzRMbg?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Inflation: Istat estimates +0.9 per cent in October, +5.4 per cent year-on-year – a record high since 2023 - Il Sole 24 ORE",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 60,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "+0.9 ",
+        "+5.4 ",
+        "2023 ",
         "24 ",
-        "80%",
+        "+0.9 ",
+        "+5.4 ",
+        "2023 ",
         "24 "
       ],
       "official_links": [],
@@ -430,165 +809,17 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxONlVkc3FJbkxabkhDOXEtRmRxVTNaUDFHYk16eXRzOEF5YkZpUWxKYjYxdHB5ckltaXBCVUJGNmRkYlpIMmE0SlRQcXppUE9MZG9GS3o5TjhqUl95U3hBN0wxZnJCSko3NWJpWkRiZHc4eVQyODRBdG5NQWZWZC0tc21CRVlWWHRqRTJCZGRYeHY3d2NZUHZOUGdjNEdpdmY4MVlpVGdHUjZURWRoYUZGX212Q3gybkdBNXRxNGxSeGFqUVduMzhwTzhodlMzTW5iT3h0YVZoUHB6VEppZlgxWmJURTF5dTZDbXNsQkJ5S1JNUQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Istat, a settembre export extra Ue -1,3%, import +1,4% sul mese (2) - ANSA",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 45,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "-1,3%",
-        "+1,4%",
-        "2",
-        "-1,3%",
-        "+1,4%",
-        "2"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE 80 testate · specializzate · gruppo 15",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSmVkQW5KaHRBeUpVdHlwWjAtcXh3LWs0aGVERTkzS2VaWkVQYk5DYXNrZ0xiZjJIb3RzYU8xcEtZZlV3TjB6SmhmNENUWWZKc3FsUmQ5b0RZeWtLandiYmx0dFpWclJydUpNcDc4VzJpSWFxakxjREJ5Ql93SzJWbFNSd3pwX3FIbFZaMk92SGhLSDNFS1JnOXdUMG4xV1V6UWdiM1czTHpsamkzVEJ0YS0wVmREZ09sV2hWVDg1RTZWN0RsdjJqWmF5TzY1aFdmQWg3TkN6QUVuSU5JQmRsOURqRTA3Z0UyY0JaRVg0c0xLSlhYR2JRTWhsRFA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "La Lombardia è la Regione con più stranieri in Italia (1.25 milioni). Il 18% degli studenti proviene da altri Paesi, il 67% è nato in Italia - Tecnica della Scuola",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 55,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "1.25 milioni",
-        "18%",
-        "67%",
-        "1.25 milioni",
-        "18%",
-        "67%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - statistiche Italia",
-      "discovery_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOHdNSHR3emNsVks0OXp5eHFYemZTM2hXeXo4QnFhcXhRSW1ta0FrSHg3OURpamtuM0FsVzZTbzBIcWFZS09yLVhDUWFLWFpacnVRUENyUEY0MEJzOHp0NmN0dFNyRnVxSHFVWHFXTFFabldRZ0t6QzR0SVJkMlpVdy04VDBaZG5mV1o2ekJXZFpCMVZDdGhvbWFlOWtTVHZZNVNHOU43cjhoWEk2RHBtaF9vWTYtRWZ1QTBjUUxRWjZBZVJBVUE1d1NwLUc?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Turismo italiano da record, oltre 535 milioni di presenze nel 2025: ma non tutte le Regioni crescono allo stesso ritmo - QdS",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 59,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "535 milioni",
-        "2025",
-        "535 milioni",
-        "2025"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/lavoro/26_ottobre_29/istat-occupazione-stabile-al-63-a-settembre-i-contratti-a-termine-aumentano-5adb8b25-cd93-413a-9035-e6e8b2816xlk.shtml",
-      "discovery_title": "Istat, occupazione stabile al 63% a settembre: i contratti a termine aumentano",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 60,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "63%",
-        "2 milioni",
-        "567mila",
-        "16 milioni",
-        "490 mila"
-      ],
-      "official_links": [],
-      "official_domain_hints": [
-        "istat.it"
-      ],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSi00bmJLdWFLdlJ4WEFoU2x4SEdzbW5ZaVJRbENrZjFBOVVtVUg5bVgtMzFkN0hPY3RKVzVCM0hMclU1OFhQWVdTY3hvWHl3bE5FXy13NHFuQlRJYjBKSXh6VllSX1V2dUdtLVFGRFQ2M3Y3akxoTmJZWWVSQ0hRUlNSR3hxRTN5dDI0VzJ4cHFaaWdneDlyTFI5b0NYck1iU0tvdk9pdlJGTENFbzVXbnZGNUotRFI1WE1Dc2RWMVJVd3NoVXdNMGNQY3hLekYzbnJablVuYUZSeUIwR0xpQmtXeUJPa1VaaXc?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Scuola dell’infanzia, nell’Ue la frequenta il 94,4% dei bambini: in Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2% - Orizzonte Scuola Notizie",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 45,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "94,4%",
-        "97,6%",
-        "88,2%",
-        "94,4%",
-        "97,6%",
-        "88,2%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Il Sole 24 Ore - Energia Ambiente",
-      "discovery_url": "https://www.ilsole24ore.com/art/consumo-ruolo-record-2025-coperti-italia-102-kmq-AJd2AWvB",
-      "discovery_title": "Consumo di ruolo, record nel 2025: coperti in Italia 102 kmq",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 60,
-      "topic": "AMBIENTE",
-      "numbers_detected": [
-        "2025",
-        "102 ",
-        "2025 ",
-        "102 ",
-        "3 ",
-        "280mila"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 04",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTGp2Zzg2bUh1dFhxNl84TWZlMkppc1NTaU9hNmVHY18tMFhnV3pZYzFmMG5PV0J2b0RxWjBuXy0tejhaMmVnWFo0Uk5KeGp5Z0hqbEgxbVFyaktFYURkSEk4bDdhNVYwT0pkLXlIMkVWMEppSnVFZDJIUFlTU2xwWl9lRlppRlFKanhrTDdTTHB0WDFzYURBb2pRNEZzMEFYcGgydlRPa2dqVmhicU9rSmZxamkxY1BRR0VYQUdMU0FDeFZsNkVvVFFHdmFqaE5DSkd1QWxqd19YcThic25V?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "L’Istat: occupazione stabile a settembre 2026, tasso al 63%. Disoccupazione in lieve aumento: +6,3% - ItaliaOggi",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 65,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "2026",
-        "63%",
-        "+6,3%",
-        "2026",
-        "63%",
-        "+6,3%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ0hlSW56R05PWVEzb1RhMUZmb0hrb2lKYWtHdHdoSVJkeE9hYm5KaDNhSkE5U1A1WmNqeDhHU0NzMkNpaGFKVGNZMnk0NC1zcnhncXFtV0g3NXRoRGNockM0RkRQbWxraGFpbFFydUdZcmZfTGlVVFVqZkh3Z3N0WGIzb0ZIdEFDM3NfcVlPU3VfcnVIcXZlVXByYUJwTmlZbEtQa1Jva2Q1SlNkOElJTFkzb3ZqTjJBREJZY1RfWDREUHpsRnhUbWNncEw0RXByTkZSSFJVdk94NHM?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Emergenza abitativa in Europa: prezzi delle case +70% dal 2010, in Italia permessi di costruire crollati dell’80% - Autonomie Locali Italiane",
-      "detected_at": "2026-10-30T09:02:13.929478+00:00",
-      "score_discovery": 50,
+      "discovery_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcUdvMEtta2x0UWlsdVoxQzlLcXJjZTZnZ2dCd2NxRTkwbzR2MUtUR3NEekdVeUxKaXJiNlotSFkxdFVSUGxWMFZDbGVWQ1dvVlpDUjE2bzhvdkFlc1NSUnVDTV84X1A1N1FDdWJZZnQ5SWRMWGp4X0xBZ0dVUWY0VmlMYzRtTnFJTHVtWWhjdVdGNGs?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Inflazione Italia al 5,4%. Mai cosí alta dal 2023 - XTB.com",
+      "detected_at": "2026-10-30T11:52:29.200981+00:00",
+      "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "+70%",
-        "2010",
-        "80%",
-        "+70%",
-        "2010",
-        "80%"
+        "5,4%",
+        "2023 ",
+        "5,4%",
+        "2023 "
       ],
       "official_links": [],
       "official_domain_hints": [],
