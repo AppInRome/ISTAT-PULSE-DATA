@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-31T11:46:27.172414+00:00",
+  "checked_at": "2026-10-31T14:47:18.069947+00:00",
   "feeds_configured": 4,
-  "feeds_reached": 2,
+  "feeds_reached": 3,
   "articles_new": 0,
   "articles_total": 5867,
   "sources": {
@@ -11,9 +11,9 @@
       "error": "HTTP Error 403: Forbidden"
     },
     "CNR": {
-      "status": "error",
+      "status": "ok",
       "new": 0,
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "items": 20
     },
     "SVIMEZ": {
       "status": "ok",
