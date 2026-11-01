@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-01T17:39:37.198418+00:00",
+  "generated_at": "2026-11-01T20:46:55.654644+00:00",
   "discovery_feeds_configured": 73,
-  "discovery_feeds_reached": 71,
-  "discovery_feeds_failed": 2,
-  "articles_pending_research": 203,
+  "discovery_feeds_reached": 70,
+  "discovery_feeds_failed": 3,
+  "articles_pending_research": 204,
   "daily": {
     "oggi": {
-      "published": 5,
+      "published": 6,
       "with_verified_chart": 1,
-      "media_discovered": 4,
-      "media_reports_not_primary_verified": 4,
+      "media_discovered": 5,
+      "media_reports_not_primary_verified": 5,
       "original_pulse_verified": 1,
       "distinct_primary_domains": 5
     },
     "ieri": {
-      "published": 22,
+      "published": 23,
       "with_verified_chart": 0,
-      "media_discovered": 22,
-      "media_reports_not_primary_verified": 22,
+      "media_discovered": 23,
+      "media_reports_not_primary_verified": 23,
       "original_pulse_verified": 0,
-      "distinct_primary_domains": 21
+      "distinct_primary_domains": 22
     },
     "archivio": {
       "published": 296,
@@ -27,7 +27,7 @@
       "media_discovered": 266,
       "media_reports_not_primary_verified": 261,
       "original_pulse_verified": 35,
-      "distinct_primary_domains": 154
+      "distinct_primary_domains": 153
     }
   },
   "note": "Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."

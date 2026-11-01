@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-01T17:47:14.958108+00:00",
+  "checked_at": "2026-11-01T20:50:41.556135+00:00",
   "feeds_configured": 4,
-  "feeds_reached": 3,
+  "feeds_reached": 1,
   "articles_new": 0,
   "articles_total": 5867,
   "sources": {
@@ -11,9 +11,9 @@
       "error": "HTTP Error 403: Forbidden"
     },
     "CNR": {
-      "status": "ok",
+      "status": "error",
       "new": 0,
-      "items": 20
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
     },
     "SVIMEZ": {
       "status": "ok",
@@ -21,9 +21,9 @@
       "items": 10
     },
     "SINAB": {
-      "status": "ok",
+      "status": "error",
       "new": 0,
-      "items": 3
+      "error": "The read operation timed out"
     }
   },
   "other_institutions": "not_yet_connected"
