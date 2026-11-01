@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:50:48.299122+00:00",
+  "generated_at": "2026-11-01T08:56:34.887033+00:00",
   "candidates": [
     {
       "radar": "Il Sole 24 Ore - Italia Attualità",
@@ -54,7 +54,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 7
+      "items_fetched": 6
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -84,7 +84,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 59
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -194,7 +194,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 19
     },
     {
       "radar": "Google News - economia lavoro",
@@ -204,7 +204,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 60
     },
     {
       "radar": "Repubblica Economia",
@@ -249,22 +249,22 @@
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 49
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 59
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 51
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -314,7 +314,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 57
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -324,12 +324,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 59
+      "items_fetched": 42
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 45
+      "items_fetched": 54
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -364,13 +364,13 @@
     {
       "radar": "SINAB - Notizie ufficiali bio",
       "status": "radar_fetched",
-      "items_fetched": 0
+      "items_fetched": 3
     },
     {
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVlh3eFc4dEVvMHl2bHMxNnZyekx6WWtYNkgxR2g3TnVTdnFpNkVyMHZKQnhIX0EzUGk2QVFScjAzYkxIZEhPNE9kVUNObDZqM09TejZBVnBQOEJyZjVfcjZ2Q1dXbmwzYTJWN0xtRnFsN2FrSnlmLUhINE90SFEwdXptSVhyUXhTTGh1aG1Zbk9sR1pVTVlBTm1OSWZtd1hnTl9QcE9VOVVzNFM4cXBzYlk0TFBtclB6ekNqVXN6bDNBRjdDLXdZQUZuV2FrYW9rdFMzbkpXNFhxT3RacG5JRw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "TOP NEWS ESTERO: BoJ ferma, inflazione di fondo in linea con target 2% per 1° volta da 2013 - Milano Finanza",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -383,15 +383,55 @@
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": null,
+      "primary_resolution": {
+        "url": "https://www.istat.it/tag/inflazione/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2%",
+          "1",
+          "2%",
+          "1"
+        ],
+        "matched_non_year_numbers": [
+          "2%",
+          "1",
+          "2%",
+          "1"
+        ],
+        "matched_keywords": [
+          "estero",
+          "ferma",
+          "inflazione",
+          "volta"
+        ],
+        "verification_score": 87,
+        "text_excerpt": "inflazione – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la tua preferenza. Please confirm your pre",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "bancaditalia.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"estero ferma inflazione fondo linea target\" 2% 1 2013",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "bancaditalia.it",
+            "query": "site:bancaditalia.it \"estero ferma inflazione fondo linea target\" 2% 1 2013",
+            "results": 6
+          }
+        ]
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Tasse redditi casa",
+      "radar": "Google News - Disuguaglianze e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BdTBsUk1lYWxVbVp3RlNvOEd3dFMtWkJUV0dWcGdyRnFVNG1DSWVPYmpNUExfRTRFV281TldsMjdoOUpYUDgxaTJXN1ZhWG9wZVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Inflazione ottobre 2026 al 5,4%: dati Istat, BCE e BTP - Rankia IT",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -410,7 +450,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 08",
       "discovery_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOWVjbXg1V1lveW81ZXNwQ3lmS3NmZ0liUUIxVmlwWm1sLUlwd0RRb25UaTVveS16cHdxNmxMa2FTSDNORVhoQ0FrbzEwRGM4X281bEowakx6djFmZGpDVGhkSEpCb1htMFNMX2RKb0Y2dHEzODE0TVh0eU9BWkRZMnFtdUFlSGlwU0xqR0V0Z3JteS05T1UyQnRndl9VWW1VelR0NEozWlRRdXNYdWZmRVZXTHNVRmRQdEE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "De Molli \"Sicilia in crescita nell'80% parametri, record di occupazione creata\" - Milano Finanza",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 52,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -424,10 +464,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSmVkQW5KaHRBeUpVdHlwWjAtcXh3LWs0aGVERTkzS2VaWkVQYk5DYXNrZ0xiZjJIb3RzYU8xcEtZZlV3TjB6SmhmNENUWWZKc3FsUmQ5b0RZeWtLandiYmx0dFpWclJydUpNcDc4VzJpSWFxakxjREJ5Ql93SzJWbFNSd3pwX3FIbFZaMk92SGhLSDNFS1JnOXdUMG4xV1V6UWdiM1czTHpsamkzVEJ0YS0wVmREZ09sV2hWVDg1RTZWN0RsdjJqWmF5TzY1aFdmQWg3TkN6QUVuSU5JQmRsOURqRTA3Z0UyY0JaRVg0c0xLSlhYR2JRTWhsRFA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "La Lombardia è la Regione con più stranieri in Italia (1.25 milioni). Il 18% degli studenti proviene da altri Paesi, il 67% è nato in Italia - Tecnica della Scuola",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -448,7 +488,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/commercio-estero-extra-ue-settembre-2026/",
       "discovery_title": "Commercio estero extra UE – Settembre 2026",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -512,7 +552,7 @@
       "radar": "CNR - Notizie ufficiali",
       "discovery_url": "https://www.cnr.it/it/news/14758/il-cnr-nella-top2-scientists-2025",
       "discovery_title": "Il Cnr nella Top2% scientists 2025",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 45,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -568,7 +608,7 @@
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZE1wa2tfeGNOM0lab1lrSjJkUGFfY1k5MlBLd19UblB4V1dSMS1aNGFxb0tmTWJjQ05NeEFJa2pQcTU1RVR4ZjZITXlGdHRCOFcxNUpOaG01YUZhWHp5TEoxcDJrMlpjNkNkMndrSXBPWlZ2TGxhc2JjSk9NTHlfN01OaDVKU2dtUVhpUTNRcHM2S2lJNFdPc1Z3ZXdQeU8zdHJmMHBPcFhYcl9vYmdyVURQMnZVaUpybWRzRm5GbTZ2a0hNSFJOWUdhUzJZUDk4amUzNUI2dw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "BoJ: resta ferma, inflazione di fondo in linea con obiettivo 2% per 1° volta da 2013 - Milano Finanza",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -589,7 +629,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
       "discovery_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORU9BcURkOEdrdnU3RUN2UmxCN3A2QzRXdWpyY01Bblo2dUV0R21PcGZYSnF1NGZ2US04a01mQVQ2c05qQnFzcWVtX2hkX1lMUm1rcGpoOGRsQUlTblpPUXBia0lab0E0ejRzSk96WVg1WkFkYUpCS1ljVnVVR1NzZ3pZeW5XQ3NDMUJKNUJMNXhmSlJ0c2NfWE1aTUJmY0tHdVZGQmRoSnJMbjRrMTBN?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Inflazione: Istat stima +0,9% a ottobre, +5,4% su anno, record da 2023 - Il Sole 24 ORE",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 75,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -609,29 +649,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 08",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcDVxdG1YX0JMUXhMWVZyZGZuODFSWE8xdDAybDloOWJHQnBFLTlNZ0FZS3ZodHFFOWpBdEJlY1hwa0hjTW9YaldLSVg2UWhEbWFtX1lnNXl4WWJidnpDajNmQ3VjT3Z4WHhxUGxTSkV5RU52T2NkUEFsZExWS3U1aUdUOW9PMjZHdkYyOWVTbS04WEFsT2k0a3JKMVN2UjVVdjlKYkZ4X21uTW5YaGdzUG9WOGNmc2NsR1BGcUtFMFU1ODgydWdRSHp1M3VmMFd1anEtckJDUVE?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "*Lavoro: tasso disoccupazione settembre stabile al 6,3%, giovanile cala al 19,9% (Istat) - Milano Finanza",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
-      "score_discovery": 49,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "6,3%",
-        "19,9%",
-        "6,3%",
-        "19,9%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "PULSE 80 testate · specializzate · gruppo 11",
       "discovery_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkdlFDSmRtbVZqQ3RmcmtNNHRYNVdDNzRJa1lSUm41dFN0RHpCZUpnM0JJbElZbzNSWEd0YjFaU0RoNkRaaVlmUFY0aXdvZVcwNC1tMjhHeDlRZkI3M1l5YVVjYzNTMTJ60gFoQVVfeXFMUGR2UUNKZG1tVmpDdGZya000dFg1V0M3NElrWVJSbjV0U3REekJlSmczQklsSVlvM1JYR3RiMVpTRGg2RFppWWZQVjRpd29lVzA0LW0yOEd4OVFmQjczWXlhVWNjM1MxMno?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat, l'inflazione a ottobre sale al +5,4%: è il dato più alto da oltre tre anni - Mediaset Infinity",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 52,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -648,7 +669,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSi00bmJLdWFLdlJ4WEFoU2x4SEdzbW5ZaVJRbENrZjFBOVVtVUg5bVgtMzFkN0hPY3RKVzVCM0hMclU1OFhQWVdTY3hvWHl3bE5FXy13NHFuQlRJYjBKSXh6VllSX1V2dUdtLVFGRFQ2M3Y3akxoTmJZWWVSQ0hRUlNSR3hxRTN5dDI0VzJ4cHFaaWdneDlyTFI5b0NYck1iU0tvdk9pdlJGTENFbzVXbnZGNUotRFI1WE1Dc2RWMVJVd3NoVXdNMGNQY3hLekYzbnJablVuYUZSeUIwR0xpQmtXeUJPa1VaaXc?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Scuola dell’infanzia, nell’Ue la frequenta il 94,4% dei bambini: in Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2% - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 45,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -669,7 +690,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
       "discovery_title": "Prezzi al consumo (dati provvisori) – Ottobre 2026",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 59,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -731,7 +752,7 @@
       "radar": "CNR - Notizie ufficiali",
       "discovery_url": "https://www.cnr.it/it/news/14757/asv-madro-il-drone-marino-di-cnr-inm-che-naviga-in-autonomia",
       "discovery_title": "ASV-MADRO,il drone marino di Cnr-Inm che naviga in autonomia",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 45,
       "topic": "MOBILITA",
       "numbers_detected": [
@@ -788,7 +809,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 04",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTGp2Zzg2bUh1dFhxNl84TWZlMkppc1NTaU9hNmVHY18tMFhnV3pZYzFmMG5PV0J2b0RxWjBuXy0tejhaMmVnWFo0Uk5KeGp5Z0hqbEgxbVFyaktFYURkSEk4bDdhNVYwT0pkLXlIMkVWMEppSnVFZDJIUFlTU2xwWl9lRlppRlFKanhrTDdTTHB0WDFzYURBb2pRNEZzMEFYcGgydlRPa2dqVmhicU9rSmZxamkxY1BRR0VYQUdMU0FDeFZsNkVvVFFHdmFqaE5DSkd1QWxqd19YcThic25V?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "L’Istat: occupazione stabile a settembre 2026, tasso al 63%. Disoccupazione in lieve aumento: +6,3% - ItaliaOggi",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 65,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -809,7 +830,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 10",
       "discovery_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEV4eWg1eWgxYWdzN1B5dmZ0VkJ3LXRYS3FPbWoyc2JpZmt2bWRHeTRrTHBkemw1M0tWbUs3NGRJdi1DSklkWmRxMGR6REtHbDVULUFNZHBGb1h1MndxMjhIdmhSZ1c4YUlaSzF4aEpfV2xlNFBhUHkxTU1QajVCektCRm9hUTZTNDJhTmdkMDg?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat: a ottobre inflazione a +5,4%, record da agosto 2023 - Sky TG24",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 69,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -828,7 +849,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/la-tratta-di-esseri-umani-in-italia-anni-2021-2025/",
       "discovery_title": "La tratta di esseri umani in Italia – Anni 2021-2025",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -898,7 +919,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/occupati-e-disoccupati-dati-provvisori-settembre-2026/",
       "discovery_title": "Occupati e disoccupati (dati provvisori)- Settembre 2026",
-      "detected_at": "2026-11-01T05:50:48.299122+00:00",
+      "detected_at": "2026-11-01T08:56:34.887033+00:00",
       "score_discovery": 53,
       "topic": "LAVORO",
       "numbers_detected": [
