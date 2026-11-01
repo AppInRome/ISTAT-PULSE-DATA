@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T14:48:12.787904+00:00",
+  "generated_at": "2026-11-01T17:39:37.198418+00:00",
   "candidates": [
     {
       "radar": "Corriere della Sera - Economia",
@@ -14,7 +14,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "AGI - Notizie",
@@ -49,7 +49,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 7
+      "items_fetched": 11
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -79,12 +79,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 58
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 28
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -189,17 +189,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 22
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 52
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 32
     },
     {
       "radar": "Repubblica Economia",
@@ -239,27 +239,27 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 37
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 45
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 52
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -304,12 +304,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 12
+      "items_fetched": 10
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -319,12 +319,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 48
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -363,55 +363,57 @@
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
-      "status": "radar_fetched",
-      "items_fetched": 3
+      "status": "radar_error",
+      "error": "The read operation timed out"
     },
     {
-      "radar": "PULSE 80 testate · specializzate · gruppo 11",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkdlFDSmRtbVZqQ3RmcmtNNHRYNVdDNzRJa1lSUm41dFN0RHpCZUpnM0JJbElZbzNSWEd0YjFaU0RoNkRaaVlmUFY0aXdvZVcwNC1tMjhHeDlRZkI3M1l5YVVjYzNTMTJ60gFoQVVfeXFMUGR2UUNKZG1tVmpDdGZya000dFg1V0M3NElrWVJSbjV0U3REekJlSmczQklsSVlvM1JYR3RiMVpTRGg2RFppWWZQVjRpd29lVzA0LW0yOEd4OVFmQjczWXlhVWNjM1MxMno?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Istat, l'inflazione a ottobre sale al +5,4%: è il dato più alto da oltre tre anni - Mediaset Infinity",
-      "detected_at": "2026-11-01T14:48:12.787904+00:00",
-      "score_discovery": 52,
+      "radar": "Google News - Milano Finanza dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVlh3eFc4dEVvMHl2bHMxNnZyekx6WWtYNkgxR2g3TnVTdnFpNkVyMHZKQnhIX0EzUGk2QVFScjAzYkxIZEhPNE9kVUNObDZqM09TejZBVnBQOEJyZjVfcjZ2Q1dXbmwzYTJWN0xtRnFsN2FrSnlmLUhINE90SFEwdXptSVhyUXhTTGh1aG1Zbk9sR1pVTVlBTm1OSWZtd1hnTl9QcE9VOVVzNFM4cXBzYlk0TFBtclB6ekNqVXN6bDNBRjdDLXdZQUZuV2FrYW9rdFMzbkpXNFhxT3RacG5JRw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "TOP NEWS ESTERO: BoJ ferma, inflazione di fondo in linea con target 2% per 1° volta da 2013 - Milano Finanza",
+      "detected_at": "2026-11-01T17:39:37.198418+00:00",
+      "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "+5,4%",
-        "+5,4%"
+        "2%",
+        "1",
+        "2013 ",
+        "2%",
+        "1",
+        "2013 mila"
       ],
       "official_links": [],
       "official_domain_hints": [],
       "primary_resolution": {
-        "url": "https://www.istat.it/wp-content/uploads/2025/10/CS_Prezzi-al-consumo_Prov_Ottobre2025.pdf",
+        "url": "https://www.istat.it/tag/inflazione/",
         "domain": "istat.it",
         "matched_numbers": [
-          "+5,4%",
-          "+5,4%"
+          "2%",
+          "1",
+          "2%",
+          "1"
         ],
         "matched_non_year_numbers": [
-          "+5,4%",
-          "+5,4%"
+          "2%",
+          "1",
+          "2%",
+          "1"
         ],
         "matched_keywords": [
-          "istat",
+          "estero",
+          "ferma",
           "inflazione",
-          "ottobre",
-          "sale"
+          "volta"
         ],
         "verification_score": 87,
-        "text_excerpt": " 31 ottobre 2025 http://www.istat.it Contact Centre Ufficio Stampa tel. +39 06 4673.2243/4 ufficiostampa@istat.it Ottobre 2025 PREZZI AL CONSUMO Dati provvisori  Secondo le stime preliminari, nel mese di ottobre 2025 l’indice nazionale dei prezzi al consumo per l’intera collettività (NIC), al lordo dei tabacchi, evidenzia una variazione del -0,3% su base mensile e del +1,2% su base annua (da +1,6% nel mese precedente).  La sensibile decelerazione del tasso d’inflazione si deve prevalentemente al marcato rallentamento su base tendenziale dei prezzi degli Energetici regolamentati (da +13,9% a -0,8%), degli Alimentari non lavorati (da +4,8% a +1,9%) e, in misura minore, di quelli dei Servizi relativi ai trasporti (da +2,4% a +2,0%). Tali effetti sono solo in parte compensati dall’accelerazione dei prezzi dei Servizi ricreativi, culturali e per la cura della persona (da +3,1% a +3,3%).  N",
+        "text_excerpt": "inflazione – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la tua preferenza. Please confirm your pre",
         "verified_series": [],
         "method": "named_or_topic_domain_search",
-        "search_domain": "bancaditalia.it",
+        "search_domain": "istat.it",
         "attempts": [
           {
             "stage": "domain_search",
             "domain": "istat.it",
-            "query": "site:istat.it \"istat inflazione ottobre sale alto mediaset\" +5,4% +5,4%",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "bancaditalia.it",
-            "query": "site:bancaditalia.it \"istat inflazione ottobre sale alto mediaset\" +5,4% +5,4%",
+            "query": "site:istat.it \"estero ferma inflazione fondo linea target\" 2% 1 2013",
             "results": 6
           }
         ]
@@ -423,7 +425,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
       "discovery_title": "Prezzi al consumo (dati provvisori) – Ottobre 2026",
-      "detected_at": "2026-11-01T14:48:12.787904+00:00",
+      "detected_at": "2026-11-01T17:39:37.198418+00:00",
       "score_discovery": 59,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -485,7 +487,7 @@
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://www.corriere.it/economia/energie/26_novembre_01/carburanti-benzina-sotto-i-2-euro-ma-da-oggi-addio-al-tetto-fisso-stop-da-ip-e-tamoil-prezzi-monitorati-da-eni-e-q8-c6a08bf9-996b-4b06-bdef-05fbc4bfcxlk.shtml",
       "discovery_title": "Carburanti, benzina sotto i 2 euro ma da oggi addio al tetto fisso: stop da IP e Tamoil, prezzi monitorati da Eni e Q8",
-      "detected_at": "2026-11-01T14:48:12.787904+00:00",
+      "detected_at": "2026-11-01T17:39:37.198418+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -504,29 +506,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BdTBsUk1lYWxVbVp3RlNvOEd3dFMtWkJUV0dWcGdyRnFVNG1DSWVPYmpNUExfRTRFV281TldsMjdoOUpYUDgxaTJXN1ZhWG9wZVE?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Inflazione ottobre 2026 al 5,4%: dati Istat, BCE e BTP - Rankia IT",
-      "detected_at": "2026-11-01T14:48:12.787904+00:00",
-      "score_discovery": 54,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2026 ",
-        "5,4%",
-        "2026 ",
-        "5,4%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Milano Finanza dati",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVlh3eFc4dEVvMHl2bHMxNnZyekx6WWtYNkgxR2g3TnVTdnFpNkVyMHZKQnhIX0EzUGk2QVFScjAzYkxIZEhPNE9kVUNObDZqM09TejZBVnBQOEJyZjVfcjZ2Q1dXbmwzYTJWN0xtRnFsN2FrSnlmLUhINE90SFEwdXptSVhyUXhTTGh1aG1Zbk9sR1pVTVlBTm1OSWZtd1hnTl9QcE9VOVVzNFM4cXBzYlk0TFBtclB6ekNqVXN6bDNBRjdDLXdZQUZuV2FrYW9rdFMzbkpXNFhxT3RacG5JRw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "TOP NEWS ESTERO: BoJ ferma, inflazione di fondo in linea con target 2% per 1° volta da 2013 - Milano Finanza",
-      "detected_at": "2026-11-01T14:48:12.787904+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZE1wa2tfeGNOM0lab1lrSjJkUGFfY1k5MlBLd19UblB4V1dSMS1aNGFxb0tmTWJjQ05NeEFJa2pQcTU1RVR4ZjZITXlGdHRCOFcxNUpOaG01YUZhWHp5TEoxcDJrMlpjNkNkMndrSXBPWlZ2TGxhc2JjSk9NTHlfN01OaDVKU2dtUVhpUTNRcHM2S2lJNFdPc1Z3ZXdQeU8zdHJmMHBPcFhYcl9vYmdyVURQMnZVaUpybWRzRm5GbTZ2a0hNSFJOWUdhUzJZUDk4amUzNUI2dw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "BoJ: resta ferma, inflazione di fondo in linea con obiettivo 2% per 1° volta da 2013 - Milano Finanza",
+      "detected_at": "2026-11-01T17:39:37.198418+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -539,49 +522,15 @@
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/tag/inflazione/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "2%",
-          "1",
-          "2%",
-          "1"
-        ],
-        "matched_non_year_numbers": [
-          "2%",
-          "1",
-          "2%",
-          "1"
-        ],
-        "matched_keywords": [
-          "estero",
-          "ferma",
-          "inflazione",
-          "volta"
-        ],
-        "verification_score": 87,
-        "text_excerpt": "inflazione – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la tua preferenza. Please confirm your pre",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"estero ferma inflazione fondo linea target\" 2% 1 2013",
-            "results": 6
-          }
-        ]
-      },
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · nazionali · gruppo 01",
+      "radar": "PULSE 80 testate · agenzie · gruppo 07",
       "discovery_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORU9BcURkOEdrdnU3RUN2UmxCN3A2QzRXdWpyY01Bblo2dUV0R21PcGZYSnF1NGZ2US04a01mQVQ2c05qQnFzcWVtX2hkX1lMUm1rcGpoOGRsQUlTblpPUXBia0lab0E0ejRzSk96WVg1WkFkYUpCS1ljVnVVR1NzZ3pZeW5XQ3NDMUJKNUJMNXhmSlJ0c2NfWE1aTUJmY0tHdVZGQmRoSnJMbjRrMTBN?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Inflazione: Istat stima +0,9% a ottobre, +5,4% su anno, record da 2023 - Il Sole 24 ORE",
-      "detected_at": "2026-11-01T14:48:12.787904+00:00",
+      "detected_at": "2026-11-01T17:39:37.198418+00:00",
       "score_discovery": 75,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -599,6 +548,53 @@
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 11",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkdlFDSmRtbVZqQ3RmcmtNNHRYNVdDNzRJa1lSUm41dFN0RHpCZUpnM0JJbElZbzNSWEd0YjFaU0RoNkRaaVlmUFY0aXdvZVcwNC1tMjhHeDlRZkI3M1l5YVVjYzNTMTJ60gFoQVVfeXFMUGR2UUNKZG1tVmpDdGZya000dFg1V0M3NElrWVJSbjV0U3REekJlSmczQklsSVlvM1JYR3RiMVpTRGg2RFppWWZQVjRpd29lVzA0LW0yOEd4OVFmQjczWXlhVWNjM1MxMno?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Istat, l'inflazione a ottobre sale al +5,4%: è il dato più alto da oltre tre anni - Mediaset Infinity",
+      "detected_at": "2026-11-01T17:39:37.198418+00:00",
+      "score_discovery": 52,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+5,4%",
+        "+5,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.istat.it/wp-content/uploads/2025/10/CS_Prezzi-al-consumo_Prov_Ottobre2025.pdf",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "+5,4%",
+          "+5,4%"
+        ],
+        "matched_non_year_numbers": [
+          "+5,4%",
+          "+5,4%"
+        ],
+        "matched_keywords": [
+          "istat",
+          "inflazione",
+          "ottobre",
+          "sale"
+        ],
+        "verification_score": 87,
+        "text_excerpt": " 31 ottobre 2025 http://www.istat.it Contact Centre Ufficio Stampa tel. +39 06 4673.2243/4 ufficiostampa@istat.it Ottobre 2025 PREZZI AL CONSUMO Dati provvisori  Secondo le stime preliminari, nel mese di ottobre 2025 l’indice nazionale dei prezzi al consumo per l’intera collettività (NIC), al lordo dei tabacchi, evidenzia una variazione del -0,3% su base mensile e del +1,2% su base annua (da +1,6% nel mese precedente).  La sensibile decelerazione del tasso d’inflazione si deve prevalentemente al marcato rallentamento su base tendenziale dei prezzi degli Energetici regolamentati (da +13,9% a -0,8%), degli Alimentari non lavorati (da +4,8% a +1,9%) e, in misura minore, di quelli dei Servizi relativi ai trasporti (da +2,4% a +2,0%). Tali effetti sono solo in parte compensati dall’accelerazione dei prezzi dei Servizi ricreativi, culturali e per la cura della persona (da +3,1% a +3,3%).  N",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "istat.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"istat inflazione ottobre sale alto mediaset\" +5,4% +5,4%",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
     }
   ]
 }
