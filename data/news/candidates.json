@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T15:03:23.960547+00:00",
+  "generated_at": "2026-11-02T18:00:08.364163+00:00",
   "candidates": [
     {
       "radar": "Open - Notizie",
@@ -14,7 +14,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 16
+      "items_fetched": 19
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -44,7 +44,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 54
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -159,7 +159,7 @@
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 29
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -199,32 +199,32 @@
     {
       "radar": "Google News - Italia economia e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 39
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 36
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 48
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 26
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -254,7 +254,7 @@
     {
       "radar": "PULSE osservatori ufficiali 6/9",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 55
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
@@ -269,12 +269,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 12
+      "items_fetched": 10
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -284,12 +284,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 48
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 53
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVXZjenZ4U0lPM3N6MU52WkxXRE82ckFIWGlseXZrV2dMRUVxcHJOMzNvaDYzSjl6VTQ3dHN5S3dYOHVmZlVYYzNWQmtxY1JnMFVPR2UxYVlMZUpWT284X1hENkVuY2thTGs5QjRvU3VHMjJNdXFRUi1hTmlsc0J3Y3VaTTNHbV9nbV85NG51XzJFYWNtTkdva2dlLWFBRFA1U1ZPbWVrSWszZ19wTkJ2aXRFMmFfUnhFNEFvVw?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Estate 2026, Adr in Italia a +6,2%. Rimini prima per occupazione upscale (86,3%) - Hotellerie Pambianconews",
-      "detected_at": "2026-11-02T15:03:23.960547+00:00",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -391,7 +391,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQN3N0V205UHV6NENoZVB2MTNBV2dzcllkaXdUSERJaWdSUXpTbEZMUVh3REhQdURRc2RuejF0LWxSb2xvOFNFWVBvMlpiTmZBcWkwWDczSG1lTndYVWZ2ZXdkSnN6TWgxUU8zQzUwX0tvcFdRejhoZHE5Ti05NVF0MzJfZnFOOXNCOUQzR29JekZOUjZ4ZTM3cmR1aS1wNUo3OTlkZnVaQmlLaUpVMXYtSW1zSGdXeVo5bl9iU2k3NE41QWNicng0VzdiaTFNc3c4ZE52WlNFbExmd0F3VEtpajZ5bkl6T0dzeWRMUFNwbEVtQ2tlS0ItcFRrSDljeHBXdHl1UHUwUHJiN2dVMENXeUx5Um1NeG4y?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Scuola e futuro, solo il 41% dei genitori italiani pensa che prepari i figli alla vita fuori dall’aula. La media europea è del 45%, nel Regno Unito si arriva al 66% - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-02T15:03:23.960547+00:00",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
       "score_discovery": 45,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -409,10 +409,50 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia ambiente energia mobilità",
+      "discovery_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSVVkUjd3WEk4WXVfS0ZQMUdwaHRVWGpGVVlzbTVvbUZZX2YwY3gtYUhNdTBwR2tIaUZ5UF9HcU4yQ1FRZ3dVVEFnUjJJT1I4eURkVExPU3NwMFY1bm1QSGR2Vm9QY010SXNqY1ZERVpjTDg4SFV2SEFmNmc3NlpyTC1HUnJTSU5qM2t4ZU5oVHhBR2c?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Mercato auto Italia ottobre 2026: +4,8%, ma le BEV restano al 6,1% - Motorionline.com",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
+      "score_discovery": 45,
+      "topic": "MOBILITA",
+      "numbers_detected": [
+        "2026",
+        "+4,8%",
+        "6,1%",
+        "2026",
+        "+4,8%",
+        "6,1%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNNFIwYnIxd3k5Ul9rZXUta1JzX1J1cTJWdnVQbFNPc3dMQldiMTM2V3dVY20zdXFLVEdXb2VhR3g5QlU5SnJ4VFBLQ3N6NHJhUGhCZnllVW9vZTNGTkNBcFJYbk1mdU1Mak9vZThxZFlKSEJaYWxIb2V1ejZTbTJhNko5OXVldUNXam5venFQWnNyMEh1bm5MWmhURnc2dFRLVWVrcGlLdHVCSDE0Sm9nV2FDS2VERnFvd3RpbXVXVFVpT0o2QnJ3T2RmT0xJcUxncFZsV1ZwX3BNaHkwRkw3aE9EVmdJRWZCcXg4Rm5LMS1Jdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Studenti con disabilità in Veneto, il 62,7% segue percorsi per il diploma, il 37,3% percorsi differenziati. I dati del monitoraggio PEI - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
+      "score_discovery": 49,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "62,7%",
+        "37,3%",
+        "62,7%",
+        "37,3%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQMEJIRW9CU2ZsV2dYSTMxNzFjclR0ZW5QSEN3MWVVVy1DUE9wRk9NSmJHZHNXY1NDdUw1NW5YTHkxYUpORG91cGZ5bGtlSHNVLTdmTHBPeVU5d0JxX0ZZc0JxbkczVU9FRnpJMmNmdlZQWlRoenlsZ0hIM25hSThHVGJONUNzeEkxMjluamUwTWxQQjN2cUFLNUdwem14MHNTME5MZXAzbFlVRjBoeWFLejRHOFpteGV5aWE2Rm4tYnlxSEJhaWZiRzI2OS1xU3dDU0k5Y2xCb1gxanAxcnMxQktmQWF1bHQ2eXk0bVZQUkl5Z0Z4TjVmcHNZTTM0SDJVR3REOWZnTE1ZdEJqNmt3?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "TTG Rimini 2026, chiusura da record per la Regione Puglia: oltre 1.500 incontri B2B, circa 5.000 visitatori e un turismo che cresce sulle presenze straniere - Ruvesi.it",
-      "detected_at": "2026-11-02T15:03:23.960547+00:00",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
       "score_discovery": 65,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -430,55 +470,147 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - economia lavoro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5jbjk3cmlRRFF5QTNNVGZ0cVdEV0lZZlpWSnd4NmNhcGJBVkpFcUlJa01fQXlzRmRTZ1pRMi04Qzh4emFfZ3BZNU82U1RYQWJQZjNib0Q0a1A1TkUzc29CVjVkZENfRTViVXhtWGRkc3ZsUnktRmww?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Società benefit Italia 2026: 6.000 imprese e 71 miliardi - Felicità Pubblica",
-      "detected_at": "2026-11-02T15:03:23.960547+00:00",
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14769/isole-di-luce-nei-mari-europei-il-cnr-individua-hotspot-notturni-persistenti",
+      "discovery_title": "Isole di luce nei mari europei: il CNR individua hotspot notturni persistenti",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
       "score_discovery": 50,
-      "topic": "ECONOMIA",
+      "topic": "ALTRO",
       "numbers_detected": [
-        "2026",
-        "6.000 ",
-        "71 miliardi",
-        "2026",
-        "6.000 ",
-        "71 miliardi"
+        "03",
+        "11",
+        "2026 ",
+        "2017 ",
+        "2023 ",
+        "10.092 ",
+        "161%"
       ],
-      "official_links": [],
+      "official_links": [
+        "https://www.cnr.it/it/news/14769/isole-di-luce-nei-mari-europei-il-cnr-individua-hotspot-notturni-persistenti#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/immagine/12736/large",
+        "https://www.cnr.it/it/news/immagine/12737/large"
+      ],
       "official_domain_hints": [],
-      "primary_resolution": null,
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14769/isole-di-luce-nei-mari-europei-il-cnr-individua-hotspot-notturni-persistenti",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "03",
+          "11",
+          "2026 ",
+          "2017 ",
+          "2023 ",
+          "10.092 "
+        ],
+        "matched_non_year_numbers": [
+          "03",
+          "11",
+          "10.092 ",
+          "161%"
+        ],
+        "matched_keywords": [
+          "isole",
+          "luce",
+          "mari",
+          "europei",
+          "individua",
+          "hotspot",
+          "notturni",
+          "persistenti"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Isole di luce nei mari europei: il CNR individua hotspot notturni persistenti | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture s",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "PULSE 80 testate · specializzate · gruppo 10",
-      "discovery_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEV4eWg1eWgxYWdzN1B5dmZ0VkJ3LXRYS3FPbWoyc2JpZmt2bWRHeTRrTHBkemw1M0tWbUs3NGRJdi1DSklkWmRxMGR6REtHbDVULUFNZHBGb1h1MndxMjhIdmhSZ1c4YUlaSzF4aEpfV2xlNFBhUHkxTU1QajVCektCRm9hUTZTNDJhTmdkMDg?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Istat: a ottobre inflazione a +5,4%, record da agosto 2023 - Sky TG24",
-      "detected_at": "2026-11-02T15:03:23.960547+00:00",
-      "score_discovery": 69,
-      "topic": "ECONOMIA",
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero",
+      "discovery_title": "Ciclone Harry, onde record nel Mediterraneo: uno studio coordinato da UniBa e UniversitÃ  di Catania svela i fattori che amplificano il rischio costiero",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
+      "score_discovery": 48,
+      "topic": "ISTRUZIONE",
       "numbers_detected": [
-        "+5,4%",
-        "2023 ",
-        "+5,4%",
-        "2023 "
+        "02",
+        "11",
+        "2026 "
       ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
+      "official_links": [
+        "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/immagine/12747/large",
+        "https://www.cnr.it/it/news/immagine/12748/large",
+        "https://www.cnr.it/it/news/immagine/12749/large",
+        "https://www.cnr.it/it/news/immagine/12750/large"
+      ],
+      "official_domain_hints": [
+        "isprambiente.gov.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "02",
+          "11",
+          "2026 "
+        ],
+        "matched_non_year_numbers": [
+          "02",
+          "11"
+        ],
+        "matched_keywords": [
+          "ciclone",
+          "harry",
+          "onde",
+          "record",
+          "mediterraneo",
+          "studio",
+          "coordinato",
+          "uniba"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Ciclone Harry, onde record nel Mediterraneo: uno studio coordinato da UniBa e Università di Catania svela i fattori che amplificano il rischio costiero | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centra",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
       "radar": "Google News - statistiche Italia",
       "discovery_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQXzhORXVmTWJfZnczM2o5dHBKWDU5d2ZvMEd5ZzdpLS10eW54ZDJuRkMza3o2WGkzbklvMXRfT3Rwa2l1TVhta2UtRW5pUGpZMWtHZTBvOHN4S2dKbG4wTGRGdWNpVWhWeW5JSk44eFJYZE52ejdPRFI1VHNjUm5LSi1mTGZaOXk4TnZFNUFnRnhMV2RUcWszeVk4RURRTnl0WDlvMVFBdXh0THhpSzNDLURwOFU0UWxsV0hNMA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Rapporto Bes 2026: caldo persistente record, cresce la vulnerabilità dell’Italia - Assinews.it",
-      "detected_at": "2026-11-02T15:03:23.960547+00:00",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
       "score_discovery": 47,
       "topic": "ALTRO",
       "numbers_detected": [
         "2026",
         "2026"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "detected_at": "2026-11-02T18:00:08.364163+00:00",
+      "score_discovery": 49,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "73 milioni",
+        "2024 ",
+        "73 milioni",
+        "2024 "
       ],
       "official_links": [],
       "official_domain_hints": [],
