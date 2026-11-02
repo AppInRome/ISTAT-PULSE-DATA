@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-11-02T09:17:15.527344+00:00",
+  "generated_at": "2026-11-02T12:02:19.799410+00:00",
   "candidates": [
-    {
-      "radar": "Adnkronos - Notizie",
-      "status": "radar_fetched",
-      "items_fetched": 12
-    },
     {
       "radar": "Open - Notizie",
       "status": "radar_fetched",
@@ -49,12 +44,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 47
+      "items_fetched": 25
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -159,7 +154,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 26
     },
     {
       "radar": "Google News - economia lavoro",
@@ -169,7 +164,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 60
     },
     {
       "radar": "Repubblica Economia",
@@ -204,7 +199,7 @@
     {
       "radar": "Google News - Italia economia e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 49
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia lavoro e imprese",
@@ -214,7 +209,7 @@
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -224,12 +219,12 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 48
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -259,7 +254,7 @@
     {
       "radar": "PULSE osservatori ufficiali 6/9",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 55
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
@@ -274,12 +269,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 10
+      "items_fetched": 11
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -294,7 +289,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 27
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -347,6 +342,11 @@
       "items_fetched": 20
     },
     {
+      "radar": "Adnkronos - Notizie",
+      "status": "radar_fetched",
+      "items_fetched": 12
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -367,10 +367,31 @@
       "error": "The read operation timed out"
     },
     {
+      "radar": "Google News - Disuguaglianze e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQN3N0V205UHV6NENoZVB2MTNBV2dzcllkaXdUSERJaWdSUXpTbEZMUVh3REhQdURRc2RuejF0LWxSb2xvOFNFWVBvMlpiTmZBcWkwWDczSG1lTndYVWZ2ZXdkSnN6TWgxUU8zQzUwX0tvcFdRejhoZHE5Ti05NVF0MzJfZnFOOXNCOUQzR29JekZOUjZ4ZTM3cmR1aS1wNUo3OTlkZnVaQmlLaUpVMXYtSW1zSGdXeVo5bl9iU2k3NE41QWNicng0VzdiaTFNc3c4ZE52WlNFbExmd0F3VEtpajZ5bkl6T0dzeWRMUFNwbEVtQ2tlS0ItcFRrSDljeHBXdHl1UHUwUHJiN2dVMENXeUx5Um1NeG4y?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_title": "Scuola e futuro, solo il 41% dei genitori italiani pensa che prepari i figli alla vita fuori dall’aula. La media europea è del 45%, nel Regno Unito si arriva al 66% - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-02T12:02:19.799410+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "41%",
+        "45%",
+        "66%",
+        "41%",
+        "45%",
+        "66%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · nazionali · gruppo 04",
       "discovery_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNLWdGMkV4MUhCVWk0WEJMaUlydlBXUXdRMFoxUy1fSWM5MG8xaGsxeFR3a3drSFFHSjd5MVZoU1ZwLXppTkdnVkJfODF5VGR1Skh6RkFLdHVLMEJKOEhCazl2RUpOSHA3ckdVSTlqWm9PdXZkbTViX3FXcEpSNEduZ0cwTDk0MDktNmRxYjRyb294VFhHZFZkY0ZCRlE4UE45U0tfWXJxSkpCT01Jekw4eDJZdGZjdTVrakloMUU2YnU3SFQ4RVhYWWw3TGFORFZYN09VbkV1YjRpcnl3OFZHUnQ3OA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Allarme inflazione a ottobre, l’Istat: +5,4% su base annua. Il valore più alto dal 2023. Energetici alle stelle - Quotidiano Nazionale",
-      "detected_at": "2026-11-02T09:17:15.527344+00:00",
+      "detected_at": "2026-11-02T12:02:19.799410+00:00",
       "score_discovery": 64,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -381,117 +402,35 @@
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/wp-content/uploads/2023/11/Prezzi-al-consumo-Def-Ottobre2023.pdf",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "+5,4%",
-          "2023",
-          "+5,4%",
-          "2023"
-        ],
-        "matched_non_year_numbers": [
-          "+5,4%",
-          "+5,4%"
-        ],
-        "matched_keywords": [
-          "inflazione",
-          "ottobre",
-          "istat",
-          "base",
-          "annua",
-          "valore"
-        ],
-        "verification_score": 95,
-        "text_excerpt": " 15 novembre 2023 Ottobre 2023 PREZZI AL CONSUMO Dati definitivi  A ottobre 2023 si stima che l’indice nazionale dei prezzi al consumo per l’intera collettività (NIC), al lordo dei tabacchi, registri una diminuzione dello 0,2% su base mensile e un aumento di 1,7% su base annua, da +5,3% nel mese precedente (la stima preliminare era +1,8%).  La consistente decelerazione del tasso di inflazione si deve prevalentemente al forte rallentamento su base tendenziale dei prezzi degli Energetici, sia non regolamentati (da +7,6% a -17,7%) sia regolamentati (da -27,9% a -31,7%) e, in misura minore, di quelli degli Alimentari non lavorati (da +7,7% a +4,9%) e lavorati (da +8,9% a +7,3%). Tali effetti risultano solo in parte compensati dall’accelerazione dei prezzi dei Servizi relativi all’abitazione (da +3,7% a +4,0%) e dei Servizi relativi ai trasporti (da +3,8% a +4,0%).  L’“inflazione di fondo”",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "bancaditalia.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"allarme inflazione ottobre istat base annua\" +5,4% 2023 +5,4%",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "bancaditalia.it",
-            "query": "site:bancaditalia.it \"allarme inflazione ottobre istat base annua\" +5,4% 2023 +5,4%",
-            "results": 6
-          }
-        ]
-      },
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
     },
     {
-      "radar": "ISTAT - Aggiornamenti ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
-      "discovery_title": "Prezzi al consumo (dati provvisori) – Ottobre 2026",
-      "detected_at": "2026-11-02T09:17:15.527344+00:00",
-      "score_discovery": 59,
-      "topic": "ECONOMIA",
+      "radar": "Il Fatto Quotidiano - Notizie",
+      "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/02/i-miei-clic-dimezzati-dallia-ho-perso-in-un-anno-il-72-di-guadagno-si-lavora-di-piu-per-ottenere-meno-per-due-pizze-ci-vogliono-60-euro-ma-come-si-fa-cosi-salvatore-aranzulla/8557562/",
+      "discovery_title": "“I miei clic dimezzati dall’IA, ho perso in un anno il 72% di guadagno. Si lavora di più per ottenere meno, per due pizze ci vogliono 60 euro, ma come si fa?”: così Salvatore Aranzulla",
+      "detected_at": "2026-11-02T12:02:19.799410+00:00",
+      "score_discovery": 45,
+      "topic": "LAVORO",
       "numbers_detected": [
-        "2026 ",
-        "2026 ",
-        "+0,9%",
-        "+5,4%"
+        "72%",
+        "60 ",
+        "36 ",
+        "72%",
+        "60 "
       ],
-      "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/10/CS_Prezzi-al-consumo_Prov_Ottobre2026.pdf",
-        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
-        "https://contact.istat.it",
-        "https://www.istat.it/it/archivio/30440",
-        "http://rivaluta.istat.it/",
-        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
-        "https://www.istat.it/?tag=consumi",
-        "https://www.istat.it/?tag=inflazione",
-        "https://www.istat.it/?tag=ipca",
-        "https://www.istat.it/?tag=nic",
-        "https://www.istat.it/?tag=prezzi-2",
-        "https://www.istat.it/?tag=prezzi-al-consumo"
-      ],
-      "official_domain_hints": [
-        "istat.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-dati-provvisori-ottobre-2026/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "2026 ",
-          "2026 ",
-          "+0,9%",
-          "+5,4%"
-        ],
-        "matched_non_year_numbers": [
-          "+0,9%",
-          "+5,4%"
-        ],
-        "matched_keywords": [
-          "prezzi",
-          "consumo",
-          "provvisori",
-          "ottobre",
-          "stime",
-          "preliminari",
-          "indice",
-          "nazionale"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Prezzi al consumo (dati provvisori) – Ottobre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
     },
     {
       "radar": "Google News - statistiche Italia",
       "discovery_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQXzhORXVmTWJfZnczM2o5dHBKWDU5d2ZvMEd5ZzdpLS10eW54ZDJuRkMza3o2WGkzbklvMXRfT3Rwa2l1TVhta2UtRW5pUGpZMWtHZTBvOHN4S2dKbG4wTGRGdWNpVWhWeW5JSk44eFJYZE52ejdPRFI1VHNjUm5LSi1mTGZaOXk4TnZFNUFnRnhMV2RUcWszeVk4RURRTnl0WDlvMVFBdXh0THhpSzNDLURwOFU0UWxsV0hNMA?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Rapporto Bes 2026: caldo persistente record, cresce la vulnerabilità dell’Italia - Assinews.it",
-      "detected_at": "2026-11-02T09:17:15.527344+00:00",
+      "detected_at": "2026-11-02T12:02:19.799410+00:00",
       "score_discovery": 47,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -505,33 +444,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 07",
-      "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xZU1BVDJPRzc1bnVhWlBZRmN3aHhrRXNPOUMxdzNWMlRTN3c2dXJtRncyS3l5UkZJeVFJUWVSQ3NNR1dGUmRUYWUxc25Lb0ZDaTVYSDRzdl9OeElOZGNLRElxVjhoak1Bc2JqcnluaFhiYmE1?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Inflazione: Istat stima +0,9% a ottobre, +5,4% su anno, record da 2023 (RCO) - Il Sole 24 ORE",
-      "detected_at": "2026-11-02T09:17:15.527344+00:00",
-      "score_discovery": 75,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "+0,9%",
-        "+5,4%",
-        "2023 ",
-        "24 ",
-        "+0,9%",
-        "+5,4%",
-        "2023 ",
-        "24 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "PULSE 80 testate · specializzate · gruppo 10",
       "discovery_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUEV4eWg1eWgxYWdzN1B5dmZ0VkJ3LXRYS3FPbWoyc2JpZmt2bWRHeTRrTHBkemw1M0tWbUs3NGRJdi1DSklkWmRxMGR6REtHbDVULUFNZHBGb1h1MndxMjhIdmhSZ1c4YUlaSzF4aEpfV2xlNFBhUHkxTU1QajVCektCRm9hUTZTNDJhTmdkMDg?oc=5&hl=en-US&gl=US&ceid=US:en",
       "discovery_title": "Istat: a ottobre inflazione a +5,4%, record da agosto 2023 - Sky TG24",
-      "detected_at": "2026-11-02T09:17:15.527344+00:00",
+      "detected_at": "2026-11-02T12:02:19.799410+00:00",
       "score_discovery": 69,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -539,27 +455,6 @@
         "2023 ",
         "+5,4%",
         "2023 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdC03T1g5Z2tYeE5zWndOdVRyNUt2RjN3MmEtcTFDV3hFXzRnYUxDdTdZREdKbkxHclRLRk9ZYTJZalctQUc5WFl2bkxXR18zYUJDcGp6bVpibXYySDE2dVBmSlpnampCUUFtOVFnQnBqcDRWSnZhU0JpRU0xYVJmZFhXVWxtXzFwbjRNRnFrXzB2VEU2XzhxLTk3SzkzTjlFUTN0ZnhuTmt4cmtJdVMtcG9IVXVBUjFtcTVmb0J6S0s0UXBXcHpvT1UwRnpLbDd3THloV09R?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "Inflazione reale al 5,4% ma gli italiani la percepiscono più del doppio (13,3%) - Il Sole 24 ORE",
-      "detected_at": "2026-11-02T09:17:15.527344+00:00",
-      "score_discovery": 45,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "5,4%",
-        "13,3%",
-        "24 ",
-        "5,4%",
-        "13,3%",
-        "24 "
       ],
       "official_links": [],
       "official_domain_hints": [],
