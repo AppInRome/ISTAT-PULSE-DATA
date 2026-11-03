@@ -1186,8 +1186,13 @@ def main():
                     feature.get("editorial_format") != "individually_edited_longform" or
                     feature.get("editorial_review", {}).get("ready_for_publication") is not True):
                 raise ValueError("invalid_approved_feature")
-        merged = merge_features(list(by_id.values()), reviewed)
-        by_id = {article["id"]: article for article in merged}
+        try:
+            merged = merge_features(list(by_id.values()), reviewed)
+            by_id = {article["id"]: article for article in merged}
+        except ValueError as exc:
+            # A stale curated package must never empty the daily news feed.
+            # Keep last-good newsroom articles, report the rejected overlay.
+            print(f"[PULSE APPROVED FEATURES] rejected stale/invalid overlay: {exc}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Two explicit tiers in the same dated newsroom index:
     # 1. primary-source verified PULSE features, eligible for data charts
