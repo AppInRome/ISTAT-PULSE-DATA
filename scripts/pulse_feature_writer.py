@@ -1,100 +1,147 @@
 #!/usr/bin/env python3
-"""Evidence-only, original PULSE long-form prose for validated time series.
+"""PULSE evidence-led numerical narratives, never newspaper copy.
 
-Never use unverified press numbers for an original quantitative article.
-Narrative paragraphs are computed from the same observations as graph/table.
+Only writes statements deducible from one comparable primary-source series.
+A source-backed explanation is not equivalent to a reported investigation.
 """
 from __future__ import annotations
 import math
+import re
+from urllib.parse import urlparse
 
-def _n(x):
-    s = f"{float(x):,.2f}".rstrip("0").rstrip(".")
+
+def _n(value):
+    s = f"{float(value):,.6f}".rstrip("0").rstrip(".")
     return s.replace(",", "_").replace(".", ",").replace("_", ".")
 
+
+def _section(s):
+    return {"heading": "", "text": s}
+
+
 def longform_sections(series, publisher):
-    """Return reader-ready paragraphs, or [] if comparable evidence is absent."""
-    if not series or not isinstance(series, dict):
+    if not isinstance(series, dict):
         return []
-    points = series.get("observations") or []
-    unit = str(series.get("unit") or "").strip()
     indicator = str(series.get("indicator") or "").strip()
-    source = str(series.get("source_url") or "").strip()
-    if not unit or not indicator or len(points) < 2 or not source.startswith("https://"):
+    unit = str(series.get("unit") or "").strip()
+    source = str(series.get("source_url") or "")
+    observations = series.get("observations")
+    url = urlparse(source)
+    if (not indicator or not unit or url.scheme != "https" or not url.hostname
+            or not isinstance(observations, list) or len(observations) < 2):
         return []
-    try:
-        values = [(str(p["period"]), float(p["value"])) for p in points]
-        if any(not math.isfinite(v) for _, v in values):
+    entries = []
+    for row in observations:
+        try:
+            period = str(row["period"]).strip()
+            value = float(row["value"])
+        except (KeyError, ValueError, TypeError):
             return []
-        if len({d for d, _ in values}) != len(values):
+        if (not math.isfinite(value) or
+                not re.fullmatch(r"(?:19|20)\d{2}(?:-(?:Q[1-4]|\d{2}))?", period)):
             return []
-    except (ValueError, TypeError, KeyError):
+        entries.append((period, value))
+    entries.sort(key=lambda x: x[0])
+    if len({period for period, _ in entries}) != len(entries):
         return []
-    values.sort(key=lambda p: p[0])
-    first, prev, last = values[0], values[-2], values[-1]
-    diff = last[1] - prev[1]
-    opening_diff = last[1] - first[1]
-    direction = ("è aumentato" if diff > 0 else "è diminuito" if diff < 0 else "è rimasto invariato")
-    sign = "più" if diff > 0 else "meno" if diff < 0 else "lo stesso valore di"
-    base = f"{indicator[:1].upper() + indicator[1:]}"
-    latest = f"{_n(last[1])} {unit}"
-    previous = f"{_n(prev[1])} {unit}"
-    period_start, period_end = first[0], last[0]
-    sections = [
-        {"heading": "", "text":
-         f"Il dato più recente disponibile per {indicator.lower()} è {latest}, riferito al periodo {period_end}. "
-         f"È il valore riportato nella serie di {publisher} collegata alla pubblicazione originale. "
-         f"Per comprenderne la portata bisogna confrontarlo con i periodi precedenti, "
-         f"non con il giorno in cui la notizia è stata pubblicata."},
-        {"heading": "", "text":
-         f"Rispetto a {prev[0]}, quando lo stesso indicatore era pari a {previous}, "
-         f"il valore {direction}. La differenza assoluta è {_n(abs(diff))} {unit} "
-         f"({'in aumento' if diff > 0 else 'in diminuzione' if diff < 0 else 'nessuna variazione'}). "
-         "Si tratta del confronto tra due osservazioni della stessa serie, "
-         "con l'identica unità di misura. Non è una stima ricavata dal titolo di un giornale."},
-        {"heading": "", "text":
-         f"Lo sguardo sul periodo più lungo restituisce un'altra informazione: "
-         f"tra {period_start} e {period_end}, {indicator.lower()} passa da "
-         f"{_n(first[1])} {unit} a {latest}. La differenza tra i due estremi "
-         f"è {_n(abs(opening_diff))} {unit} "
-         f"({'positiva' if opening_diff > 0 else 'negativa' if opening_diff < 0 else 'nulla'}). "
-         "Questo confronto descrive gli estremi osservati; non significa che "
-         "il percorso sia stato regolare in tutti i periodi intermedi."},
+
+    earliest, previous, latest = entries[0], entries[-2], entries[-1]
+    delta = latest[1] - previous[1]
+    movement = ("cresce" if delta > 0 else "diminuisce" if delta < 0 else "non cambia")
+    absolute_unit = "punti percentuali" if unit == "%" else unit
+    first_to_last = latest[1] - earliest[1]
+    domain = str(publisher or url.hostname).strip()[:100]
+    name = indicator[:1].lower() + indicator[1:]
+
+    paragraphs = [
+        _section(
+            f"Nel periodo {latest[0]}, {name} raggiunge {_n(latest[1])} {unit}. "
+            f"È l'ultima osservazione presente nella serie statistica di {domain} "
+            f"collegata al documento originale. L'informazione principale riguarda "
+            f"un fenomeno misurato in un periodo preciso, non il giorno in cui "
+            f"la notizia viene ripresa dalla stampa."
+        ),
+        _section(
+            f"Il termine di paragone più vicino è {previous[0]}, quando lo stesso "
+            f"indicatore valeva {_n(previous[1])} {unit}. Tra i due periodi "
+            f"la misura {movement}: lo scarto è di {_n(abs(delta))} {absolute_unit}. "
+            "Il confronto avviene dentro una sola serie identificata, con la stessa "
+            "unità di misura; non unisce numeri raccolti da tabelle differenti."
+        ),
+        _section(
+            f"Guardando all'intervallo dal {earliest[0]} al {latest[0]}, "
+            f"si passa da {_n(earliest[1])} {unit} a {_n(latest[1])} {unit}. "
+            f"Rispetto al primo punto osservato, la differenza è "
+            f"{_n(abs(first_to_last))} {absolute_unit}, "
+            f"{'in aumento' if first_to_last > 0 else 'in diminuzione' if first_to_last < 0 else 'senza variazione'}. "
+            "Il confronto tra estremi descrive il saldo del periodo: "
+            "non dimostra che il percorso intermedio sia stato uniforme."
+        ),
     ]
-    if len(values) >= 3:
-        low = min(values, key=lambda p: p[1])
-        high = max(values, key=lambda p: p[1])
-        sections.append({"heading": "", "text":
-            f"La serie qui utilizzata contiene {len(values)} osservazioni, "
-            f"dal {period_start} al {period_end}. Il valore più basso è "
-            f"{_n(low[1])} {unit} ({low[0]}); quello più alto è "
-            f"{_n(high[1])} {unit} ({high[0]}). "
-            "Questi estremi aiutano a collocare l'ultimo dato nel suo contesto, "
-            "ma non bastano da soli a identificare le cause delle oscillazioni."})
-    if prev[1] != 0:
-        relative = diff / abs(prev[1]) * 100
-        sections.append({"heading": "", "text":
-            f"Misurando la differenza in rapporto al livello del periodo precedente, "
-            f"la variazione è pari a {_n(abs(relative))}% "
-            f"({'in più' if relative > 0 else 'in meno' if relative < 0 else 'senza variazione'}). "
-            + ("Attenzione: per un indicatore espresso in percentuale, la differenza assoluta "
-               "fra due valori è misurata in punti percentuali, mentre questa è una "
-               "variazione percentuale relativa. Le due misure non sono intercambiabili."
+    if len(entries) >= 3:
+        lowest = min(entries, key=lambda v: v[1])
+        highest = max(entries, key=lambda v: v[1])
+        changes = [entries[i][1] - entries[i-1][1] for i in range(1,len(entries))]
+        direction_changes = sum(1 for i in range(1, len(changes)) if changes[i]*changes[i-1] < 0)
+        path = (
+            "presenta almeno un'inversione di direzione" if direction_changes
+            else "non presenta inversioni tra incrementi e diminuzioni nei periodi successivi"
+        )
+        paragraphs.append(_section(
+            f"Le {len(entries)} osservazioni permettono anche di leggere gli estremi "
+            f"della distribuzione temporale: il minimo è {_n(lowest[1])} {unit} "
+            f"nel {lowest[0]}, mentre il massimo è {_n(highest[1])} {unit} nel {highest[0]}. "
+            f"Fra le misure disponibili, l'andamento {path}. "
+            "Il numero dei periodi disponibili definisce la profondità del confronto; "
+            "non autorizza a estendere una tendenza oltre l'ultimo anno osservato."
+        ))
+    else:
+        paragraphs.append(_section(
+            f"La fonte offre qui due punti confrontabili, {previous[0]} e {latest[0]}. "
+            "Con due sole osservazioni si può quantificare una differenza ma non "
+            "stabilire se essa rappresenti una tendenza duratura, un episodio "
+            "isolato o una fluttuazione già avvenuta in passato. Per questa "
+            "ragione il grafico confronta i valori senza suggerire proiezioni."
+        ))
+
+    if previous[1] != 0:
+        relative = 100 * delta / abs(previous[1])
+        paragraphs.append(_section(
+            f"Rapportando la differenza al valore di {previous[0]}, "
+            f"la variazione relativa è pari a {_n(abs(relative))}% "
+            f"({'positiva' if relative > 0 else 'negativa' if relative < 0 else 'nulla'}). "
+            + ("È distinta dalla differenza in punti percentuali tra "
+               "le due quote: confonderle ingrandirebbe o ridurrebbe impropriamente "
+               "il significato del cambiamento."
                if unit == "%" else
-               "La percentuale relativa misura il cambiamento rispetto al valore di partenza; "
-               "non è una percentuale di popolazione, a meno che la definizione dell'indicatore lo stabilisca.")})
-    sections.extend([
-        {"heading": "", "text":
-         f"Che cosa racconta allora questa statistica? Descrive l'andamento di "
-         f"{indicator.lower()} nei periodi per i quali esistono osservazioni confrontabili. "
-         "Per stabilire se il cambiamento sia rilevante sul piano economico, sociale o territoriale "
-         "servono inoltre le definizioni ufficiali dell'indicatore, la sua copertura e, "
-         "quando pertinenti, confronti con altri territori e variabili. "
-         "Non attribuiamo automaticamente una causa a una variazione numerica."},
-        {"heading": "", "text":
-         f"Il grafico e la tabella associati a questo articolo riportano i medesimi "
-         f"{len(values)} valori controllati, con il periodo e l'unità di misura. "
-         f"La fonte primaria è {publisher}, disponibile al collegamento originale "
-         f"({source}). Il periodo dei dati non deve essere confuso con la data di "
-         "pubblicazione dell'articolo. Non vengono aggiunte stime né valori estrapolati."}
+               "Questa percentuale descrive la variazione rispetto alla base precedente, "
+               "non la quota della popolazione interessata dal fenomeno.")
+        ))
+    else:
+        paragraphs.append(_section(
+            f"Nel {previous[0]} il punto di partenza valeva zero. In questo caso "
+            "una variazione percentuale relativa non è definibile: sarebbe "
+            "ingannevole presentarla come una crescita percentuale finita. "
+            f"Il confronto utilizzabile resta quindi lo scarto assoluto "
+            f"di {_n(abs(delta))} {absolute_unit}."
+        ))
+
+    paragraphs.extend([
+        _section(
+            f"L'indicatore {name} descrive esattamente la grandezza riportata "
+            f"nel documento e non misura, da solo, tutte le condizioni che "
+            "possono influenzarla. Una differenza numerica non prova quali "
+            "cause l'abbiano prodotta; per parlare di effetti, persone o "
+            "territori diversi occorrerebbero definizioni e confronti "
+            "ulteriori verificati sulle rispettive fonti."
+        ),
+        _section(
+            f"Per controllare questa lettura, il grafico e la tabella riportano "
+            f"gli stessi {len(entries)} valori, ciascuno con periodo e unità "
+            f"di misura. Il riferimento primario è {domain}: {source}. "
+            "La data di pubblicazione del documento e gli anni delle osservazioni "
+            "sono informazioni distinte. Non sono stati interpolati valori, "
+            "né aggiunte previsioni non contenute nella fonte."
+        ),
     ])
-    return sections
+    return paragraphs

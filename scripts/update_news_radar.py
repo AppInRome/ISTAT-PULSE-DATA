@@ -976,12 +976,33 @@ def main():
             if not brief: continue
             previous=by_id.get(brief["id"])
             if previous:
-                # Never relabel a republished old item as today's story.
+                # Keep already verified originals, source links, reader prose and
+                # persistent research retry history. RSS must never downgrade them.
+                if ((previous.get("public_source") or {}).get("role")
+                        == "primary_statistical_source"):
+                    continue
                 brief["published_at"]=previous.get("published_at") or brief["published_at"]
+                for key in ("primary_research_last_attempt_at", "primary_research_status"):
+                    if previous.get(key):
+                        brief[key] = previous[key]
             else:
                 radar_added+=1
             by_id[brief["id"]]=brief
     print(f"[RADAR] notizie stampa segnalate con attribuzione: {radar_added}", flush=True)
+
+    # Permanent evidence-first editorial pipeline. Each scheduled RSS refresh
+    # retries a bounded number of unverified reports, without user intervention.
+    # Only exact matching primary-source observations can generate a PULSE chart,
+    # table and original quantitative analysis. Others retain a press attribution.
+    auto_report = {"attempted": 0, "promoted": 0, "pending": 0}
+    if not runtime_exceeded():
+        try:
+            from scripts.pulse_auto_promotion import run_pending_research
+        except ModuleNotFoundError:
+            from pulse_auto_promotion import run_pending_research
+        auto_report = run_pending_research(
+            by_id, cfg.get("official_domains", []), now, budget=2)
+        print(f"[PULSE AUTO EDITORIALE] {auto_report}", flush=True)
 
     # Interleave outlets: first story from every source, then second and so on.
     # Search and verification consume the remaining bounded runtime.
@@ -1134,6 +1155,16 @@ def main():
             }
             # Original editorial copy: source verified, no reprint of the media headline.
             article=compose_verified(article,resolved)
+            # Slow official-source verification may rediscover the same story
+            # already upgraded by the automatic primary research pass.
+            # Keep one stable media story instead of showing a duplicate card.
+            duplicate_auto = any(
+                previous.get("origin_kind") == "pulse_primary_automatic"
+                and (previous.get("discovery") or {}).get("original_url") == item.get("url")
+                for previous in by_id.values()
+            )
+            if duplicate_auto:
+                continue
             by_id[aid]=article
 
     if runtime_exceeded():
@@ -1152,6 +1183,10 @@ def main():
         from pulse_feature_writer import longform_sections
     enriched_existing = 0
     for article in by_id.values():
+        # Preserve the exact editorial classification and prose of articles
+        # upgraded automatically or written and approved by the newsroom.
+        if article.get("editorial_format") in ("automated_verified_analysis", "individually_edited_longform"):
+            continue
         if (article.get("publication_status") != "published" or
                 article.get("verification_tier") != "verified_comparable_series"):
             continue
@@ -1262,6 +1297,7 @@ def main():
         "discovery_feeds_reached":sum(1 for x in candidates if x.get("status")=="radar_fetched"),
         "discovery_feeds_failed":sum(1 for x in candidates if x.get("status")=="radar_error"),
         "articles_pending_research":sum(1 for a in arts if a.get("publication_status")=="quarantined"),
+        "automatic_primary_research":auto_report,
         "daily":by_day,
         "note":"Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."
     }

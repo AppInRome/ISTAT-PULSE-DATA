@@ -17,7 +17,10 @@ REVISIONS = ("break in series", "series break", "methodological break", "rottura
 
 def discover_attachments(html, page_url, max_links=20):
     """Discover same-origin downloadable attachments from an official publication page."""
-    from scripts.pulse_evidence import validate_source_url
+    try:
+        from scripts.pulse_evidence import validate_source_url
+    except ModuleNotFoundError:
+        from pulse_evidence import validate_source_url
     validate_source_url(page_url)
     origin = urlparse(page_url).hostname
     soup = BeautifulSoup(html, "html.parser")
