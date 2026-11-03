@@ -1143,6 +1143,32 @@ def main():
     print(f"[PULSE ORIGINALI] nuove analisi da dati già convalidati: {added}", flush=True)
     casefiles = add_verified_casefiles(by_id, ROOT.parent / "editorial_casefiles.json", now)
     print(f"[PULSE REPORTAGE] casi documentati pubblicati: {casefiles}", flush=True)
+    # Backfill already-published verified features on every refresh: the new
+    # reader prose is not limited to brand-new articles. Keep stable IDs,
+    # source dates, counts and verified chart/table payloads unchanged.
+    try:
+        from scripts.pulse_feature_writer import longform_sections
+    except ModuleNotFoundError:
+        from pulse_feature_writer import longform_sections
+    enriched_existing = 0
+    for article in by_id.values():
+        if (article.get("publication_status") != "published" or
+                article.get("verification_tier") != "verified_comparable_series"):
+            continue
+        evidence = article.get("verified_series_relevant") or []
+        if not evidence:
+            continue
+        primary = article.get("public_source") or {}
+        if primary.get("role") != "primary_statistical_source":
+            continue
+        prose = longform_sections(evidence[0], primary.get("domain", "fonte primaria"))
+        if prose:
+            if article.get("editorial_format") != "longform_verified":
+                enriched_existing += 1
+            article["pulse_article_body"] = prose
+            article["editorial_format"] = "longform_verified"
+            article["editorial_paragraph_count"] = len(prose)
+    print(f"[PULSE EDITORIALE] analisi verificate in lettura narrativa: {enriched_existing}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Two explicit tiers in the same dated newsroom index:
     # 1. primary-source verified PULSE features, eligible for data charts
