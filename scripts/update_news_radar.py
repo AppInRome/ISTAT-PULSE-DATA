@@ -1166,6 +1166,14 @@ def main():
             }
             # Original editorial copy: source verified, no reprint of the media headline.
             article=compose_verified(article,resolved)
+            # Optional language-model newsroom: verified numbers remain the only
+            # permitted quantitative claims; failure keeps the original article.
+            if article.get("verification_tier") == "verified_comparable_series":
+                try:
+                    from scripts.pulse_ai_newsroom import attempt_ai_edition
+                except ModuleNotFoundError:
+                    from pulse_ai_newsroom import attempt_ai_edition
+                article = attempt_ai_edition(article)
             # Slow official-source verification may rediscover the same story
             # already upgraded by the automatic primary research pass.
             # Keep one stable media story instead of showing a duplicate card.
