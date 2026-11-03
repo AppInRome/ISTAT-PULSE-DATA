@@ -9,6 +9,7 @@ import argparse
 import json
 from datetime import date, datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 from scripts.pulse_original_editorial import compose_verified
 from scripts.pulse_primary_research import allowed_url
@@ -57,7 +58,7 @@ def reviewed_draft(article, dossier, decision, domains):
     candidate = dict(article)
     candidate["public_source"] = {
         "role": "primary_statistical_source", "url": source_url,
-        "domain": __import__("urllib.parse", fromlist=["urlparse"]).urlparse(source_url).hostname
+        "domain": urlparse(source_url).hostname
     }
     candidate["discovery"] = {"role": "journalistic_radar", "original_url": discovery_url,
                               "outlet": (article.get("public_source") or {}).get("domain", "")}
