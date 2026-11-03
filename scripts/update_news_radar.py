@@ -1169,6 +1169,30 @@ def main():
             article["editorial_format"] = "longform_verified"
             article["editorial_paragraph_count"] = len(prose)
     print(f"[PULSE EDITORIALE] analisi verificate in lettura narrativa: {enriched_existing}", flush=True)
+    # Apply only individually reviewed PULSE longform features, preserving
+    # the original article ID, timestamp and source-backed graph/table.
+    approved_file = ROOT / "approved_features.json"
+    if approved_file.exists():
+        try:
+            from scripts.pulse_editorial_publish import merge_features
+        except ModuleNotFoundError:
+            from pulse_editorial_publish import merge_features
+        approved_pack = load_json(approved_file, {"features": []})
+        reviewed = approved_pack.get("features", [])
+        if not isinstance(reviewed, list):
+            raise ValueError("approved_features_must_be_list")
+        for feature in reviewed:
+            if (feature.get("publication_status") != "published" or
+                    feature.get("editorial_format") != "individually_edited_longform" or
+                    feature.get("editorial_review", {}).get("ready_for_publication") is not True):
+                raise ValueError("invalid_approved_feature")
+        try:
+            merged = merge_features(list(by_id.values()), reviewed)
+            by_id = {article["id"]: article for article in merged}
+        except ValueError as exc:
+            # A stale curated package must never empty the daily news feed.
+            # Keep last-good newsroom articles, report the rejected overlay.
+            print(f"[PULSE APPROVED FEATURES] rejected stale/invalid overlay: {exc}", flush=True)
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Two explicit tiers in the same dated newsroom index:
     # 1. primary-source verified PULSE features, eligible for data charts
