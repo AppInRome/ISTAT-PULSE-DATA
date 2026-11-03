@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T05:59:00.872408+00:00",
+  "generated_at": "2026-11-03T09:00:45.136921+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-03T05:59:00.872408+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "published_at": "2026-11-03T09:00:45.136921+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -109,10 +109,205 @@
       "verification_tier": "previously_verified_official_single_observation"
     },
     {
+      "id": "PULSE-MEDIA-006A59EE335BB99F",
+      "story_fingerprint": "006a59ee335bb99f57d5e7a20bc4eb18c0d005a3e98087c164e157369327d68c",
+      "published_at": "2026-11-03T08:46:50+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
+      "headline": "Mercato auto Italia: a ottobre 2026 +4,8%",
+      "reported_headline": "Mercato auto Italia: a ottobre 2026 +4,8% - PartsWeb",
+      "summary": "La testata PartsWeb segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Mercato auto Italia: a ottobre 2026 +4,8%",
+      "pulse_summary": "La testata PartsWeb segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata PartsWeb segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia ambiente energia mobilità». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "MOBILITA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9kNXhqQ0JQZG96dE14UnJRWHcyR3o4TE5BLTBoME1ZZldzMmdNUWY2ZFdoNUVJVV81Q1B3ZzFPSDh6SEVYZll0TzVzZkRpLW1GME9fY1Z4Z0RtdmM1R0xnMmlITmJnak1CTndjRFNNSQ?oc=5",
+        "domain": "PartsWeb",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+4,8%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "PartsWeb",
+        "original_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9kNXhqQ0JQZG96dE14UnJRWHcyR3o4TE5BLTBoME1ZZldzMmdNUWY2ZFdoNUVJVV81Q1B3ZzFPSDh6SEVYZll0TzVzZkRpLW1GME9fY1Z4Z0RtdmM1R0xnMmlITmJnak1CTndjRFNNSQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-DB1764CBF2D48A22",
+      "story_fingerprint": "db1764cbf2d48a2270e7b6f241b941b2137bbe259685027a70883d53ecc3c571",
+      "published_at": "2026-11-03T08:06:58+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
+      "headline": "Stipendi in Italia, aumenti insufficienti a compensare l’inflazione: 2,5 milioni di lavoratori attendono il rinnovo del contratto",
+      "reported_headline": "Stipendi in Italia, aumenti insufficienti a compensare l’inflazione: 2,5 milioni di lavoratori attendono il rinnovo del contratto - Hashtag Sicilia",
+      "summary": "La testata Hashtag Sicilia segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 2,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Stipendi in Italia, aumenti insufficienti a compensare l’inflazione: 2,5 milioni di lavoratori attendono il rinnovo del contratto",
+      "pulse_summary": "La testata Hashtag Sicilia segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 2,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Hashtag Sicilia segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 2,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPOWZjU0hWUTVYamY3cXh5dlI5Z1hpaGgyLTRXdmxPSzI3bFdfYlNTZm9pRTIzTjFydkxmblBYTG5VdGl1b2VSLW9vVjYweWJzaG4tZ0dxSzFGNHlVa3BUZWtSVUNsME81YU5RSWRUTEpWSDZLVjViZnpTVkk0dURLU1p1Q3RlUFNiN2JfRkJKYUpLWVFBcTA5djduXzYwamhSUjIxVEdra1lkSGNJOXJMbDJOLWVtdktHNjVjNGI1WlVyX1VXOXhncC12UGpYMXQ4WkpCWmMtaUhEdVlqMTAxcTdwRlRJMzdsT1BXWFFaWHM5aktNaXdWdEpTQQ?oc=5",
+        "domain": "Hashtag Sicilia",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "2,5 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "sicilia"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Hashtag Sicilia",
+        "original_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPOWZjU0hWUTVYamY3cXh5dlI5Z1hpaGgyLTRXdmxPSzI3bFdfYlNTZm9pRTIzTjFydkxmblBYTG5VdGl1b2VSLW9vVjYweWJzaG4tZ0dxSzFGNHlVa3BUZWtSVUNsME81YU5RSWRUTEpWSDZLVjViZnpTVkk0dURLU1p1Q3RlUFNiN2JfRkJKYUpLWVFBcTA5djduXzYwamhSUjIxVEdra1lkSGNJOXJMbDJOLWVtdktHNjVjNGI1WlVyX1VXOXhncC12UGpYMXQ4WkpCWmMtaUhEdVlqMTAxcTdwRlRJMzdsT1BXWFFaWHM5aktNaXdWdEpTQQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-0E9B40CAE7AA0337",
+      "story_fingerprint": "0e9b40cae7aa0337585948ea9d95fc6a3f61868e99b41cdca1b02a5c8fc1553b",
+      "published_at": "2026-11-03T06:13:54+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
+      "headline": "Casa, Forte dei Marmi supera Milano: è la più cara d’italia",
+      "reported_headline": "Casa, Forte dei Marmi supera Milano: è la più cara d’italia",
+      "summary": "La testata corrierefiorentino.corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20.800 euro, 25%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Casa, Forte dei Marmi supera Milano: è la più cara d’italia",
+      "pulse_summary": "La testata corrierefiorentino.corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20.800 euro, 25%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata corrierefiorentino.corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20.800 euro, 25%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Corriere della Sera - Economia». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 32,
+      "public_source": {
+        "url": "https://corrierefiorentino.corriere.it/notizie/economia/26_novembre_03/casa-forte-dei-marmi-supera-milano-e-la-piu-cara-d-italia-a23338b9-64f0-4655-b56e-f9afa7467xlk.shtml",
+        "domain": "corrierefiorentino.corriere.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "20.800 euro",
+          "verified": false
+        },
+        {
+          "raw_value": "25%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano",
+        "roma"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "corrierefiorentino.corriere.it",
+        "original_url": "https://corrierefiorentino.corriere.it/notizie/economia/26_novembre_03/casa-forte-dei-marmi-supera-milano-e-la-piu-cara-d-italia-a23338b9-64f0-4655-b56e-f9afa7467xlk.shtml",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-35C7B070C108D3A5",
       "story_fingerprint": "35c7b070c108d3a50e35542498ab8ab72313226d39b10dde122f74160f1ad478",
       "published_at": "2026-11-03T05:26:54+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Imposta sostitutiva 7% per pensioni estere in Italia, risp winding n. 197",
       "reported_headline": "Imposta sostitutiva 7% per pensioni estere in Italia, risp winding n. 197 - MySolution",
       "summary": "La testata MySolution segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -174,7 +369,7 @@
       "id": "PULSE-MEDIA-98D73A196DB4CBB5",
       "story_fingerprint": "98d73a196db4cbb574bff2f56d417b06d069c3efd2a24c566ee056ed5d684c53",
       "published_at": "2026-11-03T01:07:17+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Studenti stranieri in aumento, sono il 22,1%: Mantova quarta in Italia",
       "reported_headline": "Studenti stranieri in aumento, sono il 22,1%: Mantova quarta in Italia - Mantovauno.it",
       "summary": "La testata Mantovauno.it segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 22,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -236,7 +431,7 @@
       "id": "PULSE-MEDIA-07E18D653B112CF7",
       "story_fingerprint": "07e18d653b112cf7c762dd0a98fc6b09914029b9bc51208630f99b600e044cf5",
       "published_at": "2026-11-03T01:00:54+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Inflazione, stangata su bollette e carburanti. In Toscana consumi a rischio per 112 milioni di euro",
       "reported_headline": "Inflazione, stangata su bollette e carburanti. In Toscana consumi a rischio per 112 milioni di euro - La Nazione",
       "summary": "La testata La Nazione segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 112 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -300,7 +495,7 @@
       "id": "PULSE-MEDIA-0C32A2765C4963DB",
       "story_fingerprint": "0c32a2765c4963db38655018b5c143929ab308c98aeed2b8cb72e41357fda64a",
       "published_at": "2026-11-02T23:31:54+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi",
       "reported_headline": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi - missionline",
       "summary": "La testata missionline segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,7%, -10,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -366,7 +561,7 @@
       "id": "PULSE-177B02A7A5B6FD0B",
       "story_fingerprint": "177b02a7a5b6fd0bb9957d15",
       "published_at": "2026-11-02T23:31:54+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "topic": "MOBILITA",
       "pulse_score": 45,
       "patterns": [],
@@ -510,7 +705,7 @@
       "id": "PULSE-MEDIA-67FD615B46829587",
       "story_fingerprint": "67fd615b46829587837a3fb3b90bea3303466d8117b83d0dbcbada39271af004",
       "published_at": "2026-11-02T19:30:08+00:00",
-      "last_seen_at": "2026-11-03T02:59:41.809664+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Caro bollette e trasporti spingono l’inflazione: a Bologna + 4,1%",
       "reported_headline": "Caro bollette e trasporti spingono l’inflazione: a Bologna + 4,1% - la Repubblica",
       "summary": "La testata la Repubblica segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -574,7 +769,7 @@
       "id": "PULSE-MEDIA-2EF2977AD1127883",
       "story_fingerprint": "2ef2977ad11278834a0cebbe784bbfee54e961a267f1ab5c5f1f2de042555524",
       "published_at": "2026-11-02T17:37:22+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Mercato auto Italia ottobre 2026: +4,8%, ma le BEV restano al 6,1%",
       "reported_headline": "Mercato auto Italia ottobre 2026: +4,8%, ma le BEV restano al 6,1% - Motorionline.com",
       "summary": "La testata Motorionline.com segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,8%, 6,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -837,7 +1032,7 @@
       "id": "PULSE-MEDIA-81348E685741375A",
       "story_fingerprint": "81348e685741375a2054817ac13975bc5f4054b99dd9c73c68a949d351d15df5",
       "published_at": "2026-11-02T16:10:40+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Clima, oltre 130mila ettari di foreste in Italia distrutte dagli incendi nel 2026",
       "reported_headline": "Clima, oltre 130mila ettari di foreste in Italia distrutte dagli incendi nel 2026 - la Repubblica",
       "summary": "La testata la Repubblica segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 130mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -899,7 +1094,7 @@
       "id": "PULSE-MEDIA-B5D97090EB9A02D3",
       "story_fingerprint": "b5d97090eb9a02d3d4938fc668543c5ef866be06d25b68386f3fa29f106db9b7",
       "published_at": "2026-11-02T15:45:01+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Oltre 40mila mozziconi raccolti in montagna tra Italia e Svizzera: più di 2mila volontari al lavoro per \"ripulire\" le cime. Rimossi in tutto circa 5200 chili di rifiuti",
       "reported_headline": "Oltre 40mila mozziconi raccolti in montagna tra Italia e Svizzera: più di 2mila volontari al lavoro per \"ripulire\" le cime. Rimossi in tutto circa 5200 chili di rifiuti - il Dolomiti",
       "summary": "La testata il Dolomiti segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 40mila, 2mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -965,7 +1160,7 @@
       "id": "PULSE-MEDIA-234EB8B533CA5BA7",
       "story_fingerprint": "234eb8b533ca5ba7e13ded92a803bcd1620d40219dadf6ade560eacd517bc093",
       "published_at": "2026-11-02T15:40:23+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Studenti con disabilità in Veneto, il 62,7% segue percorsi per il diploma, il 37,3% percorsi differenziati. I dati del monitoraggio PEI",
       "reported_headline": "Studenti con disabilità in Veneto, il 62,7% segue percorsi per il diploma, il 37,3% percorsi differenziati. I dati del monitoraggio PEI - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 62,7%, 37,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1033,7 +1228,7 @@
       "id": "PULSE-FE5A84D6640071DC",
       "story_fingerprint": "fe5a84d6640071dcfde5f991",
       "published_at": "2026-11-02T15:40:23+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 49,
       "patterns": [],
@@ -1131,7 +1326,7 @@
       "id": "PULSE-MEDIA-EFA1D7BE73EAE721",
       "story_fingerprint": "efa1d7be73eae72174e89627dccf9623b21d087cf2d0dbf5339f9bfe11257cb0",
       "published_at": "2026-11-02T15:23:06+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Mercato auto Italia, ottobre 2026 cresce del 4,8%: tutti i dati.",
       "reported_headline": "Mercato auto Italia, ottobre 2026 cresce del 4,8%: tutti i dati. - MotorBox",
       "summary": "La testata MotorBox segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati 4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1271,7 +1466,7 @@
       "id": "PULSE-MEDIA-182E9BE4667E612A",
       "story_fingerprint": "182e9be4667e612a043f1bc9a42e55af332410b0ab897e2de980d800c01047ec",
       "published_at": "2026-11-02T14:36:16+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Estate 2026, Adr in Italia a +6,2%. Rimini prima per occupazione upscale (86,3%)",
       "reported_headline": "Estate 2026, Adr in Italia a +6,2%. Rimini prima per occupazione upscale (86,3%) - Hotellerie Pambianconews",
       "summary": "La testata Hotellerie Pambianconews segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati +6,2%, 86,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1337,7 +1532,7 @@
       "id": "PULSE-203644F7BABECFC4",
       "story_fingerprint": "203644f7babecfc4cdeb08a8",
       "published_at": "2026-11-02T14:36:16+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "topic": "LAVORO",
       "pulse_score": 50,
       "patterns": [],
@@ -1575,7 +1770,7 @@
       "id": "PULSE-MEDIA-B3E319B1FF68CBFB",
       "story_fingerprint": "b3e319b1ff68cbfb16a61ba370d8b344d8df5e1560d5c0fdc72be787dec7e43d",
       "published_at": "2026-11-02T12:01:17+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "IL SOLE 24 ORE * SALUTE: «GIOVANI ITALIANI: IL 95,6% SI SENTE IN SALUTE MA NELL’UE UN UNDER 30 SU DUE MUORE PER INCIDENTE O AUTOLESIONISMO",
       "reported_headline": "IL SOLE 24 ORE * SALUTE: «GIOVANI ITALIANI: IL 95,6% SI SENTE IN SALUTE MA NELL’UE UN UNDER 30 SU DUE MUORE PER INCIDENTE O AUTOLESIONISMO - agenzia giornalistica opinione",
       "summary": "La testata agenzia giornalistica opinione segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 95,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1637,7 +1832,7 @@
       "id": "PULSE-MEDIA-A79B18866D665EAF",
       "story_fingerprint": "a79b18866d665eaf52c0f279d35f859c9243ad95d5844b748802f51ee0c8b667",
       "published_at": "2026-11-02T11:10:29+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Inflazione percepita al 13,3%, il 52% degli italiani modifica i consumi",
       "reported_headline": "Inflazione percepita al 13,3%, il 52% degli italiani modifica i consumi - The Watcher Post",
       "summary": "La testata The Watcher Post segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 13,3%, 52%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1767,7 +1962,7 @@
       "id": "PULSE-MEDIA-D6B947FA2E66B233",
       "story_fingerprint": "d6b947fa2e66b233e14202b3aa1c4615bffd57f12ae8efcd09ce143a88885404",
       "published_at": "2026-11-02T10:49:10+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Sanità, Bertolaso di no alla ridistribuzione dei fondi in Italia: «La Lombardia perde 227 milioni",
       "reported_headline": "Sanità, Bertolaso di no alla ridistribuzione dei fondi in Italia: «La Lombardia perde 227 milioni - La Provincia Di Varese",
       "summary": "La testata La Provincia Di Varese segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 227 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1940,7 +2135,7 @@
       "id": "PULSE-MEDIA-619289EE1B7AF8DA",
       "story_fingerprint": "619289ee1b7af8daba798e4aa3b9a89242d7f56476d9a59b10897d05b607f919",
       "published_at": "2026-11-02T10:10:47+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Immigrazione, in Lombardia 1,26 milioni di stranieri residenti. A Milano sono il 15,4% della popolazione",
       "reported_headline": "Immigrazione, in Lombardia 1,26 milioni di stranieri residenti. A Milano sono il 15,4% della popolazione - Affaritaliani",
       "summary": "La testata Affaritaliani segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 1,26 milioni, 15,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1953,7 +2148,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Nord e Centro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -2009,7 +2204,7 @@
       "id": "PULSE-MEDIA-072B6EDAE21646EE",
       "story_fingerprint": "072b6edae21646ee5da4b8b829b6ad65764c28553c789ddc4c90e8aca02e0854",
       "published_at": "2026-11-02T10:03:59+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Scuola e futuro, solo il 41% dei genitori italiani pensa che prepari i figli alla vita fuori dall’aula. La media europea è del 45%, nel Regno Unito si arriva al 66%",
       "reported_headline": "Scuola e futuro, solo il 41% dei genitori italiani pensa che prepari i figli alla vita fuori dall’aula. La media europea è del 45%, nel Regno Unito si arriva al 66% - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 41%, 45%, 66%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2126,7 +2321,7 @@
       "id": "PULSE-MEDIA-337A006E11618650",
       "story_fingerprint": "337a006e116186507373495f9171fdaf1605a3f004f444ba2a1dd94878cdf852",
       "published_at": "2026-11-02T10:02:57+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Giovani italiani: il 95,6% si sente in salute ma nell’Ue un under 30 su due muore per incidente o autolesionismo",
       "reported_headline": "Giovani italiani: il 95,6% si sente in salute ma nell’Ue un under 30 su due muore per incidente o autolesionismo - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 95,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2188,7 +2383,7 @@
       "id": "PULSE-MEDIA-FA9F5C5683CA5911",
       "story_fingerprint": "fa9f5c5683ca5911a542f0ed7596d46f76cfd9b63ba1e421a6d65a252ef83a39",
       "published_at": "2026-11-02T09:51:00+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Prezzi al consumo ISTAT, stime preliminari: l’inflazione arriva al 5,4",
       "reported_headline": "Prezzi al consumo ISTAT, stime preliminari: l’inflazione arriva al 5,4 - Ruminantia",
       "summary": "La testata Ruminantia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2250,7 +2445,7 @@
       "id": "PULSE-MEDIA-9C762695AB931405",
       "story_fingerprint": "9c762695ab93140542029ce9f185967d7f7619f7d694d5fc02780052cc958e2f",
       "published_at": "2026-11-02T09:44:44+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "L'inflazione percepita al 13%: famiglie italiane sotto pressione",
       "reported_headline": "L'inflazione percepita al 13%: famiglie italiane sotto pressione - Economy Magazine",
       "summary": "La testata Economy Magazine segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2312,7 +2507,7 @@
       "id": "PULSE-MEDIA-3AA23CB63338E516",
       "story_fingerprint": "3aa23cb63338e51624fd94f6456eb0d49e1d7faf1c6a7562189bf6484fbddc85",
       "published_at": "2026-11-02T09:29:06+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "ING, il 28% della Gen Z punta sugli immobili e il 70% degli italiani vuole richiedere il mutuo interamente online",
       "reported_headline": "ING, il 28% della Gen Z punta sugli immobili e il 70% degli italiani vuole richiedere il mutuo interamente online - Il Giornale d'Italia",
       "summary": "La testata Il Giornale d'Italia segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 28%, 70%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2378,7 +2573,7 @@
       "id": "PULSE-MEDIA-44113BDA17B2D8D2",
       "story_fingerprint": "44113bda17b2d8d21fd4b9ac8f0cd495e55824cbb84283e10c34c494f2fc9242",
       "published_at": "2026-11-02T09:25:02+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Povertà toscana: 40% degli assistiti Caritas da 6 anni",
       "reported_headline": "Povertà toscana: 40% degli assistiti Caritas da 6 anni - OK!Valdisieve",
       "summary": "La testata OK!Valdisieve segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 40%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2442,7 +2637,7 @@
       "id": "PULSE-MEDIA-2A61FA820CEA611E",
       "story_fingerprint": "2a61fa820cea611e9e94b66482da74e93683c327404b36fb77239afa258d7d9f",
       "published_at": "2026-11-02T09:16:17+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Mele: Italia prima al mondo per export. Oltre 1 milione di tonnellate per 1,2 miliardi di euro",
       "reported_headline": "Mele: Italia prima al mondo per export. Oltre 1 milione di tonnellate per 1,2 miliardi di euro - Alimentando",
       "summary": "La testata Alimentando segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1,2 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2504,7 +2699,7 @@
       "id": "PULSE-MEDIA-C0E209386223E465",
       "story_fingerprint": "c0e209386223e465fc8df3ae06a2a6888a51f4f7611c85bfd5167803444660fc",
       "published_at": "2026-11-02T09:10:16+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Scuola, Foggia perde quasi 11mila studenti italiani in cinque anni: è tra le province più colpite",
       "reported_headline": "Scuola, Foggia perde quasi 11mila studenti italiani in cinque anni: è tra le province più colpite - l'Immediato",
       "summary": "La testata l'Immediato segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 11mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2517,7 +2712,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - dati di regioni province comuni». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -2566,7 +2761,7 @@
       "id": "PULSE-MEDIA-91D8E673E6F3C79F",
       "story_fingerprint": "91d8e673e6f3c79f27341ce6a90e7cb73f32d1d7f8ad185607a59c4c3058f18a",
       "published_at": "2026-11-02T09:03:01+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Italia in stagflazione: Pil fermo, prezzi al 5,4%. Berlino invece riparte",
       "reported_headline": "Italia in stagflazione: Pil fermo, prezzi al 5,4%. Berlino invece riparte - LaChirico.it",
       "summary": "La testata LaChirico.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2628,7 +2823,7 @@
       "id": "PULSE-MEDIA-725042D0D1B06E53",
       "story_fingerprint": "725042d0d1b06e53840d6c4168cf1271beed180215db68160d2f82a61bd1a3e6",
       "published_at": "2026-11-02T08:32:56+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Borse e petrolio 2 novembre | L’Europa chiude in rialzo, Milano sale dello 0,9%. Scende il prezzo del greggio, gas sotto i 100 euro",
       "reported_headline": "Borse e petrolio 2 novembre | L’Europa chiude in rialzo, Milano sale dello 0,9%. Scende il prezzo del greggio, gas sotto i 100 euro",
       "summary": "La testata corriere.it segnala una notizia su energia. Nel titolo o nell'estratto sono riportati 0,9%, 100 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2758,7 +2953,7 @@
       "id": "PULSE-MEDIA-3C3065C631CE82BE",
       "story_fingerprint": "3c3065c631ce82be805cb3978a558c3742b565192fcb890da7171429243442cc",
       "published_at": "2026-11-02T06:01:00+00:00",
-      "last_seen_at": "2026-11-02T18:00:08.364163+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Natalità in calo nella Tuscia, ultima nel Lazio: meno di 1.500 nascite in un anno",
       "reported_headline": "Natalità in calo nella Tuscia, ultima nel Lazio: meno di 1.500 nascite in un anno - Viterbo News",
       "summary": "La testata Viterbo News segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 1.500. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2771,7 +2966,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Nord e Centro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - dati di regioni province comuni». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -2822,7 +3017,7 @@
       "id": "PULSE-MEDIA-FD3E85FDD15A9391",
       "story_fingerprint": "fd3e85fdd15a9391516939d8a28a20d8a1ef87f2897224c76902d627dcc01057",
       "published_at": "2026-11-02T05:48:00+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Scuola, con la manovra 7 mila posti in meno: la colpa è del crollo delle nascite? Cosa rivela l'incrocio dei dati",
       "reported_headline": "Scuola, con la manovra 7 mila posti in meno: la colpa è del crollo delle nascite? Cosa rivela l'incrocio dei dati - Corriere Roma",
       "summary": "La testata Corriere Roma segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 7 mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2962,7 +3157,7 @@
       "id": "PULSE-MEDIA-D523CF1278835FA1",
       "story_fingerprint": "d523cf1278835fa1ae6172e4e24db3a17bfe43382fa0faeff1bcc892ca592d1a",
       "published_at": "2026-11-02T04:53:43+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Prezzi alle stelle: l'Istat dice 5%, gli italiani sentono il 13%. Chi ha ragione?",
       "reported_headline": "Prezzi alle stelle: l'Istat dice 5%, gli italiani sentono il 13%. Chi ha ragione? - La Legge per tutti",
       "summary": "La testata La Legge per tutti segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5%, 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3028,7 +3223,7 @@
       "id": "PULSE-MEDIA-4D86D6895717ABEC",
       "story_fingerprint": "4d86d6895717abecb76b8a050fa02f70545e7efbc52168d7de61cd6314e3b27b",
       "published_at": "2026-11-02T04:51:00+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Stranieri in Emilia-Romagna: più anziani e meno figli. Il 68% degli studenti nati in Italia",
       "reported_headline": "Stranieri in Emilia-Romagna: più anziani e meno figli. Il 68% degli studenti nati in Italia - ModenaToday",
       "summary": "La testata ModenaToday segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 68%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3092,7 +3287,7 @@
       "id": "PULSE-MEDIA-F60ABC43D6FC774B",
       "story_fingerprint": "f60abc43d6fc774ba7460047cdc2e2f3185843589e340a999a9d3c9d57e4e6ac",
       "published_at": "2026-11-02T03:45:05+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Rapporto Bes 2026: caldo persistente record, cresce la vulnerabilità dell’Italia",
       "reported_headline": "Rapporto Bes 2026: caldo persistente record, cresce la vulnerabilità dell’Italia - Assinews.it",
       "summary": "La testata Assinews.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3258,7 +3453,7 @@
       "id": "PULSE-MEDIA-7C22790EA420C8D6",
       "story_fingerprint": "7c22790ea420c8d62e9847c59200e2f2c501e954201b305c24e7463615336911",
       "published_at": "2026-11-01T18:04:05+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Inflazione reale al 5,4% ma gli italiani la percepiscono più del doppio (13,3%)",
       "reported_headline": "Inflazione reale al 5,4% ma gli italiani la percepiscono più del doppio (13,3%) - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4%, 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3433,7 +3628,7 @@
       "id": "PULSE-MEDIA-073828856E81FFE9",
       "story_fingerprint": "073828856e81ffe9572104bacfd25bdd7a9cfb88129b9c5ff87a2544a874f639",
       "published_at": "2026-11-01T11:28:41+00:00",
-      "last_seen_at": "2026-11-02T06:08:13.694167+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Sanita': in Italia 500mila infezioni correlate all'assistenza e 11mila decessi",
       "reported_headline": "Sanita': in Italia 500mila infezioni correlate all'assistenza e 11mila decessi - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 500mila, 11mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4088,7 +4283,7 @@
       "id": "PULSE-MEDIA-98ABB8817CE04088",
       "story_fingerprint": "98abb8817ce040882d0a87e704f84a8c47a8119af70eb41cb6942d82a570ddf7",
       "published_at": "2026-10-31T14:29:39+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Il reddito reale delle famiglie Ue cresce dello 0,1%, ma volano i prezzi: i dati Eurostat",
       "reported_headline": "Il reddito reale delle famiglie Ue cresce dello 0,1%, ma volano i prezzi: i dati Eurostat - Sky TG24",
       "summary": "La testata Sky TG24 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 0,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4101,7 +4296,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · specializzate · gruppo 10». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -4211,7 +4406,7 @@
       "id": "PULSE-MEDIA-73BB61C09E191466",
       "story_fingerprint": "73bb61c09e19146692fd1231109f3e1fcac1fc916cdd99cd48b67f0bb553c008",
       "published_at": "2026-10-31T13:05:00+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Rapporto BES Istat: Umbria sopra l’Italia in 30 indicatori su 60. Vicina a Toscana e Marche, ma salari, brevetti e fuga dei laureati frenano l’attrattività",
       "reported_headline": "Rapporto BES Istat: Umbria sopra l’Italia in 30 indicatori su 60. Vicina a Toscana e Marche, ma salari, brevetti e fuga dei laureati frenano l’attrattività - TRG Media",
       "summary": "La testata TRG Media segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4656,7 +4851,7 @@
       "id": "PULSE-MEDIA-6D672CC3564B586F",
       "story_fingerprint": "6d672cc3564b586f5f26a6047ee49f93b0b2d9060b6bada0b982cee3518268b8",
       "published_at": "2026-10-31T09:03:37+00:00",
-      "last_seen_at": "2026-11-03T02:59:41.809664+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "Turismo nautico: Sicilia terza in Italia per imprese blu oltre 1.700 nei primi tre mesi del 2026",
       "reported_headline": "Turismo nautico: Sicilia terza in Italia per imprese blu oltre 1.700 nei primi tre mesi del 2026 - Economia del Mare",
       "summary": "La testata Economia del Mare segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1.700. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -11139,7 +11334,7 @@
       "id": "PULSE-MEDIA-78D593D520C29DA5",
       "story_fingerprint": "78d593d520c29da5028879a53a4365c0420f518d1f50024af2417989c0b4183b",
       "published_at": "2026-10-30T09:22:57+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
       "headline": "++ Istat, crescita acquisita del Pil 2026 invariata a 0,8% ++",
       "reported_headline": "++ Istat, crescita acquisita del Pil 2026 invariata a 0,8% ++ - La Gazzetta del Mezzogiorno",
       "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 0,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
