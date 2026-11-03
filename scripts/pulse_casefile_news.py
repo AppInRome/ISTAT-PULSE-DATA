@@ -50,6 +50,14 @@ def add_verified_casefiles(by_id: dict, casefile_path: Path, now: datetime) -> i
         _validate(c,now)
         case_id=c["id"]
         if case_id in by_id:
+            # Refresh curated newsroom copy without changing published timestamp,
+            # stable ID, source provenance, charts, or source-backed statistics.
+            existing = by_id[case_id]
+            if existing.get("origin_kind") == "pulse_casefile":
+                existing["pulse_article_body"] = c["body"]
+                existing["summary"] = c["summary"]
+                existing["pulse_summary"] = c["summary"]
+                existing["editorial_format"] = c.get("editorial_format", "source_reviewed_casefile")
             continue
         original=c["statistical_primary"]
         publisher="istat.it"
@@ -77,6 +85,7 @@ def add_verified_casefiles(by_id: dict, casefile_path: Path, now: datetime) -> i
             "pulse_title":c["headline"],
             "pulse_summary":c["summary"],
             "pulse_article_body":c["body"],
+            "editorial_format":c.get("editorial_format","source_reviewed_casefile"),
             "territories":["italia"],
             "patterns":[],
             "sources":[
