@@ -976,12 +976,32 @@ def main():
             if not brief: continue
             previous=by_id.get(brief["id"])
             if previous:
-                # Never relabel a republished old item as today's story.
+                # Keep already verified originals, source links, reader prose and
+                # persistent research retry history. RSS must never downgrade them.
+                if ((previous.get("public_source") or {}).get("role")
+                        == "primary_statistical_source"):
+                    continue
                 brief["published_at"]=previous.get("published_at") or brief["published_at"]
+                for key in ("primary_research_last_attempt_at", "primary_research_status"):
+                    if previous.get(key):
+                        brief[key] = previous[key]
             else:
                 radar_added+=1
             by_id[brief["id"]]=brief
     print(f"[RADAR] notizie stampa segnalate con attribuzione: {radar_added}", flush=True)
+
+    # Permanent evidence-first editorial pipeline. Each scheduled RSS refresh
+    # retries a bounded number of unverified reports, without user intervention.
+    # Only exact matching primary-source observations can generate a PULSE chart,
+    # table and original quantitative analysis. Others retain a press attribution.
+    if not runtime_exceeded():
+        try:
+            from scripts.pulse_auto_promotion import run_pending_research
+        except ModuleNotFoundError:
+            from pulse_auto_promotion import run_pending_research
+        auto_report = run_pending_research(
+            by_id, cfg.get("official_domains", []), now, budget=2)
+        print(f"[PULSE AUTO EDITORIALE] {auto_report}", flush=True)
 
     # Interleave outlets: first story from every source, then second and so on.
     # Search and verification consume the remaining bounded runtime.
