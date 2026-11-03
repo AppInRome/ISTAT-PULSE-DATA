@@ -87,7 +87,9 @@ def compose_verified(article,resolved):
             before=p[-2]
             delta=latest["value"]-before["value"]
             action="in aumento" if delta>0 else "in diminuzione" if delta<0 else "invariato"
-            result["headline"]=f"{indicator[:1].upper()+indicator[1:]}: dato {action} nel {latest['period']}"
+            result["headline"]=(f"{indicator[:1].upper()+indicator[1:]}: "
+                                 f"{fmt(latest['value'])} {unit} nel {latest['period']}, "
+                                 f"{action} rispetto al {before['period']}")
             result["summary"]=(f"Secondo i dati originali di {domain}, {indicator.lower()} "
                                f"passa da {fmt(before['value'])} {unit} ({before['period']}) "
                                f"a {fmt(latest['value'])} {unit} ({latest['period']}).")
