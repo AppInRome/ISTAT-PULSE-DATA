@@ -163,6 +163,18 @@ def compose_verified(article,resolved):
         # original statistical article. Keep it as a research draft, never OGGI.
         result["publication_status"]="quarantined"
         result["editorial_status"]="needs_verified_comparable_series"
+    # Long-form original prose is enabled only for a validated comparable series.
+    # Media reports and single observations keep their explicit evidence limits.
+    if result.get("verification_tier") == "verified_comparable_series":
+        try:
+            from scripts.pulse_feature_writer import longform_sections
+        except ModuleNotFoundError:
+            from pulse_feature_writer import longform_sections
+        prose = longform_sections(result["verified_series_relevant"][0], domain)
+        if prose:
+            result["pulse_article_body"] = prose
+            result["editorial_format"] = "longform_verified"
+            result["editorial_paragraph_count"] = len(prose)
     result["pulse_title"]=result["headline"]
     result["pulse_summary"]=result["summary"]
     return result
