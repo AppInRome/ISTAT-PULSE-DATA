@@ -73,6 +73,7 @@ def validate_feature(draft, edited):
     approved["summary"] = lead
     approved["pulse_summary"] = lead
     approved["pulse_article_body"] = [{"heading": "", "text": p.strip()} for p in paragraphs]
+    approved["discovery"] = {**(approved.get("discovery") or {}), "evidence_gate": "strong_primary_match"}
     approved["publication_status"] = "published"
     approved["editorial_status"] = "verified"
     approved["editorial_format"] = "individually_edited_longform"
