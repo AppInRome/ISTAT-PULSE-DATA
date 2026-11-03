@@ -41,6 +41,7 @@ class AutoPromotionTests(unittest.TestCase):
         self.assertEqual(len(output["table_spec"]["rows"]), 2)
         self.assertEqual(output["evidence_provenance"]["source_sha256"], "a"*64)
         self.assertEqual(output["editorial_format"], "automated_verified_analysis")
+        self.assertTrue(output["editorial_quality"]["passed"])
         self.assertTrue(output["pulse_article_body"])
         self.assertEqual(output["discovery"]["original_url"], "https://news.example/story")
 
