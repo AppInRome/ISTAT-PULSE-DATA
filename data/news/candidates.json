@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T11:56:52.099277+00:00",
+  "generated_at": "2026-11-03T15:00:47.747513+00:00",
   "candidates": [
     {
       "radar": "Google News - Fanpage dati e statistiche",
@@ -9,12 +9,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 30
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -124,17 +124,17 @@
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 27
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 50
     },
     {
       "radar": "Repubblica Economia",
-      "status": "radar_fetched",
-      "items_fetched": 25
+      "status": "radar_error",
+      "error": "HTTPS public URLs only"
     },
     {
       "radar": "Google News - ANSA dati e statistiche",
@@ -169,7 +169,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -179,7 +179,7 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 38
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -189,7 +189,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 48
+      "items_fetched": 28
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -249,12 +249,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 54
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 57
+      "items_fetched": 28
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -274,7 +274,7 @@
     {
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 37
     },
     {
       "radar": "Corriere della Sera - Economia",
@@ -289,7 +289,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "AGI - Notizie",
@@ -324,7 +324,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 17
+      "items_fetched": 18
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,31 @@
       "items_fetched": 3
     },
     {
+      "radar": "PULSE 80 testate · nazionali · gruppo 01",
+      "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
+      "discovery_title": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» - Il Sole 24 ORE",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
+      "score_discovery": 55,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2025 ",
+        "13,3%",
+        "24 ",
+        "2025 ",
+        "13,3%",
+        "24 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRVpjM1dhSkc5WDdPUS1qYk4zR3RQSlJlTGR6eS1KTm5wcXphU0dsd1VMaEhabWxUYVBlMlJ4cVprQlJobndrT0FQT2JqREgxRWlSd2dWdU9IeDgtX29nTnlxb3RuNkxzczN4aXV1Mm9YOTRJRHlWeVgzb2JXYzJPNVlyVlMzNGF2anBkV2dmSHd6bnVvdmI2THpib1RLZ2k0cFJpbWlySUl3V2ZWTmJkaWRFZlFJODNnUDVFMVN3Wlk5ckpRcWExbnNRRUc3NWFEWUdNVHA3WWl5Ukw0ckxFQnNWUV9mNkMxeDNJaWFn0gHzAUFVX3lxTE9XNkFyTWxiZF91djBmd0R6YUYtMGwwWjFCa0ZtdGhiTE91N2Y4UjNBUFBWdGJiMGgxRkRzVFBXNTVrQUJWU3BhNm03WkRlSFhCTmxHQ2FEdEhrSUxLZ0VWWTZDR0dJUF9UamItRmhGODI2NGo1Z1JYWXBwWFhqT0JsZ08taW9qb3hPNFYtU19ua2tHZTVMNVRjeHFPaU1NdFd3QTNlUGg3bzdPRUV0ZHFMU3otODN4a3UwOFRUMzJfOWxGOUtWWVJwNThaZHFDWDBpa2VQN0lHdEstSkpxYnBTaFpLdEpaTVhlaWFQQU5FZDdIcw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRVpjM1dhSkc5WDdPUS1qYk4zR3RQSlJlTGR6eS1KTm5wcXphU0dsd1VMaEhabWxUYVBlMlJ4cVprQlJobndrT0FQT2JqREgxRWlSd2dWdU9IeDgtX29nTnlxb3RuNkxzczN4aXV1Mm9YOTRJRHlWeVgzb2JXYzJPNVlyVlMzNGF2anBkV2dmSHd6bnVvdmI2THpib1RLZ2k0cFJpbWlySUl3V2ZWTmJkaWRFZlFJODNnUDVFMVN3Wlk5ckpRcWExbnNRRUc3NWFEWUdNVHA3WWl5Ukw0ckxFQnNWUV9mNkMxeDNJaWFn0gHzAUFVX3lxTE9XNkFyTWxiZF91djBmd0R6YUYtMGwwWjFCa0ZtdGhiTE91N2Y4UjNBUFBWdGJiMGgxRkRzVFBXNTVrQUJWU3BhNm03WkRlSFhCTmxHQ2FEdEhrSUxLZ0VWWTZDR0dJUF9UamItRmhGODI2NGo1Z1JYWXBwWFhqT0JsZ08taW9qb3hPNFYtU19ua2tHZTVMNVRjeHFPaU1NdFd3QTNlUGg3bzdPRUV0ZHFMU3otODN4a3UwOFRUMzJfOWxGOUtWWVJwNThaZHFDWDBpa2VQN0lHdEstSkpxYnBTaFpLdEpaTVhlaWFQQU5FZDdIcw?oc=5",
       "discovery_title": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud - ANSA",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
       "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -386,10 +407,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - economia lavoro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
       "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -410,9 +431,9 @@
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLWRnNGhwT2ROU2ktb05rcGpqbWxYbE9IYlVELUlXbDV2RVFTckZpUm4zVGJGYW9lczI0RXhsSTYtMUo0cFdZdldYb2dNSW56V0YyWmFNdW9SRDVQNE5WWFZXc3BOS1E0Q0pNX013OENmNWY3QzlWZWN6VHFXOG90dzNFdTByak03c25TN0x3OVRFOXhaUHNMQUJoaHVOSnlZcUJLZkkzOVFodw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLWRnNGhwT2ROU2ktb05rcGpqbWxYbE9IYlVELUlXbDV2RVFTckZpUm4zVGJGYW9lczI0RXhsSTYtMUo0cFdZdldYb2dNSW56V0YyWmFNdW9SRDVQNE5WWFZXc3BOS1E0Q0pNX013OENmNWY3QzlWZWN6VHFXOG90dzNFdTByak03c25TN0x3OVRFOXhaUHNMQUJoaHVOSnlZcUJLZkkzOVFodw?oc=5",
       "discovery_title": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi - missionline",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
       "score_discovery": 45,
       "topic": "MOBILITA",
       "numbers_detected": [
@@ -431,9 +452,9 @@
     },
     {
       "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNNFIwYnIxd3k5Ul9rZXUta1JzX1J1cTJWdnVQbFNPc3dMQldiMTM2V3dVY20zdXFLVEdXb2VhR3g5QlU5SnJ4VFBLQ3N6NHJhUGhCZnllVW9vZTNGTkNBcFJYbk1mdU1Mak9vZThxZFlKSEJaYWxIb2V1ejZTbTJhNko5OXVldUNXam5venFQWnNyMEh1bm5MWmhURnc2dFRLVWVrcGlLdHVCSDE0Sm9nV2FDS2VERnFvd3RpbXVXVFVpT0o2QnJ3T2RmT0xJcUxncFZsV1ZwX3BNaHkwRkw3aE9EVmdJRWZCcXg4Rm5LMS1Jdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNNFIwYnIxd3k5Ul9rZXUta1JzX1J1cTJWdnVQbFNPc3dMQldiMTM2V3dVY20zdXFLVEdXb2VhR3g5QlU5SnJ4VFBLQ3N6NHJhUGhCZnllVW9vZTNGTkNBcFJYbk1mdU1Mak9vZThxZFlKSEJaYWxIb2V1ejZTbTJhNko5OXVldUNXam5venFQWnNyMEh1bm5MWmhURnc2dFRLVWVrcGlLdHVCSDE0Sm9nV2FDS2VERnFvd3RpbXVXVFVpT0o2QnJ3T2RmT0xJcUxncFZsV1ZwX3BNaHkwRkw3aE9EVmdJRWZCcXg4Rm5LMS1Jdw?oc=5",
       "discovery_title": "Studenti con disabilità in Veneto, il 62,7% segue percorsi per il diploma, il 37,3% percorsi differenziati. I dati del monitoraggio PEI - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
       "score_discovery": 49,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -449,44 +470,17 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/professionisti/avvocati/26_novembre_03/tecnologie-forensi-e-boom-globale-mercato-da-8-miliardi-entro-2032-75-la-lotta-al-deepfake-diventa-essenziale-per-la-prova-in-b31730fc-6cff-4958-bd8a-c4e7d1789xlk.shtml",
-      "discovery_title": "Tecnologie forensi, è boom globale: mercato da 8 miliardi entro 2032 (+75%): la lotta al deepfake diventa essenziale per la prova in giudizio",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
-      "score_discovery": 50,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "8 miliardi",
-        "2032 ",
-        "+75%",
-        "8,6 miliardi",
-        "2032 ",
-        "+6,6%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [
-        "aci.it",
-        "terna.it"
-      ],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
       "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
         "2025 ",
         "2025 ",
         "62,9%",
-        "+2,3 ",
-        "2024",
         "78,7%",
-        "+1,4 ",
         "20",
         "34"
       ],
@@ -504,9 +498,7 @@
         "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
         "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/#feedback_completo"
       ],
-      "official_domain_hints": [
-        "istat.it"
-      ],
+      "official_domain_hints": [],
       "primary_resolution": {
         "url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
         "domain": "istat.it",
@@ -514,15 +506,13 @@
           "2025 ",
           "2025 ",
           "62,9%",
-          "+2,3 ",
-          "2024",
-          "78,7%"
+          "78,7%",
+          "20",
+          "34"
         ],
         "matched_non_year_numbers": [
           "62,9%",
-          "+2,3 ",
           "78,7%",
-          "+1,4 ",
           "20",
           "34"
         ],
@@ -545,69 +535,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14769/isole-di-luce-nei-mari-europei-il-cnr-individua-hotspot-notturni-persistenti",
-      "discovery_title": "Isole di luce nei mari europei: il CNR individua hotspot notturni persistenti",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
-      "score_discovery": 50,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "03",
-        "11",
-        "2026 ",
-        "2017 ",
-        "2023 ",
-        "10.092 ",
-        "161%"
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14769/isole-di-luce-nei-mari-europei-il-cnr-individua-hotspot-notturni-persistenti#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.cnr.it/it/news/immagine/12736/large",
-        "https://www.cnr.it/it/news/immagine/12737/large"
-      ],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14769/isole-di-luce-nei-mari-europei-il-cnr-individua-hotspot-notturni-persistenti",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "03",
-          "11",
-          "2026 ",
-          "2017 ",
-          "2023 ",
-          "10.092 "
-        ],
-        "matched_non_year_numbers": [
-          "03",
-          "11",
-          "10.092 ",
-          "161%"
-        ],
-        "matched_keywords": [
-          "isole",
-          "luce",
-          "mari",
-          "europei",
-          "individua",
-          "hotspot",
-          "notturni",
-          "persistenti"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Isole di luce nei mari europei: il CNR individua hotspot notturni persistenti | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture s",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "Google News - Italia lavoro e imprese",
-      "discovery_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVXZjenZ4U0lPM3N6MU52WkxXRE82ckFIWGlseXZrV2dMRUVxcHJOMzNvaDYzSjl6VTQ3dHN5S3dYOHVmZlVYYzNWQmtxY1JnMFVPR2UxYVlMZUpWT284X1hENkVuY2thTGs5QjRvU3VHMjJNdXFRUi1hTmlsc0J3Y3VaTTNHbV9nbV85NG51XzJFYWNtTkdva2dlLWFBRFA1U1ZPbWVrSWszZ19wTkJ2aXRFMmFfUnhFNEFvVw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "discovery_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVXZjenZ4U0lPM3N6MU52WkxXRE82ckFIWGlseXZrV2dMRUVxcHJOMzNvaDYzSjl6VTQ3dHN5S3dYOHVmZlVYYzNWQmtxY1JnMFVPR2UxYVlMZUpWT284X1hENkVuY2thTGs5QjRvU3VHMjJNdXFRUi1hTmlsc0J3Y3VaTTNHbV9nbV85NG51XzJFYWNtTkdva2dlLWFBRFA1U1ZPbWVrSWszZ19wTkJ2aXRFMmFfUnhFNEFvVw?oc=5",
       "discovery_title": "Estate 2026, Adr in Italia a +6,2%. Rimini prima per occupazione upscale (86,3%) - Hotellerie Pambianconews",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -625,19 +556,17 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE Italia - Sud e Isole",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQMEJIRW9CU2ZsV2dYSTMxNzFjclR0ZW5QSEN3MWVVVy1DUE9wRk9NSmJHZHNXY1NDdUw1NW5YTHkxYUpORG91cGZ5bGtlSHNVLTdmTHBPeVU5d0JxX0ZZc0JxbkczVU9FRnpJMmNmdlZQWlRoenlsZ0hIM25hSThHVGJONUNzeEkxMjluamUwTWxQQjN2cUFLNUdwem14MHNTME5MZXAzbFlVRjBoeWFLejRHOFpteGV5aWE2Rm4tYnlxSEJhaWZiRzI2OS1xU3dDU0k5Y2xCb1gxanAxcnMxQktmQWF1bHQ2eXk0bVZQUkl5Z0Z4TjVmcHNZTTM0SDJVR3REOWZnTE1ZdEJqNmt3?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "discovery_title": "TTG Rimini 2026, chiusura da record per la Regione Puglia: oltre 1.500 incontri B2B, circa 5.000 visitatori e un turismo che cresce sulle presenze straniere - Ruvesi.it",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
-      "score_discovery": 65,
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
+      "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
-        "2026",
-        "1.500 ",
-        "5.000 ",
-        "2026",
-        "1.500 ",
-        "5.000 "
+        "73 milioni",
+        "2024 ",
+        "73 milioni",
+        "2024 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -646,121 +575,28 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero",
-      "discovery_title": "Ciclone Harry, onde record nel Mediterraneo: uno studio coordinato da UniBa e UniversitÃ  di Catania svela i fattori che amplificano il rischio costiero",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
-      "score_discovery": 48,
-      "topic": "ISTRUZIONE",
+      "radar": "Corriere della Sera - Economia",
+      "discovery_url": "https://www.corriere.it/economia/professionisti/avvocati/26_novembre_03/tecnologie-forensi-e-boom-globale-mercato-da-8-miliardi-entro-2032-75-la-lotta-al-deepfake-diventa-essenziale-per-la-prova-in-b31730fc-6cff-4958-bd8a-c4e7d1789xlk.shtml",
+      "discovery_title": "Tecnologie forensi, è boom globale: mercato da 8 miliardi entro 2032 (+75%): la lotta al deepfake diventa essenziale per la prova in giudizio",
+      "detected_at": "2026-11-03T15:00:47.747513+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
       "numbers_detected": [
-        "02",
-        "11",
-        "2026 "
+        "8 miliardi",
+        "2032 ",
+        "+75%",
+        "8,6 miliardi",
+        "2032 ",
+        "+6,6%"
       ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.cnr.it/it/news/immagine/12747/large",
-        "https://www.cnr.it/it/news/immagine/12748/large",
-        "https://www.cnr.it/it/news/immagine/12749/large",
-        "https://www.cnr.it/it/news/immagine/12750/large"
-      ],
-      "official_domain_hints": [
-        "isprambiente.gov.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "02",
-          "11",
-          "2026 "
-        ],
-        "matched_non_year_numbers": [
-          "02",
-          "11"
-        ],
-        "matched_keywords": [
-          "ciclone",
-          "harry",
-          "onde",
-          "record",
-          "mediterraneo",
-          "studio",
-          "coordinato",
-          "uniba"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Ciclone Harry, onde record nel Mediterraneo: uno studio coordinato da UniBa e Università di Catania svela i fattori che amplificano il rischio costiero | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centra",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14768/il-cisc-cnr-allo-smart-city-expo-world-congress-2026-di-barcellona-urban-intelligence-e-gemelli-digitali-per-le-citta-e-i-territori-del-futuro",
-      "discovery_title": "Il CISC CNR allo Smart City Expo World Congress 2026 di Barcellona: Urban Intelligence e Gemelli Digitali per le cittÃ  e i territori del futuro",
-      "detected_at": "2026-11-03T11:56:52.099277+00:00",
-      "score_discovery": 45,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2026 ",
-        "03",
-        "11",
-        "2026 ",
-        "3 ",
-        "5 ",
-        "2026"
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14768/il-cisc-cnr-allo-smart-city-expo-world-congress-2026-di-barcellona-urban-intelligence-e-gemelli-digitali-per-le-citta-e-i-territori-del-futuro#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://scienzadellecitta.cnr.it/",
-        "https://www.cnr.it/it/news/immagine/12733/large",
-        "https://www.cnr.it/it/news/immagine/12734/large"
-      ],
+      "official_links": [],
       "official_domain_hints": [
         "aci.it",
         "terna.it"
       ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14768/il-cisc-cnr-allo-smart-city-expo-world-congress-2026-di-barcellona-urban-intelligence-e-gemelli-digitali-per-le-citta-e-i-territori-del-futuro",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "2026 ",
-          "03",
-          "11",
-          "2026 ",
-          "3 ",
-          "5 "
-        ],
-        "matched_non_year_numbers": [
-          "03",
-          "11",
-          "3 ",
-          "5 "
-        ],
-        "matched_keywords": [
-          "cisc",
-          "allo",
-          "smart",
-          "city",
-          "expo",
-          "world",
-          "congress",
-          "barcellona"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Il CISC CNR allo Smart City Expo World Congress 2026 di Barcellona: Urban Intelligence e Gemelli Digitali per le città e i territori del futuro | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risor",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "last_check_at": "2026-11-03T13:54:26+00:00",
-  "latest_check_errors": 1,
+  "last_check_at": "2026-11-03T15:00:47+00:00",
+  "latest_check_errors": 0,
   "note": "La raccolta Notizie viene controllata ogni tre ore; Green e Territori seguono la frequenza dei rispettivi servizi API. Un controllo non equivale a nuove osservazioni. Le APK installate non sono modificate dal repository.",
   "sections": {
     "green": {
@@ -15,21 +15,20 @@
       "status": "ok"
     },
     "notizie": {
-      "articles_total": 702,
-      "error": "update_news_radar.py: uscita 1",
+      "articles_total": 708,
       "feeds_configured": 73,
-      "feeds_failed": 1,
-      "feeds_reached": 72,
+      "feeds_failed": 3,
+      "feeds_reached": 70,
       "ieri": 36,
       "ieri_stampa": 36,
       "ieri_verificati": 0,
-      "last_attempt_at": "2026-11-03T13:55:38+00:00",
-      "last_success_at": "2026-11-03T11:57:44+00:00",
+      "last_attempt_at": "2026-11-03T15:02:05+00:00",
+      "last_success_at": "2026-11-03T15:02:05+00:00",
       "message": "Le notizie di stampa sono identificate come segnalazioni: solo dati primari verificati generano grafici PULSE.",
-      "oggi": 14,
-      "oggi_stampa": 13,
+      "oggi": 19,
+      "oggi_stampa": 18,
       "oggi_verificati": 1,
-      "status": "error"
+      "status": "ok"
     },
     "territori": {
       "connected_series": 5,

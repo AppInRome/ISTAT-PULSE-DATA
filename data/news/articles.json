@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T11:56:52.099277+00:00",
+  "generated_at": "2026-11-03T15:00:47.747513+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-03T11:56:52.099277+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "published_at": "2026-11-03T15:00:47.747513+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -109,10 +109,365 @@
       "verification_tier": "previously_verified_official_single_observation"
     },
     {
+      "id": "PULSE-34E0A0DCF92D4723",
+      "story_fingerprint": "34e0a0dcf92d4723026c3ed8",
+      "published_at": "2026-11-03T14:57:48+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "topic": "ALTRO",
+      "pulse_score": 55,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
+        "domain": "Il Sole 24 ORE",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» - Il Sole 24 ORE",
+      "summary": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» Il Sole 24 ORE",
+      "statistical_claims": [
+        {
+          "raw_value": "13,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        },
+        {
+          "raw_value": "13,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-4584D5D52F55FA9C",
+      "story_fingerprint": "4584d5d52f55fa9c07a66bd03be1cabc29cbc409ed259955eb815b57a54a60d1",
+      "published_at": "2026-11-03T14:33:00+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "headline": "Farmaceutica, Aurigemma: \"Il Lazio vale il 26% dell'export nazionale\"",
+      "reported_headline": "Farmaceutica, Aurigemma: \"Il Lazio vale il 26% dell'export nazionale\"",
+      "summary": "La testata adnkronos.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 26%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Farmaceutica, Aurigemma: \"Il Lazio vale il 26% dell'export nazionale\"",
+      "pulse_summary": "La testata adnkronos.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 26%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata adnkronos.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 26%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Adnkronos - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://www.adnkronos.com/economia/farmaceutica-aurigemma-il-lazio-vale-il-26-dellexport-nazionale_4VC931vJdBhFMnd52z2ofD",
+        "domain": "adnkronos.com",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "26%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "lazio"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "adnkronos.com",
+        "original_url": "https://www.adnkronos.com/economia/farmaceutica-aurigemma-il-lazio-vale-il-26-dellexport-nazionale_4VC931vJdBhFMnd52z2ofD",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-03T15:00:47.747513+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-EFEC37E3AA10258F",
+      "story_fingerprint": "efec37e3aa10258ffae90b3ee1128e9af15faf6f7cdee19b1f7c427cfa7f8b87",
+      "published_at": "2026-11-03T13:46:43+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "headline": "ISTAT: NEET in calo al 13,3%, ma oltre due giovani su tre cercano lavoro o vorrebbero lavorare",
+      "reported_headline": "ISTAT: NEET in calo al 13,3%, ma oltre due giovani su tre cercano lavoro o vorrebbero lavorare - Tecnica della Scuola",
+      "summary": "La testata Tecnica della Scuola segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "ISTAT: NEET in calo al 13,3%, ma oltre due giovani su tre cercano lavoro o vorrebbero lavorare",
+      "pulse_summary": "La testata Tecnica della Scuola segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Tecnica della Scuola segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · specializzate · gruppo 15». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQWV3N3piU1JNQ0tteGpSNjdoM2xSNWZ3eEFscjJWdmlwUkhKcjZ6MWJrSkRoWmxPQVRwUE5ucFJ1ZnZoa09TckRiZXZLaERfWEFJREk0Zmdkd29lZ3lzTkJNWVJEYm0zUFRIZThJdVdzWDRrdUtCc01VX3NnMWt6ZzY2LWxvY2N0QjdGN1RQcmlYbVF1X0haVFg1MS1NRUhBQmV1SGRINm1PNV9Mb2xGcUcyb1RkLWtVU09YQmhiM2drUQ?oc=5",
+        "domain": "Tecnica della Scuola",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "13,3%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Tecnica della Scuola",
+        "original_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQWV3N3piU1JNQ0tteGpSNjdoM2xSNWZ3eEFscjJWdmlwUkhKcjZ6MWJrSkRoWmxPQVRwUE5ucFJ1ZnZoa09TckRiZXZLaERfWEFJREk0Zmdkd29lZ3lzTkJNWVJEYm0zUFRIZThJdVdzWDRrdUtCc01VX3NnMWt6ZzY2LWxvY2N0QjdGN1RQcmlYbVF1X0haVFg1MS1NRUhBQmV1SGRINm1PNV9Mb2xGcUcyb1RkLWtVU09YQmhiM2drUQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-03T15:00:47.747513+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-1DDD7E09AE5997F7",
+      "story_fingerprint": "1ddd7e09ae5997f72708c0bf60824adf9beffbd63e038fe9a025785ad7c6bf42",
+      "published_at": "2026-11-03T12:12:00+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "headline": "Q8, sconto del 20% sui carburanti per agricoltura e pesca fino a dicembre",
+      "reported_headline": "Q8, sconto del 20% sui carburanti per agricoltura e pesca fino a dicembre",
+      "summary": "La testata ilsole24ore.com segnala una notizia su energia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Q8, sconto del 20% sui carburanti per agricoltura e pesca fino a dicembre",
+      "pulse_summary": "La testata ilsole24ore.com segnala una notizia su energia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ilsole24ore.com segnala una notizia su energia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Il Sole 24 Ore - Italia Attualità». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ENERGIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://www.ilsole24ore.com/art/q8-sconto-20percento-carburanti-agricoltura-e-pesca-fino-dicembre-AJra642B",
+        "domain": "ilsole24ore.com",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "20%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ilsole24ore.com",
+        "original_url": "https://www.ilsole24ore.com/art/q8-sconto-20percento-carburanti-agricoltura-e-pesca-fino-dicembre-AJra642B",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-A93F8A6D56C60710",
+      "story_fingerprint": "a93f8a6d56c607100584738fd93a6d5b77e17be863c06554d6abd0340ef4b665",
+      "published_at": "2026-11-03T12:09:00+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "headline": "Carburanti, Q8 Italia taglia del 20% i prezzi per agricoltura e pesca fino al 31 dicembre",
+      "reported_headline": "Carburanti, Q8 Italia taglia del 20% i prezzi per agricoltura e pesca fino al 31 dicembre - NoiDiCalabria",
+      "summary": "La testata NoiDiCalabria segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Carburanti, Q8 Italia taglia del 20% i prezzi per agricoltura e pesca fino al 31 dicembre",
+      "pulse_summary": "La testata NoiDiCalabria segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata NoiDiCalabria segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkMzbzJLLTlRaUpJRWJJUkNtS1BEdGVOTTk3bzJ2clJhaFgtVy1IYjFNbm9STi1MdEo3dGI0MkluZ0dvazh2V09IOHFqdDg1VDVnZU93QlZsS1BDcllSal85YWlDVlEzUkphN1hyR1Z5WkpKYWlHS0QwMnJmOVo3R0stQ3U1b2M4NE9ac2VHUURqMXlid1pLYnVnYjc1eUVOTEl0YkZNMVhjRkNXVTBEemxQTQ?oc=5",
+        "domain": "NoiDiCalabria",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "20%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "NoiDiCalabria",
+        "original_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMkMzbzJLLTlRaUpJRWJJUkNtS1BEdGVOTTk3bzJ2clJhaFgtVy1IYjFNbm9STi1MdEo3dGI0MkluZ0dvazh2V09IOHFqdDg1VDVnZU93QlZsS1BDcllSal85YWlDVlEzUkphN1hyR1Z5WkpKYWlHS0QwMnJmOVo3R0stQ3U1b2M4NE9ac2VHUURqMXlid1pLYnVnYjc1eUVOTEl0YkZNMVhjRkNXVTBEemxQTQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-E5069C82C087A950",
+      "story_fingerprint": "e5069c82c087a9507cc9a40b429c57627d43758d861cecfde1e95e059bfffea5",
+      "published_at": "2026-11-03T11:55:27+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "headline": "Q8 Italia riduce del 20% i prezzi dei carburanti per i settori agricolo e ittico fino alla fine del 2026",
+      "reported_headline": "Q8 Italia riduce del 20% i prezzi dei carburanti per i settori agricolo e ittico fino alla fine del 2026 - MarketScreener Italia",
+      "summary": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Q8 Italia riduce del 20% i prezzi dei carburanti per i settori agricolo e ittico fino alla fine del 2026",
+      "pulse_summary": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 44,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeW5rMjhVd3pNeXBtVE9xR0tBSGJ2MUVYV3ZJRS1hd1dFT1NnRjBVVmw3aGNOZjlrakNiaV9XX0JxckpBeXM2Qkd4NGh5THpBaE9DVXVJdWNYSXQ1ajB2dXp2TDVjZU5MTE41UWYzX3Flb3RiWng0NElxVlFNaFlsNW95MEJzeXNxc2pvbk52Q3RrVW5Mcmo0c0ZSUk51Tmt3eUgwaWVFbldkWXRPMUpvOUJXZjVuU0VvOUhDMkNKY2VxMFZOQ1VFZXc0VkVwcFhEcGZxQ1F3dGVLT0hDWk1MaC1XS1pQT3N5?oc=5",
+        "domain": "MarketScreener Italia",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "20%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "MarketScreener Italia",
+        "original_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQeW5rMjhVd3pNeXBtVE9xR0tBSGJ2MUVYV3ZJRS1hd1dFT1NnRjBVVmw3aGNOZjlrakNiaV9XX0JxckpBeXM2Qkd4NGh5THpBaE9DVXVJdWNYSXQ1ajB2dXp2TDVjZU5MTE41UWYzX3Flb3RiWng0NElxVlFNaFlsNW95MEJzeXNxc2pvbk52Q3RrVW5Mcmo0c0ZSUk51Tmt3eUgwaWVFbldkWXRPMUpvOUJXZjVuU0VvOUhDMkNKY2VxMFZOQ1VFZXc0VkVwcFhEcGZxQ1F3dGVLT0hDWk1MaC1XS1pQT3N5?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-3A2C7D523C866CC5",
       "story_fingerprint": "3a2c7d523c866cc565c4e7a88badc6177ac2cb28c4eed98b07c32b5681bc9590",
       "published_at": "2026-11-03T11:20:22+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Tecnologie forensi, è boom globale: mercato da 8 miliardi entro 2032 (+75%): la lotta al deepfake diventa essenziale per la prova in giudizio",
       "reported_headline": "Tecnologie forensi, è boom globale: mercato da 8 miliardi entro 2032 (+75%): la lotta al deepfake diventa essenziale per la prova in giudizio",
       "summary": "La testata corriere.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 8 miliardi, +75%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -178,7 +533,7 @@
       "id": "PULSE-F3E1524DF2EE60F5",
       "story_fingerprint": "f3e1524df2ee60f5355dfb70",
       "published_at": "2026-11-03T11:20:22+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "ALTRO",
       "pulse_score": 50,
       "patterns": [],
@@ -217,7 +572,7 @@
       "id": "PULSE-MEDIA-82A763AD0A50948E",
       "story_fingerprint": "82a763ad0a50948ea60d660b053f50bb27b7b0970b0da2fbb4a87a05734ae118",
       "published_at": "2026-11-03T11:09:17+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Intelligenza artificiale, 7 imprese italiane su 10 l’adottano, ma solo il 12% ha rivoluzionato il modo di lavorare",
       "reported_headline": "Intelligenza artificiale, 7 imprese italiane su 10 l’adottano, ma solo il 12% ha rivoluzionato il modo di lavorare",
       "summary": "La testata corriere.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 12%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -279,20 +634,20 @@
       "id": "PULSE-MEDIA-358A495C9B693409",
       "story_fingerprint": "358a495c9b6934099aa1ca5b71d6aaa188c725a5179561731ddf48f7e65b62a8",
       "published_at": "2026-11-03T10:46:00+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
-      "headline": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud",
-      "reported_headline": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud - ANSA",
-      "summary": "La testata ANSA segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
-      "pulse_title": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud",
-      "pulse_summary": "La testata ANSA segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
+      "headline": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud»",
+      "reported_headline": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» - Il Sole 24 ORE",
+      "summary": "La testata Il Sole 24 ORE segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud»",
+      "pulse_summary": "La testata Il Sole 24 ORE segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_article_body": [
         {
           "heading": "La notizia segnalata",
-          "text": "La testata ANSA segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+          "text": "La testata Il Sole 24 ORE segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · agenzie · gruppo 06». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · agenzie · gruppo 07». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -300,10 +655,10 @@
         }
       ],
       "topic": "ALTRO",
-      "pulse_score": 49,
+      "pulse_score": 55,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRVpjM1dhSkc5WDdPUS1qYk4zR3RQSlJlTGR6eS1KTm5wcXphU0dsd1VMaEhabWxUYVBlMlJ4cVprQlJobndrT0FQT2JqREgxRWlSd2dWdU9IeDgtX29nTnlxb3RuNkxzczN4aXV1Mm9YOTRJRHlWeVgzb2JXYzJPNVlyVlMzNGF2anBkV2dmSHd6bnVvdmI2THpib1RLZ2k0cFJpbWlySUl3V2ZWTmJkaWRFZlFJODNnUDVFMVN3Wlk5ckpRcWExbnNRRUc3NWFEWUdNVHA3WWl5Ukw0ckxFQnNWUV9mNkMxeDNJaWFn0gHzAUFVX3lxTE9XNkFyTWxiZF91djBmd0R6YUYtMGwwWjFCa0ZtdGhiTE91N2Y4UjNBUFBWdGJiMGgxRkRzVFBXNTVrQUJWU3BhNm03WkRlSFhCTmxHQ2FEdEhrSUxLZ0VWWTZDR0dJUF9UamItRmhGODI2NGo1Z1JYWXBwWFhqT0JsZ08taW9qb3hPNFYtU19ua2tHZTVMNVRjeHFPaU1NdFd3QTNlUGg3bzdPRUV0ZHFMU3otODN4a3UwOFRUMzJfOWxGOUtWWVJwNThaZHFDWDBpa2VQN0lHdEstSkpxYnBTaFpLdEpaTVhlaWFQQU5FZDdIcw?oc=5",
-        "domain": "ANSA",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
+        "domain": "Il Sole 24 ORE",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -332,8 +687,8 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "ANSA",
-        "original_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRVpjM1dhSkc5WDdPUS1qYk4zR3RQSlJlTGR6eS1KTm5wcXphU0dsd1VMaEhabWxUYVBlMlJ4cVprQlJobndrT0FQT2JqREgxRWlSd2dWdU9IeDgtX29nTnlxb3RuNkxzczN4aXV1Mm9YOTRJRHlWeVgzb2JXYzJPNVlyVlMzNGF2anBkV2dmSHd6bnVvdmI2THpib1RLZ2k0cFJpbWlySUl3V2ZWTmJkaWRFZlFJODNnUDVFMVN3Wlk5ckpRcWExbnNRRUc3NWFEWUdNVHA3WWl5Ukw0ckxFQnNWUV9mNkMxeDNJaWFn0gHzAUFVX3lxTE9XNkFyTWxiZF91djBmd0R6YUYtMGwwWjFCa0ZtdGhiTE91N2Y4UjNBUFBWdGJiMGgxRkRzVFBXNTVrQUJWU3BhNm03WkRlSFhCTmxHQ2FEdEhrSUxLZ0VWWTZDR0dJUF9UamItRmhGODI2NGo1Z1JYWXBwWFhqT0JsZ08taW9qb3hPNFYtU19ua2tHZTVMNVRjeHFPaU1NdFd3QTNlUGg3bzdPRUV0ZHFMU3otODN4a3UwOFRUMzJfOWxGOUtWWVJwNThaZHFDWDBpa2VQN0lHdEstSkpxYnBTaFpLdEpaTVhlaWFQQU5FZDdIcw?oc=5",
+        "outlet": "Il Sole 24 ORE",
+        "original_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       }
     },
@@ -341,7 +696,7 @@
       "id": "PULSE-AD47FC5C232CE212",
       "story_fingerprint": "ad47fc5c232ce21283966c04",
       "published_at": "2026-11-03T10:46:00+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -372,7 +727,7 @@
       "id": "PULSE-MEDIA-0DD0A97C11D3362D",
       "story_fingerprint": "0dd0a97c11d3362db98387528a2d73b0792ebc7c50e23cf80fc5b87d670c1546",
       "published_at": "2026-11-03T10:32:39+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat",
       "reported_headline": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 62,9%, 78,7%, 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -442,7 +797,7 @@
       "id": "PULSE-D27A404936B7F1C0",
       "story_fingerprint": "d27a404936b7f1c06e699164",
       "published_at": "2026-11-03T10:32:39+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "LAVORO",
       "pulse_score": 55,
       "patterns": [],
@@ -489,7 +844,7 @@
       "id": "PULSE-3F402E5FC1CAB3E7",
       "story_fingerprint": "3f402e5fc1cab3e7c04bfbd5",
       "published_at": "2026-11-03T10:00:17+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "LAVORO",
       "pulse_score": 82,
       "public_source": {
@@ -524,28 +879,16 @@
           "verified": true
         },
         {
-          "raw_value": "+2,3 ",
-          "verified": true
-        },
-        {
-          "raw_value": "2024",
-          "verified": false
-        },
-        {
           "raw_value": "78,7%",
           "verified": true
         },
         {
-          "raw_value": "+1,4 ",
-          "verified": false
-        },
-        {
           "raw_value": "20",
-          "verified": false
+          "verified": true
         },
         {
           "raw_value": "34",
-          "verified": false
+          "verified": true
         }
       ],
       "verified_series": [],
@@ -591,7 +934,7 @@
       "id": "PULSE-MEDIA-33A23BCBD9CACB1B",
       "story_fingerprint": "33a23bcbd9cacb1be0b5b598d8121afdfb633c69bd90bfd724ef8fad216ba645",
       "published_at": "2026-11-03T09:30:00+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Italia leader europea del riciclo, 86% rifiuti contro media Ue 41%",
       "reported_headline": "Italia leader europea del riciclo, 86% rifiuti contro media Ue 41% - ANSA",
       "summary": "La testata ANSA segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 86%, 41%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -657,7 +1000,7 @@
       "id": "PULSE-MEDIA-006A59EE335BB99F",
       "story_fingerprint": "006a59ee335bb99f57d5e7a20bc4eb18c0d005a3e98087c164e157369327d68c",
       "published_at": "2026-11-03T08:46:50+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Mercato auto Italia: a ottobre 2026 +4,8%",
       "reported_headline": "Mercato auto Italia: a ottobre 2026 +4,8% - PartsWeb",
       "summary": "La testata PartsWeb segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -719,7 +1062,7 @@
       "id": "PULSE-MEDIA-FCC301B2B99A8D2E",
       "story_fingerprint": "fcc301b2b99a8d2efab75343010f80a3eaf5b0d2105120425ee143c0c5b17e9c",
       "published_at": "2026-11-03T08:42:28+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Al Nord Italia si vive 1,6 anni in più rispetto al Sud, aspettativa di vita di 84,2 anni contro gli 82,8, al Centro di 84",
       "reported_headline": "Al Nord Italia si vive 1,6 anni in più rispetto al Sud, aspettativa di vita di 84,2 anni contro gli 82,8, al Centro di 84 - Il Giornale d'Italia",
       "summary": "La testata Il Giornale d'Italia segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 1,6, 84,2, 82,8. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -789,7 +1132,7 @@
       "id": "PULSE-MEDIA-DB1764CBF2D48A22",
       "story_fingerprint": "db1764cbf2d48a2270e7b6f241b941b2137bbe259685027a70883d53ecc3c571",
       "published_at": "2026-11-03T08:06:58+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Stipendi in Italia, aumenti insufficienti a compensare l’inflazione: 2,5 milioni di lavoratori attendono il rinnovo del contratto",
       "reported_headline": "Stipendi in Italia, aumenti insufficienti a compensare l’inflazione: 2,5 milioni di lavoratori attendono il rinnovo del contratto - Hashtag Sicilia",
       "summary": "La testata Hashtag Sicilia segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 2,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -853,7 +1196,7 @@
       "id": "PULSE-MEDIA-0E9B40CAE7AA0337",
       "story_fingerprint": "0e9b40cae7aa0337585948ea9d95fc6a3f61868e99b41cdca1b02a5c8fc1553b",
       "published_at": "2026-11-03T06:13:54+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Casa, Forte dei Marmi supera Milano: è la più cara d’Italia",
       "reported_headline": "Casa, Forte dei Marmi supera Milano: è la più cara d’Italia",
       "summary": "La testata corrierefiorentino.corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20.800 euro, 25%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1046,7 +1389,7 @@
       "id": "PULSE-MEDIA-07E18D653B112CF7",
       "story_fingerprint": "07e18d653b112cf7c762dd0a98fc6b09914029b9bc51208630f99b600e044cf5",
       "published_at": "2026-11-03T01:00:54+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Inflazione, stangata su bollette e carburanti. In Toscana consumi a rischio per 112 milioni di euro",
       "reported_headline": "Inflazione, stangata su bollette e carburanti. In Toscana consumi a rischio per 112 milioni di euro - La Nazione",
       "summary": "La testata La Nazione segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 112 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1110,7 +1453,7 @@
       "id": "PULSE-MEDIA-0C32A2765C4963DB",
       "story_fingerprint": "0c32a2765c4963db38655018b5c143929ab308c98aeed2b8cb72e41357fda64a",
       "published_at": "2026-11-02T23:31:54+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi",
       "reported_headline": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi - missionline",
       "summary": "La testata missionline segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati +4,7%, -10,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1176,7 +1519,7 @@
       "id": "PULSE-177B02A7A5B6FD0B",
       "story_fingerprint": "177b02a7a5b6fd0bb9957d15",
       "published_at": "2026-11-02T23:31:54+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "MOBILITA",
       "pulse_score": 45,
       "patterns": [],
@@ -1647,7 +1990,7 @@
       "id": "PULSE-MEDIA-81348E685741375A",
       "story_fingerprint": "81348e685741375a2054817ac13975bc5f4054b99dd9c73c68a949d351d15df5",
       "published_at": "2026-11-02T16:10:40+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Clima, oltre 130mila ettari di foreste in Italia distrutte dagli incendi nel 2026",
       "reported_headline": "Clima, oltre 130mila ettari di foreste in Italia distrutte dagli incendi nel 2026 - la Repubblica",
       "summary": "La testata la Repubblica segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 130mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1709,7 +2052,7 @@
       "id": "PULSE-MEDIA-B5D97090EB9A02D3",
       "story_fingerprint": "b5d97090eb9a02d3d4938fc668543c5ef866be06d25b68386f3fa29f106db9b7",
       "published_at": "2026-11-02T15:45:01+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Oltre 40mila mozziconi raccolti in montagna tra Italia e Svizzera: più di 2mila volontari al lavoro per \"ripulire\" le cime. Rimossi in tutto circa 5200 chili di rifiuti",
       "reported_headline": "Oltre 40mila mozziconi raccolti in montagna tra Italia e Svizzera: più di 2mila volontari al lavoro per \"ripulire\" le cime. Rimossi in tutto circa 5200 chili di rifiuti - il Dolomiti",
       "summary": "La testata il Dolomiti segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 40mila, 2mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1775,7 +2118,7 @@
       "id": "PULSE-MEDIA-234EB8B533CA5BA7",
       "story_fingerprint": "234eb8b533ca5ba7e13ded92a803bcd1620d40219dadf6ade560eacd517bc093",
       "published_at": "2026-11-02T15:40:23+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Studenti con disabilità in Veneto, il 62,7% segue percorsi per il diploma, il 37,3% percorsi differenziati. I dati del monitoraggio PEI",
       "reported_headline": "Studenti con disabilità in Veneto, il 62,7% segue percorsi per il diploma, il 37,3% percorsi differenziati. I dati del monitoraggio PEI - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 62,7%, 37,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1843,7 +2186,7 @@
       "id": "PULSE-FE5A84D6640071DC",
       "story_fingerprint": "fe5a84d6640071dcfde5f991",
       "published_at": "2026-11-02T15:40:23+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 49,
       "patterns": [],
@@ -1941,7 +2284,7 @@
       "id": "PULSE-MEDIA-EFA1D7BE73EAE721",
       "story_fingerprint": "efa1d7be73eae72174e89627dccf9623b21d087cf2d0dbf5339f9bfe11257cb0",
       "published_at": "2026-11-02T15:23:06+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Mercato auto Italia, ottobre 2026 cresce del 4,8%: tutti i dati.",
       "reported_headline": "Mercato auto Italia, ottobre 2026 cresce del 4,8%: tutti i dati. - MotorBox",
       "summary": "La testata MotorBox segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati 4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1954,7 +2297,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia ambiente energia mobilità». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - statistiche Italia». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -2081,7 +2424,7 @@
       "id": "PULSE-MEDIA-182E9BE4667E612A",
       "story_fingerprint": "182e9be4667e612a043f1bc9a42e55af332410b0ab897e2de980d800c01047ec",
       "published_at": "2026-11-02T14:36:16+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Estate 2026, Adr in Italia a +6,2%. Rimini prima per occupazione upscale (86,3%)",
       "reported_headline": "Estate 2026, Adr in Italia a +6,2%. Rimini prima per occupazione upscale (86,3%) - Hotellerie Pambianconews",
       "summary": "La testata Hotellerie Pambianconews segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati +6,2%, 86,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2147,7 +2490,7 @@
       "id": "PULSE-203644F7BABECFC4",
       "story_fingerprint": "203644f7babecfc4cdeb08a8",
       "published_at": "2026-11-02T14:36:16+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "LAVORO",
       "pulse_score": 50,
       "patterns": [],
@@ -2447,7 +2790,7 @@
       "id": "PULSE-MEDIA-A79B18866D665EAF",
       "story_fingerprint": "a79b18866d665eaf52c0f279d35f859c9243ad95d5844b748802f51ee0c8b667",
       "published_at": "2026-11-02T11:10:29+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Inflazione percepita al 13,3%, il 52% degli italiani modifica i consumi",
       "reported_headline": "Inflazione percepita al 13,3%, il 52% degli italiani modifica i consumi - The Watcher Post",
       "summary": "La testata The Watcher Post segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 13,3%, 52%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2816,7 +3159,7 @@
       "id": "PULSE-MEDIA-619289EE1B7AF8DA",
       "story_fingerprint": "619289ee1b7af8daba798e4aa3b9a89242d7f56476d9a59b10897d05b607f919",
       "published_at": "2026-11-02T10:10:47+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Immigrazione, in Lombardia 1,26 milioni di stranieri residenti. A Milano sono il 15,4% della popolazione",
       "reported_headline": "Immigrazione, in Lombardia 1,26 milioni di stranieri residenti. A Milano sono il 15,4% della popolazione - Affaritaliani",
       "summary": "La testata Affaritaliani segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 1,26 milioni, 15,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2829,7 +3172,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Nord e Centro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -2885,7 +3228,7 @@
       "id": "PULSE-MEDIA-072B6EDAE21646EE",
       "story_fingerprint": "072b6edae21646ee5da4b8b829b6ad65764c28553c789ddc4c90e8aca02e0854",
       "published_at": "2026-11-02T10:03:59+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Scuola e futuro, solo il 41% dei genitori italiani pensa che prepari i figli alla vita fuori dall’aula. La media europea è del 45%, nel Regno Unito si arriva al 66%",
       "reported_headline": "Scuola e futuro, solo il 41% dei genitori italiani pensa che prepari i figli alla vita fuori dall’aula. La media europea è del 45%, nel Regno Unito si arriva al 66% - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 41%, 45%, 66%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3002,7 +3345,7 @@
       "id": "PULSE-MEDIA-337A006E11618650",
       "story_fingerprint": "337a006e116186507373495f9171fdaf1605a3f004f444ba2a1dd94878cdf852",
       "published_at": "2026-11-02T10:02:57+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Giovani italiani: il 95,6% si sente in salute ma nell’Ue un under 30 su due muore per incidente o autolesionismo",
       "reported_headline": "Giovani italiani: il 95,6% si sente in salute ma nell’Ue un under 30 su due muore per incidente o autolesionismo - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 95,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3064,7 +3407,7 @@
       "id": "PULSE-MEDIA-FA9F5C5683CA5911",
       "story_fingerprint": "fa9f5c5683ca5911a542f0ed7596d46f76cfd9b63ba1e421a6d65a252ef83a39",
       "published_at": "2026-11-02T09:51:00+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Prezzi al consumo ISTAT, stime preliminari: l’inflazione arriva al 5,4",
       "reported_headline": "Prezzi al consumo ISTAT, stime preliminari: l’inflazione arriva al 5,4 - Ruminantia",
       "summary": "La testata Ruminantia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3077,7 +3420,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Disuguaglianze e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -3126,7 +3469,7 @@
       "id": "PULSE-MEDIA-9C762695AB931405",
       "story_fingerprint": "9c762695ab93140542029ce9f185967d7f7619f7d694d5fc02780052cc958e2f",
       "published_at": "2026-11-02T09:44:44+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "L'inflazione percepita al 13%: famiglie italiane sotto pressione",
       "reported_headline": "L'inflazione percepita al 13%: famiglie italiane sotto pressione - Economy Magazine",
       "summary": "La testata Economy Magazine segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3254,7 +3597,7 @@
       "id": "PULSE-MEDIA-44113BDA17B2D8D2",
       "story_fingerprint": "44113bda17b2d8d21fd4b9ac8f0cd495e55824cbb84283e10c34c494f2fc9242",
       "published_at": "2026-11-02T09:25:02+00:00",
-      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Povertà toscana: 40% degli assistiti Caritas da 6 anni",
       "reported_headline": "Povertà toscana: 40% degli assistiti Caritas da 6 anni - OK!Valdisieve",
       "summary": "La testata OK!Valdisieve segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 40%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3318,7 +3661,7 @@
       "id": "PULSE-MEDIA-2A61FA820CEA611E",
       "story_fingerprint": "2a61fa820cea611e9e94b66482da74e93683c327404b36fb77239afa258d7d9f",
       "published_at": "2026-11-02T09:16:17+00:00",
-      "last_seen_at": "2026-11-03T09:00:45.136921+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Mele: Italia prima al mondo per export. Oltre 1 milione di tonnellate per 1,2 miliardi di euro",
       "reported_headline": "Mele: Italia prima al mondo per export. Oltre 1 milione di tonnellate per 1,2 miliardi di euro - Alimentando",
       "summary": "La testata Alimentando segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1,2 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3380,7 +3723,7 @@
       "id": "PULSE-MEDIA-C0E209386223E465",
       "story_fingerprint": "c0e209386223e465fc8df3ae06a2a6888a51f4f7611c85bfd5167803444660fc",
       "published_at": "2026-11-02T09:10:16+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Scuola, Foggia perde quasi 11mila studenti italiani in cinque anni: è tra le province più colpite",
       "reported_headline": "Scuola, Foggia perde quasi 11mila studenti italiani in cinque anni: è tra le province più colpite - l'Immediato",
       "summary": "La testata l'Immediato segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 11mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3393,7 +3736,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - salute scuola ambiente». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -3442,7 +3785,7 @@
       "id": "PULSE-MEDIA-91D8E673E6F3C79F",
       "story_fingerprint": "91d8e673e6f3c79f27341ce6a90e7cb73f32d1d7f8ad185607a59c4c3058f18a",
       "published_at": "2026-11-02T09:03:01+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Italia in stagflazione: Pil fermo, prezzi al 5,4%. Berlino invece riparte",
       "reported_headline": "Italia in stagflazione: Pil fermo, prezzi al 5,4%. Berlino invece riparte - LaChirico.it",
       "summary": "La testata LaChirico.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3698,7 +4041,7 @@
       "id": "PULSE-MEDIA-FD3E85FDD15A9391",
       "story_fingerprint": "fd3e85fdd15a9391516939d8a28a20d8a1ef87f2897224c76902d627dcc01057",
       "published_at": "2026-11-02T05:48:00+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Scuola, con la manovra 7 mila posti in meno: la colpa è del crollo delle nascite? Cosa rivela l'incrocio dei dati",
       "reported_headline": "Scuola, con la manovra 7 mila posti in meno: la colpa è del crollo delle nascite? Cosa rivela l'incrocio dei dati - Corriere Roma",
       "summary": "La testata Corriere Roma segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 7 mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3838,7 +4181,7 @@
       "id": "PULSE-MEDIA-D523CF1278835FA1",
       "story_fingerprint": "d523cf1278835fa1ae6172e4e24db3a17bfe43382fa0faeff1bcc892ca592d1a",
       "published_at": "2026-11-02T04:53:43+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Prezzi alle stelle: l'Istat dice 5%, gli italiani sentono il 13%. Chi ha ragione?",
       "reported_headline": "Prezzi alle stelle: l'Istat dice 5%, gli italiani sentono il 13%. Chi ha ragione? - La Legge per tutti",
       "summary": "La testata La Legge per tutti segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5%, 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3904,7 +4247,7 @@
       "id": "PULSE-MEDIA-4D86D6895717ABEC",
       "story_fingerprint": "4d86d6895717abecb76b8a050fa02f70545e7efbc52168d7de61cd6314e3b27b",
       "published_at": "2026-11-02T04:51:00+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Stranieri in Emilia-Romagna: più anziani e meno figli. Il 68% degli studenti nati in Italia",
       "reported_headline": "Stranieri in Emilia-Romagna: più anziani e meno figli. Il 68% degli studenti nati in Italia - ModenaToday",
       "summary": "La testata ModenaToday segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 68%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3968,7 +4311,7 @@
       "id": "PULSE-MEDIA-F60ABC43D6FC774B",
       "story_fingerprint": "f60abc43d6fc774ba7460047cdc2e2f3185843589e340a999a9d3c9d57e4e6ac",
       "published_at": "2026-11-02T03:45:05+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Rapporto Bes 2026: caldo persistente record, cresce la vulnerabilità dell’Italia",
       "reported_headline": "Rapporto Bes 2026: caldo persistente record, cresce la vulnerabilità dell’Italia - Assinews.it",
       "summary": "La testata Assinews.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4134,7 +4477,7 @@
       "id": "PULSE-MEDIA-7C22790EA420C8D6",
       "story_fingerprint": "7c22790ea420c8d62e9847c59200e2f2c501e954201b305c24e7463615336911",
       "published_at": "2026-11-01T18:04:05+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Inflazione reale al 5,4% ma gli italiani la percepiscono più del doppio (13,3%)",
       "reported_headline": "Inflazione reale al 5,4% ma gli italiani la percepiscono più del doppio (13,3%) - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4%, 13,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -12015,7 +12358,7 @@
       "id": "PULSE-MEDIA-78D593D520C29DA5",
       "story_fingerprint": "78d593d520c29da5028879a53a4365c0420f518d1f50024af2417989c0b4183b",
       "published_at": "2026-10-30T09:22:57+00:00",
-      "last_seen_at": "2026-11-03T11:56:52.099277+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "++ Istat, crescita acquisita del Pil 2026 invariata a 0,8% ++",
       "reported_headline": "++ Istat, crescita acquisita del Pil 2026 invariata a 0,8% ++ - La Gazzetta del Mezzogiorno",
       "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 0,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -27252,7 +27595,7 @@
       "id": "PULSE-MEDIA-6FC2EC3284C2ECBD",
       "story_fingerprint": "6fc2ec3284c2ecbd5ddebc0ed66233da2db80ea8ade6538251d243dcaec3b40e",
       "published_at": "2026-10-26T11:17:35+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali",
       "reported_headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
       "summary": "La testata Marcadoc segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 73 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -27316,7 +27659,7 @@
       "id": "PULSE-1EE9D48813E2AFCE",
       "story_fingerprint": "1ee9d48813e2afce8e3a2350",
       "published_at": "2026-10-26T11:17:35+00:00",
-      "last_seen_at": "2026-11-03T05:59:00.872408+00:00",
+      "last_seen_at": "2026-11-03T15:00:47.747513+00:00",
       "topic": "ALTRO",
       "pulse_score": 49,
       "patterns": [],
@@ -28824,24 +29167,28 @@
       "pulse_summary": "Il rapporto BES 2026 segnala progressi in 54 dei 132 indicatori confrontabili con l'anno precedente. Altri 55 restano stabili e 23 peggiorano. Il quadro nazionale rimane diseguale: Istat registra differenze persistenti tra Centro-Nord e Mezzogiorno.",
       "pulse_article_body": [
         {
-          "heading": "Il bilancio dei 132 indicatori",
-          "text": "Il miglioramento interessa 54 indicatori, pari a circa il 40,9% dei 132 per cui Istat dispone di un confronto con l'anno precedente. Per 55 indicatori la situazione è stabile, mentre 23 mostrano un peggioramento. I tre gruppi esauriscono i 132 casi confrontabili: il bilancio positivo non significa che ogni dimensione del benessere migliori."
+          "heading": "",
+          "text": "Ci sono numeri che suggeriscono un miglioramento e altri che impediscono di parlare di un Paese finalmente omogeneo. Il Rapporto sul benessere equo e sostenibile 2026 dell'Istat parte proprio da questa contraddizione: dei 132 indicatori confrontabili con l'anno precedente, 54 risultano in miglioramento, 55 non mostrano variazioni sufficienti a cambiare la valutazione e 23 peggiorano. È un bilancio più favorevole che sfavorevole, ma non una promozione generale. L'Italia avanza in alcune dimensioni della vita quotidiana mentre altre restano immobili o arretrano. La distinzione conta, perché il benessere non è una cifra unica: comprende condizioni economiche, salute, istruzione, ambiente, qualità dei servizi e relazioni sociali. Un cambiamento misurato in uno di questi ambiti non cancella le difficoltà degli altri."
         },
         {
-          "heading": "La distanza fra territori",
-          "text": "La distribuzione territoriale dei risultati resta disomogenea. Nel Nord e nel Centro quasi tutte le regioni superano la media italiana in almeno metà degli indicatori regionali; il Lazio costituisce un'eccezione. Nel Mezzogiorno, salvo l'Abruzzo, prevalgono indicatori sotto la media nazionale. È una differenza tra insiemi di indicatori, non una classifica uniforme dei comuni."
+          "heading": "",
+          "text": "La prima verifica è aritmetica, e serve a dare la giusta proporzione alla notizia. I 54 indicatori in miglioramento rappresentano circa il 40,9% dei 132 confrontabili; gli stabili sono circa il 41,7%, mentre quelli in peggioramento il 17,4%. Le tre quote sommano il totale dei confronti possibili, non l'intero sistema BES, che nella tredicesima edizione comprende 148 indicatori. Non tutti, infatti, dispongono degli stessi dati e degli stessi periodi per un confronto anno su anno. Dire che il benessere “migliora” non equivale dunque a sostenere che il 40,9% degli italiani stia meglio, né che il reddito individuale sia aumentato di quella percentuale. Qui l'unità statistica contata è l'indicatore, non la persona: due concetti che una lettura frettolosa rischia di confondere."
         },
         {
-          "heading": "Dove l'Italia è indietro rispetto all'Europa",
-          "text": "Sui 40 indicatori BES confrontabili con la media UE27, l'Italia registra risultati più favorevoli in 12 e meno favorevoli in 18. I maggiori punti di debolezza riguardano istruzione, lavoro e ricerca. La quota dei giovani NEET è del 13,3% contro l'11,0% dell'UE27, un divario di 2,3 punti percentuali."
+          "heading": "",
+          "text": "Il territorio introduce un'altra frattura nella storia. Nelle regioni del Nord e del Centro, con l'eccezione del Lazio, almeno metà degli indicatori regionali presenta risultati superiori alla media italiana. Nel Mezzogiorno, con l'eccezione dell'Abruzzo, prevalgono invece i risultati inferiori al riferimento nazionale. È la fotografia di un divario persistente, non la graduatoria di una città o di una famiglia. Alcuni domini, come la sicurezza e l'ambiente, mostrano distribuzioni più complesse del consueto schema Nord-Sud. Per questo sarebbe scorretto leggere il colore di una mappa regionale come un giudizio uniforme su tutti i servizi o su tutte le persone che abitano il territorio. Il rapporto invita a separare le singole dimensioni prima di trarre conclusioni sul benessere complessivo."
         },
         {
-          "heading": "Povertà: un dato diverso dal rischio relativo",
-          "text": "Il rapporto è stato ripreso dalla stampa anche per la condizione delle famiglie. Secondo il comunicato ISTAT sulla povertà assoluta nel 2025, le persone coinvolte sono circa 5,4 milioni. La povertà assoluta non va confusa con il rischio di povertà relativo utilizzato nei confronti europei."
+          "heading": "",
+          "text": "Il confronto europeo aiuta a misurare quanto sia relativo un progresso interno. Secondo la sintesi BES riportata nel dossier editoriale, fra i 40 indicatori confrontabili con la media dell'Unione europea, l'Italia ottiene risultati più favorevoli in 12 e meno favorevoli in 18. Un caso concreto è la quota di giovani che non studiano e non lavorano: 13,3% in Italia contro 11,0% nell'UE27, una distanza di 2,3 punti percentuali. Quel divario non va raccontato come una variazione del 2,3% e non permette, da solo, di individuare una causa. Mostra piuttosto perché per giudicare una condizione non basta sapere se un valore nazionale si muove: servono una popolazione di riferimento, una definizione comune e un termine di confronto appropriato."
         },
         {
-          "heading": "Come leggere i grafici",
-          "text": "Le colonne rappresentano il numero di indicatori in tre categorie di andamento, non valori percentuali né una serie temporale. Il periodo statistico prevalente è il 2025, mentre il rapporto è stato pubblicato il 26 ottobre 2026. L'analisi è originale PULSE e rimanda alle pubblicazioni ISTAT per metodologia e tabelle."
+          "heading": "",
+          "text": "Il tema economico rende la distinzione ancora più evidente. La pubblicazione Istat sulla povertà assoluta nel 2025 stima oltre 5,4 milioni di persone in questa condizione. È una misura specifica, costruita sulla capacità di sostenere la spesa per un insieme di beni e servizi essenziali secondo criteri statistici definiti, e non deve essere sovrapposta automaticamente agli indicatori europei di rischio di povertà. È possibile, quindi, osservare miglioramenti in diversi indicatori BES e avere contemporaneamente una quota significativa di famiglie in difficoltà. I due fatti non si annullano: raccontano dimensioni diverse dello stesso Paese. Il lettore dovrebbe portar via soprattutto questo: un indicatore sintetico aiuta a orientarsi, ma non può sostituire l'analisi delle condizioni reali e delle disuguaglianze."
+        },
+        {
+          "heading": "",
+          "text": "Per controllare il racconto, PULSE presenta una tabella con le tre categorie dei 132 indicatori confrontabili e un grafico a colonne costruito esattamente sugli stessi conteggi: 54, 55 e 23. Le colonne rappresentano numeri di indicatori, non quote di popolazione e neppure un andamento temporale. La fonte primaria è la nota Istat del 26 ottobre 2026 sul rapporto BES; per il riferimento alla povertà viene utilizzato il comunicato Istat del 15 ottobre 2026 relativo al 2025. La data in cui esce l'articolo è distinta dall'anno a cui si riferiscono le osservazioni. Il limite metodologico principale è esplicito: il bilancio di 132 indicatori consente di descrivere direzioni di cambiamento, non di assegnare automaticamente una causa a ciascuna variazione né di attribuire a tutti gli italiani lo stesso risultato."
         }
       ],
       "territories": [
@@ -28968,7 +29315,13 @@
         ],
         "source_url": "https://www.istat.it/comunicato-stampa/nota-stampa-rapporto-bes-edizione-2026/"
       },
-      "map_spec": null
+      "map_spec": null,
+      "editorial_format": "individually_edited_longform",
+      "editorial_quality": {
+        "editorial_quality_version": 1,
+        "passed": true,
+        "issues": []
+      }
     },
     {
       "id": "PULSE-C2307F0E2CD3D434",
