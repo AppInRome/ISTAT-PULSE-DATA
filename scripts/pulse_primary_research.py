@@ -14,10 +14,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from scripts.pulse_evidence import extract_url, fetch_bounded
-from scripts.pulse_evidence_adapters import discover_attachments
-from scripts.pulse_original_editorial import words
-from scripts.update_news_radar import multi_search
+try:
+    from scripts.pulse_evidence import extract_url, fetch_bounded
+    from scripts.pulse_evidence_adapters import discover_attachments
+    from scripts.pulse_original_editorial import words
+    from scripts.update_news_radar import multi_search
+except ModuleNotFoundError:
+    from pulse_evidence import extract_url, fetch_bounded
+    from pulse_evidence_adapters import discover_attachments
+    from pulse_original_editorial import words
+    from update_news_radar import multi_search
 
 ROOT = Path(__file__).resolve().parents[1]
 NEWS = ROOT / "data/news/articles.json"
