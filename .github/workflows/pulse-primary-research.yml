@@ -1,0 +1,44 @@
+name: PULSE – ricerca fonti primarie (solo dossier, nessuna pubblicazione)
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Numero massimo di notizie da esaminare (1–12)"
+        required: false
+        default: "8"
+  schedule:
+    - cron: "41 6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pulse-primary-research
+  cancel-in-progress: true
+
+jobs:
+  investigate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Dipendenze per documenti verificabili
+        run: |
+          python -m pip install --disable-pip-version-check 'beautifulsoup4<5' 'openpyxl<4' 'pypdf<7' 'pdfplumber<1' 'xlrd<3' 'odfpy<2'
+      - name: Test offline – sicurezza e provenienza
+        run: python -m unittest discover -s tests -p test_primary_research.py -v
+      - name: Esamina pubblicazioni e produce dossier senza alterare i feed
+        env:
+          LIMIT: ${{ github.event.inputs.limit || '8' }}
+        run: |
+          python scripts/pulse_primary_research.py --limit "$LIMIT" --output research-report.json
+      - name: Archivia il rapporto per revisione editoriale
+        uses: actions/upload-artifact@v4
+        with:
+          name: pulse-primary-research-report
+          path: research-report.json
+          retention-days: 14
