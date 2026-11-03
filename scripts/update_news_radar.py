@@ -76,11 +76,15 @@ GEO={"abruzzo","basilicata","calabria","campania","emilia-romagna","friuli-venez
 "palermo","bologna","firenze","genova","venezia","bari"}
 
 def fetch(url, timeout=12, max_bytes=700000):
-    # Python's Request requires ASCII percent-encoded URLs.
-    url=urllib.parse.quote(url, safe=":/?&=%#,+-._~@!$'()*;[]")
-    req=urllib.request.Request(url,headers={"User-Agent":UA,"Accept":"text/html,application/rss+xml,application/xml;q=0.9,*/*;q=0.5"})
-    with urllib.request.urlopen(req,timeout=timeout) as r:
-        return r.read(max_bytes),r.geturl(),r.headers.get("Content-Type","")
+    try:
+        from scripts.pulse_http_cache import request_cached, is_istat_sdmx
+    except ModuleNotFoundError:
+        from pulse_http_cache import request_cached, is_istat_sdmx
+    url=urllib.parse.quote(url, safe=':/?&=%#,+-._~@')
+    return request_cached(url, timeout=timeout, max_bytes=max_bytes,
+        ttl_seconds=86400 if is_istat_sdmx(url) else 1800,
+        headers={"User-Agent":UA, "Accept":"text/html,application/rss+xml,application/xml;q=0.9,*/*;q=0.5"})
+
 
 def load_json(path, default):
     try:return json.loads(path.read_text())
@@ -131,6 +135,13 @@ def article_probe(url, domains, hints):
         soup=BeautifulSoup(raw.decode("utf-8","ignore"),"html.parser")
         for tag in soup(["script","style","nav","footer","header","aside"]): tag.decompose()
         text=re.sub(r"\s+"," "," ".join(soup.stripped_strings))[:30000]
+        try:
+            from scripts.pulse_open_source_adapters import read_news_html
+        except ModuleNotFoundError:
+            from pulse_open_source_adapters import read_news_html
+        extracted=read_news_html(raw,final)
+        if len(extracted.get("research_context",""))>=150:
+            text=extracted["research_context"][:16000]
         links=[]
         for a in soup.find_all("a",href=True):
             h=urllib.parse.urljoin(final,a["href"]); dom=official_domain(canonical_host(h),domains)
@@ -1155,6 +1166,12 @@ def main():
             }
             # Original editorial copy: source verified, no reprint of the media headline.
             article=compose_verified(article,resolved)
+            if article.get("verification_tier")=="verified_comparable_series":
+                try:
+                    from scripts.pulse_ai_newsroom import attempt_ai_edition
+                except ModuleNotFoundError:
+                    from pulse_ai_newsroom import attempt_ai_edition
+                article=attempt_ai_edition(article)
             # Slow official-source verification may rediscover the same story
             # already upgraded by the automatic primary research pass.
             # Keep one stable media story instead of showing a duplicate card.
