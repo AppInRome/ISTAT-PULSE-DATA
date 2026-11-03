@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "principle": "Modelli di organizzazione del lavoro, non testi precompilati. Scegliere il modello in base all'angolo documentato e variare la struttura narrativa.",
+  "models": [
+    {
+      "id": "trend",
+      "label": "Cambiamento nel tempo",
+      "questions": [
+        "Qual è il valore nuovo?",
+        "È confrontabile con periodi precedenti?",
+        "Che andamento mostra la serie completa?",
+        "Esistono rotture metodologiche?"
+      ],
+      "evidence": [
+        "indicator",
+        "unit",
+        "territory",
+        "period",
+        "source_url",
+        "observations"
+      ],
+      "suggested_visual": "line chart per serie temporale omogenea; tabella sottostante",
+      "avoid": "Raccontare come causa una semplice variazione"
+    },
+    {
+      "id": "territory",
+      "label": "Divari territoriali",
+      "questions": [
+        "Quali territori sono confrontabili?",
+        "Esistono differenze di definizione o copertura?",
+        "Ci sono eccezioni alla tendenza generale?",
+        "Quali grandezze possono essere rapportate alla popolazione?"
+      ],
+      "evidence": [
+        "indicator",
+        "unit",
+        "territories",
+        "same_period",
+        "same_methodology",
+        "source_url"
+      ],
+      "suggested_visual": "barre comparabili o mappa su dati territoriali ufficiali",
+      "avoid": "Graduatorie senza anno e denominatore"
+    },
+    {
+      "id": "distribution",
+      "label": "Distribuzione e disuguaglianza",
+      "questions": [
+        "Che cosa misura la distribuzione?",
+        "Qual è il denominatore corretto?",
+        "Quanto pesa ciascuna categoria?",
+        "Quali gruppi sono sotto-rappresentati?"
+      ],
+      "evidence": [
+        "population",
+        "denominator",
+        "categories",
+        "unit",
+        "period",
+        "source_url"
+      ],
+      "suggested_visual": "barre per composizione con categorie esclusive",
+      "avoid": "Interpretare quota di indicatori come quota di persone"
+    },
+    {
+      "id": "benchmark",
+      "label": "Italia e confronto internazionale",
+      "questions": [
+        "Qual è il benchmark?",
+        "Definizioni e anni coincidono?",
+        "Differenza in punti e differenza relativa sono distinte?",
+        "Quali limiti del confronto emergono?"
+      ],
+      "evidence": [
+        "indicator",
+        "unit",
+        "reference_area",
+        "comparison_area",
+        "period",
+        "source_url"
+      ],
+      "suggested_visual": "due barre o dot plot con fonti e unità",
+      "avoid": "Confrontare anni o unità differenti"
+    },
+    {
+      "id": "release",
+      "label": "Nuovo rapporto ufficiale",
+      "questions": [
+        "Che cosa cambia rispetto al rapporto precedente?",
+        "Quali capitoli contengono valori verificati?",
+        "Quali risultati meritano il titolo?",
+        "Che cosa non può essere ancora quantificato?"
+      ],
+      "evidence": [
+        "document_title",
+        "source_published_at",
+        "data_reference_period",
+        "document_url",
+        "methodology"
+      ],
+      "suggested_visual": "solo grafici da tabelle effettivamente pubblicate",
+      "avoid": "Trattare la data del comunicato come il periodo statistico"
+    }
+  ],
+  "quality_dimensions": [
+    "accuratezza",
+    "originalità",
+    "specificità",
+    "attribuzione",
+    "interpretazione",
+    "contestualizzazione",
+    "leggibilità",
+    "non_distorzione_grafica"
+  ]
+}

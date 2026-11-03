@@ -16,21 +16,25 @@ DRAFT = {
     "editorial_review": {"reviewer": "Revisore Test", "source_sha256": "a"*64,
                           "source_location": "table:1:row:3"}
 }
-PARA = ("Questo paragrafo racconta una situazione documentata attraverso la serie ufficiale. "
-        "Il confronto fra i periodi deve rispettare la definizione dell'indicatore, "
-        "il territorio osservato e la metodologia dichiarata. "
-        "Una differenza tra due valori, da sola, non dimostra quali cause "
-        "abbiano determinato il cambiamento rilevato nel documento.")
+PARAGRAPHS = [
+    "Nel rapporto dimostrativo la prima osservazione del 2024 raggiunge il 12 per cento e rende possibile un punto di partenza. Non basta, tuttavia, per ricostruire le condizioni dei singoli cittadini: l'indicatore riguarda un aggregato definito dalla fonte e conserva i propri limiti di misurazione. Il valore deve essere accompagnato dalla descrizione del fenomeno rilevato.",
+    "La rilevazione successiva indica 13 per cento nel 2025. Fra i due anni la distanza è di un punto percentuale, non del tredici per cento, perché il confronto riguarda due quote omogenee. Nell'esempio non viene suggerita alcuna causa: la serie documenta il movimento osservato, non i meccanismi che potrebbero spiegarlo.",
+    "Il calendario è altrettanto importante dei numeri. La prima colonna si riferisce al 2024 e la seconda al 2025; la data in cui viene pubblicato un articolo non modifica il periodo a cui appartengono le osservazioni. Un titolo che chiamasse questo fenomeno un cambiamento di novembre confonderebbe il lavoro giornalistico con l'anno statistico.",
+    "Per leggere la differenza correttamente bisogna mantenere identico il denominatore, la popolazione osservata e l'unità di misura. Il confronto è appropriato soltanto quando la fonte conferma che le definizioni dei due anni sono compatibili. Se cambiasse il metodo di rilevazione, la crescita apparente potrebbe dipendere da quella rottura e richiederebbe un chiarimento.",
+    "Una crescita dell'indicatore non prova automaticamente che siano migliorate le condizioni economiche delle famiglie. Prima di adottare un'interpretazione sociale servirebbero ulteriori variabili, disaggregazioni per territorio e informazioni sulla distribuzione degli esiti. Il dato aggregato riassume una misura, ma può nascondere situazioni differenti tra gruppi della popolazione.",
+    "La visualizzazione serve a mettere in relazione i due valori, non a enfatizzare un cambiamento piccolo. Una coppia di colonne confrontabili mostra i periodi e le quote effettivamente documentate: una scala sbagliata potrebbe amplificare la distanza fra le due misure. La tabella riporta gli stessi numeri con le etichette originali della fonte.",
+    "Il documento originale resta il riferimento per valutare la qualità della conclusione. PULSE non ricava dati da un titolo giornalistico e non attribuisce a una testata la responsabilità di un confronto ricostruito altrove. Tutti i passaggi, dalla verifica del documento alla scelta degli indicatori, devono restare riconoscibili anche dopo la pubblicazione del pezzo.",
+    "Il risultato finale è dunque circoscritto: nell'esempio di test un indicatore passa dal dodici al tredici per cento nell'arco di un anno. Questa informazione è utile soltanto se spiegata insieme a definizione, limiti e fonti, evitando di trasformarla in un racconto di successo o di crisi senza elementi sufficienti."
+]
 EDIT = {
     "article_id": "PULSE-MEDIA-EXAMPLE", "decision": "publish",
     "reviewer": "Revisore Test", "copy_editor": "Redattore Test",
     "approved_at": "2026-11-03T13:00:00+00:00",
-    "headline": "I numeri dell'economia nei dati ufficiali del biennio",
-    "lead": "Questa è un'introduzione analitica sufficientemente ampia per inquadrare il dato ufficiale, senza ricavare conclusioni dal solo titolo di stampa.",
-    "paragraphs": [PARA + f" Approfondimento documentato {i}." for i in range(8)],
+    "headline": "Un indicatore economico sale di un punto fra i due anni",
+    "lead": "Nel dataset dimostrativo un indicatore passa dal 12 al 13 per cento tra il 2024 e il 2025. Il confronto è illustrativo e serve a verificare il controllo editoriale del sistema.",
+    "paragraphs": PARAGRAPHS,
     "independent_verification_note": "Confronto effettuato sulla medesima tabella ufficiale, indicatore, unità e periodi."
 }
-
 
 class PublisherTests(unittest.TestCase):
     def test_publish_with_reviewer_preserves_source_and_date(self):
