@@ -22,14 +22,15 @@ per ogni articolo e non richiede una nuova APK. Il codice è in
    localizzazione della riga, SHA256 del documento e un numero del titolo
    o dell'estratto che coincide con un valore ufficiale. Anche indicatore,
    eventuali anni citati e unità percentuale devono essere compatibili.
-6. Da questi **stessi valori** vengono generati titolo e analisi originale
+6. Il controllo di qualità editoriale respinge testi ripetitivi, prefabbricati, troppo brevi o senza riferimenti numerici al grafico.
+7. Da questi **stessi valori** vengono generati titolo e analisi originale
    basata sui confronti, grafico e tabella. Le fonti rimangono consultabili,
    con una distinzione esplicita tra verifica strutturale automatica e
    revisione editoriale umana.
-7. Si mantiene l'ID e la data della notizia, senza ricreare artificialmente
+8. Si mantiene l'ID e la data della notizia, senza ricreare artificialmente
    la notizia in OGGI. Se manca una verifica, rimane un breve di stampa
    attribuito, senza grafici o tabelle inventati.
-8. I reportage scritti e approvati individualmente prevalgono sempre
+9. I reportage scritti e approvati individualmente prevalgono sempre
    sulle analisi automatiche; la comparsa di un RSS non cancella i pezzi
    già verificati.
 
