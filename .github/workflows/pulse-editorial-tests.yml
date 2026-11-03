@@ -39,6 +39,7 @@ jobs:
           python -m unittest discover -s tests -p test_editorial_publish.py -v
           python -m unittest discover -s tests -p test_editorial_quality.py -v
           python -m unittest discover -s tests -p test_auto_promotion.py -v
+          python -m unittest discover -s tests -p test_data_newsroom_components.py -v
           python -m unittest discover -s tests -p test_quantity_evidence.py -v
           python -m unittest discover -s tests -p test_radar_coverage.py -v
           python -m unittest discover -s tests -p test_media_radar.py -v
