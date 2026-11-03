@@ -994,6 +994,7 @@ def main():
     # retries a bounded number of unverified reports, without user intervention.
     # Only exact matching primary-source observations can generate a PULSE chart,
     # table and original quantitative analysis. Others retain a press attribution.
+    auto_report = {"attempted": 0, "promoted": 0, "pending": 0}
     if not runtime_exceeded():
         try:
             from scripts.pulse_auto_promotion import run_pending_research
@@ -1154,6 +1155,16 @@ def main():
             }
             # Original editorial copy: source verified, no reprint of the media headline.
             article=compose_verified(article,resolved)
+            # Slow official-source verification may rediscover the same story
+            # already upgraded by the automatic primary research pass.
+            # Keep one stable media story instead of showing a duplicate card.
+            duplicate_auto = any(
+                previous.get("origin_kind") == "pulse_primary_automatic"
+                and (previous.get("discovery") or {}).get("original_url") == item.get("url")
+                for previous in by_id.values()
+            )
+            if duplicate_auto:
+                continue
             by_id[aid]=article
 
     if runtime_exceeded():
@@ -1172,6 +1183,10 @@ def main():
         from pulse_feature_writer import longform_sections
     enriched_existing = 0
     for article in by_id.values():
+        # Preserve the exact editorial classification and prose of articles
+        # upgraded automatically or written and approved by the newsroom.
+        if article.get("editorial_format") in ("automated_verified_analysis", "individually_edited_longform"):
+            continue
         if (article.get("publication_status") != "published" or
                 article.get("verification_tier") != "verified_comparable_series"):
             continue
@@ -1282,6 +1297,7 @@ def main():
         "discovery_feeds_reached":sum(1 for x in candidates if x.get("status")=="radar_fetched"),
         "discovery_feeds_failed":sum(1 for x in candidates if x.get("status")=="radar_error"),
         "articles_pending_research":sum(1 for a in arts if a.get("publication_status")=="quarantined"),
+        "automatic_primary_research":auto_report,
         "daily":by_day,
         "note":"Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."
     }
