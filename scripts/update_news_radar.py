@@ -132,7 +132,16 @@ def article_probe(url, domains, hints):
         if "html" not in ct.lower(): return {"final_url":final,"text":"","official_links":[],"hint_domains":[]}
         soup=BeautifulSoup(raw.decode("utf-8","ignore"),"html.parser")
         for tag in soup(["script","style","nav","footer","header","aside"]): tag.decompose()
-        text=re.sub(r"\s+"," "," ".join(soup.stripped_strings))[:30000]
+        text=re.sub(r"\\s+"," "," ".join(soup.stripped_strings))[:30000]
+        # Trafilatura reads the *whole* news article for research context rather
+        # than trusting an RSS headline or boilerplate HTML surrounding the story.
+        try:
+            from scripts.pulse_open_source_adapters import read_news_html
+        except ModuleNotFoundError:
+            from pulse_open_source_adapters import read_news_html
+        extracted=read_news_html(raw,final)
+        if len(extracted.get("research_context",""))>=150:
+            text=extracted["research_context"][:16000]
         links=[]
         for a in soup.find_all("a",href=True):
             h=urllib.parse.urljoin(final,a["href"]); dom=official_domain(canonical_host(h),domains)
