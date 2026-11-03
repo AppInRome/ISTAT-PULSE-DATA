@@ -71,6 +71,14 @@ def promote_media_brief(article, dossier):
             continue
         # The source and reported unit must agree; a '5%' headline cannot be
         # matched to an unrelated 5-euro or 5-person table value.
+        # A local headline cannot inherit a national data row: require an
+        # explicit matching territorial dimension for subnational news.
+        named_territories = {
+            str(place).casefold() for place in (article.get("territories") or [])
+            if str(place).casefold() not in ("", "italia")
+        }
+        if named_territories and str(record.get("territory") or "").casefold() not in named_territories:
+            continue
         reported_claims = article.get("statistical_claims") or []
         if any("%" in str(c.get("raw_value") or "") for c in reported_claims
                if isinstance(c, dict)) and record.get("unit") != "%":
