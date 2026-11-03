@@ -136,6 +136,11 @@ def compose_verified(article,resolved):
             "single_observation":len(p)==1,
             "data":[{"period":x["period"],"value":x["value"]} for x in p]
         }
+        try:
+            from scripts.pulse_open_source_adapters import vega_lite_from_verified_spec
+        except ModuleNotFoundError:
+            from pulse_open_source_adapters import vega_lite_from_verified_spec
+        result["vega_lite_spec"] = vega_lite_from_verified_spec(result["chart_spec"])
         result["table_spec"]={
             "status":"verified",
             "columns":["Periodo",indicator,"Unità"],
