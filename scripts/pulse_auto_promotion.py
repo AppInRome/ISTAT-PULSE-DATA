@@ -69,6 +69,19 @@ def promote_media_brief(article, dossier):
         observations = record.get("observations") or []
         if len(observations) < 2 or len(observations) > 30:
             continue
+        # The source and reported unit must agree; a '5%' headline cannot be
+        # matched to an unrelated 5-euro or 5-person table value.
+        reported_claims = article.get("statistical_claims") or []
+        if any("%" in str(c.get("raw_value") or "") for c in reported_claims
+               if isinstance(c, dict)) and record.get("unit") != "%":
+            continue
+        # When the headline explicitly names a reference year, that year must
+        # actually occur in the extracted time series.
+        headline_years = set(re.findall(r"(?<!\\d)(?:19|20)\\d{2}(?!\\d)", headline))
+        source_years = {str(x.get("period"))[:4] for x in observations
+                        if isinstance(x, dict)}
+        if headline_years and not (headline_years & source_years):
+            continue
         # Hard gate: at least one numeric claim reported by the newspaper must
         # agree with an observation in the actual, named primary-source row.
         try:
