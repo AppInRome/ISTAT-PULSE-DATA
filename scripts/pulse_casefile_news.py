@@ -36,6 +36,17 @@ def _validate(case: dict, now: datetime) -> None:
         raise ValueError("Chart values do not reconcile with official total")
     if not case.get("body") or not case.get("summary"):
         raise ValueError("Casefile missing independent PULSE narrative")
+    if case.get("editorial_format") == "individually_edited_longform":
+        try:
+            from scripts.pulse_editorial_quality import assess_story
+        except ModuleNotFoundError:
+            from pulse_editorial_quality import assess_story
+        paragraphs = [item.get("text", "") for item in case["body"] if isinstance(item, dict)]
+        chart_data = [{"value": pair[1]} for pair in values]
+        quality = assess_story(case.get("headline", ""), case["summary"], paragraphs, chart_data)
+        if not quality["passed"]:
+            raise ValueError("Casefile editorial quality failed: " + ",".join(quality["issues"]))
+        case["editorial_quality"] = quality
 
 
 def add_verified_casefiles(by_id: dict, casefile_path: Path, now: datetime) -> int:
@@ -58,6 +69,8 @@ def add_verified_casefiles(by_id: dict, casefile_path: Path, now: datetime) -> i
                 existing["summary"] = c["summary"]
                 existing["pulse_summary"] = c["summary"]
                 existing["editorial_format"] = c.get("editorial_format", "source_reviewed_casefile")
+                if c.get("editorial_quality"):
+                    existing["editorial_quality"] = c["editorial_quality"]
             continue
         original=c["statistical_primary"]
         publisher="istat.it"
@@ -86,6 +99,7 @@ def add_verified_casefiles(by_id: dict, casefile_path: Path, now: datetime) -> i
             "pulse_summary":c["summary"],
             "pulse_article_body":c["body"],
             "editorial_format":c.get("editorial_format","source_reviewed_casefile"),
+            "editorial_quality":c.get("editorial_quality"),
             "territories":["italia"],
             "patterns":[],
             "sources":[
