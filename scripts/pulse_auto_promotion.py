@@ -121,6 +121,19 @@ def promote_media_brief(article, dossier):
                 or (promoted.get("chart_spec") or {}).get("status") != "verified"
                 or (promoted.get("table_spec") or {}).get("status") != "verified"):
             continue
+        try:
+            from scripts.pulse_editorial_quality import assess_story
+        except ModuleNotFoundError:
+            from pulse_editorial_quality import assess_story
+        quality = assess_story(
+            promoted.get("headline", ""), promoted.get("summary", ""),
+            [p.get("text", "") for p in promoted.get("pulse_article_body", [])
+             if isinstance(p, dict)],
+            (promoted.get("chart_spec") or {}).get("data", [])
+        )
+        if not quality["passed"]:
+            continue
+        promoted["editorial_quality"] = quality
         promoted["publication_status"] = "published"
         promoted["editorial_status"] = "verified_primary_match"
         promoted["origin_kind"] = "pulse_primary_automatic"
