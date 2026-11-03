@@ -2,7 +2,7 @@
 import unittest
 
 from scripts.pulse_editorial_quality import assess_story
-from tests.test_editorial_publish import EDIT, DRAFT
+from test_editorial_publish import EDIT, DRAFT
 
 class QualityTests(unittest.TestCase):
     def test_varied_provenance_grounded_story(self):
