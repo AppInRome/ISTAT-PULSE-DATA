@@ -49,15 +49,17 @@ def validate_source_url(url):
 
 def fetch_bounded(url, timeout=12):
     validate_source_url(url)
-    req = Request(url, headers={"User-Agent": "ISTAT-PULSE-Research/1.0"})
-    with urlopen(req, timeout=timeout) as response:
-        final_url = response.geturl()
-        validate_source_url(final_url)
-        data = response.read(MAX_BYTES + 1)
-        if len(data) > MAX_BYTES:
-            raise ValueError("Document exceeds bounded extraction limit")
-        return data, response.headers.get("Content-Type", ""), final_url
-
+    try:
+        from scripts.pulse_http_cache import request_cached, is_istat_sdmx
+    except ModuleNotFoundError:
+        from pulse_http_cache import request_cached, is_istat_sdmx
+    data, final_url, content_type = request_cached(
+        url, timeout=timeout, max_bytes=MAX_BYTES,
+        ttl_seconds=86400 if is_istat_sdmx(url) else 21600,
+        headers={"User-Agent": "ISTAT-PULSE-Research/2.0"}
+    )
+    validate_source_url(final_url)
+    return data, content_type, final_url
 
 def matrix_evidence(rows, source_url, source_hash, location, unit_hint=""):
     """Require strict rectangular rows, explicitly named percentage unit and two year columns."""
