@@ -77,12 +77,17 @@ GEO={"abruzzo","basilicata","calabria","campania","emilia-romagna","friuli-venez
 
 def fetch(url, timeout=12, max_bytes=700000):
     # Shared cache and strict quota for official ISTAT SDMX endpoints.
-    # Regular journalism pages use a short TTL; official SDMX data stay longer.
     try:
         from scripts.pulse_http_cache import request_cached, is_istat_sdmx
     except ModuleNotFoundError:
         from pulse_http_cache import request_cached, is_istat_sdmx
-    url=urllib.parse.quote(url, safe=":/?&=%#,+-._~@!
+    url=urllib.parse.quote(url, safe=':/?&=%#,+-._~@')
+    ttl=86400 if is_istat_sdmx(url) else 1800
+    return request_cached(
+        url,timeout=timeout,max_bytes=max_bytes,ttl_seconds=ttl,
+        headers={"User-Agent":UA,
+                 "Accept":"text/html,application/rss+xml,application/xml;q=0.9,*/*;q=0.5"})
+
 
 def load_json(path, default):
     try:return json.loads(path.read_text())
