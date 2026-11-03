@@ -57,6 +57,12 @@ class AutoPromotionTests(unittest.TestCase):
             with self.subTest(record=record):
                 self.assertIsNone(promote_media_brief(dict(ARTICLE), dossier(record)))
 
+    def test_local_story_requires_explicit_matching_geography(self):
+        local_article = {**ARTICLE, "territories": ["lazio"]}
+        self.assertIsNone(promote_media_brief(local_article, dossier()))
+        local_row = {**RECORD, "territory": "lazio"}
+        self.assertIsNotNone(promote_media_brief(local_article, dossier(local_row)))
+
     def test_year_not_a_numeric_claim(self):
         self.assertEqual(reported_values({**ARTICLE, "statistical_claims": [
             {"raw_value": "2025"}]}), set())
