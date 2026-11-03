@@ -67,6 +67,13 @@ def validate_feature(draft, edited):
         raise ValueError("duplicate_paragraphs")
     if not edited.get("independent_verification_note") or len(str(edited["independent_verification_note"])) < 60:
         raise ValueError("missing_independent_verification_note")
+    try:
+        from scripts.pulse_editorial_quality import assess_story
+    except ModuleNotFoundError:
+        from pulse_editorial_quality import assess_story
+    audit = assess_story(title, lead, paragraphs, chart.get("data", []))
+    if not audit["passed"]:
+        raise ValueError("editorial_quality_failed:" + ",".join(audit["issues"]))
     approved = dict(draft)
     approved["headline"] = title
     approved["pulse_title"] = title
@@ -77,6 +84,7 @@ def validate_feature(draft, edited):
     approved["publication_status"] = "published"
     approved["editorial_status"] = "verified"
     approved["editorial_format"] = "individually_edited_longform"
+    approved["editorial_quality"] = audit
     approved["byline"] = "Redazione PULSE"
     approved["editorial_review"] = {**review, "ready_for_publication": True,
                                    "copy_editor": str(edited["copy_editor"]),
