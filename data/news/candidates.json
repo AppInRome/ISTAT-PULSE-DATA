@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T11:59:48.127321+00:00",
+  "generated_at": "2026-11-04T15:00:17.132105+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
@@ -84,17 +84,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 17
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 12
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 31
     },
     {
       "radar": "Repubblica Economia",
@@ -134,17 +134,17 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 17
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -154,7 +154,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -199,12 +199,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 12
+      "items_fetched": 13
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -214,12 +214,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 37
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 57
+      "items_fetched": 28
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -254,7 +254,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "AGI - Notizie",
@@ -289,7 +289,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 13
+      "items_fetched": 12
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -319,12 +319,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 24
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -367,29 +367,10 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVzZBck1sYmRfdXYwZndEemFGLTBsMFoxQmtGbXRoYkxPdTdmOFIzQVBQVnRiYjBoMUZEc1RQVzU1a0FCVlNwYTZtN1pEZUhYQk5sR0NhRHRIa0lMS2dFVlk2Q0dHSVBfVGpiLUZoRjgyNjRqNWdSWFlwcFhYak9CbGdPLWlvam94TzRWLVNfbmtrR2U1TDVUY3hxT2lNTXRXd0EzZVBoN283T0VFdGRxTFN6LTgzeGt1MDhUVDMyXzlsRjlLVllScDU4WmRxQ1gwaWtlUDdJR3RLLUpKcWJwU2haS3RKWk1YZWlhUEFORWQ3SHM?oc=5",
-      "discovery_title": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud - ANSA",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
-      "score_discovery": 49,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "2025 ",
-        "13,3%",
-        "2025 ",
-        "13,3%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
       "discovery_title": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» - Il Sole 24 ORE",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -407,17 +388,19 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · locali · gruppo 18",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
-      "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
-      "score_discovery": 49,
-      "topic": "AMBIENTE",
+      "radar": "Google News - statistiche Italia",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMHg3Wi1qcS1qdFhsYVZhUDZpbjFNMjcwVnY4QUZ6R1hDSDZpUUJUMWVCdHhCR2RLbEN4aVlHWE95bS1UcFN5dXRFZWFlN1RVRFJmM1lZREJaSjI1a2RaeGZ1VXJlMkZ5dzFCYjVFZ1hnNUN6Qk5VbnlvbV9pczB0ekJDQTNaZ2F4LW9NaHBVWlM0RzJyalE2dUFDcWI5b3oyck5pN1lHTE9IRWdDTkpKN0hrbnE4RE1EQlcyRmRlZXNhNFFHLXFzQUxKZFlPa1hkT3FrQUQ3UExXMFV3VnhSXw?oc=5",
+      "discovery_title": "Costo del gas +9%, prezzo più alto di sempre in Italia? Tutti gli aumenti dal record del 2022 a ottobre 2026 - Affaritaliani",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
+      "score_discovery": 65,
+      "topic": "ENERGIA",
       "numbers_detected": [
-        "2024 ",
-        "36,4 milioni",
-        "2024 ",
-        "36,4 milioni"
+        "+9%",
+        "2022 ",
+        "2026 ",
+        "+9%",
+        "2022 ",
+        "2026 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -426,10 +409,71 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UbGZNNy13N0tDbnJ4SVVXTEsydzNiQUU2TThXOEFrTE1fSElTNmlOcGZjLVFuNnl0cDBETlBCcTMtOVltTXk0VU1BdDU4Q0NIM0djSmZLdUpJcEowUnY2SllEVC12YTdPdWVTOHdmTGZkRFE?oc=5",
+      "discovery_title": "Inflazione eurozona al 4% a ottobre: l'Italia sale al 5,6%, il balzo più alto dell'area euro - Capitalist.it",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
+      "score_discovery": 54,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "4%",
+        "5,6%",
+        "4%",
+        "5,6%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.bancaditalia.it/pubblicazioni/proiezioni-macroeconomiche/index.html",
+        "domain": "bancaditalia.it",
+        "matched_numbers": [
+          "4%",
+          "4%"
+        ],
+        "matched_non_year_numbers": [
+          "4%",
+          "4%"
+        ],
+        "matched_keywords": [
+          "ottobre",
+          "alto",
+          "dell",
+          "area"
+        ],
+        "verification_score": 87,
+        "text_excerpt": "Banca d'Italia - Proiezioni macroeconomiche per l'Italia Vai al contenuto principale Apri menu di navigazione Home page Menu Chiudi IT EN Go to english version Chi siamo Chi siamo La Banca d'Italia è la banca centrale della Repubblica italiana e persegue finalità d'interesse generale nel settore monetario e finanziario. È parte dell'Eurosistema, composto dalle banche centrali nazionali dell'area euro e dalla Banca centrale europea. Vai alla pagina Chi siamo Visite a Palazzo Koch (si apre in una nuova finestra) In questa sezione Storia Funzioni e governance Organizzazione Eurosistema Personale Lavorare in Banca d'Italia La Banca d'Italia e la sostenibilità ambientale e sociale La Banca d'Italia per la cybersicurezza Etica e prevenzione corruzione Patrimonio immobiliare della Banca d'Italia Archivio storico Biblioteca Bilancio e situazioni contabili mensili Procedimenti amministrativi e di",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "mef.gov.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"inflazione eurozona ottobre sale balzo alto\" 4% 5,6% 4%",
+            "results": 6
+          },
+          {
+            "stage": "domain_search",
+            "domain": "bancaditalia.it",
+            "query": "site:bancaditalia.it \"inflazione eurozona ottobre sale balzo alto\" 4% 5,6% 4%",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "mef.gov.it",
+            "query": "site:mef.gov.it \"inflazione eurozona ottobre sale balzo alto\" 4% 5,6% 4%",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPUDI1TmhSel9EWnE0ZXJhRnJ5bE1IbTdqdThUM005ME1Pb3MzRzQ0T204RldsWTJfTDYtVi1aNk1ncEh1WlE1ZTRTZEhlRjZJYksyMjRRTmlmWko0aDktTTJ1NWQzN1RZa2U0dGIxTmxSNkJDbVlaSk9TV2pyU3VGYVdaN2RIWUUzV1BzM1VrQmdXaktDZWhOMEgxVWFkOS1TTnA2SHdnYjhKSVpxQWxmbE5tVlI2dU9EN25zV3A0UW82MjI3T3BoUjhxZ1RGZW5mS2hYU0stTEhDVHJZamVnTGxNUi1jMXJDSVBzOHozV0F5X0xPaGJxcERNYUMxQnhiUlBvMXJ0bDc4b2Fla1lVMC1jcWZmMC1tLTg0dWFyZjBRN0RjdUREcGVvenNheURzTGpVcVFRMW5GOHl6M1E?oc=5",
       "discovery_title": "Studenti stranieri in classe: Cremona seconda in Lombardia e settima in Italia con quasi il 22%. Dal 2019 aumentati del 17%, mentre gli studenti con cittadinanza italiana sono diminuiti del 7%. - Cremona Sera",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -452,7 +496,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFBWMVpQSDlJT3RDOGdMZHNQWVE4bFItcWZINjlvcF9hZC1keUtvc1RZU3psV29JRGhVTWtlYm5kUWJXcDREaWZsNjhYbWE0UzdlQXpuZlkxYlZ2QnBFbzNlU3dUWVJIT0cwRkljc2U5LUR2aXd4aGFTcUU0WmtPT1h1ckVmNWJvWEdLLTRoQWpRLUl6YWNRSDRR?oc=5",
       "discovery_title": "Natalità in Italia 2025: fecondità a 1,14, nascite in calo del 3,8% | Dati Istat - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 65,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -470,31 +514,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE Italia - dati di regioni province comuni",
-      "discovery_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT1hnN3Q5dG5PRG1fQ1RkeFM2XzctMk9pZnl6dllTaHhUcEZFdEE1enVhUHhCajc5YkduOEdBdWdPSE9TTkZwZ3kyR0FyNTJfa2c3NWpab0RNenNJQ0lyVWpOUUJ1dzFCb0R4RFl6LXVLNTJVTmNhZUNVVzdJMWJDWnV0eXBIVEQxMUl6bmZxbXpTc3RIZXpVaEQ5UjhPSEJySGJtSW5nemNuOEtxX2sxLV9iOHpzZw?oc=5",
-      "discovery_title": "Dati Eurostat 2019-2024, l'Abruzzo cresce del 7,6%. Santangelo: \"Ora la crescita diventi benessere\" - AbruzzoLive",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
-      "score_discovery": 60,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "2019",
-        "2024",
-        "7,6%",
-        "2019",
-        "2024",
-        "7,6%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
       "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -559,7 +582,7 @@
       "radar": "CNR - Notizie ufficiali",
       "discovery_url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
       "discovery_title": "I Data Steward del CNR si incontrano a Roma il 1Â° e 2 dicembre",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -619,10 +642,29 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
+      "radar": "PULSE 80 testate · locali · gruppo 18",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
+      "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
+      "score_discovery": 49,
+      "topic": "AMBIENTE",
+      "numbers_detected": [
+        "2024 ",
+        "36,4 milioni",
+        "2024 ",
+        "36,4 milioni"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
       "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -675,48 +717,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQb21ZNm1GbmtrY2ozSWgycFk5QTZjcFIwYnRwMWpkUXBxZlo4VWx1VnRadllBRllfMVRmcHgyQ2hkMl8xMEZaSWFSdzJGS1ktTjhqSzBDbEotaUxQRkVqT1BsVGgxRjhPTW1zLTZaWWQzQlhqdkQ5Z3doamNydF9fWDBybTlCVjgwX1hUNlR1VTdTUUlFOFNfRUdlTzBPQjdfcE5zTW5xbWJuUl9KWXh3S2ludVA1UExNY3BsZGVtbVcxTWpMb1o5Tk1KMm5EaWZwZnNqLXBhUFlIdTNtOXR3VjFVamZldjNIY2V5dC1IbUpHc2psa212QlF2ZlXSAfwBQVVfeXFMUG9tWTZtRm5ra2NqM0loMnBZOUE2Y3BSMGJ0cDFqZFFwcWZaOFVsdVZ0WnZZQUZZXzFUZnB4MkNoZDJfMTBGWklhUncyRktZLU44akswQ2xKLWlMUEZFak9QbFRoMUY4T01tcy02WllkM0JYanZEOWd3aGpjcnRfX1gwcm05QlY4MF9YVDZUdVU3U1FJRThTX0VHZU8wT0I3X3BOc01ucW1iblJfSll4d0tpbnVQNVBMTWNwbGRlbW1XMU1qTG9aOU5NSjJuRGlmcGZzai1wYVBZSHUzbTl0d1YxVWpmZXYzSGNleXQtSG1KR3NqbGttdkJRdmZV?oc=5",
-      "discovery_title": "Mercato immobiliare, Calabria sempre più a buon mercato: prezzi delle case in calo del 3%, appena 871 euro al metro quadrato · LaC News24 - LaC News24",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
-      "score_discovery": 49,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "3%",
-        "871 ",
-        "3%",
-        "871 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
-      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
-      "score_discovery": 49,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "73 milioni",
-        "2024 ",
-        "73 milioni",
-        "2024 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "CNR - Notizie ufficiali",
       "discovery_url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
       "discovery_title": "Al via le iscrizioni alla 9Âª edizione della Scuola TEM \"Pier Giorgio Merli\"",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
       "score_discovery": 50,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -774,19 +778,17 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Italia ambiente energia mobilità",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLWRnNGhwT2ROU2ktb05rcGpqbWxYbE9IYlVELUlXbDV2RVFTckZpUm4zVGJGYW9lczI0RXhsSTYtMUo0cFdZdldYb2dNSW56V0YyWmFNdW9SRDVQNE5WWFZXc3BOS1E0Q0pNX013OENmNWY3QzlWZWN6VHFXOG90dzNFdTByak03c25TN0x3OVRFOXhaUHNMQUJoaHVOSnlZcUJLZkkzOVFodw?oc=5",
-      "discovery_title": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi - missionline",
-      "detected_at": "2026-11-04T11:59:48.127321+00:00",
-      "score_discovery": 45,
-      "topic": "MOBILITA",
+      "radar": "PULSE 80 testate · agenzie · gruppo 06",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVzZBck1sYmRfdXYwZndEemFGLTBsMFoxQmtGbXRoYkxPdTdmOFIzQVBQVnRiYjBoMUZEc1RQVzU1a0FCVlNwYTZtN1pEZUhYQk5sR0NhRHRIa0lMS2dFVlk2Q0dHSVBfVGpiLUZoRjgyNjRqNWdSWFlwcFhYak9CbGdPLWlvam94TzRWLVNfbmtrR2U1TDVUY3hxT2lNTXRXd0EzZVBoN283T0VFdGRxTFN6LTgzeGt1MDhUVDMyXzlsRjlLVllScDU4WmRxQ1gwaWtlUDdJR3RLLUpKcWJwU2haS3RKWk1YZWlhUEFORWQ3SHM?oc=5",
+      "discovery_title": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud - ANSA",
+      "detected_at": "2026-11-04T15:00:17.132105+00:00",
+      "score_discovery": 49,
+      "topic": "ALTRO",
       "numbers_detected": [
-        "2026 ",
-        "+4,7%",
-        "-10,5%",
-        "2026 ",
-        "+4,7%",
-        "-10,5%"
+        "2025 ",
+        "13,3%",
+        "2025 ",
+        "13,3%"
       ],
       "official_links": [],
       "official_domain_hints": [],
