@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T17:57:26.994877+00:00",
+  "generated_at": "2026-11-04T21:00:37.806297+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
@@ -84,17 +84,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 29
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 13
+      "items_fetched": 12
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 30
     },
     {
       "radar": "Repubblica Economia",
@@ -134,22 +134,22 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 25
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 34
+      "items_fetched": 39
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -199,12 +199,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 14
+      "items_fetched": 13
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -219,7 +219,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -289,7 +289,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 16
+      "items_fetched": 17
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -319,12 +319,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 22
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -348,18 +348,18 @@
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 10
+      "status": "radar_error",
+      "error": "HTTP Error 500: Internal Server Error"
     },
     {
       "radar": "ISTAT - Comunicati stampa ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 10
+      "status": "radar_error",
+      "error": "HTTP Error 500: Internal Server Error"
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
       "discovery_title": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» - Il Sole 24 ORE",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -388,69 +388,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · locali · gruppo 18",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
-      "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
-      "score_discovery": 49,
-      "topic": "AMBIENTE",
-      "numbers_detected": [
-        "2024 ",
-        "36,4 milioni",
-        "2024 ",
-        "36,4 milioni"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.isprambiente.gov.it/files2026/area-stampa/comunicati-stampa/2026-rifiuti-speciali-comunicato-stampa.pdf",
-        "domain": "isprambiente.gov.it",
-        "matched_numbers": [
-          "2024 ",
-          "36,4 milioni",
-          "2024 ",
-          "36,4 milioni"
-        ],
-        "matched_non_year_numbers": [
-          "36,4 milioni",
-          "36,4 milioni"
-        ],
-        "matched_keywords": [
-          "rifiuti",
-          "speciali",
-          "lombardia",
-          "prodotte",
-          "milioni",
-          "tonnellate"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "COMUNICATO STAMPA RIFIUTI SPECIALI AUMENTA LA PRODUZIONE: NEL 2024 OLTRE 172 MILIONI DI TONNELLATE L’EDILIZIA È LA PIÙ “CIRCOLARE”, RICICLO RECORD RECUPERO DI MATERIA IN CRESCITA: +5,2% IN UN ANNO In Italia nel 2024 la produzione complessiva di rifiuti speciali derivanti da attività industriali, commerciali, artigianali, di servizio, di trattamento rifiuti e risanamento, ha subito una netta accelerazione, superando i 172 milioni di tonnellate e registrando un incremento del +4,6% rispetto al 2023 (circa 7,6 milioni di tonnellate in più), un dato che evidenzia un forte scollamento rispetto alla crescita più contenuta dell’economia nazionale, che nello stesso periodo ha segnato un +0,8% del PIL e un +1,3% dei consumi. Nei settori chiave l’edilizia è in cima alla lista . Il settore delle costruzioni e demolizioni si conferma il principale motore della produzione di rifiuti speciali, generan",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "isprambiente.gov.it",
-            "query": "site:isprambiente.gov.it \"rifiuti speciali lombardia prodotte milioni tonnellate\" 2024  36,4 milioni 2024",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"rifiuti speciali lombardia prodotte milioni tonnellate\" 2024  36,4 milioni 2024",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNG9ra25kMWlTRUdNVFdvRzNrajFtQjhCTVduakZRdXFvLWJFUEdReFcyTTJQMjNvQTVoZnNKdk4tX3lMejF5VTB6QzVEMzBQSE1VQndqOHZtRjdIOVp6cTNhTEVQRC1ONFVKUW85NVZnTEFPTWhDRGJBdTVmc2k1by16Nm9IR2ZFajREM3p1VXVQNVFXZ0JUYnZickVLWTZtcTFTV3EyY0RPcV9OQjJlRkFRejJSZEpJZnk3YzZoYmNpOTRxMzZWOFNfU21IZw?oc=5",
       "discovery_title": "Economia Lazio, crescita dell'1% nel 2026. La Regione annuncia oltre 200 milioni per imprese e giovani - La Capitale",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
       "score_discovery": 65,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -468,10 +409,73 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPaEFadnhOVmFOaU1WcGlBR0ZLamxGc3pVd0dIa0NnOGVTSS02WURER003dzFQTkpsclF3bFB5OWRwVFVOS0VjeEJ5OWpSMjZaV1A0R0xZcWtpWi10c0ZleWNsZU8yMDNWX2UtRTNQa2dKbWd4Zm9SVm4tNUx4S0NjMXEtZ3Bwa1lfbnFmbTB4N1BJa3V3Q2tlUjBHUlVLVC1pelJTQXhudVBUc0dkZ29iYy1GV0lneDlLeHV5WEZUNGF1VGU2YzhJeGZqZnFOaGtRRTZfZWpyOWxkWmZDS3RTTTVNbzNLemtSc3IwLTNqMVluYnBQMldQSHJkMk1FQ3dhSjR0enhZVHFmQmxobVQ1aFF1ZGp1Vlk2c3c?oc=5",
+      "discovery_title": "Stranieri, più si studia meno si lavora? I laureati sono occupati al 68,4%, i diplomati al 70,7%. E il divario con gli italiani laureati sale a 17,9 punti. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
+      "score_discovery": 45,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "68,4%",
+        "70,7%",
+        "17,9 ",
+        "68,4%",
+        "70,7%",
+        "17,9 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.istat.it/it/files//2023/02/Focus_stranieri-e-naturalizzati-nel-mondo-del-lavoro.pdf",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "70,7%",
+          "17,9 ",
+          "70,7%",
+          "17,9 "
+        ],
+        "matched_non_year_numbers": [
+          "70,7%",
+          "17,9 ",
+          "70,7%",
+          "17,9 "
+        ],
+        "matched_keywords": [
+          "stranieri",
+          "lavora",
+          "laureati",
+          "occupati",
+          "diplomati",
+          "sale"
+        ],
+        "verification_score": 95,
+        "text_excerpt": " 3 febbraio 2023 http://www.istat.it Ufficio Stampa tel. +39 06 4673.2243/4 ufficiostampa@istat.it STRANIERI E NATURALIZZATI NEL MERCATO DEL LAVORO ITALIANO L’Istat diffonde i principali risultati di un Modulo ad hoc dedicato all’integrazione di stranieri e naturalizzati nel mercato del lavoro, inserito nella Rilevazione sulle forze di lavoro per l’anno 2021. Le principali informazioni, raccolte su individui tra 15 e 74 anni, riguardano: il livello di integrazione nel mercato del lavoro, il ruolo del capitale umano e della conoscenza della lingua italiana nei processi di integrazione, l’adeguatezza del lavoro svolto rispetto alle proprie competenze anche in confronto a eventuali precedenti esperienze lavorative in altri Paesi, gli ostacoli incontrati nell’ottenere un lavoro adatto al proprio livello di istruzione. La presenza straniera in Italia e il motivo della migrazione Nella media 2",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "inps.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "inps.it",
+            "query": "site:inps.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UbGZNNy13N0tDbnJ4SVVXTEsydzNiQUU2TThXOEFrTE1fSElTNmlOcGZjLVFuNnl0cDBETlBCcTMtOVltTXk0VU1BdDU4Q0NIM0djSmZLdUpJcEowUnY2SllEVC12YTdPdWVTOHdmTGZkRFE?oc=5",
       "discovery_title": "Inflazione eurozona al 4% a ottobre: l'Italia sale al 5,6%, il balzo più alto dell'area euro - Capitalist.it",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -517,10 +521,29 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "Google News - Italia lavoro e imprese",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSUJJNk1oVzJkMXBjX214ZXJCeTZIVURxd0R0V0poZ21xbU1BZkpxY0JFUDRYNHdQamg3bnNNeVFCaXpPUGFBdnRBV3RsR2h3d1lqSTJPazdla2pXWFczcFdteFZ1ZnJqVVUzQVlfZ3BLc0U4cDAxaTBBcThfeklpRE51RmFjVVJHbEZham9kZUNKY0s1c1ppREJ4VQ?oc=5",
+      "discovery_title": "PIL Italia 2026 fermo: industria giù, inflazione al 5,4% - Matrice Digitale",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "5,4%",
+        "2026 ",
+        "5,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPUDI1TmhSel9EWnE0ZXJhRnJ5bE1IbTdqdThUM005ME1Pb3MzRzQ0T204RldsWTJfTDYtVi1aNk1ncEh1WlE1ZTRTZEhlRjZJYksyMjRRTmlmWko0aDktTTJ1NWQzN1RZa2U0dGIxTmxSNkJDbVlaSk9TV2pyU3VGYVdaN2RIWUUzV1BzM1VrQmdXaktDZWhOMEgxVWFkOS1TTnA2SHdnYjhKSVpxQWxmbE5tVlI2dU9EN25zV3A0UW82MjI3T3BoUjhxZ1RGZW5mS2hYU0stTEhDVHJZamVnTGxNUi1jMXJDSVBzOHozV0F5X0xPaGJxcERNYUMxQnhiUlBvMXJ0bDc4b2Fla1lVMC1jcWZmMC1tLTg0dWFyZjBRN0RjdUREcGVvenNheURzTGpVcVFRMW5GOHl6M1E?oc=5",
       "discovery_title": "Studenti stranieri in classe: Cremona seconda in Lombardia e settima in Italia con quasi il 22%. Dal 2019 aumentati del 17%, mentre gli studenti con cittadinanza italiana sono diminuiti del 7%. - Cremona Sera",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -543,7 +566,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFBWMVpQSDlJT3RDOGdMZHNQWVE4bFItcWZINjlvcF9hZC1keUtvc1RZU3psV29JRGhVTWtlYm5kUWJXcDREaWZsNjhYbWE0UzdlQXpuZlkxYlZ2QnBFbzNlU3dUWVJIT0cwRkljc2U5LUR2aXd4aGFTcUU0WmtPT1h1ckVmNWJvWEdLLTRoQWpRLUl6YWNRSDRR?oc=5",
       "discovery_title": "Natalità in Italia 2025: fecondità a 1,14, nascite in calo del 3,8% | Dati Istat - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
       "score_discovery": 65,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -561,10 +584,63 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE 80 testate · locali · gruppo 18",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
+      "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
+      "score_discovery": 49,
+      "topic": "AMBIENTE",
+      "numbers_detected": [
+        "2024 ",
+        "36,4 milioni",
+        "2024 ",
+        "36,4 milioni"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.isprambiente.gov.it/files2026/area-stampa/comunicati-stampa/2026-rifiuti-speciali-comunicato-stampa.pdf",
+        "domain": "isprambiente.gov.it",
+        "matched_numbers": [
+          "2024 ",
+          "36,4 milioni",
+          "2024 ",
+          "36,4 milioni"
+        ],
+        "matched_non_year_numbers": [
+          "36,4 milioni",
+          "36,4 milioni"
+        ],
+        "matched_keywords": [
+          "rifiuti",
+          "speciali",
+          "lombardia",
+          "prodotte",
+          "milioni",
+          "tonnellate"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "COMUNICATO STAMPA RIFIUTI SPECIALI AUMENTA LA PRODUZIONE: NEL 2024 OLTRE 172 MILIONI DI TONNELLATE L’EDILIZIA È LA PIÙ “CIRCOLARE”, RICICLO RECORD RECUPERO DI MATERIA IN CRESCITA: +5,2% IN UN ANNO In Italia nel 2024 la produzione complessiva di rifiuti speciali derivanti da attività industriali, commerciali, artigianali, di servizio, di trattamento rifiuti e risanamento, ha subito una netta accelerazione, superando i 172 milioni di tonnellate e registrando un incremento del +4,6% rispetto al 2023 (circa 7,6 milioni di tonnellate in più), un dato che evidenzia un forte scollamento rispetto alla crescita più contenuta dell’economia nazionale, che nello stesso periodo ha segnato un +0,8% del PIL e un +1,3% dei consumi. Nei settori chiave l’edilizia è in cima alla lista . Il settore delle costruzioni e demolizioni si conferma il principale motore della produzione di rifiuti speciali, generan",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "isprambiente.gov.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "isprambiente.gov.it",
+            "query": "site:isprambiente.gov.it \"rifiuti speciali lombardia prodotte milioni tonnellate\" 2024  36,4 milioni 2024",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "Il Fatto Quotidiano - Notizie",
       "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/04/auto-leuropa-prova-ad-allentare-i-vincoli-del-2035-apertura-ai-motori-termici/8560566/",
       "discovery_title": "Auto, l’Europa prova ad allentare i vincoli del 2035. Apertura ai motori termici",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
       "score_discovery": 50,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -577,6 +653,7 @@
       ],
       "official_links": [],
       "official_domain_hints": [
+        "aci.it",
         "iss.it",
         "terna.it"
       ],
@@ -585,64 +662,123 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "ISTAT - Aggiornamenti ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
-      "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-04T17:57:26.994877+00:00",
-      "score_discovery": 55,
-      "topic": "LAVORO",
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
+      "discovery_title": "I Data Steward del CNR si incontrano a Roma il 1Â° e 2 dicembre",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
       "numbers_detected": [
-        "2025 ",
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "20",
-        "34"
+        "1",
+        "2 ",
+        "03",
+        "11",
+        "2026 ",
+        "1",
+        "2 ",
+        "2026",
+        "192",
+        "2027"
       ],
       "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/11/Report_LivelliRitorniOccupazionali_Anno-2025.pdf",
-        "https://www.istat.it/wp-content/uploads/2026/11/Tavole-Livelli-di-istruzione-e-ritorni-occupazionali-Anno-2025.xlsx",
-        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
-        "https://contact.istat.it/",
-        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/istruzione-e-formazione/",
-        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/lavoro-e-retribuzioni/",
-        "https://www.istat.it/?tag=istruzione",
-        "https://www.istat.it/?tag=occupazione",
-        "https://www.istat.it/?tag=comunicati-annuali",
-        "https://www.istat.it/?s=&filter_category[]=4085",
-        "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
-        "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/#feedback_completo"
+        "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://sibi.cnr.it/marconi/centenario-della-biblioteca-centrale-1927-2027/"
       ],
       "official_domain_hints": [],
       "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
-        "domain": "istat.it",
+        "url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
+        "domain": "cnr.it",
         "matched_numbers": [
-          "2025 ",
-          "2025 ",
-          "62,9%",
-          "78,7%",
-          "20",
-          "34"
+          "1",
+          "2 ",
+          "03",
+          "11",
+          "2026 ",
+          "1"
         ],
         "matched_non_year_numbers": [
-          "62,9%",
-          "78,7%",
-          "20",
-          "34"
+          "1",
+          "2 ",
+          "03",
+          "11",
+          "1",
+          "2 "
         ],
         "matched_keywords": [
-          "livelli",
-          "istruzione",
-          "ritorni",
-          "occupazionali",
-          "tasso",
-          "occupazione",
-          "neodiplomati",
-          "sale"
+          "data",
+          "steward",
+          "incontrano",
+          "roma",
+          "dicembre",
+          "terrà",
+          "incontro",
+          "presenza"
         ],
         "verification_score": 95,
-        "text_excerpt": "Livelli di istruzione e ritorni occupazionali – Anno 2025 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore conferma la tu",
+        "text_excerpt": "I Data Steward del CNR si incontrano a Roma il 1° e 2 dicembre | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture scientifiche Dip",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
+      "discovery_title": "Al via le iscrizioni alla 9Âª edizione della Scuola TEM \"Pier Giorgio Merli\"",
+      "detected_at": "2026-11-04T21:00:37.806297+00:00",
+      "score_discovery": 50,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "9",
+        "03",
+        "11",
+        "2026 ",
+        "18 ",
+        "29 ",
+        "2027"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.ismn.cnr.it/wp-content/uploads/2026/11/FLYER-TEM-School-2027.pdf"
+      ],
+      "official_domain_hints": [
+        "iss.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "9",
+          "03",
+          "11",
+          "2026 ",
+          "18 ",
+          "29 "
+        ],
+        "matched_non_year_numbers": [
+          "9",
+          "03",
+          "11",
+          "18 ",
+          "29 "
+        ],
+        "matched_keywords": [
+          "iscrizioni",
+          "alla",
+          "edizione",
+          "scuola",
+          "pier",
+          "giorgio",
+          "merli",
+          "gennaio"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Al via le iscrizioni alla 9ª edizione della Scuola TEM \"Pier Giorgio Merli\" | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture sci",
         "verified_series": [],
         "method": "direct_official_rss"
       },
