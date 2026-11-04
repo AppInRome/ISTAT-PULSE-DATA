@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-03T20:58:52.783292+00:00",
+  "checked_at": "2026-11-04T03:00:33.085532+00:00",
   "feeds_configured": 4,
-  "feeds_reached": 3,
+  "feeds_reached": 2,
   "articles_new": 0,
   "articles_total": 5867,
   "sources": {
@@ -21,9 +21,9 @@
       "items": 10
     },
     "SINAB": {
-      "status": "ok",
+      "status": "error",
       "new": 0,
-      "items": 0
+      "error": "The read operation timed out"
     }
   },
   "other_institutions": "not_yet_connected"
