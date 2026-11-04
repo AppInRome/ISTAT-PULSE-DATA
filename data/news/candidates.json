@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-11-04T09:06:19.952770+00:00",
+  "generated_at": "2026-11-04T11:59:48.127321+00:00",
   "candidates": [
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 04",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
       "status": "radar_fetched",
@@ -94,12 +89,12 @@
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 29
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 49
+      "items_fetched": 51
     },
     {
       "radar": "Repubblica Economia",
@@ -139,17 +134,17 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 43
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 22
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 40
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -209,7 +204,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 56
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -224,7 +219,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 57
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -294,7 +289,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 16
+      "items_fetched": 13
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -324,12 +319,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 56
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 27
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -347,6 +342,11 @@
       "items_fetched": 60
     },
     {
+      "radar": "PULSE 80 testate · nazionali · gruppo 04",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -358,19 +358,19 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
       "status": "radar_error",
-      "error": "The read operation timed out"
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQRVpjM1dhSkc5WDdPUS1qYk4zR3RQSlJlTGR6eS1KTm5wcXphU0dsd1VMaEhabWxUYVBlMlJ4cVprQlJobndrT0FQT2JqREgxRWlSd2dWdU9IeDgtX29nTnlxb3RuNkxzczN4aXV1Mm9YOTRJRHlWeVgzb2JXYzJPNVlyVlMzNGF2anBkV2dmSHd6bnVvdmI2THpib1RLZ2k0cFJpbWlySUl3V2ZWTmJkaWRFZlFJODNnUDVFMVN3Wlk5ckpRcWExbnNRRUc3NWFEWUdNVHA3WWl5Ukw0ckxFQnNWUV9mNkMxeDNJaWFn0gHzAUFVX3lxTE9XNkFyTWxiZF91djBmd0R6YUYtMGwwWjFCa0ZtdGhiTE91N2Y4UjNBUFBWdGJiMGgxRkRzVFBXNTVrQUJWU3BhNm03WkRlSFhCTmxHQ2FEdEhrSUxLZ0VWWTZDR0dJUF9UamItRmhGODI2NGo1Z1JYWXBwWFhqT0JsZ08taW9qb3hPNFYtU19ua2tHZTVMNVRjeHFPaU1NdFd3QTNlUGg3bzdPRUV0ZHFMU3otODN4a3UwOFRUMzJfOWxGOUtWWVJwNThaZHFDWDBpa2VQN0lHdEstSkpxYnBTaFpLdEpaTVhlaWFQQU5FZDdIcw?oc=5",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVzZBck1sYmRfdXYwZndEemFGLTBsMFoxQmtGbXRoYkxPdTdmOFIzQVBQVnRiYjBoMUZEc1RQVzU1a0FCVlNwYTZtN1pEZUhYQk5sR0NhRHRIa0lMS2dFVlk2Q0dHSVBfVGpiLUZoRjgyNjRqNWdSWFlwcFhYak9CbGdPLWlvam94TzRWLVNfbmtrR2U1TDVUY3hxT2lNTXRXd0EzZVBoN283T0VFdGRxTFN6LTgzeGt1MDhUVDMyXzlsRjlLVllScDU4WmRxQ1gwaWtlUDdJR3RLLUpKcWJwU2haS3RKWk1YZWlhUEFORWQ3SHM?oc=5",
       "discovery_title": "Istat, nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud - ANSA",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
       "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdlgxcFN6TDZ1S0VneTJlVE9QX193R0VJQTN0T3U1Ny1lUXIxNHZ4LWZqWFdJeEVCQkhFaUFmb180Qkk3UVlYUUNEY3hHNTc0RzlaY2hTbklOZ2NPYVExZ3JtRjBHZUFzSjRVNzd2a0JKSW96UEp6djdjN1R0Um05OE9FSTUzOUVUQlRNVEwwaVNrRVR6RllkNGR1SFlrdFd5LXo2Zg?oc=5",
       "discovery_title": "Istat: «Nel 2025 scende a 13,3% la quota dei Neet, maggior calo al Sud» - Il Sole 24 ORE",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -410,7 +410,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 18",
       "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
       "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
       "score_discovery": 49,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -427,41 +427,20 @@
     },
     {
       "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
-      "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPUDI1TmhSel9EWnE0ZXJhRnJ5bE1IbTdqdThUM005ME1Pb3MzRzQ0T204RldsWTJfTDYtVi1aNk1ncEh1WlE1ZTRTZEhlRjZJYksyMjRRTmlmWko0aDktTTJ1NWQzN1RZa2U0dGIxTmxSNkJDbVlaSk9TV2pyU3VGYVdaN2RIWUUzV1BzM1VrQmdXaktDZWhOMEgxVWFkOS1TTnA2SHdnYjhKSVpxQWxmbE5tVlI2dU9EN25zV3A0UW82MjI3T3BoUjhxZ1RGZW5mS2hYU0stTEhDVHJZamVnTGxNUi1jMXJDSVBzOHozV0F5X0xPaGJxcERNYUMxQnhiUlBvMXJ0bDc4b2Fla1lVMC1jcWZmMC1tLTg0dWFyZjBRN0RjdUREcGVvenNheURzTGpVcVFRMW5GOHl6M1E?oc=5",
+      "discovery_title": "Studenti stranieri in classe: Cremona seconda in Lombardia e settima in Italia con quasi il 22%. Dal 2019 aumentati del 17%, mentre gli studenti con cittadinanza italiana sono diminuiti del 7%. - Cremona Sera",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
       "score_discovery": 55,
-      "topic": "LAVORO",
+      "topic": "ISTRUZIONE",
       "numbers_detected": [
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "13,3%",
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "13,3%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Italia ambiente energia mobilità",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLWRnNGhwT2ROU2ktb05rcGpqbWxYbE9IYlVELUlXbDV2RVFTckZpUm4zVGJGYW9lczI0RXhsSTYtMUo0cFdZdldYb2dNSW56V0YyWmFNdW9SRDVQNE5WWFZXc3BOS1E0Q0pNX013OENmNWY3QzlWZWN6VHFXOG90dzNFdTByak03c25TN0x3OVRFOXhaUHNMQUJoaHVOSnlZcUJLZkkzOVFodw?oc=5",
-      "discovery_title": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi - missionline",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
-      "score_discovery": 45,
-      "topic": "MOBILITA",
-      "numbers_detected": [
-        "2026 ",
-        "+4,7%",
-        "-10,5%",
-        "2026 ",
-        "+4,7%",
-        "-10,5%"
+        "22%",
+        "2019 ",
+        "17%",
+        "7%",
+        "22%",
+        "2019 ",
+        "17%",
+        "7%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -473,7 +452,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFBWMVpQSDlJT3RDOGdMZHNQWVE4bFItcWZINjlvcF9hZC1keUtvc1RZU3psV29JRGhVTWtlYm5kUWJXcDREaWZsNjhYbWE0UzdlQXpuZlkxYlZ2QnBFbzNlU3dUWVJIT0cwRkljc2U5LUR2aXd4aGFTcUU0WmtPT1h1ckVmNWJvWEdLLTRoQWpRLUl6YWNRSDRR?oc=5",
       "discovery_title": "Natalità in Italia 2025: fecondità a 1,14, nascite in calo del 3,8% | Dati Istat - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
       "score_discovery": 65,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -491,17 +470,19 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
-      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
-      "score_discovery": 49,
+      "radar": "PULSE Italia - dati di regioni province comuni",
+      "discovery_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT1hnN3Q5dG5PRG1fQ1RkeFM2XzctMk9pZnl6dllTaHhUcEZFdEE1enVhUHhCajc5YkduOEdBdWdPSE9TTkZwZ3kyR0FyNTJfa2c3NWpab0RNenNJQ0lyVWpOUUJ1dzFCb0R4RFl6LXVLNTJVTmNhZUNVVzdJMWJDWnV0eXBIVEQxMUl6bmZxbXpTc3RIZXpVaEQ5UjhPSEJySGJtSW5nemNuOEtxX2sxLV9iOHpzZw?oc=5",
+      "discovery_title": "Dati Eurostat 2019-2024, l'Abruzzo cresce del 7,6%. Santangelo: \"Ora la crescita diventi benessere\" - AbruzzoLive",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 60,
       "topic": "ALTRO",
       "numbers_detected": [
-        "73 milioni",
-        "2024 ",
-        "73 milioni",
-        "2024 "
+        "2019",
+        "2024",
+        "7,6%",
+        "2019",
+        "2024",
+        "7,6%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -513,7 +494,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
       "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-04T09:06:19.952770+00:00",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -573,6 +554,245 @@
       },
       "editorial_excluded": false,
       "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
+      "discovery_title": "I Data Steward del CNR si incontrano a Roma il 1Â° e 2 dicembre",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "1",
+        "2 ",
+        "03",
+        "11",
+        "2026 ",
+        "1",
+        "2 ",
+        "2026",
+        "192",
+        "2027"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://sibi.cnr.it/marconi/centenario-della-biblioteca-centrale-1927-2027/"
+      ],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "1",
+          "2 ",
+          "03",
+          "11",
+          "2026 ",
+          "1"
+        ],
+        "matched_non_year_numbers": [
+          "1",
+          "2 ",
+          "03",
+          "11",
+          "1",
+          "2 "
+        ],
+        "matched_keywords": [
+          "data",
+          "steward",
+          "incontrano",
+          "roma",
+          "dicembre",
+          "terrà",
+          "incontro",
+          "presenza"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "I Data Steward del CNR si incontrano a Roma il 1° e 2 dicembre | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture scientifiche Dip",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
+      "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 55,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "2025 ",
+        "62,9%",
+        "78,7%",
+        "13,3%",
+        "2025 ",
+        "62,9%",
+        "78,7%",
+        "13,3%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.istat.it/wp-content/uploads/2025/12/Report-Livelli-di-istruzione-e-ritorni-occupazionali-Anno-2024.pdf",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2025 ",
+          "62,9%",
+          "2025 ",
+          "62,9%"
+        ],
+        "matched_non_year_numbers": [
+          "62,9%",
+          "62,9%"
+        ],
+        "matched_keywords": [
+          "lavora",
+          "neet",
+          "resta",
+          "penultima",
+          "europa"
+        ],
+        "verification_score": 95,
+        "text_excerpt": " UFFICIO STAMPA tel. +39 06 4673.2243/44 ufficiostampa@istat.it CONTACT CENTRE contact.istat.it LIVELLI DI ISTRUZIONE E RITORNI OCCUPAZIONALI | ANNO 2024 Tasso di occupazione dei laureati: divario territoriale ancora in diminuzione Nel 2024 il divario territoriale Nord -Mezzogiorno del tasso di occupazione dei laureati continua a diminuire confermando l’andamento d egli ultimi anni : tra i 25 -64enni la distanza è di 11,0 punti (88,3% e 77,3% i rispettivi tassi), mentre nel 2023 era di 11,9 punti e nel 2018 di 15,7. Tra i 30-34enni il divario è più alto, ma comunque in calo: il gap si attesta a 17,8 punti (91,1% e 73,3% i rispettivi tassi) rispetto ai 19,8 punti nel 2023 e ai 26,5 nel 2018. È in aumento i l tasso di occupazione dei neo diplomati 20-34enni non più inseriti in un percorso di formazione (che hanno conseguito il titolo di studio da almeno un anno e da non più di 3 anni ), ch",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "istat.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"lavora neodiplomati neolaureati neet scendono resta\" 2025  62,9% 78,7%",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQb21ZNm1GbmtrY2ozSWgycFk5QTZjcFIwYnRwMWpkUXBxZlo4VWx1VnRadllBRllfMVRmcHgyQ2hkMl8xMEZaSWFSdzJGS1ktTjhqSzBDbEotaUxQRkVqT1BsVGgxRjhPTW1zLTZaWWQzQlhqdkQ5Z3doamNydF9fWDBybTlCVjgwX1hUNlR1VTdTUUlFOFNfRUdlTzBPQjdfcE5zTW5xbWJuUl9KWXh3S2ludVA1UExNY3BsZGVtbVcxTWpMb1o5Tk1KMm5EaWZwZnNqLXBhUFlIdTNtOXR3VjFVamZldjNIY2V5dC1IbUpHc2psa212QlF2ZlXSAfwBQVVfeXFMUG9tWTZtRm5ra2NqM0loMnBZOUE2Y3BSMGJ0cDFqZFFwcWZaOFVsdVZ0WnZZQUZZXzFUZnB4MkNoZDJfMTBGWklhUncyRktZLU44akswQ2xKLWlMUEZFak9QbFRoMUY4T01tcy02WllkM0JYanZEOWd3aGpjcnRfX1gwcm05QlY4MF9YVDZUdVU3U1FJRThTX0VHZU8wT0I3X3BOc01ucW1iblJfSll4d0tpbnVQNVBMTWNwbGRlbW1XMU1qTG9aOU5NSjJuRGlmcGZzai1wYVBZSHUzbTl0d1YxVWpmZXYzSGNleXQtSG1KR3NqbGttdkJRdmZV?oc=5",
+      "discovery_title": "Mercato immobiliare, Calabria sempre più a buon mercato: prezzi delle case in calo del 3%, appena 871 euro al metro quadrato · LaC News24 - LaC News24",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "3%",
+        "871 ",
+        "3%",
+        "871 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 49,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "73 milioni",
+        "2024 ",
+        "73 milioni",
+        "2024 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
+      "discovery_title": "Al via le iscrizioni alla 9Âª edizione della Scuola TEM \"Pier Giorgio Merli\"",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 50,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "9",
+        "03",
+        "11",
+        "2026 ",
+        "18 ",
+        "29 ",
+        "2027"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.ismn.cnr.it/wp-content/uploads/2026/11/FLYER-TEM-School-2027.pdf"
+      ],
+      "official_domain_hints": [
+        "iss.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "9",
+          "03",
+          "11",
+          "2026 ",
+          "18 ",
+          "29 "
+        ],
+        "matched_non_year_numbers": [
+          "9",
+          "03",
+          "11",
+          "18 ",
+          "29 "
+        ],
+        "matched_keywords": [
+          "iscrizioni",
+          "alla",
+          "edizione",
+          "scuola",
+          "pier",
+          "giorgio",
+          "merli",
+          "gennaio"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Al via le iscrizioni alla 9ª edizione della Scuola TEM \"Pier Giorgio Merli\" | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture sci",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - Italia ambiente energia mobilità",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOLWRnNGhwT2ROU2ktb05rcGpqbWxYbE9IYlVELUlXbDV2RVFTckZpUm4zVGJGYW9lczI0RXhsSTYtMUo0cFdZdldYb2dNSW56V0YyWmFNdW9SRDVQNE5WWFZXc3BOS1E0Q0pNX013OENmNWY3QzlWZWN6VHFXOG90dzNFdTByak03c25TN0x3OVRFOXhaUHNMQUJoaHVOSnlZcUJLZkkzOVFodw?oc=5",
+      "discovery_title": "Mercato auto e LCV 2026 in Italia: +4,7% le prime -10,5% i secondi - missionline",
+      "detected_at": "2026-11-04T11:59:48.127321+00:00",
+      "score_discovery": 45,
+      "topic": "MOBILITA",
+      "numbers_detected": [
+        "2026 ",
+        "+4,7%",
+        "-10,5%",
+        "2026 ",
+        "+4,7%",
+        "-10,5%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
     }
   ]
 }
