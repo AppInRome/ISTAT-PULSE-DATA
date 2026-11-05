@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T02:59:51.950515+00:00",
+  "generated_at": "2026-11-05T06:06:41.578534+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 11",
@@ -59,7 +59,7 @@
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 0
+      "items_fetched": 14
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -109,12 +109,12 @@
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 44
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -134,7 +134,7 @@
     {
       "radar": "PULSE osservatori ufficiali 2/9",
       "status": "radar_fetched",
-      "items_fetched": 0
+      "items_fetched": 60
     },
     {
       "radar": "PULSE osservatori ufficiali 3/9",
@@ -174,7 +174,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -184,12 +184,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 42
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 26
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -259,7 +259,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 14
+      "items_fetched": 13
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -359,7 +359,7 @@
     {
       "radar": "CNR - Notizie ufficiali",
       "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1016)>"
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,31 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "radar": "Google News - economia lavoro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNG9ra25kMWlTRUdNVFdvRzNrajFtQjhCTVduakZRdXFvLWJFUEdReFcyTTJQMjNvQTVoZnNKdk4tX3lMejF5VTB6QzVEMzBQSE1VQndqOHZtRjdIOVp6cTNhTEVQRC1ONFVKUW85NVZnTEFPTWhDRGJBdTVmc2k1by16Nm9IR2ZFajREM3p1VXVQNVFXZ0JUYnZickVLWTZtcTFTV3EyY0RPcV9OQjJlRkFRejJSZEpJZnk3YzZoYmNpOTRxMzZWOFNfU21IZw?oc=5",
+      "discovery_title": "Economia Lazio, crescita dell'1% nel 2026. La Regione annuncia oltre 200 milioni per imprese e giovani - La Capitale",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
+      "score_discovery": 65,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "1%",
+        "2026",
+        "200 milioni",
+        "1%",
+        "2026",
+        "200 milioni"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPaEFadnhOVmFOaU1WcGlBR0ZLamxGc3pVd0dIa0NnOGVTSS02WURER003dzFQTkpsclF3bFB5OWRwVFVOS0VjeEJ5OWpSMjZaV1A0R0xZcWtpWi10c0ZleWNsZU8yMDNWX2UtRTNQa2dKbWd4Zm9SVm4tNUx4S0NjMXEtZ3Bwa1lfbnFmbTB4N1BJa3V3Q2tlUjBHUlVLVC1pelJTQXhudVBUc0dkZ29iYy1GV0lneDlLeHV5WEZUNGF1VGU2YzhJeGZqZnFOaGtRRTZfZWpyOWxkWmZDS3RTTTVNbzNLemtSc3IwLTNqMVluYnBQMldQSHJkMk1FQ3dhSjR0enhZVHFmQmxobVQ1aFF1ZGp1Vlk2c3c?oc=5",
       "discovery_title": "Stranieri, più si studia meno si lavora? I laureati sono occupati al 68,4%, i diplomati al 70,7%. E il divario con gli italiani laureati sale a 17,9 punti. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
       "score_discovery": 45,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -383,67 +404,6 @@
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/it/files//2023/02/Focus_stranieri-e-naturalizzati-nel-mondo-del-lavoro.pdf",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "70,7%",
-          "17,9 ",
-          "70,7%",
-          "17,9 "
-        ],
-        "matched_non_year_numbers": [
-          "70,7%",
-          "17,9 ",
-          "70,7%",
-          "17,9 "
-        ],
-        "matched_keywords": [
-          "stranieri",
-          "lavora",
-          "laureati",
-          "occupati",
-          "diplomati",
-          "sale"
-        ],
-        "verification_score": 95,
-        "text_excerpt": " 3 febbraio 2023 http://www.istat.it Ufficio Stampa tel. +39 06 4673.2243/4 ufficiostampa@istat.it STRANIERI E NATURALIZZATI NEL MERCATO DEL LAVORO ITALIANO L’Istat diffonde i principali risultati di un Modulo ad hoc dedicato all’integrazione di stranieri e naturalizzati nel mercato del lavoro, inserito nella Rilevazione sulle forze di lavoro per l’anno 2021. Le principali informazioni, raccolte su individui tra 15 e 74 anni, riguardano: il livello di integrazione nel mercato del lavoro, il ruolo del capitale umano e della conoscenza della lingua italiana nei processi di integrazione, l’adeguatezza del lavoro svolto rispetto alle proprie competenze anche in confronto a eventuali precedenti esperienze lavorative in altri Paesi, gli ostacoli incontrati nell’ottenere un lavoro adatto al proprio livello di istruzione. La presenza straniera in Italia e il motivo della migrazione Nella media 2",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "inps.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "inps.it",
-            "query": "site:inps.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UbGZNNy13N0tDbnJ4SVVXTEsydzNiQUU2TThXOEFrTE1fSElTNmlOcGZjLVFuNnl0cDBETlBCcTMtOVltTXk0VU1BdDU4Q0NIM0djSmZLdUpJcEowUnY2SllEVC12YTdPdWVTOHdmTGZkRFE?oc=5",
-      "discovery_title": "Inflazione eurozona al 4% a ottobre: l'Italia sale al 5,6%, il balzo più alto dell'area euro - Capitalist.it",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
-      "score_discovery": 54,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "4%",
-        "5,6%",
-        "4%",
-        "5,6%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
@@ -452,7 +412,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSUJJNk1oVzJkMXBjX214ZXJCeTZIVURxd0R0V0poZ21xbU1BZkpxY0JFUDRYNHdQamg3bnNNeVFCaXpPUGFBdnRBV3RsR2h3d1lqSTJPazdla2pXWFczcFdteFZ1ZnJqVVUzQVlfZ3BLc0U4cDAxaTBBcThfeklpRE51RmFjVVJHbEZham9kZUNKY0s1c1ppREJ4VQ?oc=5",
       "discovery_title": "PIL Italia 2026 fermo: industria giù, inflazione al 5,4% - Matrice Digitale",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -471,7 +431,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPUDI1TmhSel9EWnE0ZXJhRnJ5bE1IbTdqdThUM005ME1Pb3MzRzQ0T204RldsWTJfTDYtVi1aNk1ncEh1WlE1ZTRTZEhlRjZJYksyMjRRTmlmWko0aDktTTJ1NWQzN1RZa2U0dGIxTmxSNkJDbVlaSk9TV2pyU3VGYVdaN2RIWUUzV1BzM1VrQmdXaktDZWhOMEgxVWFkOS1TTnA2SHdnYjhKSVpxQWxmbE5tVlI2dU9EN25zV3A0UW82MjI3T3BoUjhxZ1RGZW5mS2hYU0stTEhDVHJZamVnTGxNUi1jMXJDSVBzOHozV0F5X0xPaGJxcERNYUMxQnhiUlBvMXJ0bDc4b2Fla1lVMC1jcWZmMC1tLTg0dWFyZjBRN0RjdUREcGVvenNheURzTGpVcVFRMW5GOHl6M1E?oc=5",
       "discovery_title": "Studenti stranieri in classe: Cremona seconda in Lombardia e settima in Italia con quasi il 22%. Dal 2019 aumentati del 17%, mentre gli studenti con cittadinanza italiana sono diminuiti del 7%. - Cremona Sera",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -494,7 +454,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFBWMVpQSDlJT3RDOGdMZHNQWVE4bFItcWZINjlvcF9hZC1keUtvc1RZU3psV29JRGhVTWtlYm5kUWJXcDREaWZsNjhYbWE0UzdlQXpuZlkxYlZ2QnBFbzNlU3dUWVJIT0cwRkljc2U5LUR2aXd4aGFTcUU0WmtPT1h1ckVmNWJvWEdLLTRoQWpRLUl6YWNRSDRR?oc=5",
       "discovery_title": "Natalità in Italia 2025: fecondità a 1,14, nascite in calo del 3,8% | Dati Istat - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
       "score_discovery": 65,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -515,7 +475,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
       "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -577,10 +537,29 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UbGZNNy13N0tDbnJ4SVVXTEsydzNiQUU2TThXOEFrTE1fSElTNmlOcGZjLVFuNnl0cDBETlBCcTMtOVltTXk0VU1BdDU4Q0NIM0djSmZLdUpJcEowUnY2SllEVC12YTdPdWVTOHdmTGZkRFE?oc=5",
+      "discovery_title": "Inflazione eurozona al 4% a ottobre: l'Italia sale al 5,6%, il balzo più alto dell'area euro - Capitalist.it",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
+      "score_discovery": 54,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "4%",
+        "5,6%",
+        "4%",
+        "5,6%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · locali · gruppo 18",
       "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
       "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
+      "detected_at": "2026-11-05T06:06:41.578534+00:00",
       "score_discovery": 49,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -588,75 +567,6 @@
         "36,4 milioni",
         "2024 ",
         "36,4 milioni"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Il Fatto Quotidiano - Notizie",
-      "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/04/auto-leuropa-prova-ad-allentare-i-vincoli-del-2035-apertura-ai-motori-termici/8560566/",
-      "discovery_title": "Auto, l’Europa prova ad allentare i vincoli del 2035. Apertura ai motori termici",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
-      "score_discovery": 50,
-      "topic": "AMBIENTE",
-      "numbers_detected": [
-        "2035",
-        "87,5%",
-        "2035",
-        "2021",
-        "90%",
-        "2035"
-      ],
-      "official_links": [],
-      "official_domain_hints": [
-        "aci.it",
-        "iss.it",
-        "terna.it"
-      ],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
-      "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
-      "score_discovery": 55,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "13,3%",
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "13,3%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbFhnbThYaF9MWGVERUZJeEJRZHFMQm9wbHJ6ZThSQjgySE1OX2Qtdzd4MFNHdWhGMC1GRl9JMTM4TEtBR2RWcWczY1JpWXpIT05GRHFXSlo0M2hmd19RTVBEOU9XUnN5b0k5cGdURmRYMHNUN0E3dUFsQ1c3OVNLZXItOG9UT01oRVlkZXdsZ2Y5VlRKUnhDSlFOeG1FbjlRaGNLSnUtMUM4OHVEakpkeXB4Q0tLVU5FVUJLS3BTYjlsdzNTc1B6V3JzU3JsdWtWaC1vblZQajFwbknSAeABQVVfeXFMT2p3cjAxNHJiNHVmQWtReXZIVzI2X1NMODJEYkxpUUhURXhOS3FJcjQ4TzRWNWx6UXNWNklnVnN3Nzg2cnBIa2J3dHJKUUtHV3dfMkNUYkZ5cl80WlBrYmdXcy0zS00tQnAyM1hxanJJV1VPdEFnSnBUSGJOYmZTWldYbllhdWk1ZFhjNXVkSHpaSFRWR0d0WnVuakdqdzBlTkVudlQyWERiRGRZcVZVb0hqUmxrZGo2cDNySzhPVEZCS3k2OUdCcC00TEVrX3hXcWhoQzZ5RW5vdHQ5QUI3WGU?oc=5",
-      "discovery_title": "L'inflazione è salita al 4% nell'Eurozona a ottobre. In Italia +5,6%. Energia +20,8% - ANSA",
-      "detected_at": "2026-11-05T02:59:51.950515+00:00",
-      "score_discovery": 50,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "4%",
-        "+5,6%",
-        "+20,8%",
-        "4%",
-        "+5,6%",
-        "+20,8%"
       ],
       "official_links": [],
       "official_domain_hints": [],
