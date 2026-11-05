@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T17:57:39.842139+00:00",
+  "generated_at": "2026-11-05T20:59:38.810792+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 12",
@@ -49,17 +49,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 35
+      "items_fetched": 38
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 19
+      "items_fetched": 22
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 32
     },
     {
       "radar": "Repubblica Economia",
@@ -109,17 +109,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 34
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -164,7 +164,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 13
+      "items_fetched": 12
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -179,12 +179,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 37
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 23
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -254,7 +254,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 7
+      "items_fetched": 5
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -284,12 +284,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 21
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 22
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -348,18 +348,18 @@
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 10
+      "status": "radar_error",
+      "error": "The read operation timed out"
     },
     {
       "radar": "ISTAT - Comunicati stampa ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 10
+      "status": "radar_error",
+      "error": "The read operation timed out"
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOOVY5bjJGbmVqOU9GY0sxQUEwZjM4R3lCNHJxTTdMSmZxUUZXQUFCSTh1UWluMHpIVnctRWVVM0gzSUU0WlZub2xpSnVVQUsySjhNcTVxYVRRWi1vLUxyUW9MQmVKUEJKYVd4R1VPdmIzUXlYRXdLYVBselJGVElaZXllS3NMdzRUUXp6Q016QmN0aWt0OEhDN2h3VTBLQW9wQ1ZlVU5fVFFUbUtTOXFWYmVmXzctZDY4UkE4cWMzQWsxUTFBcEx5ZXZTX2FuY05IaTdwWUQtdWpseG9KMjZFeWxqNVhsNF9rdENpS3FJSzk3ZUx2VDUyY3FRSG5TQTNTbTEtNUh5cTNXT2psTXdVZWxibEpFZUk?oc=5",
       "discovery_title": "Laureati, l'Italia resta penultima in Europa, solo il 22,3% degli adulti ha un titolo terziario: quota invariata rispetto al 2024, mentre cresce la media europea - Tecnica della Scuola",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
       "score_discovery": 54,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPaEFadnhOVmFOaU1WcGlBR0ZLamxGc3pVd0dIa0NnOGVTSS02WURER003dzFQTkpsclF3bFB5OWRwVFVOS0VjeEJ5OWpSMjZaV1A0R0xZcWtpWi10c0ZleWNsZU8yMDNWX2UtRTNQa2dKbWd4Zm9SVm4tNUx4S0NjMXEtZ3Bwa1lfbnFmbTB4N1BJa3V3Q2tlUjBHUlVLVC1pelJTQXhudVBUc0dkZ29iYy1GV0lneDlLeHV5WEZUNGF1VGU2YzhJeGZqZnFOaGtRRTZfZWpyOWxkWmZDS3RTTTVNbzNLemtSc3IwLTNqMVluYnBQMldQSHJkMk1FQ3dhSjR0enhZVHFmQmxobVQ1aFF1ZGp1Vlk2c3c?oc=5",
       "discovery_title": "Stranieri, più si studia meno si lavora? I laureati sono occupati al 68,4%, i diplomati al 70,7%. E il divario con gli italiani laureati sale a 17,9 punti. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
       "score_discovery": 45,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -434,18 +434,12 @@
         "text_excerpt": "Livelli di istruzione e ritorni occupazionali – Anno 2025 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore conferma la tu",
         "verified_series": [],
         "method": "named_or_topic_domain_search",
-        "search_domain": "inps.it",
+        "search_domain": "istat.it",
         "attempts": [
           {
             "stage": "domain_search",
             "domain": "istat.it",
             "query": "site:istat.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "inps.it",
-            "query": "site:inps.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
             "results": 6
           }
         ]
@@ -454,10 +448,27 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "Google News - Italia ambiente energia mobilità",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQRlFsN0swYjZWd1NnOE4zVGU5SUZ2VlBuZVltMXRXb2pfNzU0M3daZ3UzYkRqTVFGc0dNeHlSWnhwZHhQdjFsV1ZrRmRIUWdjcUJVeGdQT1FFZmpENlhmcU10MDFwbG9pTTNXSHdjcjNMamR3T2ZTREU4dFRXcHZiTzFRTUZyMG9jZjY2V3p2cGRXRFZWdzhvXzFxWGNiRjN6dTNyVnI4ZHhjc1VGZU5raE5RYTY3NHI4enBFRFhWY1BhdFd5cy1iMlpuWnNaNTgxTUUwRjdPRzZZdUQ2aXVmempYTWJMSWc?oc=5",
+      "discovery_title": "Enel porta l’Italia sul podio mondiale dell’energia | terzo brand per valore e crescita record del 12,9% in un anno - Zazoom Social News",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
+      "score_discovery": 47,
+      "topic": "ENERGIA",
+      "numbers_detected": [
+        "12,9%",
+        "12,9%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDRXQ1enFqODRHaXUwUnJYODBURXpfS0Ewam52c2s2MEtaU2dOYmpVUkd4MDNrTWRCU25VWGxDZlpvdllha0VGS3ZtdDZNbW8taktWUnRpNjZpNDgtelRXSFhyU2JHRlZZUktLcTNJSzJlZ0NK?oc=5",
       "discovery_title": "Agroalimentare in Puglia, export a quota 3 miliardi nel 2025: i dati del Forum TEHA Group a Bari - pugliain.net",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
       "score_discovery": 59,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -473,21 +484,15 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
-      "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
-      "score_discovery": 55,
-      "topic": "LAVORO",
+      "radar": "Google News - Italia ambiente energia mobilità",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOZW5JM2x4VGF4SXVPR1pyaUQ4QUs5LTgzSVo0ZVJvN0JhRFN5R1BsQnhPTW9SbDNHLTNmRkNZZmQ5VElYa1pFQ18tX3h3YlctTE1lWE5jUXhJTjZDOVJkVzFFMmR6dGcxX0RfUjNIQ0xEU3Jwbk5ZRm83N0JpR3Rqb0o1TUxjNENaMEZMa0c3RzA5bXBNNGhSNTQ1OTU3bl9MdWk4ZGZqQ3VDQThjZ0VQOVpOMkEydmcyclpfcnNYODkwM0RHNzdXeTZXWWw2bDJyaUxWelhScnR6OHVYYkdxeQ?oc=5",
+      "discovery_title": "Enel porta l'Italia sul podio mondiale dell'energia: terzo brand per valore e crescita record del 12,9% in un anno - Secolo d'Italia",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
+      "score_discovery": 47,
+      "topic": "ENERGIA",
       "numbers_detected": [
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "13,3%",
-        "2025 ",
-        "62,9%",
-        "78,7%",
-        "13,3%"
+        "12,9%",
+        "12,9%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -499,7 +504,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNZFF5OVBUd3JKaWM4SVRJWmlJM2hEYWRZQ2gzWGFlZVRFbmxkcXdEZE5hOTJKN2ZEejFvcU5mem5RNkFieUNNWC1jaHZKa3VOSU5KaUZ1Y0w4eEdjREhCTVV5RG83MmRTcF96WUh1YUdFbWUyMjYtYmRmS3JrOE9ZLWJYSExFRm9LOVJtWXhnMFhZVDVWR0d4aUl2Mm9NcHd6SkpPRTB5YS05TjY2RnZ1WWw4bDBzQl9Da2VzQ0hUTGEyZGg5ZFctZjRkT1BnM1k2blU0S3dGeEdzZFlteTViR1llTWxDX3FoYXBtUWJ4SjRZMGNaQ0o2ZGFwSzF3Q29Ib2FfSVhVemxLNFAyZ2pwa1pvcWxVVlRtclY3V2NNNkQ3ZTRYaDgzaEN2SVZPcnlmejVHQl9SbFB1TUY0aUlYaVdXZjJvMXliSkM0Vkh3UTJQd05PTkdFNzdrSnA?oc=5",
       "discovery_title": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
       "score_discovery": 55,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -517,82 +522,21 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "ISTAT - Aggiornamenti ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
-      "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "radar": "Google News - economia lavoro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
+      "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-05T20:59:38.810792+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
         "2025 ",
+        "62,9%",
+        "78,7%",
+        "13,3%",
         "2025 ",
         "62,9%",
         "78,7%",
-        "20",
-        "34"
-      ],
-      "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/11/Report_LivelliRitorniOccupazionali_Anno-2025.pdf",
-        "https://www.istat.it/wp-content/uploads/2026/11/Tavole-Livelli-di-istruzione-e-ritorni-occupazionali-Anno-2025.xlsx",
-        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
-        "https://contact.istat.it/",
-        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/istruzione-e-formazione/",
-        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/lavoro-e-retribuzioni/",
-        "https://www.istat.it/?tag=istruzione",
-        "https://www.istat.it/?tag=occupazione",
-        "https://www.istat.it/?tag=comunicati-annuali",
-        "https://www.istat.it/?s=&filter_category[]=4085",
-        "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
-        "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/#feedback_completo"
-      ],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "2025 ",
-          "2025 ",
-          "62,9%",
-          "78,7%",
-          "20",
-          "34"
-        ],
-        "matched_non_year_numbers": [
-          "62,9%",
-          "78,7%",
-          "20",
-          "34"
-        ],
-        "matched_keywords": [
-          "livelli",
-          "istruzione",
-          "ritorni",
-          "occupazionali",
-          "tasso",
-          "occupazione",
-          "neodiplomati",
-          "sale"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Livelli di istruzione e ritorni occupazionali – Anno 2025 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore conferma la tu",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "PULSE 80 testate · locali · gruppo 18",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
-      "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
-      "detected_at": "2026-11-05T17:57:39.842139+00:00",
-      "score_discovery": 49,
-      "topic": "AMBIENTE",
-      "numbers_detected": [
-        "2024 ",
-        "36,4 milioni",
-        "2024 ",
-        "36,4 milioni"
+        "13,3%"
       ],
       "official_links": [],
       "official_domain_hints": [],
