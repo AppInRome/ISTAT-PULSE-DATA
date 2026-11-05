@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T12:04:30.979040+00:00",
+  "generated_at": "2026-11-05T17:57:39.842139+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 12",
@@ -49,7 +49,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 35
     },
     {
       "radar": "Google News - economia lavoro",
@@ -59,7 +59,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 31
     },
     {
       "radar": "Repubblica Economia",
@@ -99,22 +99,22 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 42
+      "items_fetched": 55
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 33
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 58
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -164,12 +164,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 10
+      "items_fetched": 13
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 25
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -179,12 +179,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 34
+      "items_fetched": 33
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 22
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -284,12 +284,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 23
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 23
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOOVY5bjJGbmVqOU9GY0sxQUEwZjM4R3lCNHJxTTdMSmZxUUZXQUFCSTh1UWluMHpIVnctRWVVM0gzSUU0WlZub2xpSnVVQUsySjhNcTVxYVRRWi1vLUxyUW9MQmVKUEJKYVd4R1VPdmIzUXlYRXdLYVBselJGVElaZXllS3NMdzRUUXp6Q016QmN0aWt0OEhDN2h3VTBLQW9wQ1ZlVU5fVFFUbUtTOXFWYmVmXzctZDY4UkE4cWMzQWsxUTFBcEx5ZXZTX2FuY05IaTdwWUQtdWpseG9KMjZFeWxqNVhsNF9rdENpS3FJSzk3ZUx2VDUyY3FRSG5TQTNTbTEtNUh5cTNXT2psTXdVZWxibEpFZUk?oc=5",
       "discovery_title": "Laureati, l'Italia resta penultima in Europa, solo il 22,3% degli adulti ha un titolo terziario: quota invariata rispetto al 2024, mentre cresce la media europea - Tecnica della Scuola",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
       "score_discovery": 54,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -386,52 +386,78 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWVBBX0ZXZUs2WUhvM0V4dW5Lb056WEY2UnNNODNzekxOR1lkNGdlaVhuUnllX1R0ZU56QlVhZVpfc2JEeDFqN1pORUp1Ml9zUEFkdzk2bGlPdWpYeloyN2FxVGRhOFFyU3RJVWlIdGhiUVJzTEY2T3lONG5NalBqUEpBU3VQSDdyUllhUGktcEFFaEtJMkF5SGotdndjdzVFdGpFdEFYMk5jeU82WGVFdDZEUnVfM2RQ?oc=5",
-      "discovery_title": "Inflazione, Eurozona al 4%: l'energia fa impennare i prezzi. Italia al 5,6% - quoted business",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 49,
-      "topic": "ECONOMIA",
+      "radar": "Google News - economia lavoro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPaEFadnhOVmFOaU1WcGlBR0ZLamxGc3pVd0dIa0NnOGVTSS02WURER003dzFQTkpsclF3bFB5OWRwVFVOS0VjeEJ5OWpSMjZaV1A0R0xZcWtpWi10c0ZleWNsZU8yMDNWX2UtRTNQa2dKbWd4Zm9SVm4tNUx4S0NjMXEtZ3Bwa1lfbnFmbTB4N1BJa3V3Q2tlUjBHUlVLVC1pelJTQXhudVBUc0dkZ29iYy1GV0lneDlLeHV5WEZUNGF1VGU2YzhJeGZqZnFOaGtRRTZfZWpyOWxkWmZDS3RTTTVNbzNLemtSc3IwLTNqMVluYnBQMldQSHJkMk1FQ3dhSjR0enhZVHFmQmxobVQ1aFF1ZGp1Vlk2c3c?oc=5",
+      "discovery_title": "Stranieri, più si studia meno si lavora? I laureati sono occupati al 68,4%, i diplomati al 70,7%. E il divario con gli italiani laureati sale a 17,9 punti. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "score_discovery": 45,
+      "topic": "LAVORO",
       "numbers_detected": [
-        "4%",
-        "5,6%",
-        "4%",
-        "5,6%"
+        "68,4%",
+        "70,7%",
+        "17,9 ",
+        "68,4%",
+        "70,7%",
+        "17,9 "
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": null,
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "68,4%",
+          "70,7%",
+          "17,9 ",
+          "68,4%",
+          "70,7%",
+          "17,9 "
+        ],
+        "matched_non_year_numbers": [
+          "68,4%",
+          "70,7%",
+          "17,9 ",
+          "68,4%",
+          "70,7%",
+          "17,9 "
+        ],
+        "matched_keywords": [
+          "stranieri",
+          "lavora",
+          "laureati",
+          "occupati",
+          "diplomati",
+          "divario",
+          "sale"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Livelli di istruzione e ritorni occupazionali – Anno 2025 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore conferma la tu",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "inps.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "inps.it",
+            "query": "site:inps.it \"stranieri studia lavora laureati occupati diplomati\" 68,4% 70,7% 17,9",
+            "results": 6
+          }
+        ]
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Italia scuola e università",
-      "discovery_url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPUDI1TmhSel9EWnE0ZXJhRnJ5bE1IbTdqdThUM005ME1Pb3MzRzQ0T204RldsWTJfTDYtVi1aNk1ncEh1WlE1ZTRTZEhlRjZJYksyMjRRTmlmWko0aDktTTJ1NWQzN1RZa2U0dGIxTmxSNkJDbVlaSk9TV2pyU3VGYVdaN2RIWUUzV1BzM1VrQmdXaktDZWhOMEgxVWFkOS1TTnA2SHdnYjhKSVpxQWxmbE5tVlI2dU9EN25zV3A0UW82MjI3T3BoUjhxZ1RGZW5mS2hYU0stTEhDVHJZamVnTGxNUi1jMXJDSVBzOHozV0F5X0xPaGJxcERNYUMxQnhiUlBvMXJ0bDc4b2Fla1lVMC1jcWZmMC1tLTg0dWFyZjBRN0RjdUREcGVvenNheURzTGpVcVFRMW5GOHl6M1E?oc=5",
-      "discovery_title": "Studenti stranieri in classe: Cremona seconda in Lombardia e settima in Italia con quasi il 22%. Dal 2019 aumentati del 17%, mentre gli studenti con cittadinanza italiana sono diminuiti del 7%. - Cremona Sera",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 55,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "22%",
-        "2019 ",
-        "17%",
-        "7%",
-        "22%",
-        "2019 ",
-        "17%",
-        "7%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDRXQ1enFqODRHaXUwUnJYODBURXpfS0Ewam52c2s2MEtaU2dOYmpVUkd4MDNrTWRCU25VWGxDZlpvdllha0VGS3ZtdDZNbW8taktWUnRpNjZpNDgtelRXSFhyU2JHRlZZUktLcTNJSzJlZ0NK?oc=5",
       "discovery_title": "Agroalimentare in Puglia, export a quota 3 miliardi nel 2025: i dati del Forum TEHA Group a Bari - pugliain.net",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
       "score_discovery": 59,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -448,18 +474,20 @@
     },
     {
       "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPaEFadnhOVmFOaU1WcGlBR0ZLamxGc3pVd0dIa0NnOGVTSS02WURER003dzFQTkpsclF3bFB5OWRwVFVOS0VjeEJ5OWpSMjZaV1A0R0xZcWtpWi10c0ZleWNsZU8yMDNWX2UtRTNQa2dKbWd4Zm9SVm4tNUx4S0NjMXEtZ3Bwa1lfbnFmbTB4N1BJa3V3Q2tlUjBHUlVLVC1pelJTQXhudVBUc0dkZ29iYy1GV0lneDlLeHV5WEZUNGF1VGU2YzhJeGZqZnFOaGtRRTZfZWpyOWxkWmZDS3RTTTVNbzNLemtSc3IwLTNqMVluYnBQMldQSHJkMk1FQ3dhSjR0enhZVHFmQmxobVQ1aFF1ZGp1Vlk2c3c?oc=5",
-      "discovery_title": "Stranieri, più si studia meno si lavora? I laureati sono occupati al 68,4%, i diplomati al 70,7%. E il divario con gli italiani laureati sale a 17,9 punti. I dati Istat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 45,
+      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQUnFUcF9pMFY1YjR2dzVQUjZ3Ym16WXV4Zkd0N0d4SWRRamZGR091X0NMekRFeklvMlJqWXlQcEVySUJNTlVQT1NUSnpRX05WRGdWMDlTM1NBYTFHZWxlWEotWWtJVm03cFgxNkkzYWJ6SEhLcUw4R1ZYRmZpWjFGS1E3SWVRU2cwUDBMWWhfRndWVTAxRmNVallEVWc0VGZDWGozRWFSNzdRMlFuSFM3UzJMZGJERzI4NFVoU0EtdTBGT2k1ejZya0puT01EU1hpbC1aT2xiU3Y2b2xSRTZKcVN0T0F0dWppQkRkQlBCd0x1SURnNjdPX2ZkMUk1UQ?oc=5",
+      "discovery_title": "Nel 2025 lavora il 62,9% dei neodiplomati e il 78,7% dei neolaureati. I Neet scendono al 13,3%, ma l’Italia resta penultima in Europa. I dati Istat - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
-        "68,4%",
-        "70,7%",
-        "17,9 ",
-        "68,4%",
-        "70,7%",
-        "17,9 "
+        "2025 ",
+        "62,9%",
+        "78,7%",
+        "13,3%",
+        "2025 ",
+        "62,9%",
+        "78,7%",
+        "13,3%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -469,18 +497,18 @@
     },
     {
       "radar": "Google News - Italia popolazione e territori",
-      "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWFBWMVpQSDlJT3RDOGdMZHNQWVE4bFItcWZINjlvcF9hZC1keUtvc1RZU3psV29JRGhVTWtlYm5kUWJXcDREaWZsNjhYbWE0UzdlQXpuZlkxYlZ2QnBFbzNlU3dUWVJIT0cwRkljc2U5LUR2aXd4aGFTcUU0WmtPT1h1ckVmNWJvWEdLLTRoQWpRLUl6YWNRSDRR?oc=5",
-      "discovery_title": "Natalità in Italia 2025: fecondità a 1,14, nascite in calo del 3,8% | Dati Istat - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 65,
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNZFF5OVBUd3JKaWM4SVRJWmlJM2hEYWRZQ2gzWGFlZVRFbmxkcXdEZE5hOTJKN2ZEejFvcU5mem5RNkFieUNNWC1jaHZKa3VOSU5KaUZ1Y0w4eEdjREhCTVV5RG83MmRTcF96WUh1YUdFbWUyMjYtYmRmS3JrOE9ZLWJYSExFRm9LOVJtWXhnMFhZVDVWR0d4aUl2Mm9NcHd6SkpPRTB5YS05TjY2RnZ1WWw4bDBzQl9Da2VzQ0hUTGEyZGg5ZFctZjRkT1BnM1k2blU0S3dGeEdzZFlteTViR1llTWxDX3FoYXBtUWJ4SjRZMGNaQ0o2ZGFwSzF3Q29Ib2FfSVhVemxLNFAyZ2pwa1pvcWxVVlRtclY3V2NNNkQ3ZTRYaDgzaEN2SVZPcnlmejVHQl9SbFB1TUY0aUlYaVdXZjJvMXliSkM0Vkh3UTJQd05PTkdFNzdrSnA?oc=5",
+      "discovery_title": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
+      "score_discovery": 55,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
-        "2025",
-        "1,14",
-        "3,8%",
-        "2025",
-        "1,14",
-        "3,8%"
+        "2024 ",
+        "17.660 ",
+        "4,8%",
+        "2024 ",
+        "17.660 ",
+        "4,8%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -492,7 +520,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/livelli-di-istruzione-e-ritorni-occupazionali-anno-2025/",
       "discovery_title": "Livelli di istruzione e ritorni occupazionali – Anno 2025",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -554,73 +582,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
-      "discovery_title": "I Data Steward del CNR si incontrano a Roma il 1Â° e 2 dicembre",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 50,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "1",
-        "2 ",
-        "03",
-        "11",
-        "2026 ",
-        "1",
-        "2 ",
-        "2026",
-        "192",
-        "2027"
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://sibi.cnr.it/marconi/centenario-della-biblioteca-centrale-1927-2027/"
-      ],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14778/i-data-steward-del-cnr-si-incontrano-a-roma-il-1-e-2-dicembre",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "1",
-          "2 ",
-          "03",
-          "11",
-          "2026 ",
-          "1"
-        ],
-        "matched_non_year_numbers": [
-          "1",
-          "2 ",
-          "03",
-          "11",
-          "1",
-          "2 "
-        ],
-        "matched_keywords": [
-          "data",
-          "steward",
-          "incontrano",
-          "roma",
-          "dicembre",
-          "terrà",
-          "incontro",
-          "presenza"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "I Data Steward del CNR si incontrano a Roma il 1° e 2 dicembre | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture scientifiche Dip",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "PULSE 80 testate · locali · gruppo 18",
       "discovery_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdXhtVzZLOUtSX0dZMS10b1NGSjZqQ3E1VEQ5ZUhLNDNaV1IycDFpREJGdTNoYjVFSGlaYzhNM01YblM5dFlEMVlFSWN5bGNlSlpmb3ZRVjBNRVNXbWRfWk1NeGxEbExzd0t6RkdZQW5UZWRfa0c5UHlEcE56ckp6V2VBSEQ2aG1rdU8zMWNyQmdMcDFZR0liQjJOQ0hPUnBqWHpYT3dJZWotMjl5SGJDcDVFaGlhUENQeWtlQjA2Y29xYTFzc0tZY3ZFMzlNZldnc0Z5MTFwWVlXcHEtTFdQcXNCU042ME1G?oc=5",
       "discovery_title": "Rifiuti speciali, nel 2024 in Lombardia prodotte 36,4 milioni di tonnellate - L'Eco di Bergamo",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
+      "detected_at": "2026-11-05T17:57:39.842139+00:00",
       "score_discovery": 49,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -634,86 +599,6 @@
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSUJJNk1oVzJkMXBjX214ZXJCeTZIVURxd0R0V0poZ21xbU1BZkpxY0JFUDRYNHdQamg3bnNNeVFCaXpPUGFBdnRBV3RsR2h3d1lqSTJPazdla2pXWFczcFdteFZ1ZnJqVVUzQVlfZ3BLc0U4cDAxaTBBcThfeklpRE51RmFjVVJHbEZham9kZUNKY0s1c1ppREJ4VQ?oc=5",
-      "discovery_title": "PIL Italia 2026 fermo: industria giù, inflazione al 5,4% - Matrice Digitale",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 49,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2026 ",
-        "5,4%",
-        "2026 ",
-        "5,4%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
-      "discovery_title": "Al via le iscrizioni alla 9Âª edizione della Scuola TEM \"Pier Giorgio Merli\"",
-      "detected_at": "2026-11-05T12:04:30.979040+00:00",
-      "score_discovery": 50,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "9",
-        "03",
-        "11",
-        "2026 ",
-        "18 ",
-        "29 ",
-        "2027"
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.ismn.cnr.it/wp-content/uploads/2026/11/FLYER-TEM-School-2027.pdf"
-      ],
-      "official_domain_hints": [
-        "iss.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14774/al-via-le-iscrizioni-alla-9%C3%82%C2%AA-edizione-della-scuola-tem-pier-giorgio-merli",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "9",
-          "03",
-          "11",
-          "2026 ",
-          "18 ",
-          "29 "
-        ],
-        "matched_non_year_numbers": [
-          "9",
-          "03",
-          "11",
-          "18 ",
-          "29 "
-        ],
-        "matched_keywords": [
-          "iscrizioni",
-          "alla",
-          "edizione",
-          "scuola",
-          "pier",
-          "giorgio",
-          "merli",
-          "gennaio"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Al via le iscrizioni alla 9ª edizione della Scuola TEM \"Pier Giorgio Merli\" | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Strutture sci",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
     }
   ]
 }
