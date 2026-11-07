@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:41:48.662581+00:00",
+  "generated_at": "2026-11-07T20:48:11.517588+00:00",
   "candidates": [
     {
       "radar": "Google News - Adnkronos dati e statistiche",
@@ -29,7 +29,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 44
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -39,17 +39,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 34
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 39
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -94,12 +94,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 23
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 24
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -109,12 +109,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 33
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 24
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -184,7 +184,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -219,7 +219,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 28
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -324,7 +324,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 31
     },
     {
       "radar": "Google News - economia lavoro",
@@ -334,7 +334,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 31
     },
     {
       "radar": "Repubblica Economia",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNZFF5OVBUd3JKaWM4SVRJWmlJM2hEYWRZQ2gzWGFlZVRFbmxkcXdEZE5hOTJKN2ZEejFvcU5mem5RNkFieUNNWC1jaHZKa3VOSU5KaUZ1Y0w4eEdjREhCTVV5RG83MmRTcF96WUh1YUdFbWUyMjYtYmRmS3JrOE9ZLWJYSExFRm9LOVJtWXhnMFhZVDVWR0d4aUl2Mm9NcHd6SkpPRTB5YS05TjY2RnZ1WWw4bDBzQl9Da2VzQ0hUTGEyZGg5ZFctZjRkT1BnM1k2blU0S3dGeEdzZFlteTViR1llTWxDX3FoYXBtUWJ4SjRZMGNaQ0o2ZGFwSzF3Q29Ib2FfSVhVemxLNFAyZ2pwa1pvcWxVVlRtclY3V2NNNkQ3ZTRYaDgzaEN2SVZPcnlmejVHQl9SbFB1TUY0aUlYaVdXZjJvMXliSkM0Vkh3UTJQd05PTkdFNzdrSnA?oc=5",
       "discovery_title": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
-      "detected_at": "2026-11-07T17:41:48.662581+00:00",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
       "score_discovery": 55,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -388,29 +388,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia lavoro e imprese",
-      "discovery_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LR3NnRkdRQlRROWFCNWtwNXBPVFg5VDNzX0FHby1jelpabHpMZkxneXR1d2c3Y3YtZWptd19OMXp2VTNOVTlHS1RMMEpDOVE1Um9WQ2UxSWZZM2hyNjN4S1B3Ym12blE5cVl6ZHZkTzZ2V0UtVFE?oc=5",
-      "discovery_title": "Banca d'Italia, imprese: vendite in accelerazione, ma il 67% registra margini in calo. Investimenti in crescita nel 2027 - Euroborsa",
-      "detected_at": "2026-11-07T17:41:48.662581+00:00",
-      "score_discovery": 54,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "67%",
-        "2027 ",
-        "67%",
-        "2027 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Italia salute e welfare",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWUJhQUVxNmZsdElfZThUdXdEa05iVEZneUdRRHNOSGdQOThnWFZONXoyTi10MDVodUJBOTdsaERUNW9sdktjZ0JTVjhmVE4wbTZsTTFTTEpsSHhKbVFTUUp2OFZjMlJvMktVbVJveFZjcUNHa1Y3djVUT2lWcFlfV2hzdXBBWmJrTm5UT3BWVXpwQ0ZCVS1Pb3phT1pxOXB3dlZFYQ?oc=5",
       "discovery_title": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI - Associazione Nazionale Dentisti Italiani",
-      "detected_at": "2026-11-07T17:41:48.662581+00:00",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -431,7 +412,7 @@
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRkVPcTVwbGRReXNFTkVNSjcwWk5YSEdmUW9OYUMwMnBlUV9JbHZBd3VOR0otZUNKMjEzOTFoXzd2YXdGVlVJTGdkMEx6Zm5iWFBfdm8zaGhaQUloaHVNM2JKVnZUSTJ0OTl0QzZpd3RrZEtSLVFPZXNuaFJzVlZOV1g1MTY?oc=5",
       "discovery_title": "In Sardegna il mare vale 2,9 miliardi: 13.350 imprese e oltre 53mila occupati nella Blue Economy - CagliariToday",
-      "detected_at": "2026-11-07T17:41:48.662581+00:00",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -449,10 +430,29 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Disuguaglianze e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOakM1YVRHZ0RabXd1dTlYMW9HaHBkMmZZVTBXUFNBb1lzNnhaR3llRHpuVTc0YlZBYVo2UGdnQWQwOXpseFl6YlE2SXNlQjd2T1ZOMHVJZlZRSzBRaFNic0VraVU1T0U0Qk1lT3Q2aWJ4QTltQ3pNWDMxa3NRYzJrYmZYbURzZ3VzWk5vMUZDM1A3MFFkUHVNdzMwZXpkdWZJMGVXVF9sTDNBektQMFdhQUY4RTdoVjVJdUo2dlZLZlVZYlVCdjdqR2JuUTF0MlgtZ3NRSVZiSUVfVUlWUk9GUzEzdVZjclFsTS1kY1FsSEkyZGhkTlBpT1FRWE1ySWJUWm1ZcTRmTXZ3cmJMU0tPMWUxUlVpX3lNZWZXZEE1N2ZjSEpyWXZFbkpuNUQ3Qnl3Tm1YaFNtYmJ0U2tKSG5LMTgyYnJBQk5X?oc=5",
+      "discovery_title": "Carovita in Emilia-Romagna, prezzi aumentati del 23,9% dal 2019: bollette, alimentari e trasporti sempre più cari, mentre i salari perdono potere d’acquisto - Il Tirreno",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
+      "score_discovery": 54,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "23,9%",
+        "2019",
+        "23,9%",
+        "2019"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQZWFkV2hoTUwtYnFRUV9jZU9OZFczbVhzdE42VnViZDUyeGUxOUo1MWRZZGFRd2d3d2YyVFJoZElyX0pGd0czZ01LUzZnZEtDc3FadUhLRU1GZFMtaVhMNm9QUmZjSmh4RWZ4ZlQycG1TZnNtbHNBaGIzdUJWeloyWkpQMEZEMXRwU09Ra3VzVGVmZEZjMHVFcVlZRGNkYml2R2s3Q3JEOHEwd1JxZUVlTmdQMUpLWGNUc2JJNEtrMFdGTXNPdGZSN3NacTdDTUdoRXB0M0dPNEtDVHRCNzFBMUM0c243b2QyR1pCUElLQ2ZlaHpBQVU5T1dhRENNMnYw?oc=5",
       "discovery_title": "Stipendi in Europa, nel 2025 in Italia la media è di 34.213 euro contro i 41.464 dell’Ue: il nostro Paese è 13° su 26 nella classifica Eurostat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-07T17:41:48.662581+00:00",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -474,10 +474,29 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia lavoro e imprese",
+      "discovery_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LR3NnRkdRQlRROWFCNWtwNXBPVFg5VDNzX0FHby1jelpabHpMZkxneXR1d2c3Y3YtZWptd19OMXp2VTNOVTlHS1RMMEpDOVE1Um9WQ2UxSWZZM2hyNjN4S1B3Ym12blE5cVl6ZHZkTzZ2V0UtVFE?oc=5",
+      "discovery_title": "Banca d'Italia, imprese: vendite in accelerazione, ma il 67% registra margini in calo. Investimenti in crescita nel 2027 - Euroborsa",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
+      "score_discovery": 54,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "67%",
+        "2027 ",
+        "67%",
+        "2027 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcGdEWDdVcGdVM29zSGZzSGlUbkgyendNdXVZQUZKTk1XY0JKZFpZRGRmaERzd2ZkZmU0Wm9vY3RpN0I3TnBSTFQ1dnFMV093UjB6Q3FTMElodmctV0lWX204VGoxNk1kWllEel9vOGlBQkV2ckhEYm4zdXRrMHBPVzljcXNDcDhvOE1GRzBUOGRUamVFN2RrXzl3RTVORDRReHlaY0FXUGdiMjZjZ3pwU3VOSmZzai0yX216dQ?oc=5",
       "discovery_title": "Blue economy, in Sardegna 13.350 imprese e 53.600 occupati: il mare \"vale\" 2,9 miliardi - Sardiniapost.it",
-      "detected_at": "2026-11-07T17:41:48.662581+00:00",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -487,6 +506,25 @@
         "13.350 ",
         "53.600 ",
         "2,9 miliardi"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "discovery_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOOVY5bjJGbmVqOU9GY0sxQUEwZjM4R3lCNHJxTTdMSmZxUUZXQUFCSTh1UWluMHpIVnctRWVVM0gzSUU0WlZub2xpSnVVQUsySjhNcTVxYVRRWi1vLUxyUW9MQmVKUEJKYVd4R1VPdmIzUXlYRXdLYVBselJGVElaZXllS3NMdzRUUXp6Q016QmN0aWt0OEhDN2h3VTBLQW9wQ1ZlVU5fVFFUbUtTOXFWYmVmXzctZDY4UkE4cWMzQWsxUTFBcEx5ZXZTX2FuY05IaTdwWUQtdWpseG9KMjZFeWxqNVhsNF9rdENpS3FJSzk3ZUx2VDUyY3FRSG5TQTNTbTEtNUh5cTNXT2psTXdVZWxibEpFZUk?oc=5",
+      "discovery_title": "Laureati, l'Italia resta penultima in Europa, solo il 22,3% degli adulti ha un titolo terziario: quota invariata rispetto al 2024, mentre cresce la media europea - Tecnica della Scuola",
+      "detected_at": "2026-11-07T20:48:11.517588+00:00",
+      "score_discovery": 54,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "22,3%",
+        "2024",
+        "22,3%",
+        "2024"
       ],
       "official_links": [],
       "official_domain_hints": [],
