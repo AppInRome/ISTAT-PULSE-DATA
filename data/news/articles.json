@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-07T20:48:11.517588+00:00",
+  "generated_at": "2026-11-08T02:59:29.056478+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-07T20:48:11.517588+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "published_at": "2026-11-08T02:59:29.056478+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -173,10 +173,74 @@
       "primary_research_status": "primary_evidence_not_found"
     },
     {
+      "id": "PULSE-MEDIA-A383A905ED3956A9",
+      "story_fingerprint": "a383a905ed3956a97709d657cd4220f4047951011bbaa0ddf92678817fe3238e",
+      "published_at": "2026-11-07T19:38:02+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
+      "headline": "Sparatoria a Cracovia, in piazza anche 34 liceali italiani: «Terrorizzati, ma stiamo bene»",
+      "reported_headline": "Sparatoria a Cracovia, in piazza anche 34 liceali italiani: «Terrorizzati, ma stiamo bene»",
+      "summary": "La testata open.online segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 6 persone. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Sparatoria a Cracovia, in piazza anche 34 liceali italiani: «Terrorizzati, ma stiamo bene»",
+      "pulse_summary": "La testata open.online segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 6 persone. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata open.online segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 6 persone. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Open - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ISTRUZIONE",
+      "pulse_score": 35,
+      "public_source": {
+        "url": "https://www.open.online/2026/11/07/sparatoria-cracovia-studenti-italiani-ambasciata/",
+        "domain": "open.online",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "6 persone",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "open.online",
+        "original_url": "https://www.open.online/2026/11/07/sparatoria-cracovia-studenti-italiani-ambasciata/",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-08T02:59:29.056478+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
       "id": "PULSE-MEDIA-5CBAAF4FD5D3A3D8",
       "story_fingerprint": "5cbaaf4fd5d3a3d8e4b0734672751468cf504154d935972f71ba195f7fea9eb8",
       "published_at": "2026-11-07T09:08:47+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Banca d’Italia, l’economia regionale cresce a rilento: bene terziario e manifattura, rallentano le esportazioni frenate dai dazi Usa",
       "reported_headline": "Banca d’Italia, l’economia regionale cresce a rilento: bene terziario e manifattura, rallentano le esportazioni frenate dai dazi Usa",
       "summary": "La testata corrieredellaltoadige.corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%, 0,7%, 0,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -248,7 +312,7 @@
       "id": "PULSE-MEDIA-E65569B6625F6A38",
       "story_fingerprint": "e65569b6625f6a387a11456fb659bf9acddcc020e1c5cc3a4c29e00486749491",
       "published_at": "2026-11-07T08:35:33+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Stipendi in Europa, nel 2025 in Italia la media è di 34.213 euro contro i 41.464 dell’Ue: il nostro Paese è 13° su 26 nella classifica Eurostat",
       "reported_headline": "Stipendi in Europa, nel 2025 in Italia la media è di 34.213 euro contro i 41.464 dell’Ue: il nostro Paese è 13° su 26 nella classifica Eurostat - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 34.213 euro, 41.464. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -316,7 +380,7 @@
       "id": "PULSE-7EEA8EB57536FFDB",
       "story_fingerprint": "7eea8eb57536ffdbf1648f35",
       "published_at": "2026-11-07T08:35:33+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "LAVORO",
       "pulse_score": 50,
       "patterns": [],
@@ -363,7 +427,7 @@
       "id": "PULSE-MEDIA-BD4A9E9A8BCEFF7B",
       "story_fingerprint": "bd4a9e9a8bceff7b37c58baa266b3f3d6524160682a016d29215d1b4672cebd3",
       "published_at": "2026-11-07T06:40:33+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Imprese, il capitale rende il 3,90%: Umbria sotto Toscana, Marche e media italiana",
       "reported_headline": "Imprese, il capitale rende il 3,90%: Umbria sotto Toscana, Marche e media italiana - PerugiaToday",
       "summary": "La testata PerugiaToday segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 3,90%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -376,7 +440,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - economia lavoro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -565,7 +629,7 @@
       "id": "PULSE-MEDIA-90EF966BE70EC9A1",
       "story_fingerprint": "90ef966be70ec9a1d50ef7c41c7727fba5043627b10cc7d0915ffa00c28d73c9",
       "published_at": "2026-11-06T18:23:59+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "PREZZI COMUNITARI: RILEVAZIONE DELLA COMMISSIONE EUROPEA DEL 02.11.2026 - FIGISC",
       "reported_headline": "PREZZI COMUNITARI: RILEVAZIONE DELLA COMMISSIONE EUROPEA DEL 02.11.2026 - FIGISC - Federazione Italiana Gestori Impianti Stradali Carburanti",
       "summary": "La testata FIGISC - Federazione Italiana Gestori Impianti Stradali Carburanti segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 02.11. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -578,7 +642,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Disuguaglianze e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -693,7 +757,7 @@
       "id": "PULSE-MEDIA-8257F728412ADEBA",
       "story_fingerprint": "8257f728412adebab57cab6c3e1fd7b2e17c8dd28822fc3582da0363f6f7e831",
       "published_at": "2026-11-06T16:14:18+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "«TikTok, l’algoritmo crea una spirale di contenuti dannosi per gli utenti»: i risultati dell’indagine e lo scontro con la Ue",
       "reported_headline": "«TikTok, l’algoritmo crea una spirale di contenuti dannosi per gli utenti»: i risultati dell’indagine e lo scontro con la Ue",
       "summary": "La testata corriere.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -752,7 +816,7 @@
       "id": "PULSE-MEDIA-C5CF7B094ED19566",
       "story_fingerprint": "c5cf7b094ed19566c8df59ed2b5206dd7dbab1a21db1a6457c7a5ac65438f660",
       "published_at": "2026-11-06T16:06:13+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Frosinone, giovani senza lavoro: disoccupazione all’11,2%, tra i dati peggiori del Lazio",
       "reported_headline": "Frosinone, giovani senza lavoro: disoccupazione all’11,2%, tra i dati peggiori del Lazio - FrosinoneToday",
       "summary": "La testata FrosinoneToday segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 11,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -933,7 +997,7 @@
       "id": "PULSE-MEDIA-A6DE7D2C43F58512",
       "story_fingerprint": "a6de7d2c43f58512cbb6e0c0fa06c014b8b55ad4b8dc8a0175a1c0d6e69dac31",
       "published_at": "2026-11-06T15:31:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Trentino, economia in crescita dello 0,7%: frenano export e occupazione",
       "reported_headline": "Trentino, economia in crescita dello 0,7%: frenano export e occupazione - L'Adige",
       "summary": "La testata L'Adige segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -997,7 +1061,7 @@
       "id": "PULSE-MEDIA-DD448D9524F07303",
       "story_fingerprint": "dd448d9524f07303c9849214041458fcaa629d7bd95ac80203a3dc387b11f2d7",
       "published_at": "2026-11-06T14:54:05+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Niente scuola né amici per più di sei mesi: è la condizione di oltre 50mila studenti italiani hikikomori. I dati",
       "reported_headline": "Niente scuola né amici per più di sei mesi: è la condizione di oltre 50mila studenti italiani hikikomori. I dati - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 50mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1061,7 +1125,7 @@
       "id": "PULSE-MEDIA-8914B8549EC9C360",
       "story_fingerprint": "8914b8549ec9c3601360cdf9dfb65fdc59649e79e36deca8867e512ba3affb2a",
       "published_at": "2026-11-06T14:40:17+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "IL SOLE 24 ORE * ITALIA: «PENSIONI, CIDA: PER PENSIONATI DIRIGENZA FINO A 200MILA EURO PERSI IN 14 ANNI",
       "reported_headline": "IL SOLE 24 ORE * ITALIA: «PENSIONI, CIDA: PER PENSIONATI DIRIGENZA FINO A 200MILA EURO PERSI IN 14 ANNI - agenzia giornalistica opinione",
       "summary": "La testata agenzia giornalistica opinione segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 200MILA. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1495,7 +1559,7 @@
       "id": "PULSE-MEDIA-F14FD8C4EFFDC671",
       "story_fingerprint": "f14fd8c4effdc6716eeab4c635387726460a9e8fc49644fd0ed1f27ec2ecb43c",
       "published_at": "2026-11-06T14:00:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "In Sardegna il mare vale 2,9 miliardi: 13.350 imprese e oltre 53mila occupati nella Blue Economy",
       "reported_headline": "In Sardegna il mare vale 2,9 miliardi: 13.350 imprese e oltre 53mila occupati nella Blue Economy - CagliariToday",
       "summary": "La testata CagliariToday segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 2,9 miliardi, 13.350, 53mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1569,7 +1633,7 @@
       "id": "PULSE-B3C1E048EE52A6F1",
       "story_fingerprint": "b3c1e048ee52a6f19b75f501",
       "published_at": "2026-11-06T14:00:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 45,
       "patterns": [],
@@ -1618,7 +1682,7 @@
       "id": "PULSE-MEDIA-52EEFEF6BC432164",
       "story_fingerprint": "52eefef6bc43216415056b43912b659405aad24b0adc0ce5b0a955f0908580ba",
       "published_at": "2026-11-06T13:46:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Carovita in Emilia-Romagna, prezzi aumentati del 23,9% dal 2019: bollette, alimentari e trasporti sempre più cari, mentre i salari perdono potere d’acquisto",
       "reported_headline": "Carovita in Emilia-Romagna, prezzi aumentati del 23,9% dal 2019: bollette, alimentari e trasporti sempre più cari, mentre i salari perdono potere d’acquisto - Il Tirreno",
       "summary": "La testata Il Tirreno segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 23,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1684,7 +1748,7 @@
       "id": "PULSE-157393774433D330",
       "story_fingerprint": "157393774433d330160c89b0",
       "published_at": "2026-11-06T13:46:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "LAVORO",
       "pulse_score": 54,
       "patterns": [],
@@ -1717,7 +1781,7 @@
       "id": "PULSE-MEDIA-B7BBDDC2C92E19E3",
       "story_fingerprint": "b7bbddc2c92e19e351ae7d4607974783bf9111b7f5797b39a67f0a5666118393",
       "published_at": "2026-11-06T12:50:02+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Lavoro, Manageritalia Liguria: in Regione occupazione giovanile al 73,1%, ora la sfida è far crescere il valore delle imprese",
       "reported_headline": "Lavoro, Manageritalia Liguria: in Regione occupazione giovanile al 73,1%, ora la sfida è far crescere il valore delle imprese - Adnkronos",
       "summary": "La testata Adnkronos segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 73,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1730,7 +1794,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - economia lavoro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Adnkronos dati e statistiche». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -1775,7 +1839,9 @@
         "outlet": "Adnkronos",
         "original_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOTVNleTVQRldkdGNEUEphSFhGOFBCYmQ1QXE5c1FpeHZELUlKQ2Y3VGZRcGVpMzEwckRFem43aGZJTi1QNGU1RE02RnA1aGpQaU9DZTBYYmRVMU50ZUJ2SnF0UGlhQmRHWHlVM0c2OV9haXpiUV9sS1RkU2otQXlralpremwtRktFelpwMDZwR2F4Zl9ncDdUV1VRZXE1bkluWFNlZHdJd1dvNkoyZG5vNVEydFBmZHVQLW1XTFNYVUsxQVpOZC1VRXQzWDB6ZUVKSEhGNFNBOEJjYktXUHBfOEVKMEd6R2w4TUFvdVBSd1FyLXp0dFlVM0c5ek1FSXlfTk5KLURXZGo?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      }
+      },
+      "primary_research_last_attempt_at": "2026-11-08T02:59:29.056478+00:00",
+      "primary_research_status": "primary_evidence_not_found"
     },
     {
       "id": "PULSE-MEDIA-C6EC57D6E84F6AA9",
@@ -1843,7 +1909,7 @@
       "id": "PULSE-MEDIA-08BA56E1C67A24F1",
       "story_fingerprint": "08ba56e1c67a24f12fd57f3650b6c305039a1b16ef7aa14e8989c67cd9dc95fb",
       "published_at": "2026-11-06T12:00:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Imprese, nel primo semestre calano dell’1% gli importi erogati. Si fermano anche i mutui",
       "reported_headline": "Imprese, nel primo semestre calano dell’1% gli importi erogati. Si fermano anche i mutui - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1907,7 +1973,7 @@
       "id": "PULSE-MEDIA-9AE02076D66B5FE9",
       "story_fingerprint": "9ae02076d66b5fe99169065245ffbe555ef482f5eec652cc931a9ec26ac785d3",
       "published_at": "2026-11-06T11:51:17+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Blue economy, in Sardegna 13.350 imprese e 53.600 occupati: il mare \"vale\" 2,9 miliardi",
       "reported_headline": "Blue economy, in Sardegna 13.350 imprese e 53.600 occupati: il mare \"vale\" 2,9 miliardi - Sardiniapost.it",
       "summary": "La testata Sardiniapost.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 13.350, 53.600 occupati, 2,9 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1981,7 +2047,7 @@
       "id": "PULSE-DDD8A3BC59161A07",
       "story_fingerprint": "ddd8a3bc59161a070df94baa",
       "published_at": "2026-11-06T11:51:17+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 45,
       "patterns": [],
@@ -2030,7 +2096,7 @@
       "id": "PULSE-MEDIA-7F42DF236430B077",
       "story_fingerprint": "7f42df236430b07779ffa2b602fa8fb32058b290e5669cd0b0d7d7964f6920c0",
       "published_at": "2026-11-06T11:16:48+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI",
       "reported_headline": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI - Associazione Nazionale Dentisti Italiani",
       "summary": "La testata ANDI - Associazione Nazionale Dentisti Italiani segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 3 milioni, 6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2096,7 +2162,7 @@
       "id": "PULSE-ECDC73ACD463D1A1",
       "story_fingerprint": "ecdc73acd463d1a1e9d5575c",
       "published_at": "2026-11-06T11:16:48+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "SALUTE",
       "pulse_score": 45,
       "patterns": [],
@@ -2143,7 +2209,7 @@
       "id": "PULSE-MEDIA-0BB4AC65630D9512",
       "story_fingerprint": "0bb4ac65630d95121f34484ef6a0f205aaae3fb899c63113cfe7e8c9a0ee5fa0",
       "published_at": "2026-11-06T11:00:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Banca d'Italia, imprese: vendite in accelerazione, ma il 67% registra margini in calo. Investimenti in crescita nel 2027",
       "reported_headline": "Banca d'Italia, imprese: vendite in accelerazione, ma il 67% registra margini in calo. Investimenti in crescita nel 2027 - Euroborsa",
       "summary": "La testata Euroborsa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 67%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2294,7 +2360,7 @@
       "id": "PULSE-9898D245F069A39F",
       "story_fingerprint": "9898d245f069a39f918ae2ba",
       "published_at": "2026-11-06T11:00:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 54,
       "patterns": [],
@@ -2453,7 +2519,7 @@
       "id": "PULSE-MEDIA-DDC036ACBCB75930",
       "story_fingerprint": "ddc036acbcb759306d309ac6e624d88e745dbb15ca5b046c01ed4eb35cbad670",
       "published_at": "2026-11-06T10:32:58+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "L’Italia esporta 6,4 mln di tonnellate di rifiuti l’anno, pari a circa 320mila camion",
       "reported_headline": "L’Italia esporta 6,4 mln di tonnellate di rifiuti l’anno, pari a circa 320mila camion - Greenreport.it",
       "summary": "La testata Greenreport.it segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 6,4, 320mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2624,7 +2690,7 @@
       "id": "PULSE-MEDIA-D6031418E9DEC45D",
       "story_fingerprint": "d6031418e9dec45deee95f102e2ac1be6a7535a8fd8b792b81a3056eb19160fc",
       "published_at": "2026-11-06T09:49:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "CENSIS * ROMA: «L’85% DEI RESIDENTI È SODDISFATTO DEL PROPRIO QUARTIERE, IL 63,5% NON VUOLE TRASFERIRSI",
       "reported_headline": "CENSIS * ROMA: «L’85% DEI RESIDENTI È SODDISFATTO DEL PROPRIO QUARTIERE, IL 63,5% NON VUOLE TRASFERIRSI - agenzia giornalistica opinione",
       "summary": "La testata agenzia giornalistica opinione segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 85%, 63,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2795,7 +2861,7 @@
       "id": "PULSE-MEDIA-8A1552DFE1BC227E",
       "story_fingerprint": "8a1552dfe1bc227e5332ae46aa53fc025c07279150bb6b49a3a7f543e5d6a76a",
       "published_at": "2026-11-06T08:56:54+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Che cosa dice il Rapporto Bes 2026 sulla salute degli italiani",
       "reported_headline": "Che cosa dice il Rapporto Bes 2026 sulla salute degli italiani - Farmacia News",
       "summary": "La testata Farmacia News segnala una notizia su salute. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2852,7 +2918,7 @@
       "id": "PULSE-MEDIA-C880463C466C2A6C",
       "story_fingerprint": "c880463c466c2a6cc13d58db59335e12d229a5e012185f5e30bcf0fbb28a395e",
       "published_at": "2026-11-06T07:56:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "IST in aumento in Italia, clamidia +41,5% e gonorrea +84%. \"La prevenzione non ha età\"",
       "reported_headline": "IST in aumento in Italia, clamidia +41,5% e gonorrea +84%. \"La prevenzione non ha età\" - Sanità Informazione",
       "summary": "La testata Sanità Informazione segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati +41,5%, +84%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2918,7 +2984,7 @@
       "id": "PULSE-MEDIA-8A89FD6DD75B8F1C",
       "story_fingerprint": "8a89fd6dd75b8f1c1f2c1edf52d8050786e177476cdcd049ec57c1d7cdd526ff",
       "published_at": "2026-11-06T05:14:38+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Smart working 2026, in Italia 3,56 milioni di lavoratori da remoto: crescono le grandi imprese, arretrano le PMI",
       "reported_headline": "Smart working 2026, in Italia 3,56 milioni di lavoratori da remoto: crescono le grandi imprese, arretrano le PMI - TCE Magazine",
       "summary": "La testata TCE Magazine segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 3,56 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2931,7 +2997,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - economia lavoro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -3238,7 +3304,7 @@
       "id": "PULSE-MEDIA-DFCA93BE8B4B443F",
       "story_fingerprint": "dfca93be8b4b443f0abc7b923295253690b5fee76d5494485efbc29aed97bb17",
       "published_at": "2026-11-05T15:02:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Bollo auto 2027, rimborso INPS fino a 385,71 euro per le famiglie con quattro figli e auto da 6 a 9 posti: chi rientra",
       "reported_headline": "Bollo auto 2027, rimborso INPS fino a 385,71 euro per le famiglie con quattro figli e auto da 6 a 9 posti: chi rientra - Motori.money",
       "summary": "La testata Motori.money segnala una notizia su mobilità. Nel titolo o nell'estratto sono riportati 385,71 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3366,7 +3432,7 @@
       "id": "PULSE-MEDIA-40D3D86F2AF8B52B",
       "story_fingerprint": "40d3d86f2af8b52b3aa13dcf97dffb67625d00e5f4ac14e81af9e3b3179e9920",
       "published_at": "2026-11-05T11:57:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero",
       "reported_headline": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
       "summary": "La testata Quotidiano Sanità segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 17.660, 4,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3379,7 +3445,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · specializzate · gruppo 15». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia popolazione e territori». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -3434,7 +3500,7 @@
       "id": "PULSE-FC6FE0D7E238983D",
       "story_fingerprint": "fc6fe0d7e238983dd4f54beb",
       "published_at": "2026-11-05T11:57:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "DEMOGRAFIA",
       "pulse_score": 55,
       "patterns": [],
@@ -3537,7 +3603,7 @@
       "id": "PULSE-MEDIA-8E3617EF17F9A2F9",
       "story_fingerprint": "8e3617ef17f9a2f9f40f6867113f39a8e7f1809d1be44c084bccc75c50acc9af",
       "published_at": "2026-11-05T10:43:21+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Laureati, l'Italia resta penultima in Europa, solo il 22,3% degli adulti ha un titolo terziario: quota invariata rispetto al 2024, mentre cresce la media europea",
       "reported_headline": "Laureati, l'Italia resta penultima in Europa, solo il 22,3% degli adulti ha un titolo terziario: quota invariata rispetto al 2024, mentre cresce la media europea - Tecnica della Scuola",
       "summary": "La testata Tecnica della Scuola segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 22,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3550,7 +3616,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · specializzate · gruppo 15». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - salute scuola ambiente». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -3601,7 +3667,7 @@
       "id": "PULSE-90350C8DF59F894F",
       "story_fingerprint": "90350c8df59f894f52dd5f8f",
       "published_at": "2026-11-05T10:43:21+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -3762,7 +3828,7 @@
       "id": "PULSE-MEDIA-B8F2802AB1405E45",
       "story_fingerprint": "b8f2802ab1405e459b8b1993d7f61aedf69210661ec751f318b0d4627538400e",
       "published_at": "2026-11-05T10:20:59+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Italia: occupazione record al 62,8% ma donne e giovani restano indietro",
       "reported_headline": "Italia: occupazione record al 62,8% ma donne e giovani restano indietro - ildenaro.it",
       "summary": "La testata ildenaro.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 62,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3826,7 +3892,7 @@
       "id": "PULSE-MEDIA-35CAF99A380E3F85",
       "story_fingerprint": "35caf99a380e3f85665136581862465356b887184df3544a3ce74384c32b19a6",
       "published_at": "2026-11-05T10:10:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Prezzi case e affitti in Italia: aumenti fino al 50% in 10 anni",
       "reported_headline": "Prezzi case e affitti in Italia: aumenti fino al 50% in 10 anni - Ingenio",
       "summary": "La testata Ingenio segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 50%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3888,7 +3954,7 @@
       "id": "PULSE-MEDIA-270FCEEFACF786FE",
       "story_fingerprint": "270fceefacf786fece2b3babee2cddfdda2db8e3a935d105d3baaa22eb8515ba",
       "published_at": "2026-11-05T10:09:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "++ Istat, a settembre in calo consumi alimentari, -0,3% su agosto ++",
       "reported_headline": "++ Istat, a settembre in calo consumi alimentari, -0,3% su agosto ++ - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -0,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3950,7 +4016,7 @@
       "id": "PULSE-MEDIA-3E8C371A17BD1D6F",
       "story_fingerprint": "3e8c371a17bd1d6f61f646b45a2e9d4acd89bf63ec7f818674f387d46663d47b",
       "published_at": "2026-11-05T09:49:00+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Istat, a settembre in calo consumi alimentari, -0,3% su agosto (2)",
       "reported_headline": "Istat, a settembre in calo consumi alimentari, -0,3% su agosto (2) - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -0,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4062,7 +4128,7 @@
       "id": "PULSE-MEDIA-1C8E88055059A042",
       "story_fingerprint": "1c8e88055059a042fb63a1ada2deb74b76d192a3b15235594b7e7383de298712",
       "published_at": "2026-11-05T09:32:02+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Istat, in calo a settembre i consumi alimentari: -0,3% su agosto",
       "reported_headline": "Istat, in calo a settembre i consumi alimentari: -0,3% su agosto - Tgcom24",
       "summary": "La testata Tgcom24 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -0,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -23625,7 +23691,7 @@
       "id": "PULSE-MEDIA-AA3AEDCD43FF16C5",
       "story_fingerprint": "aa3aedcd43ff16c5734eafad768d455aea4519ff8027263cf6bbbdc7af7af7eb",
       "published_at": "2026-10-29T13:39:43+00:00",
-      "last_seen_at": "2026-11-07T20:48:11.517588+00:00",
+      "last_seen_at": "2026-11-08T02:59:29.056478+00:00",
       "headline": "Scuola dell’infanzia, nell’UE la frequenta il 94,4% dei bambini. In Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2%",
       "reported_headline": "Scuola dell’infanzia, nell’UE la frequenta il 94,4% dei bambini. In Italia Campania in testa con il 97,6%, ultimo il Lazio con l’88,2% - Cittadinanzattiva",
       "summary": "La testata Cittadinanzattiva segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 94,4%, 97,6%, 88,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
