@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-08T11:49:53.707974+00:00",
+  "generated_at": "2026-11-08T14:50:42.935743+00:00",
   "candidates": [
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 36
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 48
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 31
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
-      "status": "radar_error",
-      "error": "The read operation timed out"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE osservatori ufficiali 2/9",
@@ -64,7 +64,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 28
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -74,7 +74,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 25
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -179,12 +179,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 28
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -294,7 +294,7 @@
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 28
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -339,12 +339,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 38
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 26
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -367,31 +367,10 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "Google News - Italia popolazione e territori",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNZFF5OVBUd3JKaWM4SVRJWmlJM2hEYWRZQ2gzWGFlZVRFbmxkcXdEZE5hOTJKN2ZEejFvcU5mem5RNkFieUNNWC1jaHZKa3VOSU5KaUZ1Y0w4eEdjREhCTVV5RG83MmRTcF96WUh1YUdFbWUyMjYtYmRmS3JrOE9ZLWJYSExFRm9LOVJtWXhnMFhZVDVWR0d4aUl2Mm9NcHd6SkpPRTB5YS05TjY2RnZ1WWw4bDBzQl9Da2VzQ0hUTGEyZGg5ZFctZjRkT1BnM1k2blU0S3dGeEdzZFlteTViR1llTWxDX3FoYXBtUWJ4SjRZMGNaQ0o2ZGFwSzF3Q29Ib2FfSVhVemxLNFAyZ2pwa1pvcWxVVlRtclY3V2NNNkQ3ZTRYaDgzaEN2SVZPcnlmejVHQl9SbFB1TUY0aUlYaVdXZjJvMXliSkM0Vkh3UTJQd05PTkdFNzdrSnA?oc=5",
-      "discovery_title": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
-      "detected_at": "2026-11-08T11:49:53.707974+00:00",
-      "score_discovery": 55,
-      "topic": "DEMOGRAFIA",
-      "numbers_detected": [
-        "2024 ",
-        "17.660 ",
-        "4,8%",
-        "2024 ",
-        "17.660 ",
-        "4,8%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Il Sole 24 Ore - Economia Industria",
       "discovery_url": "https://www.ilsole24ore.com/art/liguria-10-milioni-d-investimenti-turismo-regione-e-presenze-316percento-AJInWY7B",
       "discovery_title": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
-      "detected_at": "2026-11-08T11:49:53.707974+00:00",
+      "detected_at": "2026-11-08T14:50:42.935743+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -412,7 +391,7 @@
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://www.corriere.it/economia/consumi/26_novembre_08/settimana-bianca-prezzi-alle-stelle-skipass-fino-a-89-euro-e-rincari-del-43-ecco-quanto-costa-sciare-1ad920eb-3413-44a0-bb74-dbceb94eexlk.shtml",
       "discovery_title": "Settimana bianca, prezzi alle stelle: skipass fino a 89 euro e rincari del 43%. Ecco quanto costa sciare",
-      "detected_at": "2026-11-08T11:49:53.707974+00:00",
+      "detected_at": "2026-11-08T14:50:42.935743+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -433,7 +412,7 @@
       "radar": "ANSA - Notizie",
       "discovery_url": "https://www.ansa.it/canale_viaggi/notizie/news/2026/11/06/turismo-di-lusso-negli-alberghi-vale-104-miliardi-dal-2008-presenze_d5536c32-4614-4152-9069-88638f958563.html",
       "discovery_title": "Il turismo di lusso negli alberghi vale 10,4 miliardi, dal 2008 presenze a +111%",
-      "detected_at": "2026-11-08T11:49:53.707974+00:00",
+      "detected_at": "2026-11-08T14:50:42.935743+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -455,7 +434,7 @@
       "radar": "Google News - Italia salute e welfare",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWUJhQUVxNmZsdElfZThUdXdEa05iVEZneUdRRHNOSGdQOThnWFZONXoyTi10MDVodUJBOTdsaERUNW9sdktjZ0JTVjhmVE4wbTZsTTFTTEpsSHhKbVFTUUp2OFZjMlJvMktVbVJveFZjcUNHa1Y3djVUT2lWcFlfV2hzdXBBWmJrTm5UT3BWVXpwQ0ZCVS1Pb3phT1pxOXB3dlZFYQ?oc=5",
       "discovery_title": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI - Associazione Nazionale Dentisti Italiani",
-      "detected_at": "2026-11-08T11:49:53.707974+00:00",
+      "detected_at": "2026-11-08T14:50:42.935743+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -473,10 +452,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia popolazione e territori",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNZFF5OVBUd3JKaWM4SVRJWmlJM2hEYWRZQ2gzWGFlZVRFbmxkcXdEZE5hOTJKN2ZEejFvcU5mem5RNkFieUNNWC1jaHZKa3VOSU5KaUZ1Y0w4eEdjREhCTVV5RG83MmRTcF96WUh1YUdFbWUyMjYtYmRmS3JrOE9ZLWJYSExFRm9LOVJtWXhnMFhZVDVWR0d4aUl2Mm9NcHd6SkpPRTB5YS05TjY2RnZ1WWw4bDBzQl9Da2VzQ0hUTGEyZGg5ZFctZjRkT1BnM1k2blU0S3dGeEdzZFlteTViR1llTWxDX3FoYXBtUWJ4SjRZMGNaQ0o2ZGFwSzF3Q29Ib2FfSVhVemxLNFAyZ2pwa1pvcWxVVlRtclY3V2NNNkQ3ZTRYaDgzaEN2SVZPcnlmejVHQl9SbFB1TUY0aUlYaVdXZjJvMXliSkM0Vkh3UTJQd05PTkdFNzdrSnA?oc=5",
+      "discovery_title": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
+      "detected_at": "2026-11-08T14:50:42.935743+00:00",
+      "score_discovery": 55,
+      "topic": "DEMOGRAFIA",
+      "numbers_detected": [
+        "2024 ",
+        "17.660 ",
+        "4,8%",
+        "2024 ",
+        "17.660 ",
+        "4,8%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQZWFkV2hoTUwtYnFRUV9jZU9OZFczbVhzdE42VnViZDUyeGUxOUo1MWRZZGFRd2d3d2YyVFJoZElyX0pGd0czZ01LUzZnZEtDc3FadUhLRU1GZFMtaVhMNm9QUmZjSmh4RWZ4ZlQycG1TZnNtbHNBaGIzdUJWeloyWkpQMEZEMXRwU09Ra3VzVGVmZEZjMHVFcVlZRGNkYml2R2s3Q3JEOHEwd1JxZUVlTmdQMUpLWGNUc2JJNEtrMFdGTXNPdGZSN3NacTdDTUdoRXB0M0dPNEtDVHRCNzFBMUM0c243b2QyR1pCUElLQ2ZlaHpBQVU5T1dhRENNMnYw?oc=5",
       "discovery_title": "Stipendi in Europa, nel 2025 in Italia la media è di 34.213 euro contro i 41.464 dell’Ue: il nostro Paese è 13° su 26 nella classifica Eurostat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-08T11:49:53.707974+00:00",
+      "detected_at": "2026-11-08T14:50:42.935743+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
