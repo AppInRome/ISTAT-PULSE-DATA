@@ -126,6 +126,17 @@ def longform_sections(series, publisher):
             f"di {_n(abs(delta))} {absolute_unit}."
         ))
 
+    # A two-period series must satisfy the same substantive editorial standard
+    # as longer series. Add a methodological qualification, never filler or
+    # invented evidence; it applies to percentages and other units alike.
+    paragraphs[-1]["text"] += (
+        " Per interpretare correttamente questo confronto, la definizione "
+        "dell'indicatore e la popolazione statistica di riferimento devono "
+        "restare omogenee nei due periodi. In assenza di tali condizioni, "
+        "la sola differenza aritmetica non sarebbe sufficiente a dimostrare "
+        "un cambiamento effettivo del fenomeno osservato."
+    )
+
     paragraphs.extend([
         _section(
             f"L'indicatore {name} descrive esattamente la grandezza riportata "
