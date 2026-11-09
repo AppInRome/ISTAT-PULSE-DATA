@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-09T06:17:35.454302+00:00",
+  "checked_at": "2026-11-09T09:23:44.904563+00:00",
   "feeds_configured": 4,
-  "feeds_reached": 1,
-  "articles_new": 0,
-  "articles_total": 5867,
+  "feeds_reached": 2,
+  "articles_new": 1,
+  "articles_total": 5868,
   "sources": {
     "CNA": {
       "status": "error",
@@ -11,9 +11,9 @@
       "error": "HTTP Error 403: Forbidden"
     },
     "CNR": {
-      "status": "error",
-      "new": 0,
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "ok",
+      "new": 1,
+      "items": 20
     },
     "SVIMEZ": {
       "status": "ok",
