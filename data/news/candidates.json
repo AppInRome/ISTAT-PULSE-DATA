@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-11-09T09:22:28.746321+00:00",
+  "generated_at": "2026-11-09T12:06:05.235965+00:00",
   "candidates": [
-    {
-      "radar": "PULSE osservatori ufficiali 4/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "PULSE osservatori ufficiali 5/9",
       "status": "radar_fetched",
@@ -29,12 +24,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 18
+      "items_fetched": 11
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -44,12 +39,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 19
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -84,7 +79,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "AGI - Notizie",
@@ -119,7 +114,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 13
+      "items_fetched": 11
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -149,7 +144,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -259,7 +254,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 18
     },
     {
       "radar": "Google News - economia lavoro",
@@ -304,32 +299,32 @@
     {
       "radar": "Google News - Italia economia e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 59
     },
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 49
+      "items_fetched": 51
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 25
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -343,6 +338,11 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 3/9",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE osservatori ufficiali 4/9",
       "status": "radar_fetched",
       "items_fetched": 60
     },
@@ -367,10 +367,31 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOG1zY25hRDh3Zzc4Ukh4b245dGc0Mk0wdDJLLVlXX0YzMmtWMTdLX3UwLUN4eXRiRlA0OHdJcE5KTkxSeXRzTFB3R2FTaU1lcVp4RnBvOUVKUjlmaElQZGExWnBsLThEYXZXLWdGNXRta0dnTkQ3dUQxcnI5WXFaV2lhSC16RXBMYkYzN2Yyd2duWHVsNFl4VHhQbHdMYXVaNjRqeUNNOEtwM2JQaUhpSDZWTGZ2aE41ZGVNT3JaeGhQbUlEdDBZOEk3eXptVUYyY2w1Tg?oc=5",
+      "discovery_title": "Taglio rivalutazione pensioni 2027: in Basilicata colpite quasi 24000 persone, perdite fino a 850 euro. L'appello - Potenza News ®",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2027",
+        "240",
+        "850 ",
+        "2027",
+        "240",
+        "850 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Il Sole 24 Ore - Economia Industria",
       "discovery_url": "https://www.ilsole24ore.com/art/liguria-10-milioni-d-investimenti-turismo-regione-e-presenze-316percento-AJInWY7B",
       "discovery_title": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
-      "detected_at": "2026-11-09T09:22:28.746321+00:00",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -391,7 +412,7 @@
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/export-l-italia-53percento-dieci-anni-battuti-concorrenti-europei-AJIHkO9B",
       "discovery_title": "Export, per l’Italia +53% in dieci anni: battuti i concorrenti europei",
-      "detected_at": "2026-11-09T09:22:28.746321+00:00",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -407,72 +428,115 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · specializzate · gruppo 15",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNZFF5OVBUd3JKaWM4SVRJWmlJM2hEYWRZQ2gzWGFlZVRFbmxkcXdEZE5hOTJKN2ZEejFvcU5mem5RNkFieUNNWC1jaHZKa3VOSU5KaUZ1Y0w4eEdjREhCTVV5RG83MmRTcF96WUh1YUdFbWUyMjYtYmRmS3JrOE9ZLWJYSExFRm9LOVJtWXhnMFhZVDVWR0d4aUl2Mm9NcHd6SkpPRTB5YS05TjY2RnZ1WWw4bDBzQl9Da2VzQ0hUTGEyZGg5ZFctZjRkT1BnM1k2blU0S3dGeEdzZFlteTViR1llTWxDX3FoYXBtUWJ4SjRZMGNaQ0o2ZGFwSzF3Q29Ib2FfSVhVemxLNFAyZ2pwa1pvcWxVVlRtclY3V2NNNkQ3ZTRYaDgzaEN2SVZPcnlmejVHQl9SbFB1TUY0aUlYaVdXZjJvMXliSkM0Vkh3UTJQd05PTkdFNzdrSnA?oc=5",
-      "discovery_title": "PMA. Nel 2024 nati 17.660 bambini, il 4,8% di tutte le nascite in Italia. Crescono trattamenti e coppie, ma restano forti disuguaglianze nell’accesso. La nuova Relazione al Parlamento del Ministero - Quotidiano Sanità",
-      "detected_at": "2026-11-09T09:22:28.746321+00:00",
-      "score_discovery": 55,
-      "topic": "DEMOGRAFIA",
-      "numbers_detected": [
-        "2024 ",
-        "17.660 ",
-        "4,8%",
-        "2024 ",
-        "17.660 ",
-        "4,8%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Italia salute e welfare",
-      "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWUJhQUVxNmZsdElfZThUdXdEa05iVEZneUdRRHNOSGdQOThnWFZONXoyTi10MDVodUJBOTdsaERUNW9sdktjZ0JTVjhmVE4wbTZsTTFTTEpsSHhKbVFTUUp2OFZjMlJvMktVbVJveFZjcUNHa1Y3djVUT2lWcFlfV2hzdXBBWmJrTm5UT3BWVXpwQ0ZCVS1Pb3phT1pxOXB3dlZFYQ?oc=5",
-      "discovery_title": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI - Associazione Nazionale Dentisti Italiani",
-      "detected_at": "2026-11-09T09:22:28.746321+00:00",
-      "score_discovery": 45,
-      "topic": "SALUTE",
-      "numbers_detected": [
-        "3 milioni",
-        "6%",
-        "12 ",
-        "3 milioni",
-        "6%",
-        "12 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/finanza/26_novembre_09/i-crediti-del-superbonus-spalmati-in-10-anni-imprese-professionisti-e-banche-sul-piede-di-guerra-i-correttivi-del-governo-5ce4d117-2041-4200-bb35-4690db8c1xlk.shtml",
-      "discovery_title": "I crediti del Superbonus? Spalmati in 10 anni. Imprese, professionisti e banche sul piede di guerra, i correttivi del governo",
-      "detected_at": "2026-11-09T09:22:28.746321+00:00",
-      "score_discovery": 50,
-      "topic": "ECONOMIA",
+      "discovery_url": "https://corrieredibologna.corriere.it/notizie/economia/26_novembre_09/stipendi-bologna-emilia-romagna-740fb548-51b7-4e9a-b9db-fc3bb0221xlk.shtml",
+      "discovery_title": "Gli stipendi a Bologna e in Emilia-Romagna tra inflazione, carovita e nuovi contratti: come stanno cambiando i salari",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
+      "score_discovery": 95,
+      "topic": "LAVORO",
       "numbers_detected": [
-        "10 ",
-        "37 ",
-        "20,5 miliardi",
-        "2036",
-        "2027"
+        "2025 ",
+        "74,2%",
+        "62,5%",
+        "3,1%",
+        "2009"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "inps.it",
+        "iss.it",
+        "istat.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "discovery_url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQTFNKNWRTckpLUTF0TjVJbXFmenhYZ1BvVWVZNElwX0JkdDVNN0ZWY3BsSElOX05ZWHlPTnJPSUd2RUFyWGF3enVRVjdUWnIyT3N5UEZIOVZ1UmNGM1VKNUdsSmx0WVM5Qjl1LVRyUzNtSm9mZlFFWWRMd25pdEVfaloxcWpyNXBoUXVsMHJBWDk4TE9kSUJIcENKMlY1Vmd3aFVDX2wxX09wbXpXcGFUTEJGMEgwWkpKYlFoR3U5bW96S3R6aDEtdm5ibmVzSU9YSV9ZbGJFOTFhTG1ld1p3UW1CbkMtYnF2b25WeFZ3bGkxMVZzVE5XeVhFZnJKc3p4b0pyYzZfUGN5UnphX2tSSlZxdGtDeFJjYUdraVBYdw?oc=5",
+      "discovery_title": "Influenza. Vaccinazioni in calo, copertura degli anziani sotto il 50%: è il dato peggiore dal 2014-2015. Italia sempre più lontana dagli obiettivi Oms - Quotidiano Sanità",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
+      "score_discovery": 60,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "50%",
+        "2014",
+        "2015",
+        "50%",
+        "2014",
+        "2015"
       ],
       "official_links": [],
       "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14789/hr-dtm-5m-online-la-nuova-versione-del-modello-digitale-del-terreno-ad-alta-risoluzione-dell-italia",
+      "discovery_title": "HR-DTM-5m, online la nuova versione del modello digitale del terreno ad alta risoluzione dell'Italia",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "5",
+        "09",
+        "11",
+        "2026 ",
+        "5",
+        "5 ",
+        "15mila",
+        "8mila"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14789/hr-dtm-5m-online-la-nuova-versione-del-modello-digitale-del-terreno-ad-alta-risoluzione-dell-italia#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news"
+      ],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14789/hr-dtm-5m-online-la-nuova-versione-del-modello-digitale-del-terreno-ad-alta-risoluzione-dell-italia",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "5",
+          "09",
+          "11",
+          "2026 ",
+          "5",
+          "5 "
+        ],
+        "matched_non_year_numbers": [
+          "5",
+          "09",
+          "11",
+          "5",
+          "5 ",
+          "15mila"
+        ],
+        "matched_keywords": [
+          "online",
+          "nuova",
+          "versione",
+          "modello",
+          "digitale",
+          "terreno",
+          "alta",
+          "risoluzione"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "HR-DTM-5m, online la nuova versione del modello digitale del terreno ad alta risoluzione dell'Italia | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture s",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQZWFkV2hoTUwtYnFRUV9jZU9OZFczbVhzdE42VnViZDUyeGUxOUo1MWRZZGFRd2d3d2YyVFJoZElyX0pGd0czZ01LUzZnZEtDc3FadUhLRU1GZFMtaVhMNm9QUmZjSmh4RWZ4ZlQycG1TZnNtbHNBaGIzdUJWeloyWkpQMEZEMXRwU09Ra3VzVGVmZEZjMHVFcVlZRGNkYml2R2s3Q3JEOHEwd1JxZUVlTmdQMUpLWGNUc2JJNEtrMFdGTXNPdGZSN3NacTdDTUdoRXB0M0dPNEtDVHRCNzFBMUM0c243b2QyR1pCUElLQ2ZlaHpBQVU5T1dhRENNMnYw?oc=5",
       "discovery_title": "Stipendi in Europa, nel 2025 in Italia la media è di 34.213 euro contro i 41.464 dell’Ue: il nostro Paese è 13° su 26 nella classifica Eurostat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-09T09:22:28.746321+00:00",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -486,6 +550,27 @@
         "41.464 ",
         "13",
         "26 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia salute e welfare",
+      "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWUJhQUVxNmZsdElfZThUdXdEa05iVEZneUdRRHNOSGdQOThnWFZONXoyTi10MDVodUJBOTdsaERUNW9sdktjZ0JTVjhmVE4wbTZsTTFTTEpsSHhKbVFTUUp2OFZjMlJvMktVbVJveFZjcUNHa1Y3djVUT2lWcFlfV2hzdXBBWmJrTm5UT3BWVXpwQ0ZCVS1Pb3phT1pxOXB3dlZFYQ?oc=5",
+      "discovery_title": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI - Associazione Nazionale Dentisti Italiani",
+      "detected_at": "2026-11-09T12:06:05.235965+00:00",
+      "score_discovery": 45,
+      "topic": "SALUTE",
+      "numbers_detected": [
+        "3 milioni",
+        "6%",
+        "12 ",
+        "3 milioni",
+        "6%",
+        "12 "
       ],
       "official_links": [],
       "official_domain_hints": [],
