@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-11-09T02:58:06.458088+00:00",
+  "generated_at": "2026-11-09T06:14:09.387367+00:00",
   "discovery_feeds_configured": 73,
   "discovery_feeds_reached": 69,
   "discovery_feeds_failed": 4,
-  "articles_pending_research": 270,
+  "articles_pending_research": 271,
   "automatic_primary_research": {
     "attempted": 2,
     "promoted": 0,
-    "pending": 459
+    "pending": 461
   },
   "daily": {
     "oggi": {
-      "published": 1,
+      "published": 2,
       "with_verified_chart": 1,
-      "media_discovered": 0,
-      "media_reports_not_primary_verified": 0,
+      "media_discovered": 1,
+      "media_reports_not_primary_verified": 1,
       "original_pulse_verified": 1,
-      "distinct_primary_domains": 1
+      "distinct_primary_domains": 2
     },
     "ieri": {
-      "published": 12,
+      "published": 13,
       "with_verified_chart": 0,
-      "media_discovered": 12,
-      "media_reports_not_primary_verified": 12,
+      "media_discovered": 13,
+      "media_reports_not_primary_verified": 13,
       "original_pulse_verified": 0,
-      "distinct_primary_domains": 11
+      "distinct_primary_domains": 12
     },
     "archivio": {
       "published": 496,
