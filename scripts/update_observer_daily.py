@@ -100,6 +100,11 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
     original = obj.get("articles", [])
     if not isinstance(original, list) or len(original) < 1000:
         raise ValueError("Archivio Osservatori precedente incompleto: annullo")
+    try:
+        from scripts.pulse_editorial_recovery_guard import repair_observer_archive
+    except ModuleNotFoundError:
+        from pulse_editorial_recovery_guard import repair_observer_archive
+    original, repair_status = repair_observer_archive(original)
     by_id = {x["id"]: x for x in original if isinstance(x, dict) and x.get("id")}
     existing_urls = {x.get("public_source", {}).get("url") for x in by_id.values()}
     stats = {}
@@ -126,6 +131,7 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
                     "id": uid, "published_at": dt.isoformat().replace("+00:00", "Z"),
                     "observer": name, "topic": topic_for(title),
                     "article_type": "DOCUMENTO_SENZA_DATI_NUMERICI",
+                    "editorial_format": "source_card",
                     "pulse_title": title, "pulse_summary": summary,
                     "pulse_article_body": [summary],
                     "key_figures": [], "chart_points": [], "pulse_score": 0, "patterns": [],
@@ -146,9 +152,10 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
         "checked_at": now.isoformat(), "feeds_configured": len(FEEDS),
         "feeds_reached": sum(x["status"] == "ok" for x in stats.values()),
         "articles_new": additions, "articles_total": len(by_id),
-        "sources": stats, "other_institutions": "not_yet_connected"
+        "sources": stats, "other_institutions": "not_yet_connected",
+        "editorial_recovery": repair_status
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    if additions:
+    if additions or repair_status["changed"]:
         obj["articles"] = sorted(by_id.values(), key=lambda a: a.get("published_at", ""), reverse=True)
         obj["generated_at"] = now.isoformat()
         obj["source_count"] = max(65, int(obj.get("source_count", 0)))

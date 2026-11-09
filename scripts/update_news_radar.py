@@ -1166,12 +1166,9 @@ def main():
             }
             # Original editorial copy: source verified, no reprint of the media headline.
             article=compose_verified(article,resolved)
-            if article.get("verification_tier")=="verified_comparable_series":
-                try:
-                    from scripts.pulse_ai_newsroom import attempt_ai_edition
-                except ModuleNotFoundError:
-                    from pulse_ai_newsroom import attempt_ai_edition
-                article=attempt_ai_edition(article)
+            # AI model output is never inserted into the public feed here.
+            # Generate evidence-linked, private drafts with
+            # pulse_editorial_recovery_draft_cli.py; publish only after review.
             # Slow official-source verification may rediscover the same story
             # already upgraded by the automatic primary research pass.
             # Keep one stable media story instead of showing a duplicate card.
@@ -1245,6 +1242,12 @@ def main():
             # A stale curated package must never empty the daily news feed.
             # Keep last-good newsroom articles, report the rejected overlay.
             print(f"[PULSE APPROVED FEATURES] rejected stale/invalid overlay: {exc}", flush=True)
+    try:
+        from scripts.pulse_editorial_recovery_guard import audit_news_archive
+    except ModuleNotFoundError:
+        from pulse_editorial_recovery_guard import audit_news_archive
+    guarded, recovery_report = audit_news_archive(list(by_id.values()))
+    by_id = {item["id"]: item for item in guarded}
     arts=sorted(by_id.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Two explicit tiers in the same dated newsroom index:
     # 1. primary-source verified PULSE features, eligible for data charts
@@ -1318,6 +1321,7 @@ def main():
         "daily":by_day,
         "note":"Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."
     }
+    quality["editorial_recovery"] = recovery_report
     (ROOT/"editorial_quality_status.json").write_text(json.dumps(
          quality,ensure_ascii=False,indent=2)+"\n")
     ARTICLES.write_text(json.dumps({"generated_at":now.isoformat(),"articles":arts},ensure_ascii=False,indent=2)+"\n")
