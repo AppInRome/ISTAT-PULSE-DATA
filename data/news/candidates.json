@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:05:54.264277+00:00",
+  "generated_at": "2026-11-09T17:59:45.529753+00:00",
   "candidates": [
     {
       "radar": "PULSE osservatori ufficiali 5/9",
@@ -24,7 +24,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 8
+      "items_fetched": 5
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -39,12 +39,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 26
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 27
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -114,7 +114,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 12
+      "items_fetched": 11
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -144,12 +144,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -254,17 +254,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 17
+      "items_fetched": 18
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 31
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 33
     },
     {
       "radar": "Repubblica Economia",
@@ -309,12 +309,12 @@
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 35
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -324,7 +324,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 27
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -364,34 +364,13 @@
     {
       "radar": "SINAB - Notizie ufficiali bio",
       "status": "radar_error",
-      "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "radar": "PULSE Italia - Sud e Isole",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOG1zY25hRDh3Zzc4Ukh4b245dGc0Mk0wdDJLLVlXX0YzMmtWMTdLX3UwLUN4eXRiRlA0OHdJcE5KTkxSeXRzTFB3R2FTaU1lcVp4RnBvOUVKUjlmaElQZGExWnBsLThEYXZXLWdGNXRta0dnTkQ3dUQxcnI5WXFaV2lhSC16RXBMYkYzN2Yyd2duWHVsNFl4VHhQbHdMYXVaNjRqeUNNOEtwM2JQaUhpSDZWTGZ2aE41ZGVNT3JaeGhQbUlEdDBZOEk3eXptVUYyY2w1Tg?oc=5",
-      "discovery_title": "Taglio rivalutazione pensioni 2027: in Basilicata colpite quasi 24000 persone, perdite fino a 850 euro. L'appello - Potenza News ®",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
-      "score_discovery": 45,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "2027",
-        "240",
-        "850 ",
-        "2027",
-        "240",
-        "850 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "error": "The read operation timed out"
     },
     {
       "radar": "Il Sole 24 Ore - Economia Industria",
       "discovery_url": "https://www.ilsole24ore.com/art/liguria-10-milioni-d-investimenti-turismo-regione-e-presenze-316percento-AJInWY7B",
       "discovery_title": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -412,7 +391,7 @@
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/export-l-italia-53percento-dieci-anni-battuti-concorrenti-europei-AJIHkO9B",
       "discovery_title": "Export, per l’Italia +53% in dieci anni: battuti i concorrenti europei",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -431,7 +410,7 @@
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://corrieredibologna.corriere.it/notizie/economia/26_novembre_09/stipendi-bologna-emilia-romagna-740fb548-51b7-4e9a-b9db-fc3bb0221xlk.shtml",
       "discovery_title": "Gli stipendi a Bologna e in Emilia-Romagna tra inflazione, carovita e nuovi contratti: come stanno cambiando i salari",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 95,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -455,7 +434,7 @@
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTVRbko1RnEzZFNCbXVZNnBQTUdPX0dLVkk2UnNLVDZyN3NRMGo2YnpCQktwS18zMHdfOEpBS05qWkNUNWlHbmpXNUlaRTBsUUY0Q2hrQTRiVHRuMVlQU3BvU3d3STBzVVdFelRTREZhUXlWMFRTXzNmUVhKWExqbUxWQ25kY3lOUUFzeEVZT29oM2R5UzJ4c2VIOXk3eWY2T1JJMUNfXzB3TmFjRDl5OTdTNHcyMG9zeUxLMFc1NEpLYTdEczFxOVhMb0I4SmduZTVyLVUwZmJINWhGX2hN?oc=5",
       "discovery_title": "MARKET DRIVER: BoE, inflazione attesa al 5% a metà 2027 per i costi energetici (Ebury) - Milano Finanza",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -471,10 +450,37 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE 80 testate · specializzate · gruppo 12",
+      "discovery_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTTdDT3FoeVhiQlhESUVxbk5zRERXajJRXzdBVkZjTDc4cXg4ZnBEZE9uTDdzcDNCeXJ5MGFBWm00OC1XZmQxYzhHQ2hLR04zQVd4WDI0MGxWRjZyZ01GZ3k3QXVicWZvSFBxd1VwM2RYem55ODNtLS1kUUpHdnV2cw?oc=5",
+      "discovery_title": "EICMA 2026 chiude con oltre 600.000 presenze (+6%): scooter a +14,76% in Italia, export europeo di moto -22% nel 2025 - Motori.money",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
+      "score_discovery": 50,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "600.000 ",
+        "+6%",
+        "+14,76%",
+        "-22%",
+        "2025 ",
+        "2026 ",
+        "600.000 ",
+        "+6%",
+        "+14,76%",
+        "-22%",
+        "2025 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQTFNKNWRTckpLUTF0TjVJbXFmenhYZ1BvVWVZNElwX0JkdDVNN0ZWY3BsSElOX05ZWHlPTnJPSUd2RUFyWGF3enVRVjdUWnIyT3N5UEZIOVZ1UmNGM1VKNUdsSmx0WVM5Qjl1LVRyUzNtSm9mZlFFWWRMd25pdEVfaloxcWpyNXBoUXVsMHJBWDk4TE9kSUJIcENKMlY1Vmd3aFVDX2wxX09wbXpXcGFUTEJGMEgwWkpKYlFoR3U5bW96S3R6aDEtdm5ibmVzSU9YSV9ZbGJFOTFhTG1ld1p3UW1CbkMtYnF2b25WeFZ3bGkxMVZzVE5XeVhFZnJKc3p4b0pyYzZfUGN5UnphX2tSSlZxdGtDeFJjYUdraVBYdw?oc=5",
       "discovery_title": "Influenza. Vaccinazioni in calo, copertura degli anziani sotto il 50%: è il dato peggiore dal 2014-2015. Italia sempre più lontana dagli obiettivi Oms - Quotidiano Sanità",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 60,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -492,10 +498,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOG1zY25hRDh3Zzc4Ukh4b245dGc0Mk0wdDJLLVlXX0YzMmtWMTdLX3UwLUN4eXRiRlA0OHdJcE5KTkxSeXRzTFB3R2FTaU1lcVp4RnBvOUVKUjlmaElQZGExWnBsLThEYXZXLWdGNXRta0dnTkQ3dUQxcnI5WXFaV2lhSC16RXBMYkYzN2Yyd2duWHVsNFl4VHhQbHdMYXVaNjRqeUNNOEtwM2JQaUhpSDZWTGZ2aE41ZGVNT3JaeGhQbUlEdDBZOEk3eXptVUYyY2w1Tg?oc=5",
+      "discovery_title": "Taglio rivalutazione pensioni 2027: in Basilicata colpite quasi 24000 persone, perdite fino a 850 euro. L'appello - Potenza News ®",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2027",
+        "240",
+        "850 ",
+        "2027",
+        "240",
+        "850 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Disuguaglianze e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQVRqMUFJQVdnQWdxNnlmUTkyZmdwM2RaVDQyWUZZanJYVTk5Y3BHSTZZYk9uWGRZUUFyZEhtQzNXdThGN1Fxbnl0M3VPb2pDeGJ3c09CWlhrSWlKRUt3UXNVMzZtOHJpUXo0N3hHTGxLaWwtSGFNcmdPWWRDeUU4a25PRzJodzcwelEwcl9xd1VoUXRJVG4zdk5DNWZZTUxPTHJZ0gGoAUFVX3lxTE9lTzZSbXJjX3hkRnZCT3RfdE1ieXFCUFN1Tm9Tam5vNkNRUDZZSXBIN0FmVWJtcGszMk02bzNyTDNRQ29lXzA1bndEVFIzcGgtYS1PSWIydU4tUGNVeDRlbFE1MXFZZC1fQ0I4RW1wNDRJNTFkZnV4TkdXcUw4NHNybnk3SUFLY2VYWFV3R0tkOV8zd2xLTHNmNDJRV1R2WjcwMmM1dmpSUQ?oc=5",
       "discovery_title": "Export di vino italiano in calo del 6,2% nel primo semestre 2026 - Vinetur",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -511,10 +538,29 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - statistiche Italia",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQNER4dTFib2xubkg5OVl1Ukx5ZWVETllfTWZ5cWxfQ2hjYUdtWWFKU2RyZ0JKNExmY1VSaVgzUDRfTWZtSW1SX2h5VDVUVlRhcy1ITW83a1pzZl82M0M3ajZDaVNMNDJGZzVWdGg3Y3BrX0JiT0VvUnpLZDBpb2JMSlFINkFERnlXRTlvZG41dWVRX2lYbzlhd1FJWjd2VWh1dEQ2dG9meHkyX1ZMNkZyYUM3Y1ZyZXJqbENlS3dxX093TEhKdXlHSFNFa0F0NkxXUTN1N0tTNkdqVzNNa2VsVDJZU05tRFNEM3dXZllDVi04ODdycWhUa293?oc=5",
+      "discovery_title": "Turismo 2026. L’Italia “vola” e macina record, si conferma leader in Europa: ad agosto 98,8 milioni di presenze, prima tra i competitor. - il Fatto Nisseno",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
+      "score_discovery": 59,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2026",
+        "98,8 milioni",
+        "2026",
+        "98,8 milioni"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia salute e welfare",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWUJhQUVxNmZsdElfZThUdXdEa05iVEZneUdRRHNOSGdQOThnWFZONXoyTi10MDVodUJBOTdsaERUNW9sdktjZ0JTVjhmVE4wbTZsTTFTTEpsSHhKbVFTUUp2OFZjMlJvMktVbVJveFZjcUNHa1Y3djVUT2lWcFlfV2hzdXBBWmJrTm5UT3BWVXpwQ0ZCVS1Pb3phT1pxOXB3dlZFYQ?oc=5",
       "discovery_title": "La Repubblica Salute – In Italia 3 milioni con disturbi alimentari, 6% ha meno di 12 anni - ANDI - Associazione Nazionale Dentisti Italiani",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
+      "detected_at": "2026-11-09T17:59:45.529753+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -524,70 +570,6 @@
         "3 milioni",
         "6%",
         "12 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.salute.gov.it/new/it/campagna-di-comunicazione/campagna-di-comunicazione-sui-disturbi-della-nutrizione-e/",
-        "domain": "salute.gov.it",
-        "matched_numbers": [
-          "3 milioni",
-          "6%",
-          "12 ",
-          "3 milioni",
-          "6%",
-          "12 "
-        ],
-        "matched_non_year_numbers": [
-          "3 milioni",
-          "6%",
-          "12 ",
-          "3 milioni",
-          "6%",
-          "12 "
-        ],
-        "matched_keywords": [
-          "salute",
-          "milioni",
-          "disturbi",
-          "andi",
-          "nazionale"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Ministero della Salute - Campagna di comunicazione sui disturbi della nutrizione e dell’alimentazione Vai direttamente al contenuto Governo Italiano Nascondi la navigazione Ministero Ministro della Salute Orazio Schillaci Sottosegretario di Stato Marcello Gemmato Organizzazione Funzioni e obiettivi del Ministero Cenni Storici Organigramma Uffici di diretta collaborazione Dipartimenti USMAF - SASN UVAC - PCF Biblioteca Servizio Civile Universale Organi consultivi e ispettivi Consiglio superiore di sanità - CSS Comando Carabinieri per la tutela della salute – NAS Organismo indipendente di valutazione – OIV Organi collegiali Tavoli tecnici e commissioni Autorità di Settore NIS Contatti Norme e Atti Pubblicazioni Concorsi Amministrazione trasparente SSN Strutture, piani e risorse del SSN Livelli essenziali di assistenza - LEA Piani di rientro Politiche sanitarie internazionali Programmazione",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "salute.gov.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "salute.gov.it",
-            "query": "site:salute.gov.it \"repubblica salute milioni disturbi alimentari andi\" 3 milioni 6% 12",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQZWFkV2hoTUwtYnFRUV9jZU9OZFczbVhzdE42VnViZDUyeGUxOUo1MWRZZGFRd2d3d2YyVFJoZElyX0pGd0czZ01LUzZnZEtDc3FadUhLRU1GZFMtaVhMNm9QUmZjSmh4RWZ4ZlQycG1TZnNtbHNBaGIzdUJWeloyWkpQMEZEMXRwU09Ra3VzVGVmZEZjMHVFcVlZRGNkYml2R2s3Q3JEOHEwd1JxZUVlTmdQMUpLWGNUc2JJNEtrMFdGTXNPdGZSN3NacTdDTUdoRXB0M0dPNEtDVHRCNzFBMUM0c243b2QyR1pCUElLQ2ZlaHpBQVU5T1dhRENNMnYw?oc=5",
-      "discovery_title": "Stipendi in Europa, nel 2025 in Italia la media è di 34.213 euro contro i 41.464 dell’Ue: il nostro Paese è 13° su 26 nella classifica Eurostat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-09T15:05:54.264277+00:00",
-      "score_discovery": 50,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "2025 ",
-        "34.213 ",
-        "41.464 ",
-        "13",
-        "26 ",
-        "2025 ",
-        "34.213 ",
-        "41.464 ",
-        "13",
-        "26 "
       ],
       "official_links": [],
       "official_domain_hints": [],
