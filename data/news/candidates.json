@@ -1,36 +1,6 @@
 {
-  "generated_at": "2026-11-09T21:00:46.772134+00:00",
+  "generated_at": "2026-11-10T05:59:00.726369+00:00",
   "candidates": [
-    {
-      "radar": "PULSE osservatori ufficiali 5/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE osservatori ufficiali 6/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE osservatori ufficiali 7/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE osservatori ufficiali 8/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE osservatori ufficiali 9/9",
-      "status": "radar_fetched",
-      "items_fetched": 7
-    },
-    {
-      "radar": "PULSE Italia - dati di regioni province comuni",
-      "status": "radar_fetched",
-      "items_fetched": 29
-    },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
       "status": "radar_fetched",
@@ -39,12 +9,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 34
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 28
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -114,7 +84,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 8
+      "items_fetched": 5
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -144,7 +114,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -254,17 +224,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 23
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 29
     },
     {
       "radar": "Repubblica Economia",
@@ -304,17 +274,17 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 37
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -324,7 +294,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 24
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -347,14 +317,44 @@
       "items_fetched": 60
     },
     {
+      "radar": "PULSE osservatori ufficiali 5/9",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE osservatori ufficiali 6/9",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE osservatori ufficiali 7/9",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE osservatori ufficiali 8/9",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE osservatori ufficiali 9/9",
+      "status": "radar_fetched",
+      "items_fetched": 8
+    },
+    {
+      "radar": "PULSE Italia - dati di regioni province comuni",
+      "status": "radar_fetched",
+      "items_fetched": 31
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
-      "status": "radar_error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "radar_fetched",
+      "items_fetched": 10
     },
     {
       "radar": "ISTAT - Comunicati stampa ufficiali",
-      "status": "radar_error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "radar_fetched",
+      "items_fetched": 10
     },
     {
       "radar": "CNR - Notizie ufficiali",
@@ -370,7 +370,7 @@
       "radar": "Il Sole 24 Ore - Economia Industria",
       "discovery_url": "https://www.ilsole24ore.com/art/liguria-10-milioni-d-investimenti-turismo-regione-e-presenze-316percento-AJInWY7B",
       "discovery_title": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -388,29 +388,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Il Sole 24 Ore - Italia Attualità",
-      "discovery_url": "https://www.ilsole24ore.com/art/export-l-italia-53percento-dieci-anni-battuti-concorrenti-europei-AJIHkO9B",
-      "discovery_title": "Export, per l’Italia +53% in dieci anni: battuti i concorrenti europei",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
-      "score_discovery": 49,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "+53%",
-        "216 miliardi",
-        "2015 ",
-        "2025"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://corrieredibologna.corriere.it/notizie/economia/26_novembre_09/stipendi-bologna-emilia-romagna-740fb548-51b7-4e9a-b9db-fc3bb0221xlk.shtml",
       "discovery_title": "Gli stipendi a Bologna e in Emilia-Romagna tra inflazione, carovita e nuovi contratti: come stanno cambiando i salari",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 95,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -434,7 +415,7 @@
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTVRbko1RnEzZFNCbXVZNnBQTUdPX0dLVkk2UnNLVDZyN3NRMGo2YnpCQktwS18zMHdfOEpBS05qWkNUNWlHbmpXNUlaRTBsUUY0Q2hrQTRiVHRuMVlQU3BvU3d3STBzVVdFelRTREZhUXlWMFRTXzNmUVhKWExqbUxWQ25kY3lOUUFzeEVZT29oM2R5UzJ4c2VIOXk3eWY2T1JJMUNfXzB3TmFjRDl5OTdTNHcyMG9zeUxLMFc1NEpLYTdEczFxOVhMb0I4SmduZTVyLVUwZmJINWhGX2hN?oc=5",
       "discovery_title": "MARKET DRIVER: BoE, inflazione attesa al 5% a metà 2027 per i costi energetici (Ebury) - Milano Finanza",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -453,7 +434,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 12",
       "discovery_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTTdDT3FoeVhiQlhESUVxbk5zRERXajJRXzdBVkZjTDc4cXg4ZnBEZE9uTDdzcDNCeXJ5MGFBWm00OC1XZmQxYzhHQ2hLR04zQVd4WDI0MGxWRjZyZ01GZ3k3QXVicWZvSFBxd1VwM2RYem55ODNtLS1kUUpHdnV2cw?oc=5",
       "discovery_title": "EICMA 2026 chiude con oltre 600.000 presenze (+6%): scooter a +14,76% in Italia, export europeo di moto -22% nel 2025 - Motori.money",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -480,7 +461,7 @@
       "radar": "Google News - Italia ambiente energia mobilità",
       "discovery_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdnhvMUJxQV96VV9mOHAyMWgtWGQ1ODdzRkxzZlhkZjN1eXBnS0hVWFAxR0pma0tDV2E1R1p1MVJBMHNBNzh2WGszOHhNMHB6N2x3Y0lzb1NpV1NMYnFhTE40eEtYNDVLcjk1bmk0WDdhZUVxTnE2c3MyUDV6QjdqRVppUlo5Mnk5V2NHWXA4VG1URmhlMXhlUnJLZkhqNm9pbTJtVGdoMTdyS1Y3V21MLXlyYVlqZ1ZmZW9rVDRMOA?oc=5",
       "discovery_title": "Clima, Ue: emissioni in calo dell’1,6% nel 2025, ma l’Italia è tra i nove Paesi in ritardo sugli obiettivi 2030 - AGEEI",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 55,
       "topic": "AMBIENTE",
       "numbers_detected": [
@@ -498,10 +479,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE Italia - dati di regioni province comuni",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPMUtxb05UekVHdGpYYmtCUDFPUGd3cjh3cW5xSTU4NzVUeVZiczZjZk1rWDBlek43OEFHZjB6Z1d4c3VsZl94SGxMeks0Q3VjN0Z0NFdOQ0xpeXk0ME8xSFlGT3dZREhSVlhzdUh2QkR6dDdjdFZMOC10eXYwcVhfNl9EbHhWckpyOVA5azlwd0JqUUgzQkpLeWx1VkFtQU9GcGpfbTFISmRKVTViMWN0UVZTSlMwcEFjN3MtNFZwVkZ0SHdwYTQ1XzNidno1YWM2TWl6LTdpZ2JpMDBFNGJURTJUNFR5MUt2S3JHaWdIdE95VDg?oc=5",
+      "discovery_title": "Consumo di suolo. Nel 2025 è record: oltre 3 m² al secondo, 280 mila metri quadrati cancellati ogni giorno. Il Rapporto SNPA - Autonomie Locali Italiane",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
+      "score_discovery": 65,
+      "topic": "AMBIENTE",
+      "numbers_detected": [
+        "2025 ",
+        "3 ",
+        "280 mila",
+        "2025 ",
+        "3 ",
+        "280 mila"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOG1zY25hRDh3Zzc4Ukh4b245dGc0Mk0wdDJLLVlXX0YzMmtWMTdLX3UwLUN4eXRiRlA0OHdJcE5KTkxSeXRzTFB3R2FTaU1lcVp4RnBvOUVKUjlmaElQZGExWnBsLThEYXZXLWdGNXRta0dnTkQ3dUQxcnI5WXFaV2lhSC16RXBMYkYzN2Yyd2duWHVsNFl4VHhQbHdMYXVaNjRqeUNNOEtwM2JQaUhpSDZWTGZ2aE41ZGVNT3JaeGhQbUlEdDBZOEk3eXptVUYyY2w1Tg?oc=5",
       "discovery_title": "Taglio rivalutazione pensioni 2027: in Basilicata colpite quasi 24000 persone, perdite fino a 850 euro. L'appello - Potenza News ®",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -519,36 +521,17 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQVRqMUFJQVdnQWdxNnlmUTkyZmdwM2RaVDQyWUZZanJYVTk5Y3BHSTZZYk9uWGRZUUFyZEhtQzNXdThGN1Fxbnl0M3VPb2pDeGJ3c09CWlhrSWlKRUt3UXNVMzZtOHJpUXo0N3hHTGxLaWwtSGFNcmdPWWRDeUU4a25PRzJodzcwelEwcl9xd1VoUXRJVG4zdk5DNWZZTUxPTHJZ0gGoAUFVX3lxTE9lTzZSbXJjX3hkRnZCT3RfdE1ieXFCUFN1Tm9Tam5vNkNRUDZZSXBIN0FmVWJtcGszMk02bzNyTDNRQ29lXzA1bndEVFIzcGgtYS1PSWIydU4tUGNVeDRlbFE1MXFZZC1fQ0I4RW1wNDRJNTFkZnV4TkdXcUw4NHNybnk3SUFLY2VYWFV3R0tkOV8zd2xLTHNmNDJRV1R2WjcwMmM1dmpSUQ?oc=5",
-      "discovery_title": "Export di vino italiano in calo del 6,2% nel primo semestre 2026 - Vinetur",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
+      "radar": "Il Sole 24 Ore - Italia Attualità",
+      "discovery_url": "https://www.ilsole24ore.com/art/export-l-italia-53percento-dieci-anni-battuti-concorrenti-europei-AJIHkO9B",
+      "discovery_title": "Export, per l’Italia +53% in dieci anni: battuti i concorrenti europei",
+      "detected_at": "2026-11-10T05:59:00.726369+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "6,2%",
-        "2026 ",
-        "6,2%",
-        "2026 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - statistiche Italia",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQNXpIdmNrRWZOOVh4UUc3Umt1elQwcExoWlZZS0EwbTlnckMxR2dqdWpyaWpjM2xwRjQ1OTVXQzBqSVhES3RoUDJVbWtIa2ZzM2NnYjZGWnhhY2EzRkZyWTdTS0FScWlpSS0xYTFwMWx0RUUzVGFXOVJLdkIyLWZ3N2dlZGpRTElPYXJKSzdweXVadTdoMWJOUDNoNWhZVnpReDFHdXhCYWhHdlJrNG8yQlFhb3dpYU1ibGI0RnBTd0RnWnpPcmx1QTl4dGh4bWhvNXJLV29QX2NQR1pWQjlTWHJWc3FRbVozT1VSd1dUczU?oc=5",
-      "discovery_title": "Turismo 2026, l’Italia macina record e si conferma leader in Europa: ad agosto 98,8 milioni di presenze, prima tra i competitor. - Ministero del Turismo",
-      "detected_at": "2026-11-09T21:00:46.772134+00:00",
-      "score_discovery": 59,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "2026",
-        "98,8 milioni",
-        "2026",
-        "98,8 milioni"
+        "+53%",
+        "216 miliardi",
+        "2015 ",
+        "2025"
       ],
       "official_links": [],
       "official_domain_hints": [],
