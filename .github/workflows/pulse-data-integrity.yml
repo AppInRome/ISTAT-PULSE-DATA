@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "scripts/pulse_data_integrity.py"
+      - "tests/test_pulse_data_integrity.py"
       - ".github/workflows/pulse-data-integrity.yml"
   workflow_dispatch:
   schedule:
@@ -27,6 +28,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Regressione offline anti-notizie-vuote e link errati
+        run: python -m unittest discover -s tests -p test_pulse_data_integrity.py -v
       - name: Controllo preventivo schema e filiere editoriali
         run: |
           python -m compileall -q scripts/pulse_data_integrity.py
