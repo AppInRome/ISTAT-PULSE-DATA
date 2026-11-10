@@ -1,0 +1,35 @@
+name: PULSE - verifica periodica collegamenti fonti ufficiali
+
+on:
+  push:
+    paths:
+      - "data/sources_catalog_full.json"
+      - "scripts/pulse_source_link_probe.py"
+      - ".github/workflows/pulse-source-link-scan.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "26 7 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Codice e catalogo fonti
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verifica HTTPS delle fonti con risultati classificati
+        run: python scripts/pulse_source_link_probe.py --catalog data/sources_catalog_full.json --output PULSE_SOURCE_LINKS_REPORT.json
+      - name: Conserva risultato per analisi
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pulse-source-link-report-${{ github.run_id }}
+          path: PULSE_SOURCE_LINKS_REPORT.json
+          if-no-files-found: warn

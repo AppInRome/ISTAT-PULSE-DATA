@@ -85,7 +85,7 @@ def promote_media_brief(article, dossier):
             continue
         # When the headline explicitly names a reference year, that year must
         # actually occur in the extracted time series.
-        headline_years = set(re.findall(r"(?<!\\d)(?:19|20)\\d{2}(?!\\d)", headline))
+        headline_years = set(re.findall(r"(?<!\d)(?:19|20)\d{2}(?!\d)", headline))
         source_years = {str(x.get("period"))[:4] for x in observations
                         if isinstance(x, dict)}
         if headline_years and not (headline_years & source_years):

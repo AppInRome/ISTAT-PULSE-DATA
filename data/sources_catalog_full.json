@@ -1,0 +1,169 @@
+{
+  "schema_version": "pulse-sources-full-v1",
+  "purpose": "Append-only reference catalogue of sources used in PULSE UI. Distinct from generated 5-entry statistical portal subset.",
+  "publication_policy": "Never replace this full catalogue with a smaller generated subset. Verify individual URL reachability before altering a link.",
+  "sources": [
+    {
+      "name": "ACI - Open data mobilità e parco veicoli",
+      "url": "https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ARERA - Statistiche del servizio idrico",
+      "url": "https://www.arera.it/dati-e-statistiche/dettaglio/rqsii",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "Copernicus - Climate Data Store",
+      "url": "https://cds.climate.copernicus.eu/",
+      "category": "GREEN_EU",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "EEA - Dati ambientali europei",
+      "url": "https://www.eea.europa.eu/en/datahub/datahubitem-view/3b7fe76c-524a-439a-bfd2-a6e4046302a2?activeAccordion=1096150",
+      "category": "GREEN_EU",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ENEA - Rapporto annuale efficienza energetica",
+      "url": "https://www.efficienzaenergetica.enea.it/vi-segnaliamo/rapporto-annuale-sullefficienza-energetica-2026-schede-regionali.html",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "Eurostat - Statistiche ambientali ed energia",
+      "url": "https://ec.europa.eu/eurostat/web/environment",
+      "category": "GREEN_EU",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "GSE - Statistiche delle rinnovabili",
+      "url": "https://www.gse.it/dati-e-scenari/statistiche",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA - Catasto nazionale rifiuti",
+      "url": "https://www.catasto-rifiuti.isprambiente.it/index.php?advice=si&pg=downloadComune",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA - Consumo di suolo e indicatori territoriali",
+      "url": "https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/i-dati-sul-consumo-di-suolo",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA - IdroGEO",
+      "url": "https://idrogeo.isprambiente.it/",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA - Indicatori ambientali e biodiversità",
+      "url": "https://indicatoriambientali.isprambiente.it/it/temi/biodiversita-stato-e-minacce",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA - Inventario nazionale delle emissioni",
+      "url": "https://emissioni.sina.isprambiente.it/serie-storiche-emissioni-di-gas-serra-sintesi/",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA - Risorse idriche",
+      "url": "https://www.isprambiente.gov.it/pre_meteo/idro/BIGBANG_ISPRA.html",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISPRA/SNPA - Qualità dell'aria",
+      "url": "https://www.isprambiente.gov.it/it/banche-dati/banche-dati-folder/aria/qualita-dellaria",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - A misura di Comune",
+      "url": "https://www.istat.it/statistica-sperimentale/aggiornamento-degli-indicatori-del-sistema-informativo-a-misura-di-comune/",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - Ambiente urbano",
+      "url": "https://www.istat.it/comunicato-stampa/ambiente-urbano-anno-2024/",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - BES dei territori",
+      "url": "https://www.istat.it/comunicato-territoriale/il-benessere-equo-e-sostenibile-dei-territori-report-regionali-anno-2025/",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - DEMO - Bilancio demografico mensile",
+      "url": "https://demo.istat.it/app/?i=D7B",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - Indicatori SDGs",
+      "url": "https://www.istat.it/statistiche-per-temi/focus/benessere-e-sostenibilita/obiettivi-di-sviluppo-sostenibile/gli-indicatori-istat/",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - IstatData SDMX",
+      "url": "https://esploradati.istat.it/SDMXWS/",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - Mappa dei rischi dei comuni italiani",
+      "url": "https://www.istat.it/wp-content/themes/EGPbs5-child/inc/mappa-rischi/?lang=it",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - Noi Italia",
+      "url": "https://noi-italia.istat.it/home.php",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "ISTAT - Statistiche sull'acqua",
+      "url": "https://www.istat.it/comunicato-stampa/le-statistiche-sullacqua-anni-2023-2025/",
+      "category": "ISTAT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "Terna - Portale Dati del sistema elettrico",
+      "url": "https://www.terna.it/it/sistema-elettrico/statistiche",
+      "category": "GREEN_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "Banca d'Italia - Base Dati Statistica A2A",
+      "url": "https://www.bancaditalia.it/statistiche/basi-dati/bds/index.html",
+      "category": "ECONOMIA_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "MIMIT - Prezzi carburanti",
+      "url": "https://www.mimit.gov.it/it/open-data/elenco-dataset/carburanti-prezzi-praticati-e-anagrafica-degli-impianti",
+      "category": "ECONOMIA_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    },
+    {
+      "name": "INAIL - Malattie professionali mensili",
+      "url": "https://dati.inail.it/portale/it/dataset/malattie-professionali/dati-con-cadenza-mensile/italia.html",
+      "category": "LAVORO_IT",
+      "link_check_status": "not_verified_live_in_this_catalogue"
+    }
+  ]
+}

@@ -32,6 +32,8 @@ concurrency:
 
 jobs:
   refresh:
+    # Do not run a write-enabled data refresh from experimental branches.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 47
     env:
@@ -116,6 +118,10 @@ jobs:
         shell: bash
         run: |
           python scripts/update_observer_daily.py
+      - name: Blocca la pubblicazione di feed incoerenti
+        # I feed correnti e gli archivi Observer devono superare il controllo
+        # prima del commit; un fallimento preserva su main l'ultimo snapshot valido.
+        run: python scripts/pulse_data_integrity.py --data-root data
       - name: Pubblica solo i dati effettivamente validati
         shell: bash
         run: |

@@ -1,0 +1,43 @@
+name: PULSE - integrita fonti, notizie e sezioni (sola lettura)
+
+on:
+  push:
+    paths:
+      - "scripts/pulse_data_integrity.py"
+      - "tests/test_pulse_data_integrity.py"
+      - ".github/workflows/pulse-data-integrity.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "47 4,10,16,22 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pulse-data-integrity-check
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout DATA
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Regressione offline anti-notizie-vuote e link errati
+        run: python -m unittest discover -s tests -p test_pulse_data_integrity.py -v
+      - name: Controllo preventivo schema e filiere editoriali
+        run: |
+          python -m compileall -q scripts/pulse_data_integrity.py
+          python scripts/pulse_data_integrity.py --data-root data --report PULSE_DATA_INTEGRITY_REPORT.json
+      - name: Conserva rapporto anche in caso di errore
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pulse-integrity-${{ github.run_id }}
+          path: PULSE_DATA_INTEGRITY_REPORT.json
+          if-no-files-found: warn
