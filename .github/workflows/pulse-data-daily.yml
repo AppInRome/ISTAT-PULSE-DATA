@@ -32,6 +32,8 @@ concurrency:
 
 jobs:
   refresh:
+    # Do not run a write-enabled data refresh from experimental branches.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 47
     env:
