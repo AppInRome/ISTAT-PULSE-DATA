@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-10T15:00:19.025835+00:00",
+  "generated_at": "2026-11-10T17:52:51.549879+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-10T15:00:19.025835+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "published_at": "2026-11-10T17:52:51.549879+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -109,10 +109,937 @@
       "verification_tier": "previously_verified_official_single_observation"
     },
     {
+      "id": "PULSE-MEDIA-5757EAB666A0D0E9",
+      "story_fingerprint": "5757eab666a0d0e9aa0ab5ae7f9203b6070f84e58b8026144ad91d01cc08c8cb",
+      "published_at": "2026-11-10T17:28:46+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -3",
+      "reported_headline": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -3 - Il Sole 24 ORE",
+      "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -3",
+      "pulse_summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Sole 24 Ore dati e statistiche». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ1U5UTBtWVo5SHlDbmdOVzlaQUYtenlEUHpPempDcUdQSFhyS0p3NE9OME9ILTU5VmxFSW90WHNfMHNNMzc2ZVUxeUVCbVFuMGlLT09tU0QyZ2ZURFVhc0g3Zk94YVRKc2FMVUM3RFl2VHBDSHRPQTJ1ZzZ0QVFZTXBEbUlUeVBfeXVLZVQ5cHdOc0FfdHltUzlfWURBaW5HY0NFMkpoMWtkNjk5NVh3OWJhbl9ad0t4bXhQdHBJaGhFUkxHRUE?oc=5",
+        "domain": "Il Sole 24 ORE",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,7%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Il Sole 24 ORE",
+        "original_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ1U5UTBtWVo5SHlDbmdOVzlaQUYtenlEUHpPempDcUdQSFhyS0p3NE9OME9ILTU5VmxFSW90WHNfMHNNMzc2ZVUxeUVCbVFuMGlLT09tU0QyZ2ZURFVhc0g3Zk94YVRKc2FMVUM3RFl2VHBDSHRPQTJ1ZzZ0QVFZTXBEbUlUeVBfeXVLZVQ5cHdOc0FfdHltUzlfWURBaW5HY0NFMkpoMWtkNjk5NVh3OWJhbl9ad0t4bXhQdHBJaGhFUkxHRUE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-10T17:52:51.549879+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-E5D9D7F722F1AA32",
+      "story_fingerprint": "e5d9d7f722f1aa32994f9709",
+      "published_at": "2026-11-10T17:28:46+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ1U5UTBtWVo5SHlDbmdOVzlaQUYtenlEUHpPempDcUdQSFhyS0p3NE9OME9ILTU5VmxFSW90WHNfMHNNMzc2ZVUxeUVCbVFuMGlLT09tU0QyZ2ZURFVhc0g3Zk94YVRKc2FMVUM3RFl2VHBDSHRPQTJ1ZzZ0QVFZTXBEbUlUeVBfeXVLZVQ5cHdOc0FfdHltUzlfWURBaW5HY0NFMkpoMWtkNjk5NVh3OWJhbl9ad0t4bXhQdHBJaGhFUkxHRUE?oc=5",
+        "domain": "Il Sole 24 ORE",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -3 - Il Sole 24 ORE",
+      "summary": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -3 Il Sole 24 ORE",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "-3 ",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        },
+        {
+          "raw_value": "+0,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "-3 ",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-32F8C0A7BD79D826",
+      "story_fingerprint": "32f8c0a7bd79d82639693c57bfc2adabcd3f9b2ded6c51bbe9112bc4bce3aee1",
+      "published_at": "2026-11-10T17:28:10+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Rapporto Svimez, la Calabria cresce ma si svuota. Il 45,3% a rischio povertà o esclusione, oltre metà dei ricoveri oncologici fuori regione",
+      "reported_headline": "Rapporto Svimez, la Calabria cresce ma si svuota. Il 45,3% a rischio povertà o esclusione, oltre metà dei ricoveri oncologici fuori regione - Calabria 7",
+      "summary": "La testata Calabria 7 segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 45,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Rapporto Svimez, la Calabria cresce ma si svuota. Il 45,3% a rischio povertà o esclusione, oltre metà dei ricoveri oncologici fuori regione",
+      "pulse_summary": "La testata Calabria 7 segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 45,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Calabria 7 segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 45,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Sud e Isole». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPR05DNzExM2M4RENhUkdTX2hCQzhGeGFwN0h2MGdsZ1BZcWttbjBJNWhPZFFQZm5UV2FrYnhzeUZkNUFiUVBZUUhnMXFHZFdKcVhTSDNHS3lrRnIyUmNjUlhBVktidjFLVm5jbXlpTFBTY0sxNFVHZTBBTEJPWTFNMl9jUXBTdFV3V3lTS1JJdHJBa2JEaXJ3Q3UxTEt4N013dV9HSlh1c19BODEwdjU4UFdTa1NoUWVHRTY0Z0lieVBENDVPc2F1b29qRVo2WXZpdC0zR1QxaHhwSGhSRURILTBJOGs1WTRBYm5jdEw0VmpuV0Q2bnBtbXZVTlE?oc=5",
+        "domain": "Calabria 7",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "45,3%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "calabria"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Calabria 7",
+        "original_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPR05DNzExM2M4RENhUkdTX2hCQzhGeGFwN0h2MGdsZ1BZcWttbjBJNWhPZFFQZm5UV2FrYnhzeUZkNUFiUVBZUUhnMXFHZFdKcVhTSDNHS3lrRnIyUmNjUlhBVktidjFLVm5jbXlpTFBTY0sxNFVHZTBBTEJPWTFNMl9jUXBTdFV3V3lTS1JJdHJBa2JEaXJ3Q3UxTEt4N013dV9HSlh1c19BODEwdjU4UFdTa1NoUWVHRTY0Z0lieVBENDVPc2F1b29qRVo2WXZpdC0zR1QxaHhwSGhSRURILTBJOGs1WTRBYm5jdEw0VmpuV0Q2bnBtbXZVTlE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-10T17:52:51.549879+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-1699C5EE3201838D",
+      "story_fingerprint": "1699c5ee3201838ddfd96250a4769e66231fdc5c15800bb4f7601ba62910bd62",
+      "published_at": "2026-11-10T17:24:31+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Multinazionali italiane, Istat: 576 miliardi di fatturato e 1,8 milioni di addetti",
+      "reported_headline": "Multinazionali italiane, Istat: 576 miliardi di fatturato e 1,8 milioni di addetti - ItaliaOggi",
+      "summary": "La testata ItaliaOggi segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 576 miliardi, 1,8 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Multinazionali italiane, Istat: 576 miliardi di fatturato e 1,8 milioni di addetti",
+      "pulse_summary": "La testata ItaliaOggi segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 576 miliardi, 1,8 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ItaliaOggi segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 576 miliardi, 1,8 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · nazionali · gruppo 04». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 34,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNckFUT3hpendxRGdfLWs5bnI0SmxKb3AwQkhJV1Nqay0ydE4zYXNIYkw1cmhaeEUtVTR0Z1dCel9uRHNucnF0ang4WS1HRlA0bmJGV0ZraGw2Qm5BdElrYWxINldGTWhQUWtWeW9Ddkx0Z3FwTGs0UlBmZDRGdFA5czZvYlBRUE1VQWUtQTNYcTM1OG51dmVFOGhJR0tCWWxNYmZFQ1NBNHNUblBtWjdmWl9yMjRKd0paTjRxWGQzOXZMRzlQUGFGMl9TVGF3d1hhRVRLbUFpR0JHNzFlaEE?oc=5",
+        "domain": "ItaliaOggi",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "576 miliardi",
+          "verified": false
+        },
+        {
+          "raw_value": "1,8 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ItaliaOggi",
+        "original_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNckFUT3hpendxRGdfLWs5bnI0SmxKb3AwQkhJV1Nqay0ydE4zYXNIYkw1cmhaeEUtVTR0Z1dCel9uRHNucnF0ang4WS1HRlA0bmJGV0ZraGw2Qm5BdElrYWxINldGTWhQUWtWeW9Ddkx0Z3FwTGs0UlBmZDRGdFA5czZvYlBRUE1VQWUtQTNYcTM1OG51dmVFOGhJR0tCWWxNYmZFQ1NBNHNUblBtWjdmWl9yMjRKd0paTjRxWGQzOXZMRzlQUGFGMl9TVGF3d1hhRVRLbUFpR0JHNzFlaEE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-C46A02E47AC51C24",
+      "story_fingerprint": "c46a02e47ac51c243a86cf64462704f06e2f53014c24634bf4b60a5ab0cca869",
+      "published_at": "2026-11-10T17:14:41+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Ex Ilva, niente accordo con i sindacati sulla cassa integrazione",
+      "reported_headline": "Ex Ilva, niente accordo con i sindacati sulla cassa integrazione",
+      "summary": "La testata agi.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 9.622, 6.800, 8622 persone, 8.622 persone. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ex Ilva, niente accordo con i sindacati sulla cassa integrazione",
+      "pulse_summary": "La testata agi.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 9.622, 6.800, 8622 persone, 8.622 persone. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata agi.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 9.622, 6.800, 8622 persone, 8.622 persone. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «AGI - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 60,
+      "public_source": {
+        "url": "https://www.agi.it/economia/news/2026-11-10/ilva-cassa-integrazione-39967892/",
+        "domain": "agi.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "9.622",
+          "verified": false
+        },
+        {
+          "raw_value": "6.800",
+          "verified": false
+        },
+        {
+          "raw_value": "8622 persone",
+          "verified": false
+        },
+        {
+          "raw_value": "8.622 persone",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "agi.it",
+        "original_url": "https://www.agi.it/economia/news/2026-11-10/ilva-cassa-integrazione-39967892/",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-26D576FAA2BB4CF9",
+      "story_fingerprint": "26d576faa2bb4cf93199a027842ee422cc8e28ea18857bbfba46595578ee668b",
+      "published_at": "2026-11-10T17:01:00+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Campania, rapporto Svimez: occupazione al 46,7%, ma nel 2025 sono partiti 13.690 giovani",
+      "reported_headline": "Campania, rapporto Svimez: occupazione al 46,7%, ma nel 2025 sono partiti 13.690 giovani - retenews24.net",
+      "summary": "La testata retenews24.net segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 46,7%, 13.690. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Campania, rapporto Svimez: occupazione al 46,7%, ma nel 2025 sono partiti 13.690 giovani",
+      "pulse_summary": "La testata retenews24.net segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 46,7%, 13.690. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata retenews24.net segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 46,7%, 13.690. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Sud e Isole». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 60,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYjZJOEZJSnl0bm9PZ2VwakFUWXA4NGJYQTQzd3o3bktFd1FLUWlTVkZOR1VlTXVUd2ZTeWRreU1BRTZuU1F4T2Z3SlkwNkFhUjZvMFZRc3NBVFNXblBfVVdqNVBxcENXVEFadDZZak95dmlLUENxVXctTzRlVXdBT3VVN29DRHJQRy1xUlcxOWNNRjFRbEJwMVRITXIycjZiZ0NlRnYyS0FPeVk?oc=5",
+        "domain": "retenews24.net",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "46,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "13.690",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "campania"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "retenews24.net",
+        "original_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYjZJOEZJSnl0bm9PZ2VwakFUWXA4NGJYQTQzd3o3bktFd1FLUWlTVkZOR1VlTXVUd2ZTeWRreU1BRTZuU1F4T2Z3SlkwNkFhUjZvMFZRc3NBVFNXblBfVVdqNVBxcENXVEFadDZZak95dmlLUENxVXctTzRlVXdBT3VVN29DRHJQRy1xUlcxOWNNRjFRbEJwMVRITXIycjZiZ0NlRnYyS0FPeVk?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-4C478BB31F1676D1",
+      "story_fingerprint": "4c478bb31f1676d1c080b43f",
+      "published_at": "2026-11-10T17:01:00+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "topic": "LAVORO",
+      "pulse_score": 60,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYjZJOEZJSnl0bm9PZ2VwakFUWXA4NGJYQTQzd3o3bktFd1FLUWlTVkZOR1VlTXVUd2ZTeWRreU1BRTZuU1F4T2Z3SlkwNkFhUjZvMFZRc3NBVFNXblBfVVdqNVBxcENXVEFadDZZak95dmlLUENxVXctTzRlVXdBT3VVN29DRHJQRy1xUlcxOWNNRjFRbEJwMVRITXIycjZiZ0NlRnYyS0FPeVk?oc=5",
+        "domain": "retenews24.net",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Campania, rapporto Svimez: occupazione al 46,7%, ma nel 2025 sono partiti 13.690 giovani - retenews24.net",
+      "summary": "Campania, rapporto Svimez: occupazione al 46,7%, ma nel 2025 sono partiti 13.690 giovani retenews24.net",
+      "statistical_claims": [
+        {
+          "raw_value": "46,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "13.690 ",
+          "verified": false
+        },
+        {
+          "raw_value": "46,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "13.690 ",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "campania"
+      ],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-648581B0396A56B9",
+      "story_fingerprint": "648581b0396a56b940e15eb326607d84161be267e61d583e0d9153f85e59dbc9",
+      "published_at": "2026-11-10T16:54:35+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -2",
+      "reported_headline": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -2 - Il Sole 24 ORE",
+      "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -2",
+      "pulse_summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Sole 24 Ore dati e statistiche». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNN3BMNGU1bGEtQUh6UHlqQ0FzR2J5OWJ1T29PUzRhZFJkcXFFRDZIOUtpQW9YMkR2QkF2ZGpFdi1RNlctQlJEanE3Y1JUQnRpc0lCZ200V2Zial9tZzFVVlVuMjZOZkZFaG5Fc0pETTRzRmVUTUI2WWhIcTlsTDY2TDY1LXVCaGpkS1hEMXQ0TUZnNjlGbTlEdEozRDFweHB0NjNsYXhSczc5WnRpMHFQVWZSQkN6aTBmY2V3TVhSYUNiTndFcUE?oc=5",
+        "domain": "Il Sole 24 ORE",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,7%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Il Sole 24 ORE",
+        "original_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNN3BMNGU1bGEtQUh6UHlqQ0FzR2J5OWJ1T29PUzRhZFJkcXFFRDZIOUtpQW9YMkR2QkF2ZGpFdi1RNlctQlJEanE3Y1JUQnRpc0lCZ200V2Zial9tZzFVVlVuMjZOZkZFaG5Fc0pETTRzRmVUTUI2WWhIcTlsTDY2TDY1LXVCaGpkS1hEMXQ0TUZnNjlGbTlEdEozRDFweHB0NjNsYXhSczc5WnRpMHFQVWZSQkN6aTBmY2V3TVhSYUNiTndFcUE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-EB133359AFCCF16F",
+      "story_fingerprint": "eb133359afccf16f21182b94",
+      "published_at": "2026-11-10T16:54:35+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNN3BMNGU1bGEtQUh6UHlqQ0FzR2J5OWJ1T29PUzRhZFJkcXFFRDZIOUtpQW9YMkR2QkF2ZGpFdi1RNlctQlJEanE3Y1JUQnRpc0lCZ200V2Zial9tZzFVVlVuMjZOZkZFaG5Fc0pETTRzRmVUTUI2WWhIcTlsTDY2TDY1LXVCaGpkS1hEMXQ0TUZnNjlGbTlEdEozRDFweHB0NjNsYXhSczc5WnRpMHFQVWZSQkN6aTBmY2V3TVhSYUNiTndFcUE?oc=5",
+        "domain": "Il Sole 24 ORE",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -2 - Il Sole 24 ORE",
+      "summary": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -2 Il Sole 24 ORE",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "-2 ",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        },
+        {
+          "raw_value": "+0,7%",
+          "verified": false
+        },
+        {
+          "raw_value": "-2 ",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-59628A6B1B22F540",
+      "story_fingerprint": "59628a6b1b22f5400542ee205209891845951ff50a3613cedadbb7cffc418b41",
+      "published_at": "2026-11-10T16:28:54+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Imprese: Istat, nel 2024 crescono multinazionali estere attive in Italia (+2,6% sul 2023)",
+      "reported_headline": "Imprese: Istat, nel 2024 crescono multinazionali estere attive in Italia (+2,6% sul 2023) - Ore12",
+      "summary": "La testata Ore12 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +2,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Imprese: Istat, nel 2024 crescono multinazionali estere attive in Italia (+2,6% sul 2023)",
+      "pulse_summary": "La testata Ore12 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +2,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Ore12 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +2,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0p5S2pxNWtSSUw0eEw5LWxQU3dfTlJ6UHVvZUVhQ1lBTjBBY3NuXzF1T0FqNklGQlZlVHhiSlJpQk9mN2lJVnd5SVYxaTFVZjJRS0Fmekl5RlBRWDBFcDRmX0t6VlNZS2w3Z3R6MlBwYjBYUlc0WWEzUkFPNGs3R0JXVUxUN1AxMGZNZEExUUVndGhWRjl1UnBLU3pjM1piNG54eFkzam4?oc=5",
+        "domain": "Ore12",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+2,6%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Ore12",
+        "original_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0p5S2pxNWtSSUw0eEw5LWxQU3dfTlJ6UHVvZUVhQ1lBTjBBY3NuXzF1T0FqNklGQlZlVHhiSlJpQk9mN2lJVnd5SVYxaTFVZjJRS0Fmekl5RlBRWDBFcDRmX0t6VlNZS2w3Z3R6MlBwYjBYUlc0WWEzUkFPNGs3R0JXVUxUN1AxMGZNZEExUUVndGhWRjl1UnBLU3pjM1piNG54eFkzam4?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-303ADBBF273EFC3F",
+      "story_fingerprint": "303adbbf273efc3f84b8823f",
+      "published_at": "2026-11-10T16:28:54+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 80,
+      "public_source": {
+        "url": "https://www.istat.it/comunicato-stampa/conti-economici-delle-imprese-e-dei-gruppi-di-impresa-anno-2024/",
+        "domain": "istat.it",
+        "role": "primary_statistical_source",
+        "verification_method": "named_or_topic_domain_search",
+        "verification_score": 95
+      },
+      "discovery": {
+        "visible": false,
+        "role": "journalistic_radar",
+        "outlet": "Google News - Italia lavoro e imprese",
+        "original_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0p5S2pxNWtSSUw0eEw5LWxQU3dfTlJ6UHVvZUVhQ1lBTjBBY3NuXzF1T0FqNklGQlZlVHhiSlJpQk9mN2lJVnd5SVYxaTFVZjJRS0Fmekl5RlBRWDBFcDRmX0t6VlNZS2w3Z3R6MlBwYjBYUlc0WWEzUkFPNGs3R0JXVUxUN1AxMGZNZEExUUVndGhWRjl1UnBLU3pjM1piNG54eFkzam4?oc=5",
+        "evidence_gate": "strong_primary_match"
+      },
+      "period_reference": null,
+      "latest_source_update": null,
+      "headline": "Dati di economia: nuova pubblicazione della fonte istat.it",
+      "summary": "PULSE ha individuato un aggiornamento sul tema economia e localizzato un documento di istat.it. Non è ancora disponibile una serie omogenea verificata da cui derivare confronti numerici.",
+      "statistical_claims": [
+        {
+          "raw_value": "2024 ",
+          "verified": false
+        },
+        {
+          "raw_value": "+2,6%",
+          "verified": true
+        },
+        {
+          "raw_value": "2023",
+          "verified": false
+        },
+        {
+          "raw_value": "2024 ",
+          "verified": false
+        },
+        {
+          "raw_value": "+2,6%",
+          "verified": true
+        },
+        {
+          "raw_value": "2023",
+          "verified": false
+        }
+      ],
+      "verified_series": [],
+      "territories": [],
+      "chart_spec": {
+        "type": "none",
+        "status": "no_verified_comparable_series"
+      },
+      "map_spec": null,
+      "editorial_status": "needs_verified_comparable_series",
+      "publication_status": "quarantined",
+      "original_discovery_headline": "Imprese: Istat, nel 2024 crescono multinazionali estere attive in Italia (+2,6% sul 2023)",
+      "byline": "Redazione PULSE",
+      "editorial_method": "testo originale da evidenza statistica, non copia della testata",
+      "sources": [
+        {
+          "role": "statistical_primary",
+          "url": "https://www.istat.it/comunicato-stampa/conti-economici-delle-imprese-e-dei-gruppi-di-impresa-anno-2024/",
+          "name": "istat.it"
+        },
+        {
+          "role": "discovery",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0p5S2pxNWtSSUw0eEw5LWxQU3dfTlJ6UHVvZUVhQ1lBTjBBY3NuXzF1T0FqNklGQlZlVHhiSlJpQk9mN2lJVnd5SVYxaTFVZjJRS0Fmekl5RlBRWDBFcDRmX0t6VlNZS2w3Z3R6MlBwYjBYUlc0WWEzUkFPNGs3R0JXVUxUN1AxMGZNZEExUUVndGhWRjl1UnBLU3pjM1piNG54eFkzam4?oc=5",
+          "name": "Google News - Italia lavoro e imprese"
+        }
+      ],
+      "verified_series_relevant": [],
+      "pulse_article_body": [
+        {
+          "heading": "La pubblicazione",
+          "text": "PULSE ha individuato un aggiornamento sul tema economia e localizzato un documento di istat.it. Non è ancora disponibile una serie omogenea verificata da cui derivare confronti numerici."
+        },
+        {
+          "heading": "Fonte e verifiche",
+          "text": "La notizia è stata individuata attraverso la stampa. Il documento originale è disponibile tra le fonti; PULSE non trasforma singole cifre prive di contesto in statistiche confrontabili."
+        }
+      ],
+      "table_spec": {
+        "status": "no_verified_comparable_series",
+        "columns": [],
+        "rows": []
+      },
+      "verification_tier": "primary_page_identified_series_pending",
+      "pulse_title": "Dati di economia: nuova pubblicazione della fonte istat.it",
+      "pulse_summary": "PULSE ha individuato un aggiornamento sul tema economia e localizzato un documento di istat.it. Non è ancora disponibile una serie omogenea verificata da cui derivare confronti numerici."
+    },
+    {
+      "id": "PULSE-MEDIA-EECA2F9B72814C05",
+      "story_fingerprint": "eeca2f9b72814c05e4860a600e83d9b90713aceee5c94771688bdb2eb54ebe39",
+      "published_at": "2026-11-10T16:00:00+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026",
+      "reported_headline": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026 - www.simplybiz.eu",
+      "summary": "La testata www.simplybiz.eu segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +3,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026",
+      "pulse_summary": "La testata www.simplybiz.eu segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +3,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata www.simplybiz.eu segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +3,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 54,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVG9LR09VcURFemUwTUt6dEtUQ1lMWElicDcySXBqc081QWxxbHNFbDNTRGlPVFNEYnEyTHBXUUNhYm1hUTl0UmxfTFlDNEY2MnEzVUdEWFZIZXp6eHdUSlRWRjVzR3k5WWc3YXdLZGFSd3pmLUdGX29LYzB0NWh6ODJ3?oc=5",
+        "domain": "www.simplybiz.eu",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+3,3%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "umbria"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "www.simplybiz.eu",
+        "original_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVG9LR09VcURFemUwTUt6dEtUQ1lMWElicDcySXBqc081QWxxbHNFbDNTRGlPVFNEYnEyTHBXUUNhYm1hUTl0UmxfTFlDNEY2MnEzVUdEWFZIZXp6eHdUSlRWRjVzR3k5WWc3YXdLZGFSd3pmLUdGX29LYzB0NWh6ODJ3?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-80D3DBC060D3D6B6",
+      "story_fingerprint": "80d3dbc060d3d6b6ee09d685",
+      "published_at": "2026-11-10T16:00:00+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 54,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVG9LR09VcURFemUwTUt6dEtUQ1lMWElicDcySXBqc081QWxxbHNFbDNTRGlPVFNEYnEyTHBXUUNhYm1hUTl0UmxfTFlDNEY2MnEzVUdEWFZIZXp6eHdUSlRWRjVzR3k5WWc3YXdLZGFSd3pmLUdGX29LYzB0NWh6ODJ3?oc=5",
+        "domain": "www.simplybiz.eu",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026 - www.simplybiz.eu",
+      "summary": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026 www.simplybiz.eu",
+      "statistical_claims": [
+        {
+          "raw_value": "+3,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "+3,3%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "umbria"
+      ],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-CC5DD4415F68F82B",
+      "story_fingerprint": "cc5dd4415f68f82ba26f5f4156eae06eb7bff0c1c1697ead7af7a6c40cdc764b",
+      "published_at": "2026-11-10T15:50:00+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "In Abruzzo cresce l'occupazione, ma persi 69 mila giovani dal 2006",
+      "reported_headline": "In Abruzzo cresce l'occupazione, ma persi 69 mila giovani dal 2006 - ANSA",
+      "summary": "La testata ANSA segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 69 mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "In Abruzzo cresce l'occupazione, ma persi 69 mila giovani dal 2006",
+      "pulse_summary": "La testata ANSA segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 69 mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ANSA segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 69 mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · agenzie · gruppo 06». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 44,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNmxaRFZPZ1ZteFRZVS1PNGEtN0s4bGp6R09CNUMxMDdzTElYOVRZcHlHcjJIX1dkN1NLdjRSU3owaFRBVnBFYV93T2NfaDRfbVRmd0NlNy0tQlVNZDhNT1pwdlpDQXJIb09YLWkyakwyTlR2WktOZGZRcHhLMjZwZ19EYXNnSWM0MGt3dmlwTnA0NDBVbkh6bENNWGlyT0hGMEYwQmhnYXdCREhiZjFiTGdPSXRLdzZWSW4yOUZuT2E0SG1mdk4wcnFpYWEzRmNLOTV3OWo3dlpENFVSbDlIeWpMWnc0Wktn0gHuAUFVX3lxTFBEeUtYMFpLVDBEblNacGpETy1CbE54VlNhVGxsNGpIXzhBU3ZHbkRZendLaEJMWGVjdWd6UkcwVV9ocXFEcDIxMnotQ05jc0t2ZHl2UkF5cDM0Y1N3X0plbVZQU2pyUlF5anczTjRhVWpCcEV4WXpXNTY5UEYzN200RVphWDVWVmFucHNESUJMekR0dXY0dWpoNTJrSjVIWGtwUG13Q1M5c0l6ZG1XQ2ZrZVlDMXJyaDJSc3pLQUxUeE1mNXlaNWdxX3ktTjQ5dzB1N3RYMkZtQmstaWZrQkpMWmVrSkxkd3JwVGdHU2c?oc=5",
+        "domain": "ANSA",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "69 mila",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "abruzzo"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ANSA",
+        "original_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQNmxaRFZPZ1ZteFRZVS1PNGEtN0s4bGp6R09CNUMxMDdzTElYOVRZcHlHcjJIX1dkN1NLdjRSU3owaFRBVnBFYV93T2NfaDRfbVRmd0NlNy0tQlVNZDhNT1pwdlpDQXJIb09YLWkyakwyTlR2WktOZGZRcHhLMjZwZ19EYXNnSWM0MGt3dmlwTnA0NDBVbkh6bENNWGlyT0hGMEYwQmhnYXdCREhiZjFiTGdPSXRLdzZWSW4yOUZuT2E0SG1mdk4wcnFpYWEzRmNLOTV3OWo3dlpENFVSbDlIeWpMWnc0Wktn0gHuAUFVX3lxTFBEeUtYMFpLVDBEblNacGpETy1CbE54VlNhVGxsNGpIXzhBU3ZHbkRZendLaEJMWGVjdWd6UkcwVV9ocXFEcDIxMnotQ05jc0t2ZHl2UkF5cDM0Y1N3X0plbVZQU2pyUlF5anczTjRhVWpCcEV4WXpXNTY5UEYzN200RVphWDVWVmFucHNESUJMekR0dXY0dWpoNTJrSjVIWGtwUG13Q1M5c0l6ZG1XQ2ZrZVlDMXJyaDJSc3pLQUxUeE1mNXlaNWdxX3ktTjQ5dzB1N3RYMkZtQmstaWZrQkpMWmVrSkxkd3JwVGdHU2c?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-79B2112E1C77BEF8",
+      "story_fingerprint": "79b2112e1c77bef8d5bb1aee18a9aebb2344bcd222c2cc7bca15614c86339fa6",
+      "published_at": "2026-11-10T15:21:22+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Romania, Italia prima per imprese: oltre 18mila aziende e interscambio a 19 miliardi",
+      "reported_headline": "Romania, Italia prima per imprese: oltre 18mila aziende e interscambio a 19 miliardi - ItaliaOggi",
+      "summary": "La testata ItaliaOggi segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 18mila, 19 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Romania, Italia prima per imprese: oltre 18mila aziende e interscambio a 19 miliardi",
+      "pulse_summary": "La testata ItaliaOggi segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 18mila, 19 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ItaliaOggi segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 18mila, 19 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMUxFa2tCRS14VjFYU2p6bTNXV1AzbkMxNFN4Ykw5Q1hBLVludUltNkY3dmZmWC1lbTAwWWF2eTBoVElxa0tDNi16d0gtcVBLNmFIM18tOGtjQk5PeDlNWXphUzJidnQycF9EVF9ZZFRoZGhKVEM1YXRaRTRsemQ4V3N5RGlWd1A0aHY0V0FFYXJBNnZjV0pkWjEwY051TTloM2VDZHZoMFk4OFVzWlBZQmFGTE16S0lsYzJ1RXAwSWxjcmkwdFVZbGg1VE5UYU9iWmpB?oc=5",
+        "domain": "ItaliaOggi",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "18mila",
+          "verified": false
+        },
+        {
+          "raw_value": "19 miliardi",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ItaliaOggi",
+        "original_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMUxFa2tCRS14VjFYU2p6bTNXV1AzbkMxNFN4Ykw5Q1hBLVludUltNkY3dmZmWC1lbTAwWWF2eTBoVElxa0tDNi16d0gtcVBLNmFIM18tOGtjQk5PeDlNWXphUzJidnQycF9EVF9ZZFRoZGhKVEM1YXRaRTRsemQ4V3N5RGlWd1A0aHY0V0FFYXJBNnZjV0pkWjEwY051TTloM2VDZHZoMFk4OFVzWlBZQmFGTE16S0lsYzJ1RXAwSWxjcmkwdFVZbGg1VE5UYU9iWmpB?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-C2F1E9915192EC8F",
       "story_fingerprint": "c2f1e9915192ec8fb0444117fa0c2555e615baf36125dbb5567f37f0adc6eceb",
       "published_at": "2026-11-10T14:40:17+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Ocse, disoccupazione settembre stabile al 5%, Italia 6,3%",
       "reported_headline": "Ocse, disoccupazione settembre stabile al 5%, Italia 6,3% - Quotidiano Nazionale",
       "summary": "La testata Quotidiano Nazionale segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 5%, 6,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -135,7 +1062,7 @@
       "topic": "LAVORO",
       "pulse_score": 39,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbzdsbnNoSGdWRk01VThWeVJJdUVCRzFQU183eDdMRkpiT012Z256VndXdV9tdFVMeDJ2bkxlSkdIRzlWTzdBVDhMNVR4dVA1ZlZ2VThwbkUwa2VqX0lHdEVJaW1RT2JvaVJKVmx3ZDhVdFMxaHFmVWh6SUN4NFRsWlVrNS1CbjFmeWtPQQ?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcGQ5SnZRM3NCdkduLVBhSlRENzduZ1hSTzEtcXhVZjJYd19tSDFLdVZDVmhWMlRUUXU2RHpXVktYNjNkV0ZfU0g0NUZjdkhlc2NxTUw2cDM0S3VuWkF1VmlvRUN5QXkxQlVzSWo0REpnWUpYVkJuMThvb0xJVmU4cE5IRm8ydlVIX3ZjUzdtRktRWWZqT0gyVQ?oc=5",
         "domain": "Quotidiano Nazionale",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
@@ -170,7 +1097,7 @@
       "discovery": {
         "role": "journalistic_radar",
         "outlet": "Quotidiano Nazionale",
-        "original_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbzdsbnNoSGdWRk01VThWeVJJdUVCRzFQU183eDdMRkpiT012Z256VndXdV9tdFVMeDJ2bkxlSkdIRzlWTzdBVDhMNVR4dVA1ZlZ2VThwbkUwa2VqX0lHdEVJaW1RT2JvaVJKVmx3ZDhVdFMxaHFmVWh6SUN4NFRsWlVrNS1CbjFmeWtPQQ?oc=5",
+        "original_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcGQ5SnZRM3NCdkduLVBhSlRENzduZ1hSTzEtcXhVZjJYd19tSDFLdVZDVmhWMlRUUXU2RHpXVktYNjNkV0ZfU0g0NUZjdkhlc2NxTUw2cDM0S3VuWkF1VmlvRUN5QXkxQlVzSWo0REpnWUpYVkJuMThvb0xJVmU4cE5IRm8ydlVIX3ZjUzdtRktRWWZqT0gyVQ?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-10T15:00:19.025835+00:00",
@@ -180,7 +1107,7 @@
       "id": "PULSE-MEDIA-4F80F83D03C0B2AB",
       "story_fingerprint": "4f80f83d03c0b2abaaa8e5d80f78a006608c36b962d46019e36797be2af1a624",
       "published_at": "2026-11-10T14:39:14+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Energia nucleare, Bureau Veritas e Teha: \"Per l'Italia può avere 50 miliardi di euro di valore aggiunto al 2050\"",
       "reported_headline": "Energia nucleare, Bureau Veritas e Teha: \"Per l'Italia può avere 50 miliardi di euro di valore aggiunto al 2050\" - blueconomy.com",
       "summary": "La testata blueconomy.com segnala una notizia su energia. Nel titolo o nell'estratto sono riportati 50 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -241,10 +1168,74 @@
       "primary_research_status": "primary_evidence_not_found"
     },
     {
+      "id": "PULSE-MEDIA-1DDEAC7D72F950BA",
+      "story_fingerprint": "1ddeac7d72f950ba3f2b7cfd69af95da57adaae22bae3d37cbc9e5e0014f80a0",
+      "published_at": "2026-11-10T14:37:00+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "MARKET DRIVER: inflazione Usa al +0,4%, Fed verso rialzo tassi a dicembre (Moneyfarm)",
+      "reported_headline": "MARKET DRIVER: inflazione Usa al +0,4%, Fed verso rialzo tassi a dicembre (Moneyfarm) - Milano Finanza",
+      "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "MARKET DRIVER: inflazione Usa al +0,4%, Fed verso rialzo tassi a dicembre (Moneyfarm)",
+      "pulse_summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Milano Finanza dati». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdlU3anZ5ZldjR1drQ2dTNjhZa2hkYl9SaHNXN1NZWnZTbjY3RjM3TEhBMFpBN2JQVjAtOWZpRkFrU0p2UFdGQTJLZE1TLWlZTjhWNC1YUXVOMEV0NmszajlGUDU4R0FrWi14WWt4TWx0ZXdMRU9zenBiV3lBV0hxOC1YTjRqaWFVcGhQSm9EbkpIcVVjZTBWc0lqcHlzRW96MmduUV9EdjladFM3cGppdG9idW9jakZfNGhxSzdyWUNxSmU1N2VxUjRScHhpTkRhMnhFZGZB?oc=5",
+        "domain": "Milano Finanza",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,4%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Milano Finanza",
+        "original_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdlU3anZ5ZldjR1drQ2dTNjhZa2hkYl9SaHNXN1NZWnZTbjY3RjM3TEhBMFpBN2JQVjAtOWZpRkFrU0p2UFdGQTJLZE1TLWlZTjhWNC1YUXVOMEV0NmszajlGUDU4R0FrWi14WWt4TWx0ZXdMRU9zenBiV3lBV0hxOC1YTjRqaWFVcGhQSm9EbkpIcVVjZTBWc0lqcHlzRW96MmduUV9EdjladFM3cGppdG9idW9jakZfNGhxSzdyWUNxSmU1N2VxUjRScHhpTkRhMnhFZGZB?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-4E250EDDC8CE832C",
       "story_fingerprint": "4e250eddc8ce832c648ff4a1f27baf533ca0e0d5f5ad568a110b100ae13c4a3f",
       "published_at": "2026-11-10T14:14:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Il turismo conferma il trend positivo. In Calabria nel 2026 le presenze sono aumentate del 10%",
       "reported_headline": "Il turismo conferma il trend positivo. In Calabria nel 2026 le presenze sono aumentate del 10% - Corriere della Calabria",
       "summary": "La testata Corriere della Calabria segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 10%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -308,7 +1299,7 @@
       "id": "PULSE-MEDIA-BD65A6BB6D12AFD6",
       "story_fingerprint": "bd65a6bb6d12afd6fd1852080f28e1b873905a1c7438240e4e09fc49cabbcca6",
       "published_at": "2026-11-10T14:13:01+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Stipendi, in Italia i laureati guadagnano 1.100€ in meno al mese rispetto all'estero: il rapporto Svimez 2026",
       "reported_headline": "Stipendi, in Italia i laureati guadagnano 1.100€ in meno al mese rispetto all'estero: il rapporto Svimez 2026 - Fanpage",
       "summary": "La testata Fanpage segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 1.100. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -370,7 +1361,7 @@
       "id": "PULSE-MEDIA-80917ABCD9A2061A",
       "story_fingerprint": "80917abcd9a2061abac18f8ce1a7d3e0f50c211d85f01526a0d67a89f8820a19",
       "published_at": "2026-11-10T13:54:58+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Fuga di giovani e crisi della scuola in Calabria, in vent’anni persi 190mila under 35 · LaC News24",
       "reported_headline": "Fuga di giovani e crisi della scuola in Calabria, in vent’anni persi 190mila under 35 · LaC News24 - LaC News24",
       "summary": "La testata LaC News24 segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 190mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -431,10 +1422,72 @@
       }
     },
     {
+      "id": "PULSE-MEDIA-9BA244DBF328CDB4",
+      "story_fingerprint": "9ba244dbf328cdb40e89c16e8f2ce97dfb4b47055fb4e3c289889551dcd609c3",
+      "published_at": "2026-11-10T13:48:16+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "Pensioni 2027, stop alle rivalutazioni: aumento congelato per 4 milioni di italiani",
+      "reported_headline": "Pensioni 2027, stop alle rivalutazioni: aumento congelato per 4 milioni di italiani - QuiFinanza",
+      "summary": "La testata QuiFinanza segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Pensioni 2027, stop alle rivalutazioni: aumento congelato per 4 milioni di italiani",
+      "pulse_summary": "La testata QuiFinanza segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata QuiFinanza segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · specializzate · gruppo 12». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 44,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVWExZ3FPUG5FZU1zSG8tajZHbHpVV1cwQTBfdE9yVE1ndW4xRUE2UmlCUk1McER4QmpCUmxPSHNMNG83T242RVQzZVNxVmh3R0lhS0hGLXhHeDZOUlJWOWU2TFROYTJzYUk4NmRsb2R6M0ZqbmFWTzI0QXJiaDNMTlNJTVdvaFnSAYwBQVVfeXFMTmluaEVOQ282TGlDM1QzaDg2VUxSY2RuWEZ4STFIZE80QTh5c0pXZldtT2VzbUZYRDRvbDFGcFlqLUdvMUp4NUdhc3BQdUN1dy00a202RGk4UlZjZGFvXzQ2cGlGcllzWTFfTndOa2dBN0lZeUI1WWJiSm5zOXFyMjRZaDlKOGxsU0ZodTM?oc=5",
+        "domain": "QuiFinanza",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "4 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "QuiFinanza",
+        "original_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPVWExZ3FPUG5FZU1zSG8tajZHbHpVV1cwQTBfdE9yVE1ndW4xRUE2UmlCUk1McER4QmpCUmxPSHNMNG83T242RVQzZVNxVmh3R0lhS0hGLXhHeDZOUlJWOWU2TFROYTJzYUk4NmRsb2R6M0ZqbmFWTzI0QXJiaDNMTlNJTVdvaFnSAYwBQVVfeXFMTmluaEVOQ282TGlDM1QzaDg2VUxSY2RuWEZ4STFIZE80QTh5c0pXZldtT2VzbUZYRDRvbDFGcFlqLUdvMUp4NUdhc3BQdUN1dy00a202RGk4UlZjZGFvXzQ2cGlGcllzWTFfTndOa2dBN0lZeUI1WWJiSm5zOXFyMjRZaDlKOGxsU0ZodTM?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-D49EC452B0B3DE1E",
       "story_fingerprint": "d49ec452b0b3de1e521137d0409f0253a847e4d94651d4db5e34c6ac490b20e6",
       "published_at": "2026-11-10T13:33:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "*Usa: +0,3% m/m inflazione core ottobre",
       "reported_headline": "*Usa: +0,3% m/m inflazione core ottobre - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -498,7 +1551,7 @@
       "id": "PULSE-MEDIA-30A15F6B2A538966",
       "story_fingerprint": "30a15f6b2a5389668a0a54f32ffbcb5838eb6fc00d933f6a3f163553e33425e7",
       "published_at": "2026-11-10T13:31:17+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Usa : +0,4% m/m inflazione ottobre",
       "reported_headline": "Usa : +0,4% m/m inflazione ottobre - MarketScreener Italia",
       "summary": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -560,7 +1613,7 @@
       "id": "PULSE-MEDIA-82F5570F5F8EC279",
       "story_fingerprint": "82f5570f5f8ec279a0f2602be6a4b5e430ac205a151e3ec4507bbbca964e92d4",
       "published_at": "2026-11-10T12:50:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Il quadro economico pesa sulle famiglie italiane: ad ottobre l’inflazione è salita al 5,4% e a settembre l’indice di fiducia dei consumatori è sceso a 91,2 punti. Gli italiani non rinunciano alla neve, ma cercano di risparmiare: pranzo al sacco al...",
       "reported_headline": "Il quadro economico pesa sulle famiglie italiane: ad ottobre l’inflazione è salita al 5,4% e a settembre l’indice di fiducia dei consumatori è sceso a 91,2 punti. Gli italiani non rinunciano alla neve, ma cercano di risparmiare: pranzo al sacco al... - Adnkronos",
       "summary": "La testata Adnkronos segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4%, 91,2. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -626,7 +1679,7 @@
       "id": "PULSE-MEDIA-C74AB37B00DBAEC2",
       "story_fingerprint": "c74ab37b00dbaec237dc94d266680f9030ec7838666536486eb5bb2f363c9db3",
       "published_at": "2026-11-10T12:42:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Cyberattacchi, l’Italia alza le difese: 150 milioni di aiuti alle imprese. Piantedosi riunisce il Comitato sicurezza",
       "reported_headline": "Cyberattacchi, l’Italia alza le difese: 150 milioni di aiuti alle imprese. Piantedosi riunisce il Comitato sicurezza - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 150 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -690,7 +1743,7 @@
       "id": "PULSE-MEDIA-33A993660E479F00",
       "story_fingerprint": "33a993660e479f00232280e1feaa9e13857980070c0c77177b25eaa74a28480a",
       "published_at": "2026-11-10T12:30:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Turismo, Italia prima in Europa: ad agosto 98,8 milioni di presenze",
       "reported_headline": "Turismo, Italia prima in Europa: ad agosto 98,8 milioni di presenze",
       "summary": "La testata rainews.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 98,8 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -752,7 +1805,7 @@
       "id": "PULSE-942B3484D281CC97",
       "story_fingerprint": "942b3484d281cc974ff233fd",
       "published_at": "2026-11-10T12:30:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ALTRO",
       "pulse_score": 54,
       "patterns": [],
@@ -849,7 +1902,7 @@
       "id": "PULSE-MEDIA-B3BF7B8A39C67879",
       "story_fingerprint": "b3bf7b8a39c67879235d13007fe94ed4b431d2e6f8698fee985db94880d5cd78",
       "published_at": "2026-11-10T12:23:49+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Borsa: Europa brillante a meta' seduta in attesa dell'inflazione Usa, Milano +1,5%",
       "reported_headline": "Borsa: Europa brillante a meta' seduta in attesa dell'inflazione Usa, Milano +1,5% - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +1,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -975,7 +2028,7 @@
       "id": "PULSE-MEDIA-1CE2D47C7BA153AA",
       "story_fingerprint": "1ce2d47c7ba153aa7804c4639b508b91ffa6f196f2ca0080967ffd3603cbfdbe",
       "published_at": "2026-11-10T12:01:28+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Borsa: Europa brillante a metà seduta in attesa dell’inflazione Usa, Milano +1,5%",
       "reported_headline": "Borsa: Europa brillante a metà seduta in attesa dell’inflazione Usa, Milano +1,5% - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +1,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1039,7 +2092,7 @@
       "id": "PULSE-MEDIA-59686174F8C35A1D",
       "story_fingerprint": "59686174f8c35a1dd3e9edab8b0ac53e66e2f1d702cc7322f5a015552477b7fc",
       "published_at": "2026-11-10T12:00:32+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "IL SOLE 24 ORE * ITALIA: «RIVALUTAZIONE PENSIONI A GENNAIO PER LA GRAN PARTE DEI PENSIONATI MA 3,6 MILIONI DOVRANNO ATTENDERE IL CONGUAGLIO A MARZO",
       "reported_headline": "IL SOLE 24 ORE * ITALIA: «RIVALUTAZIONE PENSIONI A GENNAIO PER LA GRAN PARTE DEI PENSIONATI MA 3,6 MILIONI DOVRANNO ATTENDERE IL CONGUAGLIO A MARZO - agenzia giornalistica opinione",
       "summary": "La testata agenzia giornalistica opinione segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 3,6 MILIONI. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1231,7 +2284,7 @@
       "id": "PULSE-MEDIA-47B499BCD4C2CD81",
       "story_fingerprint": "47b499bcd4c2cd81b2dcc9befec17fa602e84c681488e5acdbcb06a9a9923d0e",
       "published_at": "2026-11-10T11:01:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Occupazione in Campania sotto la media nazionale, nelle imprese solo 0,3 manager ogni 100 lavoratori. Turiello: “Siamo la chiave per sfruttare la crescita e le opportunità del territorio\"",
       "reported_headline": "Occupazione in Campania sotto la media nazionale, nelle imprese solo 0,3 manager ogni 100 lavoratori. Turiello: “Siamo la chiave per sfruttare la crescita e le opportunità del territorio\" - Il Riformista",
       "summary": "La testata Il Riformista segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 0,3, 100 lavoratori. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1340,7 +2393,7 @@
       "id": "PULSE-MEDIA-DB82BA46062FD7D7",
       "story_fingerprint": "db82ba46062fd7d78ae0b3b8dd35c69447d3f3f84f43f8caa9b17e51bd129a68",
       "published_at": "2026-11-10T11:00:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "In Sicilia 158mila alunni in meno: l'allarme su scuola e sanità",
       "reported_headline": "In Sicilia 158mila alunni in meno: l'allarme su scuola e sanità - RaiNews",
       "summary": "La testata RaiNews segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 158mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1404,7 +2457,7 @@
       "id": "PULSE-MEDIA-12B15622BF6549BF",
       "story_fingerprint": "12b15622bf6549bf33be33d1c6bc8744d6fa4721bd4fa7d818ba492c75f6e982",
       "published_at": "2026-11-10T10:56:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Il report: \"Salute strategica per Paese, è il 12,4% del Pil e il 14,5% dell’occupazione\"",
       "reported_headline": "Il report: \"Salute strategica per Paese, è il 12,4% del Pil e il 14,5% dell’occupazione\" - La Nuova Sardegna",
       "summary": "La testata La Nuova Sardegna segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 12,4%, 14,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1472,7 +2525,7 @@
       "id": "PULSE-MEDIA-E3CC4813B214D797",
       "story_fingerprint": "e3cc4813b214d7978b31e6df8579e8837b5185ba4fa3fa66c78ee293561782ed",
       "published_at": "2026-11-10T10:46:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Calabria, l’economia cresce più della media italiana: Pil +1,3% e occupazione in aumento, i dati di Bankitalia",
       "reported_headline": "Calabria, l’economia cresce più della media italiana: Pil +1,3% e occupazione in aumento, i dati di Bankitalia - StrettoWeb",
       "summary": "La testata StrettoWeb segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati +1,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1536,7 +2589,7 @@
       "id": "PULSE-MEDIA-AB7193B2C8443249",
       "story_fingerprint": "ab7193b2c8443249492450014a596c366f8bbbc9d62f1ba340c290a8d1f87d0e",
       "published_at": "2026-11-10T10:45:44+00:00",
-      "last_seen_at": "2026-11-10T11:58:33.036145+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Garlasco, Mario Venditti sarà interrogato come testimone: al centro le anomalie della prima indagine del 2017 su Andrea Sempio",
       "reported_headline": "Garlasco, Mario Venditti sarà interrogato come testimone: al centro le anomalie della prima indagine del 2017 su Andrea Sempio - Corriere Milano",
       "summary": "La testata Corriere Milano segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1595,7 +2648,7 @@
       "id": "PULSE-MEDIA-046DE0E3299A7248",
       "story_fingerprint": "046de0e3299a7248364ca423ef93cda6c6c85a6fcad5b270ebe4a57a2ebd7223",
       "published_at": "2026-11-10T10:43:17+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Calabria, occupati +1,6% e disoccupazione al 9,1%: i dati di Bankitalia",
       "reported_headline": "Calabria, occupati +1,6% e disoccupazione al 9,1%: i dati di Bankitalia - CityNow",
       "summary": "La testata CityNow segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati +1,6%, 9,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1704,7 +2757,7 @@
       "id": "PULSE-MEDIA-0E8B89EE0888B497",
       "story_fingerprint": "0e8b89ee0888b497dff871a6a1bb4e6c7767574fb27184c93ad42c8a02b3001d",
       "published_at": "2026-11-10T10:33:30+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Rapporto SVIMEZ 2026, la Basilicata tra luci e ombre: Pil al +0,4% e boom di export, ma è fuga di giovani laureati e record di siccità",
       "reported_headline": "Rapporto SVIMEZ 2026, la Basilicata tra luci e ombre: Pil al +0,4% e boom di export, ma è fuga di giovani laureati e record di siccità - TRM network",
       "summary": "La testata TRM network segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1768,7 +2821,7 @@
       "id": "PULSE-6B64D1516AD4A5E1",
       "story_fingerprint": "6b64d1516ad4a5e19eaf2056",
       "published_at": "2026-11-10T10:33:30+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 74,
       "patterns": [],
@@ -1801,7 +2854,7 @@
       "id": "PULSE-MEDIA-DF2712E13DFB81C1",
       "story_fingerprint": "df2712e13dfb81c18c73ab07bc96ed9abb2d75a4fc860921ab1835d60466726f",
       "published_at": "2026-11-10T10:04:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Istat, nel 2024 multinazionali estere hanno realizzato il 35,4% dell'export italiano",
       "reported_headline": "Istat, nel 2024 multinazionali estere hanno realizzato il 35,4% dell'export italiano - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 35,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1863,7 +2916,7 @@
       "id": "PULSE-497458AA99BA0789",
       "story_fingerprint": "497458aa99ba078950edc948",
       "published_at": "2026-11-10T10:00:28+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 85,
       "public_source": {
@@ -1953,7 +3006,7 @@
       "id": "PULSE-MEDIA-9D8FE6B87879B516",
       "story_fingerprint": "9d8fe6b87879b51624b5854ad5811e573426c0239f77cb44a8f87847bad3630f",
       "published_at": "2026-11-10T09:56:17+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Pensioni, aumenti congelati per oltre 4 milioni: a gennaio e febbraio niente rivalutazione",
       "reported_headline": "Pensioni, aumenti congelati per oltre 4 milioni: a gennaio e febbraio niente rivalutazione",
       "summary": "La testata repubblica.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2015,7 +3068,7 @@
       "id": "PULSE-MEDIA-1F52152902AA5ACC",
       "story_fingerprint": "1f52152902aa5acccbe119cd83f021d73b1201ccc7a35c294a03c290549ff920",
       "published_at": "2026-11-10T09:19:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Campania. Terremoto giudiziario alla Soresa: arrestato il presidente Casillo. L’accusa è di tangenti per 120mila euro su due appalti da 53 milioni. Nel mirino anche una gara per le barelle negli ospedali",
       "reported_headline": "Campania. Terremoto giudiziario alla Soresa: arrestato il presidente Casillo. L’accusa è di tangenti per 120mila euro su due appalti da 53 milioni. Nel mirino anche una gara per le barelle negli ospedali - Quotidiano Sanità",
       "summary": "La testata Quotidiano Sanità segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 120mila, 53 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2083,7 +3136,7 @@
       "id": "PULSE-E6108A160F2DBFB5",
       "story_fingerprint": "e6108a160f2dbfb598d16acb",
       "published_at": "2026-11-10T09:00:18+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 79,
       "public_source": {
@@ -2165,7 +3218,7 @@
       "id": "PULSE-MEDIA-8F37D8F70DC4F3E0",
       "story_fingerprint": "8f37d8f70dc4f3e00aaf948288b239368ef21b9a5d0b4deaed73c354fd305cf2",
       "published_at": "2026-11-10T08:33:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Pompe di calore, in Italia solo il 13% delle imprese conosce davvero la tecnologia: costi e competenze frenano la diffusione",
       "reported_headline": "Pompe di calore, in Italia solo il 13% delle imprese conosce davvero la tecnologia: costi e competenze frenano la diffusione - Build News",
       "summary": "La testata Build News segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2229,7 +3282,7 @@
       "id": "PULSE-MEDIA-13FF71E32EDFCEB7",
       "story_fingerprint": "13ff71e32edfceb7ff6f8243f9225368cb296862763c1bdbc78bf2ea037448d4",
       "published_at": "2026-11-10T07:56:13+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Turismo Lgbtq+, Spagna meta più gettonata. L’Italia corre per recuperare il gap",
       "reported_headline": "Turismo Lgbtq+, Spagna meta più gettonata. L’Italia corre per recuperare il gap",
       "summary": "La testata ilsole24ore.com segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 24,11%, 43%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2297,7 +3350,7 @@
       "id": "PULSE-MEDIA-33FB774FD73F520A",
       "story_fingerprint": "33fb774fd73f520a8afcd445bdac2f5e842aa0dde9e627fdda301f8ce5ce15a9",
       "published_at": "2026-11-10T07:51:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Riso italiano, campagna 2026/27 in salita: prezzi in calo fino al 40% e costi ancora elevati",
       "reported_headline": "Riso italiano, campagna 2026/27 in salita: prezzi in calo fino al 40% e costi ancora elevati - TeatroNaturale.it",
       "summary": "La testata TeatroNaturale.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 40%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2359,7 +3412,7 @@
       "id": "PULSE-1F1A744A643274B0",
       "story_fingerprint": "1f1a744a643274b03f92c969",
       "published_at": "2026-11-10T07:51:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 55,
       "patterns": [],
@@ -2393,6 +3446,82 @@
       "territories": [],
       "editorial_status": "needs_primary_source",
       "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-ABD856363824B663",
+      "story_fingerprint": "abd856363824b663a074876203d77585fbc7d27a6d11aaf9b550c7aa8eedf407",
+      "published_at": "2026-11-10T07:35:53+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
+      "headline": "La giornata di Borse e petrolio del 10 novembre | Milano chiude in rialzo, Wall Street in rosso con i dati sull’inflazione Usa: sale l’oro",
+      "reported_headline": "La giornata di Borse e petrolio del 10 novembre | Milano chiude in rialzo, Wall Street in rosso con i dati sull’inflazione Usa: sale l’oro",
+      "summary": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 0,25%, 0,41%, 0,55%, 0,97%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "La giornata di Borse e petrolio del 10 novembre | Milano chiude in rialzo, Wall Street in rosso con i dati sull’inflazione Usa: sale l’oro",
+      "pulse_summary": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 0,25%, 0,41%, 0,55%, 0,97%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 0,25%, 0,41%, 0,55%, 0,97%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Corriere della Sera - Economia». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://www.corriere.it/economia/finanza/diretta-live/26_novembre_10/borse-in-diretta-prezzo-petrolio-oggi-10-novembre-greggio-in-calo-giu-anche-il-gas-sale-l-oro.shtml",
+        "domain": "corriere.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "0,25%",
+          "verified": false
+        },
+        {
+          "raw_value": "0,41%",
+          "verified": false
+        },
+        {
+          "raw_value": "0,55%",
+          "verified": false
+        },
+        {
+          "raw_value": "0,97%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "corriere.it",
+        "original_url": "https://www.corriere.it/economia/finanza/diretta-live/26_novembre_10/borse-in-diretta-prezzo-petrolio-oggi-10-novembre-greggio-in-calo-giu-anche-il-gas-sale-l-oro.shtml",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-MEDIA-6334C5FD9A5C887C",
@@ -2460,7 +3589,7 @@
       "id": "PULSE-MEDIA-F12DA7474470D25B",
       "story_fingerprint": "f12da7474470d25bf23b3be07cfb0a8e39339f5636b9892f60f0991d29aefeae",
       "published_at": "2026-11-09T20:46:18+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Sicilia, tutti i dati del report di Bankitalia: il Pil cammina e i prezzi corrono (inflazione al 4,6%)",
       "reported_headline": "Sicilia, tutti i dati del report di Bankitalia: il Pil cammina e i prezzi corrono (inflazione al 4,6%) - La Sicilia",
       "summary": "La testata La Sicilia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2829,7 +3958,7 @@
       "id": "PULSE-MEDIA-0F03A0993D91274B",
       "story_fingerprint": "0f03a0993d91274b97018c514057bdcfb05a98899acb8907e1ea3d33fb83abe9",
       "published_at": "2026-11-09T17:02:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "EICMA 2026 chiude con oltre 600.000 presenze (+6%): scooter a +14,76% in Italia, export europeo di moto -22% nel 2025",
       "reported_headline": "EICMA 2026 chiude con oltre 600.000 presenze (+6%): scooter a +14,76% in Italia, export europeo di moto -22% nel 2025 - Motori.money",
       "summary": "La testata Motori.money segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 600.000, +6%, +14,76%, -22%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2952,7 +4081,7 @@
       "id": "PULSE-MEDIA-EB547726C1518109",
       "story_fingerprint": "eb547726c1518109b525264ea3d5fd52caa1c108b8392d12cf448f1150e395ac",
       "published_at": "2026-11-09T16:00:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Hello Kitty, indagine OnePoll per Sanrio: per 1 italiano su 2 il termine ‘cute’ significa gentile e premuroso",
       "reported_headline": "Hello Kitty, indagine OnePoll per Sanrio: per 1 italiano su 2 il termine ‘cute’ significa gentile e premuroso - La Nuova Sardegna",
       "summary": "La testata La Nuova Sardegna segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3011,7 +4140,7 @@
       "id": "PULSE-MEDIA-550E238E0D401EF6",
       "story_fingerprint": "550e238e0d401ef6317713fea6c064f8a16596f27408c944e673a1e28d879346",
       "published_at": "2026-11-09T15:29:28+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Chi sono le professioniste italiane? 7 su 10 hanno vissuto il burnout, ma il 74% ha trovato supporto nel networking: l'indagine di...",
       "reported_headline": "Chi sono le professioniste italiane? 7 su 10 hanno vissuto il burnout, ma il 74% ha trovato supporto nel networking: l'indagine di... - Il Messaggero",
       "summary": "La testata Il Messaggero segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 74%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3387,7 +4516,7 @@
       "id": "PULSE-MEDIA-A57FCBCD5D0E7FDF",
       "story_fingerprint": "a57fcbcd5d0e7fdf952a7b54330b0a3f491eabc4225d58a9c6a23dc284fbe2cf",
       "published_at": "2026-11-09T14:34:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "UE, il rapporto tra prezzi delle case e reddito è aumentato del 6,8% in dieci anni",
       "reported_headline": "UE, il rapporto tra prezzi delle case e reddito è aumentato del 6,8% in dieci anni - la Repubblica",
       "summary": "La testata la Repubblica segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 6,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3451,7 +4580,7 @@
       "id": "PULSE-MEDIA-7216FD95A796ECBC",
       "story_fingerprint": "7216fd95a796ecbc7caf20c865c4d99c34d07b862bf159609b10c0e3cdd3eac9",
       "published_at": "2026-11-09T14:26:39+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Turismo 2026, l’Italia macina record e si conferma leader in Europa: ad agosto 98,8 milioni di presenze, prima tra i competitor.",
       "reported_headline": "Turismo 2026, l’Italia macina record e si conferma leader in Europa: ad agosto 98,8 milioni di presenze, prima tra i competitor. - Ministero del Turismo",
       "summary": "La testata Ministero del Turismo segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 98,8 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3544,7 +4673,7 @@
       "id": "PULSE-MEDIA-214E640E056A28B2",
       "story_fingerprint": "214e640e056a28b2da9b097eab60d67a0b98cce4e7ec7ce745e6464a047feabd",
       "published_at": "2026-11-09T14:26:15+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Dati nel dark web di Tajani e Gabrielli, pm di Roma avvia indagine",
       "reported_headline": "Dati nel dark web di Tajani e Gabrielli, pm di Roma avvia indagine - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3667,7 +4796,7 @@
       "id": "PULSE-MEDIA-26D2EB4ECFE452E5",
       "story_fingerprint": "26d2eb4ecfe452e549bff886fc1a896c681fc2652f73c6b6679e405f5a03975a",
       "published_at": "2026-11-09T13:45:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Clima, Italia maglia nera in Europa: emissioni in aumento del 5,8%. La Ue chiede un piano correttivo",
       "reported_headline": "Clima, Italia maglia nera in Europa: emissioni in aumento del 5,8%. La Ue chiede un piano correttivo - La Stampa",
       "summary": "La testata La Stampa segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 5,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3943,7 +5072,7 @@
       "id": "PULSE-MEDIA-4226F73AADB4778A",
       "story_fingerprint": "4226f73aadb4778afd1812db2e36251b8fc67a0e37064da01c335a2b9b1eaa9c",
       "published_at": "2026-11-09T12:29:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "MARKET DRIVER: BoE, inflazione attesa al 5% a metà 2027 per i costi energetici (Ebury)",
       "reported_headline": "MARKET DRIVER: BoE, inflazione attesa al 5% a metà 2027 per i costi energetici (Ebury) - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4174,7 +5303,7 @@
       "id": "PULSE-MEDIA-998113BEB12CDB92",
       "story_fingerprint": "998113beb12cdb92d95cd7c18a9ce1c51cbc0908c0d80255ea545c86b51a25e6",
       "published_at": "2026-11-09T09:41:39+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Gli stipendi a Bologna e in Emilia-Romagna tra inflazione, carovita e nuovi contratti: come stanno cambiando i salari",
       "reported_headline": "Gli stipendi a Bologna e in Emilia-Romagna tra inflazione, carovita e nuovi contratti: come stanno cambiando i salari",
       "summary": "La testata corrieredibologna.corriere.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 74,2%, 62,5%, 3,1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4383,7 +5512,7 @@
       "id": "PULSE-MEDIA-486DCBBB3D2E23B9",
       "story_fingerprint": "486dcbbb3d2e23b9945d5e79f70d6397efccd7ae3f64dd331abb574132833537",
       "published_at": "2026-11-09T09:16:19+00:00",
-      "last_seen_at": "2026-11-10T09:02:13.393502+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Influenza. Vaccinazioni in calo, copertura degli anziani sotto il 50%: è il dato peggiore dal 2014-2015. Italia sempre più lontana dagli obiettivi Oms",
       "reported_headline": "Influenza. Vaccinazioni in calo, copertura degli anziani sotto il 50%: è il dato peggiore dal 2014-2015. Italia sempre più lontana dagli obiettivi Oms - Quotidiano Sanità",
       "summary": "La testata Quotidiano Sanità segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 50%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4445,7 +5574,7 @@
       "id": "PULSE-49B3F40C9E3F481A",
       "story_fingerprint": "49b3f40c9e3f481a4d89ed69",
       "published_at": "2026-11-09T09:16:19+00:00",
-      "last_seen_at": "2026-11-10T09:02:13.393502+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ALTRO",
       "pulse_score": 60,
       "patterns": [],
@@ -4476,7 +5605,7 @@
       "id": "PULSE-MEDIA-28B2A17ADA1C33B5",
       "story_fingerprint": "28b2a17ada1c33b5196b9876cf9fbd0adb3b3087e6ae1104342fef95b3125fe1",
       "published_at": "2026-11-09T07:51:06+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Stipendi in Europa, nel 2025 +4,3%. L’Italia a metà classifica, ma sotto la media Ue",
       "reported_headline": "Stipendi in Europa, nel 2025 +4,3%. L’Italia a metà classifica, ma sotto la media Ue - Idealista",
       "summary": "La testata Idealista segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati +4,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4703,7 +5832,7 @@
       "id": "PULSE-MEDIA-75A7471DB7525095",
       "story_fingerprint": "75a7471db7525095176995da1bd72f6b4656c4acb3a6eca5f1c65fc201d60bc6",
       "published_at": "2026-11-09T06:44:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Cina: inflazione m/m invariata a ottobre (+0,7% a/a), Ppi sopra le attese a +5,7%",
       "reported_headline": "Cina: inflazione m/m invariata a ottobre (+0,7% a/a), Ppi sopra le attese a +5,7% - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,7%, +5,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4830,7 +5959,7 @@
       "id": "PULSE-MEDIA-102B6543220AB152",
       "story_fingerprint": "102b6543220ab15270b2f19c6f0ab87b08f9f46ac9196abbab8bbff08261f73d",
       "published_at": "2026-11-08T19:01:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Assenti dal lavoro tra il 33 e il 68% dei giorni: stop a 3-i Spa, il \"poltronificio\" da 45 milioni di Inps-Inail-Istat",
       "reported_headline": "Assenti dal lavoro tra il 33 e il 68% dei giorni: stop a 3-i Spa, il \"poltronificio\" da 45 milioni di Inps-Inail-Istat - Today",
       "summary": "La testata Today segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 68%, 45 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4898,7 +6027,7 @@
       "id": "PULSE-MEDIA-1D1F96C1AD2DF50C",
       "story_fingerprint": "1d1f96c1ad2df50cf80cf9ae686a6660c2103d026fb4a65a261559574f5fe9ef",
       "published_at": "2026-11-08T16:30:19+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "IL SOLE 24 ORE * ITALIA: «EXPORT, PER L’ITALIA +53% IN DIECI ANNI: BATTUTI I CONCORRENTI EUROPEI",
       "reported_headline": "IL SOLE 24 ORE * ITALIA: «EXPORT, PER L’ITALIA +53% IN DIECI ANNI: BATTUTI I CONCORRENTI EUROPEI - agenzia giornalistica opinione",
       "summary": "La testata agenzia giornalistica opinione segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +53%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4962,7 +6091,7 @@
       "id": "PULSE-MEDIA-4A709107923B58DB",
       "story_fingerprint": "4a709107923b58dbcd757f1c880cb1f9e1c13ce9fe84dc86b579add53697457f",
       "published_at": "2026-11-08T16:21:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Export, per l’Italia +53% in dieci anni: battuti i concorrenti europei",
       "reported_headline": "Export, per l’Italia +53% in dieci anni: battuti i concorrenti europei - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +53%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5391,7 +6520,7 @@
       "id": "PULSE-MEDIA-1EA12065B5D3EB83",
       "story_fingerprint": "1ea12065b5d3eb830d6172d027e98eb570a078b5372f76fed66566cb7fb8fd58",
       "published_at": "2026-11-08T09:30:01+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Scuola e distrazione digitale: in Italia il 37% degli studenti segnala compagni poco attenti",
       "reported_headline": "Scuola e distrazione digitale: in Italia il 37% degli studenti segnala compagni poco attenti - Lo Strillone",
       "summary": "La testata Lo Strillone segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 37%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5514,7 +6643,7 @@
       "id": "PULSE-MEDIA-78F42AFA9C29543E",
       "story_fingerprint": "78f42afa9c29543e0d7d072e0809fee1857722f8702e4600e4770921bb7a58bf",
       "published_at": "2026-11-08T08:02:01+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Prezzi, Assoutenti: è sempre più caro-neve. Nuovi rincari per tariffe skipass, in 5 anni aumenti arrivano al +43%",
       "reported_headline": "Prezzi, Assoutenti: è sempre più caro-neve. Nuovi rincari per tariffe skipass, in 5 anni aumenti arrivano al +43%",
       "summary": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +43%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5792,7 +6921,7 @@
       "id": "PULSE-MEDIA-80D3EF6681DBDA40",
       "story_fingerprint": "80d3ef6681dbda406336285b0f2aef52b98a005449a10fddcb2e4d0cdd61a830",
       "published_at": "2026-11-08T07:00:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "headline": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
       "reported_headline": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
       "summary": "La testata ilsole24ore.com segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 10 milioni, +3,16%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5862,7 +6991,7 @@
       "id": "PULSE-8E8AF96BBEEDB086",
       "story_fingerprint": "8e8af96bbeedb0862fa6b69c",
       "published_at": "2026-11-08T07:00:00+00:00",
-      "last_seen_at": "2026-11-10T15:00:19.025835+00:00",
+      "last_seen_at": "2026-11-10T17:52:51.549879+00:00",
       "topic": "ALTRO",
       "pulse_score": 55,
       "patterns": [],
