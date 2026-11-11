@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T15:01:30.360378+00:00",
+  "generated_at": "2026-11-11T17:59:26.864808+00:00",
   "candidates": [
     {
       "radar": "Il Fatto Quotidiano - Notizie",
@@ -44,7 +44,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 6
+      "items_fetched": 14
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -184,7 +184,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 25
     },
     {
       "radar": "Google News - economia lavoro",
@@ -194,7 +194,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "Repubblica Economia",
@@ -234,12 +234,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -299,12 +299,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 15
+      "items_fetched": 16
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 27
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -314,7 +314,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -368,48 +368,22 @@
     },
     {
       "radar": "Il Fatto Quotidiano - Notizie",
-      "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/11/banche-italiane-utili-2025-notizie/8568133/",
-      "discovery_title": "Banche, l’anno scorso 34,3 miliardi di utili e 22 miliardi di dividendi. Ma chiudono sportelli e tagliano posti di lavoro",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
-      "score_discovery": 60,
-      "topic": "LAVORO",
+      "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/11/marcia-indietro-inps-assegni-rivalutati-da-gennaio/8568317/",
+      "discovery_title": "Marcia indietro dell’Inps: “Gli assegni saranno rivalutati già da gennaio”. Ma resta la stretta da 14 miliardi in 10 anni",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
+      "score_discovery": 55,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "34,3 miliardi",
-        "22 miliardi",
-        "351 ",
-        "37 ",
-        "2025 ",
-        "34,3 miliardi",
-        "22 miliardi"
-      ],
-      "official_links": [],
-      "official_domain_hints": [
-        "iss.it"
-      ],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "ANSA - Notizie",
-      "discovery_url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/11/11/istat-frena-la-crescita-delloccupazione-nel-2026-2027-giu-la-disoccupazione_c6c2b0c5-93d2-4ea9-99a9-84315413c5b2.html",
-      "discovery_title": "L'Istat: 'Con il taglio dell'Irpef per 3,7 milioni di persone, beneficio medio di 450 euro'",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
-      "score_discovery": 65,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "3,7 milioni",
-        "450 ",
-        "2026 ",
-        "+0,9%",
-        "6%",
-        "43%"
+        "14 miliardi",
+        "10 ",
+        "2027",
+        "14 miliardi",
+        "10 "
       ],
       "official_links": [],
       "official_domain_hints": [
         "aci.it",
-        "iss.it",
-        "istat.it"
+        "terna.it"
       ],
       "primary_resolution": null,
       "editorial_excluded": false,
@@ -419,7 +393,7 @@
       "radar": "Repubblica - Homepage",
       "discovery_url": "https://www.repubblica.it/economia/dossier/manovra-finanziaria-legge-di-bilancio/2026/11/11/news/fisco_istat_fiscal_drag_si_mangia_sconti_manovra-425715760/",
       "discovery_title": "Fisco, l’inflazione si mangia gli sconti: 1.100 euro persi contro 1.000 restituiti",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -441,7 +415,7 @@
       "radar": "Google News - Disuguaglianze e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdTBneUVVVkw5TEhWNHBqZGlPd1czWFNWSkxWRW9NVWJ2U1ctX0h5cHZLUHZPblVadVJfY2ZJb2lnYnRleW9ZMEhMd0VlNHB6bVhPM3FMaXdxamdEa2I3WVVjY2JVdC10SEJ0Ml9aTmp2NUpfOHZZTUg0NVhqREFJWTRBbExYMFk0OHk4emZ3U3VVcjhlUU9TaFNaR01aU1JwX05GWk5VMzFzcFBKWGxWVEFydTFBQXZpaDhFT0s1azVkbnFET0dackxrQnZfZw?oc=5",
       "discovery_title": "Rapporto Svimez 2026: il 25% in Basilicata a rischio povertà - Il Quotidiano del Sud",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -460,7 +434,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 04",
       "discovery_url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNczNxd0k5MEVwUG5EV2Ezd3RBSlI3Q2FnYmNROEUzeG5DS0hCa19CMFhreVNxSlpicW4xSHFxc19MQlhGc1dFa1Uwc3QxdndyWmZfRElSaHExMlF5czBFQ0dxeTc0SHZoR2RZQWV6a0JGWU4yNXpXbmFkU3NuUUczaw?oc=5",
       "discovery_title": "Istat, Pil 2026 +0,9%, +0,6% nel 2027 - Quotidiano Nazionale",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -483,7 +457,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
       "discovery_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa29zcGUxQWE0NEVQdDBGbkhOcWFpYVpHVlJUb08xVTZ0V3JGcDltVHY5UFRIUTd0aVZWa2lWbE9LZTRRcmNaZk00YURaXy05N3Y0cFBvT0l1aExlN21CdllNMjc2Wks0by1aQWRVcXR5UHFYdjkxX3FjdTZYdVYxSVBOb252Z2dvWS1nS3gzb3dxQWNna1ItNHJ0dUNRZ2FaakRj?oc=5",
       "discovery_title": "*Pil: Istat stima +0,9% in 2026 e +0,6% in 2027 - Milano Finanza",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -504,20 +478,18 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQWVRGeWdjdVRHbVZjdGtFbXhVWlZvS2ZQUnRJc0ZCMlBfc29odC14ZVh6Mm5PMWVXd1BoU1h2M3ViYVlLWm53TWRxVV9tMnZCUHJ5X0U4VXdMV05YSkx0U3NaZFRrUzg2Q3Itdndhd2JaUFhYNXBvYVV4T1ktR2RJcHZKQmlIREtiZXhvZWNFZ1ExN1JZQzVHSHdEeUZBbGlGeWZrYUk3UEVKS0VmTWxLX1Jta2RlUzlqZm8zZ09QUGxoaFZfczNMTWNNMloxWnRtWmxpTHd3dm1NMUJVNkVEekRMQjJ5TVFILXV0cEpnNHhIZG41Rm11cDEyNUJUMmg0WGfSAYcCQVVfeXFMUFc3WVlBREdfcExIeEVTdGJPOTZVUHJILWpqNXpTbGxmbFhMUGRuUndiYVJiYlU1TjdZYkhvVEpZVVVRTU84QktreWxvajIzZnh6VlVleC1DUWM4cW9LYWpWSGNTT294dlJZd1VpZTJTX1BacmlCY3lYdWJJSUxOWFd6Q29xMFlKWVBzenBoSEY2ZUQ5aVVIZmliRDkwVlFrYm5GSC1qVGpLSEVQNkZ6aVN0OHZKbzhCaVNHamRXWmJDWHpQVWtEME84cWZQMXUwVU83bGt4NVoxczAxbU1INGpmRlBld0x6LTQ5bjc2Wk9ocTkzUDJJdEFEdFRRRWhJbUxoT0dNWjQ?oc=5",
-      "discovery_title": "Istat, a 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno (2) - ANSA",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN1pIUGc5U1JvTFpGLWd3bHFoYzhPdENJUWgwci02WlZ6NHB0Q3ZLTzBhZG5wcGNBbWNXQmlVbFJ5aFBvY0IzR3BMSUU0WmZ3b0hMZ1FOVWw1RlM2cmxRbFY1eTZLdUVjWnZIWGJSODdueG1DdlZMSkM1TG5KM3NmQUpBcU51bE9mNm1ZTXhZRzc0cTBwYmxaQnZIWHNSTThEa0FUSk45SkFiT1BxYm5HY085RUtnV2FHOTFYNnZleTd1T2JMMVJhaXJ3TExUVHlTRWhRU1IteHNzTnBzdVE4S05R0gHnAUFVX3lxTE9YSVp4OVJrU2taN0xCUFVTYkVSOEM1YTUwUTdfRnJ4YkxocEVjY3lnRGdMZTUzaUNWN1ZiRk5RWi1CdFllTm96SW5RYjZjV0dUVnRNSktVMHZ3c05Falh1NnQ0UWtjNm95dEtCY3ZkaVZrRW03YzFEYXNYek5sdUlEeVk4M01BcXFkOTlCZjhLLUdzYWh5LUxZekowcDI1TC1QajJYb3BQd3d6Si1DMW5TWC16MWU1RGJuWDhMRklDRm9Sb1k2azBkbTFrQTVtQnpmVHRYUkhQUVJ5WmxORHNkekRnOGliQQ?oc=5",
+      "discovery_title": "Istat: 'A 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno' - ANSA",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
         "3,5 milioni",
         "2027 ",
         "510 ",
-        "2",
         "3,5 milioni",
         "2027 ",
-        "510 ",
-        "2"
+        "510 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -529,7 +501,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd3owc0tOQk5tQ2x0N1hONEQ0OXBiSS0yN2xlREFuYU5zUC00TGtva29lWnV3a3dVZHBWMUVfUklSQWtQNE01YmV3amQtWjFKSC1qY1BLUGlLdTVqVzRQd2ZnMjFaVEM3QUd1V24wVWcxMm9WS3BJQXpBaVZ0aFJmSUc4d1h4TDZjYk9IVHkxQ2Q0bEo1NXAtcUxPUlVzV3p5S1B5T3h5NnRmUmN3NjVxYWhlLW01bndpN25UeVlGWF90QmFBamF3OWVCek9UUldhY2YyR1hB?oc=5",
       "discovery_title": "Piemonte. Osservatorio personale sanitario: “2.700 dipendenti in più, oltre il turnover, dal 2023” - Quotidiano Sanità",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -548,7 +520,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
       "discovery_title": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -618,7 +590,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
       "discovery_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcWpkZEtzWmswSmtVUjhmeGdRNHhIV1czbG1mZkRucEtLem5YQXRtQjBORlVRa2I0OC1lMjFkQ09xVjF0SnhKa0IwMXFEb0tucWJTbFFVeWZnQnZ5VVNaRTVFUThvaXdJb1pLU1I0QnA2RmVjNElsQ2NFUXh2S0h4SjFFSWFVOGE0Z21xalA3b1JvcVN5aEJRbW4zQmNBVWs4ZTJnY0VpVDdVMUMzTnppZXRSM2ZpQUJWUGJ0LUs5SmlyNGRLVzVnS2tSOS1rUkE?oc=5",
       "discovery_title": "Istat, PIL atteso in crescita dello 0,9% nel 2026 e dello 0,6% nel 2027 - la Repubblica",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -639,18 +611,20 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPaU1mVl9LTUpZQVZfYy14V2xGb18xZEJqR3JMbE9VbXhWYkxnaXpCc1lHSEZoVm85SUZTeFJFRTFCWDFrV1p5UWFGNmREcUNZa0pQUzAwUFdtVnlwNVJVbVFPRUQxeDNQUmdHTm9lUFpIX2V4djdqZGZVX2ZBV2gyVmt0VEN6bDBoaGhrbW14QldLS3lvWWl5UENzTklGZDg3aE5XTmR4Y2Y4ZUUwbldmVFJ2ZFBaUnA2eXloYkMxdnY1Si1KY201cGVFODVvSVRHank5ektFSGV5ajFld0NGb3pBYTliYUlxYnNHbmVNelNKQjdIOHYzRkZCaVdCOHpmYlHSAYcCQVVfeXFMTy1VRWxBQ2c2Wi05UkJhLVY4S1ZaY2pGQnZEbnlYNVBNc3NHMkRObnRQejZLcGRBaXZZc1VtMFpsVkJBRE5ndTlGZzhVeXkwcUJEUDRCV2hpVUVuZ2t4X1NIcEV4T3ZYQ2xLQWJTX1pPbzQwdk1jNmpQNXRUSDhNN0RZVElMYmpEWDJDZ2NEU3hydVAtOGo4N2xTUFI4Qk5FY2dMS1JuZGJQcFBpZERHcnpOUzZKd29IU09YNWZMRUdyX2dOUkJGRTVkaTU4UnU1WWdDMHk5YkkxOTAtc2hNQ2pyNVRFS09DM2trakxEeS1rOEEtQS1IVG5PQklJb25wYVhIMS13OW8?oc=5",
-      "discovery_title": "++ Istat, a 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno ++ - ANSA",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPazJiTExEeUlqb1JBVGZSdVdzTDNkQThvN1dtZmNablp2Um5uajhXdnV2NDZvTHQ3T01zeE52MGlBa1ZHcDN2cU1zcnM1NG82Vlg3QVZGb0xsQnFKd2c2R3BBbTFXcS1uNXV0WWM0dlFxRnE3a0NiRVpvS1dONHoxUWx0cXVSYjcxdHVGTDh4ZE9kSGFnTW83ZnBHSEhwU1k1QVRReTNZSlNNQ1doaUFqQW43M0Rwdmg1UnNHSFd2NlRuME5mYzNPZ0FsejYzQzI1MFh1Qmx2a3ZwX290R25oM0tqUU9NMkZTUVI5M2s1aHNCQU5FUWh6b1d0aTN2MHlKUlE3anZDbw?oc=5",
+      "discovery_title": "Istat, a 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno (2) - ANSA",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
         "3,5 milioni",
         "2027 ",
         "510 ",
+        "2",
         "3,5 milioni",
         "2027 ",
-        "510 "
+        "510 ",
+        "2"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -662,7 +636,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 09",
       "discovery_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdDRhckdGY0s3ZjJYMF9EYTVJbWhvSjlqSVNFUXBQamg3RURRQjRNMG1jWWpremx1S2hLS0hwWm01dTFLUW1BTWZiTzRDQ0RDbVMyV01HUG5laV9QR1BUSjJ0QWVJNzFBbUstT1ZDRzVaSHpMYURJV1BkU3otY3pobjR6ZVBqUkJ0YzlCeTVZd0dvY3ljLXZZejkxeDJNWHlYeEl5dTZ5T3NlWXlGWHpnN2swY2lsT3JuSXBZVTVLYzNrVUNyazAyRndpdFZtU1ROXzdHam9KQ2t3ai1YVjlrUTBpZEJ0b1pzS1ZwUjNPQ2E4OXo3LXh0VmN1WQ?oc=5",
       "discovery_title": "Lavoro, Campania fanalino di coda in Italia per occupazione, solo il 48,2% dei giovani adulti (25-34 anni ) lavora. - Adnkronos",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 45,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -683,7 +657,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
       "discovery_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOTGxab2VxcGdtWmVZTG1iYlZza2RCeGNxOGlSTzZlc3huQnlNT01xLWZlVEhSRDRBTzVzTTRjbUU3dGptZWk1TDRBNkNzT2ZxQnNqOTVJcHJPUkRSR0ZuY0JYcTBlZUZhN0J1QnRteUtLTC1zWlY1TGJlS1Q5SWlHdGFKSG42VmlwX1A1ay1xSUJ6NGF1ZkVlWk1wNlFZN3RhVXMwY0cyZkM0TWtjMi10UVdhVjdINTJiZjhaX29iTDluTFViczEyeFVoNmtWdnFKV2NIb2NoZTlWb2FRbzB1WjliblRGOWVBcTVQQlM2NmRiWGwxcmlVVWhrdXBlbktoczR3ZGNZblFrSXRrM0xlX2VSN1NBeFRBTkN30gGbAkFVX3lxTE5MbFpvZXFwZ21aZVlMbWJiVnNrZEJ4Y3E4aVJPNmVzeG5CeU1PTXEtZmVUSFJENEFPNXNNNGNtRTd0am1laTVMNEE2Q3NPZnFCc2o5NUlwck9SRFJHRm5jQlhxMGVlRmE3QnVCdG15S0tMLXNaVjVMYmVLVDlJaUd0YUpIbjZWaXBfUDVrLXFJQno0YXVmRWVaTXA2UVk3dGFVczBjRzJmQzRNa2MyLXRRV2FWN0g1MmJmOFpfb2JMOW5MVWJzMTJ4VWg2a1Z2cUpXY0hvY2hlOVZvYVFvMHVaOWJuVEY5ZUFxNVBCUzY2ZGJYbDFyaVVVaGt1cGVuS2hzNHdkY1luUWtJdGszTGVfZVI3U0F4VEFOQ3c?oc=5",
       "discovery_title": "Pil, l'Istat stima +0,9% nel 2026. Con le materie prime più care torna a salire l'inflazione - Corriere della Sera",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -702,7 +676,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVG9LR09VcURFemUwTUt6dEtUQ1lMWElicDcySXBqc081QWxxbHNFbDNTRGlPVFNEYnEyTHBXUUNhYm1hUTl0UmxfTFlDNEY2MnEzVUdEWFZIZXp6eHdUSlRWRjVzR3k5WWc3YXdLZGFSd3pmLUdGX29LYzB0NWh6ODJ3?oc=5",
       "discovery_title": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026 - SimplyBiz - Dedicato a chi opera nel mondo del credito",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -721,7 +695,7 @@
       "radar": "Il Sole 24 Ore - Economia Industria",
       "discovery_url": "https://www.ilsole24ore.com/art/il-5g-industriale-cresce-15percento-ma-mercato-vale-ancora-15-milioni-AJEWWc8B",
       "discovery_title": "Il 5G industriale cresce del 15%, ma il mercato vale ancora 15 milioni",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -743,7 +717,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
       "discovery_title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
-      "detected_at": "2026-11-11T15:01:30.360378+00:00",
+      "detected_at": "2026-11-11T17:59:26.864808+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
