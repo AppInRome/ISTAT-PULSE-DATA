@@ -1,36 +1,6 @@
 {
-  "generated_at": "2026-11-10T17:52:51.549879+00:00",
+  "generated_at": "2026-11-11T02:59:21.038335+00:00",
   "candidates": [
-    {
-      "radar": "PULSE Italia - Nord e Centro",
-      "status": "radar_fetched",
-      "items_fetched": 27
-    },
-    {
-      "radar": "PULSE Italia - Sud e Isole",
-      "status": "radar_fetched",
-      "items_fetched": 56
-    },
-    {
-      "radar": "RaiNews - Notizie italiane",
-      "status": "radar_fetched",
-      "items_fetched": 40
-    },
-    {
-      "radar": "Il Sole 24 Ore - Economia Industria",
-      "status": "radar_fetched",
-      "items_fetched": 37
-    },
-    {
-      "radar": "Il Sole 24 Ore - Energia Ambiente",
-      "status": "radar_fetched",
-      "items_fetched": 37
-    },
-    {
-      "radar": "Il Sole 24 Ore - Italia Attualità",
-      "status": "radar_fetched",
-      "items_fetched": 37
-    },
     {
       "radar": "Corriere della Sera - Economia",
       "status": "radar_fetched",
@@ -79,7 +49,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 0
+      "items_fetched": 1
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -109,12 +79,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 26
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -219,17 +189,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 30
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 23
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Repubblica Economia",
@@ -269,17 +239,17 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 57
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 21
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -334,17 +304,47 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 12
+      "items_fetched": 13
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
       "status": "radar_fetched",
       "items_fetched": 60
+    },
+    {
+      "radar": "PULSE Italia - Nord e Centro",
+      "status": "radar_fetched",
+      "items_fetched": 30
+    },
+    {
+      "radar": "PULSE Italia - Sud e Isole",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "RaiNews - Notizie italiane",
+      "status": "radar_fetched",
+      "items_fetched": 40
+    },
+    {
+      "radar": "Il Sole 24 Ore - Economia Industria",
+      "status": "radar_fetched",
+      "items_fetched": 37
+    },
+    {
+      "radar": "Il Sole 24 Ore - Energia Ambiente",
+      "status": "radar_fetched",
+      "items_fetched": 37
+    },
+    {
+      "radar": "Il Sole 24 Ore - Italia Attualità",
+      "status": "radar_fetched",
+      "items_fetched": 37
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -367,69 +367,10 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "PULSE Italia - Sud e Isole",
-      "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nVHlqN1IydHIxTHA0dm14SGllMXJwN1otclhHS2dkWEpGdWMwWHE4MjExeUNMRzBqWko5aE10cFV5MldiWTBsZmN3TzEyNmluSHFYTlpUR2o0UVNHcEFyRDFoMEhJQy1helZvcENJNVZOQ2dM0gF0QVVfeXFMTmdUeWo3UjJ0cjFMcDR2bXhIaWUxcnA3Wi1yWEdLZ2RYSkZ1YzBYcTgyMTF5Q0xHMGpaSjloTXRwVXkyV2JZMGxmY3dPMTI2aW5IcVhOWlRHajRRU0dwQXJEMWgwSElDLWF6Vm9wQ0k1Vk5DZ0w?oc=5",
-      "discovery_title": "Rapporto SVIMEZ 2026, la Basilicata tra luci e ombre: Pil al +0,4% e boom di export, ma è fuga di giovani laureati e record di siccità - TRM network",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
-      "score_discovery": 74,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2026",
-        "+0,4%",
-        "2026",
-        "+0,4%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "RaiNews - Notizie italiane",
-      "discovery_url": "https://www.rainews.it/video/2026/11/turismo-italia-prima-in-europa-ad-agosto-988-milioni-di-presenze-51209322-39c1-4f79-80d1-9d50f114c421.html",
-      "discovery_title": "Turismo, Italia prima in Europa: ad agosto 98,8 milioni di presenze",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
-      "score_discovery": 54,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "98,8 milioni",
-        "2026 ",
-        "22,4 milioni",
-        "3,3%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVm5rdEZxQ3J4N3JVWUo1dW9vN01NRzhSRnpGdC1VbFhLZXZ6VlhFRllFaUs1TlY5eXBMY3Z2VDVyMkxQek9paHNOQml3WTg4cHFjSkVmeXNXbjVxUmdQVnFkRHpnckxEWUxScncwbVNTVENyRkMxV2RMaEgzN0V4dVNpTE9kcUxWWEFhdk1Wc1F6WndlTkhsaldiNjJaU1NsWkhkdjNHUXZ1aXZZV2VkeTVxaDhodnBzTGhPc1FldG9RWkpQYUJOV2p3TVV6ZDhKYy0yWmtFX1NCSVU?oc=5",
-      "discovery_title": "Riso italiano, campagna 2026/27 in salita: prezzi in calo fino al 40% e costi ancora elevati - TeatroNaturale.it",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
-      "score_discovery": 55,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2026",
-        "27 ",
-        "40%",
-        "2026",
-        "27 ",
-        "40%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
       "discovery_url": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQTFNKNWRTckpLUTF0TjVJbXFmenhYZ1BvVWVZNElwX0JkdDVNN0ZWY3BsSElOX05ZWHlPTnJPSUd2RUFyWGF3enVRVjdUWnIyT3N5UEZIOVZ1UmNGM1VKNUdsSmx0WVM5Qjl1LVRyUzNtSm9mZlFFWWRMd25pdEVfaloxcWpyNXBoUXVsMHJBWDk4TE9kSUJIcENKMlY1Vmd3aFVDX2wxX09wbXpXcGFUTEJGMEgwWkpKYlFoR3U5bW96S3R6aDEtdm5ibmVzSU9YSV9ZbGJFOTFhTG1ld1p3UW1CbkMtYnF2b25WeFZ3bGkxMVZzVE5XeVhFZnJKc3p4b0pyYzZfUGN5UnphX2tSSlZxdGtDeFJjYUdraVBYdw?oc=5",
       "discovery_title": "Influenza. Vaccinazioni in calo, copertura degli anziani sotto il 50%: è il dato peggiore dal 2014-2015. Italia sempre più lontana dagli obiettivi Oms - Quotidiano Sanità",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 60,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -447,10 +388,73 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - economia lavoro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdDRhckdGY0s3ZjJYMF9EYTVJbWhvSjlqSVNFUXBQamg3RURRQjRNMG1jWWpremx1S2hLS0hwWm01dTFLUW1BTWZiTzRDQ0RDbVMyV01HUG5laV9QR1BUSjJ0QWVJNzFBbUstT1ZDRzVaSHpMYURJV1BkU3otY3pobjR6ZVBqUkJ0YzlCeTVZd0dvY3ljLXZZejkxeDJNWHlYeEl5dTZ5T3NlWXlGWHpnN2swY2lsT3JuSXBZVTVLYzNrVUNyazAyRndpdFZtU1ROXzdHam9KQ2t3ai1YVjlrUTBpZEJ0b1pzS1ZwUjNPQ2E4OXo3LXh0VmN1WQ?oc=5",
+      "discovery_title": "Lavoro, Campania fanalino di coda in Italia per occupazione, solo il 48,2% dei giovani adulti (25-34 anni ) lavora. - Adnkronos",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 45,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "48,2%",
+        "25",
+        "34 ",
+        "48,2%",
+        "25",
+        "34 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOLWwwZkpjLXd5NVpKdHlMZ1U2RlRBbnBqbGFyc0ZONGZ5TzB6dEVZQlJON0dHWUw4WDBTUEhwcS12YjhrU28tUjEtR0pJRmxjZFhEMVR6REI1c19vbTVsZnRlbUdnWVk2S1NpVWFDVFhhUjVkeTNUaFNlRVJQa091TFFLNS1MbXdIaVlnXzFyTTdBMnU5UTg0S2g4NTZGZXBQLVN3MkdUamVnR3BGQ2N1aFdJMU84UnNkVnNOekNtYVdqNWk5VDNqVFJWLWNUVmhCc2Njc1V6dC01dU9CZFN6NUlCanh6NkJwSnZqU295NDQ2Q1ZVbzlyS0ZfTWhaQzhIR0FkQUcxTDlENktkNnpwR3dHTFd2NGNOWDRZ?oc=5",
+      "discovery_title": "Emergenza miopia nei bambini, entro il 2050 potrebbero essere miopi oltre 740 milioni di giovani. In Italia stimati già più di 2 milioni: i consigli degli esperti - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2050 ",
+        "740 milioni",
+        "2 milioni",
+        "2050 ",
+        "740 milioni",
+        "2 milioni"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVm5rdEZxQ3J4N3JVWUo1dW9vN01NRzhSRnpGdC1VbFhLZXZ6VlhFRllFaUs1TlY5eXBMY3Z2VDVyMkxQek9paHNOQml3WTg4cHFjSkVmeXNXbjVxUmdQVnFkRHpnckxEWUxScncwbVNTVENyRkMxV2RMaEgzN0V4dVNpTE9kcUxWWEFhdk1Wc1F6WndlTkhsaldiNjJaU1NsWkhkdjNHUXZ1aXZZV2VkeTVxaDhodnBzTGhPc1FldG9RWkpQYUJOV2p3TVV6ZDhKYy0yWmtFX1NCSVU?oc=5",
+      "discovery_title": "Riso italiano, campagna 2026/27 in salita: prezzi in calo fino al 40% e costi ancora elevati - TeatroNaturale.it",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 55,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026",
+        "27 ",
+        "40%",
+        "2026",
+        "27 ",
+        "40%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVG9LR09VcURFemUwTUt6dEtUQ1lMWElicDcySXBqc081QWxxbHNFbDNTRGlPVFNEYnEyTHBXUUNhYm1hUTl0UmxfTFlDNEY2MnEzVUdEWFZIZXp6eHdUSlRWRjVzR3k5WWc3YXdLZGFSd3pmLUdGX29LYzB0NWh6ODJ3?oc=5",
-      "discovery_title": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026 - www.simplybiz.eu",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "discovery_title": "Banca d’Italia, Umbria: prestiti alle imprese di nuovo in crescita dopo tre anni. Credito +3,3% a giugno 2026 - SimplyBiz - Dedicato a chi opera nel mondo del credito",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -466,10 +470,29 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS014YWtmWGFFTnpsTm9OQkdLREtlYmpqcFQ4SFVETkRaUGZHbnlTdnFWb3VQaHRnVjRZRWJoOV90eXY1aFhjTC1ad1g5REYwS1o2WHY3WC0wVm5jWVl6eVBMZjk4V3lXeVRXakw5aE5UREV2RDFiVjh3ak1yMklXY1dvNFN6UWwzRXlXNzJuUnV6SFEyenRxYW81ZkRvdlZzZ1JlaWxxT2lfX2sxcnBTcjRaQQ?oc=5",
+      "discovery_title": "Sardegna, l’economia del mare vale 2,9 miliardi. Via nave il 92% dell’import-export - Adriaeco",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2,9 miliardi",
+        "92%",
+        "2,9 miliardi",
+        "92%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
       "discovery_title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -531,52 +554,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "PULSE Italia - Sud e Isole",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPYjZJOEZJSnl0bm9PZ2VwakFUWXA4NGJYQTQzd3o3bktFd1FLUWlTVkZOR1VlTXVUd2ZTeWRreU1BRTZuU1F4T2Z3SlkwNkFhUjZvMFZRc3NBVFNXblBfVVdqNVBxcENXVEFadDZZak95dmlLUENxVXctTzRlVXdBT3VVN29DRHJQRy1xUlcxOWNNRjFRbEJwMVRITXIycjZiZ0NlRnYyS0FPeVk?oc=5",
-      "discovery_title": "Campania, rapporto Svimez: occupazione al 46,7%, ma nel 2025 sono partiti 13.690 giovani - retenews24.net",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
-      "score_discovery": 60,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "46,7%",
-        "2025 ",
-        "13.690 ",
-        "46,7%",
-        "2025 ",
-        "13.690 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Il Sole 24 Ore - Economia Industria",
-      "discovery_url": "https://www.ilsole24ore.com/art/liguria-10-milioni-d-investimenti-turismo-regione-e-presenze-316percento-AJInWY7B",
-      "discovery_title": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
-      "score_discovery": 55,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "10 milioni",
-        "+3,16%",
-        "18,6 milioni",
-        "+3,16%",
-        "10 milioni",
-        "2026"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Sole 24 Ore dati e statistiche",
       "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ1U5UTBtWVo5SHlDbmdOVzlaQUYtenlEUHpPempDcUdQSFhyS0p3NE9OME9ILTU5VmxFSW90WHNfMHNNMzc2ZVUxeUVCbVFuMGlLT09tU0QyZ2ZURFVhc0g3Zk94YVRKc2FMVUM3RFl2VHBDSHRPQTJ1ZzZ0QVFZTXBEbUlUeVBfeXVLZVQ5cHdOc0FfdHltUzlfWURBaW5HY0NFMkpoMWtkNjk5NVh3OWJhbl9ad0t4bXhQdHBJaGhFUkxHRUE?oc=5",
       "discovery_title": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -3 - Il Sole 24 ORE",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -597,7 +578,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT0p5S2pxNWtSSUw0eEw5LWxQU3dfTlJ6UHVvZUVhQ1lBTjBBY3NuXzF1T0FqNklGQlZlVHhiSlJpQk9mN2lJVnd5SVYxaTFVZjJRS0Fmekl5RlBRWDBFcDRmX0t6VlNZS2w3Z3R6MlBwYjBYUlc0WWEzUkFPNGs3R0JXVUxUN1AxMGZNZEExUUVndGhWRjl1UnBLU3pjM1piNG54eFkzam4?oc=5",
       "discovery_title": "Imprese: Istat, nel 2024 crescono multinazionali estere attive in Italia (+2,6% sul 2023) - Ore12",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -610,57 +591,55 @@
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/conti-economici-delle-imprese-e-dei-gruppi-di-impresa-anno-2024/",
-        "domain": "istat.it",
-        "matched_numbers": [
-          "2024 ",
-          "+2,6%",
-          "2023",
-          "2024 ",
-          "+2,6%",
-          "2023"
-        ],
-        "matched_non_year_numbers": [
-          "+2,6%",
-          "+2,6%"
-        ],
-        "matched_keywords": [
-          "imprese",
-          "istat",
-          "crescono",
-          "multinazionali",
-          "estere",
-          "attive"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Conti economici delle imprese e dei gruppi di impresa – Anno 2024 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per fav",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "bancaditalia.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"imprese istat crescono multinazionali estere attive\" 2024  +2,6% 2023",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "bancaditalia.it",
-            "query": "site:bancaditalia.it \"imprese istat crescono multinazionali estere attive\" 2024  +2,6% 2023",
-            "results": 6
-          }
-        ]
-      },
+      "primary_resolution": null,
       "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nVHlqN1IydHIxTHA0dm14SGllMXJwN1otclhHS2dkWEpGdWMwWHE4MjExeUNMRzBqWko5aE10cFV5MldiWTBsZmN3TzEyNmluSHFYTlpUR2o0UVNHcEFyRDFoMEhJQy1helZvcENJNVZOQ2dM0gF0QVVfeXFMTmdUeWo3UjJ0cjFMcDR2bXhIaWUxcnA3Wi1yWEdLZ2RYSkZ1YzBYcTgyMTF5Q0xHMGpaSjloTXRwVXkyV2JZMGxmY3dPMTI2aW5IcVhOWlRHajRRU0dwQXJEMWgwSElDLWF6Vm9wQ0k1Vk5DZ0w?oc=5",
+      "discovery_title": "Rapporto SVIMEZ 2026, la Basilicata tra luci e ombre: Pil al +0,4% e boom di export, ma è fuga di giovani laureati e record di siccità - TRM network",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 74,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026",
+        "+0,4%",
+        "2026",
+        "+0,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Il Sole 24 Ore - Economia Industria",
+      "discovery_url": "https://www.ilsole24ore.com/art/liguria-10-milioni-d-investimenti-turismo-regione-e-presenze-316percento-AJInWY7B",
+      "discovery_title": "Liguria, 10 milioni d’investimenti in turismo dalla Regione e presenze a +3,16%",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 55,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "10 milioni",
+        "+3,16%",
+        "18,6 milioni",
+        "+3,16%",
+        "10 milioni",
+        "2026"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
       "discovery_title": "Struttura e competitività delle imprese multinazionali – Anno 2024",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -722,7 +701,7 @@
       "radar": "Google News - Sole 24 Ore dati e statistiche",
       "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNN3BMNGU1bGEtQUh6UHlqQ0FzR2J5OWJ1T29PUzRhZFJkcXFFRDZIOUtpQW9YMkR2QkF2ZGpFdi1RNlctQlJEanE3Y1JUQnRpc0lCZ200V2Zial9tZzFVVlVuMjZOZkZFaG5Fc0pETTRzRmVUTUI2WWhIcTlsTDY2TDY1LXVCaGpkS1hEMXQ0TUZnNjlGbTlEdEozRDFweHB0NjNsYXhSczc5WnRpMHFQVWZSQkN6aTBmY2V3TVhSYUNiTndFcUE?oc=5",
       "discovery_title": "Borsa: inflazione Usa spegne entusiasmi, Milano (+0,7%) regge con banche e old economy -2 - Il Sole 24 ORE",
-      "detected_at": "2026-11-10T17:52:51.549879+00:00",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -732,6 +711,67 @@
         "+0,7%",
         "-2 ",
         "24 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia lavoro e imprese",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYk5obHotTkFxaDRaNE5PNGlHMGV0NnBBdnM1eTZiVUlpbGtxR1JTZUJWNFVyVVZmTFlmb3ZwbmlaXzd1R2dvRFBPdy1tN1Y5eEdoYU5PYVY0c1lQOHFGNkVMQnB2S1o5Z1FuQlpOVUZ3VDR1U2JrV1N0STlSYUUybGdXVjdwSnowY0hXNnY4ZmVYMURfWWt2V2dKZDA2MEQxakxuSjZiRUw3cFpieVhwZEZKQkZ5Rlh5N3VxTDRJU0d0czYzQ0NvWEpJYlhTXzEzaUF4N2xwNVROdU0?oc=5",
+      "discovery_title": "La moda maschile italiana resiste sui mercati esteri: export a 5,4 mld nei primi 7 mesi del 2026 - FashionNetwork Italia",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "5,4 ",
+        "7 ",
+        "2026 ",
+        "5,4 ",
+        "7 ",
+        "2026 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia ambiente energia mobilità",
+      "discovery_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdnhvMUJxQV96VV9mOHAyMWgtWGQ1ODdzRkxzZlhkZjN1eXBnS0hVWFAxR0pma0tDV2E1R1p1MVJBMHNBNzh2WGszOHhNMHB6N2x3Y0lzb1NpV1NMYnFhTE40eEtYNDVLcjk1bmk0WDdhZUVxTnE2c3MyUDV6QjdqRVppUlo5Mnk5V2NHWXA4VG1URmhlMXhlUnJLZkhqNm9pbTJtVGdoMTdyS1Y3V21MLXlyYVlqZ1ZmZW9rVDRMOA?oc=5",
+      "discovery_title": "Clima, Ue: emissioni in calo dell’1,6% nel 2025, ma l’Italia è tra i nove Paesi in ritardo sugli obiettivi 2030 - AGEEI",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 55,
+      "topic": "AMBIENTE",
+      "numbers_detected": [
+        "1,6%",
+        "2025",
+        "2030 ",
+        "1,6%",
+        "2025",
+        "2030 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPbkkyTVcySFJ5WWxlOWloMHM4U3llWFhVaVFrVEIzLURpNFFRWHdIcTFyY3E3OUlLaFQwVGI4Yzd2aks0aHV0VmMtNXM3NV8zZU9OYlEwRlBnNVJEYmgwSWxHa3NJWUFRNzlQbDVEbHVFT3Y5NzZwUVdjVDVCd1FLOGZhYmJVZEtSaFM0QUkzSE1CVjkwVTNCWEhCQ1JvUno0S09HbHFrX3RfQVZaMnh3RFpqNGkyeUxkRGcweTNLNWtDUzdnOEQ3TzBveG5reGFYLTlSWFlsZjlYSFVBT1NSa3BkX2sycWVGM2c?oc=5",
+      "discovery_title": "Rapporto Svimez, l'allarme sulla Calabria: disoccupazione in calo ma la regione si svuota, a rischio 200mila residenti entro il 2050 - NoiDiCalabria",
+      "detected_at": "2026-11-11T02:59:21.038335+00:00",
+      "score_discovery": 59,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "200mila",
+        "2050 ",
+        "200mila",
+        "2050 "
       ],
       "official_links": [],
       "official_domain_hints": [],
