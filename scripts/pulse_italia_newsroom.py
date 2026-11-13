@@ -45,6 +45,18 @@ TOPIC_IMPACT = {
     "ISTRUZIONE": 20, "AMBIENTE": 20, "CASA": 21, "ENERGIA": 20,
     "MOBILITA": 18, "SOCIETA": 23, "ALTRO": 10,
 }
+FOREIGN_HEADLINE_MARKERS = ("new york", "germania", "francia", "stati uniti",
+                            "cina", "regno unito", "spagna", "india", "russia",
+                            "turchia", "londra", "parigi", "berlino", "tokyo")
+ITALIAN_PRESS_EXCEPTIONS = ("open.online", "ilsole24ore.com", "ilfattoquotidiano.it",
+                            "fanpage.it", "tgcom24.mediaset.it")
+STATISTICAL_EDITORIAL_WORDS = (
+    "statistic", "rapporto", "indagine", "rilevazione", "censimento",
+    "povert", "reddito", "inflazion", "prezzi", "stipendi", "salari",
+    "disoccupazion", "occupazion", "pension", "natalit", "demograf",
+    "inquinament", "emission", "abitanti", "consumi", "tasso", "percent",
+    "mercato immobiliare", "rifiuti", "popolazione", "indicator",
+)
 STAT_WORDS = (
     "rapporto", "rilevazione", "censimento", "tasso", "quota", "serie",
     "indicator", "istat", "statistic", "variazione", "povert", "occupazion",
@@ -118,7 +130,25 @@ def italy_relevant(item):
                            ("headline", "summary", "pulse_title")))
     # City/region mentions are considered only as whole words; avoid matching
     # foreign names containing substrings such as "roma" inside "Romania".
+    if any(_matches(_normal(item.get("headline")), foreign) for foreign in FOREIGN_HEADLINE_MARKERS):
+        return False
     return any(_matches(text, name) for name in ITALIAN_MARKERS + REGIONS + LOCALITIES)
+
+
+def italian_source_and_subject(item):
+    """Accept Italian institutional sources or Italian press with actual statistical topic."""
+    src = item.get("public_source") or {}
+    url = src.get("url", "")
+    h = host(url)
+    if italian_official_url(url):
+        return True
+    if src.get("role") != "journalistic_source":
+        return False
+    # A foreign publication reporting in Italian is still an external source.
+    if not (h.endswith(".it") or h in ITALIAN_PRESS_EXCEPTIONS):
+        return False
+    content = _normal(str(item.get("headline") or "") + " " + str(item.get("summary") or ""))
+    return any(word in content for word in STATISTICAL_EDITORIAL_WORDS)
 
 
 def canonical_url(url):
@@ -196,7 +226,7 @@ def select_candidates(articles, limit=20, now=None, per_topic=5):
     now = now or datetime.now(UTC)
     candidates = [x for x in articles if isinstance(x, dict)
                   and x.get("publication_status", "published") == "published"
-                  and italy_relevant(x) and host((x.get("public_source") or {}).get("url"))]
+                  and italy_relevant(x) and italian_source_and_subject(x)]
     enriched = [{**x, "_selection_score": score(x, now)} for x in candidates]
     enriched.sort(key=lambda x: (x["_selection_score"]["total"],
                                  int(eligible_primary(x)),
