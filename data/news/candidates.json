@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-11-13T09:09:42.296204+00:00",
+  "generated_at": "2026-11-13T12:04:34.543748+00:00",
   "candidates": [
-    {
-      "radar": "Google News - Fanpage dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
@@ -14,7 +9,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 26
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -119,17 +114,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 47
+      "items_fetched": 41
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 27
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 30
     },
     {
       "radar": "Repubblica Economia",
@@ -169,7 +164,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 41
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -179,17 +174,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 50
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 31
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -234,12 +229,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 15
+      "items_fetched": 17
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 28
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -249,12 +244,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 48
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -324,7 +319,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 7
+      "items_fetched": 8
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -343,6 +338,11 @@
     },
     {
       "radar": "Google News - Milano Finanza dati",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Fanpage dati e statistiche",
       "status": "radar_fetched",
       "items_fetched": 60
     },
@@ -367,17 +367,59 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "Google News - statistiche Italia",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYy1ocmgyY2NZSHFabm9oUDdJS015bFNtOG9SRFRQNFhVMVBXc3J6TEtJdjVXclNoSV9QbkRLUWtTcXprckVlb3Y4ZVpzNzFiSElDdlotblctdVk3c1VON2hBWmJmZWdmWENReUpwQUpSejNNaWI2ZTN3bWhLVV9hWEZSc21RWi1VSmpfSzB0ZzhWVE9ubGpkRUszZWdlX2d3VFNrUWlxODhZdw?oc=5",
-      "discovery_title": "Case, Marina di Ragusa record d’Italia: costano +36,4%. Il centro storico perde il 22,8% - Ragusa Oggi",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
+      "radar": "PULSE 80 testate · agenzie · gruppo 06",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMzRWWFcycW9MdUwwU0xudFhWczRSa2gzNU51d2kxck4yd3lYSEJBT2JGaGo2Q284VEJ2bkNhYzBrR3pndExkZ2NIVUJFQTZvVUFELVFES1hESzgwZEI0UEU3eXNHTFRWUEtTRGNXM1hXbEJiLVZNcktCMDRFaDFqak9QZHFLMVlVYnE5UlAwSGRxbXFaUEo0Y0Q4d25DY3dYTzlpdlA2N3l3REt5Q01EQVdGU3A2dl9oUHpLbWtiYzkzYjZiVFJFUUJYY2JqWVNvdHFReFVCcXJjMXM4b0Jr0gHkAUFVX3lxTE5QMjB6Zld3T1IybkRpSUZ5SmYxaDZ6SHJyenBFcWdFU3FxMmxZNUo3WUFoWEJURzZEVmVCdm9fa0duZHQxM0ZEYzhJY1dIdXdrcDhFN2x2eHJYc0ZtX3FhU0FQRHlOcEQ1MV9PNnEtbXg3Q0tKQktyZjZ5cXAyWlF6LXpqVm0wWm9DZXVVVzJRMFFIenRnWjBlSmpEZ2Q4dUJoYkU2UWpmdXFSenEzMUl0VGJZV0JCTXdqSHVUQVJtaUZ0RnJzWlE3eHZ3aGtCUThrZjF6X2pKdWdCV0hXVmxuaF9leg?oc=5",
+      "discovery_title": "Bankitalia, 'nel 2026 in Puglia l'occupazione cresce dello 0,6%' - ANSA",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
       "score_discovery": 49,
-      "topic": "ALTRO",
+      "topic": "LAVORO",
       "numbers_detected": [
-        "+36,4%",
-        "22,8%",
-        "+36,4%",
-        "22,8%"
+        "2026 ",
+        "0,6%",
+        "2026 ",
+        "0,6%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 16",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUGl2WGpvRkVMQk12UENIZTBQODE0QmlPdUw4TFZCa1V0dWRWZFM0a2tfRTZFc0phcjJ0aXl0Y1VWcnlueEktT2NRbXFuWDA3cng0YlBkSFNlX0xWQ2FxMHdSemFHa2lCY0J0N2VMbDZEajBWWnZNSGZRTlhwUVBWME9GMXE4TFN5MGJqQW5iNE5DbmpHTHBrekJR?oc=5",
+      "discovery_title": "Emilia-Romagna, Pil a +1%: bene industria, export, turismo. Per il 2027 domina l’incertezza - Il Resto del Carlino",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+1%",
+        "2027 ",
+        "+1%",
+        "2027 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 19",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPVGpUaHFlUU4tOTNCeHEzeTVEdnBBcnJfNk5ubmpwZEo1dVpsUjBTZkljX0FDQ0Rwdk50MC1WTHpvMWNreWFmWUdXTmh3SVQ4RU1oNWJJNzQ4VVdDN0RUMklvUlhzcWlOVHQ4cHJiNHJHbTRKcmpWV3BqUVRGUV85WEtTbXZDQ3c2RkhSc0VicjFhSHZ2VkNFZTBsM1R5dXdaVEFRVUdCSzBjU09IczZNUFhIbXl5RTNJWjMtRVRXaUI1ZWxTU1J2QkZwenQ5bzFFZ0M0bVZTNWhzZ2V2RG1wOUlQbFZ2TEJWTHpobFBlM3NmVGU30gHzAUFVX3lxTE40akx2SHVhNDBFU2NWM09jNkZ6N0tMTjBNX3dpMDJRaVZ3dHllQ3FQQVRzN1dlcUtmcGh4NGM2VHJxbG0wOVN1MnlYSlBNRkh2VHV5YlB0ZzdmZFVhNnprSzdDdlRxV1h1MHA5T0tNRXVkWmhFVE9XOWl1bkgxNUNfLUgzdjRBNnJsZGdTamZhUXZNWC04MV9JXzBXdnJxaTV6ZjN1N0VrSnRlTXc4RlBWYnViYXc1YjhfeFJsNmhqTmx0bDI3SWNneEZTV3BmWmhCZVdrU3gwN3RBcXI2RzBQcjhXZU5xZlphdGhNNzg5RGdsVQ?oc=5",
+      "discovery_title": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6% - La Gazzetta del Mezzogiorno",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
+      "score_discovery": 55,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "6 ",
+        "2026 ",
+        "1%",
+        "+0,6%",
+        "6 ",
+        "2026 ",
+        "1%",
+        "+0,6%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -389,7 +431,7 @@
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNblFFYjkxTHhqaDlVd2FtVUtWSVJhbEVQXzMzcV9mbDBMNEdEaFJkNXUtQnQ1cUhtT2pvSzB6YTh1V2JxSkVHUTJsNG9JeTZkdXQtMGlOcHo1SzBFT1JKRElKZzlWLVV3Y3lBWkZOb19TVGlma3Z6a19DU1ctdmZUcW1iajFITHFmckE?oc=5",
       "discovery_title": "Istat. Quasi 8 italiani su 10 soddisfatti della propria salute, ma dopo i 75 anni la quota crolla al 59,2%. Donne e Sud più indietro - Il Farmacista Online",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -409,10 +451,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia popolazione e territori",
+      "discovery_url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPM1ZZejZ5TnNMdG5jd0N2QnJFLXJ6aHhyVllENFRPSUNVTjJYeFQ5Q0tlVzV6eHF0UHc5RE9ZTTJpZEZzSHRHN1VDSEtKdElfdWI2a0s4YU0zZlByZTN6M3hsbGRMR09IenpYV01sTElxWkhkbDQ2aTc1WllrLXExaEFYRG5sVnFvbmpBWHBwWVUxZnp2eFpYRTc3b2gwQ1l2LVhjellKZWlMNjNqZ3VzSXBlaUs0alprZWhEQUVRaWN2Um9WbUZYWUtELVpoN3NxYUluMHMtNG10Q04zTTExaGdPZkl3NXczLXRXQzNDVGhiZEgtNGQwQTBsVm5JbG9nT0V1MHd0cllyZFVSa2JDZE1Gcjd4OUxLekh5RThsbkpGLWJWNjhYUmRrVXljZw?oc=5",
+      "discovery_title": "FONDAZIONE MIGRANTES * RAPPORTO ITALIANI NEL MONDO 2026: «6.630.284 I CITTADINI RESIDENTI ALL'ESTERO ISCRITTI ALL'AIRE, IN VENT'ANNI SONO PIÙ CHE RADDOPPIATI - agenzia giornalistica opinione",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
+      "score_discovery": 45,
+      "topic": "DEMOGRAFIA",
+      "numbers_detected": [
+        "2026",
+        "6.630",
+        "284 ",
+        "2026",
+        "6.630",
+        "284 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
       "discovery_title": "Commercio con l’estero e prezzi all’import – Settembre 2026",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -474,7 +537,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
       "discovery_title": "Soddisfazione dei cittadini – Anno 2025",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -533,59 +596,17 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN1pIUGc5U1JvTFpGLWd3bHFoYzhPdENJUWgwci02WlZ6NHB0Q3ZLTzBhZG5wcGNBbWNXQmlVbFJ5aFBvY0IzR3BMSUU0WmZ3b0hMZ1FOVWw1RlM2cmxRbFY1eTZLdUVjWnZIWGJSODdueG1DdlZMSkM1TG5KM3NmQUpBcU51bE9mNm1ZTXhZRzc0cTBwYmxaQnZIWHNSTThEa0FUSk45SkFiT1BxYm5HY085RUtnV2FHOTFYNnZleTd1T2JMMVJhaXJ3TExUVHlTRWhRU1IteHNzTnBzdVE4S05R0gHnAUFVX3lxTE9YSVp4OVJrU2taN0xCUFVTYkVSOEM1YTUwUTdfRnJ4YkxocEVjY3lnRGdMZTUzaUNWN1ZiRk5RWi1CdFllTm96SW5RYjZjV0dUVnRNSktVMHZ3c05Falh1NnQ0UWtjNm95dEtCY3ZkaVZrRW03YzFEYXNYek5sdUlEeVk4M01BcXFkOTlCZjhLLUdzYWh5LUxZekowcDI1TC1QajJYb3BQd3d6Si1DMW5TWC16MWU1RGJuWDhMRklDRm9Sb1k2azBkbTFrQTVtQnpmVHRYUkhQUVJ5WmxORHNkekRnOGliQQ?oc=5",
-      "discovery_title": "Istat: 'A 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno' - ANSA",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
-      "score_discovery": 50,
+      "radar": "Google News - statistiche Italia",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQN2Rrb255S2xnVjVUOXZfS2s3bjFtOWY5VDNRcWxWZGp1NmlsWDZrUWFDenllYVM3ZUZ4R2NYdGRMMk9VYkdWVFBNUE5ZT1daWndQd1RUX3FBVkFGdG94d1lrYkxCcEhCYkprUmJpanQ2ZmM1R0VKMWZTM3NfTXc0aDVIcUpNbUViS1Q0QWtZXzVqT2hORkNfZTl5RDdEMkVseWFfcWhDbXhnQzZZYXBidHBwRERzMnpP?oc=5",
+      "discovery_title": "Surplus commerciale Italia settembre 2026: 2.083 milioni, dati Istat - Notizie e Statistiche - IndexBox",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
+      "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
-        "3,5 milioni",
-        "2027 ",
-        "510 ",
-        "3,5 milioni",
-        "2027 ",
-        "510 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE 80 testate · agenzie · gruppo 09",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdDRhckdGY0s3ZjJYMF9EYTVJbWhvSjlqSVNFUXBQamg3RURRQjRNMG1jWWpremx1S2hLS0hwWm01dTFLUW1BTWZiTzRDQ0RDbVMyV01HUG5laV9QR1BUSjJ0QWVJNzFBbUstT1ZDRzVaSHpMYURJV1BkU3otY3pobjR6ZVBqUkJ0YzlCeTVZd0dvY3ljLXZZejkxeDJNWHlYeEl5dTZ5T3NlWXlGWHpnN2swY2lsT3JuSXBZVTVLYzNrVUNyazAyRndpdFZtU1ROXzdHam9KQ2t3ai1YVjlrUTBpZEJ0b1pzS1ZwUjNPQ2E4OXo3LXh0VmN1WQ?oc=5",
-      "discovery_title": "Lavoro, Campania fanalino di coda in Italia per occupazione, solo il 48,2% dei giovani adulti (25-34 anni ) lavora. - Adnkronos",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
-      "score_discovery": 45,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "48,2%",
-        "25",
-        "34 ",
-        "48,2%",
-        "25",
-        "34 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - economia lavoro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vWDQ1aEZzXzJCckw2dmF3RS1Yenoxc2xuTDVIZEJidkhBcFRZVk9sYTZTdWdvNFlybEc1cmI2WG9FQWkxRHJtVzZPMjBTcmN0UkZJcmhjZ3NwS3ExRjVoaHZucHBFdzlxc21VZnZjTQ?oc=5",
-      "discovery_title": "Calabria, occupati +1,6% e disoccupazione al 9,1%: i dati di Bankitalia - CityNow",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
-      "score_discovery": 49,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "+1,6%",
-        "9,1%",
-        "+1,6%",
-        "9,1%"
+        "2026",
+        "2.083 milioni",
+        "2026",
+        "2.083 milioni"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -595,18 +616,18 @@
     },
     {
       "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVVqSV9kcUU5VU1XbDB6WW5WWUlBWkg3UldCNFZHbVhlU2liWkxBaWhTUHFFSUFvRXozMEZzb2xwVUFFODZjOGJyLWl4dW1RMXZlcTFzbkN1U2FlcU1MVi1EcGVDeVp6XzNGdVlYb1VTaURxaF9qSUJTSE1SclQ4M0hzR0FCa25wTmlRM1JHdw?oc=5",
-      "discovery_title": "Banca d’Italia, Basilicata: prestiti +2,8% a giugno 2026, ma il deterioramento del credito alle imprese sale al 5,7% - SimplyBiz - Dedicato a chi opera nel mondo del credito",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
-      "score_discovery": 55,
+      "discovery_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOG42RXdYekxzVlQ5YjZid3h1WjNzQzlyUXhVNjgyOUg3bDQydk1vSlA5bTlZZXVjSUNEaDhnaV9EcjRmR3h3amZUOC1WY3R5SmN0SG9mb2x6TzZyWWRvSktpUzRWMG1BNXM1bTFuWmYzQ0dlWVpLbnE2SldHU2RhUTQ5eXRzMm9Q?oc=5",
+      "discovery_title": "Banca d’Italia, Valle d’Aosta: prestiti alle imprese -15,5%, credito al consumo +5,6% a giugno 2026 - SimplyBiz - Dedicato a chi opera nel mondo del credito",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
+      "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "+2,8%",
-        "2026",
-        "5,7%",
-        "+2,8%",
-        "2026",
-        "5,7%"
+        "-15,5%",
+        "+5,6%",
+        "2026 ",
+        "-15,5%",
+        "+5,6%",
+        "2026 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -616,63 +637,68 @@
     },
     {
       "radar": "ISTAT - Comunicati stampa ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
-      "discovery_title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
-      "detected_at": "2026-11-13T09:09:42.296204+00:00",
-      "score_discovery": 60,
+      "discovery_url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
+      "discovery_title": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027",
+      "detected_at": "2026-11-13T12:04:34.543748+00:00",
+      "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "2021",
-        "2023 ",
-        "2,0%",
-        "-0,4 ",
-        "2021",
-        "2023 "
+        "2026",
+        "2027 ",
+        "2026 ",
+        "2027 ",
+        "0,9%",
+        "0,6%",
+        "0,6%",
+        "2025"
       ],
       "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/11/Report-Catene-del-valore-delle-imprese-2021-2023.pdf",
-        "https://www.istat.it/wp-content/uploads/2026/11/Appendice-statistica-2021-2023.xlsx",
+        "https://www.istat.it/wp-content/uploads/2026/11/Nota-sullandamento-e-prospettive-2026_2027.pdf",
         "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
         "https://contact.istat.it/",
-        "https://www.istat.it/statistiche-per-temi/economia/imprese/",
+        "https://www.istat.it/statistiche-per-temi/economia/conti-nazionali/",
         "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
-        "https://www.istat.it/?tag=esportazioni",
-        "https://www.istat.it/?tag=imprese",
-        "https://www.istat.it/?tag=internazionalizzazione",
-        "https://www.istat.it/?tag=lavoro-imprese",
-        "https://www.istat.it/?tag=manifatturiero",
-        "https://www.istat.it/?tag=multinazionali"
+        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/lavoro-e-retribuzioni/",
+        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
+        "https://www.istat.it/?tag=economia",
+        "https://www.istat.it/?tag=fiducia",
+        "https://www.istat.it/?tag=inflazione",
+        "https://www.istat.it/?tag=lavoro",
+        "https://www.istat.it/?tag=pil"
       ],
       "official_domain_hints": [
-        "istat.it"
+        "aci.it",
+        "iss.it",
+        "terna.it"
       ],
       "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
+        "url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
         "domain": "istat.it",
         "matched_numbers": [
-          "2021",
-          "2023 ",
-          "2,0%",
-          "-0,4 ",
-          "2021",
-          "2023 "
+          "2026",
+          "2027 ",
+          "2026 ",
+          "2027 ",
+          "0,9%",
+          "0,6%"
         ],
         "matched_non_year_numbers": [
-          "2,0%",
-          "-0,4 "
+          "0,9%",
+          "0,6%",
+          "0,6%"
         ],
         "matched_keywords": [
-          "catene",
-          "globali",
-          "valore",
-          "medie",
-          "grandi",
-          "imprese",
-          "limitata",
-          "calo"
+          "nota",
+          "sull",
+          "andamento",
+          "prospettive",
+          "dell",
+          "economia",
+          "italiana",
+          "prevede"
         ],
         "verification_score": 95,
-        "text_excerpt": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore ",
+        "text_excerpt": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings",
         "verified_series": [],
         "method": "direct_official_rss"
       },
