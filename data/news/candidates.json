@@ -1,36 +1,6 @@
 {
-  "generated_at": "2026-11-12T20:59:11.499195+00:00",
+  "generated_at": "2026-11-13T02:57:33.539632+00:00",
   "candidates": [
-    {
-      "radar": "Fanpage - Notizie",
-      "status": "radar_error",
-      "error": "HTTP Error 403: Forbidden"
-    },
-    {
-      "radar": "Google News - MSN Italia dati statistici",
-      "status": "radar_fetched",
-      "items_fetched": 19
-    },
-    {
-      "radar": "Google News - Il Fatto Quotidiano dati",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - AGI ricerche e dati",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Il Messaggero statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "Google News - Milano Finanza dati",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "Google News - Fanpage dati e statistiche",
       "status": "radar_fetched",
@@ -44,7 +14,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 23
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -149,17 +119,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 45
+      "items_fetched": 52
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 25
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 31
     },
     {
       "radar": "Repubblica Economia",
@@ -199,27 +169,27 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 33
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 59
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 57
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 28
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -264,7 +234,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 18
+      "items_fetched": 19
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -279,12 +249,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 59
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -347,6 +317,36 @@
       "items_fetched": 12
     },
     {
+      "radar": "Fanpage - Notizie",
+      "status": "radar_error",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "radar": "Google News - MSN Italia dati statistici",
+      "status": "radar_fetched",
+      "items_fetched": 20
+    },
+    {
+      "radar": "Google News - Il Fatto Quotidiano dati",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - AGI ricerche e dati",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Il Messaggero statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Milano Finanza dati",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,48 +367,10 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "PULSE 80 testate · locali · gruppo 20",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPd3c5Z0RjU09Xc2l0bWlMbm84MGk2ODltTnZUU1B6eXN4cHRXaHpUdGYtVEN2MlV4LXB2Sm5rNDJPWHNxMThSc0kwcjk1Y0prQ192NHdZNFJxME9rcmZMTjhwU2dYUTlvdjM1RVFIMFlHcHgtYVRUeVM5RFp6Q2REOVQyNF9TREJpZGQ4RWttVUhWLUhXdndIbW5xSWEzcFdaMkRLU3hEZUtFWVFaZE9pQXNDazVadmZCYzhpUFlMNl8ycE5NYUEtY3VWYVVWYllOc2Fsbg?oc=5",
-      "discovery_title": "Rapporto Ismea, cresce l’agroalimentare. Nel 2025 export a 72,5 miliardi - La Nuova Sardegna",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
-      "score_discovery": 54,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2025 ",
-        "72,5 miliardi",
-        "2025 ",
-        "72,5 miliardi"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - statistiche Italia",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxORzBTajlXcnRrVXpFbEVDb0NzRnFUZkREcUROTjZTbFROMmhyV01ZWVluQnVUTDB3X2p3RjNrQ0piTGtpVUcwRjkyeGJBdzhhTDhZRGx6SWFuYXJTTHZKbHdURjd3UzlIdkoySXNwajd1NmhYeWRKU3JyUjRRYzduQWJ3WGF5SHdGbWpudzZsRFA5b0pPUjA3Qmw4RENIWUQtb0JZZEdiTF9iandaMmltQTRIVDRQUXJTQmF2QllaRzFDSVE1SmxndzdkcVNNYkNLUmhpaGRBeFJLQVFDVndj?oc=5",
-      "discovery_title": "Agricoltura italiana da record: 89 miliardi di valore aggiunto, export in crescita e redditi in aumento del 6,6% - Secolo d'Italia",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
-      "score_discovery": 74,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "89 miliardi",
-        "6,6%",
-        "89 miliardi",
-        "6,6%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNblFFYjkxTHhqaDlVd2FtVUtWSVJhbEVQXzMzcV9mbDBMNEdEaFJkNXUtQnQ1cUhtT2pvSzB6YTh1V2JxSkVHUTJsNG9JeTZkdXQtMGlOcHo1SzBFT1JKRElKZzlWLVV3Y3lBWkZOb19TVGlma3Z6a19DU1ctdmZUcW1iajFITHFmckE?oc=5",
       "discovery_title": "Istat. Quasi 8 italiani su 10 soddisfatti della propria salute, ma dopo i 75 anni la quota crolla al 59,2%. Donne e Sud più indietro - Il Farmacista Online",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -428,10 +390,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbm5aaVp0ckdsa2lidmswOXpLY3UwOFNZTnk2ZEVFelhYMVhNQ3MtZ05QM3JZc2hGLUc4LUp1aXU3Nmd3UHJ5R19fV2pWVFZRNG9zdXlndW5DSzZQb3FKQ1BnMUphNlNKTWZlRTRKLUhtZ21PYmNRT09QdVQteWMzTU1SNXk2RFIzWE5IUGZKUjhjQk51VDA5ai1nLWp1YjNaMGQ4YXlyU2VUVWQwbEFlYnhUTHRfTGVqUW5OMjZQam1uWGJaYWc4?oc=5",
+      "discovery_title": "Cresce il turismo in Sicilia nel 2026: +6% di pernottamenti e +7,4% di passeggeri - TP24.it",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2026",
+        "+6%",
+        "+7,4%",
+        "2026",
+        "+6%",
+        "+7,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
       "discovery_title": "Soddisfazione dei cittadini – Anno 2025",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -490,76 +473,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
-      "discovery_title": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
-      "score_discovery": 45,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "12",
-        "11",
-        "2026 ",
-        "2026",
-        "30 ",
-        "12 ",
-        "7 "
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.cnr.it/it/news/immagine/12804/large",
-        "https://www.cnr.it/it/news/immagine/12805/large",
-        "https://www.cnr.it/it/news/immagine/12806/large",
-        "https://www.cnr.it/it/news/immagine/12807/large",
-        "https://www.cnr.it/it/news/immagine/12808/large"
-      ],
-      "official_domain_hints": [
-        "iss.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "12",
-          "11",
-          "2026 ",
-          "2026",
-          "30 ",
-          "12 "
-        ],
-        "matched_non_year_numbers": [
-          "12",
-          "11",
-          "30 ",
-          "12 ",
-          "7 "
-        ],
-        "matched_keywords": [
-          "kolumbo",
-          "vulcano",
-          "sommerso",
-          "santorini",
-          "osservato",
-          "vicino",
-          "conclude",
-          "campagna"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sci",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "PULSE 80 testate · agenzie · gruppo 08",
       "discovery_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa29zcGUxQWE0NEVQdDBGbkhOcWFpYVpHVlJUb08xVTZ0V3JGcDltVHY5UFRIUTd0aVZWa2lWbE9LZTRRcmNaZk00YURaXy05N3Y0cFBvT0l1aExlN21CdllNMjc2Wks0by1aQWRVcXR5UHFYdjkxX3FjdTZYdVYxSVBOb252Z2dvWS1nS3gzb3dxQWNna1ItNHJ0dUNRZ2FaakRj?oc=5",
       "discovery_title": "*Pil: Istat stima +0,9% in 2026 e +0,6% in 2027 - Milano Finanza",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -582,7 +499,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 16",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vX19qUFJvZlA1bUE4bEVHVEV3dUQ4ZFRGczhwODlWQVhFd20ySkVFMi16RVk5X0xRLXlpMzZGdHpvako5X2hheHdjQTZjMThESEtQanRHc1JjN0k5eDV6WVY4SmlnMFJHSnBycW13c0ZLT1hWYnNIT2lfUUw?oc=5",
       "discovery_title": "Istat, Pil 2026 +0,9%, +0,6% nel 2027 - Quotidiano Nazionale",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -602,10 +519,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - statistiche Italia",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUmtFcVUwM2pJRVZYczQ3MlhxLXhuclIzNlBjV0JnSDZJZElmaTgtS1o2REg0eFc3bjJ1UVI5eE81MkNLV0gtanJNLUF6enUxM01kbEJOLVYwb1dkMFBKbEZvMTRvbDN2RF9zZGhqYWhNSFA3bGc5bG5uLWEtWjZtMkJISG9YSlNTbF9FS3N5elhkbVpxR25xRHMzaEFNbkJDVnJJSklGUTZLX2NTYzhMa084cTY3TGdM?oc=5",
+      "discovery_title": "L’export dell’agroalimentare italiano è ancora da record: 72,5 miliardi di euro nel 2025 (+5%) - WineNews",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "score_discovery": 75,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "72,5 miliardi",
+        "2025 ",
+        "+5%",
+        "72,5 miliardi",
+        "2025 ",
+        "+5%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVVqSV9kcUU5VU1XbDB6WW5WWUlBWkg3UldCNFZHbVhlU2liWkxBaWhTUHFFSUFvRXozMEZzb2xwVUFFODZjOGJyLWl4dW1RMXZlcTFzbkN1U2FlcU1MVi1EcGVDeVp6XzNGdVlYb1VTaURxaF9qSUJTSE1SclQ4M0hzR0FCa25wTmlRM1JHdw?oc=5",
       "discovery_title": "Banca d’Italia, Basilicata: prestiti +2,8% a giugno 2026, ma il deterioramento del credito alle imprese sale al 5,7% - SimplyBiz - Dedicato a chi opera nel mondo del credito",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -623,88 +561,64 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia lavoro e imprese",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPdi1WUnpTdmVRSjBtTlpjQVRtQXJNdjZqdGhLSm96UlRrVXlzMF95MTBFbUJNMFVHOHB3NG1fRmIwSzhfeXJMWmFWclNJeFZxUTM0ZG5wUUpiQkhLUzdHMGkyZkRmRC0wcm1JS3lfR0VMczM1dnhaY3dveVVEVnd1VFJlVVRKZDVGc1JoZWRHeVFHRkZCY0VaWngtdDQtZHBrdGY2Q0N3Q1Y5NFJCYkJKd0FKdFViTEhRSzBqN1VCdWNwQ3JaeWw2c3FiTVd3RDV0MkZ3QU5TM0FoX2lpSDQxY1hfNVk0dlVnSTEtZGx4Y09vX05lZmg0ZV9ZUjFvak1tRk1UcVNUd1RnZEdkNWfSAZMCQVVfeXFMTWVkMW13cW5pWV9HSHVDMEljZWJXOHNQcWJ6NDEwV0p3eDhsaTNKb1dSUXpGZThhM3A1eTlzQUcydU1lMFdQd3pVeGRyaVFNV2JOWHl2WFhEb05pZl9LVm9ZblBQbVh0N1FrWFBuV21kckhaTzRxeDlHeUpmNU5uZ0VpZWJWMFBmWFBscjVWTVZnYnJlRVIzNUR3NGF2d0pIbFRiRWxHazJBcHl3dmVObXZyVFB5azhNZmp0NFg2SzRZOUFjQmhHcEc4N1NiQXBIM2hZTERibWhYMjktTi05OWUwZ1VlN3dZajRvckp4ZkZuUTRILXVWTlZIWExOWjNjVEtvTXlpc0NveDlQOFRvZWpON1E?oc=5",
-      "discovery_title": "Ismea, agroalimentare Italia da record, export a 72,5 miliardi, +5% in un anno - ANSA",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
-      "score_discovery": 59,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "72,5 miliardi",
-        "+5%",
-        "72,5 miliardi",
-        "+5%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Comunicati stampa ufficiali",
-      "discovery_url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
-      "discovery_title": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
-      "score_discovery": 45,
+      "discovery_url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
+      "discovery_title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "2026",
-        "2027 ",
-        "2026 ",
-        "2027 ",
-        "0,9%",
-        "0,6%",
-        "0,6%",
-        "2025"
+        "2021",
+        "2023 ",
+        "2,0%",
+        "-0,4 ",
+        "2021",
+        "2023 "
       ],
       "official_links": [
-        "https://www.istat.it/wp-content/uploads/2026/11/Nota-sullandamento-e-prospettive-2026_2027.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/11/Report-Catene-del-valore-delle-imprese-2021-2023.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/11/Appendice-statistica-2021-2023.xlsx",
         "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
         "https://contact.istat.it/",
-        "https://www.istat.it/statistiche-per-temi/economia/conti-nazionali/",
+        "https://www.istat.it/statistiche-per-temi/economia/imprese/",
         "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
-        "https://www.istat.it/statistiche-per-temi/istruzione-e-lavoro/lavoro-e-retribuzioni/",
-        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
-        "https://www.istat.it/?tag=economia",
-        "https://www.istat.it/?tag=fiducia",
-        "https://www.istat.it/?tag=inflazione",
-        "https://www.istat.it/?tag=lavoro",
-        "https://www.istat.it/?tag=pil"
+        "https://www.istat.it/?tag=esportazioni",
+        "https://www.istat.it/?tag=imprese",
+        "https://www.istat.it/?tag=internazionalizzazione",
+        "https://www.istat.it/?tag=lavoro-imprese",
+        "https://www.istat.it/?tag=manifatturiero",
+        "https://www.istat.it/?tag=multinazionali"
       ],
       "official_domain_hints": [
-        "aci.it",
-        "iss.it",
-        "terna.it"
+        "istat.it"
       ],
       "primary_resolution": {
-        "url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
+        "url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
         "domain": "istat.it",
         "matched_numbers": [
-          "2026",
-          "2027 ",
-          "2026 ",
-          "2027 ",
-          "0,9%",
-          "0,6%"
+          "2021",
+          "2023 ",
+          "2,0%",
+          "-0,4 ",
+          "2021",
+          "2023 "
         ],
         "matched_non_year_numbers": [
-          "0,9%",
-          "0,6%",
-          "0,6%"
+          "2,0%",
+          "-0,4 "
         ],
         "matched_keywords": [
-          "nota",
-          "sull",
-          "andamento",
-          "prospettive",
-          "dell",
-          "economia",
-          "italiana",
-          "prevede"
+          "catene",
+          "globali",
+          "valore",
+          "medie",
+          "grandi",
+          "imprese",
+          "limitata",
+          "calo"
         ],
         "verification_score": 95,
-        "text_excerpt": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings",
+        "text_excerpt": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English HomePage Imposta Lingua Language Settings Per favore ",
         "verified_series": [],
         "method": "direct_official_rss"
       },
@@ -713,9 +627,9 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN1pIUGc5U1JvTFpGLWd3bHFoYzhPdENJUWgwci02WlZ6NHB0Q3ZLTzBhZG5wcGNBbWNXQmlVbFJ5aFBvY0IzR3BMSUU0WmZ3b0hMZ1FOVWw1RlM2cmxRbFY1eTZLdUVjWnZIWGJSODdueG1DdlZMSkM1TG5KM3NmQUpBcU51bE9mNm1ZTXhZRzc0cTBwYmxaQnZIWHNSTThEa0FUSk45SkFiT1BxYm5HY085RUtnV2FHOTFYNnZleTd1T2JMMVJhaXJ3TExUVHlTRWhRU1IteHNzTnBzdVE4S05R0gHnAUFVX3lxTE9YSVp4OVJrU2taN0xCUFVTYkVSOEM1YTUwUTdfRnJ4YkxocEVjY3lnRGdMZTUzaUNWN1ZiRk5RWi1CdFllTm96SW5RYjZjV0dUVnRNSktVMHZ3c05Falh1NnQ0UWtjNm95dEtCY3ZkaVZrRW03YzFEYXNYek5sdUlEeVk4M01BcXFkOTlCZjhLLUdzYWh5LUxZekowcDI1TC1QajJYb3BQd3d6Si1DMW5TWC16MWU1RGJuWDhMRklDRm9Sb1k2azBkbTFrQTVtQnpmVHRYUkhQUVJ5WmxORHNkekRnOGliQQ?oc=5",
-      "discovery_title": "Istat: 'A 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno' - ANSA",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNU2Ffc0p0UXBUZGp0c2lYUmRZWVNydWs2OUh1RnBQT3dYX1BDNEFyNjVrcWtVbmsxZWRpNDZOTGltdzBBODN0Y0R4WFRmeW9FYmNGOHVrOGJGTTdLS2VYRC1qcFFBRXc1Q0owLUhJblpoV0Zrc3RaSnhqUmZnRThXaC1JOTVVRnMxVEFuNlBhUXNfd05xaVhUU1hWMy04ZmtBODF1THd2VFZVUWNnVlNCSm02ZGt3ZVQ3UEcyZUV2QzE2SGJMNEdHQ2FWOWxCMnFETkQ4Z003ODJMOE9uNkNpbEQyY3hXYUZNSHQ4M3VIM1lSeERrLWU0aXphWXAwZHZISE1UN3E1bw?oc=5",
+      "discovery_title": "++ Istat, a 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno ++ - ANSA",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -733,10 +647,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - statistiche Italia",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdTI2a2ltekg4cjFfemozVTU4YVFLcGpqRWdISWo4SDlsOVlaZ0VocFBWY2kzSmR0dDZLN05HRmFLT1hScHlfLU55bXdQT3QzX2JNcEMwRnF2NXUySlRwamQxQlBZMnRROHozU3Z6bEJrVzc3TzZlMTJzd2VCNXNxaXdKTkplelZ2REVQaWdoZ3lpZFh2Z3FGb01XY2VvRzloMWp6UWxLRElzQTJuRXBJeE12NGVpTDJZblNPTkRsS0loRjR0d0xXZVZIeGdSdmNadlU1Wk5ZQVRPVFU3UXRvcDJvV2xSdUJ1OGdETVBtVDM0ekZvSWRzOU5TZDQtV2llSGN5V2RCaTMyaEU?oc=5",
+      "discovery_title": "Rapporto Ismea 2026: l'agroalimentare italiano cresce ancora e si conferma settore strategico. Valore da 89 miliardi euro, export record (72,5 mld) - Agricultura.it",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "score_discovery": 75,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026",
+        "89 miliardi",
+        "72,5 ",
+        "2026",
+        "89 miliardi",
+        "72,5 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOG42RXdYekxzVlQ5YjZid3h1WjNzQzlyUXhVNjgyOUg3bDQydk1vSlA5bTlZZXVjSUNEaDhnaV9EcjRmR3h3amZUOC1WY3R5SmN0SG9mb2x6TzZyWWRvSktpUzRWMG1BNXM1bTFuWmYzQ0dlWVpLbnE2SldHU2RhUTQ5eXRzMm9Q?oc=5",
       "discovery_title": "Banca d’Italia, Valle d’Aosta: prestiti alle imprese -15,5%, credito al consumo +5,6% a giugno 2026 - SimplyBiz - Dedicato a chi opera nel mondo del credito",
-      "detected_at": "2026-11-12T20:59:11.499195+00:00",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -752,6 +687,86 @@
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia lavoro e imprese",
+      "discovery_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPdi1WUnpTdmVRSjBtTlpjQVRtQXJNdjZqdGhLSm96UlRrVXlzMF95MTBFbUJNMFVHOHB3NG1fRmIwSzhfeXJMWmFWclNJeFZxUTM0ZG5wUUpiQkhLUzdHMGkyZkRmRC0wcm1JS3lfR0VMczM1dnhaY3dveVVEVnd1VFJlVVRKZDVGc1JoZWRHeVFHRkZCY0VaWngtdDQtZHBrdGY2Q0N3Q1Y5NFJCYkJKd0FKdFViTEhRSzBqN1VCdWNwQ3JaeWw2c3FiTVd3RDV0MkZ3QU5TM0FoX2lpSDQxY1hfNVk0dlVnSTEtZGx4Y09vX05lZmg0ZV9ZUjFvak1tRk1UcVNUd1RnZEdkNWfSAZMCQVVfeXFMTWVkMW13cW5pWV9HSHVDMEljZWJXOHNQcWJ6NDEwV0p3eDhsaTNKb1dSUXpGZThhM3A1eTlzQUcydU1lMFdQd3pVeGRyaVFNV2JOWHl2WFhEb05pZl9LVm9ZblBQbVh0N1FrWFBuV21kckhaTzRxeDlHeUpmNU5uZ0VpZWJWMFBmWFBscjVWTVZnYnJlRVIzNUR3NGF2d0pIbFRiRWxHazJBcHl3dmVObXZyVFB5azhNZmp0NFg2SzRZOUFjQmhHcEc4N1NiQXBIM2hZTERibWhYMjktTi05OWUwZ1VlN3dZajRvckp4ZkZuUTRILXVWTlZIWExOWjNjVEtvTXlpc0NveDlQOFRvZWpON1E?oc=5",
+      "discovery_title": "Ismea, agroalimentare Italia da record, export a 72,5 miliardi, +5% in un anno - ANSA",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "score_discovery": 59,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "72,5 miliardi",
+        "+5%",
+        "72,5 miliardi",
+        "+5%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "ISTAT - Comunicati stampa ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
+      "discovery_title": "Struttura e competitività delle imprese multinazionali – Anno 2024",
+      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2024 ",
+        "2024 ",
+        "196 miliardi",
+        "+4,1%"
+      ],
+      "official_links": [
+        "https://www.istat.it/wp-content/uploads/2026/11/REPORT-MULTINAZIONALI-2024.pdf",
+        "https://www.istat.it/wp-content/uploads/2026/11/APPENDICE-STATISTICA-2024.xls",
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/economia/imprese/",
+        "https://www.istat.it/statistiche-per-temi/economia/industria-e-costruzioni/",
+        "https://www.istat.it/?tag=esportazioni",
+        "https://www.istat.it/?tag=imprese",
+        "https://www.istat.it/?tag=internazionalizzazione",
+        "https://www.istat.it/?tag=manifatturiero",
+        "https://www.istat.it/?tag=multinazionali",
+        "https://www.istat.it/?tag=comunicati-annuali"
+      ],
+      "official_domain_hints": [
+        "mur.gov.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2024 ",
+          "2024 ",
+          "196 miliardi",
+          "+4,1%"
+        ],
+        "matched_non_year_numbers": [
+          "196 miliardi",
+          "+4,1%"
+        ],
+        "matched_keywords": [
+          "struttura",
+          "competitività",
+          "imprese",
+          "multinazionali",
+          "valore",
+          "aggiunto",
+          "controllo",
+          "estero"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Struttura e competitività delle imprese multinazionali – Anno 2024 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per fa",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
     }
   ]
 }
