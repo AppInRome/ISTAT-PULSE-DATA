@@ -4,6 +4,9 @@ on:
     paths:
       - "scripts/pulse_italia_newsroom.py"
       - "scripts/pulse_data_story_stack.py"
+      - "scripts/pulse_cloudflare_llama.py"
+      - "tests/test_pulse_cloudflare_llama.py"
+      - ".github/workflows/pulse-italia-newsroom.yml"
       - "tests/test_pulse_data_story_stack.py"
       - "tests/fixtures/pulse_italia_integration_manifest.json"
       - "tests/fixtures/pulse_italia_integration_FAKE.csv"
@@ -29,6 +32,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_italia_newsroom.py" -v
           python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
           python -m unittest discover -s tests -p "test_pulse_data_story_stack.py" -v
+          python -m unittest discover -s tests -p "test_pulse_cloudflare_llama.py" -v
 
   external-stack-smoke:
     runs-on: ubuntu-latest
