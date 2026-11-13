@@ -29,7 +29,7 @@ jobs:
       - name: Rank Italian news into research queue
         run: |
           mkdir -p editorial_output
-          python scripts/pulse_italia_newsroom.py rank \
+          python -m scripts.pulse_italia_newsroom rank \
             --articles data/news/articles.json \
             --output editorial_output/italia_research_queue.json \
             --limit 20
@@ -40,7 +40,7 @@ jobs:
           PULSE_LLM_MODEL: ${{ vars.PULSE_LLM_MODEL }}
         run: |
           mkdir -p data/editorial_italia/manifests editorial_output/drafts
-          python scripts/pulse_italia_newsroom.py draft \
+          python -m scripts.pulse_italia_newsroom draft \
             --manifests-dir data/editorial_italia/manifests \
             --output-dir editorial_output/drafts \
             --limit 20
