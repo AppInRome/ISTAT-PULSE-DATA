@@ -3,10 +3,12 @@ name: PULSE Italia newsroom (drafts only)
 on:
   workflow_dispatch:
   schedule:
-    # Research queue; cron times are UTC, not exact.
+    # One run per day limits opportunities to spend beyond free-tier quota.
     - cron: "17 5 * * *"
-    - cron: "23 13 * * *"
-    - cron: "41 19 * * *"
+
+concurrency:
+  group: pulse-italia-newsroom
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -26,6 +28,8 @@ jobs:
         run: |
           python -m unittest discover -s tests -p "test_pulse_italia_newsroom.py" -v
           python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
+          python -m unittest discover -s tests -p "test_pulse_cloudflare_llama.py" -v
+          python -m unittest discover -s tests -p "test_pulse_data_story_stack.py" -v
       - name: Rank Italian news into research queue
         run: |
           mkdir -p editorial_output
@@ -35,9 +39,8 @@ jobs:
             --limit 20
       - name: Write AI drafts only when explicitly configured
         env:
-          PULSE_LLM_API_KEY: ${{ secrets.PULSE_LLM_API_KEY }}
-          PULSE_LLM_ENDPOINT: ${{ vars.PULSE_LLM_ENDPOINT }}
-          PULSE_LLM_MODEL: ${{ vars.PULSE_LLM_MODEL }}
+          PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN }}
+          PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID }}
         run: |
           mkdir -p data/editorial_italia/manifests editorial_output/drafts
           python -m scripts.pulse_italia_newsroom draft \
