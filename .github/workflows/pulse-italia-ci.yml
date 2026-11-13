@@ -1,0 +1,26 @@
+name: PULSE Italia - Python unit tests
+on:
+  pull_request:
+    paths:
+      - "scripts/pulse_italia_newsroom.py"
+      - "scripts/pulse_editorial_engine_v1.py"
+      - "scripts/pulse_editorial_audit_v1.py"
+      - "tests/test_pulse_italia_newsroom.py"
+      - "tests/test_editorial_engine_v1.py"
+      - ".github/workflows/pulse-italia-ci.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  editorial-unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run isolated tests, no API keys or publication
+        run: |
+          python -m unittest discover -s tests -p "test_pulse_italia_newsroom.py" -v
+          python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
