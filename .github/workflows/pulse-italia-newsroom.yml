@@ -1,0 +1,55 @@
+name: PULSE Italia newsroom (drafts only)
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Research queue; cron times are UTC, not exact.
+    - cron: "17 5 * * *"
+    - cron: "23 13 * * *"
+    - cron: "41 19 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Test Italy-only editorial gate
+        run: |
+          python -m unittest discover -s tests -p "test_pulse_italia_newsroom.py" -v
+          python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
+      - name: Rank Italian news into research queue
+        run: |
+          mkdir -p editorial_output
+          python scripts/pulse_italia_newsroom.py rank \
+            --articles data/news/articles.json \
+            --output editorial_output/italia_research_queue.json \
+            --limit 20
+      - name: Write AI drafts only when explicitly configured
+        env:
+          PULSE_LLM_API_KEY: ${{ secrets.PULSE_LLM_API_KEY }}
+          PULSE_LLM_ENDPOINT: ${{ vars.PULSE_LLM_ENDPOINT }}
+          PULSE_LLM_MODEL: ${{ vars.PULSE_LLM_MODEL }}
+        run: |
+          mkdir -p data/editorial_italia/manifests editorial_output/drafts
+          python scripts/pulse_italia_newsroom.py draft \
+            --manifests-dir data/editorial_italia/manifests \
+            --output-dir editorial_output/drafts \
+            --limit 20
+      - name: Upload queue and unapproved draft artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pulse-italia-unapproved-drafts
+          path: editorial_output/
+          retention-days: 7
+          if-no-files-found: error
+
+# Safety: no push to production and no approval bypass.
