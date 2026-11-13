@@ -124,6 +124,13 @@ def verify_manifest(manifest):
             raise ValueError("missing_explicit_official_classification:" + k)
     if spec["period_column"] in dims or spec["value_column"] in dims:
         raise ValueError("value_period_cannot_be_dimension")
+    # The Italian newsroom never interprets foreign-country datasets as Italy.
+    from scripts.pulse_italia_newsroom import italian_official_url, REGIONS
+    territory = dims[spec["semantic_columns"]["territory"]].strip().casefold()
+    if territory != "italia" and territory not in REGIONS:
+        raise ValueError("outside_italian_editorial_scope")
+    if not all(italian_official_url(manifest[field]) for field in ("source_url", "dataset_url")):
+        raise ValueError("italian_official_source_required")
     return spec
 
 
@@ -285,6 +292,7 @@ def publish_article(draft, evidence, approval):
         "headline":draft["title"],"pulse_title":draft["title"],
         "summary":draft["lead"],"pulse_summary":draft["lead"],
         "pulse_article_body":body,"topic":evidence.get("topic","ALTRO"),
+        "geographic_scope":{"country_code":"IT","territory":series["territory"]},
         "public_source":{"url":source,"domain":urllib.parse.urlsplit(source).hostname,
                          "role":"primary_statistical_source"},
         "source_documents":[{"url":evidence["dataset_url"],"sha256":evidence["source_sha256"],
@@ -296,7 +304,7 @@ def publish_article(draft, evidence, approval):
                             # exact-host provenance gate. The exact dataset URL is
                             # preserved separately in source_documents/chart_spec.
                             "source_url":evidence["source_url"],
-                            "extraction_method":"same_row_explicit_year_structured_table"}],
+                            "extraction_method":"exact_classification_long_format_row"}],
         "chart_spec":chart,
         "table_spec":{"status":"verified","source_url":evidence["dataset_url"],
                       "headers":["Periodo",series["indicator"]],
