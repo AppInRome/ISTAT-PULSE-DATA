@@ -289,12 +289,16 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
     from scripts.pulse_editorial_engine_v1 import verify_manifest
     import scripts.pulse_editorial_engine_v1 as editorial
 
+    from scripts.pulse_cloudflare_llama import (
+        BUDGET_NEURONS, configure_environment, reserved_neurons
+    )
     output = Path(output_dir)
     made = []
-    # An unattended cloud runner must not attempt unauthenticated paid calls.
-    if not all(os.getenv(k) for k in ("PULSE_LLM_ENDPOINT", "PULSE_LLM_MODEL", "PULSE_LLM_API_KEY")):
-        return {"status": "ai_not_configured", "generated": []}
-    for manifest_path in sorted(Path(manifests_dir).glob("*.json"))[:limit]:
+    reserved = 0.0
+    # Never reuse an unrelated key or the retired Tommy Worker.
+    if not configure_environment():
+        return {"status": "cloudflare_not_configured", "generated": []}
+    for manifest_path in sorted(Path(manifests_dir).glob("*.json"))[:max(1, min(limit, 20))]:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         spec = verify_manifest(manifest)
         semantic = spec["semantic_columns"]
@@ -309,6 +313,11 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
         editorial.run_extract(argparse.Namespace(
             manifest=str(manifest_path), source_file=None, output=str(evidence_path)
         ))
+        evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+        reservation = reserved_neurons(editorial.ai_prompt(evidence))
+        if reserved + reservation > BUDGET_NEURONS:
+            break  # Keep headroom below Cloudflare's 10,000 daily free Neurons.
+        reserved += reservation  # Reserve even if the model's JSON is rejected.
         try:
             editorial.run_draft(argparse.Namespace(
                 evidence=str(evidence_path), proposal_file=None, output=str(draft_path)
@@ -317,7 +326,10 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
         except ValueError:
             # Rejected drafts stay visible as artifacts, never enter production.
             continue
-    return {"status": "draft_only", "generated": made, "count": len(made)}
+    return {"status": "draft_only", "generated": made, "count": len(made),
+            "neuron_reservation_for_run": round(reserved, 2),
+            "budget_neurons_for_run": BUDGET_NEURONS,
+            "budget_estimate_only": True}
 
 
 def main(argv=None):
