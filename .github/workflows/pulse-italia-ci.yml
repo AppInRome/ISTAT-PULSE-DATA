@@ -48,7 +48,7 @@ jobs:
           git -C "$RUNNER_TEMP/data2story-skill" checkout --quiet 63a55c15f3fac13239263cfa1361fe2ef04d8df1
       - name: Execute all three actual external components offline
         run: |
-          python scripts/pulse_data_story_stack.py \
+          python -m scripts.pulse_data_story_stack \
             --manifest tests/fixtures/pulse_italia_integration_manifest.json \
             --source-file tests/fixtures/pulse_italia_integration_FAKE.csv \
             --output-dir "$RUNNER_TEMP/pulse-data-story" \
