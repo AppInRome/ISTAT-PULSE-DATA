@@ -215,11 +215,13 @@ def pipeline(manifest_path, source_file, output_dir, data_analyst_script=None,
         dstory_command, csv_path, output_dir / "dstory", evidence["dataset_url"])
     draft = None
     if ai_mode == "llama":
-        expected = ("PULSE_LLM_API_KEY", "PULSE_LLM_ENDPOINT", "PULSE_LLM_MODEL")
-        if not all(os.environ.get(k) for k in expected):
+        from scripts.pulse_cloudflare_llama import (
+            configure_environment, reserved_neurons, BUDGET_NEURONS
+        )
+        if not configure_environment():
             result["ai"]["status"] = "credentials_absent_not_called"
-        elif not os.environ["PULSE_LLM_MODEL"].startswith("@cf/meta/llama"):
-            raise ValueError("llama_model_required")
+        elif reserved_neurons(engine.ai_prompt(evidence)) > BUDGET_NEURONS:
+            result["ai"]["status"] = "free_tier_budget_reservation_exceeded"
         else:
             # Uses PULSE's audited editorial engine; output is a draft ONLY.
             from scripts import pulse_editorial_audit_v1 as audit
