@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T02:57:33.539632+00:00",
+  "generated_at": "2026-11-13T06:06:33.609198+00:00",
   "candidates": [
     {
       "radar": "Google News - Fanpage dati e statistiche",
@@ -14,7 +14,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 25
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -119,12 +119,12 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 53
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 27
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -169,12 +169,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 37
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -234,7 +234,7 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 19
+      "items_fetched": 18
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
@@ -249,12 +249,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 28
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 59
+      "items_fetched": 58
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -324,7 +324,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 16
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,42 +367,21 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNblFFYjkxTHhqaDlVd2FtVUtWSVJhbEVQXzMzcV9mbDBMNEdEaFJkNXUtQnQ1cUhtT2pvSzB6YTh1V2JxSkVHUTJsNG9JeTZkdXQtMGlOcHo1SzBFT1JKRElKZzlWLVV3Y3lBWkZOb19TVGlma3Z6a19DU1ctdmZUcW1iajFITHFmckE?oc=5",
-      "discovery_title": "Istat. Quasi 8 italiani su 10 soddisfatti della propria salute, ma dopo i 75 anni la quota crolla al 59,2%. Donne e Sud più indietro - Il Farmacista Online",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
-      "score_discovery": 45,
-      "topic": "SALUTE",
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOX2FBTmZOQ3dyYTlHekw2bl8wb1ZjaERfM0RzZTQ5VXJjNzlteVVrb2dSVDVHU05kOWVJUXlUbERUbkZodHV4RE1qakh4Zkx3RVhCQ3pMQnd2d0hHWVJpMzBDQmNQREphUllrVEpRME1Id0FZSE1zVXRvLVlvQ0JFNF93QXJrVEthMzVwbGtCMm1pWFRsU19LRUVHUF9MZGRMTnZqcG5WX19NRkdKb1FMVmMwcWxWZW16dkR1amVEc2gyNmxpY05qSVd3?oc=5",
+      "discovery_title": "Utile +6% a 6 miliardi per Enel nei primi 9 mesi del 2026, traina l'estero. Italia in calo per idro e prezzi - Italpress",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 60,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "8 ",
-        "10 ",
-        "75 ",
-        "59,2%",
-        "8 ",
-        "10 ",
-        "75 ",
-        "59,2%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE Italia - Sud e Isole",
-      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbm5aaVp0ckdsa2lidmswOXpLY3UwOFNZTnk2ZEVFelhYMVhNQ3MtZ05QM3JZc2hGLUc4LUp1aXU3Nmd3UHJ5R19fV2pWVFZRNG9zdXlndW5DSzZQb3FKQ1BnMUphNlNKTWZlRTRKLUhtZ21PYmNRT09QdVQteWMzTU1SNXk2RFIzWE5IUGZKUjhjQk51VDA5ai1nLWp1YjNaMGQ4YXlyU2VUVWQwbEFlYnhUTHRfTGVqUW5OMjZQam1uWGJaYWc4?oc=5",
-      "discovery_title": "Cresce il turismo in Sicilia nel 2026: +6% di pernottamenti e +7,4% di passeggeri - TP24.it",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
-      "score_discovery": 50,
-      "topic": "ALTRO",
-      "numbers_detected": [
+        "+6%",
+        "6 miliardi",
+        "9 ",
         "2026",
         "+6%",
-        "+7,4%",
-        "2026",
-        "+6%",
-        "+7,4%"
+        "6 miliardi",
+        "9 ",
+        "2026"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -414,7 +393,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
       "discovery_title": "Soddisfazione dei cittadini – Anno 2025",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -473,10 +452,95 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
+      "discovery_title": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "12",
+        "11",
+        "2026 ",
+        "2026",
+        "30 ",
+        "12 ",
+        "7 "
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/immagine/12804/large",
+        "https://www.cnr.it/it/news/immagine/12805/large",
+        "https://www.cnr.it/it/news/immagine/12806/large",
+        "https://www.cnr.it/it/news/immagine/12807/large",
+        "https://www.cnr.it/it/news/immagine/12808/large"
+      ],
+      "official_domain_hints": [
+        "iss.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "12",
+          "11",
+          "2026 ",
+          "2026",
+          "30 ",
+          "12 "
+        ],
+        "matched_non_year_numbers": [
+          "12",
+          "11",
+          "30 ",
+          "12 ",
+          "7 "
+        ],
+        "matched_keywords": [
+          "kolumbo",
+          "vulcano",
+          "sommerso",
+          "santorini",
+          "osservato",
+          "vicino",
+          "conclude",
+          "campagna"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sci",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - Tasse redditi casa",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxORzBTajlXcnRrVXpFbEVDb0NzRnFUZkREcUROTjZTbFROMmhyV01ZWVluQnVUTDB3X2p3RjNrQ0piTGtpVUcwRjkyeGJBdzhhTDhZRGx6SWFuYXJTTHZKbHdURjd3UzlIdkoySXNwajd1NmhYeWRKU3JyUjRRYzduQWJ3WGF5SHdGbWpudzZsRFA5b0pPUjA3Qmw4RENIWUQtb0JZZEdiTF9iandaMmltQTRIVDRQUXJTQmF2QllaRzFDSVE1SmxndzdkcVNNYkNLUmhpaGRBeFJLQVFDVndj?oc=5",
+      "discovery_title": "Agricoltura italiana da record: 89 miliardi di valore aggiunto, export in crescita e redditi in aumento del 6,6% - Secolo d'Italia",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 74,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "89 miliardi",
+        "6,6%",
+        "89 miliardi",
+        "6,6%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · agenzie · gruppo 08",
       "discovery_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa29zcGUxQWE0NEVQdDBGbkhOcWFpYVpHVlJUb08xVTZ0V3JGcDltVHY5UFRIUTd0aVZWa2lWbE9LZTRRcmNaZk00YURaXy05N3Y0cFBvT0l1aExlN21CdllNMjc2Wks0by1aQWRVcXR5UHFYdjkxX3FjdTZYdVYxSVBOb252Z2dvWS1nS3gzb3dxQWNna1ItNHJ0dUNRZ2FaakRj?oc=5",
       "discovery_title": "*Pil: Istat stima +0,9% in 2026 e +0,6% in 2027 - Milano Finanza",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -496,10 +560,33 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "discovery_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQVjNocXE5dTJLWkMtcXlPYlNHNGxubzRzcDhzU3JFUTNGcTRidGVUU19iV1FMR05MZWNGUDRvMVFSU2ZhVWlwalhNdG9WRHVBbUlRbFpNZkptWGZHS1IxOEhWdUJvZE9ZOHhNTTdoLXlWenJ3TEVLUWtIOXE5VldKbTdJLWZLY01MWkdXLXdaeERDeE1vcmV1YVJ4eVBha2VzQVc0YkVENTNLUmI2UVQ0aWVjanJvVkNLWXFwUk5yUUFycXotYXVlQm5INUI1emNzemhRVjJrbTBTVmxsb2NocTVMSmRiWS1rRWVad091VDNjc040MGtmYUZyUkcyV296YUpPcEVCOA?oc=5",
+      "discovery_title": "Istat. Quasi 8 italiani su 10 soddisfatti della propria salute, ma dopo i 75 anni la quota crolla al 59,2%. Donne e Sud più indietro - Quotidiano Sanità",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 50,
+      "topic": "SALUTE",
+      "numbers_detected": [
+        "8 ",
+        "10 ",
+        "75 ",
+        "59,2%",
+        "8 ",
+        "10 ",
+        "75 ",
+        "59,2%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · locali · gruppo 16",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vX19qUFJvZlA1bUE4bEVHVEV3dUQ4ZFRGczhwODlWQVhFd20ySkVFMi16RVk5X0xRLXlpMzZGdHpvako5X2hheHdjQTZjMThESEtQanRHc1JjN0k5eDV6WVY4SmlnMFJHSnBycW13c0ZLT1hWYnNIT2lfUUw?oc=5",
       "discovery_title": "Istat, Pil 2026 +0,9%, +0,6% nel 2027 - Quotidiano Nazionale",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -522,7 +609,7 @@
       "radar": "Google News - statistiche Italia",
       "discovery_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUmtFcVUwM2pJRVZYczQ3MlhxLXhuclIzNlBjV0JnSDZJZElmaTgtS1o2REg0eFc3bjJ1UVI5eE81MkNLV0gtanJNLUF6enUxM01kbEJOLVYwb1dkMFBKbEZvMTRvbDN2RF9zZGhqYWhNSFA3bGc5bG5uLWEtWjZtMkJISG9YSlNTbF9FS3N5elhkbVpxR25xRHMzaEFNbkJDVnJJSklGUTZLX2NTYzhMa084cTY3TGdM?oc=5",
       "discovery_title": "L’export dell’agroalimentare italiano è ancora da record: 72,5 miliardi di euro nel 2025 (+5%) - WineNews",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 75,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -540,19 +627,19 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVVqSV9kcUU5VU1XbDB6WW5WWUlBWkg3UldCNFZHbVhlU2liWkxBaWhTUHFFSUFvRXozMEZzb2xwVUFFODZjOGJyLWl4dW1RMXZlcTFzbkN1U2FlcU1MVi1EcGVDeVp6XzNGdVlYb1VTaURxaF9qSUJTSE1SclQ4M0hzR0FCa25wTmlRM1JHdw?oc=5",
-      "discovery_title": "Banca d’Italia, Basilicata: prestiti +2,8% a giugno 2026, ma il deterioramento del credito alle imprese sale al 5,7% - SimplyBiz - Dedicato a chi opera nel mondo del credito",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
-      "score_discovery": 55,
-      "topic": "ECONOMIA",
+      "radar": "PULSE Italia - Sud e Isole",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQbm5aaVp0ckdsa2lidmswOXpLY3UwOFNZTnk2ZEVFelhYMVhNQ3MtZ05QM3JZc2hGLUc4LUp1aXU3Nmd3UHJ5R19fV2pWVFZRNG9zdXlndW5DSzZQb3FKQ1BnMUphNlNKTWZlRTRKLUhtZ21PYmNRT09QdVQteWMzTU1SNXk2RFIzWE5IUGZKUjhjQk51VDA5ai1nLWp1YjNaMGQ4YXlyU2VUVWQwbEFlYnhUTHRfTGVqUW5OMjZQam1uWGJaYWc4?oc=5",
+      "discovery_title": "Cresce il turismo in Sicilia nel 2026: +6% di pernottamenti e +7,4% di passeggeri - TP24.it",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
       "numbers_detected": [
-        "+2,8%",
         "2026",
-        "5,7%",
-        "+2,8%",
+        "+6%",
+        "+7,4%",
         "2026",
-        "5,7%"
+        "+6%",
+        "+7,4%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -564,7 +651,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/catene-globali-del-valore-delle-medie-e-grandi-imprese-anni-2021-2023/",
       "discovery_title": "Catene globali del valore delle medie e grandi imprese – Anni 2021/2023",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -627,9 +714,9 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNU2Ffc0p0UXBUZGp0c2lYUmRZWVNydWs2OUh1RnBQT3dYX1BDNEFyNjVrcWtVbmsxZWRpNDZOTGltdzBBODN0Y0R4WFRmeW9FYmNGOHVrOGJGTTdLS2VYRC1qcFFBRXc1Q0owLUhJblpoV0Zrc3RaSnhqUmZnRThXaC1JOTVVRnMxVEFuNlBhUXNfd05xaVhUU1hWMy04ZmtBODF1THd2VFZVUWNnVlNCSm02ZGt3ZVQ3UEcyZUV2QzE2SGJMNEdHQ2FWOWxCMnFETkQ4Z003ODJMOE9uNkNpbEQyY3hXYUZNSHQ4M3VIM1lSeERrLWU0aXphWXAwZHZISE1UN3E1bw?oc=5",
-      "discovery_title": "++ Istat, a 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno ++ - ANSA",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQN1pIUGc5U1JvTFpGLWd3bHFoYzhPdENJUWgwci02WlZ6NHB0Q3ZLTzBhZG5wcGNBbWNXQmlVbFJ5aFBvY0IzR3BMSUU0WmZ3b0hMZ1FOVWw1RlM2cmxRbFY1eTZLdUVjWnZIWGJSODdueG1DdlZMSkM1TG5KM3NmQUpBcU51bE9mNm1ZTXhZRzc0cTBwYmxaQnZIWHNSTThEa0FUSk45SkFiT1BxYm5HY085RUtnV2FHOTFYNnZleTd1T2JMMVJhaXJ3TExUVHlTRWhRU1IteHNzTnBzdVE4S05R0gHnAUFVX3lxTE9YSVp4OVJrU2taN0xCUFVTYkVSOEM1YTUwUTdfRnJ4YkxocEVjY3lnRGdMZTUzaUNWN1ZiRk5RWi1CdFllTm96SW5RYjZjV0dUVnRNSktVMHZ3c05Falh1NnQ0UWtjNm95dEtCY3ZkaVZrRW03YzFEYXNYek5sdUlEeVk4M01BcXFkOTlCZjhLLUdzYWh5LUxZekowcDI1TC1QajJYb3BQd3d6Si1DMW5TWC16MWU1RGJuWDhMRklDRm9Sb1k2azBkbTFrQTVtQnpmVHRYUkhQUVJ5WmxORHNkekRnOGliQQ?oc=5",
+      "discovery_title": "Istat: 'A 3,5 milioni di pensionati nel 2027 in media 510 euro lordi in meno' - ANSA",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -647,10 +734,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE 80 testate · agenzie · gruppo 09",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdDRhckdGY0s3ZjJYMF9EYTVJbWhvSjlqSVNFUXBQamg3RURRQjRNMG1jWWpremx1S2hLS0hwWm01dTFLUW1BTWZiTzRDQ0RDbVMyV01HUG5laV9QR1BUSjJ0QWVJNzFBbUstT1ZDRzVaSHpMYURJV1BkU3otY3pobjR6ZVBqUkJ0YzlCeTVZd0dvY3ljLXZZejkxeDJNWHlYeEl5dTZ5T3NlWXlGWHpnN2swY2lsT3JuSXBZVTVLYzNrVUNyazAyRndpdFZtU1ROXzdHam9KQ2t3ai1YVjlrUTBpZEJ0b1pzS1ZwUjNPQ2E4OXo3LXh0VmN1WQ?oc=5",
+      "discovery_title": "Lavoro, Campania fanalino di coda in Italia per occupazione, solo il 48,2% dei giovani adulti (25-34 anni ) lavora. - Adnkronos",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 45,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "48,2%",
+        "25",
+        "34 ",
+        "48,2%",
+        "25",
+        "34 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - statistiche Italia",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdTI2a2ltekg4cjFfemozVTU4YVFLcGpqRWdISWo4SDlsOVlaZ0VocFBWY2kzSmR0dDZLN05HRmFLT1hScHlfLU55bXdQT3QzX2JNcEMwRnF2NXUySlRwamQxQlBZMnRROHozU3Z6bEJrVzc3TzZlMTJzd2VCNXNxaXdKTkplelZ2REVQaWdoZ3lpZFh2Z3FGb01XY2VvRzloMWp6UWxLRElzQTJuRXBJeE12NGVpTDJZblNPTkRsS0loRjR0d0xXZVZIeGdSdmNadlU1Wk5ZQVRPVFU3UXRvcDJvV2xSdUJ1OGdETVBtVDM0ekZvSWRzOU5TZDQtV2llSGN5V2RCaTMyaEU?oc=5",
       "discovery_title": "Rapporto Ismea 2026: l'agroalimentare italiano cresce ancora e si conferma settore strategico. Valore da 89 miliardi euro, export record (72,5 mld) - Agricultura.it",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 75,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -669,18 +777,18 @@
     },
     {
       "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOG42RXdYekxzVlQ5YjZid3h1WjNzQzlyUXhVNjgyOUg3bDQydk1vSlA5bTlZZXVjSUNEaDhnaV9EcjRmR3h3amZUOC1WY3R5SmN0SG9mb2x6TzZyWWRvSktpUzRWMG1BNXM1bTFuWmYzQ0dlWVpLbnE2SldHU2RhUTQ5eXRzMm9Q?oc=5",
-      "discovery_title": "Banca d’Italia, Valle d’Aosta: prestiti alle imprese -15,5%, credito al consumo +5,6% a giugno 2026 - SimplyBiz - Dedicato a chi opera nel mondo del credito",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
-      "score_discovery": 50,
+      "discovery_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYVVqSV9kcUU5VU1XbDB6WW5WWUlBWkg3UldCNFZHbVhlU2liWkxBaWhTUHFFSUFvRXozMEZzb2xwVUFFODZjOGJyLWl4dW1RMXZlcTFzbkN1U2FlcU1MVi1EcGVDeVp6XzNGdVlYb1VTaURxaF9qSUJTSE1SclQ4M0hzR0FCa25wTmlRM1JHdw?oc=5",
+      "discovery_title": "Banca d’Italia, Basilicata: prestiti +2,8% a giugno 2026, ma il deterioramento del credito alle imprese sale al 5,7% - SimplyBiz - Dedicato a chi opera nel mondo del credito",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
+      "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "-15,5%",
-        "+5,6%",
-        "2026 ",
-        "-15,5%",
-        "+5,6%",
-        "2026 "
+        "+2,8%",
+        "2026",
+        "5,7%",
+        "+2,8%",
+        "2026",
+        "5,7%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -692,7 +800,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPdi1WUnpTdmVRSjBtTlpjQVRtQXJNdjZqdGhLSm96UlRrVXlzMF95MTBFbUJNMFVHOHB3NG1fRmIwSzhfeXJMWmFWclNJeFZxUTM0ZG5wUUpiQkhLUzdHMGkyZkRmRC0wcm1JS3lfR0VMczM1dnhaY3dveVVEVnd1VFJlVVRKZDVGc1JoZWRHeVFHRkZCY0VaWngtdDQtZHBrdGY2Q0N3Q1Y5NFJCYkJKd0FKdFViTEhRSzBqN1VCdWNwQ3JaeWw2c3FiTVd3RDV0MkZ3QU5TM0FoX2lpSDQxY1hfNVk0dlVnSTEtZGx4Y09vX05lZmg0ZV9ZUjFvak1tRk1UcVNUd1RnZEdkNWfSAZMCQVVfeXFMTWVkMW13cW5pWV9HSHVDMEljZWJXOHNQcWJ6NDEwV0p3eDhsaTNKb1dSUXpGZThhM3A1eTlzQUcydU1lMFdQd3pVeGRyaVFNV2JOWHl2WFhEb05pZl9LVm9ZblBQbVh0N1FrWFBuV21kckhaTzRxeDlHeUpmNU5uZ0VpZWJWMFBmWFBscjVWTVZnYnJlRVIzNUR3NGF2d0pIbFRiRWxHazJBcHl3dmVObXZyVFB5azhNZmp0NFg2SzRZOUFjQmhHcEc4N1NiQXBIM2hZTERibWhYMjktTi05OWUwZ1VlN3dZajRvckp4ZkZuUTRILXVWTlZIWExOWjNjVEtvTXlpc0NveDlQOFRvZWpON1E?oc=5",
       "discovery_title": "Ismea, agroalimentare Italia da record, export a 72,5 miliardi, +5% in un anno - ANSA",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 59,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -711,7 +819,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/struttura-e-competitivita-delle-imprese-multinazionali-anno-2024/",
       "discovery_title": "Struttura e competitività delle imprese multinazionali – Anno 2024",
-      "detected_at": "2026-11-13T02:57:33.539632+00:00",
+      "detected_at": "2026-11-13T06:06:33.609198+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [

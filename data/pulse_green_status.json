@@ -1,10 +1,10 @@
 {
   "connected_sources": 3,
   "credential_required": 1,
-  "error_sources": 0,
-  "events": 427,
-  "feed_sources": 15,
-  "generated_at": "2026-11-12T18:01:04.459213+00:00",
+  "error_sources": 1,
+  "events": 424,
+  "feed_sources": 14,
+  "generated_at": "2026-11-13T06:10:31.221712+00:00",
   "pillars": [
     "Crisi climatica e decarbonizzazione",
     "Economia circolare",
@@ -16,7 +16,7 @@
   ],
   "sources": {
     "ACI - Open data mobilità e parco veicoli": {
-      "checked_at": "2026-11-12T17:59:31.190009+00:00",
+      "checked_at": "2026-11-13T06:07:59.817221+00:00",
       "data_reference_year": "2025",
       "http_ok": true,
       "licence": "CC BY 4.0",
@@ -103,7 +103,7 @@
           "year": 2023
         }
       ],
-      "checked_at": "2026-11-12T17:59:42.748246+00:00",
+      "checked_at": "2026-11-13T06:08:11.118820+00:00",
       "detailed_workbooks_through": 2021,
       "errors": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.arera.it/dati-e-statistiche/dettaglio/rqsii"
     },
     "Copernicus - Climate Data Store": {
-      "checked_at": "2026-11-12T17:59:42.748303+00:00",
+      "checked_at": "2026-11-13T06:08:11.118866+00:00",
       "dataset": "ERA5 monthly averaged data on single levels",
       "dataset_id": "reanalysis-era5-single-levels-monthly-means",
       "frequency": "Mensile",
@@ -240,7 +240,7 @@
       "url": "https://cds.climate.copernicus.eu/"
     },
     "EEA - Dati ambientali europei": {
-      "checked_at": "2026-11-12T17:59:48.982751+00:00",
+      "checked_at": "2026-11-13T06:08:21.747663+00:00",
       "dataset": "Domestic net greenhouse gas emissions (including LULUCF)",
       "dataset_code": "EU SDG 13_10",
       "frequency": "Annuale",
@@ -269,219 +269,14 @@
       "url": "https://www.eea.europa.eu/en/datahub/datahubitem-view/3b7fe76c-524a-439a-bfd2-a6e4046302a2?activeAccordion=1096150"
     },
     "ENEA - Rapporto annuale efficienza energetica": {
-      "checked_at": "2026-11-12T17:59:59.169772+00:00",
-      "failed_regions": [],
-      "http_ok": true,
-      "note": "RAEE 2026: 20/20 schede regionali acquisite; 3 segnali PULSE da serie TEE 2015-2025.",
+      "checked_at": "2026-11-13T06:08:23.382949+00:00",
+      "note": "Errore di collegamento nell'ultimo refresh: HTTP Error 500: Internal Server Error",
       "pillar": "Transizione energetica",
-      "regional_files": 20,
-      "series": [
-        {
-          "latest_period": "2025",
-          "latest_value": 1264053.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Abruzzo",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 903879.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Basilicata",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 885341.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Calabria",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 2352400.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Campania",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 5845812.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Emilia-Romagna",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 1690779.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Friuli-Venezia Giulia",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 2343210.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Lazio",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 981962.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Liguria",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 14912218.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Lombardia",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 641176.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Marche",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 146468.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Molise",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 4169048.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Piemonte",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 5638843.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Puglia",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 1183937.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Sardegna",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 2567805.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Sicilia",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 3761825.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Toscana",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 1268014.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Trentino-Alto Adige",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 1266716.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Umbria",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 203721.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Valle D'Aosta",
-          "unit": "TEE"
-        },
-        {
-          "latest_period": "2025",
-          "latest_value": 5601616.0,
-          "name": "Titoli di Efficienza Energetica emessi",
-          "observations": 11,
-          "pillar": "Transizione energetica",
-          "status": "ok",
-          "territory": "Veneto",
-          "unit": "TEE"
-        }
-      ],
-      "status": "feed",
+      "status": "error",
       "url": "https://www.efficienzaenergetica.enea.it/vi-segnaliamo/rapporto-annuale-sullefficienza-energetica-2026-schede-regionali.html"
     },
     "Eurostat - Statistiche ambientali ed energia": {
-      "checked_at": "2026-11-12T18:00:01.419872+00:00",
+      "checked_at": "2026-11-13T06:08:27.034410+00:00",
       "note": "3/3 dataset Eurostat collegati; 3 segnali PULSE emessi.",
       "pillar": "Multi-pilastro GREEN",
       "series": [
@@ -511,7 +306,7 @@
       "url": "https://ec.europa.eu/eurostat/web/environment"
     },
     "GSE - Statistiche delle rinnovabili": {
-      "checked_at": "2026-11-12T18:00:02.133153+00:00",
+      "checked_at": "2026-11-13T06:08:27.893485+00:00",
       "direct_official_document": "https://www.gse.it/documenti_site/Documenti%20GSE/Rapporti%20statistici/Rapporto%20Statistico%20GSE%20-%20Energia%20da%20FER%20in%20Italia%20-%20anno%202024.pdf",
       "fallback_last_good": true,
       "frequency": "Annuale",
@@ -555,7 +350,7 @@
       "url": "https://www.gse.it/dati-e-scenari/statistiche"
     },
     "ISPRA - Catasto nazionale rifiuti": {
-      "checked_at": "2026-11-12T18:00:09.249037+00:00",
+      "checked_at": "2026-11-13T06:08:35.970911+00:00",
       "failed_years": [],
       "frequency": "Annuale",
       "http_ok": true,
@@ -796,7 +591,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-12T18:00:11.371551+00:00",
+      "checked_at": "2026-11-13T06:08:38.589191+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2024",
@@ -1051,7 +846,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-12T18:00:12.588680+00:00",
+      "checked_at": "2026-11-13T06:08:40.237728+00:00",
       "frequency": "Periodico / secondo aggiornamento IFFI-IdroGEO",
       "http_ok": true,
       "latest_period": "Inventario corrente",
@@ -1090,7 +885,7 @@
       "administrative_levels": [
         "Italia"
       ],
-      "checked_at": "2026-11-12T18:00:12.589268+00:00",
+      "checked_at": "2026-11-13T06:08:40.238360+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2025",
@@ -1127,9 +922,9 @@
       "candidate_downloads": [
         "https://emissioni.sina.isprambiente.it/wp-content/uploads/2026/04/Emissioni-GHG-Sintesi-2026.xlsx"
       ],
-      "checked_at": "2026-11-12T18:00:16.325531+00:00",
+      "checked_at": "2026-11-13T06:08:44.780686+00:00",
       "http_ok": true,
-      "landing_sha256": "7c7ef495f5b9760619418943fb40ba339c882e166442b707d956f4f7d7b8901b",
+      "landing_sha256": "ecbb01b68f482a97d38b5d0c15973ab24334a953d2c3d490724a9bb41bbcd036",
       "latest_period": "2024",
       "note": "Inventario GHG ISPRA 1990-2024 acquisito dal workbook ufficiale; 2 serie monitorate e 2 segnali PULSE.",
       "pillar": "Crisi climatica e decarbonizzazione",
@@ -1169,7 +964,7 @@
         "Regione",
         "Distretto idrografico"
       ],
-      "checked_at": "2026-11-12T18:00:18.082292+00:00",
+      "checked_at": "2026-11-13T06:08:47.301433+00:00",
       "frequency": "Annuale (stime disponibili anche mensilmente)",
       "http_ok": true,
       "latest_period": "2025",
@@ -1219,7 +1014,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-12T18:00:23.155877+00:00",
+      "checked_at": "2026-11-13T06:08:54.223738+00:00",
       "frequency": "Annuale; dati quasi-real-time aggiornati giornalmente",
       "http_ok": true,
       "latest_assessment_period": "2025",
@@ -1267,7 +1062,7 @@
         "Comuni capoluogo di provincia",
         "Città metropolitane"
       ],
-      "checked_at": "2026-11-12T18:00:33.628658+00:00",
+      "checked_at": "2026-11-13T06:08:57.333384+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2024",
@@ -6010,7 +5805,7 @@
       "candidate_downloads": [
         "https://www.istat.it/wp-content/uploads/2026/07/Misure-statistiche-2004-2026.xlsx"
       ],
-      "checked_at": "2026-11-12T18:00:48.987300+00:00",
+      "checked_at": "2026-11-13T06:09:03.075914+00:00",
       "note": "Dataset Istat SDGs 2004-2026 acquisito: 71 serie nazionali GREEN semanticamente classificate; 36 segnali PULSE.",
       "pillar": "Multi-pilastro GREEN",
       "series": [
@@ -6806,7 +6601,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-12T18:00:54.456048+00:00",
+      "checked_at": "2026-11-13T06:10:22.574568+00:00",
       "frequency": "Archivio / snapshot; aggiornamento non corrente",
       "http_ok": true,
       "latest_period": "2018-01-01",
@@ -6839,9 +6634,9 @@
         "https://www.istat.it/wp-content/uploads/2026/03/Istat-GMA2026-Tavole-1.xlsx",
         "https://www.istat.it/wp-content/uploads/2026/03/Istat-GMA2026-Mappe.xlsx"
       ],
-      "checked_at": "2026-11-12T18:00:59.983904+00:00",
+      "checked_at": "2026-11-13T06:10:26.785855+00:00",
       "http_ok": true,
-      "landing_sha256": "83c8650c19f7f9cc8022e5f15a7c81f66a749045214ebaef8b3ab469e18dec99",
+      "landing_sha256": "fc60c0a71407781709d9d11d5927a89be4aaaaec6f5f6f99d2e0a74067d7e1dc",
       "latest_release": "2026-03-20",
       "note": "Tavole ufficiali Acqua 2026 acquisite; 27 serie regionali pluriennali lette da Tavola 10; 17 segnali PULSE.",
       "pillar": "Risorse idriche e suolo",
@@ -7129,7 +6924,7 @@
       "url": "https://www.istat.it/comunicato-stampa/le-statistiche-sullacqua-anni-2023-2025/"
     },
     "Terna - Portale Dati del sistema elettrico": {
-      "checked_at": "2026-11-12T18:01:04.452994+00:00",
+      "checked_at": "2026-11-13T06:10:31.215651+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2025",
