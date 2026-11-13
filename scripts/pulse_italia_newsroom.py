@@ -198,10 +198,10 @@ def select_candidates(articles, limit=20, now=None, per_topic=5):
                   and x.get("publication_status", "published") == "published"
                   and italy_relevant(x) and host((x.get("public_source") or {}).get("url"))]
     enriched = [{**x, "_selection_score": score(x, now)} for x in candidates]
-    enriched.sort(key=lambda x: (-x["_selection_score"]["total"],
-                                 -int(eligible_primary(x)),
+    enriched.sort(key=lambda x: (x["_selection_score"]["total"],
+                                 int(eligible_primary(x)),
                                  str(x.get("published_at") or ""), str(x.get("id") or "")),
-                  reverse=False)
+                  reverse=True)
     chosen = []
     topics = Counter()
     duplicates = 0
@@ -261,7 +261,8 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
 
     output = Path(output_dir)
     made = []
-    if not os.getenv("PULSE_LLM_ENDPOINT") or not os.getenv("PULSE_LLM_MODEL"):
+    # An unattended cloud runner must not attempt unauthenticated paid calls.
+    if not all(os.getenv(k) for k in ("PULSE_LLM_ENDPOINT", "PULSE_LLM_MODEL", "PULSE_LLM_API_KEY")):
         return {"status": "ai_not_configured", "generated": []}
     for manifest_path in sorted(Path(manifests_dir).glob("*.json"))[:limit]:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
