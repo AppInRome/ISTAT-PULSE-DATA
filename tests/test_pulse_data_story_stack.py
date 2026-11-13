@@ -122,7 +122,7 @@ class StackTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "outside_italian"):
                 pipeline(manifest, source, home / "out", ai_mode="none")
 
-    def test_non_llama_model_cannot_masquerade_as_llama(self):
+    def test_retired_worker_keys_never_used_for_new_pipeline(self):
         with tempfile.TemporaryDirectory() as td:
             home = Path(td)
             manifest = home / "manifest.json"
@@ -130,10 +130,13 @@ class StackTests(unittest.TestCase):
             source = home / "official.csv"
             source.write_text(DATA, encoding="utf-8")
             with patch.dict(os.environ, {
-                "PULSE_LLM_API_KEY": "dummy-key", "PULSE_LLM_ENDPOINT":
-                "https://example.test/v1/chat/completions", "PULSE_LLM_MODEL": "gemini"}):
-                with self.assertRaisesRegex(ValueError, "llama_model_required"):
-                    pipeline(manifest, source, home / "out", ai_mode="llama")
+                "PULSE_CF_ACCOUNT_ID": "", "PULSE_CF_AI_TOKEN": "",
+                "PULSE_LLM_API_KEY": "unused-old-key", "PULSE_LLM_ENDPOINT":
+                "https://pulse-tommy-api.example.test/", "PULSE_LLM_MODEL": "gemini"}):
+                with patch("scripts.pulse_editorial_engine_v1.call_model") as call:
+                    result = pipeline(manifest, source, home / "out", ai_mode="llama")
+                    call.assert_not_called()
+            self.assertEqual(result["ai"]["status"], "credentials_absent_not_called")
 
 
 if __name__ == "__main__":
