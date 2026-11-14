@@ -1,12 +1,28 @@
 {
   "schema": "pulse-editorial-frontpage-v1",
-  "generated_at": "2026-11-14T20:01:13Z",
+  "generated_at": "2026-11-14T20:31:24Z",
   "editorial_method": "source_versions_and_verified_material_change_no_ai",
   "featured_article_ids": [],
   "features_new": [],
+  "context_analyses_new": [
+    "PULSE-DATA-BC36EB7D736FD75701CA5F2A",
+    "PULSE-DATA-E51B6C0E305D0B6FBDD4A294",
+    "PULSE-DATA-77B9C2B4EAA98D5F1D4A5562",
+    "PULSE-DATA-4488835E6527D8A3183B0D9D"
+  ],
+  "context_analyses_not_source_news": true,
+  "context_topics": [
+    "AMBIENTE",
+    "ENERGIA",
+    "ISTRUZIONE",
+    "SALUTE"
+  ],
   "briefs": [],
   "revision_review": [],
-  "catalogue_updates_count": 29,
+  "catalogue_updates_count": 24,
+  "new_feature_topics": {},
+  "independent_feature_families_selected": 4,
+  "unpublished_eligible_features_by_topic": {},
   "all_existing_articles_remain_in_archive": true,
   "no_automatic_publication_from_revision": true,
   "source_date_not_inferred_from_observation_period": true,
@@ -14,9 +30,57 @@
     "feature": 65,
     "brief": 45,
     "max_features_per_day": 12,
-    "max_features_per_topic": 2
+    "max_features_per_topic": 2,
+    "max_context_analyses_per_day": 6,
+    "context_min_signal": 27
   },
   "assessments": [
+    {
+      "article_id": "PULSE-DATA-BC36EB7D736FD75701CA5F2A",
+      "topic": "SALUTE",
+      "score": 70,
+      "headline": "Persone con buona salute percepita: i dati di Italia nel 2025",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_20/default/table?lang=en",
+      "parts": {
+        "newness": 16,
+        "signal": 27,
+        "impact": 19,
+        "diversity": 8
+      },
+      "reason": "variazione_di_almeno_1_punto_percentuale",
+      "novelty": "first_seen_by_pulse",
+      "tier": "context",
+      "period_reference": "2025",
+      "source_release_date": "2026-10-20T21:00:00+00:00",
+      "source_release_recent": true,
+      "source_release_proven": false,
+      "series_key": "48cd0c5e8ddfbb3d234648e54be581d0",
+      "editorial_family": "1f19dd8db058b54024b55f8d",
+      "observations_sha256": "054c53a5bd119082405f1e4db22aa91a049b19ed40fce49c626e53088630d95d"
+    },
+    {
+      "article_id": "PULSE-DATA-E51B6C0E305D0B6FBDD4A294",
+      "topic": "ENERGIA",
+      "score": 61,
+      "headline": "Dipendenza dalle importazioni di energia: i dati di Italia nel 2024",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_50/default/table?lang=en",
+      "parts": {
+        "newness": 9,
+        "signal": 27,
+        "impact": 17,
+        "diversity": 8
+      },
+      "reason": "variazione_di_almeno_1_punto_percentuale",
+      "novelty": "first_seen_by_pulse",
+      "tier": "context",
+      "period_reference": "2024",
+      "source_release_date": "2026-07-16T21:00:00+00:00",
+      "source_release_recent": false,
+      "source_release_proven": false,
+      "series_key": "cce05cc50fc643412c16f0b1a0b9d483",
+      "editorial_family": "cdd49f64a71a7792e4f671c4",
+      "observations_sha256": "fbe475de0679b8adcf414f268924fd4f0c62b94799430775ac2e91a0d6ff7cd7"
+    },
     {
       "article_id": "PULSE-DATA-77B9C2B4EAA98D5F1D4A5562",
       "topic": "AMBIENTE",
@@ -31,12 +95,13 @@
       },
       "reason": "variazione_di_almeno_1_punto_percentuale",
       "novelty": "unchanged",
-      "tier": "catalogue",
+      "tier": "context",
       "period_reference": "2024",
       "source_release_date": "2026-10-15T09:00:00+00:00",
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "de94acf94ad87683d910551bc6f8a68b",
+      "editorial_family": "90f413b92880c688014f5c84",
       "observations_sha256": "6678f77901fd94e13a663593a4e4a30cbfd6dacd520c0a17ef9ae3f954e0e343"
     },
     {
@@ -53,12 +118,13 @@
       },
       "reason": "variazione_di_almeno_1_punto_percentuale",
       "novelty": "unchanged",
-      "tier": "catalogue",
+      "tier": "context",
       "period_reference": "2025",
       "source_release_date": "2026-09-15T21:00:00+00:00",
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "7f80f7b50bbdaf3eb69f86093c19d31b",
+      "editorial_family": "795655c7839b2d34f8b87e00",
       "observations_sha256": "fa73d3cee2c75ca9b05b0aa138e7189fec0afff104c054d27a3bfda8cccf7c19"
     },
     {
@@ -75,12 +141,13 @@
       },
       "reason": "variazione_di_almeno_1_punto_percentuale",
       "novelty": "unchanged",
-      "tier": "catalogue",
+      "tier": "context",
       "period_reference": "2025",
       "source_release_date": "2026-10-30T22:00:00+00:00",
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "23f01a512fbbd37ad1a134371975202b",
+      "editorial_family": "641f835699df6a72ae8dae13",
       "observations_sha256": "eb477537444fa2bffc01f31865e9c2ebe673745e2f5a03c0f4b49ffe698feb81"
     },
     {
@@ -103,6 +170,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "ed30e64dd79521ad72808a303407b178",
+      "editorial_family": "af2112afb9466d576fd8b8bd",
       "observations_sha256": "ea8c800d3f10a55709ddbcc00f6b4e45c4a82a5f95bc71b7a438b4da81d26935"
     },
     {
@@ -125,7 +193,31 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "377baadf5ccf4c3a6501acffc05166ab",
+      "editorial_family": "42a8bcf0dc2394a9cbb77431",
       "observations_sha256": "2c0b404f8dc904f3ebf30329ef0c6bcd5b258034dd0d131e712e2377f5602bd9"
+    },
+    {
+      "article_id": "PULSE-DATA-60BBBF18DC37EDBE92FA3B52",
+      "topic": "LAVORO",
+      "score": 51,
+      "headline": "Molise, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
+      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
+      "parts": {
+        "newness": 0,
+        "signal": 35,
+        "impact": 16,
+        "diversity": 0
+      },
+      "reason": "scarto_almeno_25pct_e_10_unita",
+      "novelty": "unchanged",
+      "tier": "catalogue",
+      "period_reference": "2025-12",
+      "source_release_date": null,
+      "source_release_recent": false,
+      "source_release_proven": false,
+      "series_key": "d082499b1f209ea2ebf944be9abe7c7b",
+      "editorial_family": "538cce29eb326b7fad74fe8c",
+      "observations_sha256": "0481ecb71d817e58acfd58a535e0d9cf39151009631ba86911bb2a20bd3ae853"
     },
     {
       "article_id": "PULSE-DATA-DCA2C37215A353A661801461",
@@ -147,6 +239,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "52a46f5ce6b5461c30fed4ea35f6fc6e",
+      "editorial_family": "450ce52b37d43eab78398282",
       "observations_sha256": "27f3ec8ab42364d96cee3a51701f9acee1cdacef5306e3a7fec3546127d9c5a3"
     },
     {
@@ -169,29 +262,54 @@
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "680e626017367d131a62da6fe3ff8202",
+      "editorial_family": "b7ac18a20c92c62d80142773",
       "observations_sha256": "01446bfa6471102d81d55368316cebd7da6f2df1da8ea323078dc3decb7d23db"
     },
     {
-      "article_id": "PULSE-DATA-A0155FB7A8D1CA70FA39ACD1",
-      "topic": "ECONOMIA",
-      "score": 41,
-      "headline": "Inflazione armonizzata per alimentari: i dati di Italia nel 2025-12",
-      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_manr/default/table?lang=en",
+      "article_id": "PULSE-DATA-51EA925AF429566988458218",
+      "topic": "DEMOGRAFIA",
+      "score": 42,
+      "headline": "Nati vivi nell'anno: i dati di Italia nel 2025",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table?lang=en",
       "parts": {
-        "newness": 0,
-        "signal": 16,
-        "impact": 17,
+        "newness": 16,
+        "signal": 0,
+        "impact": 18,
         "diversity": 8
       },
-      "reason": "variazione_di_almeno_mezzo_punto",
-      "novelty": "unchanged",
+      "reason": "segnale_non_sufficiente_o_base_zero",
+      "novelty": "first_seen_by_pulse",
       "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": "2026-02-06T22:00:00+00:00",
-      "source_release_recent": false,
+      "period_reference": "2025",
+      "source_release_date": "2026-10-27T22:00:00+00:00",
+      "source_release_recent": true,
       "source_release_proven": false,
-      "series_key": "63340cd34eabb74bea885ed063f41ddc",
-      "observations_sha256": "13a59a745cdf68e53449fca0656f2b9568668b2af97373707ead60ca55dcd453"
+      "series_key": "b05ae34778c99c3cf98485d8667df172",
+      "editorial_family": "04a87016b0830151838aa5ed",
+      "observations_sha256": "5a12a0b44cd809795a122a122afb1b219e44eeb9fad5764032e0ccd4e37fdf11"
+    },
+    {
+      "article_id": "PULSE-DATA-B7A13410C2E5D992A7F69FB8",
+      "topic": "DEMOGRAFIA",
+      "score": 42,
+      "headline": "Numero medio di figli per donna (fecondità totale): i dati di Italia nel 2024",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table?lang=en",
+      "parts": {
+        "newness": 16,
+        "signal": 0,
+        "impact": 18,
+        "diversity": 8
+      },
+      "reason": "segnale_non_sufficiente_o_base_zero",
+      "novelty": "first_seen_by_pulse",
+      "tier": "catalogue",
+      "period_reference": "2024",
+      "source_release_date": "2026-11-13T22:00:00+00:00",
+      "source_release_recent": true,
+      "source_release_proven": false,
+      "series_key": "9fe5f570b9f39dcaa443a32e46a05c07",
+      "editorial_family": "ed67daa6d737580c46857eac",
+      "observations_sha256": "704b5b80897d1e6c6bc44c9cec674e1ef4b594b3bd98aff77d5d98dae785d758"
     },
     {
       "article_id": "PULSE-DATA-4E18F405E1A68E1D1949D062",
@@ -213,29 +331,8 @@
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "71847eb83f76f0f0922515cb1c3cdd9d",
+      "editorial_family": "17b311d1b19a97d8921be0ef",
       "observations_sha256": "3c07f52acfbf1e4de7275551310272ed05f2957f2feff8afa7d9a4872ce0f09c"
-    },
-    {
-      "article_id": "PULSE-DATA-D77E0E0CC79C6BB056B4CAB8",
-      "topic": "ISTRUZIONE",
-      "score": 41,
-      "headline": "Istruzione terziaria fra le giovani donne: i dati di Italia nel 2025",
-      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_20/default/table?lang=en",
-      "parts": {
-        "newness": 0,
-        "signal": 16,
-        "impact": 17,
-        "diversity": 8
-      },
-      "reason": "variazione_di_almeno_mezzo_punto",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025",
-      "source_release_date": "2026-10-30T22:00:00+00:00",
-      "source_release_recent": true,
-      "source_release_proven": false,
-      "series_key": "7c535055e6d9afc9730896a4ce84c076",
-      "observations_sha256": "ed69cec06b02c1dfe2e8f3c52efe1467e28e0139e07e0c889a2ea1153aa46f17"
     },
     {
       "article_id": "PULSE-DATA-1A5F8270AF009C9F9CEDDBB7",
@@ -257,6 +354,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "1be8bd001250c276a92e7c38f6a014d0",
+      "editorial_family": "8aa5da7ee5c4c1143c67de93",
       "observations_sha256": "337275177748d8f364c738ddcc3b08c507b974d2a6d8bafb640c5c0e71723e63"
     },
     {
@@ -279,6 +377,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "0a3e200757a48f13724a75b309207810",
+      "editorial_family": "cd17d90dae05f3362af034f7",
       "observations_sha256": "47675e12dd74aaa7a4e635035d14ad72d73d734d5b019015d18bc68e4365ae52"
     },
     {
@@ -301,6 +400,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "a001f79ab72d1f3ccc87e473cecee493",
+      "editorial_family": "990f05de42ca21a09827c7a9",
       "observations_sha256": "00e86934f7d09683f4cee89a9db84f1856ce7f15a4ffefd899014e21d76ac31d"
     },
     {
@@ -323,6 +423,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "30bed9eec95f42a95294ca5874196332",
+      "editorial_family": "eadf5b449e506d73daafeaf0",
       "observations_sha256": "e1aff5a83d27528ae3400ed944fb7a5eaed61003603d0ec202d20856a0701915"
     },
     {
@@ -345,6 +446,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "ed189a684a1b6b74c527b0f2710b4e54",
+      "editorial_family": "3cd574101bd8cc7585d4561c",
       "observations_sha256": "352af1634bdb87cb4b0a482a433030a1d07e50b4beea3453a5972e5b5e639f6f"
     },
     {
@@ -367,6 +469,7 @@
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "fc43911da3858472c9164ae0324d120a",
+      "editorial_family": "051989ed808146920f1910e8",
       "observations_sha256": "42b72f2465c6113f17ed4a1b302b5e977ea4d6b76ac4c9ab4053eb273ed9a310"
     },
     {
@@ -389,29 +492,8 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "5a775b06e4071dba88beb2fcb6ee821e",
+      "editorial_family": "3ee9f24e4afe12a46336c780",
       "observations_sha256": "a7b2bea7d6a7464972177bbd1be0f0f6ebe81387766974a7d29a92f477b54fee"
-    },
-    {
-      "article_id": "PULSE-DATA-75043F9F60C1CFFEEECC5FF3",
-      "topic": "SALUTE",
-      "score": 27,
-      "headline": "Speranza di vita delle donne alla nascita: i dati di Italia nel 2024",
-      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_hlye/default/table?lang=en",
-      "parts": {
-        "newness": 0,
-        "signal": 0,
-        "impact": 19,
-        "diversity": 8
-      },
-      "reason": "segnale_non_sufficiente_o_base_zero",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2024",
-      "source_release_date": "2026-07-17T21:00:00+00:00",
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "f2eca02450c7f60e4543e611a1dc2e7d",
-      "observations_sha256": "65cb24f738bbe6dace1ddb50961ee238b2e53ba3aecd8fe13157a45f189e6b87"
     },
     {
       "article_id": "PULSE-DATA-D2E358B115652573CFABDECA",
@@ -433,29 +515,8 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "94e779f809fcefc77deb68997856d550",
+      "editorial_family": "1960e00acc9fc7bfc6719261",
       "observations_sha256": "1a46608de800202f4a5e2c2260022aa23b42f0fbd319697f8c10e718e8879d45"
-    },
-    {
-      "article_id": "PULSE-DATA-84B6DD4FD21E11B4E10E1049",
-      "topic": "SOCIETA",
-      "score": 27,
-      "headline": "Rischio di povertà o esclusione sociale delle donne: i dati di Italia nel 2025",
-      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/tepsr_lm410/default/table?lang=en",
-      "parts": {
-        "newness": 0,
-        "signal": 0,
-        "impact": 17,
-        "diversity": 10
-      },
-      "reason": "scarto_percentuale_piccolo",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025",
-      "source_release_date": "2026-10-20T09:00:00+00:00",
-      "source_release_recent": true,
-      "source_release_proven": false,
-      "series_key": "67e5ffaab534fb7966fe65f7342a8a80",
-      "observations_sha256": "64be8e0345749b1bff28f09267b5f6dfea367c979d320681f02d8507f4ce8088"
     },
     {
       "article_id": "PULSE-DATA-3DBC8EA1C110BFFC0DB8D585",
@@ -477,51 +538,8 @@
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "e3163adfc2937e5a318b6c7f211473a5",
+      "editorial_family": "7e95c82c03f276bd3213591d",
       "observations_sha256": "34988fb245fb2b221d06d8c235e51f1c941bf3dcd74084fdebb910d45e92a9c5"
-    },
-    {
-      "article_id": "PULSE-DATA-CC8926F7DC068B4FDE7F8D06",
-      "topic": "DEMOGRAFIA",
-      "score": 26,
-      "headline": "Popolazione maschile al primo gennaio: i dati di Italia nel 2025",
-      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table?lang=en",
-      "parts": {
-        "newness": 0,
-        "signal": 0,
-        "impact": 18,
-        "diversity": 8
-      },
-      "reason": "segnale_non_sufficiente_o_base_zero",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025",
-      "source_release_date": "2026-11-13T22:00:00+00:00",
-      "source_release_recent": true,
-      "source_release_proven": false,
-      "series_key": "d10e83a29139117b33c75cb47e263355",
-      "observations_sha256": "be53819b71be70f1dab5af404f54f1a6534ee953829bb82bc9ed721d9ea9ac35"
-    },
-    {
-      "article_id": "PULSE-DATA-E7F29E415598C17CE41FF2F1",
-      "topic": "DEMOGRAFIA",
-      "score": 26,
-      "headline": "Popolazione femminile al primo gennaio: i dati di Italia nel 2025",
-      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjan/default/table?lang=en",
-      "parts": {
-        "newness": 0,
-        "signal": 0,
-        "impact": 18,
-        "diversity": 8
-      },
-      "reason": "segnale_non_sufficiente_o_base_zero",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025",
-      "source_release_date": "2026-11-13T22:00:00+00:00",
-      "source_release_recent": true,
-      "source_release_proven": false,
-      "series_key": "4daceff1499c0aaa138bebc60af3c14e",
-      "observations_sha256": "379ee17285245febc63761ae839837bf9c860fee5c06de903cd8ef0ba0e69cea"
     },
     {
       "article_id": "PULSE-DATA-9143383EF6FF52F0BF55EE11",
@@ -543,6 +561,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "0230d3cb6e5d1a16e1d6b1828bef79bb",
+      "editorial_family": "38ab5feda29a9e2fa63f03b7",
       "observations_sha256": "e315109d6b8ff05185ba713278d6960a9cb34c5245c0cb33fd170ff61d792ac5"
     },
     {
@@ -565,6 +584,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "ff9f458d018a7059151460e3a6af1295",
+      "editorial_family": "657b949eb3d3fe0f1c152e25",
       "observations_sha256": "12aeeb333a054f9d15eb708856c8161d41980edeab646ed336424572069d58ff"
     },
     {
@@ -587,6 +607,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "1566c015f3c7952d0a86d246c39210b2",
+      "editorial_family": "daa7bbfd79ae4f08a744b863",
       "observations_sha256": "b16039f29bee1f4267de21a4874df9eddf260f06a7f4474051aaacc79d35937c"
     },
     {
@@ -609,6 +630,7 @@
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "58eb2b9e5b822f1406116f3764c99606",
+      "editorial_family": "24daac2c023eed92e5a89f86",
       "observations_sha256": "c7bc20a3a9904a685305764a678cac9d2bb08d958648a146c2387c28db28c0b5"
     },
     {
@@ -631,6 +653,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "531f33045201247ff18c3043658bd9ba",
+      "editorial_family": "c16eaddc491fcc67aa7d9dac",
       "observations_sha256": "8fdd9a61fa4a4870c7c6f0efbc9cdfb9591d0a690850e8edbc039c194b9f61ea"
     },
     {
@@ -653,6 +676,7 @@
       "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "d0d64341d21c786be94ea39457cd0a81",
+      "editorial_family": "be7a70954d519bf3d120a2ce",
       "observations_sha256": "d66d68ff0d9828ffc5848cc6b6d83b2407c61cce8db6e2eab8336c2e5b71b11a"
     }
   ]

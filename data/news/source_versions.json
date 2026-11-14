@@ -1,6 +1,6 @@
 {
   "schema": "pulse-source-versions-v1",
-  "generated_at": "2026-11-14T19:45:58Z",
+  "generated_at": "2026-11-14T20:31:24Z",
   "series": {
     "0230d3cb6e5d1a16e1d6b1828bef79bb": {
       "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=THS_T&wst_oper=GEN",
@@ -135,6 +135,23 @@
           "period": "2025-12",
           "sha256": "2c0b404f8dc904f3ebf30329ef0c6bcd5b258034dd0d131e712e2377f5602bd9",
           "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "48cd0c5e8ddfbb3d234648e54be581d0": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+      "indicator": "Persone con buona salute percepita",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "054c53a5bd119082405f1e4db22aa91a049b19ed40fce49c626e53088630d95d",
+      "source_bytes_sha256": "304083d163e4d33216eba62d5813d9ed75a5c31885de13460ea9c13468e64f9d",
+      "source_updated_at": "2026-10-20T23:00:00+0200",
+      "last_checked_at": "2026-11-14T20:31:24Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "054c53a5bd119082405f1e4db22aa91a049b19ed40fce49c626e53088630d95d",
+          "first_seen_at": "2026-11-14T20:31:24Z"
         }
       ]
     },
@@ -359,6 +376,23 @@
         }
       ]
     },
+    "9fe5f570b9f39dcaa443a32e46a05c07": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_find?lang=EN&geo=IT&lastTimePeriod=12&freq=A&indic_de=TOTFERRT",
+      "indicator": "Numero medio di figli per donna (fecondità totale)",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "704b5b80897d1e6c6bc44c9cec674e1ef4b594b3bd98aff77d5d98dae785d758",
+      "source_bytes_sha256": "9b967d45e7619b7576d524fd9b52e600bfe0972e3ebf5f309d6917dc4e80b361",
+      "source_updated_at": "2026-11-13T23:00:00+0100",
+      "last_checked_at": "2026-11-14T20:31:24Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "704b5b80897d1e6c6bc44c9cec674e1ef4b594b3bd98aff77d5d98dae785d758",
+          "first_seen_at": "2026-11-14T20:31:24Z"
+        }
+      ]
+    },
     "a001f79ab72d1f3ccc87e473cecee493": {
       "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
       "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
@@ -390,6 +424,40 @@
           "period": "2025-12",
           "sha256": "237e360904e3192c92c17ccf8172a7f70bf1bee0cd3eeef7eceb5012541e74a9",
           "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "b05ae34778c99c3cf98485d8667df172": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_gind?lang=EN&geo=IT&lastTimePeriod=12&freq=A&indic_de=LBIRTH",
+      "indicator": "Nati vivi nell'anno",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "5a12a0b44cd809795a122a122afb1b219e44eeb9fad5764032e0ccd4e37fdf11",
+      "source_bytes_sha256": "b4b19aaf96b361e3cc36d2c695f8173c5dc5483f069d78bd485b12d3aa016443",
+      "source_updated_at": "2026-10-27T23:00:00+0100",
+      "last_checked_at": "2026-11-14T20:31:24Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "5a12a0b44cd809795a122a122afb1b219e44eeb9fad5764032e0ccd4e37fdf11",
+          "first_seen_at": "2026-11-14T20:31:24Z"
+        }
+      ]
+    },
+    "cce05cc50fc643412c16f0b1a0b9d483": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_50?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=PC&siec=TOTAL",
+      "indicator": "Dipendenza dalle importazioni di energia",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "fbe475de0679b8adcf414f268924fd4f0c62b94799430775ac2e91a0d6ff7cd7",
+      "source_bytes_sha256": "a9c9a1f9ccc449dd6fb271d6cacb77677a60260c01de249ababc9180a0b4a3fc",
+      "source_updated_at": "2026-07-16T23:00:00+0200",
+      "last_checked_at": "2026-11-14T20:31:24Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "fbe475de0679b8adcf414f268924fd4f0c62b94799430775ac2e91a0d6ff7cd7",
+          "first_seen_at": "2026-11-14T20:31:24Z"
         }
       ]
     },

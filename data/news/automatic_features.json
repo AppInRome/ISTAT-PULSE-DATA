@@ -1,7 +1,974 @@
 {
   "schema": "pulse-automatic-official-features-v1",
-  "generated_at": "2026-11-14T20:01:13Z",
+  "generated_at": "2026-11-14T20:31:24Z",
   "articles": [
+    {
+      "id": "PULSE-DATA-E51B6C0E305D0B6FBDD4A294",
+      "published_at": "2026-11-14T20:31:24Z",
+      "first_published_at_utc": "2026-11-14T20:31:24Z",
+      "headline": "Dipendenza dalle importazioni di energia: i dati di Italia nel 2024",
+      "summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per dipendenza dalle importazioni di energia riguarda Italia e il periodo 2024. La misura riportata nella serie originale di EUROSTAT è 73,88%, riferita alla popolazione «Importazioni nette di energia rispetto all'energia disponibile». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_title": "Dipendenza dalle importazioni di energia: i dati di Italia nel 2024",
+      "pulse_summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per dipendenza dalle importazioni di energia riguarda Italia e il periodo 2024. La misura riportata nella serie originale di EUROSTAT è 73,88%, riferita alla popolazione «Importazioni nette di energia rispetto all'energia disponibile». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "",
+          "text": "Il confronto utile è con 2023, quando il valore osservato era 75,36%. Nell'ultima osservazione la misura risulta inferiore rispetto a quel riferimento. Lo scarto assoluto è di 1,47 punti percentuali; la differenza è calcolata su osservazioni consecutive della medesima serie. I valori appartengono alla stessa serie e riportano la stessa unità, evitando di mettere insieme misure tratte da popolazioni differenti."
+        },
+        {
+          "heading": "",
+          "text": "Il punto iniziale di questa serie è 2013; il dato allora registrato era 76,74%. Leggere anche l'inizio dell'intervallo aiuta a collocare l'ultima osservazione nell'insieme dei periodi effettivamente documentati. Non si ricostruiscono anni o mesi intermedi quando non compaiono nelle evidenze e non si prolunga automaticamente la tendenza nel futuro."
+        },
+        {
+          "heading": "",
+          "text": "Il tema statistico descritto dal documento è dipendenza dalle importazioni di energia; il gruppo di riferimento è «Importazioni nette di energia rispetto all'energia disponibile» e l'area misurata è Italia. La frequenza indicata dalla fonte è Annuale (Eurostat), mentre l'unità di misura è «%». Queste informazioni sono essenziali per leggere correttamente il confronto: due grandezze con etichette simili non sono intercambiabili se cambiano la definizione, il territorio oppure la popolazione considerata."
+        },
+        {
+          "heading": "",
+          "text": "Il risultato documenta una differenza fra osservazioni, non la spiegazione dei fattori che possono averla prodotta. Per attribuire cause, conseguenze o comportamenti alle persone servirebbero ulteriori informazioni, che questa singola serie non offre. L'interpretazione pubblicata rimane quindi proporzionata alla precisione dei dati e non presenta ipotesi, collegamenti presunti o scenari previsionali come fatti."
+        },
+        {
+          "heading": "",
+          "text": "I valori provengono dalla fonte primaria EUROSTAT, identificata nel collegamento al documento originale disponibile insieme all'articolo. Grafico e tabella sono costruiti con le stesse osservazioni, senza modificare le misure per adattarle al racconto. Ogni confronto numerico può essere ricontrollato sulla serie acquisita; la redazione deve comunque valutare il significato giornalistico del testo prima di autorizzarne la pubblicazione."
+        }
+      ],
+      "topic": "ENERGIA",
+      "territories": [
+        "italia"
+      ],
+      "pulse_score": 0,
+      "patterns": [],
+      "public_source": {
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_50/default/table?lang=en",
+        "domain": "EUROSTAT",
+        "role": "primary_statistical_source",
+        "verification_method": "official_dataset_sha256_and_deterministic_arithmetic_audit",
+        "verification_score": 100
+      },
+      "source_documents": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_50?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=PC&siec=TOTAL",
+          "sha256": "a9c9a1f9ccc449dd6fb271d6cacb77677a60260c01de249ababc9180a0b4a3fc"
+        }
+      ],
+      "verified_series_relevant": [
+        {
+          "indicator": "Dipendenza dalle importazioni di energia",
+          "unit": "%",
+          "verified": true,
+          "territory": "Italia",
+          "population": "Importazioni nette di energia rispetto all'energia disponibile",
+          "extraction_method": "eurostat_jsonstat2_exact_multidimensional_cell",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_50/default/table?lang=en",
+          "observations": [
+            {
+              "period": "2013",
+              "value": 76.736,
+              "raw": "76.736"
+            },
+            {
+              "period": "2014",
+              "value": 75.811,
+              "raw": "75.811"
+            },
+            {
+              "period": "2015",
+              "value": 77.03,
+              "raw": "77.03"
+            },
+            {
+              "period": "2016",
+              "value": 77.653,
+              "raw": "77.653"
+            },
+            {
+              "period": "2017",
+              "value": 76.979,
+              "raw": "76.979"
+            },
+            {
+              "period": "2018",
+              "value": 76.338,
+              "raw": "76.338"
+            },
+            {
+              "period": "2019",
+              "value": 77.484,
+              "raw": "77.484"
+            },
+            {
+              "period": "2020",
+              "value": 73.454,
+              "raw": "73.454"
+            },
+            {
+              "period": "2021",
+              "value": 73.416,
+              "raw": "73.416"
+            },
+            {
+              "period": "2022",
+              "value": 79.49,
+              "raw": "79.49"
+            },
+            {
+              "period": "2023",
+              "value": 75.356,
+              "raw": "75.356"
+            },
+            {
+              "period": "2024",
+              "value": 73.884,
+              "raw": "73.884"
+            }
+          ]
+        }
+      ],
+      "chart_spec": {
+        "data": [
+          {
+            "period": "2013",
+            "value": 76.736
+          },
+          {
+            "period": "2014",
+            "value": 75.811
+          },
+          {
+            "period": "2015",
+            "value": 77.03
+          },
+          {
+            "period": "2016",
+            "value": 77.653
+          },
+          {
+            "period": "2017",
+            "value": 76.979
+          },
+          {
+            "period": "2018",
+            "value": 76.338
+          },
+          {
+            "period": "2019",
+            "value": 77.484
+          },
+          {
+            "period": "2020",
+            "value": 73.454
+          },
+          {
+            "period": "2021",
+            "value": 73.416
+          },
+          {
+            "period": "2022",
+            "value": 79.49
+          },
+          {
+            "period": "2023",
+            "value": 75.356
+          },
+          {
+            "period": "2024",
+            "value": 73.884
+          }
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_50?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=PC&siec=TOTAL",
+        "status": "verified",
+        "title": "Dipendenza dalle importazioni di energia",
+        "type": "line",
+        "unit": "%",
+        "x_axis": "Periodo",
+        "y_axis": "%"
+      },
+      "table_spec": {
+        "headers": [
+          "Periodo",
+          "Dipendenza dalle importazioni di energia (%)"
+        ],
+        "rows": [
+          [
+            "2013",
+            76.736
+          ],
+          [
+            "2014",
+            75.811
+          ],
+          [
+            "2015",
+            77.03
+          ],
+          [
+            "2016",
+            77.653
+          ],
+          [
+            "2017",
+            76.979
+          ],
+          [
+            "2018",
+            76.338
+          ],
+          [
+            "2019",
+            77.484
+          ],
+          [
+            "2020",
+            73.454
+          ],
+          [
+            "2021",
+            73.416
+          ],
+          [
+            "2022",
+            79.49
+          ],
+          [
+            "2023",
+            75.356
+          ],
+          [
+            "2024",
+            73.884
+          ]
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_50?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=PC&siec=TOTAL",
+        "status": "verified"
+      },
+      "editorial_format": "deterministic_source_locked_auto_audited",
+      "editorial_status": "automatically_audited_official_numbers",
+      "publication_tier": "verified_official_context_not_new_release",
+      "publication_status": "published",
+      "editorial_method": "original_pulse_deterministic_from_official_data_no_ai",
+      "byline": "PULSE — approfondimento statistico di contesto",
+      "automatic_review": {
+        "schema": "pulse-automatic-official-features-v1",
+        "passed": true,
+        "audit": "recomputed_against_primary_series",
+        "evidence_sha256": "fc0fbd6eb3f9db5e4c7f761fa76f3f1374598322f783c444e6ea16288b12d281",
+        "original_source_sha256": "a9c9a1f9ccc449dd6fb271d6cacb77677a60260c01de249ababc9180a0b4a3fc",
+        "model_used": false,
+        "human_editorial_approval": false
+      },
+      "period_reference": "2024",
+      "editorial_kind": "verified_context_analysis",
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente."
+    },
+    {
+      "id": "PULSE-DATA-4488835E6527D8A3183B0D9D",
+      "published_at": "2026-11-14T20:31:24Z",
+      "first_published_at_utc": "2026-11-14T20:31:24Z",
+      "headline": "Giovani che abbandonano precocemente istruzione e formazione: i dati di Italia nel 2025",
+      "summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per giovani che abbandonano precocemente istruzione e formazione riguarda Italia e il periodo 2025. La misura riportata nella serie originale di EUROSTAT è 8,2%, riferita alla popolazione «Giovani che non proseguono gli studi o la formazione». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_title": "Giovani che abbandonano precocemente istruzione e formazione: i dati di Italia nel 2025",
+      "pulse_summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per giovani che abbandonano precocemente istruzione e formazione riguarda Italia e il periodo 2025. La misura riportata nella serie originale di EUROSTAT è 8,2%, riferita alla popolazione «Giovani che non proseguono gli studi o la formazione». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "",
+          "text": "Il confronto utile è con 2024, quando il valore osservato era 9,8%. Nell'ultima osservazione la misura risulta inferiore rispetto a quel riferimento. Lo scarto assoluto è di 1,6 punti percentuali; la differenza è calcolata su osservazioni consecutive della medesima serie. I valori appartengono alla stessa serie e riportano la stessa unità, evitando di mettere insieme misure tratte da popolazioni differenti."
+        },
+        {
+          "heading": "",
+          "text": "Il punto iniziale di questa serie è 2015; il dato allora registrato era 14,7%. Leggere anche l'inizio dell'intervallo aiuta a collocare l'ultima osservazione nell'insieme dei periodi effettivamente documentati. Non si ricostruiscono anni o mesi intermedi quando non compaiono nelle evidenze e non si prolunga automaticamente la tendenza nel futuro."
+        },
+        {
+          "heading": "",
+          "text": "Il tema statistico descritto dal documento è giovani che abbandonano precocemente istruzione e formazione; il gruppo di riferimento è «Giovani che non proseguono gli studi o la formazione» e l'area misurata è Italia. La frequenza indicata dalla fonte è Annuale (Eurostat), mentre l'unità di misura è «%». Queste informazioni sono essenziali per leggere correttamente il confronto: due grandezze con etichette simili non sono intercambiabili se cambiano la definizione, il territorio oppure la popolazione considerata."
+        },
+        {
+          "heading": "",
+          "text": "Il risultato documenta una differenza fra osservazioni, non la spiegazione dei fattori che possono averla prodotta. Per attribuire cause, conseguenze o comportamenti alle persone servirebbero ulteriori informazioni, che questa singola serie non offre. L'interpretazione pubblicata rimane quindi proporzionata alla precisione dei dati e non presenta ipotesi, collegamenti presunti o scenari previsionali come fatti."
+        },
+        {
+          "heading": "",
+          "text": "I valori provengono dalla fonte primaria EUROSTAT, identificata nel collegamento al documento originale disponibile insieme all'articolo. Grafico e tabella sono costruiti con le stesse osservazioni, senza modificare le misure per adattarle al racconto. Ogni confronto numerico può essere ricontrollato sulla serie acquisita; la redazione deve comunque valutare il significato giornalistico del testo prima di autorizzarne la pubblicazione."
+        }
+      ],
+      "topic": "ISTRUZIONE",
+      "territories": [
+        "italia"
+      ],
+      "pulse_score": 0,
+      "patterns": [],
+      "public_source": {
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_10/default/table?lang=en",
+        "domain": "EUROSTAT",
+        "role": "primary_statistical_source",
+        "verification_method": "official_dataset_sha256_and_deterministic_arithmetic_audit",
+        "verification_score": 100
+      },
+      "source_documents": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_10?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+          "sha256": "f950f3808b008060c13b4703ec2271dc9b87ebbbe1dbe3b00fe4f51479d21870"
+        }
+      ],
+      "verified_series_relevant": [
+        {
+          "indicator": "Giovani che abbandonano precocemente istruzione e formazione",
+          "unit": "%",
+          "verified": true,
+          "territory": "Italia",
+          "population": "Giovani che non proseguono gli studi o la formazione",
+          "extraction_method": "eurostat_jsonstat2_exact_multidimensional_cell",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_10/default/table?lang=en",
+          "observations": [
+            {
+              "period": "2015",
+              "value": 14.7,
+              "raw": "14.7"
+            },
+            {
+              "period": "2016",
+              "value": 13.8,
+              "raw": "13.8"
+            },
+            {
+              "period": "2017",
+              "value": 14.0,
+              "raw": "14.0"
+            },
+            {
+              "period": "2019",
+              "value": 13.3,
+              "raw": "13.3"
+            },
+            {
+              "period": "2020",
+              "value": 14.2,
+              "raw": "14.2"
+            },
+            {
+              "period": "2022",
+              "value": 11.5,
+              "raw": "11.5"
+            },
+            {
+              "period": "2023",
+              "value": 10.5,
+              "raw": "10.5"
+            },
+            {
+              "period": "2024",
+              "value": 9.8,
+              "raw": "9.8"
+            },
+            {
+              "period": "2025",
+              "value": 8.2,
+              "raw": "8.2"
+            }
+          ]
+        }
+      ],
+      "chart_spec": {
+        "data": [
+          {
+            "period": "2015",
+            "value": 14.7
+          },
+          {
+            "period": "2016",
+            "value": 13.8
+          },
+          {
+            "period": "2017",
+            "value": 14.0
+          },
+          {
+            "period": "2019",
+            "value": 13.3
+          },
+          {
+            "period": "2020",
+            "value": 14.2
+          },
+          {
+            "period": "2022",
+            "value": 11.5
+          },
+          {
+            "period": "2023",
+            "value": 10.5
+          },
+          {
+            "period": "2024",
+            "value": 9.8
+          },
+          {
+            "period": "2025",
+            "value": 8.2
+          }
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_10?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+        "status": "verified",
+        "title": "Giovani che abbandonano precocemente istruzione e formazione",
+        "type": "line",
+        "unit": "%",
+        "x_axis": "Periodo",
+        "y_axis": "%"
+      },
+      "table_spec": {
+        "headers": [
+          "Periodo",
+          "Giovani che abbandonano precocemente istruzione e formazione (%)"
+        ],
+        "rows": [
+          [
+            "2015",
+            14.7
+          ],
+          [
+            "2016",
+            13.8
+          ],
+          [
+            "2017",
+            14.0
+          ],
+          [
+            "2019",
+            13.3
+          ],
+          [
+            "2020",
+            14.2
+          ],
+          [
+            "2022",
+            11.5
+          ],
+          [
+            "2023",
+            10.5
+          ],
+          [
+            "2024",
+            9.8
+          ],
+          [
+            "2025",
+            8.2
+          ]
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_10?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+        "status": "verified"
+      },
+      "editorial_format": "deterministic_source_locked_auto_audited",
+      "editorial_status": "automatically_audited_official_numbers",
+      "publication_tier": "verified_official_context_not_new_release",
+      "publication_status": "published",
+      "editorial_method": "original_pulse_deterministic_from_official_data_no_ai",
+      "byline": "PULSE — approfondimento statistico di contesto",
+      "automatic_review": {
+        "schema": "pulse-automatic-official-features-v1",
+        "passed": true,
+        "audit": "recomputed_against_primary_series",
+        "evidence_sha256": "592c04715b3c457766f5a07082290ce66fbea3a2c57cc03d2e9cc847b6519d83",
+        "original_source_sha256": "f950f3808b008060c13b4703ec2271dc9b87ebbbe1dbe3b00fe4f51479d21870",
+        "model_used": false,
+        "human_editorial_approval": false
+      },
+      "period_reference": "2025",
+      "editorial_kind": "verified_context_analysis",
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente."
+    },
+    {
+      "id": "PULSE-DATA-BC36EB7D736FD75701CA5F2A",
+      "published_at": "2026-11-14T20:31:24Z",
+      "first_published_at_utc": "2026-11-14T20:31:24Z",
+      "headline": "Persone con buona salute percepita: i dati di Italia nel 2025",
+      "summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per persone con buona salute percepita riguarda Italia e il periodo 2025. La misura riportata nella serie originale di EUROSTAT è 73,7%, riferita alla popolazione «Persone che dichiarano buona o molto buona salute». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_title": "Persone con buona salute percepita: i dati di Italia nel 2025",
+      "pulse_summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per persone con buona salute percepita riguarda Italia e il periodo 2025. La misura riportata nella serie originale di EUROSTAT è 73,7%, riferita alla popolazione «Persone che dichiarano buona o molto buona salute». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "",
+          "text": "Il confronto utile è con 2024, quando il valore osservato era 75,5%. Nell'ultima osservazione la misura risulta inferiore rispetto a quel riferimento. Lo scarto assoluto è di 1,8 punti percentuali; la differenza è calcolata su osservazioni consecutive della medesima serie. I valori appartengono alla stessa serie e riportano la stessa unità, evitando di mettere insieme misure tratte da popolazioni differenti."
+        },
+        {
+          "heading": "",
+          "text": "Il punto iniziale di questa serie è 2014; il dato allora registrato era 68%. Leggere anche l'inizio dell'intervallo aiuta a collocare l'ultima osservazione nell'insieme dei periodi effettivamente documentati. Non si ricostruiscono anni o mesi intermedi quando non compaiono nelle evidenze e non si prolunga automaticamente la tendenza nel futuro."
+        },
+        {
+          "heading": "",
+          "text": "Il tema statistico descritto dal documento è persone con buona salute percepita; il gruppo di riferimento è «Persone che dichiarano buona o molto buona salute» e l'area misurata è Italia. La frequenza indicata dalla fonte è Annuale (Eurostat), mentre l'unità di misura è «%». Queste informazioni sono essenziali per leggere correttamente il confronto: due grandezze con etichette simili non sono intercambiabili se cambiano la definizione, il territorio oppure la popolazione considerata."
+        },
+        {
+          "heading": "",
+          "text": "Il risultato documenta una differenza fra osservazioni, non la spiegazione dei fattori che possono averla prodotta. Per attribuire cause, conseguenze o comportamenti alle persone servirebbero ulteriori informazioni, che questa singola serie non offre. L'interpretazione pubblicata rimane quindi proporzionata alla precisione dei dati e non presenta ipotesi, collegamenti presunti o scenari previsionali come fatti."
+        },
+        {
+          "heading": "",
+          "text": "I valori provengono dalla fonte primaria EUROSTAT, identificata nel collegamento al documento originale disponibile insieme all'articolo. Grafico e tabella sono costruiti con le stesse osservazioni, senza modificare le misure per adattarle al racconto. Ogni confronto numerico può essere ricontrollato sulla serie acquisita; la redazione deve comunque valutare il significato giornalistico del testo prima di autorizzarne la pubblicazione."
+        }
+      ],
+      "topic": "SALUTE",
+      "territories": [
+        "italia"
+      ],
+      "pulse_score": 0,
+      "patterns": [],
+      "public_source": {
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_20/default/table?lang=en",
+        "domain": "EUROSTAT",
+        "role": "primary_statistical_source",
+        "verification_method": "official_dataset_sha256_and_deterministic_arithmetic_audit",
+        "verification_score": 100
+      },
+      "source_documents": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+          "sha256": "304083d163e4d33216eba62d5813d9ed75a5c31885de13460ea9c13468e64f9d"
+        }
+      ],
+      "verified_series_relevant": [
+        {
+          "indicator": "Persone con buona salute percepita",
+          "unit": "%",
+          "verified": true,
+          "territory": "Italia",
+          "population": "Persone che dichiarano buona o molto buona salute",
+          "extraction_method": "eurostat_jsonstat2_exact_multidimensional_cell",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_20/default/table?lang=en",
+          "observations": [
+            {
+              "period": "2014",
+              "value": 68.0,
+              "raw": "68.0"
+            },
+            {
+              "period": "2015",
+              "value": 65.8,
+              "raw": "65.8"
+            },
+            {
+              "period": "2016",
+              "value": 70.9,
+              "raw": "70.9"
+            },
+            {
+              "period": "2017",
+              "value": 77.0,
+              "raw": "77.0"
+            },
+            {
+              "period": "2018",
+              "value": 73.3,
+              "raw": "73.3"
+            },
+            {
+              "period": "2019",
+              "value": 72.9,
+              "raw": "72.9"
+            },
+            {
+              "period": "2021",
+              "value": 73.6,
+              "raw": "73.6"
+            },
+            {
+              "period": "2022",
+              "value": 72.9,
+              "raw": "72.9"
+            },
+            {
+              "period": "2023",
+              "value": 73.9,
+              "raw": "73.9"
+            },
+            {
+              "period": "2024",
+              "value": 75.5,
+              "raw": "75.5"
+            },
+            {
+              "period": "2025",
+              "value": 73.7,
+              "raw": "73.7"
+            }
+          ]
+        }
+      ],
+      "chart_spec": {
+        "data": [
+          {
+            "period": "2014",
+            "value": 68.0
+          },
+          {
+            "period": "2015",
+            "value": 65.8
+          },
+          {
+            "period": "2016",
+            "value": 70.9
+          },
+          {
+            "period": "2017",
+            "value": 77.0
+          },
+          {
+            "period": "2018",
+            "value": 73.3
+          },
+          {
+            "period": "2019",
+            "value": 72.9
+          },
+          {
+            "period": "2021",
+            "value": 73.6
+          },
+          {
+            "period": "2022",
+            "value": 72.9
+          },
+          {
+            "period": "2023",
+            "value": 73.9
+          },
+          {
+            "period": "2024",
+            "value": 75.5
+          },
+          {
+            "period": "2025",
+            "value": 73.7
+          }
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+        "status": "verified",
+        "title": "Persone con buona salute percepita",
+        "type": "line",
+        "unit": "%",
+        "x_axis": "Periodo",
+        "y_axis": "%"
+      },
+      "table_spec": {
+        "headers": [
+          "Periodo",
+          "Persone con buona salute percepita (%)"
+        ],
+        "rows": [
+          [
+            "2014",
+            68.0
+          ],
+          [
+            "2015",
+            65.8
+          ],
+          [
+            "2016",
+            70.9
+          ],
+          [
+            "2017",
+            77.0
+          ],
+          [
+            "2018",
+            73.3
+          ],
+          [
+            "2019",
+            72.9
+          ],
+          [
+            "2021",
+            73.6
+          ],
+          [
+            "2022",
+            72.9
+          ],
+          [
+            "2023",
+            73.9
+          ],
+          [
+            "2024",
+            75.5
+          ],
+          [
+            "2025",
+            73.7
+          ]
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+        "status": "verified"
+      },
+      "editorial_format": "deterministic_source_locked_auto_audited",
+      "editorial_status": "automatically_audited_official_numbers",
+      "publication_tier": "verified_official_context_not_new_release",
+      "publication_status": "published",
+      "editorial_method": "original_pulse_deterministic_from_official_data_no_ai",
+      "byline": "PULSE — approfondimento statistico di contesto",
+      "automatic_review": {
+        "schema": "pulse-automatic-official-features-v1",
+        "passed": true,
+        "audit": "recomputed_against_primary_series",
+        "evidence_sha256": "26eba272940eec48fa50a4c375c3463bc2087f1e0b5c141160c204793fa766e1",
+        "original_source_sha256": "304083d163e4d33216eba62d5813d9ed75a5c31885de13460ea9c13468e64f9d",
+        "model_used": false,
+        "human_editorial_approval": false
+      },
+      "period_reference": "2025",
+      "editorial_kind": "verified_context_analysis",
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente."
+    },
+    {
+      "id": "PULSE-DATA-77B9C2B4EAA98D5F1D4A5562",
+      "published_at": "2026-11-14T20:31:24Z",
+      "first_published_at_utc": "2026-11-14T20:31:24Z",
+      "headline": "Tasso di riciclo dei rifiuti urbani: i dati di Italia nel 2024",
+      "summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per tasso di riciclo dei rifiuti urbani riguarda Italia e il periodo 2024. La misura riportata nella serie originale di EUROSTAT è 52,3%, riferita alla popolazione «Rifiuti urbani avviati a riciclo sul totale generato». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_title": "Tasso di riciclo dei rifiuti urbani: i dati di Italia nel 2024",
+      "pulse_summary": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente. Il dato più recente disponibile per tasso di riciclo dei rifiuti urbani riguarda Italia e il periodo 2024. La misura riportata nella serie originale di EUROSTAT è 52,3%, riferita alla popolazione «Rifiuti urbani avviati a riciclo sul totale generato». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "",
+          "text": "Il confronto utile è con 2023, quando il valore osservato era 50,8%. Nell'ultima osservazione la misura risulta superiore rispetto a quel riferimento. Lo scarto assoluto è di 1,5 punti percentuali; la differenza è calcolata su osservazioni consecutive della medesima serie. I valori appartengono alla stessa serie e riportano la stessa unità, evitando di mettere insieme misure tratte da popolazioni differenti."
+        },
+        {
+          "heading": "",
+          "text": "Il punto iniziale di questa serie è 2013; il dato allora registrato era 39,4%. Leggere anche l'inizio dell'intervallo aiuta a collocare l'ultima osservazione nell'insieme dei periodi effettivamente documentati. Non si ricostruiscono anni o mesi intermedi quando non compaiono nelle evidenze e non si prolunga automaticamente la tendenza nel futuro."
+        },
+        {
+          "heading": "",
+          "text": "Il tema statistico descritto dal documento è tasso di riciclo dei rifiuti urbani; il gruppo di riferimento è «Rifiuti urbani avviati a riciclo sul totale generato» e l'area misurata è Italia. La frequenza indicata dalla fonte è Annuale (Eurostat), mentre l'unità di misura è «%». Queste informazioni sono essenziali per leggere correttamente il confronto: due grandezze con etichette simili non sono intercambiabili se cambiano la definizione, il territorio oppure la popolazione considerata."
+        },
+        {
+          "heading": "",
+          "text": "Il risultato documenta una differenza fra osservazioni, non la spiegazione dei fattori che possono averla prodotta. Per attribuire cause, conseguenze o comportamenti alle persone servirebbero ulteriori informazioni, che questa singola serie non offre. L'interpretazione pubblicata rimane quindi proporzionata alla precisione dei dati e non presenta ipotesi, collegamenti presunti o scenari previsionali come fatti."
+        },
+        {
+          "heading": "",
+          "text": "I valori provengono dalla fonte primaria EUROSTAT, identificata nel collegamento al documento originale disponibile insieme all'articolo. Grafico e tabella sono costruiti con le stesse osservazioni, senza modificare le misure per adattarle al racconto. Ogni confronto numerico può essere ricontrollato sulla serie acquisita; la redazione deve comunque valutare il significato giornalistico del testo prima di autorizzarne la pubblicazione."
+        }
+      ],
+      "topic": "AMBIENTE",
+      "territories": [
+        "italia"
+      ],
+      "pulse_score": 0,
+      "patterns": [],
+      "public_source": {
+        "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_60/default/table?lang=en",
+        "domain": "EUROSTAT",
+        "role": "primary_statistical_source",
+        "verification_method": "official_dataset_sha256_and_deterministic_arithmetic_audit",
+        "verification_score": 100
+      },
+      "source_documents": [
+        {
+          "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?lang=EN&geo=IT&lastTimePeriod=12",
+          "sha256": "5a3ba34c2362e5e06f0b3f3e463d8ff1d791c1c8fde41f9e16aa0ee50ed8d1af"
+        }
+      ],
+      "verified_series_relevant": [
+        {
+          "indicator": "Tasso di riciclo dei rifiuti urbani",
+          "unit": "%",
+          "verified": true,
+          "territory": "Italia",
+          "population": "Rifiuti urbani avviati a riciclo sul totale generato",
+          "extraction_method": "eurostat_jsonstat2_exact_multidimensional_cell",
+          "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_60/default/table?lang=en",
+          "observations": [
+            {
+              "period": "2013",
+              "value": 39.4,
+              "raw": "39.4"
+            },
+            {
+              "period": "2014",
+              "value": 41.6,
+              "raw": "41.6"
+            },
+            {
+              "period": "2016",
+              "value": 45.9,
+              "raw": "45.9"
+            },
+            {
+              "period": "2017",
+              "value": 47.8,
+              "raw": "47.8"
+            },
+            {
+              "period": "2018",
+              "value": 49.8,
+              "raw": "49.8"
+            },
+            {
+              "period": "2019",
+              "value": 51.4,
+              "raw": "51.4"
+            },
+            {
+              "period": "2020",
+              "value": 51.4,
+              "raw": "51.4"
+            },
+            {
+              "period": "2021",
+              "value": 51.9,
+              "raw": "51.9"
+            },
+            {
+              "period": "2022",
+              "value": 53.3,
+              "raw": "53.3"
+            },
+            {
+              "period": "2023",
+              "value": 50.8,
+              "raw": "50.8"
+            },
+            {
+              "period": "2024",
+              "value": 52.3,
+              "raw": "52.3"
+            }
+          ]
+        }
+      ],
+      "chart_spec": {
+        "data": [
+          {
+            "period": "2013",
+            "value": 39.4
+          },
+          {
+            "period": "2014",
+            "value": 41.6
+          },
+          {
+            "period": "2016",
+            "value": 45.9
+          },
+          {
+            "period": "2017",
+            "value": 47.8
+          },
+          {
+            "period": "2018",
+            "value": 49.8
+          },
+          {
+            "period": "2019",
+            "value": 51.4
+          },
+          {
+            "period": "2020",
+            "value": 51.4
+          },
+          {
+            "period": "2021",
+            "value": 51.9
+          },
+          {
+            "period": "2022",
+            "value": 53.3
+          },
+          {
+            "period": "2023",
+            "value": 50.8
+          },
+          {
+            "period": "2024",
+            "value": 52.3
+          }
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?lang=EN&geo=IT&lastTimePeriod=12",
+        "status": "verified",
+        "title": "Tasso di riciclo dei rifiuti urbani",
+        "type": "line",
+        "unit": "%",
+        "x_axis": "Periodo",
+        "y_axis": "%"
+      },
+      "table_spec": {
+        "headers": [
+          "Periodo",
+          "Tasso di riciclo dei rifiuti urbani (%)"
+        ],
+        "rows": [
+          [
+            "2013",
+            39.4
+          ],
+          [
+            "2014",
+            41.6
+          ],
+          [
+            "2016",
+            45.9
+          ],
+          [
+            "2017",
+            47.8
+          ],
+          [
+            "2018",
+            49.8
+          ],
+          [
+            "2019",
+            51.4
+          ],
+          [
+            "2020",
+            51.4
+          ],
+          [
+            "2021",
+            51.9
+          ],
+          [
+            "2022",
+            53.3
+          ],
+          [
+            "2023",
+            50.8
+          ],
+          [
+            "2024",
+            52.3
+          ]
+        ],
+        "source_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?lang=EN&geo=IT&lastTimePeriod=12",
+        "status": "verified"
+      },
+      "editorial_format": "deterministic_source_locked_auto_audited",
+      "editorial_status": "automatically_audited_official_numbers",
+      "publication_tier": "verified_official_context_not_new_release",
+      "publication_status": "published",
+      "editorial_method": "original_pulse_deterministic_from_official_data_no_ai",
+      "byline": "PULSE — approfondimento statistico di contesto",
+      "automatic_review": {
+        "schema": "pulse-automatic-official-features-v1",
+        "passed": true,
+        "audit": "recomputed_against_primary_series",
+        "evidence_sha256": "021d43b05ff745cf620e09cfd34f1ac2931cbcb15c53ef11714bfef9429b27a7",
+        "original_source_sha256": "5a3ba34c2362e5e06f0b3f3e463d8ff1d791c1c8fde41f9e16aa0ee50ed8d1af",
+        "model_used": false,
+        "human_editorial_approval": false
+      },
+      "period_reference": "2024",
+      "editorial_kind": "verified_context_analysis",
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente."
+    },
     {
       "id": "PULSE-DATA-48EB098BBB6111E2496CB338",
       "published_at": "2026-11-14T18:33:54Z",

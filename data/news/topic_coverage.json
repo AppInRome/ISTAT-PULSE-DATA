@@ -2,40 +2,42 @@
   "schema": "pulse-topic-coverage-v1",
   "measured_from": "verified_source_versions_and_editorial_assessments",
   "not_a_claim_of_complete_subject_coverage": true,
-  "source_checked_at": "2026-11-14T20:01:13Z",
+  "source_checked_at": "2026-11-14T20:31:24Z",
   "target_total": 40,
-  "verified_independent_families_total": 15,
+  "verified_independent_families_total": 18,
   "all_targets_met": false,
   "topics": {
     "ECONOMIA": {
       "target_independent_indicator_families": 5,
-      "independent_indicator_families_verified": 3,
-      "verified_series_or_subgroups": 3,
+      "independent_indicator_families_verified": 2,
+      "verified_series_or_subgroups": 2,
       "published_articles_in_archive": 1,
-      "missing_to_target": 2,
+      "missing_to_target": 3,
       "independent_measure_examples": [
-        "Inflazione armonizzata per alimentari",
         "Prodotto interno lordo a prezzi correnti",
         "Variazione annuale dei prezzi al consumo armonizzati"
       ]
     },
     "DEMOGRAFIA": {
       "target_independent_indicator_families": 5,
-      "independent_indicator_families_verified": 1,
+      "independent_indicator_families_verified": 3,
       "verified_series_or_subgroups": 3,
       "published_articles_in_archive": 1,
-      "missing_to_target": 4,
+      "missing_to_target": 2,
       "independent_measure_examples": [
+        "Nati vivi nell'anno",
+        "Numero medio di figli per donna (fecondità totale)",
         "Popolazione al primo gennaio"
       ]
     },
     "SALUTE": {
       "target_independent_indicator_families": 5,
-      "independent_indicator_families_verified": 2,
+      "independent_indicator_families_verified": 3,
       "verified_series_or_subgroups": 3,
-      "published_articles_in_archive": 1,
-      "missing_to_target": 3,
+      "published_articles_in_archive": 2,
+      "missing_to_target": 2,
       "independent_measure_examples": [
+        "Persone con buona salute percepita",
         "Speranza di vita alla nascita",
         "Speranza di vita in buona salute alla nascita"
       ]
@@ -43,12 +45,12 @@
     "ISTRUZIONE": {
       "target_independent_indicator_families": 5,
       "independent_indicator_families_verified": 2,
-      "verified_series_or_subgroups": 3,
-      "published_articles_in_archive": 1,
+      "verified_series_or_subgroups": 2,
+      "published_articles_in_archive": 2,
       "missing_to_target": 3,
       "independent_measure_examples": [
         "Giovani che abbandonano precocemente istruzione e formazione",
-        "Istruzione terziaria fra le giovani donne"
+        "Quota di giovani adulti con istruzione terziaria"
       ]
     },
     "CASA": {
@@ -65,7 +67,7 @@
       "target_independent_indicator_families": 5,
       "independent_indicator_families_verified": 3,
       "verified_series_or_subgroups": 3,
-      "published_articles_in_archive": 1,
+      "published_articles_in_archive": 2,
       "missing_to_target": 2,
       "independent_measure_examples": [
         "Rifiuti urbani prodotti per abitante",
@@ -75,11 +77,12 @@
     },
     "ENERGIA": {
       "target_independent_indicator_families": 5,
-      "independent_indicator_families_verified": 2,
-      "verified_series_or_subgroups": 2,
-      "published_articles_in_archive": 1,
-      "missing_to_target": 3,
+      "independent_indicator_families_verified": 3,
+      "verified_series_or_subgroups": 3,
+      "published_articles_in_archive": 2,
+      "missing_to_target": 2,
       "independent_measure_examples": [
+        "Dipendenza dalle importazioni di energia",
         "Produttività energetica",
         "Quota di energia da fonti rinnovabili"
       ]
@@ -87,7 +90,7 @@
     "LAVORO": {
       "target_independent_indicator_families": 5,
       "independent_indicator_families_verified": 1,
-      "verified_series_or_subgroups": 9,
+      "verified_series_or_subgroups": 10,
       "published_articles_in_archive": 27,
       "missing_to_target": 4,
       "independent_measure_examples": [
