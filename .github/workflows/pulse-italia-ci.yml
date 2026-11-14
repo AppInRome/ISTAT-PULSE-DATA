@@ -70,3 +70,31 @@ jobs:
             --data2story-root "$RUNNER_TEMP/data2story-skill" \
             --ai none
           python -c 'import json,os,pathlib; r=json.load(open(pathlib.Path(os.environ["RUNNER_TEMP"])/"pulse-data-story"/"pipeline_status.json")); print(r); assert all(x["status"] == "completed" for x in r["components"].values()); assert r["publish"] is False'
+
+  live-official-source-probe:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install existing PULSE SDMX registry dependencies
+        run: |
+          python -m pip install "numpy>=1.24,<3" "pandas>=2,<3"
+      - name: Fetch real ISTAT and INPS sources (no AI, no publication)
+        run: |
+          python -m scripts.pulse_italia_auto_pipeline \
+            --output-dir "$RUNNER_TEMP/pulse-official-live" \
+            --max-sources 2 --no-ai
+          python -c 'import os,json,pathlib; p=pathlib.Path(os.environ["RUNNER_TEMP"])/"pulse-official-live"/"pipeline_report.json"; r=json.loads(p.read_text());print(json.dumps({"candidate_articles":r["candidate_articles"],"sources_considered":r["official_discovery"]["sources_considered"]},ensure_ascii=False,indent=2))'
+      - name: Keep official-data probe report for diagnosis
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pulse-italia-official-live-probe
+          path: ${{ runner.temp }}/pulse-official-live/
+          retention-days: 4
+          if-no-files-found: warn
