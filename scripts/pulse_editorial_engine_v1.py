@@ -305,7 +305,9 @@ def publish_article(draft, evidence, approval):
                             # exact-host provenance gate. The exact dataset URL is
                             # preserved separately in source_documents/chart_spec.
                             "source_url":evidence["source_url"],
-                            "extraction_method":"exact_classification_long_format_row"}],
+                            "extraction_method":("sdmx_xml_explicit_series_dimensions"
+                                if evidence["extraction_method"].startswith("sdmx_")
+                                else "exact_classification_long_format_row")}],
         "chart_spec":chart,
         "table_spec":{"status":"verified","source_url":evidence["dataset_url"],
                       "headers":["Periodo",series["indicator"]],
