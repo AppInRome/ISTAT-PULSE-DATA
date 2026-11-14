@@ -95,6 +95,41 @@ class ArchitectureIntegrationTests(unittest.TestCase):
             self.assertIn("independent_analytics_incomplete",
                           report["excluded"][0]["reasons"])
 
+    def test_deterministic_fallback_recovers_valid_series_without_faking_dstories(self):
+        e=fixture()
+        with TemporaryDirectory() as td:
+            root=Path(td)
+            folder=root/"in"/"fallback"
+            research_bundle(folder,e)
+            review=json.loads((folder/"review_required.json").read_text())
+            review["data_components"]["dstory"]={
+                "status":"verified_fallback",
+                "chart_engine":"pulse_italia_chart_analytics.calculate",
+                "external_cli_completed":False,
+            }
+            (folder/"review_required.json").write_text(json.dumps(review))
+            report=architecture.prepare(root/"in",root/"out")
+            self.assertEqual(report["briefs_prepared_for_ai"],1)
+            brief=json.loads(next((root/"out"/"briefs").glob("*.json")).read_text())
+            self.assertIn("PULSE deterministic",brief["visualization_engine"])
+
+    def test_invalid_fallback_metadata_is_not_trusted(self):
+        e=fixture()
+        with TemporaryDirectory() as td:
+            root=Path(td)
+            folder=root/"in"/"forged"
+            research_bundle(folder,e)
+            review=json.loads((folder/"review_required.json").read_text())
+            review["data_components"]["dstory"]={
+                "status":"verified_fallback",
+                "chart_engine":"unknown_external_renderer"
+            }
+            (folder/"review_required.json").write_text(json.dumps(review))
+            report=architecture.prepare(root/"in",root/"out")
+            self.assertEqual(report["briefs_prepared_for_ai"],0)
+            self.assertIn("invalid_deterministic_graph_fallback",
+                          report["excluded"][0]["reasons"])
+
     def test_duplicate_source_story_does_not_fill_30_quota(self):
         e=fixture()
         with TemporaryDirectory() as td:
@@ -107,6 +142,27 @@ class ArchitectureIntegrationTests(unittest.TestCase):
             self.assertTrue(any("duplicate_statistical_story" in x["reasons"]
                                 for x in report["excluded"]))
 
+
+class VerifiedChartFallbackTests(unittest.TestCase):
+    def test_external_renderer_failure_keeps_exact_source_graph_and_reports_truth(self):
+        e=fixture()
+        with TemporaryDirectory() as td, \
+             patch.object(pipeline.storytelling,"run_data_analyst",
+                          return_value={"status":"completed"}), \
+             patch.object(pipeline.storytelling,"run_dstory",
+                          side_effect=RuntimeError("external renderer cannot handle series")), \
+             patch.object(pipeline.storytelling,"source_trace",
+                          return_value=Path(td)/"trace"), \
+             patch.object(pipeline.storytelling,"run_data2story_inspector",
+                          return_value={"status":"completed"}):
+            components=pipeline.run_data_tools(e,Path(td),"mock-analyst","mock-dstory","mock-skill")
+            dstory=components["dstory"]
+            self.assertEqual(dstory["status"],"verified_fallback")
+            self.assertFalse(dstory["external_cli_completed"])
+            self.assertEqual(dstory["original_external_status"],"failed")
+            self.assertEqual(dstory["verified_original_observations"],
+                             len(e["series"]["observations"]))
+            self.assertIn("original", dstory["graph_views"])
 
 class ProviderTests(unittest.TestCase):
     def test_mistral_is_optional_and_does_not_look_for_cloudflare_credentials(self):
@@ -134,9 +190,9 @@ class ProviderTests(unittest.TestCase):
             "PULSE_AI_PROVIDER":"mistral", "PULSE_MISTRAL_API_KEY":"FAKE-KEY",
         }), TemporaryDirectory() as td, \
              patch.object(pipeline, "run_data_tools", return_value={
-                 "analyst":{"status":"completed"},
+                 "data_analyst":{"status":"completed"},
                  "dstory":{"status":"completed"},
-                 "inspector":{"status":"completed"},
+                 "data2story_inspector":{"status":"completed"},
              }), \
              patch.object(pipeline.engine, "call_model", return_value={
                  "title":"Esempio di verifica di una serie italiana",
