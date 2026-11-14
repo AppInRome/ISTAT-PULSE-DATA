@@ -162,6 +162,13 @@ def publish(review_root, output_file, now=None):
         if item["id"] not in accepted:
             accepted[item["id"]] = item
             added += 1
+    # Do NOT change the generation timestamp or create a new Git commit
+    # when the source series and the published article IDs are unchanged.
+    # Otherwise a daily noop races with the radar or unrelated PR merges.
+    if added == 0 and output_file.exists():
+        return {"research_checked":checked,"rejected":rejected,
+                "published_new":0,"persisted_in_mobile_feed":len(previous),
+                "ai_calls":0,"source_facts_required":True,"status":"unchanged"}
     final = sorted(accepted.values(),key=lambda x:x["published_at"],reverse=True)
     if len(final) > MAX_FEED_ENTRIES:
         # Feed is bounded for mobile. Historical published entries are retained
