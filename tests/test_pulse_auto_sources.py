@@ -37,7 +37,7 @@ class AutoSourcesTests(unittest.TestCase):
                 '<a href="https://www.istat.it.evil.invalid/dati.csv">malevolo</a>'
                 '<a href="https://www.inps.it/file.csv">altro ente</a>').encode()
         out = attachments(html,SOURCE)
-        self.assertEqual(out, ["https://www.istat.it/data.csv"])
+        self.assertEqual(out, ["https://www.istat.it/comunicato-stampa/data.csv"])
 
     def test_realistic_csv_infers_manifest_and_original_hash(self):
         results = detect_manifests(SOURCE, FILE, DATA.encode())
