@@ -53,6 +53,55 @@ class AutomaticFilePipelineTests(TestCase):
             )
             self.assertEqual(len(preview["chart_analyses"]["views"]), 6)
 
+    def test_workflow_calls_llama_and_saves_audited_article_for_review(self):
+        # The fake model is deliberately local: this tests wiring and review
+        # bundle creation, never consumes Workers AI credit.
+        evidence, _ = self.fixture_evidence()
+        proposal = {
+            "title": "Esempio di analisi di una serie statistica ufficiale",
+            "lead": "Questa è una verifica tecnica del flusso di creazione delle notizie da dati statistici ufficiali italiani, senza alcuna pubblicazione.",
+            "paragraphs": ["Testo di prova per la pipeline."] * 4,
+        }
+        accepted = {"passed": True, "issues": []}
+        with tempfile.TemporaryDirectory() as td, \
+             patch("scripts.pulse_italia_auto_pipeline.configure_environment", return_value=True), \
+             patch("scripts.pulse_italia_auto_pipeline.engine.call_model", return_value=proposal) as model, \
+             patch("scripts.pulse_italia_auto_pipeline.audit.audit", return_value=accepted), \
+             patch("scripts.pulse_italia_auto_pipeline.run_data_tools", return_value={
+                 "data_analyst": {"status": "completed"},
+                 "dstory": {"status": "completed"},
+                 "data2story_inspector": {"status": "completed"},
+             }):
+            report = run_pipeline(
+                td, discovery_fn=lambda: ([evidence], {"sources_considered": []}),
+                ai_enabled=True,
+            )
+            model.assert_called_once()
+            self.assertTrue(report["llama_configured"])
+            self.assertEqual(report["llama_attempts"], 1)
+            self.assertEqual(report["llama_audited_drafts"], 1)
+            folder = Path(td) / report["results"][0]["id"]
+            self.assertTrue((folder / "llama_draft.json").is_file())
+            self.assertFalse((folder / "approval.json").exists())
+            preview = json.loads((folder / "preview.json").read_text())
+            self.assertEqual(len(preview["pulse_article_body"]), 4)
+            self.assertEqual(preview["publication_status"], "draft")
+
+    def test_missing_cloudflare_credentials_are_explicit_in_result(self):
+        evidence, _ = self.fixture_evidence()
+        with tempfile.TemporaryDirectory() as td, \
+             patch("scripts.pulse_italia_auto_pipeline.configure_environment", return_value=False), \
+             patch("scripts.pulse_italia_auto_pipeline.engine.call_model") as model, \
+             patch("scripts.pulse_italia_auto_pipeline.run_data_tools", return_value={}):
+            report = run_pipeline(
+                td, discovery_fn=lambda: ([evidence], {"sources_considered": []}),
+                ai_enabled=True,
+            )
+            model.assert_not_called()
+            self.assertFalse(report["llama_configured"])
+            self.assertEqual(report["llama_status"], "missing_cloudflare_credentials")
+            self.assertEqual(report["results"][0]["llama"], "missing_cloudflare_credentials")
+
     def test_modified_official_file_is_rejected_before_llama(self):
         evidence, raw = self.fixture_evidence()
         with tempfile.TemporaryDirectory() as td:
