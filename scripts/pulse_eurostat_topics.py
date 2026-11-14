@@ -139,10 +139,10 @@ CATALOG = (
     },
     {
         "id":"sdg_07_30","topic":"ENERGIA",
-        "indicator":"Consumo finale di energia",
-        "unit":"milioni di tonnellate equivalenti petrolio","unit_code":"MTOE",
-        "population":"Energia consumata dagli utenti finali",
-        "filters":{"nrg_bal":"FC_E","unit":"MTOE"},
+        "indicator":"Produttività energetica",
+        "unit":"euro per chilogrammo equivalente di petrolio","unit_code":"EUR_KGOE",
+        "population":"Produzione economica per unità di energia disponibile",
+        "filters":{"unit":"EUR_KGOE"},
     },
     # Deliberately source-locked candidate extensions. Each is queried with a
     # single declared classification; unavailable units/dimensions fail closed.
@@ -240,7 +240,7 @@ CATALOG = (
         "filters":{"freq":"A","sex":"T","age":"Y15-74","unit":"PC_ACT"},
     },
     {
-        "id":"sdg_03_30","topic":"SALUTE",
+        "id":"sdg_03_20","topic":"SALUTE",
         "indicator":"Persone con buona salute percepita",
         "unit":"%","unit_code":"PC",
         "population":"Persone che dichiarano buona o molto buona salute",
