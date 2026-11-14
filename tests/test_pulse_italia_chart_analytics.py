@@ -40,9 +40,9 @@ class ChartAnalyticsTests(unittest.TestCase):
     def test_zero_denominator_prevents_relative(self):
         x=calculate(series(["2023","2024","2025"],[0,0,3],"numero"))
         self.assertNotIn("index_100",[v["id"] for v in x["views"]])
-        self.assertIsNone(view(x,"relative_change")["points"][-1]["value"])
-        self.assertEqual(view(x,"relative_change")["points"][-1]["unavailable_reason"],
-                         "previous_period_zero")
+        # All percentage changes are impossible with a zero previous value.
+        # An entirely unavailable graph is suppressed rather than fabricated.
+        self.assertNotIn("relative_change",[v["id"] for v in x["views"]])
 
     def test_quarterly_yoy(self):
         x=calculate(series(["2024-Q1","2024-Q2","2025-Q1","2025-Q2"],
