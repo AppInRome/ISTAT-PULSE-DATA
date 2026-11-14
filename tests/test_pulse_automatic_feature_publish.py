@@ -114,7 +114,7 @@ class AutomaticOfficialFeatureTests(TestCase):
         # These are fabricated test observations, NOT Italian public data.
         manifest=json.loads((FIX/"pulse_italia_integration_manifest.json").read_text())
         raw=(FIX/"pulse_italia_integration_FAKE.csv").read_bytes().replace(
-            b";2025;14,1", b";2025;16,1")
+            b";2025;14,1", b";2025;14,9")
         e=engine.extract(manifest,raw)
         e["topic"]="DEMOGRAFIA"
         with TemporaryDirectory() as tmp:
