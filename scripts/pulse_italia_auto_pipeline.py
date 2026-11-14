@@ -8,6 +8,8 @@ approval. Publication of a long-form news feature is a separate reviewed step.
 from __future__ import annotations
 
 import argparse
+from collections import Counter, defaultdict
+from urllib.parse import parse_qsl, urlsplit
 from datetime import datetime, timezone
 from hashlib import sha256
 import json
@@ -204,6 +206,72 @@ def load_official_file_evidences(folder, max_files=40):
     return eligible, checked
 
 
+
+# Fixed editorial discovery budget: give independent measures of neglected
+# disciplines a chance BEFORE spending slots on sex/age subgroups or many
+# regional rows of one source. A candidate is not automatically a news item.
+DIVERSITY_TOPICS = (
+    "DEMOGRAFIA", "SALUTE", "ISTRUZIONE", "CASA",
+    "AMBIENTE", "ENERGIA", "ECONOMIA", "LAVORO",
+)
+
+
+def independent_research_key(evidence):
+    """Metric identity for scheduling, not a scientific independence claim."""
+    series = evidence["series"]
+    dataset = str(evidence["dataset_url"])
+    topic = str(evidence.get("topic") or "ALTRO").upper()
+    territory = str(series["territory"]).casefold()
+    if evidence.get("publisher") == "EUROSTAT":
+        parsed = urlsplit(dataset)
+        # Subgroups are valid series but not additional indicator families.
+        ignored = {"geo", "sex", "age", "lang", "lastTimePeriod",
+                   "sinceTimePeriod", "untilTimePeriod", "time",
+                   "startPeriod", "endPeriod"}
+        dimensions = tuple(sorted((k, v) for k, v in parse_qsl(parsed.query)
+                                  if k not in ignored))
+        return (topic, territory, parsed.netloc, parsed.path, dimensions)
+    return (topic, territory, dataset, str(series["indicator"]).casefold())
+
+
+def diversify_research(sources, limit):
+    """Round-robin verified source *candidates* by topic, unique families first.
+
+    Never changes evidence, drops a good dossier due to a duplicate source
+    subgroup, or implies the source published anything new today.
+    """
+    budget = max(0, int(limit))
+    buckets = defaultdict(list)
+    for evidence in sources:
+        buckets[str(evidence.get("topic") or "ALTRO").upper()].append(evidence)
+    ordered_topics = list(DIVERSITY_TOPICS) + sorted(
+        t for t in buckets if t not in DIVERSITY_TOPICS)
+    chosen, used_keys, used_entries = [], set(), set()
+    # First pass admits independent metric/territory families. The second
+    # pass allows legitimate breakdowns if the budget has spare capacity.
+    for families_first in (True, False):
+        pending = True
+        while len(chosen) < budget and pending:
+            pending = False
+            for topic in ordered_topics:
+                for e in buckets.get(topic, []):
+                    ident = (str(e["dataset_url"]), str(e["series"]["indicator"]),
+                             str(e["series"]["territory"]),
+                             str(e["series"]["observations"][-1]["period"]),
+                             str(e["source_sha256"]))
+                    key = independent_research_key(e)
+                    if ident in used_entries or (families_first and key in used_keys):
+                        continue
+                    chosen.append(e)
+                    used_entries.add(ident)
+                    used_keys.add(key)
+                    pending = True
+                    break
+                if len(chosen) >= budget:
+                    break
+    return chosen
+
+
 def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                  data_analyst_script=None, dstory_command=None,
                  data2story_root=None, now=None, external_evidence_dir=None):
@@ -232,7 +300,8 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         identity = (e["dataset_url"], s["indicator"], s["territory"],
                     s["observations"][-1]["period"], e["source_sha256"])
         unique[identity] = e
-    sources = list(unique.values())
+    sources = diversify_research(list(unique.values()),
+                                 max(0, min(max_sources, 30)))
     now = now or datetime.now(UTC)
     provider = active_provider()
     budget = 0.0
@@ -319,8 +388,14 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                         "deterministic_audit_issues": rule_report.get("issues", []),
                         "article_published": False,
                         "preview": str(folder / "preview.json")})
+    topic_counts = Counter(str(e.get("topic") or "ALTRO").upper()
+                           for e in sources[:max(0, min(max_sources, 30))])
+    distinct_keys = {independent_research_key(e) for e in sources}
     index = {
         "generated_at": now.isoformat(), "scope": "IT",
+        "verified_research_candidates_by_topic": dict(sorted(topic_counts.items())),
+        "independent_research_families_scheduled": len(distinct_keys),
+        "source_priority_method": "topic_round_robin_independent_measure_first",
         "official_discovery": report, "results": results,
         "candidate_articles": len(results), "published_articles": 0,
         "deterministic_no_ai_drafts": sum(

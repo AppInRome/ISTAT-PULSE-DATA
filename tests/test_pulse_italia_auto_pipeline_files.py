@@ -3,6 +3,7 @@
 Never makes a real HTTP call, invokes Cloudflare or publishes news.
 """
 from hashlib import sha256
+from copy import deepcopy
 import json
 from pathlib import Path
 import tempfile
@@ -10,7 +11,9 @@ from unittest import TestCase
 from unittest.mock import patch
 
 from scripts import pulse_editorial_engine_v1 as engine
-from scripts.pulse_italia_auto_pipeline import load_official_file_evidences, run_pipeline
+from scripts.pulse_italia_auto_pipeline import (load_official_file_evidences,
+                                               run_pipeline, diversify_research,
+                                               independent_research_key)
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
 
@@ -26,6 +29,51 @@ class AutomaticFilePipelineTests(TestCase):
             "dataset_bytes_sha256": sha256(raw).hexdigest(),
         })
         return evidence, raw
+
+    def test_diversity_schedules_other_topics_before_labor_volume(self):
+        base, _ = self.fixture_evidence()
+        backlog = []
+        for i in range(24):
+            e = deepcopy(base)
+            e["publisher"] = "INPS"
+            e["topic"] = "LAVORO"
+            e["dataset_url"] = "https://opendata.inps.it/source/" + str(i)
+            e["series"]["indicator"] = "Simulazione lavoro " + str(i)
+            backlog.append(e)
+        disciplines = ("DEMOGRAFIA", "SALUTE", "ISTRUZIONE", "CASA",
+                       "AMBIENTE", "ENERGIA")
+        for i, discipline in enumerate(disciplines):
+            e = deepcopy(base)
+            e["publisher"] = "EUROSTAT"
+            e["topic"] = discipline
+            e["dataset_url"] = (
+                "https://ec.europa.eu/eurostat/api/dissemination/"
+                "statistics/1.0/data/fake_" + str(i) + "?geo=IT&sex=T")
+            e["series"]["indicator"] = "Simulazione " + discipline
+            backlog.append(e)
+        chosen = diversify_research(backlog, 6)
+        self.assertEqual(len(chosen), 6)
+        self.assertEqual({e["topic"] for e in chosen}, set(disciplines))
+        self.assertEqual(len({independent_research_key(e) for e in chosen}), 6)
+        self.assertEqual(len(diversify_research(backlog, 0)), 0)
+
+    def test_no_separate_families_for_gender_cuts_of_same_official_metric(self):
+        base, _ = self.fixture_evidence()
+        slices = []
+        for sex in ("T", "F", "M"):
+            e = deepcopy(base)
+            e["publisher"] = "EUROSTAT"
+            e["topic"] = "DEMOGRAFIA"
+            e["dataset_url"] = (
+                "https://ec.europa.eu/eurostat/api/dissemination/"
+                "statistics/1.0/data/demo_pjan?geo=IT&sex=" + sex
+                + "&age=TOTAL")
+            e["series"]["indicator"] = "Popolazione - " + sex
+            slices.append(e)
+        self.assertEqual(len({independent_research_key(e) for e in slices}), 1)
+        # Capacity remains usable: subsequent subgroup series are possible,
+        # but only after other independent families have been considered.
+        self.assertEqual(len(diversify_research(slices, 3)), 3)
 
     def test_realistic_official_file_path_reaches_graph_and_table_preview(self):
         evidence, raw = self.fixture_evidence()

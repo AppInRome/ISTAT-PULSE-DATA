@@ -197,15 +197,31 @@ def publish(review_root, output_file, now=None, *, smart=False,
             verified_pairs.append((accepted[item["id"]], evidence))
     frontpage, ledger = None, None
     approved_ids = set()
+    context_ids = set()
     selected_stats = {}
     if smart:
         frontpage, ledger, selected_stats = selector.evaluate(
             prospective, previous, old_versions, old_frontpage, now)
-        approved_ids = set(frontpage["featured_article_ids"])
+        context_ids = set(frontpage["context_analyses_new"])
+        approved_ids = set(frontpage["featured_article_ids"]) | context_ids
         for item, evidence in prospective:
             if item["id"] in accepted:
                 verified_pairs.append((accepted[item["id"]], evidence))
             elif item["id"] in approved_ids:
+                if item["id"] in context_ids:
+                    # PULSE publishes original background analysis now;
+                    # its source observations are NOT newly released news.
+                    period = str(item["period_reference"])
+                    notice = ("Analisi di contesto PULSE sui dati ufficiali "
+                              "riferiti al periodo " + period
+                              + "; non segnala una nuova pubblicazione dell'ente.")
+                    item = {**item,
+                            "editorial_kind":"verified_context_analysis",
+                            "editorial_context_notice":notice,
+                            "publication_tier":"verified_official_context_not_new_release",
+                            "byline":"PULSE — approfondimento statistico di contesto",
+                            "summary":notice+" "+item["summary"],
+                            "pulse_summary":notice+" "+item["pulse_summary"]}
                 accepted[item["id"]] = item
                 verified_pairs.append((item, evidence))
                 added += 1
@@ -214,6 +230,8 @@ def publish(review_root, output_file, now=None, *, smart=False,
             id_ for id_ in frontpage["featured_article_ids"] if id_ in accepted]
         frontpage["features_new"] = [
             id_ for id_ in frontpage["features_new"] if id_ in accepted]
+        frontpage["context_analyses_new"] = [
+            id_ for id_ in frontpage["context_analyses_new"] if id_ in accepted]
     # The writer, chart renderer and independent audit have already finished.
     # Add only a safe optional presentation object; never overwrite original
     # article prose, titles, source metadata, graph or table values.
@@ -245,6 +263,7 @@ def publish(review_root, output_file, now=None, *, smart=False,
                 "published_new":0,"retitled_existing":0,
                 "regional_groups":len(digest["groups"]),"digest_changed":False,
                 "smart_editorial":smart,"new_features_selected":0,
+                "new_context_analyses_published":0,
                 "journalistic_story_updates":0,
                 "short_briefs":len(frontpage["briefs"]) if smart else 0,
                 "persisted_in_mobile_feed":len(previous),
@@ -273,6 +292,7 @@ def publish(review_root, output_file, now=None, *, smart=False,
             "journalistic_story_updates":story_updated,
             "smart_editorial":smart,
             "new_features_selected":len(frontpage["features_new"]) if smart else added,
+            "new_context_analyses_published":len(frontpage["context_analyses_new"]) if smart else 0,
             "short_briefs":len(frontpage["briefs"]) if smart else 0,
             "revision_alerts":len(frontpage["revision_review"]) if smart else 0,
             "persisted_in_mobile_feed":len(final),

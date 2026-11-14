@@ -14,10 +14,15 @@ import json
 import math
 import re
 
+from scripts.pulse_topic_coverage import independent_metric_identity
+
 SCHEMA = "pulse-editorial-frontpage-v1"
 REGISTRY = "pulse-source-versions-v1"
 MAX_STORIES_PER_TOPIC = 2
 MAX_FEATURES_PER_DAY = 12
+MAX_CONTEXT_ANALYSES_PER_DAY = 6
+CONTEXT_TOPICS = frozenset(("DEMOGRAFIA", "SALUTE", "ISTRUZIONE",
+                            "CASA", "AMBIENTE", "ENERGIA"))
 MAX_BRIEFS_PER_DAY = 20
 HISTORY_LIMIT = 8
 REGISTRY_LIMIT = 4000
@@ -101,6 +106,39 @@ def change_score(evidence):
     return 0,"segnale_non_sufficiente_o_base_zero"
 
 
+
+def editorial_family(evidence):
+    """Suppress repeat national features from sex/age cuts of one measure.
+
+    Never combine territorial stories, datasets or distinct Eurostat units.
+    Stable for source revisions, independent of a changing reference year.
+    """
+    series = evidence["series"]
+    topic = str(evidence.get("topic") or "ALTRO").upper()
+    territory = str(series["territory"]).casefold()
+    if evidence.get("publisher") == "EUROSTAT":
+        family = independent_metric_identity(evidence["dataset_url"])
+    else:
+        family = (str(evidence["dataset_url"]), str(series["indicator"]).casefold())
+    return sha256(canonical((topic, territory, family)).encode()).hexdigest()[:24]
+
+
+def published_family(item):
+    """Identify an existing official feature from its persisted source facts."""
+    if not isinstance(item,dict) or item.get("publication_status")!="published":
+        return None
+    try:
+        source=item["source_documents"][0]["url"]
+        metric=item["verified_series_relevant"][0]
+        publisher=item.get("public_source",{}).get("domain")
+        return editorial_family({
+            "topic":item["topic"],"dataset_url":source,"publisher":publisher,
+            "series":{"indicator":metric["indicator"],
+                      "territory":metric["territory"]}})
+    except (KeyError, IndexError, TypeError):
+        return None
+
+
 def assess(item,evidence,known,now,topic_counts):
     """One checked dossier. A source updated timestamp alone NEVER means news."""
     now=now if now.tzinfo else now.replace(tzinfo=timezone.utc)
@@ -139,6 +177,12 @@ def assess(item,evidence,known,now,topic_counts):
         tier="review_revision"  # explicit review; never silently overwrite.
     elif qualified and signal>=15 and score>=65:
         tier="feature"
+    elif (novelty in ("first_seen_by_pulse", "unchanged")
+          and topic in CONTEXT_TOPICS
+          and topic_counts.get(topic,0)<5 and signal>=27
+          and latest[:4].isdigit() and int(latest[:4])>=now.year-3):
+        # Background analysis, never a claim of a freshly released source.
+        tier="context"
     elif (qualified or first_seen_brief) and (score>=45 or signal>=15):
         tier="brief"
     else:
@@ -154,6 +198,7 @@ def assess(item,evidence,known,now,topic_counts):
         "source_release_recent":release_recent,
         "source_release_proven":False, # Eurostat dataset update can be structural.
         "series_key":series_key(evidence),
+        "editorial_family":editorial_family(evidence),
         "observations_sha256":digest,
     }
 
@@ -182,6 +227,8 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
     old_versions=dict((previous_versions or {}).get("series") or {})
     counts=Counter(a.get("topic") for a in previous_articles
                    if isinstance(a,dict) and a.get("topic"))
+    published_families={key for a in previous_articles
+                        if (key:=published_family(a)) is not None}
     assessments=[]
     for item,evidence in verified_pairs:
         key=series_key(evidence)
@@ -194,21 +241,47 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
     # Never privilege input order/INPS position: highest verified signal first.
     assessments.sort(key=lambda x:(-x["score"],x["topic"],x["article_id"]))
     selected=[];briefs=[];catalogue=[];revisions=[];chosen_topic=Counter()
+    context_candidates=[];context_analyses=[];context_topics=set()
+    chosen_families=set()
     for a in assessments:
         if a["tier"]=="review_revision":
             revisions.append(a)
         elif a["tier"]=="feature":
-            if (len(selected)<MAX_FEATURES_PER_DAY
+            if a["editorial_family"] in chosen_families:
+                catalogue.append({**a,"tier":"catalogue",
+                                  "reason":"same_independent_indicator_family"})
+            elif (len(selected)<MAX_FEATURES_PER_DAY
                     and chosen_topic[a["topic"]]<MAX_STORIES_PER_TOPIC):
                 selected.append(a);chosen_topic[a["topic"]]+=1
+                chosen_families.add(a["editorial_family"])
             else:
                 catalogue.append({**a,"tier":"catalogue",
                                   "reason":"editorial_capacity_or_topic_balance"})
+        elif a["tier"]=="context":
+            if a["editorial_family"] in published_families:
+                catalogue.append({**a,"tier":"catalogue",
+                                  "reason":"already_published_independent_family"})
+            else:
+                context_candidates.append(a)
         elif a["tier"]=="brief":
             if len(briefs)<MAX_BRIEFS_PER_DAY: briefs.append(a)
             else: catalogue.append({**a,"tier":"catalogue"})
         else:
             catalogue.append(a)
+    # New official reference periods always take precedence over archives.
+    # Context dossiers are published separately and explicitly labelled.
+    for a in context_candidates:
+        if (len(context_analyses)<MAX_CONTEXT_ANALYSES_PER_DAY
+                and len(selected)+len(context_analyses)<MAX_FEATURES_PER_DAY
+                and a["topic"] not in context_topics
+                and chosen_topic[a["topic"]]==0
+                and a["editorial_family"] not in chosen_families):
+            context_analyses.append(a)
+            context_topics.add(a["topic"])
+            chosen_families.add(a["editorial_family"])
+        else:
+            catalogue.append({**a,"tier":"catalogue",
+                              "reason":"context_capacity_or_family_balance"})
     # Keep today's previously featured IDs while checking again the same day.
     last=previous_frontpage if isinstance(previous_frontpage,dict) else {}
     recent_same_day=str(last.get("generated_at",""))[:10]==now[:10]
@@ -219,6 +292,9 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
         "editorial_method":"source_versions_and_verified_material_change_no_ai",
         "featured_article_ids":featured[:MAX_FEATURES_PER_DAY],
         "features_new":[a["article_id"] for a in selected],
+        "context_analyses_new":[a["article_id"] for a in context_analyses],
+        "context_analyses_not_source_news":True,
+        "context_topics":sorted(context_topics),
         "briefs":[{"article_id":a["article_id"],"topic":a["topic"],
                    "headline":a["headline"],"source_url":a["source_url"],
                    "score":a["score"],"reason":a["reason"],
@@ -230,11 +306,19 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
                             "reason":"same_period_observations_changed_human_review"}
                            for a in revisions],
         "catalogue_updates_count":len(catalogue),
+        "new_feature_topics": dict(sorted(chosen_topic.items())),
+        "independent_feature_families_selected": len(chosen_families),
+        "unpublished_eligible_features_by_topic": dict(sorted(
+            Counter(a["topic"] for a in catalogue
+                    if a["reason"] in ("same_independent_indicator_family",
+                                      "editorial_capacity_or_topic_balance")).items())),
         "all_existing_articles_remain_in_archive":True,
         "no_automatic_publication_from_revision":True,
         "source_date_not_inferred_from_observation_period":True,
         "thresholds":{"feature":65,"brief":45,"max_features_per_day":MAX_FEATURES_PER_DAY,
-                      "max_features_per_topic":MAX_STORIES_PER_TOPIC},
+                      "max_features_per_topic":MAX_STORIES_PER_TOPIC,
+                      "max_context_analyses_per_day":MAX_CONTEXT_ANALYSES_PER_DAY,
+                      "context_min_signal":27},
         "assessments":assessments[:200],
     }
     ledger={"schema":REGISTRY,"generated_at":now,"series":dict(

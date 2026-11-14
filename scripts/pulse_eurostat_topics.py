@@ -246,6 +246,60 @@ CATALOG = (
         "population":"Persone che dichiarano buona o molto buona salute",
         "filters":{"sex":"T"},
     },
+
+    # NEW independent topic CANDIDATES, anchored to real Eurostat datasets.
+    # These are never counted as verified until country, dimensional codes,
+    # unit, source bytes, actual observations and audit all pass at runtime.
+    {
+        "id":"demo_find","topic":"DEMOGRAFIA",
+        "indicator":"Numero medio di figli per donna (fecondità totale)",
+        "unit":"figli per donna","unit_code":"NR",
+        "population":"Indice congiunturale di fecondità totale in Italia",
+        "filters":{"freq":"A","indic_de":"TOTFERRT"},
+    },
+    {
+        "id":"demo_gind","topic":"DEMOGRAFIA",
+        "indicator":"Nati vivi nell'anno",
+        "unit":"persone","unit_code":"NR",
+        "population":"Nati vivi registrati nel bilancio demografico nazionale",
+        "filters":{"freq":"A","indic_de":"LBIRTH"},
+    },
+    {
+        "id":"sdg_04_60","topic":"ISTRUZIONE",
+        "indicator":"Adulti che partecipano a istruzione o formazione",
+        "unit":"%","unit_code":"PC",
+        "population":"Persone di 25-64 anni in formazione nelle ultime quattro settimane",
+        "filters":{"freq":"A","sex":"T","age":"Y25-64","unit":"PC"},
+    },
+    {
+        "id":"ilc_lvho07a","topic":"CASA",
+        "indicator":"Popolazione con costi abitativi eccessivi",
+        "unit":"%","unit_code":"PC",
+        "population":"Persone in famiglie con costi dell'abitazione oltre il 40% del reddito disponibile",
+        "filters":{"freq":"A","sex":"T","age":"TOTAL","unit":"PC"},
+    },
+    {
+        "id":"hlth_silc_08","topic":"SALUTE",
+        "indicator":"Bisogni di assistenza medica non soddisfatti",
+        "unit":"%","unit_code":"PC",
+        "population":"Persone di almeno 16 anni con necessità di cure mediche non soddisfatte",
+        "filters":{"freq":"A","sex":"T","age":"Y_GE16","unit":"PC"},
+    },
+    {
+        "id":"sdg_12_51","topic":"AMBIENTE",
+        "indicator":"Tasso di utilizzo circolare dei materiali",
+        "unit":"%","unit_code":"PC",
+        "population":"Materiali recuperati e reimmessi nell'economia sul totale impiegato",
+        "filters":{"unit":"PC"},
+    },
+    {
+        "id":"sdg_07_50","topic":"ENERGIA",
+        "indicator":"Dipendenza dalle importazioni di energia",
+        "unit":"%","unit_code":"PC",
+        "population":"Importazioni nette di energia rispetto all'energia disponibile",
+        "filters":{"freq":"A","unit":"PC","siec":"TOTAL"},
+    },
+
 )
 
 
@@ -320,6 +374,11 @@ def verified_jsonstat_evidence(raw, config, url):
         key = codes[position]
         labels[dim] = {"code":key,
                        "label":str(member_labels.get(key, key))[:130]}
+    # An API endpoint may silently ignore an invalid filter. Never label a
+    # measurement as a specific age, sex or energy class without a resolved
+    # matching dimension in the actual JSON-stat payload.
+    if not set(config["filters"]).issubset(set(order)):
+        raise ValueError("requested_dimension_missing_from_source")
     if labels["geo"]["code"] != "IT":
         raise ValueError("non_italian_observations")
     if "unit" in labels and labels["unit"]["code"] != config["unit_code"]:
@@ -401,18 +460,34 @@ def discover(fetch_fn=engine.fetch, limit=None):
     if limit is None:
         configs = CATALOG
     else:
-        # Round-robin among the official disciplines, rather than taking the
-        # first many datasets from a single subject. Repeated gender/age
-        # subgroups do not crowd out missing subject areas.
+        # Two-pass round robin: independently defined measurements BEFORE
+        # age/sex-only breakdowns of the same Eurostat source and filters.
+        # A listed candidate does not imply a valid or published observation.
+        from scripts.pulse_topic_coverage import independent_metric_identity
         groups = {}
         for c in CATALOG:
             groups.setdefault(c["topic"], []).append(c)
-        chosen = []
+        topics = ("DEMOGRAFIA", "SALUTE", "ISTRUZIONE", "CASA",
+                  "AMBIENTE", "ENERGIA", "ECONOMIA", "LAVORO", "SOCIETA")
+        chosen, identities = [], set()
         slots = max(0, min(int(limit), len(CATALOG)))
-        while len(chosen) < slots and any(groups.values()):
-            for topic in groups:
-                if groups[topic] and len(chosen) < slots:
-                    chosen.append(groups[topic].pop(0))
+        for independent_first in (True, False):
+            while len(chosen) < slots:
+                selected = False
+                for topic in topics:
+                    for c in groups.get(topic, []):
+                        metric = (topic, independent_metric_identity(request_url(c)))
+                        if independent_first and metric in identities:
+                            continue
+                        chosen.append(c)
+                        groups[topic].remove(c)
+                        identities.add(metric)
+                        selected = True
+                        break
+                    if len(chosen) >= slots:
+                        break
+                if not selected:
+                    break
         configs = chosen
     for spec in configs:
         url=request_url(spec)
