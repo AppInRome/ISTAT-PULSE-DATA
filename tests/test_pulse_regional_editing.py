@@ -54,6 +54,7 @@ class RegionalEditorialTests(unittest.TestCase):
         self.assertEqual(len(result["groups"]),1)
         g=result["groups"][0]
         self.assertEqual(g["coverage"],5)
+        self.assertIn("Tipo intervento: ordinaria", g["classification_note"])
         self.assertFalse(g["country_total_available"])
         self.assertEqual(len(g["related_article_ids"]),5)
         self.assertEqual(len(g["spotlight_article_ids"]),2)
