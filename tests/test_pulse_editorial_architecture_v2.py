@@ -30,6 +30,11 @@ def research_bundle(folder, evidence, preview=None, locked=True):
         "publication_allowed": not locked,
         "review_status": "pending_human_signoff" if locked else "published",
         "evidence_sha256": audit.digest(evidence),
+        "data_components": {
+            "data_analyst": {"status":"completed"},
+            "dstory": {"status":"completed"},
+            "data2story_inspector": {"status":"completed"},
+        },
     }),encoding="utf-8")
 
 
@@ -75,6 +80,20 @@ class ArchitectureIntegrationTests(unittest.TestCase):
             report=architecture.prepare(root/"in",root/"out")
             self.assertEqual(report["briefs_prepared_for_ai"],0)
             self.assertEqual(len(report["excluded"]),2)
+
+    def test_incomplete_independent_analytics_blocks_ai_brief(self):
+        e=fixture()
+        with TemporaryDirectory() as td:
+            root=Path(td)
+            folder=root/"in"/"missing_analysis"
+            research_bundle(folder,e)
+            review=json.loads((folder/"review_required.json").read_text())
+            review["data_components"]["dstory"]["status"]="failed"
+            (folder/"review_required.json").write_text(json.dumps(review))
+            report=architecture.prepare(root/"in",root/"out")
+            self.assertEqual(report["briefs_prepared_for_ai"],0)
+            self.assertIn("independent_analytics_incomplete",
+                          report["excluded"][0]["reasons"])
 
     def test_duplicate_source_story_does_not_fill_30_quota(self):
         e=fixture()
