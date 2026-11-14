@@ -281,7 +281,7 @@ def csv_evidences(raw, package, resource_url, max_series=1):
         if not options:
             continue
         _, _, fixed, obs = max(options)
-        obs = obs[-12:]
+        obs = obs[-24:]
         series = {
             "indicator": str(package.get("title") or value_key)[:160] + " — " + str(value_key)[:90],
             "unit": unit, "territory": geo_value, "population": pop_value,
@@ -399,7 +399,7 @@ def istat_evidence(raw, dataset, url):
         s["observations"][-1][0], len(s["observations"])
     ), reverse=True)
     chosen = options[0]
-    obs = chosen["observations"][-12:]
+    obs = chosen["observations"][-24:]
     if int(obs[-1][0][:4]) < OFFICIAL_LATEST_YEAR:
         return None
     if any(Decimal(v) < 0 or Decimal(v) > 100 for _, v in obs):
