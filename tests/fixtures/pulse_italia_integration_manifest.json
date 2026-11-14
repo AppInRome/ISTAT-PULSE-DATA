@@ -1,0 +1,25 @@
+{
+  "source_url": "https://www.istat.it/",
+  "dataset_url": "https://www.istat.it/pulse-integration-fixture.csv",
+  "publisher": "ISTAT",
+  "topic": "LAVORO",
+  "schema": {
+    "format": "csv",
+    "period_column": "Anno",
+    "value_column": "Misura",
+    "dimensions": {
+      "Indicatore": "Quota illustrativa - DATI FITTIZI PER TEST",
+      "Territorio": "Italia",
+      "Popolazione": "Persone 14 anni e piu",
+      "Unita": "%",
+      "Frequenza": "Annuale"
+    },
+    "semantic_columns": {
+      "indicator": "Indicatore",
+      "unit": "Unita",
+      "territory": "Territorio",
+      "population": "Popolazione",
+      "frequency": "Frequenza"
+    }
+  }
+}

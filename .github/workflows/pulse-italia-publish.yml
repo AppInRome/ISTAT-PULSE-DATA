@@ -1,0 +1,53 @@
+name: PULSE Italia - publish approved journalism into Android feed
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/editorial_italia/approved/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-data-only
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check approved article and exact data transformations
+        run: |
+          python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
+          python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
+      - name: Publish only approved bundles
+        run: |
+          if ! find data/editorial_italia/approved -name approval.json -print -quit 2>/dev/null | grep -q . ; then
+            echo "No human-approved articles: nothing to publish"
+            exit 0
+          fi
+          python -m scripts.pulse_italia_reviewed_publish
+          python scripts/pulse_data_integrity.py --data-root data
+      - name: Commit only after strict editorial gate
+        run: |
+          git config user.name "PULSE Editorial Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/editorial_italia/published_articles.json data/news/articles.json data/news/index.json
+          if git diff --cached --quiet; then
+            echo "No new approved articles"
+          else
+            git commit -m "PULSE editorial: publish independently reviewed Italian article"
+            git push
+          fi
+
+# No AI or model can produce approval.json. Signed human review is separate.
