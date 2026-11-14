@@ -130,17 +130,84 @@ def build_preview(e, draft=None):
     return result
 
 
+
+def load_official_file_evidences(folder, max_files=12):
+    """Recheck independently discovered source bytes before editorial use.
+
+    The discovery script must extract original CSV/JSON/XLSX rows itself.
+    A stale, edited or unverifiable file cannot become a PULSE source.
+    """
+    from scripts.pulse_italia_chart_analytics import calculate
+    from scripts.pulse_italia_newsroom import italian_official_url
+    checked, eligible = [], []
+    root = Path(folder)
+    if not root.is_dir():
+        return [], [{"status": "discovery_folder_missing"}]
+    for path in sorted(root.glob("*.json"))[:max_files]:
+        entry = {"source": path.name}
+        try:
+            e = json.loads(path.read_text(encoding="utf-8"))
+            series = e["series"]
+            if e.get("verified") is not True or e.get("auto_discovered") is not True:
+                raise ValueError("not_auto_discovered_verified")
+            if not all(italian_official_url(e.get(k, "")) for k in ("source_url", "dataset_url")):
+                raise ValueError("nonofficial_Italian_origin")
+            for key in ("indicator", "territory", "population", "unit", "frequency"):
+                if not str(series.get(key, "")).strip():
+                    raise ValueError("missing_" + key)
+            points = series.get("observations") or []
+            if not 2 <= len(points) <= 120:
+                raise ValueError("insufficient_comparable_series")
+            # Validates periods, sorted uniqueness, finite numbers and rates.
+            calculate({**series, "observations": points[-24:]})
+            original_hash = e.get("dataset_bytes_sha256")
+            if not isinstance(original_hash, str) or len(original_hash) != 64:
+                raise ValueError("missing_original_file_digest")
+            downloaded = engine.fetch(e["dataset_url"])
+            if sha256(downloaded).hexdigest() != original_hash:
+                raise ValueError("source_changed_since_discovery")
+            if e.get("dataset_format_original") != "xlsx" and (
+                sha256(downloaded).hexdigest() != e.get("source_sha256")
+            ):
+                raise ValueError("evidence_content_digest_mismatch")
+            eligible.append(e)
+            entry["status"] = "rechecked_original_file"
+        except (OSError, TypeError, ValueError, KeyError, IndexError,
+                URLError, HTTPError, json.JSONDecodeError) as exc:
+            entry["status"] = "rejected"
+            entry["reason"] = str(exc)[:100]
+        checked.append(entry)
+    return eligible, checked
+
+
 def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                  data_analyst_script=None, dstory_command=None,
-                 data2story_root=None, now=None):
+                 data2story_root=None, now=None, external_evidence_dir=None):
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
     sources, report = ((discovery_fn or official.discover)())
+    if external_evidence_dir is not None:
+        files, checks = load_official_file_evidences(external_evidence_dir)
+        report["independent_csv_json_xlsx_discovery"] = {
+            "files_checked": len(checks),
+            "files_reverified": len(files),
+            "details": checks,
+        }
+        # Sources from source-led attachments are examined before the fallback
+        # ISTAT/INPS dataflow scan; no invented series or fake article quota.
+        sources = files + sources
+    unique = {}
+    for e in sources:
+        s = e["series"]
+        identity = (e["dataset_url"], s["indicator"], s["territory"],
+                    s["observations"][-1]["period"], e["source_sha256"])
+        unique[identity] = e
+    sources = list(unique.values())
     now = now or datetime.now(UTC)
     budget = 0.0
     can_ai = bool(ai_enabled and configure_environment())
     results = []
-    for evidence in sources[:max(0, min(max_sources, 3))]:
+    for evidence in sources[:max(0, min(max_sources, 8))]:
         ident = evidence_id(evidence)
         folder = output / ident
         folder.mkdir(parents=True, exist_ok=True)
@@ -203,6 +270,7 @@ def main(argv=None):
     p.add_argument("--output-dir", required=True)
     p.add_argument("--max-sources", type=int, default=3)
     p.add_argument("--no-ai", action="store_true")
+    p.add_argument("--external-evidence-dir", help="Original official files independently discovered from news leads")
     p.add_argument("--data-analyst-script")
     p.add_argument("--dstory-command")
     p.add_argument("--data2story-root")
@@ -210,6 +278,7 @@ def main(argv=None):
     result = run_pipeline(
         output_dir=args.output_dir, max_sources=args.max_sources,
         ai_enabled=not args.no_ai,
+        external_evidence_dir=args.external_evidence_dir,
         data_analyst_script=args.data_analyst_script,
         dstory_command=args.dstory_command,
         data2story_root=args.data2story_root)
