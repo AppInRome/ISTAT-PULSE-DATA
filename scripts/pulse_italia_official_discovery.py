@@ -154,11 +154,13 @@ def explicit_unit(row, value_column):
 
 
 def explicit_territory(row):
-    """Return original geographical dimension column only when it says Italy."""
+    """Use an explicitly labelled Italy or Italian region; never infer geography."""
+    from scripts.pulse_italia_newsroom import REGIONS
+    supported = {"italia", "it", "nazionale", "totale italia", *REGIONS}
     for k, v in row.items():
         norm = re.sub(r"[^a-z]", "", str(k or "").casefold())
         if norm in ("territorio", "area", "areageografica", "ripartizione", "regione", "refarea"):
-            if str(v or "").strip().casefold() in {"italia", "it", "nazionale", "totale italia"}:
+            if str(v or "").strip().casefold() in supported:
                 return k, str(v)
     return None, None
 
@@ -234,7 +236,14 @@ def csv_evidences(raw, package, resource_url, max_series=1):
     first = rows[0]
     period_key = find_year_column(first)
     month_key = find_month_column(first)
-    geo_key, geo_value = explicit_territory(first)
+    # An official dataset can begin with a regional row, not the national
+    # aggregate. Never assume that the FIRST CSV row is Italy.
+    geography = [explicit_territory(row) for row in rows[:1000]]
+    supported = [(key, value) for key, value in geography if key and value]
+    italian = next(((key, value) for key, value in supported
+                    if value.strip().casefold() in {"italia", "it", "nazionale",
+                                                    "totale italia"}), None)
+    geo_key, geo_value = italian or (supported[0] if supported else (None, None))
     pop_key, pop_value = explicit_population(first, package)
     if not period_key or not geo_key or not pop_value:
         return []
