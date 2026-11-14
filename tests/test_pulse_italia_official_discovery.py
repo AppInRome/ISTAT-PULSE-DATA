@@ -125,6 +125,10 @@ class DiscoveryTests(unittest.TestCase):
         v1 = preview["chart_spec"]["data"]
         v2 = preview["table_spec"]["rows"]
         self.assertEqual([(x["period"], x["value"]) for x in v1], [tuple(x) for x in v2])
+        self.assertEqual(preview["chart_analyses"]["method"],
+                         "exact_original_observations_only")
+        self.assertTrue(any(v["id"] == "delta"
+                            for v in preview["chart_analyses"]["views"]))
         self.assertEqual(preview["publication_status"], "draft")
         self.assertFalse(preview["publishable_without_review"])
         self.assertEqual(
