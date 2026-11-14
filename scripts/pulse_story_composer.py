@@ -56,12 +56,66 @@ def _label(indicator):
 def _fmt(value):
     v = audit.decimal_value(value)
     q = v.quantize(Decimal("0.01"))  # exactly the legacy auditor's ROUND_HALF_EVEN
-    return format(q, "f").rstrip("0").rstrip(".").replace(".", ",") if "." in format(q, "f") else format(q, "f")
+    raw=format(q,"f").rstrip("0").rstrip(".") if "." in format(q,"f") else format(q,"f")
+    integer,dot,decimal=raw.partition(".")
+    # Italian editorial grouping without changing the numeric value.
+    grouped=f"{int(integer):,}".replace(",",".")
+    return grouped+(","+decimal if dot else "")
 
 
 def _measure(v, unit):
     result = _fmt(v)
-    return result + "%" if unit == "%" else result + " " + unit
+    if unit=="%":return result+"%"
+    if str(unit).casefold() in ("numero","n."):return result
+    return result+" "+unit
+
+
+def _subject(indicator, fallback):
+    """Grammatically sound singular subject; never invents an explanation."""
+    key=str(indicator).casefold()
+    if "abitazioni sovraffollate" in key or "sovraffollamento abitativo" in key:
+        return "la quota di persone in abitazioni sovraffollate"
+    if "speranza di vita" in key or "anni in buona salute" in key:
+        return "la speranza di vita in buona salute" if ("buona" in key or "healthy" in key) else "la speranza di vita"
+    if "rifiuti urbani prodotti per abitante" in key:
+        return "la produzione di rifiuti urbani per abitante"
+    if "totale dei rifiuti urbani" in key:
+        return "la produzione complessiva di rifiuti urbani"
+    if "energia da fonti rinnovabili" in key or "energia rinnovabile" in key:
+        return "la quota di energia da fonti rinnovabili"
+    if "produttività energetica" in key:
+        return "la produttività energetica"
+    if "prodotto interno lordo" in key:
+        return "il prodotto interno lordo per abitante" if "per abitante" in key else "il prodotto interno lordo"
+    if "popolazione al primo gennaio" in key:
+        return "la popolazione residente"
+    if "popolazione femminile" in key:
+        return "la popolazione femminile"
+    if "popolazione maschile" in key:
+        return "la popolazione maschile"
+    if "integrazioni salariali" in key:
+        if "lavoratori" in key: return "il numero di lavoratori rilevati per le integrazioni salariali"
+        if "mensilita" in key or "mensilità" in key: return "il numero di mensilità rilevate per le integrazioni salariali"
+        if "domande" in key:return "il numero di domande rilevate per le integrazioni salariali"
+    if "istruzione terziaria" in key: return "la quota di giovani adulti con istruzione terziaria"
+    if "abbandonano precocemente" in key or "abbandono precoce" in key:
+        return "la quota di giovani che abbandonano precocemente gli studi"
+    if "povertà" in key: return "la quota di persone a rischio di povertà o esclusione"
+    if "prezzi al consumo" in key or "inflazione" in key:
+        return "il tasso di variazione dei prezzi al consumo"
+    if "disoccupazione" in key: return "il tasso di disoccupazione"
+    return "l'indicatore «"+fallback+"»"
+
+
+def _title_metric(indicator,unit,value):
+    if unit!="%": return value
+    key=str(indicator).casefold()
+    if any(w in key for w in ("inflazione","prezzi al consumo","disoccupazione")):
+        return "tasso al "+value
+    if any(w in key for w in ("quota","popolazione","sovraffoll","energia da fonti",
+                             "istruzione","rifiut","povertà","abbandon")):
+        return "quota al "+value
+    return value
 
 
 def _region(raw):
@@ -151,24 +205,24 @@ def compose(item):
         value=_measure(y,unit)
         base=_measure(x,unit)
         trend="stabile" if y==x else "in aumento" if y>x else "in calo"
-        if unit=="%":
-            title=f"{where}, {topic}: quota {value} nel {period}"
-        else:
-            title=f"{where}, {topic}: {value} nel {period}"
+        subject=_subject(s["indicator"],topic)
+        display_metric=_title_metric(s["indicator"],unit,value)
+        title=f"{where}, {topic}: {display_metric} nel {period}"
         if len(title)>TITLE_MAX:
             title=f"{topic.capitalize()}: {value} nel {period}"
         if len(title)>TITLE_MAX or len(title)<25:
             return None
         if recent:
-            movement=("sale" if y>x else "scende" if y<x else "resta invariato")
+            movement=("sale" if y>x else "scende" if y<x else "rimane")
             distance=abs(y-x)
             gap=f"{_fmt(distance)} punti percentuali" if unit=="%" else _measure(distance,unit)
             # We never describe a change in percentage points as percentage growth.
-            lead=(f"{region}, {topic} {movement} a {value} nel {period}, "
+            lead=(f"{region}, {subject} {movement} " +
+                  ("al " if unit=="%" else "a ") + f"{value} nel {period}, "
                   f"rispetto a {base} nel {previous}. "
                   f"Lo scarto è di {gap}, secondo la serie ufficiale {source}.")
         else:
-            lead=(f"{region}, {topic}: l'ultima osservazione disponibile è "
+            lead=(f"{region}, {subject}: l'ultima osservazione disponibile è "
                   f"{value} nel {period}. La rilevazione precedente disponibile "
                   f"riguarda il {previous} ({base}); i periodi non sono consecutivi. "
                   f"Fonte: {source}.")
@@ -189,7 +243,7 @@ def compose(item):
                 "text":(f"La serie riporta {base} nel {previous} e {value} nel {period}. "
                         "L'intervallo disponibile non permette di chiamare questa "
                         "differenza una variazione rispetto al periodo immediatamente precedente.")})
-        initial_word="più alto" if y>z else "più basso" if y<z else "uguale"
+        initial_word="più alta" if y>z else "più bassa" if y<z else "uguale"
         sections.append({"heading":"Nel contesto della serie",
             "text":(f"All'inizio dell'intervallo documentato, nel {initial['period']}, "
                     f"il valore era {_measure(z,unit)}. L'osservazione più recente "
