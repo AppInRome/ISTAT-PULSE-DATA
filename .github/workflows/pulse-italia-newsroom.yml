@@ -1,4 +1,4 @@
-name: PULSE Italia - dati ufficiali, grafici e bozze AI
+name: PULSE Italia - filiera editoriale verificata, grafici e AI opzionale
 
 on:
   workflow_dispatch:
@@ -8,8 +8,14 @@ on:
       - ".github/workflows/pulse-italia-newsroom.yml"
       - "scripts/pulse_llama_live_probe.py"
       - "scripts/pulse_cloudflare_llama.py"
+      - "scripts/pulse_ai_provider.py"
+      - "scripts/pulse_editorial_architecture_v2.py"
+      - "scripts/pulse_italia_auto_pipeline.py"
+      - "tests/test_pulse_editorial_architecture_v2.py"
+  # Run after the morning full radar snapshot, Europe/Rome including DST; once daily to avoid double AI billing.
   schedule:
-    - cron: "17 5 * * *"
+    - cron: "47 8 * * *"
+      timezone: "Europe/Rome"
 
 permissions:
   contents: read
@@ -45,16 +51,28 @@ jobs:
           python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
           python -m unittest discover -s tests -p "test_pulse_llama_live_probe.py" -v
+          python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
 
-      - name: Check the actual Cloudflare Llama model with a short authenticated generation
-        id: llama_probe
-        continue-on-error: true
+      - name: Record explicit AI opt-in without spending any credit
         env:
-          PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN || secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API_KEY || secrets.CLOUDFLARE_AUTH_TOKEN }}
-          PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID || secrets.PULSE_CF_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PULSE_EDITORIAL_AI_ENABLED: ${{ vars.PULSE_EDITORIAL_AI_ENABLED }}
+          PULSE_MISTRAL_API_KEY: ${{ secrets.PULSE_MISTRAL_API_KEY }}
         run: |
           mkdir -p editorial_output
-          python -m scripts.pulse_llama_live_probe --output editorial_output/llama_connection.json
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          active = os.environ.get("PULSE_EDITORIAL_AI_ENABLED") == "true"
+          has_key = bool(os.environ.get("PULSE_MISTRAL_API_KEY", "").strip())
+          state = "enabled" if active and has_key else (
+              "enabled_but_credentials_missing" if active else "disabled_until_explicit_opt_in")
+          Path("editorial_output/ai_readiness.json").write_text(json.dumps({
+              "provider": "mistral", "model": "mistral-small-2603",
+              "configured": active and has_key, "state": state,
+              "production_feed_auto_publish": False
+          }, indent=2))
+          print("PULSE AI state:", state)
+          PY
 
       - name: Select Italian headlines
         run: |
@@ -62,51 +80,70 @@ jobs:
           python -m scripts.pulse_italia_newsroom rank \
             --articles data/news/articles.json \
             --output editorial_output/italia_headlines_to_investigate.json \
-            --limit 20
+            --limit 60
 
       - name: Auto-discover original ISTAT and other Italian authority CSV JSON XLSX from official leads
         run: |
           python -m scripts.pulse_auto_sources \
             --news data/news/articles.json \
             --output-dir editorial_output/discovered_official_files \
-            --limit 12
+            --limit 24
 
-      - name: Recheck official file bytes; analyze series, build charts, tables, narrative drafts
+      - name: Reverify official data and create deterministic graphics and audited optional drafts
         env:
-          PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN || secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API_KEY || secrets.CLOUDFLARE_AUTH_TOKEN }}
-          PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID || secrets.PULSE_CF_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PULSE_AI_PROVIDER: mistral
+          PULSE_MISTRAL_API_KEY: ${{ secrets.PULSE_MISTRAL_API_KEY }}
+          PULSE_EDITORIAL_AI_ENABLED: ${{ vars.PULSE_EDITORIAL_AI_ENABLED }}
+        shell: bash
         run: |
+          ai_flags=()
+          if [ "$PULSE_EDITORIAL_AI_ENABLED" != "true" ]; then ai_flags+=(--no-ai); fi
           python -m scripts.pulse_italia_auto_pipeline \
             --output-dir editorial_output/official_data_stories \
-            --max-sources 6 \
+            --max-sources 30 \
             --external-evidence-dir editorial_output/discovered_official_files/evidence \
             --data-analyst-script "$RUNNER_TEMP/data-analyst-agent/run_analysis.py" \
             --dstory-command dstory \
-            --data2story-root "$RUNNER_TEMP/data2story-skill"
+            --data2story-root "$RUNNER_TEMP/data2story-skill" \
+            "${ai_flags[@]}"
 
-      - name: Show real editorial outcome (no credentials logged)
+      - name: Build the independent source-first architecture and human review queue
+        run: |
+          python -m scripts.pulse_editorial_architecture_v2 \
+            --review-root editorial_output/official_data_stories \
+            --output-dir editorial_output/editorial_architecture \
+            --headline-file editorial_output/italia_headlines_to_investigate.json \
+            --daily-target 30
+
+      - name: Report what actually passed, including exact AI activity
         if: always()
+        env:
+          PULSE_EDITORIAL_AI_ENABLED: ${{ vars.PULSE_EDITORIAL_AI_ENABLED }}
         run: |
           python - <<'PY'
-          import json
+          import json, os
           from pathlib import Path
           base = Path("editorial_output")
-          con = base / "llama_connection.json"
-          news = base / "official_data_stories" / "pipeline_report.json"
-          cc = json.loads(con.read_text()) if con.exists() else {"status":"no_probe_report"}
-          rr = json.loads(news.read_text()) if news.exists() else {}
+          def doc(path):
+              return json.loads(path.read_text()) if path.is_file() else {}
+          readiness = doc(base / "ai_readiness.json")
+          pipeline = doc(base / "official_data_stories" / "pipeline_report.json")
+          queue = doc(base / "editorial_architecture" / "editorial_architecture_report.json")
           lines = [
-            "## PULSE newsroom — actual Llama status",
-            "- Authenticated model generation: " + cc["status"],
-            "- Official statistical candidates: " + str(rr.get("candidate_articles", "not executed")),
-            "- Llama editorial attempts: " + str(rr.get("llama_attempts", "not executed")),
-            "- Llama drafts passing numeric audit: " + str(rr.get("llama_audited_drafts", "not executed")),
-            "- Public feed publications by this job: 0 (human approval still required)",
+              "## PULSE - verified official evidence and editorial preparation",
+              "- AI provider: Mistral Small 4 (optional)",
+              "- AI opt-in: " + readiness.get("state", "unknown"),
+              "- Official numeric source candidates: " + str(pipeline.get("candidate_articles", "not executed")),
+              "- Source-and-chart verified editorial briefs: " + str(queue.get("briefs_prepared_for_ai", "not executed")),
+              "- Missing against 30-story target: " + str(queue.get("not_written_due_to_lack_of_verified_sources", "not executed")),
+              "- Actual AI attempts: " + str(pipeline.get("ai_attempts", 0)),
+              "- AI drafts passing independent arithmetic audit: " + str(pipeline.get("ai_audited_drafts", 0)),
+              "- Budget reserved (conservative): " + str(pipeline.get("reserved_budget_estimate", 0)) + " " + str(pipeline.get("budget_unit", "unknown")),
+              "- Automatic publications in Android feed: 0; human review required",
           ]
-          print("\n".join(lines))
-          import os
+          print("\\n".join(lines))
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as out:
-              out.write("\n".join(lines) + "\n")
+              out.write("\\n".join(lines) + "\\n")
           PY
 
       - name: Preserve review packages, not published news
@@ -118,11 +155,20 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
 
-      - name: Mark the run unsuccessful when Llama is not actually reachable
-        if: steps.llama_probe.outcome == 'failure'
+      - name: Fail explicitly if opted-in Mistral credentials are unavailable
+        if: always()
+        env:
+          PULSE_EDITORIAL_AI_ENABLED: ${{ vars.PULSE_EDITORIAL_AI_ENABLED }}
         run: |
-          echo "::error::Llama did not generate a successful authenticated response; see llama_connection.json in the editorial artifact for the safe diagnostic."
-          exit 1
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          if os.environ.get("PULSE_EDITORIAL_AI_ENABLED") == "true":
+              p=Path("editorial_output/ai_readiness.json")
+              status=json.loads(p.read_text()) if p.is_file() else {}
+              if not status.get("configured"):
+                  raise SystemExit("Mistral opted in but missing GitHub Actions secret PULSE_MISTRAL_API_KEY")
+          PY
 
-# Nothing pushes to the production feed without an independent approval.
-# Tommy Worker is not used.
+# This workflow ONLY produces review artifacts. No model may sign human approval.
+# An AI secret alone does not activate billable inference.

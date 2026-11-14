@@ -221,7 +221,7 @@ def call_model(evidence):
         raise ValueError("unsafe_LLM_endpoint")
     if p.scheme == "http" and p.hostname not in {"localhost", "127.0.0.1"}:
         raise ValueError("remote_LLM_must_use_https")
-    max_tokens = max(500, min(2000, int(os.getenv("PULSE_LLM_MAX_OUTPUT_TOKENS", "1400"))))
+    max_tokens = max(500, min(2600, int(os.getenv("PULSE_LLM_MAX_OUTPUT_TOKENS", "1400"))))
     body = {"model":model,"temperature":0.2,"max_tokens":max_tokens,
             "messages":[{"role":"system","content":"Sei un giornalista statistico rigoroso. Nessuna cifra inventata."},
                         {"role":"user","content":ai_prompt(evidence)}],
