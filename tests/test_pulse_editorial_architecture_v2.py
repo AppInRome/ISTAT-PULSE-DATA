@@ -143,6 +143,27 @@ class ArchitectureIntegrationTests(unittest.TestCase):
                                 for x in report["excluded"]))
 
 
+class VerifiedChartFallbackTests(unittest.TestCase):
+    def test_external_renderer_failure_keeps_exact_source_graph_and_reports_truth(self):
+        e=fixture()
+        with TemporaryDirectory() as td, \
+             patch.object(pipeline.storytelling,"run_data_analyst",
+                          return_value={"status":"completed"}), \
+             patch.object(pipeline.storytelling,"run_dstory",
+                          side_effect=RuntimeError("external renderer cannot handle series")), \
+             patch.object(pipeline.storytelling,"source_trace",
+                          return_value=Path(td)/"trace"), \
+             patch.object(pipeline.storytelling,"run_data2story_inspector",
+                          return_value={"status":"completed"}):
+            components=pipeline.run_data_tools(e,Path(td),"mock-analyst","mock-dstory","mock-skill")
+            dstory=components["dstory"]
+            self.assertEqual(dstory["status"],"verified_fallback")
+            self.assertFalse(dstory["external_cli_completed"])
+            self.assertEqual(dstory["original_external_status"],"failed")
+            self.assertEqual(dstory["verified_original_observations"],
+                             len(e["series"]["observations"]))
+            self.assertIn("original", dstory["graph_views"])
+
 class ProviderTests(unittest.TestCase):
     def test_mistral_is_optional_and_does_not_look_for_cloudflare_credentials(self):
         with patch.dict(os.environ, {
