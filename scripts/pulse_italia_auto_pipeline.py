@@ -61,6 +61,28 @@ def run_data_tools(e, destination, data_analyst_script=None,
             outcome[name] = action()
         except (RuntimeError, OSError, ValueError) as exc:
             outcome[name] = {"status": "failed", "type": type(exc).__name__}
+    # The third-party dstory CLI may reject a numerically valid sparse/volatile
+    # official series. It is a presentation engine, NOT the source of truth.
+    # In that case use the built-in deterministic chart engine with exact
+    # original observations; NEVER claim the external CLI completed.
+    if outcome["dstory"].get("status") != "completed":
+        from scripts.pulse_italia_chart_analytics import calculate
+        try:
+            graphs = calculate(e["series"])
+            if not any(view["id"] == "original" and view["usable_points"] >= 2
+                       for view in graphs.get("views", [])):
+                raise ValueError("missing_original_verified_graph")
+            outcome["dstory"] = {
+                "status": "verified_fallback",
+                "original_external_status": outcome["dstory"].get("status"),
+                "external_cli_completed": False,
+                "chart_engine": "pulse_italia_chart_analytics.calculate",
+                "verified_original_observations": len(e["series"]["observations"]),
+                "graph_views": [x["id"] for x in graphs["views"]],
+                "warning": "external_story_renderer_failed; original data and deterministic PULSE graphs preserved",
+            }
+        except (ValueError, KeyError, TypeError, ArithmeticError):
+            pass
     trace = storytelling.source_trace(e, None, destination / "data2story_trace")
     try:
         outcome["data2story_inspector"] = storytelling.run_data2story_inspector(
@@ -223,8 +245,13 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                                     data2story_root)
         # Nothing may be marked publication-ready if external validation failed.
         all_tools_ok = all(c.get("status") == "completed" for c in components.values())
+        all_data_ready = (
+            components.get("data_analyst", {}).get("status") == "completed"
+            and components.get("data2story_inspector", {}).get("status") == "completed"
+            and components.get("dstory", {}).get("status") in ("completed", "verified_fallback")
+        )
         draft, status = None, {"status": no_ai_status or "not_attempted"}
-        if can_ai and not all_tools_ok:
+        if can_ai and not all_data_ready:
             status = {"status": "data_tools_incomplete"}
         elif can_ai:
             estimate = reserved_cost(engine.ai_prompt(evidence))
@@ -264,6 +291,9 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                         "valid_values": len(evidence["series"]["observations"]),
                         "graph_and_table": True,
                         "all_external_tools_complete": all_tools_ok,
+                        "verified_data_tools_ready": all_data_ready,
+                        "deterministic_graph_fallback_used": (
+                            components.get("dstory", {}).get("status") == "verified_fallback"),
                         "llama": status["status"], "article_published": False,
                         "preview": str(folder / "preview.json")})
     index = {
