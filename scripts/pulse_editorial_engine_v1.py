@@ -301,8 +301,8 @@ def publish_article(draft, evidence, approval):
         "source_documents":[{"url":evidence["dataset_url"],"sha256":evidence["source_sha256"],
                              "extraction_method":evidence["extraction_method"]}],
         "verified_series":[{"indicator":series["indicator"],"unit":series["unit"],
-                            # Radar 0.4 displays at most 12 comparable points.
-                            "observations":observations[-12:],"verified":True,
+                            # LAB 0.8 supports up to 36 original observations.
+                            "observations":observations[-24:],"verified":True,
                             # The official release URL is used for the existing Android
                             # exact-host provenance gate. The exact dataset URL is
                             # preserved separately in source_documents/chart_spec.
