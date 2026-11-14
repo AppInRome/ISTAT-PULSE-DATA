@@ -15,6 +15,10 @@ on:
       - "scripts/pulse_deterministic_writer.py"
       - "tests/test_pulse_deterministic_writer.py"
       - "scripts/pulse_automatic_feature_publish.py"
+      - "scripts/pulse_topic_coverage.py"
+      - "tests/test_pulse_topic_coverage.py"
+      - "scripts/pulse_story_composer.py"
+      - "tests/test_pulse_story_composer.py"
       - "scripts/pulse_editorial_selector.py"
       - "tests/test_pulse_editorial_selector.py"
       - "scripts/pulse_eurostat_topics.py"
@@ -66,6 +70,8 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
           python -m unittest discover -s tests -p "test_pulse_deterministic_writer.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
+          python -m unittest discover -s tests -p "test_pulse_story_composer.py" -v
+          python -m unittest discover -s tests -p "test_pulse_topic_coverage.py" -v
           python -m unittest discover -s tests -p "test_pulse_editorial_selector.py" -v
           python -m unittest discover -s tests -p "test_pulse_eurostat_topics.py" -v
           python -m unittest discover -s tests -p "test_pulse_regional_editing.py" -v
@@ -142,9 +148,14 @@ jobs:
             --versions-file data/news/source_versions.json \
             --frontpage-file data/news/editorial_frontpage.json \
             | tee editorial_output/automatic_publish_report.json
+          python -m scripts.pulse_topic_coverage \
+            --versions data/news/source_versions.json \
+            --frontpage data/news/editorial_frontpage.json \
+            --feed data/news/automatic_features.json \
+            --output data/news/topic_coverage.json
           git config user.name "PULSE Statistical Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json
+          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json data/news/topic_coverage.json
           if git diff --cached --quiet; then
             echo "No new verified deterministic features"
           else
@@ -188,6 +199,7 @@ jobs:
               "- Total source-audited features in Android feed: " + str(auto.get("persisted_in_mobile_feed", "not executed")),
               "- Cross-regional national-reading groups: " + str(auto.get("regional_groups", "not executed")),
               "- Smart selector features released: " + str(auto.get("new_features_selected", "not executed")),
+              "- Improved journalistic readings independently checked: " + str(auto.get("journalistic_story_updates", "not executed")),
               "- Smart selector briefings: " + str(auto.get("short_briefs", "not executed")),
               "- Dataset revisions awaiting review: " + str(auto.get("revision_alerts", "not executed")),
               "- Sources by topic and provider: " + str({

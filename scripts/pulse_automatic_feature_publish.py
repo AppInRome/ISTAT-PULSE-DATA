@@ -18,6 +18,7 @@ from scripts import pulse_editorial_audit_v1 as audit
 from scripts import pulse_headline_editor as headline_editor
 from scripts import pulse_regional_editing as regional
 from scripts import pulse_editorial_selector as selector
+from scripts import pulse_story_composer as composer
 from scripts import pulse_editorial_architecture_v2 as verify
 from scripts.pulse_italia_newsroom import italian_official_url
 
@@ -213,6 +214,15 @@ def publish(review_root, output_file, now=None, *, smart=False,
             id_ for id_ in frontpage["featured_article_ids"] if id_ in accepted]
         frontpage["features_new"] = [
             id_ for id_ in frontpage["features_new"] if id_ in accepted]
+    # The writer, chart renderer and independent audit have already finished.
+    # Add only a safe optional presentation object; never overwrite original
+    # article prose, titles, source metadata, graph or table values.
+    story_updated = 0
+    for key, current_item in list(accepted.items()):
+        enriched = composer.attach(current_item)
+        if enriched is not current_item:
+            accepted[key] = enriched
+            story_updated += 1
     old_digest = old.get("regional_editorial")
     digest = regional.build_digest(verified_pairs, old_digest, now)
     digest_changed = regional.canonical(digest) != regional.canonical(
@@ -228,13 +238,14 @@ def publish(review_root, output_file, now=None, *, smart=False,
     ledger_changed = bool(smart and (
         not versions_file.exists() or
         (ledger.get("series") or {}) != (old_versions.get("series") or {})))
-    if (added == 0 and retitled == 0 and not digest_changed
+    if (added == 0 and retitled == 0 and story_updated == 0 and not digest_changed
             and not frontpage_changed and not ledger_changed
             and output_file.exists()):
         return {"research_checked":checked,"rejected":rejected,
                 "published_new":0,"retitled_existing":0,
                 "regional_groups":len(digest["groups"]),"digest_changed":False,
                 "smart_editorial":smart,"new_features_selected":0,
+                "journalistic_story_updates":0,
                 "short_briefs":len(frontpage["briefs"]) if smart else 0,
                 "persisted_in_mobile_feed":len(previous),
                 "ai_calls":0,"source_facts_required":True,"status":"unchanged"}
@@ -250,7 +261,7 @@ def publish(review_root, output_file, now=None, *, smart=False,
         temp = path.with_suffix(".tmp")
         temp.write_text(json.dumps(document,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
         temp.replace(path)
-    if added or retitled or digest_changed or not output_file.exists():
+    if added or retitled or story_updated or digest_changed or not output_file.exists():
         save_atomic(output_file, result)
     if smart and frontpage_changed:
         save_atomic(frontpage_file, frontpage)
@@ -259,6 +270,7 @@ def publish(review_root, output_file, now=None, *, smart=False,
     return {"research_checked":checked,"rejected":rejected,
             "published_new":added,"retitled_existing":retitled,
             "regional_groups":len(digest["groups"]),"digest_changed":digest_changed,
+            "journalistic_story_updates":story_updated,
             "smart_editorial":smart,
             "new_features_selected":len(frontpage["features_new"]) if smart else added,
             "short_briefs":len(frontpage["briefs"]) if smart else 0,

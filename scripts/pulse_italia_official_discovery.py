@@ -511,7 +511,10 @@ def discover(fetch_fn=get_bytes, inps_catalog=None, istat_datasets=None, today=N
     if fetch_fn is get_bytes and inps_catalog is None and istat_datasets is None:
         try:
             from scripts import pulse_eurostat_topics as eurostat
-            eu, eu_checks = eurostat.discover(limit=min(16, max_sources))
+            # Reserve capacity for the independent ISTAT/INPS sources when the
+            # requested daily budget is large. Small test runs remain unchanged.
+            eu_slots = min(24, max_sources-6) if max_sources>16 else min(16,max_sources)
+            eu, eu_checks = eurostat.discover(limit=eu_slots)
             sources.extend(eu)
             checks.extend(eu_checks)
         except (ImportError, OSError, ValueError, TypeError) as exc:
