@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T15:50:26.351071+00:00",
+  "generated_at": "2026-11-14T16:52:35.556951+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
@@ -79,7 +79,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 47
     },
     {
       "radar": "Google News - economia lavoro",
@@ -89,7 +89,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 30
     },
     {
       "radar": "Repubblica Economia",
@@ -129,17 +129,17 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 54
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 17
+      "items_fetched": 16
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 40
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -149,7 +149,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 31
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -199,7 +199,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -214,7 +214,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 44
+      "items_fetched": 43
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -370,7 +370,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMzRWWFcycW9MdUwwU0xudFhWczRSa2gzNU51d2kxck4yd3lYSEJBT2JGaGo2Q284VEJ2bkNhYzBrR3pndExkZ2NIVUJFQTZvVUFELVFES1hESzgwZEI0UEU3eXNHTFRWUEtTRGNXM1hXbEJiLVZNcktCMDRFaDFqak9QZHFLMVlVYnE5UlAwSGRxbXFaUEo0Y0Q4d25DY3dYTzlpdlA2N3l3REt5Q01EQVdGU3A2dl9oUHpLbWtiYzkzYjZiVFJFUUJYY2JqWVNvdHFReFVCcXJjMXM4b0Jr0gHkAUFVX3lxTE5QMjB6Zld3T1IybkRpSUZ5SmYxaDZ6SHJyenBFcWdFU3FxMmxZNUo3WUFoWEJURzZEVmVCdm9fa0duZHQxM0ZEYzhJY1dIdXdrcDhFN2x2eHJYc0ZtX3FhU0FQRHlOcEQ1MV9PNnEtbXg3Q0tKQktyZjZ5cXAyWlF6LXpqVm0wWm9DZXVVVzJRMFFIenRnWjBlSmpEZ2Q4dUJoYkU2UWpmdXFSenEzMUl0VGJZV0JCTXdqSHVUQVJtaUZ0RnJzWlE3eHZ3aGtCUThrZjF6X2pKdWdCV0hXVmxuaF9leg?oc=5",
       "discovery_title": "Bankitalia, 'nel 2026 in Puglia l'occupazione cresce dello 0,6%' - ANSA",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 49,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -404,18 +404,12 @@
         "text_excerpt": " Economie regionali L’economia della Puglia Rapporto annuale 16 2 0 2 4 giugno 2024 Economie regionali L’economia della Puglia Rapporto annuale Numero 16 - giugno 2024 La collana Economie regionali ha la /f_i nalità di presentare studi e documentazione sugli aspetti territoriali dell’economia italiana. Comprende i rapporti annuali regionali e gli aggiornamenti congiunturali; include inoltre la pubblicazione annuale L’economia delle regioni italiane. Dinamiche recenti e aspetti strutturali e quella semestrale La domanda e l’offerta di credito a livello territoriale. Indirizzo Via Nazionale, 91 – 00184 Roma – Italia Sito internet http://www.bancaditalia.it Sede di Bari Corso Cavour, 4 – 70121 Bari Telefono +39 080 5731111 ISSN 2283-9615 (stampa) ISSN 2283-9933 (online) Tutti i diritti riservati. È consentita la riproduzione a fi ni didattici e non commerciali, a condizione che venga citata",
         "verified_series": [],
         "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
+        "search_domain": "bancaditalia.it",
         "attempts": [
           {
             "stage": "domain_search",
             "domain": "bancaditalia.it",
             "query": "site:bancaditalia.it \"bankitalia puglia occupazione cresce ansa\" 2026  0,6% 2026",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"bankitalia puglia occupazione cresce ansa\" 2026  0,6% 2026",
             "results": 6
           }
         ]
@@ -427,7 +421,7 @@
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxONGpMdkh1YTQwRVNjVjNPYzZGejdLTE4wTV93aTAyUWlWd3R5ZUNxUEFUczdXZXFLZnBoeDRjNlRycWxtMDlTdTJ5WEpQTUZIdlR1eWJQdGc3ZmRVYTZ6a0s3Q3ZUcVdYdTBwOU9LTUV1ZFpoRVRPVzlpdW5IMTVDXy1IM3Y0QTZybGRnU2pmYVF2TVgtODFfSV8wV3ZycWk1emYzdTdFa0p0ZU13OEZQVmJ1YmF3NWI4X3hSbDZoak5sdGwyN0ljZ3hGU1dwZlpoQmVXa1N4MDd0QXFyNkcwUHI4V2VOcWZaYXRoTTc4OURnbFXSAfMBQVVfeXFMTjRqTHZIdWE0MEVTY1YzT2M2Rno3S0xOME1fd2kwMlFpVnd0eWVDcVBBVHM3V2VxS2ZwaHg0YzZUcnFsbTA5U3UyeVhKUE1GSHZUdXliUHRnN2ZkVWE2emtLN0N2VHFXWHUwcDlPS01FdWRaaEVUT1c5aXVuSDE1Q18tSDN2NEE2cmxkZ1NqZmFRdk1YLTgxX0lfMFd2cnFpNXpmM3U3RWtKdGVNdzhGUFZidWJhdzViOF94Umw2aGpObHRsMjdJY2d4RlNXcGZaaEJlV2tTeDA3dEFxcjZHMFByOFdlTnFmWmF0aE03ODlEZ2xV?oc=5",
       "discovery_title": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6% - La Gazzetta del Mezzogiorno",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -470,18 +464,12 @@
         "text_excerpt": "Banca d'Italia - N. 16 - L'economia della Puglia Vai al contenuto principale Apri menu di navigazione Home page Menu Chiudi IT EN Go to english version Chi siamo Chi siamo La Banca d'Italia è la banca centrale della Repubblica italiana e persegue finalità d'interesse generale nel settore monetario e finanziario. È parte dell'Eurosistema, composto dalle banche centrali nazionali dell'area euro e dalla Banca centrale europea. Vai alla pagina Chi siamo Visite a Palazzo Koch (si apre in una nuova finestra) In questa sezione Storia Funzioni e governance Organizzazione Eurosistema Personale Lavorare in Banca d'Italia La Banca d'Italia e la sostenibilità ambientale e sociale La Banca d'Italia per la cybersicurezza Etica e prevenzione corruzione Patrimonio immobiliare della Banca d'Italia Archivio storico Biblioteca Bilancio e situazioni contabili mensili Procedimenti amministrativi e diritto di",
         "verified_series": [],
         "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
+        "search_domain": "bancaditalia.it",
         "attempts": [
           {
             "stage": "domain_search",
             "domain": "bancaditalia.it",
             "query": "site:bancaditalia.it \"bankitalia puglia primi mesi cresce dell\" 6  2026  1%",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"bankitalia puglia primi mesi cresce dell\" 6  2026  1%",
             "results": 6
           }
         ]
@@ -493,7 +481,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBjZ0lTSkhrOGZIOElHN09MNGZTaHhiQXE1d3pzMy1sZXd6VlFhQ3RNeE1qODZtZnZxUmJsVVhGX3o1bG1FWVZZUnk0UTNxQmxVZDlyT3JNdEpQMlpQLVQyMlFjN3hBYXhKYlJKWFV3X1oteFo5bHQ3MXBTU1g?oc=5",
       "discovery_title": "Export, il Veneto traina l’Italia: 80 miliardi nel 2025. Verona ne vale 16 - L\\'Adige di Verona",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -514,7 +502,7 @@
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPM1ZZejZ5TnNMdG5jd0N2QnJFLXJ6aHhyVllENFRPSUNVTjJYeFQ5Q0tlVzV6eHF0UHc5RE9ZTTJpZEZzSHRHN1VDSEtKdElfdWI2a0s4YU0zZlByZTN6M3hsbGRMR09IenpYV01sTElxWkhkbDQ2aTc1WllrLXExaEFYRG5sVnFvbmpBWHBwWVUxZnp2eFpYRTc3b2gwQ1l2LVhjellKZWlMNjNqZ3VzSXBlaUs0alprZWhEQUVRaWN2Um9WbUZYWUtELVpoN3NxYUluMHMtNG10Q04zTTExaGdPZkl3NXczLXRXQzNDVGhiZEgtNGQwQTBsVm5JbG9nT0V1MHd0cllyZFVSa2JDZE1Gcjd4OUxLekh5RThsbkpGLWJWNjhYUmRrVXljZw?oc=5",
       "discovery_title": "FONDAZIONE MIGRANTES * RAPPORTO ITALIANI NEL MONDO 2026: «6.630.284 I CITTADINI RESIDENTI ALL'ESTERO ISCRITTI ALL'AIRE, IN VENT'ANNI SONO PIÙ CHE RADDOPPIATI - agenzia giornalistica opinione",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 45,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -532,37 +520,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "AGI - Notizie",
-      "discovery_url": "https://www.agi.it/economia/news/2026-11-14/inflazione-record-cgia-mestre-40025308/",
-      "discovery_title": "Inflazione a +4,4% dall'inizio della guerra in Medio Oriente. Record a Como e Siena",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
-      "score_discovery": 95,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "+4,4%",
-        "28 ",
-        "2026 ",
-        "4,4%",
-        "+5,4%",
-        "+5,1 ",
-        "+4,6 ",
-        "+28,7 ",
-        "+13,8 ",
-        "+9 ",
-        "+8,3 ",
-        "+6,1 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
       "discovery_title": "Commercio con l’estero e prezzi all’import – Settembre 2026",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -622,9 +583,9 @@
     },
     {
       "radar": "PULSE 80 testate · locali · gruppo 16",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSGJlOVZyWUk3MlVra2tjVFU1ZG04bEtwMW1qNUZySmVhXzQxZS03WEhheUdMNmF6Ty1sQk1yelY5SjlzT2xrZmt1ZU5JTGtQUEFqNHM3ZE9haUNNVXZIYzBnbGRaOGxmcmhtZGh3TnJBcm94ajJMN1lpZjhobk1DUElRWnJ6WTdHQVc3WWZn?oc=5",
-      "discovery_title": "Emilia-Romagna, Pil a +1%. Bene industria, export, turismo. Per il 2027 domina l’incertezza - Il Resto del Carlino",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUGl2WGpvRkVMQk12UENIZTBQODE0QmlPdUw4TFZCa1V0dWRWZFM0a2tfRTZFc0phcjJ0aXl0Y1VWcnlueEktT2NRbXFuWDA3cng0YlBkSFNlX0xWQ2FxMHdSemFHa2lCY0J0N2VMbDZEajBWWnZNSGZRTlhwUVBWME9GMXE4TFN5MGJqQW5iNE5DbmpHTHBrekJR?oc=5",
+      "discovery_title": "Emilia-Romagna, Pil a +1%: bene industria, export, turismo. Per il 2027 domina l’incertezza - Il Resto del Carlino",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -643,7 +604,7 @@
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxONkR6djVmZjZvc0V4VW5vTmJXaDF1azB2dEhmRW1KTERXVDNrS25PZERENlJGMVd2ejVJNjNTWkZLTlJ3MDMySVk3aEwwRDlvMDVsRnYyQzVVNDdqdUZCR1pMN2F2U0gxWmtPT2xBdVNDY3d5RFg4QVZFTDJWYS0xTWdUMkpkc3loc2szRVdWZUU0NnBwcF8wNllMLUJxRXhOemV6Ynh5Y0VIZlV3aFBwajhOaGJoV0J6ZDlMSUJOdDMxQ2kzRzFCVUNzWUt0U3dKQkN6XzcybVJtbXgwZjJZaEZJTkE3dktmTFZOaURwa0FsZXc4eXZHYXhBaUJfTnR6SndpZU1KYWZuQQ?oc=5",
       "discovery_title": "Agricoltura, De Carlo (FdI): \"Rapporto Ismea 2026 certifica la forza dell'agroalimentare italiano: 75,2 miliardi di produzione e occupazione in crescita\" - La Voce del Patriota",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 54,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -662,7 +623,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
       "discovery_title": "Soddisfazione dei cittadini – Anno 2025",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -724,7 +685,7 @@
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNblFFYjkxTHhqaDlVd2FtVUtWSVJhbEVQXzMzcV9mbDBMNEdEaFJkNXUtQnQ1cUhtT2pvSzB6YTh1V2JxSkVHUTJsNG9JeTZkdXQtMGlOcHo1SzBFT1JKRElKZzlWLVV3Y3lBWkZOb19TVGlma3Z6a19DU1ctdmZUcW1iajFITHFmckE?oc=5",
       "discovery_title": "Istat. Quasi 8 italiani su 10 soddisfatti della propria salute, ma dopo i 75 anni la quota crolla al 59,2%. Donne e Sud più indietro - Il Farmacista Online",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -747,7 +708,7 @@
       "radar": "Google News - Tasse redditi casa",
       "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUmNESG1nSWFTbklZdzBuTWE1VEFhejJsNl9fQ2cxTFFRUWFqX1B1T19vZEtzay0ycWIxdFF2QzZNZFZwOUUzQ3ZGcWY1SjJJTVhnbTR2bWRveHhjSVJZWHdTVHJaZUhjamwwQjk3R1pwdlhXbmUtZHAzQTBUdGRQRy01dTZYaThybFl6bzNoMUhJejQ2eDREU0VEYW1tTFVUTlBRZWExQ0hBVU9lWlE?oc=5",
       "discovery_title": "Accessibilità abitativa UE 2025: rapporto prezzo-reddito in aumento del 6,8%, in calo in 17 paesi - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-14T15:50:26.351071+00:00",
+      "detected_at": "2026-11-14T16:52:35.556951+00:00",
       "score_discovery": 65,
       "topic": "ALTRO",
       "numbers_detected": [
