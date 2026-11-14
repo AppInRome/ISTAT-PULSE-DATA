@@ -106,7 +106,7 @@ def journalistic_headline(article):
     if match:
         yr, mn = int(match.group(1)), int(match.group(2))
         date_label = f"a {MONTHS_IT[mn]} {yr}"
-        prior = date(yr-1, 12) if mn == 1 else date(yr, mn-1)
+        prior = date(yr-1, 12, 1) if mn == 1 else date(yr, mn-1, 1)
         # Only claim a direction with a real immediately preceding month.
         adjacent = previous == f"{prior.year:04d}-{prior.month:02d}"
     elif ANNUAL.fullmatch(current):
