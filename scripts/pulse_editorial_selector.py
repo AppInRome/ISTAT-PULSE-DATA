@@ -145,6 +145,8 @@ def assess(item,evidence,known,now,topic_counts):
         tier="catalogue"
     return {
         "article_id":item["id"],"topic":topic,"score":score,
+        "headline":str(item.get("headline") or ""),
+        "source_url":str(evidence.get("source_url") or ""),
         "parts":{"newness":freshness,"signal":signal,"impact":impact,"diversity":diversity},
         "reason":reason, "novelty":novelty,"tier":tier,
         "period_reference":latest,
@@ -218,6 +220,7 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
         "featured_article_ids":featured[:MAX_FEATURES_PER_DAY],
         "features_new":[a["article_id"] for a in selected],
         "briefs":[{"article_id":a["article_id"],"topic":a["topic"],
+                   "headline":a["headline"],"source_url":a["source_url"],
                    "score":a["score"],"reason":a["reason"],
                    "period_reference":a["period_reference"],
                    "source_release_recent":a["source_release_recent"]}
