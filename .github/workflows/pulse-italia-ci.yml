@@ -5,6 +5,8 @@ on:
       - "scripts/pulse_italia_newsroom.py"
       - "scripts/pulse_data_story_stack.py"
       - "scripts/pulse_cloudflare_llama.py"
+      - "scripts/pulse_llama_live_probe.py"
+      - "tests/test_pulse_llama_live_probe.py"
       - "scripts/pulse_italia_official_discovery.py"
       - "scripts/pulse_italia_chart_analytics.py"
       - "tests/test_pulse_italia_chart_analytics.py"
@@ -45,6 +47,7 @@ jobs:
           python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
           python -m unittest discover -s tests -p "test_pulse_data_story_stack.py" -v
           python -m unittest discover -s tests -p "test_pulse_cloudflare_llama.py" -v
+          python -m unittest discover -s tests -p "test_pulse_llama_live_probe.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_official_discovery.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_chart_analytics.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
