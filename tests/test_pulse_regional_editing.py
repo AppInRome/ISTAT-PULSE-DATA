@@ -70,7 +70,7 @@ class RegionalEditorialTests(unittest.TestCase):
         self.assertEqual(len(grouping.build_digest(changed)["groups"]),1)
         self.assertEqual(grouping.build_digest(changed)["groups"][0]["coverage"],4)
         for i in range(3):
-            changed[i][1]["series"]["classification_values"]["Tipo_intervento"]="Straordinaria"
+            changed[i][1]["series"]["classification_values"]["Tipo_intervento"]="Special"+str(i)
         self.assertEqual(len(grouping.build_digest(changed)["groups"]),0)
 
     def test_not_same_period_or_source(self):
