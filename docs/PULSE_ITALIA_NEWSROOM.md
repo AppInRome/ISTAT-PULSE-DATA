@@ -33,11 +33,25 @@ Per scrivere una bozza è necessario creare prima manifest con URL reali di data
 
     python scripts/pulse_italia_newsroom.py draft --manifests-dir data/editorial_italia/manifests --output-dir editorial_output/drafts --limit 20
 
-Variabili GitHub in Settings → Secrets and variables → Actions:
-- Secret PULSE_LLM_API_KEY
-- Variables PULSE_LLM_ENDPOINT e PULSE_LLM_MODEL
+## Collegamento sicuro a Cloudflare Llama
 
-Non mettere credenziali nell'APK o nei file pubblici.
+Il vecchio Worker Cloudflare `pulse-tommy-api` e il relativo database sono **ritirati dal progetto PULSE**: non usarli, non recuperarne il token, non modificarli e non cancellarli automaticamente. L'integrazione usa **direttamente l'API Workers AI ufficiale**, senza creare un nuovo Worker.
+
+Configurare una sola volta nel repository GitHub, menu **Settings → Secrets and variables → Actions**:
+
+- **Secret** `PULSE_CF_AI_TOKEN`: token Cloudflare nuovo, limitato a Workers AI; non usare `PULSE_CLIENT_TOKEN` né `OPENAI_API_KEY` del Worker dismesso.
+- **Variable** `PULSE_CF_ACCOUNT_ID`: identificatore dell'account Cloudflare, non credenziale segreta.
+
+Il modulo `scripts/pulse_cloudflare_llama.py` sceglie autonomamente l'endpoint ufficiale `/ai/v1/chat/completions` e il modello `@cf/meta/llama-3.3-70b-instruct-fp8-fast`. Non serve configurare `PULSE_LLM_ENDPOINT` o `PULSE_LLM_MODEL` a mano. **Non copiare token in chat, codice, APK o commit.**
+
+Solo dopo aver collaudato il token e un dataset reale si può proporre il merge della PR. I workflow GitHub non pubblicano automaticamente articoli; 20 candidature al giorno non equivalgono a 20 articoli verificati.
+
+### Costi e protezioni
+
+Workers AI Free dichiara una quota di 10.000 Neurons/giorno. Un limite locale prenota al massimo 8.200 Neurons per esecuzione programmata, **calcolati per stima** (non è un contatore ufficiale Cloudflare): eventuali consumi da altri servizi dello stesso account o differenze nella tokenizzazione potrebbero esaurire prima la quota. Il modello può rispondere con errore quando la quota gratuita è terminata. Evitare di abilitare un piano a pagamento senza decisione esplicita.
+
+Sorgenti documentali: https://developers.cloudflare.com/workers-ai/configuration/open-ai-compatibility/ e https://developers.cloudflare.com/workers-ai/platform/pricing/.
+
 
 ## Flusso editoriale vincolato
 
