@@ -15,6 +15,8 @@ on:
       - "scripts/pulse_deterministic_writer.py"
       - "tests/test_pulse_deterministic_writer.py"
       - "scripts/pulse_automatic_feature_publish.py"
+      - "scripts/pulse_regional_editing.py"
+      - "tests/test_pulse_regional_editing.py"
       - "scripts/pulse_headline_editor.py"
       - "tests/test_pulse_headline_editor.py"
       - "tests/test_pulse_automatic_feature_publish.py"
@@ -60,6 +62,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
           python -m unittest discover -s tests -p "test_pulse_deterministic_writer.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
+          python -m unittest discover -s tests -p "test_pulse_regional_editing.py" -v
           python -m unittest discover -s tests -p "test_pulse_headline_editor.py" -v
 
       - name: Record explicit AI opt-in without spending any credit
@@ -173,6 +176,7 @@ jobs:
               "- New source-audited non-AI features in Android feed: " + str(auto.get("published_new", "not executed")),
               "- Existing article titles improved (no other field changed): " + str(auto.get("retitled_existing", 0)),
               "- Total source-audited features in Android feed: " + str(auto.get("persisted_in_mobile_feed", "not executed")),
+              "- Cross-regional national-reading groups: " + str(auto.get("regional_groups", "not executed")),
               "- AI assisted journalism remains unpublished until human review",
           ]
           print("\\n".join(lines))
