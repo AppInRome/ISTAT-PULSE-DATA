@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """PULSE Italia end-to-end RESEARCH: official discovery -> numeric evidence ->
-analyst + dstory + inspector -> optional Llama -> audited drafts -> review queue.
+analyst + dstory + inspector -> optional model -> audited drafts -> review queue.
 
 This script does not equate an automated numeric audit with human editorial
 approval. Publication of a long-form news feature is a separate reviewed step.
@@ -20,8 +20,9 @@ from scripts import pulse_italia_official_discovery as official
 from scripts import pulse_data_story_stack as storytelling
 from scripts import pulse_editorial_engine_v1 as engine
 from scripts import pulse_editorial_audit_v1 as audit
-from scripts.pulse_cloudflare_llama import (
-    BUDGET_NEURONS, configure_environment, reserved_neurons
+from scripts.pulse_ai_provider import (
+    active_provider, configure_environment, reserved_cost, run_budget_limit,
+    budget_unit, credentials_status
 )
 
 UTC = timezone.utc
@@ -131,7 +132,7 @@ def build_preview(e, draft=None):
 
 
 
-def load_official_file_evidences(folder, max_files=12):
+def load_official_file_evidences(folder, max_files=40):
     """Recheck independently discovered source bytes before editorial use.
 
     The discovery script must extract original CSV/JSON/XLSX rows itself.
@@ -204,14 +205,15 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         unique[identity] = e
     sources = list(unique.values())
     now = now or datetime.now(UTC)
+    provider = active_provider()
     budget = 0.0
+    budget_limit = run_budget_limit()
     can_ai = bool(ai_enabled and configure_environment())
-    # Not having a token is not the same as deliberately switching AI off.
-    # The CI report must state unambiguously whether Llama ran.
+    # No credential must never silently fall back to another paid provider.
     no_ai_status = ("disabled_by_operator" if not ai_enabled else
-                    "missing_cloudflare_credentials" if not can_ai else None)
+                    credentials_status() if not can_ai else None)
     results = []
-    for evidence in sources[:max(0, min(max_sources, 8))]:
+    for evidence in sources[:max(0, min(max_sources, 30))]:
         ident = evidence_id(evidence)
         folder = output / ident
         folder.mkdir(parents=True, exist_ok=True)
@@ -222,19 +224,24 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         # Nothing may be marked publication-ready if external validation failed.
         all_tools_ok = all(c.get("status") == "completed" for c in components.values())
         draft, status = None, {"status": no_ai_status or "not_attempted"}
-        if can_ai:
-            estimate = reserved_neurons(engine.ai_prompt(evidence))
-            if budget + estimate > BUDGET_NEURONS:
-                status = {"status": "daily_budget_estimate_exceeded"}
+        if can_ai and not all_tools_ok:
+            status = {"status": "data_tools_incomplete"}
+        elif can_ai:
+            estimate = reserved_cost(engine.ai_prompt(evidence))
+            if budget + estimate > budget_limit:
+                status = {"status": "run_budget_estimate_exceeded"}
             else:
                 budget += estimate
                 try:
                     proposed = engine.call_model(evidence)
                     draft, status = audit_draft(evidence, proposed)
                     if draft and status["status"] == "audited_draft":
-                        save(folder / "llama_draft.json", draft)
+                        save(folder / "ai_draft.json", draft)
+                        # Legacy output remains for existing Cloudflare review tests.
+                        if provider == "cloudflare":
+                            save(folder / "llama_draft.json", draft)
                     elif draft:
-                        save(folder / "llama_rejected_by_audit.json", draft)
+                        save(folder / "ai_rejected_by_audit.json", draft)
                 except (ValueError, TypeError, KeyError, OSError, URLError,
                         HTTPError, json.JSONDecodeError) as exc:
                     status = {"status": "ai_unavailable_or_invalid",
@@ -263,14 +270,25 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         "generated_at": now.isoformat(), "scope": "IT",
         "official_discovery": report, "results": results,
         "candidate_articles": len(results), "published_articles": 0,
-        "llama_configured": bool(can_ai),
-        "llama_status": ("configured" if can_ai else no_ai_status),
-        "llama_audited_drafts": sum(r["llama"] == "audited_draft" for r in results),
-        "llama_attempts": sum(r["llama"] in
+        "ai_provider": provider,
+        "ai_configured": bool(can_ai),
+        "ai_status": ("configured" if can_ai else no_ai_status),
+        "ai_audited_drafts": sum(r["llama"] == "audited_draft" for r in results),
+        "ai_attempts": sum(r["llama"] in
             {"audited_draft", "rejected", "insufficient_evidence",
              "ai_unavailable_or_invalid"} for r in results),
-        "reserved_neurons_estimate": round(budget, 2),
-        "budget_limit_estimate": BUDGET_NEURONS,
+        "budget_unit": budget_unit(),
+        "reserved_budget_estimate": round(budget, 6),
+        "run_budget_estimate_limit": budget_limit,
+        # Backwards compatibility: no Cloudflare-specific units on Mistral reports.
+        "llama_configured": bool(can_ai) if provider == "cloudflare" else False,
+        "llama_status": ("configured" if can_ai else no_ai_status) if provider == "cloudflare" else "not_selected",
+        "llama_audited_drafts": sum(r["llama"] == "audited_draft" for r in results) if provider == "cloudflare" else 0,
+        "llama_attempts": sum(r["llama"] in
+            {"audited_draft", "rejected", "insufficient_evidence",
+             "ai_unavailable_or_invalid"} for r in results) if provider == "cloudflare" else 0,
+        "reserved_neurons_estimate": round(budget, 2) if provider == "cloudflare" else None,
+        "budget_limit_estimate": budget_limit,
         "requires_human_editorial_review": True,
     }
     save(output / "pipeline_report.json", index)
@@ -278,7 +296,7 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
 
 
 def main(argv=None):
-    p = argparse.ArgumentParser(description="Discover official data, create verified figures and Llama drafts")
+    p = argparse.ArgumentParser(description="Discover official data, verify charts and prepare optional audited AI drafts")
     p.add_argument("--output-dir", required=True)
     p.add_argument("--max-sources", type=int, default=3)
     p.add_argument("--no-ai", action="store_true")
@@ -295,10 +313,12 @@ def main(argv=None):
         dstory_command=args.dstory_command,
         data2story_root=args.data2story_root)
     print(json.dumps({"candidates": result["candidate_articles"],
-                      "published": 0, "llama_status": result["llama_status"],
-                      "llama_attempts": result["llama_attempts"],
-                      "audited_llama_drafts": result["llama_audited_drafts"],
-                      "ai_budget_reserved_estimate": result["reserved_neurons_estimate"],
+                      "published": 0, "ai_provider": result["ai_provider"],
+                      "ai_status": result["ai_status"],
+                      "ai_attempts": result["ai_attempts"],
+                      "audited_ai_drafts": result["ai_audited_drafts"],
+                      "ai_budget_reserved_estimate": result["reserved_budget_estimate"],
+                      "budget_unit": result["budget_unit"],
                       "discovery_checks": len(result["official_discovery"]["sources_considered"])},
                      ensure_ascii=False))
 
