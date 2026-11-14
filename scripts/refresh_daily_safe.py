@@ -134,6 +134,20 @@ def news_refresh(temp: Path) -> dict:
     arts = read_json(base / "articles.json", {})
     candidates = read_json(base / "candidates.json", {})
     idx = read_json(base / "index.json", {})
+    # Reapply separately retained, independently reviewed Italian longforms.
+    # A normal RSS refresh must never silently erase approved PULSE journalism.
+    approved_store = DATA / "editorial_italia" / "published_articles.json"
+    if approved_store.exists():
+        try:
+            from scripts.pulse_italia_reviewed_publish import overlay_approved
+        except ModuleNotFoundError:
+            from pulse_italia_reviewed_publish import overlay_approved
+        arts, idx, restored = overlay_approved(
+            arts, idx, read_json(approved_store, {"articles": []}))
+        write_json(base / "articles.json", arts)
+        write_json(base / "index.json", idx)
+        print("PULSE editoriale Italia: mantenuti", restored,
+              "approfondimenti verificati nel feed", flush=True)
     article_list = arts.get("articles", [])
     old_list = read_json(DATA / "news" / "articles.json", {}).get("articles", [])
     if not isinstance(article_list, list) or len(article_list) < max(15, len(old_list)//2):
