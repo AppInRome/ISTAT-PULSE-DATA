@@ -116,6 +116,12 @@ def build_digest(verified_pairs, old_digest=None, published_at=None):
         if len(rows) < 3:
             continue
         first = rows[0]
+        # Two different official classifications may share the same indicator.
+        # Their groups must remain distinct AND explain the distinction.
+        category_labels = json.loads(group_key)[6]
+        classification_note = "; ".join(
+            str(k).replace("_", " ").capitalize() + ": " + str(v)
+            for k, v in category_labels)[:180]
         gid = "PULSE-CMP-" + sha256(group_key.encode()).hexdigest()[:22].upper()
         old = earlier.get(gid) or {}
         label = period_label(first["period"])
@@ -147,6 +153,7 @@ def build_digest(verified_pairs, old_digest=None, published_at=None):
             "previous_period": first["previous_period"], "period_display": label,
             "publisher": first["publisher"], "source_url": first["source_url"],
             "measure": first["measure"], "unit": first["unit"],
+            "classification_note": classification_note,
             "coverage": len(rows), "country_total_available": False,
             "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
             "paragraphs": [
