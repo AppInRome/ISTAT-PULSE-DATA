@@ -220,7 +220,7 @@ def discover_primary_sources(articles, *, max_stories=MAX_CANDIDATES,
         fetch = engine.fetch
     out = []
     seen = set()
-    for article in articles:
+    for article in articles[:max(10, max_stories * 3)]:
         if len(out) >= max_stories:
             break
         if not italy_relevant(article):
@@ -271,7 +271,19 @@ def main(argv=None):
     articles.sort(key=lambda x: str(x.get("published_at") or ""), reverse=True)
     out_dir = Path(a.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    found = discover_primary_sources(articles, max_stories=max(1, min(a.limit, 20)))
+    # Existing PULSE research desk provides search leads from Italian official
+    # domains; search snippets are NEVER used as statistical evidence.
+    from scripts.pulse_primary_research import search_leads
+    from scripts.pulse_italia_newsroom import ITALIAN_OFFICIAL_HOSTS
+    from scripts.update_news_radar import multi_search
+    queries = [0]
+    def official_search(article):
+        if queries[0] >= 6:
+            return []
+        queries[0] += 1
+        return search_leads(article, ITALIAN_OFFICIAL_HOSTS, search_fn=multi_search)
+    found = discover_primary_sources(
+        articles, max_stories=max(1, min(a.limit, 20)), search=official_search)
     manifest_dir = out_dir / "manifests"
     evidence_dir = out_dir / "evidence"
     manifest_dir.mkdir(exist_ok=True)
