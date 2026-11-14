@@ -42,6 +42,10 @@ ISTAT_RATE_NAMES = frozenset({
     "Tasso di occupazione", "Tasso di inattività",
 })
 TOPIC_WORDS = {
+    "prodotto interno lordo": "ECONOMIA", "rifiut": "AMBIENTE",
+    "speranza di vita": "SALUTE", "sovraffoll": "CASA",
+    "istruzione terziaria": "ISTRUZIONE", "rinnovabil": "ENERGIA",
+    "energia": "ENERGIA", "popolazione al primo": "DEMOGRAFIA",
     "pension": "LAVORO", "disoccup": "LAVORO", "occup": "LAVORO",
     "lavor": "LAVORO", "salari": "LAVORO", "reddito": "ECONOMIA",
     "inflaz": "ECONOMIA", "prezz": "ECONOMIA", "abit": "DEMOGRAFIA",
