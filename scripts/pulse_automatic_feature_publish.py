@@ -17,6 +17,7 @@ from pathlib import Path
 from scripts import pulse_editorial_audit_v1 as audit
 from scripts import pulse_headline_editor as headline_editor
 from scripts import pulse_regional_editing as regional
+from scripts import pulse_editorial_selector as selector
 from scripts import pulse_editorial_architecture_v2 as verify
 from scripts.pulse_italia_newsroom import italian_official_url
 
@@ -146,11 +147,18 @@ def validated_article(folder, published_at):
     return headline_editor.with_editorial_headline(item)
 
 
-def publish(review_root, output_file, now=None):
+def publish(review_root, output_file, now=None, *, smart=False,
+            versions_file=None, frontpage_file=None):
     review_root, output_file = Path(review_root), Path(output_file)
     now = now or utc_now()
     old = read_json(output_file) if output_file.exists() else {}
     previous = old.get("articles", [])
+    if smart and (versions_file is None or frontpage_file is None):
+        raise ValueError("smart_mode_requires_both_persistent_files")
+    versions_file = Path(versions_file) if versions_file is not None else None
+    frontpage_file = Path(frontpage_file) if frontpage_file is not None else None
+    old_versions = read_json(versions_file) if smart and versions_file.exists() else {}
+    old_frontpage = read_json(frontpage_file) if smart and frontpage_file.exists() else {}
     if not isinstance(previous,list):
         raise ValueError("malformed_existing_feed")
     accepted = {r["id"]:r for r in previous if isinstance(r,dict)
@@ -166,6 +174,7 @@ def publish(review_root, output_file, now=None):
             retitled += 1
     checked = rejected = added = 0
     verified_pairs = []
+    prospective = []
     for folder in sorted(review_root.iterdir()) if review_root.is_dir() else []:
         if not folder.is_dir():
             continue
@@ -176,12 +185,34 @@ def publish(review_root, output_file, now=None):
         except (KeyError, IndexError, TypeError, ValueError, OSError, json.JSONDecodeError):
             rejected += 1
             continue
-        if item["id"] not in accepted:
-            accepted[item["id"]] = item
-            added += 1
-        # The new regional reading uses the original checked evidence, never
-        # newspaper headlines and never the generated article prose.
-        verified_pairs.append((accepted[item["id"]], evidence))
+        if smart:
+            # Selection uses verified evidence only, after all audits, but
+            # BEFORE a new article enters the permanent published feed.
+            prospective.append((item,evidence))
+        else:
+            if item["id"] not in accepted:
+                accepted[item["id"]] = item
+                added += 1
+            verified_pairs.append((accepted[item["id"]], evidence))
+    frontpage, ledger = None, None
+    approved_ids = set()
+    selected_stats = {}
+    if smart:
+        frontpage, ledger, selected_stats = selector.evaluate(
+            prospective, previous, old_versions, old_frontpage, now)
+        approved_ids = set(frontpage["featured_article_ids"])
+        for item, evidence in prospective:
+            if item["id"] in accepted:
+                verified_pairs.append((accepted[item["id"]], evidence))
+            elif item["id"] in approved_ids:
+                accepted[item["id"]] = item
+                verified_pairs.append((item, evidence))
+                added += 1
+        # Never expose a featured ID that was not actually published.
+        frontpage["featured_article_ids"] = [
+            id_ for id_ in frontpage["featured_article_ids"] if id_ in accepted]
+        frontpage["features_new"] = [
+            id_ for id_ in frontpage["features_new"] if id_ in accepted]
     old_digest = old.get("regional_editorial")
     digest = regional.build_digest(verified_pairs, old_digest, now)
     digest_changed = regional.canonical(digest) != regional.canonical(
@@ -189,10 +220,22 @@ def publish(review_root, output_file, now=None):
     # Do NOT change the generation timestamp or create a new Git commit
     # when the source series and the published article IDs are unchanged.
     # Otherwise a daily noop races with the radar or unrelated PR merges.
-    if added == 0 and retitled == 0 and not digest_changed and output_file.exists():
+    frontpage_changed = bool(smart and (
+        not frontpage_file.exists() or
+        {k:v for k,v in frontpage.items() if k!="generated_at"} !=
+        {k:v for k,v in old_frontpage.items() if k!="generated_at"} or
+        str(old_frontpage.get("generated_at",""))[:10] != now[:10]))
+    ledger_changed = bool(smart and (
+        not versions_file.exists() or
+        (ledger.get("series") or {}) != (old_versions.get("series") or {})))
+    if (added == 0 and retitled == 0 and not digest_changed
+            and not frontpage_changed and not ledger_changed
+            and output_file.exists()):
         return {"research_checked":checked,"rejected":rejected,
                 "published_new":0,"retitled_existing":0,
                 "regional_groups":len(digest["groups"]),"digest_changed":False,
+                "smart_editorial":smart,"new_features_selected":0,
+                "short_briefs":len(frontpage["briefs"]) if smart else 0,
                 "persisted_in_mobile_feed":len(previous),
                 "ai_calls":0,"source_facts_required":True,"status":"unchanged"}
     final = sorted(accepted.values(),key=lambda x:x["published_at"],reverse=True)
@@ -202,13 +245,24 @@ def publish(review_root, output_file, now=None):
         final = final[:MAX_FEED_ENTRIES]
     result = {"schema":SCHEMA,"generated_at":now,"articles":final,
               "regional_editorial":digest}
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    temp = output_file.with_suffix(".tmp")
-    temp.write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
-    temp.replace(output_file)
+    def save_atomic(path, document):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temp = path.with_suffix(".tmp")
+        temp.write_text(json.dumps(document,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+        temp.replace(path)
+    if added or retitled or digest_changed or not output_file.exists():
+        save_atomic(output_file, result)
+    if smart and frontpage_changed:
+        save_atomic(frontpage_file, frontpage)
+    if smart and ledger_changed:
+        save_atomic(versions_file, ledger)
     return {"research_checked":checked,"rejected":rejected,
             "published_new":added,"retitled_existing":retitled,
             "regional_groups":len(digest["groups"]),"digest_changed":digest_changed,
+            "smart_editorial":smart,
+            "new_features_selected":len(frontpage["features_new"]) if smart else added,
+            "short_briefs":len(frontpage["briefs"]) if smart else 0,
+            "revision_alerts":len(frontpage["revision_review"]) if smart else 0,
             "persisted_in_mobile_feed":len(final),
             "ai_calls":0,"source_facts_required":True}
 
@@ -217,8 +271,14 @@ def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument("--review-root", default="editorial_output/official_data_stories")
     p.add_argument("--output", default="data/news/automatic_features.json")
+    p.add_argument("--smart",action="store_true",help="source-version and newsworthy publication gate")
+    p.add_argument("--versions-file",default="data/news/source_versions.json")
+    p.add_argument("--frontpage-file",default="data/news/editorial_frontpage.json")
     a=p.parse_args(argv)
-    print(json.dumps(publish(a.review_root,a.output),ensure_ascii=False))
+    print(json.dumps(publish(a.review_root,a.output, smart=a.smart,
+                             versions_file=a.versions_file if a.smart else None,
+                             frontpage_file=a.frontpage_file if a.smart else None),
+                     ensure_ascii=False))
 
 
 if __name__=="__main__":

@@ -78,6 +78,72 @@ CATALOG = (
         "population": "Consumo finale lordo di energia: quota rinnovabile",
         "filters": {"nrg_bal": "REN"},
     },
+    # Second-tier verified catalogue CANDIDATES. The extractor must re-check
+    # every source dimension, unit and original cell; a failed query is NOT
+    # a published statistic.
+    {
+        "id":"nama_10_gdp","topic":"ECONOMIA",
+        "indicator":"Prodotto interno lordo per abitante a prezzi correnti",
+        "unit":"euro per abitante","unit_code":"CP_EUR_HAB",
+        "population":"PIL a prezzi correnti diviso per popolazione residente",
+        "filters":{"freq":"A","na_item":"B1G","unit":"CP_EUR_HAB"},
+    },
+    {
+        "id":"demo_pjan","topic":"DEMOGRAFIA",
+        "indicator":"Popolazione maschile al primo gennaio",
+        "unit":"persone","unit_code":"NR",
+        "population":"Residenti maschi di ogni età al primo gennaio",
+        "filters":{"sex":"M","age":"TOTAL"},
+    },
+    {
+        "id":"hlth_hlye","topic":"SALUTE",
+        "indicator":"Speranza di vita in buona salute alla nascita",
+        "unit":"anni","unit_code":"YR",
+        "population":"Anni attesi in buona salute alla nascita, entrambi i sessi",
+        "filters":{"sex":"T","freq":"A","unit":"YR","hlth_hle":"HLY_Y0"},
+    },
+    {
+        "id":"sdg_04_10","topic":"ISTRUZIONE",
+        "indicator":"Giovani che abbandonano precocemente istruzione e formazione",
+        "unit":"%","unit_code":"PC",
+        "population":"Giovani che non proseguono gli studi o la formazione",
+        "filters":{"sex":"T"},
+    },
+    {
+        "id":"ilc_lvho07e","topic":"CASA",
+        "indicator":"Sovraccarico dei costi abitativi per persone sole",
+        "unit":"%","unit_code":"PC",
+        "population":"Famiglie formate da un adulto, indagine EU-SILC",
+        "filters":{"hhtyp":"A1"},
+    },
+    {
+        "id":"tepsr_lm410","topic":"SOCIETA",
+        "indicator":"Persone a rischio di povertà o esclusione sociale",
+        "unit":"%","unit_code":"PC",
+        "population":"Persone a rischio di povertà o esclusione, entrambi i sessi",
+        "filters":{"sex":"T"},
+    },
+    {
+        "id":"prc_hicp_manr","topic":"ECONOMIA",
+        "indicator":"Variazione annuale dei prezzi al consumo armonizzati",
+        "unit":"%","unit_code":"RCH_A",
+        "population":"Indice armonizzato dei prezzi al consumo, aggregato generale",
+        "filters":{"coicop":"CP00","unit":"RCH_A"},
+    },
+    {
+        "id":"env_wasmun","topic":"AMBIENTE",
+        "indicator":"Totale dei rifiuti urbani prodotti",
+        "unit":"migliaia di tonnellate","unit_code":"THS_T",
+        "population":"Rifiuti urbani generati complessivamente in Italia",
+        "filters":{"freq":"A","unit":"THS_T","wst_oper":"GEN"},
+    },
+    {
+        "id":"sdg_07_30","topic":"ENERGIA",
+        "indicator":"Consumo finale di energia",
+        "unit":"milioni di tonnellate equivalenti petrolio","unit_code":"MTOE",
+        "population":"Energia consumata dagli utenti finali",
+        "filters":{"nrg_bal":"FC_E","unit":"MTOE"},
+    },
 )
 
 

@@ -77,6 +77,39 @@ class AutomaticOfficialFeatureTests(TestCase):
             self.assertEqual(result["rejected"],1)
             self.assertEqual(len(json.loads(out.read_text())["articles"]),1)
 
+    def test_smart_editorial_only_releases_relevant_new_reference_period(self):
+        from scripts import pulse_editorial_selector as selection
+        e=fixture()
+        with TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            research(root/"work"/"a",e)
+            output=root/"news"/"automatic_features.json"
+            ledger=root/"news"/"source_versions.json"
+            homepage=root/"news"/"editorial_frontpage.json"
+            old_period=e["series"]["observations"][-2]["period"]
+            ledger.parent.mkdir(parents=True, exist_ok=True)
+            ledger.write_text(json.dumps({"schema":selection.REGISTRY,"series":{
+                selection.series_key(e):{
+                    "last_period":old_period,
+                    "observation_signature":"0"*64,
+                    "history":[]
+                }
+            }}))
+            result=release.publish(root/"work",output,
+                now="2026-11-14T18:40:00Z",smart=True,
+                versions_file=ledger,frontpage_file=homepage)
+            self.assertEqual(result["new_features_selected"],1,result)
+            a=json.loads(output.read_text())["articles"][0]
+            start=json.loads(homepage.read_text())
+            self.assertEqual(start["featured_article_ids"],[a["id"]])
+            self.assertEqual(start["features_new"],[a["id"]])
+            before=output.read_bytes()
+            next_run=release.publish(root/"work",output,
+                now="2026-11-14T18:45:00Z",smart=True,
+                versions_file=ledger,frontpage_file=homepage)
+            self.assertEqual(next_run["published_new"],0)
+            self.assertEqual(output.read_bytes(),before)
+
     def test_without_evidence_never_publishes_media_article(self):
         with TemporaryDirectory() as tmp:
             root=Path(tmp)

@@ -15,6 +15,8 @@ on:
       - "scripts/pulse_deterministic_writer.py"
       - "tests/test_pulse_deterministic_writer.py"
       - "scripts/pulse_automatic_feature_publish.py"
+      - "scripts/pulse_editorial_selector.py"
+      - "tests/test_pulse_editorial_selector.py"
       - "scripts/pulse_eurostat_topics.py"
       - "tests/test_pulse_eurostat_topics.py"
       - "scripts/pulse_regional_editing.py"
@@ -64,6 +66,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
           python -m unittest discover -s tests -p "test_pulse_deterministic_writer.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
+          python -m unittest discover -s tests -p "test_pulse_editorial_selector.py" -v
           python -m unittest discover -s tests -p "test_pulse_eurostat_topics.py" -v
           python -m unittest discover -s tests -p "test_pulse_regional_editing.py" -v
           python -m unittest discover -s tests -p "test_pulse_headline_editor.py" -v
@@ -134,10 +137,14 @@ jobs:
         run: |
           python -m scripts.pulse_automatic_feature_publish \
             --review-root editorial_output/official_data_stories \
-            --output data/news/automatic_features.json | tee editorial_output/automatic_publish_report.json
+            --output data/news/automatic_features.json \
+            --smart \
+            --versions-file data/news/source_versions.json \
+            --frontpage-file data/news/editorial_frontpage.json \
+            | tee editorial_output/automatic_publish_report.json
           git config user.name "PULSE Statistical Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/news/automatic_features.json
+          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json
           if git diff --cached --quiet; then
             echo "No new verified deterministic features"
           else
@@ -180,6 +187,9 @@ jobs:
               "- Existing article titles improved (no other field changed): " + str(auto.get("retitled_existing", 0)),
               "- Total source-audited features in Android feed: " + str(auto.get("persisted_in_mobile_feed", "not executed")),
               "- Cross-regional national-reading groups: " + str(auto.get("regional_groups", "not executed")),
+              "- Smart selector features released: " + str(auto.get("new_features_selected", "not executed")),
+              "- Smart selector briefings: " + str(auto.get("short_briefs", "not executed")),
+              "- Dataset revisions awaiting review: " + str(auto.get("revision_alerts", "not executed")),
               "- Sources by topic and provider: " + str({
                   (v.get("topic"), v.get("provider") or v.get("source")):
                   v.get("status") for v in pipeline.get("official_discovery",{}).get("sources_considered",[])
