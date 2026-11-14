@@ -8,7 +8,7 @@ The existing 250-500 word historical article remains the safe fallback.
 """
 from __future__ import annotations
 
-from decimal import Decimal, ROUND_HALF_UP
+from decimal import Decimal
 from hashlib import sha256
 import re
 
@@ -55,7 +55,7 @@ def _label(indicator):
 
 def _fmt(value):
     v = audit.decimal_value(value)
-    q = v.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+    q = v.quantize(Decimal("0.01"))  # exactly the legacy auditor's ROUND_HALF_EVEN
     return format(q, "f").rstrip("0").rstrip(".").replace(".", ",") if "." in format(q, "f") else format(q, "f")
 
 
