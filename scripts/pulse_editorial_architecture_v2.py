@@ -8,7 +8,7 @@ a review queue. It does NOT generate prose, consume AI credits or publish.
 from __future__ import annotations
 
 import argparse
-from collections import Counter
+from collections import Counter, defaultdict, deque
 from datetime import datetime, timezone
 from hashlib import sha256
 import json
@@ -146,8 +146,22 @@ def prepare(review_root, output_dir, headline_file=None, published_store=None, t
     published = set()
     if published_store and Path(published_store).exists():
         for item in safe_json(published_store).get("articles", []):
-            if isinstance(item, dict):
-                published.add(str(item.get("story_identity", "")))
+            if not isinstance(item, dict):
+                continue
+            if item.get("story_identity"):
+                published.add(str(item["story_identity"]))
+                continue
+            # Older PULSE approved articles predate the v2 story identity.
+            # Recover it from the exact verified dataset, indicator, territory and period.
+            try:
+                source = item["source_documents"][0]["url"]
+                series = item["verified_series"][0]
+                period = item["chart_spec"]["data"][-1]["period"]
+                territory = item["geographic_scope"]["territory"]
+                fields = [source, series["indicator"], territory, period]
+                published.add(sha256(canonical(fields).encode("utf-8")).hexdigest()[:24])
+            except (KeyError, IndexError, TypeError, ValueError):
+                pass
     headlines = {}
     if headline_file and Path(headline_file).exists():
         doc = safe_json(headline_file)
@@ -171,6 +185,11 @@ def prepare(review_root, output_dir, headline_file=None, published_store=None, t
                     review.get("review_status") != "pending_human_signoff" or
                     review.get("evidence_sha256") != audit.digest(e)):
                 reasons.append("missing_independent_review_lock")
+            components = review.get("data_components")
+            if not (isinstance(components, dict) and len(components) >= 3
+                    and all(isinstance(c, dict) and c.get("status") == "completed"
+                            for c in components.values())):
+                reasons.append("independent_analytics_incomplete")
             key = identity(e) if not reasons else None
             if key in seen and key is not None:
                 reasons.append("duplicate_statistical_story")
@@ -195,9 +214,18 @@ def prepare(review_root, output_dir, headline_file=None, published_store=None, t
         except (ValueError, TypeError, KeyError, IndexError, OSError, ArithmeticError, json.JSONDecodeError) as exc:
             excluded.append({"bundle": folder.name,
                              "reasons": ["invalid_research_bundle_" + type(exc).__name__]})
-    # Generate up to the target; NEVER invent a candidate just to reach 30.
-    accepted.sort(key=lambda x: (x["topic"], x["story_identity"]))
-    queue = accepted[:target]
+    # Round-robin topics to avoid filling the whole feed with one discipline.
+    # Do not claim data period order is a news release timestamp.
+    topics = defaultdict(list)
+    for story in accepted:
+        topics[story["topic"]].append(story)
+    pools = {topic: deque(sorted(items, key=lambda x: x["story_identity"]))
+             for topic, items in topics.items()}
+    queue = []
+    while len(queue) < target and any(pools.values()):
+        for topic in sorted(pools):
+            if pools[topic] and len(queue) < target:
+                queue.append(pools[topic].popleft())
     for item in queue:
         atomic_json(output_dir / "briefs" / (item["story_identity"] + ".json"), item)
     report = {
