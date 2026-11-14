@@ -144,6 +144,108 @@ CATALOG = (
         "population":"Energia consumata dagli utenti finali",
         "filters":{"nrg_bal":"FC_E","unit":"MTOE"},
     },
+    # Deliberately source-locked candidate extensions. Each is queried with a
+    # single declared classification; unavailable units/dimensions fail closed.
+    # Splits by sex/age are subgroup readings, not new independent indicators
+    # for the public editorial coverage score.
+    {
+        "id":"demo_pjan","topic":"DEMOGRAFIA",
+        "indicator":"Popolazione femminile al primo gennaio",
+        "unit":"persone","unit_code":"NR",
+        "population":"Residenti donne di tutte le età al primo gennaio",
+        "filters":{"sex":"F","age":"TOTAL"},
+    },
+    {
+        "id":"demo_pjan","topic":"DEMOGRAFIA",
+        "indicator":"Popolazione in età lavorativa al primo gennaio",
+        "unit":"persone","unit_code":"NR",
+        "population":"Residenti tra 15 e 64 anni al primo gennaio",
+        "filters":{"sex":"T","age":"Y15-64"},
+    },
+    {
+        "id":"hlth_hlye","topic":"SALUTE",
+        "indicator":"Speranza di vita delle donne alla nascita",
+        "unit":"anni","unit_code":"YR",
+        "population":"Speranza di vita delle donne alla nascita",
+        "filters":{"sex":"F","freq":"A","unit":"YR","hlth_hle":"LE_Y0"},
+    },
+    {
+        "id":"hlth_hlye","topic":"SALUTE",
+        "indicator":"Speranza di vita degli uomini alla nascita",
+        "unit":"anni","unit_code":"YR",
+        "population":"Speranza di vita degli uomini alla nascita",
+        "filters":{"sex":"M","freq":"A","unit":"YR","hlth_hle":"LE_Y0"},
+    },
+    {
+        "id":"hlth_hlye","topic":"SALUTE",
+        "indicator":"Anni in buona salute alla nascita delle donne",
+        "unit":"anni","unit_code":"YR",
+        "population":"Anni attesi in buona salute per le donne",
+        "filters":{"sex":"F","freq":"A","unit":"YR","hlth_hle":"HLY_Y0"},
+    },
+    {
+        "id":"sdg_04_20","topic":"ISTRUZIONE",
+        "indicator":"Istruzione terziaria fra le giovani donne",
+        "unit":"%","unit_code":"PC",
+        "population":"Giovani adulte di sesso femminile",
+        "filters":{"sex":"F"},
+    },
+    {
+        "id":"sdg_04_10","topic":"ISTRUZIONE",
+        "indicator":"Abbandono precoce degli studi fra gli uomini",
+        "unit":"%","unit_code":"PC",
+        "population":"Giovani uomini che non proseguono gli studi o la formazione",
+        "filters":{"sex":"M"},
+    },
+    {
+        "id":"tessi171","topic":"CASA",
+        "indicator":"Sovraffollamento abitativo fra le donne",
+        "unit":"%","unit_code":"PC",
+        "population":"Donne residenti in abitazioni sovraffollate",
+        "filters":{"sex":"F","age":"TOTAL"},
+    },
+    {
+        "id":"tepsr_lm410","topic":"SOCIETA",
+        "indicator":"Rischio di povertà o esclusione sociale delle donne",
+        "unit":"%","unit_code":"PC",
+        "population":"Donne a rischio di povertà o esclusione sociale",
+        "filters":{"sex":"F"},
+    },
+    {
+        "id":"prc_hicp_manr","topic":"ECONOMIA",
+        "indicator":"Inflazione armonizzata per alimentari",
+        "unit":"%","unit_code":"RCH_A",
+        "population":"Prezzi al consumo armonizzati per prodotti alimentari e bevande analcoliche",
+        "filters":{"coicop":"CP01","unit":"RCH_A"},
+    },
+    {
+        "id":"prc_hicp_manr","topic":"CASA",
+        "indicator":"Inflazione armonizzata su abitazione, acqua ed energia",
+        "unit":"%","unit_code":"RCH_A",
+        "population":"Prezzi al consumo armonizzati: abitazione, acqua, elettricità, gas e combustibili",
+        "filters":{"coicop":"CP04","unit":"RCH_A"},
+    },
+    {
+        "id":"sdg_11_60","topic":"AMBIENTE",
+        "indicator":"Tasso di riciclo dei rifiuti urbani",
+        "unit":"%","unit_code":"PC",
+        "population":"Rifiuti urbani avviati a riciclo sul totale generato",
+        "filters":{},
+    },
+    {
+        "id":"une_rt_a","topic":"LAVORO",
+        "indicator":"Tasso di disoccupazione annuo",
+        "unit":"%","unit_code":"PC_ACT",
+        "population":"Forza lavoro tra 15 e 74 anni, uomini e donne",
+        "filters":{"freq":"A","sex":"T","age":"Y15-74","unit":"PC_ACT"},
+    },
+    {
+        "id":"sdg_03_30","topic":"SALUTE",
+        "indicator":"Persone con buona salute percepita",
+        "unit":"%","unit_code":"PC",
+        "population":"Persone che dichiarano buona o molto buona salute",
+        "filters":{"sex":"T"},
+    },
 )
 
 
