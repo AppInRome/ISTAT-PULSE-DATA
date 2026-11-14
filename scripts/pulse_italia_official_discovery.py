@@ -325,12 +325,22 @@ def scan_inps(fetch_fn=get_bytes, catalog=None, limit=4):
             candidates = [r for r in pkg["resources"] if isinstance(r, dict)
                           and str(r.get("format", "")).casefold() in {"csv", "text/csv", "tsv"}
                           and allow_data_url(r.get("url"), "inps.it")]
+            found_before = len(found)
+            sample_columns = []
             for resource in candidates[:1]:
                 url = resource["url"]
                 raw = fetch_fn(url, "inps.it")
+                try:
+                    preview = editorial.decode_records(raw, "csv")
+                    sample_columns = list(preview[0])[:12] if preview else []
+                except (UnicodeError, ValueError, csv.Error):
+                    sample_columns = []
                 found.extend(csv_evidences(raw, pkg, url, max_series=1))
             checks.append({"provider": "INPS", "dataset": id_,
-                           "status": "source_series_found" if found else "no_safe_comparable_series"})
+                           "csv_columns": sample_columns,
+                           "csv_resources_found": len(candidates),
+                           "status": "source_series_found" if len(found) > found_before
+                                     else "no_safe_comparable_series"})
             if len(found) >= 2:
                 break
         except (OSError, TimeoutError, ValueError, KeyError, TypeError,
