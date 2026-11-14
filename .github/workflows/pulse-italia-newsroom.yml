@@ -8,6 +8,10 @@ on:
       - ".github/workflows/pulse-italia-newsroom.yml"
       - "scripts/pulse_llama_live_probe.py"
       - "scripts/pulse_cloudflare_llama.py"
+      - "scripts/pulse_ai_provider.py"
+      - "scripts/pulse_ai_live_probe.py"
+      - "scripts/pulse_editorial_engine_v1.py"
+      - "scripts/pulse_italia_auto_pipeline.py"
   schedule:
     - cron: "17 5 * * *"
 
@@ -45,16 +49,17 @@ jobs:
           python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
           python -m unittest discover -s tests -p "test_pulse_llama_live_probe.py" -v
+          python -m unittest discover -s tests -p "test_pulse_deepseek_provider.py" -v
 
-      - name: Check the actual Cloudflare Llama model with a short authenticated generation
+      - name: Test actual DeepSeek V4.1 Flash inference with authenticated JSON generation
         id: llama_probe
         continue-on-error: true
         env:
-          PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN || secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API_KEY || secrets.CLOUDFLARE_AUTH_TOKEN }}
-          PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID || secrets.PULSE_CF_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PULSE_AI_PROVIDER: deepseek
+          PULSE_DEEPSEEK_API_KEY: ${{ secrets.PULSE_DEEPSEEK_API_KEY }}
         run: |
           mkdir -p editorial_output
-          python -m scripts.pulse_llama_live_probe --output editorial_output/llama_connection.json
+          python -m scripts.pulse_ai_live_probe --output editorial_output/ai_connection.json
 
       - name: Select Italian headlines
         run: |
@@ -73,8 +78,8 @@ jobs:
 
       - name: Recheck official file bytes; analyze series, build charts, tables, narrative drafts
         env:
-          PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN || secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API_KEY || secrets.CLOUDFLARE_AUTH_TOKEN }}
-          PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID || secrets.PULSE_CF_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PULSE_AI_PROVIDER: deepseek
+          PULSE_DEEPSEEK_API_KEY: ${{ secrets.PULSE_DEEPSEEK_API_KEY }}
         run: |
           python -m scripts.pulse_italia_auto_pipeline \
             --output-dir editorial_output/official_data_stories \
@@ -91,16 +96,17 @@ jobs:
           import json
           from pathlib import Path
           base = Path("editorial_output")
-          con = base / "llama_connection.json"
+          con = base / "ai_connection.json"
           news = base / "official_data_stories" / "pipeline_report.json"
           cc = json.loads(con.read_text()) if con.exists() else {"status":"no_probe_report"}
           rr = json.loads(news.read_text()) if news.exists() else {}
           lines = [
-            "## PULSE newsroom — actual Llama status",
-            "- Authenticated model generation: " + cc["status"],
+            "## PULSE newsroom — DeepSeek actual API status",
+            "- Authenticated DeepSeek generation: " + cc["status"],
             "- Official statistical candidates: " + str(rr.get("candidate_articles", "not executed")),
-            "- Llama editorial attempts: " + str(rr.get("llama_attempts", "not executed")),
-            "- Llama drafts passing numeric audit: " + str(rr.get("llama_audited_drafts", "not executed")),
+            "- DeepSeek editorial attempts: " + str(rr.get("ai_attempts", "not executed")),
+            "- DeepSeek drafts passing numeric audit: " + str(rr.get("ai_audited_drafts", "not executed")),
+            "- Estimated AI spend (USD peak rates): " + str(rr.get("budget_used_estimate", "not executed")),
             "- Public feed publications by this job: 0 (human approval still required)",
           ]
           print("\n".join(lines))
@@ -121,7 +127,7 @@ jobs:
       - name: Mark the run unsuccessful when Llama is not actually reachable
         if: steps.llama_probe.outcome == 'failure'
         run: |
-          echo "::error::Llama did not generate a successful authenticated response; see llama_connection.json in the editorial artifact for the safe diagnostic."
+          echo "::error::DeepSeek API did not authenticate or generate valid JSON. Add GitHub Actions secret PULSE_DEEPSEEK_API_KEY; see ai_connection.json artifact for safe diagnostic."
           exit 1
 
 # Nothing pushes to the production feed without an independent approval.
