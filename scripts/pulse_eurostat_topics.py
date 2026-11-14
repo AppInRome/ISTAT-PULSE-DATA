@@ -39,12 +39,12 @@ CATALOG = (
         "id": "demo_pjan", "topic": "DEMOGRAFIA",
         "indicator": "Popolazione al primo gennaio",
         "unit": "persone", "unit_code": "NR",
-        "population": "Residenti al 1° gennaio, tutte le età e sessi",
+        "population": "Residenti al primo gennaio, tutte le età e i sessi",
         "filters": {"sex": "T", "age": "TOTAL"},
     },
     {
         "id": "sdg_04_20", "topic": "ISTRUZIONE",
-        "indicator": "Giovani con titolo di istruzione terziaria (25–34 anni)",
+        "indicator": "Quota di giovani adulti con istruzione terziaria",
         "unit": "%", "unit_code": "PC",
         "population": "Giovani adulti, entrambi i sessi",
         "filters": {"sex": "T"},
@@ -196,7 +196,9 @@ def verified_jsonstat_evidence(raw, config, url):
     return {
         "schema_version":1,"verified":True,
         "publisher":"EUROSTAT",
-        "source_url":url,"dataset_url":url,
+        "source_url":"https://ec.europa.eu/eurostat/databrowser/view/"
+                      + config["id"] + "/default/table?lang=en",
+        "dataset_url":url,
         "source_sha256":sha256(raw).hexdigest(),
         "retrieval_mode":"https",
         "source_locations":[
