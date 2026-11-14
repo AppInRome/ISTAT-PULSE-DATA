@@ -25,10 +25,13 @@ class ComposerTests(unittest.TestCase):
                 orig=deepcopy(item)
                 converted=composer.attach(item)
                 self.assertEqual(item,orig)
-                self.assertIsNot(converted,item)
                 self.assertEqual(
                     {k:v for k,v in converted.items() if k!="editorial_story"},
-                    item)
+                    {k:v for k,v in item.items() if k!="editorial_story"})
+                if composer.compose(item) == item.get("editorial_story"):
+                    self.assertIs(converted,item)  # rerun idempotence
+                else:
+                    self.assertIsNot(converted,item)
                 story=converted["editorial_story"]
                 self.assertEqual(story["period_reference"],item["period_reference"])
                 self.assertEqual(story["source_sha256"],
@@ -88,6 +91,18 @@ class ComposerTests(unittest.TestCase):
         self.assertIn("24,3%",story["lead"])
         self.assertIn("23,9%",story["lead"])
         self.assertNotIn("0,4% ",story["lead"])
+        self.assertIn("la quota di persone in abitazioni sovraffollate", story["lead"])
+        self.assertFalse(story["lead"].startswith("In Italia, abitazioni sovraffollate sale"))
+        self.assertIn("L'osservazione più recente è", 
+                      " ".join(p["text"] for p in story["sections"]))
+        d=next(x for x in self.articles if x["topic"]=="DEMOGRAFIA")
+        demographic=composer.compose(d)
+        self.assertIsNotNone(demographic)
+        self.assertIn("58.943.464",demographic["lead"])
+        w=next(x for x in self.articles if x["topic"]=="AMBIENTE")
+        environment=composer.compose(w)
+        self.assertIsNotNone(environment)
+        self.assertIn("la produzione di rifiuti urbani per abitante", environment["lead"])
 
 
 if __name__ == "__main__":

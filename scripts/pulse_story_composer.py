@@ -56,12 +56,82 @@ def _label(indicator):
 def _fmt(value):
     v = audit.decimal_value(value)
     q = v.quantize(Decimal("0.01"))  # exactly the legacy auditor's ROUND_HALF_EVEN
-    return format(q, "f").rstrip("0").rstrip(".").replace(".", ",") if "." in format(q, "f") else format(q, "f")
+    raw=format(q,"f").rstrip("0").rstrip(".") if "." in format(q,"f") else format(q,"f")
+    integer,dot,decimal=raw.partition(".")
+    # Italian editorial grouping without changing the numeric value.
+    grouped=f"{int(integer):,}".replace(",",".")
+    return grouped+(","+decimal if dot else "")
 
 
 def _measure(v, unit):
     result = _fmt(v)
-    return result + "%" if unit == "%" else result + " " + unit
+    if unit=="%":return result+"%"
+    if str(unit).casefold() in ("numero","n."):return result
+    return result+" "+unit
+
+
+_MONTHS=("", "gennaio", "febbraio", "marzo", "aprile", "maggio",
+         "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre")
+_QUARTERS=("", "primo", "secondo", "terzo", "quarto")
+
+
+def _when(period):
+    value=str(period)
+    m=re.fullmatch(r"((?:19|20)\d{2})-(0[1-9]|1[0-2])",value)
+    if m:
+        return f"a {_MONTHS[int(m[2])]} {m[1]}"
+    q=re.fullmatch(r"((?:19|20)\d{2})-Q([1-4])",value)
+    if q:
+        return f"nel {_QUARTERS[int(q[2])]} trimestre {q[1]}"
+    return f"nel {value}"
+
+
+def _subject(indicator, fallback):
+    """Grammatically sound singular subject; never invents an explanation."""
+    key=str(indicator).casefold()
+    if "abitazioni sovraffollate" in key or "sovraffollamento abitativo" in key:
+        return "la quota di persone in abitazioni sovraffollate"
+    if "speranza di vita" in key or "anni in buona salute" in key:
+        return "la speranza di vita in buona salute" if ("buona" in key or "healthy" in key) else "la speranza di vita"
+    if "rifiuti urbani prodotti per abitante" in key:
+        return "la produzione di rifiuti urbani per abitante"
+    if "totale dei rifiuti urbani" in key:
+        return "la produzione complessiva di rifiuti urbani"
+    if "energia da fonti rinnovabili" in key or "energia rinnovabile" in key:
+        return "la quota di energia da fonti rinnovabili"
+    if "produttività energetica" in key:
+        return "la produttività energetica"
+    if "prodotto interno lordo" in key:
+        return "il prodotto interno lordo per abitante" if "per abitante" in key else "il prodotto interno lordo"
+    if "popolazione al primo gennaio" in key:
+        return "la popolazione residente"
+    if "popolazione femminile" in key:
+        return "la popolazione femminile"
+    if "popolazione maschile" in key:
+        return "la popolazione maschile"
+    if "integrazioni salariali" in key:
+        if "lavoratori" in key: return "il numero di lavoratori rilevati per le integrazioni salariali"
+        if "mensilita" in key or "mensilità" in key: return "il numero di mensilità rilevate per le integrazioni salariali"
+        if "domande" in key:return "il numero di domande rilevate per le integrazioni salariali"
+    if "istruzione terziaria" in key: return "la quota di giovani adulti con istruzione terziaria"
+    if "abbandonano precocemente" in key or "abbandono precoce" in key:
+        return "la quota di giovani che abbandonano precocemente gli studi"
+    if "povertà" in key: return "la quota di persone a rischio di povertà o esclusione"
+    if "prezzi al consumo" in key or "inflazione" in key:
+        return "il tasso di variazione dei prezzi al consumo"
+    if "disoccupazione" in key: return "il tasso di disoccupazione"
+    return "l'indicatore «"+fallback+"»"
+
+
+def _title_metric(indicator,unit,value):
+    if unit!="%": return value
+    key=str(indicator).casefold()
+    if any(w in key for w in ("inflazione","prezzi al consumo","disoccupazione")):
+        return "tasso al "+value
+    if any(w in key for w in ("quota","popolazione","sovraffoll","energia da fonti",
+                             "istruzione","rifiut","povertà","abbandon")):
+        return "quota al "+value
+    return value
 
 
 def _region(raw):
@@ -151,47 +221,47 @@ def compose(item):
         value=_measure(y,unit)
         base=_measure(x,unit)
         trend="stabile" if y==x else "in aumento" if y>x else "in calo"
-        if unit=="%":
-            title=f"{where}, {topic}: quota {value} nel {period}"
-        else:
-            title=f"{where}, {topic}: {value} nel {period}"
+        subject=_subject(s["indicator"],topic)
+        display_metric=_title_metric(s["indicator"],unit,value)
+        title=f"{where}, {topic}{' —' if ':' in topic else ':'} {display_metric} {_when(period)}"
         if len(title)>TITLE_MAX:
-            title=f"{topic.capitalize()}: {value} nel {period}"
+            title=f"{topic.capitalize()}: {value} {_when(period)}"
         if len(title)>TITLE_MAX or len(title)<25:
             return None
         if recent:
-            movement=("sale" if y>x else "scende" if y<x else "resta invariato")
+            movement=("sale" if y>x else "scende" if y<x else "rimane")
             distance=abs(y-x)
             gap=f"{_fmt(distance)} punti percentuali" if unit=="%" else _measure(distance,unit)
             # We never describe a change in percentage points as percentage growth.
-            lead=(f"{region}, {topic} {movement} a {value} nel {period}, "
-                  f"rispetto a {base} nel {previous}. "
+            lead=(f"{region}, {subject} {movement} " +
+                  ("al " if unit=="%" else "a ") + f"{value} {_when(period)}, "
+                  f"rispetto a {base} {_when(previous)}. "
                   f"Lo scarto è di {gap}, secondo la serie ufficiale {source}.")
         else:
-            lead=(f"{region}, {topic}: l'ultima osservazione disponibile è "
-                  f"{value} nel {period}. La rilevazione precedente disponibile "
-                  f"riguarda il {previous} ({base}); i periodi non sono consecutivi. "
+            lead=(f"{region}, {subject}: l'ultima osservazione disponibile è "
+                  f"{value} {_when(period)}. La rilevazione precedente disponibile "
+                  f"riguarda {_when(previous)} ({base}); i periodi non sono consecutivi. "
                   f"Fonte: {source}.")
         sections=[]
         if recent and y!=x:
             sections.append({"heading":"Che cosa cambia",
                 "text":(f"Il segnale principale è un valore {trend} rispetto al "
-                        f"periodo precedente: {base} nel {previous} e {value} nel {period}. "
+                        f"periodo precedente: {base} {_when(previous)} e {value} {_when(period)}. "
                         "La differenza descrive le osservazioni della stessa serie, "
                         "non un cambiamento dimostrato nelle condizioni individuali.")})
         elif recent:
             sections.append({"heading":"Il dato da osservare",
-                "text":(f"Il livello rimane {value} sia nel {previous} sia nel {period}. "
+                "text":(f"Il livello rimane {value} sia {_when(previous)} sia {_when(period)}. "
                         "L'assenza di variazione fra queste due osservazioni non significa "
                         "che la serie sia stata invariata in tutti i periodi.")})
         else:
             sections.append({"heading":"Il confronto possibile",
-                "text":(f"La serie riporta {base} nel {previous} e {value} nel {period}. "
+                "text":(f"La serie riporta {base} {_when(previous)} e {value} {_when(period)}. "
                         "L'intervallo disponibile non permette di chiamare questa "
                         "differenza una variazione rispetto al periodo immediatamente precedente.")})
-        initial_word="più alto" if y>z else "più basso" if y<z else "uguale"
+        initial_word="più alta" if y>z else "più bassa" if y<z else "uguale"
         sections.append({"heading":"Nel contesto della serie",
-            "text":(f"All'inizio dell'intervallo documentato, nel {initial['period']}, "
+            "text":(f"All'inizio dell'intervallo documentato, {_when(initial['period'])}, "
                     f"il valore era {_measure(z,unit)}. L'osservazione più recente "
                     f"è {initial_word} rispetto a quel riferimento. "
                     "Il confronto è descrittivo: non attribuisce cause alla variazione.")})
@@ -206,15 +276,15 @@ def compose(item):
                 d1=y-x
                 if d0!=0 and d1!=0 and (d0>0)!=(d1>0):
                     sections.append({"heading":"Un'inversione nella sequenza",
-                        "text":(f"Nel {p0} il valore era {_measure(v0,unit)}; "
-                                f"nel {previous} era {base}. Con l'ultima osservazione "
+                        "text":(f"{_when(p0).capitalize()} il valore era {_measure(v0,unit)}; "
+                                f"{_when(previous)} era {base}. Con l'ultima osservazione "
                                 f"({value}), la direzione del cambiamento rispetto al "
                                 "periodo precedente si è invertita. La sequenza, da sola, "
                                 "non consente una previsione.")})
                 elif d0!=0 and d1!=0 and (d0>0)==(d1>0):
                     sections.append({"heading":"La sequenza recente",
-                        "text":(f"Dal {p0} ({_measure(v0,unit)}) al {previous} ({base}) "
-                                f"e poi al {period} ({value}), le osservazioni consecutive "
+                        "text":(f"Le osservazioni successive sono {_measure(v0,unit)} {_when(p0)}, "
+                                f"{base} {_when(previous)} e {value} {_when(period)}; "
                                 "indicano la stessa direzione. Non basta a stabilire "
                                 "che la tendenza proseguirà.")})
         if len(sections)<3:
