@@ -70,6 +70,20 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(discover.csv_evidences(
             CSV.replace(b"Italia", b"Francia"), PACKAGE, INPS_URL), [])
 
+    def test_inps_source_months_are_compared_not_aggregated(self):
+        monthly = ("Anno;Mese;Territorio;Popolazione;Unita_misura;Numero pensionati\n"
+                   "2025;10;Italia;Pensionati;numero;100\n"
+                   "2025;11;Italia;Pensionati;numero;111\n"
+                   "2025;12;Italia;Pensionati;numero;120\n"
+                   "2025;12;Francia;Pensionati;numero;900\n").encode()
+        data = discover.csv_evidences(monthly, PACKAGE, INPS_URL)
+        self.assertEqual(len(data), 1)
+        self.assertEqual(data[0]["series"]["frequency"], "Mensile (anno e mese nelle righe)")
+        self.assertEqual([x["period"] for x in data[0]["series"]["observations"]],
+                         ["2025-10", "2025-11", "2025-12"])
+        self.assertEqual([x["value"] for x in data[0]["series"]["observations"]],
+                         ["100", "111", "120"])
+
     def test_sdmx_exact_series_match_and_rows(self):
         e = discover.istat_evidence(SDMX, ISTAT, SDMX_URL)
         self.assertIsNotNone(e)
