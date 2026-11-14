@@ -101,6 +101,12 @@ def _subject(indicator, fallback):
         return "la quota di energia da fonti rinnovabili"
     if "produttività energetica" in key:
         return "la produttività energetica"
+    if "dipendenza dalle importazioni di energia" in key:
+        return "la dipendenza dell'Italia dalle importazioni energetiche"
+    if "buona salute percepita" in key:
+        return "la quota di persone che dichiarano una buona salute"
+    if "tasso di riciclo dei rifiuti" in key:
+        return "il tasso di riciclo dei rifiuti urbani"
     if "prodotto interno lordo" in key:
         return "il prodotto interno lordo per abitante" if "per abitante" in key else "il prodotto interno lordo"
     if "popolazione al primo gennaio" in key:
@@ -126,9 +132,11 @@ def _subject(indicator, fallback):
 def _title_metric(indicator,unit,value):
     if unit!="%": return value
     key=str(indicator).casefold()
-    if any(w in key for w in ("inflazione","prezzi al consumo","disoccupazione")):
+    if any(w in key for w in ("inflazione","prezzi al consumo","disoccupazione",
+                             "tasso di riciclo")):
         return "tasso al "+value
     if any(w in key for w in ("quota","popolazione","sovraffoll","energia da fonti",
+                             "salute percepita","dipendenza dalle importazioni",
                              "istruzione","rifiut","povertà","abbandon")):
         return "quota al "+value
     return value
@@ -144,9 +152,18 @@ def _region(raw):
 
 
 def _verified_source(item):
+    context=(item.get("publication_tier")=="verified_official_context_not_new_release")
     if (item.get("editorial_format")!="deterministic_source_locked_auto_audited"
             or item.get("publication_status")!="published"
-            or item.get("publication_tier")!="verified_official_deterministic"):
+            or item.get("publication_tier") not in (
+                "verified_official_deterministic",
+                "verified_official_context_not_new_release")):
+        return None
+    # Contextual analyses must carry the original publisher's reference period
+    # and a visible non-news disclosure even when Android shows editorial_story.
+    if context and (item.get("editorial_kind")!="verified_context_analysis"
+                    or not str(item.get("editorial_context_notice") or "")
+                            .startswith("Analisi di contesto PULSE")):
         return None
     att=item.get("automatic_review") or {}
     if att.get("passed") is not True or att.get("model_used") is not False:
@@ -228,6 +245,15 @@ def compose(item):
             title=f"{topic.capitalize()}: {value} {_when(period)}"
         if len(title)>TITLE_MAX or len(title)<25:
             return None
+        is_context=(item.get("editorial_kind")=="verified_context_analysis"
+                    and item.get("publication_tier")
+                        =="verified_official_context_not_new_release")
+        if is_context:
+            title="Contesto — "+title
+            if len(title)>TITLE_MAX:
+                title=f"Contesto — {topic.capitalize()}: {value} {_when(period)}"
+            if len(title)>TITLE_MAX:
+                return None
         if recent:
             movement=("sale" if y>x else "scende" if y<x else "rimane")
             distance=abs(y-x)
@@ -242,6 +268,9 @@ def compose(item):
                   f"{value} {_when(period)}. La rilevazione precedente disponibile "
                   f"riguarda {_when(previous)} ({base}); i periodi non sono consecutivi. "
                   f"Fonte: {source}.")
+        if is_context:
+            lead=("Approfondimento su dati ufficiali già disponibili, "
+                  "non una nuova pubblicazione dell'ente. "+lead)
         sections=[]
         if recent and y!=x:
             sections.append({"heading":"Che cosa cambia",
@@ -303,6 +332,9 @@ def compose(item):
                "sections":sections,
                "period_reference":period,"source_sha256":item["source_documents"][0]["sha256"],
                "source_locked":True,"original_text_preserved":True,
+               "editorial_kind":("verified_context_analysis" if is_context
+                                 else "verified_official_news"),
+               "not_a_new_source_release":is_context,
                "method":"deterministic_verified_observations_no_ai"}
         if not _numeric_guard(story,s,item):
             return None
