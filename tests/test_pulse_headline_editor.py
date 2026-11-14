@@ -18,7 +18,7 @@ CORPUS = ROOT / "data" / "news" / "automatic_features.json"
 
 def without_title(x):
     return {k: deepcopy(v) for k, v in x.items()
-            if k not in ("headline", "pulse_title")}
+            if k not in ("headline", "pulse_title", "editorial_story")}
 
 
 class JournalisticHeadlineTests(unittest.TestCase):
