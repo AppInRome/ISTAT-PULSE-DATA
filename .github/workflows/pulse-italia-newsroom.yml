@@ -20,7 +20,7 @@ jobs:
   create-review-queue:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,7 +29,7 @@ jobs:
 
       - name: Install MIT analysis and charting tools
         run: |
-          python -m pip install --disable-pip-version-check "dstory==0.12.0" "pandas>=2.0,<3" "numpy>=1.24" "matplotlib>=3.7" python-dotenv requests
+          python -m pip install --disable-pip-version-check "dstory==0.12.0" "pandas>=2.0,<3" "numpy>=1.24" "matplotlib>=3.7" openpyxl python-dotenv requests
           git clone --quiet https://github.com/indexcraft/data-analyst-agent.git "$RUNNER_TEMP/data-analyst-agent"
           git -C "$RUNNER_TEMP/data-analyst-agent" checkout --quiet 770e5b5b65e5f38e4144a70a73b07c3653bc5921
           git clone --quiet https://github.com/QinghongLin/data2story-skill.git "$RUNNER_TEMP/data2story-skill"
@@ -38,6 +38,7 @@ jobs:
       - name: Verify evidence and publication protection
         run: |
           python -m unittest discover -s tests -p "test_pulse_italia_official_discovery.py" -v
+          python -m unittest discover -s tests -p "test_pulse_auto_sources.py" -v
           python -m unittest discover -s tests -p "test_pulse_data_story_stack.py" -v
           python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
@@ -50,14 +51,22 @@ jobs:
             --output editorial_output/italia_headlines_to_investigate.json \
             --limit 20
 
-      - name: Find ISTAT and INPS numbers, build charts and draft articles
+      - name: Auto-discover original ISTAT and other Italian authority CSV JSON XLSX from official leads
+        run: |
+          python -m scripts.pulse_auto_sources \
+            --news data/news/articles.json \
+            --output-dir editorial_output/discovered_official_files \
+            --limit 12
+
+      - name: Recheck official file bytes; analyze series, build charts, tables, narrative drafts
         env:
           PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN }}
           PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID }}
         run: |
           python -m scripts.pulse_italia_auto_pipeline \
             --output-dir editorial_output/official_data_stories \
-            --max-sources 3 \
+            --max-sources 6 \
+            --external-evidence-dir editorial_output/discovered_official_files/evidence \
             --data-analyst-script "$RUNNER_TEMP/data-analyst-agent/run_analysis.py" \
             --dstory-command dstory \
             --data2story-root "$RUNNER_TEMP/data2story-skill"
