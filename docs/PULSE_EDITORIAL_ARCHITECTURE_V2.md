@@ -51,3 +51,16 @@ python -m scripts.pulse_editorial_architecture_v2 --review-root editorial_output
 **Materiale di test:** i test usano fixture dichiaratamente sintetiche; solo i workflow di produzione interrogano dati ufficiali reali.
 
 **Fonti prezzi e API:** https://docs.mistral.ai/models/mistral-small-4-0-26-03 ; https://docs.mistral.ai/inference/conversations/structured-output/json_mode .
+
+
+## Bollettini statistici automatici originali — canale Android separato (14 novembre 2026)
+
+Il motore recuperato `scripts/pulse_deterministic_writer.py` produce testi italiani originali da serie statistiche ufficiali. Non copia articoli di giornale e non usa LLM. La via di pubblicazione automatica è volutamente **diversa** dal gate delle bozze AI e dalla pubblicazione umana.
+
+- `scripts/pulse_automatic_feature_publish.py` accetta esclusivamente bozze deterministiche riconoscibili e controlla nuovamente SHA della fonte, integrità del dossier, congruenza di grafici e tabelle, esito dell'audit numerico e presenza degli strumenti di analisi. Blocca le bozze manipolate e le notizie giornalistiche prive di serie ufficiali.
+- Il risultato è `data/news/automatic_features.json`, in cui ogni record ha `editorial_format=deterministic_source_locked_auto_audited`, `automatic_review.human_editorial_approval=false` ed etichetta di provenienza.
+- Il feed RSS giornalistico `data/news/articles.json` e i suoi indici non vengono alterati.
+- **PULSE LAB 0.9** scarica questo nuovo feed in una cache atomica indipendente; in caso di errore mantiene l'ultimo archivio valido, e mostra testo e grafici solo quando il contratto Android lo consente.
+- Le bozze AI restano soggette all'approvazione umana; un bollettino deterministico non deve essere presentato come se un essere umano lo avesse revisionato.
+- Attenzione: oltre 20 *notizie segnalate* al giorno non significano oltre 20 *nuove serie ufficiali comparabili* al giorno. La quantità di articoli completi con grafici dipende da documenti verificabili, non da una quota prestabilita.
+
