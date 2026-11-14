@@ -86,11 +86,11 @@ class DiscoveryTests(unittest.TestCase):
 
     def test_inps_regional_monthly_series_is_real_and_not_mistaken_for_national(self):
         csv_rows = (
-            "Anno;Mese;Tipo_intervento;Regione;Numero_lavoratori\\n"
-            "2025;01;Ordinaria;Abruzzo;123\\n"
-            "2025;02;Ordinaria;Abruzzo;124\\n"
-            "2025;03;Ordinaria;Abruzzo;121\\n"
-            "2025;03;Ordinaria;Lazio;999\\n"
+            "Anno;Mese;Tipo_intervento;Regione;Numero_lavoratori\n"
+            "2025;01;Ordinaria;Abruzzo;123\n"
+            "2025;02;Ordinaria;Abruzzo;124\n"
+            "2025;03;Ordinaria;Abruzzo;121\n"
+            "2025;03;Ordinaria;Lazio;999\n"
         ).encode()
         series = discover.csv_evidences(csv_rows, PACKAGE, INPS_URL)
         self.assertEqual(len(series), 1)
