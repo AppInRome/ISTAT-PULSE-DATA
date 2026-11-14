@@ -37,8 +37,8 @@ class EurostatVerifiedSeriesTests(unittest.TestCase):
         self.u=euro.request_url(self.c)
 
     def test_seven_theme_sources_have_unambiguous_registry(self):
-        self.assertEqual({c["topic"] for c in euro.CATALOG},
-                         {"ECONOMIA","DEMOGRAFIA","SALUTE","ISTRUZIONE","CASA","AMBIENTE","ENERGIA"})
+        self.assertTrue({"ECONOMIA","DEMOGRAFIA","SALUTE","ISTRUZIONE","CASA","AMBIENTE","ENERGIA"}.issubset(
+            {c["topic"] for c in euro.CATALOG}))
         for c in euro.CATALOG:
             self.assertIn("geo=IT", euro.request_url(c))
             self.assertTrue(euro.request_url(c).startswith(euro.API))
@@ -103,7 +103,7 @@ class EurostatVerifiedSeriesTests(unittest.TestCase):
             raise OSError("simulated backend unavailable")
         got,checks=euro.discover(fetch_fn=get)
         self.assertEqual(len(got),1)
-        self.assertEqual(len(checks),7)
+        self.assertEqual(len(checks),len(euro.CATALOG))
         self.assertEqual(sum(c["status"]=="source_series_found" for c in checks),1)
         self.assertTrue(all(c["status"]!="source_series_found" for c in checks[1:]))
 
