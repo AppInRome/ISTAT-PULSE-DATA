@@ -125,7 +125,7 @@ jobs:
         run: |
           python -m scripts.pulse_automatic_feature_publish \
             --review-root editorial_output/official_data_stories \
-            --output data/news/automatic_features.json
+            --output data/news/automatic_features.json | tee editorial_output/automatic_publish_report.json
           git config user.name "PULSE Statistical Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- data/news/automatic_features.json
@@ -150,6 +150,7 @@ jobs:
           readiness = doc(base / "ai_readiness.json")
           pipeline = doc(base / "official_data_stories" / "pipeline_report.json")
           queue = doc(base / "editorial_architecture" / "editorial_architecture_report.json")
+          auto = doc(base / "automatic_publish_report.json")
           lines = [
               "## PULSE - verified official evidence and editorial preparation",
               "- AI provider: Mistral Small 4 (optional)",
@@ -161,7 +162,9 @@ jobs:
               "- AI drafts passing independent arithmetic audit: " + str(pipeline.get("ai_audited_drafts", 0)),
               "- Full articles written by restored non-AI engine: " + str(pipeline.get("deterministic_no_ai_drafts", 0)),
               "- Budget reserved (conservative): " + str(pipeline.get("reserved_budget_estimate", 0)) + " " + str(pipeline.get("budget_unit", "unknown")),
-              "- Automatic publications in Android feed: 0; human review required",
+              "- New source-audited non-AI features in Android feed: " + str(auto.get("published_new", "not executed")),
+              "- Total source-audited features in Android feed: " + str(auto.get("persisted_in_mobile_feed", "not executed")),
+              "- AI assisted journalism remains unpublished until human review",
           ]
           print("\\n".join(lines))
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as out:
