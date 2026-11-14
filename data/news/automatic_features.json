@@ -1,0 +1,518 @@
+{
+  "schema": "pulse-automatic-official-features-v1",
+  "generated_at": "2026-11-14T14:48:29Z",
+  "articles": [
+    {
+      "id": "PULSE-DATA-C862DA6C194E719F19A9D060",
+      "published_at": "2026-11-14T14:48:29Z",
+      "first_published_at_utc": "2026-11-14T14:48:29Z",
+      "headline": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori: i dati di PIEMONTE nel 2025-12",
+      "summary": "Il dato più recente disponibile per integrazioni Salariali Lavoratori 2025 — Numero_lavoratori riguarda PIEMONTE e il periodo 2025-12. La misura riportata nella serie originale di INPS è 2 numero, riferita alla popolazione «Integrazioni Salariali Lavoratori 2025». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_title": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori: i dati di PIEMONTE nel 2025-12",
+      "pulse_summary": "Il dato più recente disponibile per integrazioni Salariali Lavoratori 2025 — Numero_lavoratori riguarda PIEMONTE e il periodo 2025-12. La misura riportata nella serie originale di INPS è 2 numero, riferita alla popolazione «Integrazioni Salariali Lavoratori 2025». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "",
+          "text": "Il confronto utile è con 2025-11, quando il valore osservato era 19 numero. Nell'ultima osservazione la misura risulta inferiore rispetto a quel riferimento. Lo scarto assoluto è di 17 numero; la differenza è calcolata su osservazioni consecutive della medesima serie. I valori appartengono alla stessa serie e riportano la stessa unità, evitando di mettere insieme misure tratte da popolazioni differenti."
+        },
+        {
+          "heading": "",
+          "text": "Il punto iniziale di questa serie è 2025-01; il dato allora registrato era 65 numero. Leggere anche l'inizio dell'intervallo aiuta a collocare l'ultima osservazione nell'insieme dei periodi effettivamente documentati. Non si ricostruiscono anni o mesi intermedi quando non compaiono nelle evidenze e non si prolunga automaticamente la tendenza nel futuro."
+        },
+        {
+          "heading": "",
+          "text": "Il tema statistico descritto dal documento è integrazioni Salariali Lavoratori 2025 — Numero_lavoratori; il gruppo di riferimento è «Integrazioni Salariali Lavoratori 2025» e l'area misurata è PIEMONTE. La frequenza indicata dalla fonte è Mensile (anno e mese nelle righe), mentre l'unità di misura è «numero». Queste informazioni sono essenziali per leggere correttamente il confronto: due grandezze con etichette simili non sono intercambiabili se cambiano la definizione, il territorio oppure la popolazione considerata."
+        },
+        {
+          "heading": "",
+          "text": "Il risultato documenta una differenza fra osservazioni, non la spiegazione dei fattori che possono averla prodotta. Per attribuire cause, conseguenze o comportamenti alle persone servirebbero ulteriori informazioni, che questa singola serie non offre. L'interpretazione pubblicata rimane quindi proporzionata alla precisione dei dati e non presenta ipotesi, collegamenti presunti o scenari previsionali come fatti."
+        },
+        {
+          "heading": "",
+          "text": "I valori provengono dalla fonte primaria INPS, identificata nel collegamento al documento originale disponibile insieme all'articolo. Grafico e tabella sono costruiti con le stesse osservazioni, senza modificare le misure per adattarle al racconto. Ogni confronto numerico può essere ricontrollato sulla serie acquisita; la redazione deve comunque valutare il significato giornalistico del testo prima di autorizzarne la pubblicazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "territories": [
+        "piemonte"
+      ],
+      "pulse_score": 0,
+      "patterns": [],
+      "public_source": {
+        "url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=3c4285ca-a608-499d-934a-2a2704c155b6",
+        "domain": "INPS",
+        "role": "primary_statistical_source",
+        "verification_method": "official_dataset_sha256_and_deterministic_arithmetic_audit",
+        "verification_score": 100
+      },
+      "source_documents": [
+        {
+          "url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+          "sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0"
+        }
+      ],
+      "verified_series_relevant": [
+        {
+          "indicator": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori",
+          "unit": "numero",
+          "verified": true,
+          "territory": "PIEMONTE",
+          "population": "Integrazioni Salariali Lavoratori 2025",
+          "extraction_method": "original_inps_csv_fixed_classification_rows",
+          "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=3c4285ca-a608-499d-934a-2a2704c155b6",
+          "observations": [
+            {
+              "period": "2025-01",
+              "value": 65.0,
+              "raw": "65"
+            },
+            {
+              "period": "2025-02",
+              "value": 147.0,
+              "raw": "147"
+            },
+            {
+              "period": "2025-03",
+              "value": 25.0,
+              "raw": "25"
+            },
+            {
+              "period": "2025-04",
+              "value": 30.0,
+              "raw": "30"
+            },
+            {
+              "period": "2025-05",
+              "value": 37.0,
+              "raw": "37"
+            },
+            {
+              "period": "2025-06",
+              "value": 122.0,
+              "raw": "122"
+            },
+            {
+              "period": "2025-07",
+              "value": 3.0,
+              "raw": "3"
+            },
+            {
+              "period": "2025-08",
+              "value": 192.0,
+              "raw": "192"
+            },
+            {
+              "period": "2025-09",
+              "value": 37.0,
+              "raw": "37"
+            },
+            {
+              "period": "2025-10",
+              "value": 18.0,
+              "raw": "18"
+            },
+            {
+              "period": "2025-11",
+              "value": 19.0,
+              "raw": "19"
+            },
+            {
+              "period": "2025-12",
+              "value": 2.0,
+              "raw": "2"
+            }
+          ]
+        }
+      ],
+      "chart_spec": {
+        "data": [
+          {
+            "period": "2025-01",
+            "value": 65.0
+          },
+          {
+            "period": "2025-02",
+            "value": 147.0
+          },
+          {
+            "period": "2025-03",
+            "value": 25.0
+          },
+          {
+            "period": "2025-04",
+            "value": 30.0
+          },
+          {
+            "period": "2025-05",
+            "value": 37.0
+          },
+          {
+            "period": "2025-06",
+            "value": 122.0
+          },
+          {
+            "period": "2025-07",
+            "value": 3.0
+          },
+          {
+            "period": "2025-08",
+            "value": 192.0
+          },
+          {
+            "period": "2025-09",
+            "value": 37.0
+          },
+          {
+            "period": "2025-10",
+            "value": 18.0
+          },
+          {
+            "period": "2025-11",
+            "value": 19.0
+          },
+          {
+            "period": "2025-12",
+            "value": 2.0
+          }
+        ],
+        "source_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+        "status": "verified",
+        "title": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori",
+        "type": "line",
+        "unit": "numero",
+        "x_axis": "Periodo",
+        "y_axis": "numero"
+      },
+      "table_spec": {
+        "headers": [
+          "Periodo",
+          "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori (numero)"
+        ],
+        "rows": [
+          [
+            "2025-01",
+            65.0
+          ],
+          [
+            "2025-02",
+            147.0
+          ],
+          [
+            "2025-03",
+            25.0
+          ],
+          [
+            "2025-04",
+            30.0
+          ],
+          [
+            "2025-05",
+            37.0
+          ],
+          [
+            "2025-06",
+            122.0
+          ],
+          [
+            "2025-07",
+            3.0
+          ],
+          [
+            "2025-08",
+            192.0
+          ],
+          [
+            "2025-09",
+            37.0
+          ],
+          [
+            "2025-10",
+            18.0
+          ],
+          [
+            "2025-11",
+            19.0
+          ],
+          [
+            "2025-12",
+            2.0
+          ]
+        ],
+        "source_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+        "status": "verified"
+      },
+      "editorial_format": "deterministic_source_locked_auto_audited",
+      "editorial_status": "automatically_audited_official_numbers",
+      "publication_tier": "verified_official_deterministic",
+      "publication_status": "published",
+      "editorial_method": "original_pulse_deterministic_from_official_data_no_ai",
+      "byline": "PULSE — bollettino statistico automatico",
+      "automatic_review": {
+        "schema": "pulse-automatic-official-features-v1",
+        "passed": true,
+        "audit": "recomputed_against_primary_series",
+        "evidence_sha256": "5a5792f236a8368b12700ce78988d1da26975f39b396b488233cc2d8dcd4db5f",
+        "original_source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
+        "model_used": false,
+        "human_editorial_approval": false
+      },
+      "period_reference": "2025-12"
+    },
+    {
+      "id": "PULSE-DATA-16C6763B0CF62357180E7E6D",
+      "published_at": "2026-11-14T14:48:29Z",
+      "first_published_at_utc": "2026-11-14T14:48:29Z",
+      "headline": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita: i dati di PIEMONTE nel 2025-12",
+      "summary": "Il dato più recente disponibile per integrazioni Salariali Mensilita 2025 — Numero_mensilita riguarda PIEMONTE e il periodo 2025-12. La misura riportata nella serie originale di INPS è 2 numero, riferita alla popolazione «Integrazioni Salariali Mensilita 2025». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_title": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita: i dati di PIEMONTE nel 2025-12",
+      "pulse_summary": "Il dato più recente disponibile per integrazioni Salariali Mensilita 2025 — Numero_mensilita riguarda PIEMONTE e il periodo 2025-12. La misura riportata nella serie originale di INPS è 2 numero, riferita alla popolazione «Integrazioni Salariali Mensilita 2025». Si tratta di un'osservazione statistica precisa, che non va confusa con la data in cui la notizia viene rilevata dal radar PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "",
+          "text": "Il confronto utile è con 2025-11, quando il valore osservato era 19 numero. Nell'ultima osservazione la misura risulta inferiore rispetto a quel riferimento. Lo scarto assoluto è di 17 numero; la differenza è calcolata su osservazioni consecutive della medesima serie. I valori appartengono alla stessa serie e riportano la stessa unità, evitando di mettere insieme misure tratte da popolazioni differenti."
+        },
+        {
+          "heading": "",
+          "text": "Il punto iniziale di questa serie è 2025-01; il dato allora registrato era 65 numero. Leggere anche l'inizio dell'intervallo aiuta a collocare l'ultima osservazione nell'insieme dei periodi effettivamente documentati. Non si ricostruiscono anni o mesi intermedi quando non compaiono nelle evidenze e non si prolunga automaticamente la tendenza nel futuro."
+        },
+        {
+          "heading": "",
+          "text": "Il tema statistico descritto dal documento è integrazioni Salariali Mensilita 2025 — Numero_mensilita; il gruppo di riferimento è «Integrazioni Salariali Mensilita 2025» e l'area misurata è PIEMONTE. La frequenza indicata dalla fonte è Mensile (anno e mese nelle righe), mentre l'unità di misura è «numero». Queste informazioni sono essenziali per leggere correttamente il confronto: due grandezze con etichette simili non sono intercambiabili se cambiano la definizione, il territorio oppure la popolazione considerata."
+        },
+        {
+          "heading": "",
+          "text": "Il risultato documenta una differenza fra osservazioni, non la spiegazione dei fattori che possono averla prodotta. Per attribuire cause, conseguenze o comportamenti alle persone servirebbero ulteriori informazioni, che questa singola serie non offre. L'interpretazione pubblicata rimane quindi proporzionata alla precisione dei dati e non presenta ipotesi, collegamenti presunti o scenari previsionali come fatti."
+        },
+        {
+          "heading": "",
+          "text": "I valori provengono dalla fonte primaria INPS, identificata nel collegamento al documento originale disponibile insieme all'articolo. Grafico e tabella sono costruiti con le stesse osservazioni, senza modificare le misure per adattarle al racconto. Ogni confronto numerico può essere ricontrollato sulla serie acquisita; la redazione deve comunque valutare il significato giornalistico del testo prima di autorizzarne la pubblicazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "territories": [
+        "piemonte"
+      ],
+      "pulse_score": 0,
+      "patterns": [],
+      "public_source": {
+        "url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
+        "domain": "INPS",
+        "role": "primary_statistical_source",
+        "verification_method": "official_dataset_sha256_and_deterministic_arithmetic_audit",
+        "verification_score": 100
+      },
+      "source_documents": [
+        {
+          "url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+          "sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5"
+        }
+      ],
+      "verified_series_relevant": [
+        {
+          "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+          "unit": "numero",
+          "verified": true,
+          "territory": "PIEMONTE",
+          "population": "Integrazioni Salariali Mensilita 2025",
+          "extraction_method": "original_inps_csv_fixed_classification_rows",
+          "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
+          "observations": [
+            {
+              "period": "2025-01",
+              "value": 65.0,
+              "raw": "65"
+            },
+            {
+              "period": "2025-02",
+              "value": 161.0,
+              "raw": "161"
+            },
+            {
+              "period": "2025-03",
+              "value": 25.0,
+              "raw": "25"
+            },
+            {
+              "period": "2025-04",
+              "value": 30.0,
+              "raw": "30"
+            },
+            {
+              "period": "2025-05",
+              "value": 37.0,
+              "raw": "37"
+            },
+            {
+              "period": "2025-06",
+              "value": 122.0,
+              "raw": "122"
+            },
+            {
+              "period": "2025-07",
+              "value": 3.0,
+              "raw": "3"
+            },
+            {
+              "period": "2025-08",
+              "value": 192.0,
+              "raw": "192"
+            },
+            {
+              "period": "2025-09",
+              "value": 37.0,
+              "raw": "37"
+            },
+            {
+              "period": "2025-10",
+              "value": 18.0,
+              "raw": "18"
+            },
+            {
+              "period": "2025-11",
+              "value": 19.0,
+              "raw": "19"
+            },
+            {
+              "period": "2025-12",
+              "value": 2.0,
+              "raw": "2"
+            }
+          ]
+        }
+      ],
+      "chart_spec": {
+        "data": [
+          {
+            "period": "2025-01",
+            "value": 65.0
+          },
+          {
+            "period": "2025-02",
+            "value": 161.0
+          },
+          {
+            "period": "2025-03",
+            "value": 25.0
+          },
+          {
+            "period": "2025-04",
+            "value": 30.0
+          },
+          {
+            "period": "2025-05",
+            "value": 37.0
+          },
+          {
+            "period": "2025-06",
+            "value": 122.0
+          },
+          {
+            "period": "2025-07",
+            "value": 3.0
+          },
+          {
+            "period": "2025-08",
+            "value": 192.0
+          },
+          {
+            "period": "2025-09",
+            "value": 37.0
+          },
+          {
+            "period": "2025-10",
+            "value": 18.0
+          },
+          {
+            "period": "2025-11",
+            "value": 19.0
+          },
+          {
+            "period": "2025-12",
+            "value": 2.0
+          }
+        ],
+        "source_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+        "status": "verified",
+        "title": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+        "type": "line",
+        "unit": "numero",
+        "x_axis": "Periodo",
+        "y_axis": "numero"
+      },
+      "table_spec": {
+        "headers": [
+          "Periodo",
+          "Integrazioni Salariali Mensilita 2025 — Numero_mensilita (numero)"
+        ],
+        "rows": [
+          [
+            "2025-01",
+            65.0
+          ],
+          [
+            "2025-02",
+            161.0
+          ],
+          [
+            "2025-03",
+            25.0
+          ],
+          [
+            "2025-04",
+            30.0
+          ],
+          [
+            "2025-05",
+            37.0
+          ],
+          [
+            "2025-06",
+            122.0
+          ],
+          [
+            "2025-07",
+            3.0
+          ],
+          [
+            "2025-08",
+            192.0
+          ],
+          [
+            "2025-09",
+            37.0
+          ],
+          [
+            "2025-10",
+            18.0
+          ],
+          [
+            "2025-11",
+            19.0
+          ],
+          [
+            "2025-12",
+            2.0
+          ]
+        ],
+        "source_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+        "status": "verified"
+      },
+      "editorial_format": "deterministic_source_locked_auto_audited",
+      "editorial_status": "automatically_audited_official_numbers",
+      "publication_tier": "verified_official_deterministic",
+      "publication_status": "published",
+      "editorial_method": "original_pulse_deterministic_from_official_data_no_ai",
+      "byline": "PULSE — bollettino statistico automatico",
+      "automatic_review": {
+        "schema": "pulse-automatic-official-features-v1",
+        "passed": true,
+        "audit": "recomputed_against_primary_series",
+        "evidence_sha256": "a9bbf6c3edc72ad7601b2c1f08bfcecdf7a7a7cab36f6880b78711e81398ac9e",
+        "original_source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+        "model_used": false,
+        "human_editorial_approval": false
+      },
+      "period_reference": "2025-12"
+    }
+  ]
+}
