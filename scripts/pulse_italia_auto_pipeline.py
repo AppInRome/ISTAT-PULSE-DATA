@@ -84,8 +84,10 @@ def audit_draft(e, proposal):
 
 def build_preview(e, draft=None):
     """Full article + exact graphic/table values, but explicitly NOT published."""
+    from scripts.pulse_italia_chart_analytics import calculate
     s = e["series"]
-    obs = s["observations"][-12:]
+    obs = s["observations"][-24:]
+    analyses = calculate({**s, "observations": obs})
     result = {
         "schema_version": 1, "publication_status": "draft",
         "editorial_status": "requires_human_semantic_review",
@@ -100,6 +102,7 @@ def build_preview(e, draft=None):
         ] if draft else [],
         "public_source": {"url": e["source_url"],
                           "role": "primary_statistical_source"},
+        "chart_analyses": analyses,
         "chart_spec": {"status": "verified", "type": "line" if len(obs) > 2 else "bar",
                        "title": s["indicator"], "unit": s["unit"],
                        "source_url": e["dataset_url"], "x_axis": "Periodo",
