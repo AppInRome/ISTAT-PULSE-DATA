@@ -95,6 +95,41 @@ class ArchitectureIntegrationTests(unittest.TestCase):
             self.assertIn("independent_analytics_incomplete",
                           report["excluded"][0]["reasons"])
 
+    def test_deterministic_fallback_recovers_valid_series_without_faking_dstories(self):
+        e=fixture()
+        with TemporaryDirectory() as td:
+            root=Path(td)
+            folder=root/"in"/"fallback"
+            research_bundle(folder,e)
+            review=json.loads((folder/"review_required.json").read_text())
+            review["data_components"]["dstory"]={
+                "status":"verified_fallback",
+                "chart_engine":"pulse_italia_chart_analytics.calculate",
+                "external_cli_completed":False,
+            }
+            (folder/"review_required.json").write_text(json.dumps(review))
+            report=architecture.prepare(root/"in",root/"out")
+            self.assertEqual(report["briefs_prepared_for_ai"],1)
+            brief=json.loads(next((root/"out"/"briefs").glob("*.json")).read_text())
+            self.assertIn("PULSE deterministic",brief["visualization_engine"])
+
+    def test_invalid_fallback_metadata_is_not_trusted(self):
+        e=fixture()
+        with TemporaryDirectory() as td:
+            root=Path(td)
+            folder=root/"in"/"forged"
+            research_bundle(folder,e)
+            review=json.loads((folder/"review_required.json").read_text())
+            review["data_components"]["dstory"]={
+                "status":"verified_fallback",
+                "chart_engine":"unknown_external_renderer"
+            }
+            (folder/"review_required.json").write_text(json.dumps(review))
+            report=architecture.prepare(root/"in",root/"out")
+            self.assertEqual(report["briefs_prepared_for_ai"],0)
+            self.assertIn("invalid_deterministic_graph_fallback",
+                          report["excluded"][0]["reasons"])
+
     def test_duplicate_source_story_does_not_fill_30_quota(self):
         e=fixture()
         with TemporaryDirectory() as td:
