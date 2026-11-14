@@ -14,6 +14,8 @@ import json
 import math
 import re
 
+from scripts.pulse_topic_coverage import independent_metric_identity
+
 SCHEMA = "pulse-editorial-frontpage-v1"
 REGISTRY = "pulse-source-versions-v1"
 MAX_STORIES_PER_TOPIC = 2
@@ -101,6 +103,23 @@ def change_score(evidence):
     return 0,"segnale_non_sufficiente_o_base_zero"
 
 
+
+def editorial_family(evidence):
+    """Suppress repeat national features from sex/age cuts of one measure.
+
+    Never combine territorial stories, datasets or distinct Eurostat units.
+    Stable for source revisions, independent of a changing reference year.
+    """
+    series = evidence["series"]
+    topic = str(evidence.get("topic") or "ALTRO").upper()
+    territory = str(series["territory"]).casefold()
+    if evidence.get("publisher") == "EUROSTAT":
+        family = independent_metric_identity(evidence["dataset_url"])
+    else:
+        family = (str(evidence["dataset_url"]), str(series["indicator"]).casefold())
+    return sha256(canonical((topic, territory, family)).encode()).hexdigest()[:24]
+
+
 def assess(item,evidence,known,now,topic_counts):
     """One checked dossier. A source updated timestamp alone NEVER means news."""
     now=now if now.tzinfo else now.replace(tzinfo=timezone.utc)
@@ -154,6 +173,7 @@ def assess(item,evidence,known,now,topic_counts):
         "source_release_recent":release_recent,
         "source_release_proven":False, # Eurostat dataset update can be structural.
         "series_key":series_key(evidence),
+        "editorial_family":editorial_family(evidence),
         "observations_sha256":digest,
     }
 
@@ -194,13 +214,18 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
     # Never privilege input order/INPS position: highest verified signal first.
     assessments.sort(key=lambda x:(-x["score"],x["topic"],x["article_id"]))
     selected=[];briefs=[];catalogue=[];revisions=[];chosen_topic=Counter()
+    chosen_families=set()
     for a in assessments:
         if a["tier"]=="review_revision":
             revisions.append(a)
         elif a["tier"]=="feature":
-            if (len(selected)<MAX_FEATURES_PER_DAY
+            if a["editorial_family"] in chosen_families:
+                catalogue.append({**a,"tier":"catalogue",
+                                  "reason":"same_independent_indicator_family"})
+            elif (len(selected)<MAX_FEATURES_PER_DAY
                     and chosen_topic[a["topic"]]<MAX_STORIES_PER_TOPIC):
                 selected.append(a);chosen_topic[a["topic"]]+=1
+                chosen_families.add(a["editorial_family"])
             else:
                 catalogue.append({**a,"tier":"catalogue",
                                   "reason":"editorial_capacity_or_topic_balance"})
@@ -230,6 +255,12 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
                             "reason":"same_period_observations_changed_human_review"}
                            for a in revisions],
         "catalogue_updates_count":len(catalogue),
+        "new_feature_topics": dict(sorted(chosen_topic.items())),
+        "independent_feature_families_selected": len(chosen_families),
+        "unpublished_eligible_features_by_topic": dict(sorted(
+            Counter(a["topic"] for a in catalogue
+                    if a["reason"] in ("same_independent_indicator_family",
+                                      "editorial_capacity_or_topic_balance")).items())),
         "all_existing_articles_remain_in_archive":True,
         "no_automatic_publication_from_revision":True,
         "source_date_not_inferred_from_observation_period":True,
