@@ -1,58 +1,71 @@
-name: PULSE Italia newsroom (drafts only)
+name: PULSE Italia - dati ufficiali, grafici e bozze AI
 
 on:
   workflow_dispatch:
   schedule:
-    # One run per day limits opportunities to spend beyond free-tier quota.
     - cron: "17 5 * * *"
+
+permissions:
+  contents: read
 
 concurrency:
   group: pulse-italia-newsroom
   cancel-in-progress: false
 
-permissions:
-  contents: read
-
 jobs:
-  editorial-research:
+  create-review-queue:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Test Italy-only editorial gate
+
+      - name: Install MIT analysis and charting tools
         run: |
-          python -m unittest discover -s tests -p "test_pulse_italia_newsroom.py" -v
-          python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
-          python -m unittest discover -s tests -p "test_pulse_cloudflare_llama.py" -v
+          python -m pip install --disable-pip-version-check "dstory==0.12.0" "pandas>=2.0,<3" "numpy>=1.24" "matplotlib>=3.7" python-dotenv requests
+          git clone --quiet https://github.com/indexcraft/data-analyst-agent.git "$RUNNER_TEMP/data-analyst-agent"
+          git -C "$RUNNER_TEMP/data-analyst-agent" checkout --quiet 770e5b5b65e5f38e4144a70a73b07c3653bc5921
+          git clone --quiet https://github.com/QinghongLin/data2story-skill.git "$RUNNER_TEMP/data2story-skill"
+          git -C "$RUNNER_TEMP/data2story-skill" checkout --quiet 63a55c15f3fac13239263cfa1361fe2ef04d8df1
+
+      - name: Verify evidence and publication protection
+        run: |
+          python -m unittest discover -s tests -p "test_pulse_italia_official_discovery.py" -v
           python -m unittest discover -s tests -p "test_pulse_data_story_stack.py" -v
-      - name: Rank Italian news into research queue
+          python -m unittest discover -s tests -p "test_editorial_engine_v1.py" -v
+          python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
+
+      - name: Select Italian headlines
         run: |
           mkdir -p editorial_output
           python -m scripts.pulse_italia_newsroom rank \
             --articles data/news/articles.json \
-            --output editorial_output/italia_research_queue.json \
+            --output editorial_output/italia_headlines_to_investigate.json \
             --limit 20
-      - name: Write AI drafts only when explicitly configured
+
+      - name: Find ISTAT and INPS numbers, build charts and draft articles
         env:
           PULSE_CF_AI_TOKEN: ${{ secrets.PULSE_CF_AI_TOKEN }}
           PULSE_CF_ACCOUNT_ID: ${{ vars.PULSE_CF_ACCOUNT_ID }}
         run: |
-          mkdir -p data/editorial_italia/manifests editorial_output/drafts
-          python -m scripts.pulse_italia_newsroom draft \
-            --manifests-dir data/editorial_italia/manifests \
-            --output-dir editorial_output/drafts \
-            --limit 20
-      - name: Upload queue and unapproved draft artifacts
+          python -m scripts.pulse_italia_auto_pipeline \
+            --output-dir editorial_output/official_data_stories \
+            --max-sources 3 \
+            --data-analyst-script "$RUNNER_TEMP/data-analyst-agent/run_analysis.py" \
+            --dstory-command dstory \
+            --data2story-root "$RUNNER_TEMP/data2story-skill"
+
+      - name: Preserve review packages, not published news
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pulse-italia-unapproved-drafts
+          name: pulse-italia-editorial-review
           path: editorial_output/
-          retention-days: 7
-          if-no-files-found: error
+          if-no-files-found: warn
+          retention-days: 14
 
-# Safety: no push to production and no approval bypass.
+# Nothing pushes to the production feed without an independent approval.
+# Tommy Worker is not used.
