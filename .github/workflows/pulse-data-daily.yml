@@ -6,11 +6,17 @@ on:
   push:
     paths:
       - ".github/workflows/pulse-data-daily.yml"
-  # Eight runs/day, exactly 3h apart in UTC. GitHub may delay a run.
-  # Full API refreshes twice/day; news/publications on every run.
+  # Europe/Rome with automatic daylight-saving handling, rather than UTC.
+  # 17 daytime checks (07:00 through 23:00), one light night check at 03:00.
+  # Only 08:17 and 20:17 perform the complete statistics and publications refresh.
+  # GitHub can delay scheduled start times.
   schedule:
-    - cron: '17 2,8,11,14,20,23 * * *' # Notizie + Pubblicazioni
-    - cron: '17 5,17 * * *'          # Notizie + Green + Territori + Pubblicazioni
+    - cron: '17 7,9-19,21-23 * * *' # News radar hourly, excluding full runs
+      timezone: "Europe/Rome"
+    - cron: '17 8,20 * * *'        # Full update (news, stats and publications)
+      timezone: "Europe/Rome"
+    - cron: '17 3 * * *'           # One overnight light news check
+      timezone: "Europe/Rome"
   workflow_dispatch:
     inputs:
       mode:
@@ -40,6 +46,26 @@ jobs:
       PYTHONUNBUFFERED: '1'
       PULSE_HTTP_CACHE_DIR: ${{ github.workspace }}/.pulse_http_cache
     steps:
+      - name: Scegli aggiornamento leggero o completo
+        id: refresh_mode
+        shell: bash
+        env:
+          MODE_REQUESTED: ${{ github.event.inputs.mode }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          mode="${MODE_REQUESTED:-all}"
+          case "${{ github.event_name }}" in
+            push) mode=news ;;
+            schedule)
+              if [ "$SCHEDULE" = '17 8,20 * * *' ]; then
+                mode=all
+              else
+                mode=news
+              fi ;;
+          esac
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "PULSE: modalità $mode · fuso Europe/Rome"
+
       - name: Codice dati (nessuna APK)
         uses: actions/checkout@v4
         with:
@@ -59,6 +85,7 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check 'numpy<3' 'pandas<3' 'scipy<2' 'beautifulsoup4<5' 'trafilatura>=2,<3' 'requests<3' 'openpyxl<4' 'pypdf<7' 'pdfplumber<1' 'xlrd<3' 'odfpy<2'
       - name: Test redazione originale, grafici e fonti
+        if: steps.refresh_mode.outputs.mode == 'all'
         run: |
           python -m unittest discover -s tests -p test_original_editorial.py -v
           python -m unittest discover -s tests -p test_quantity_evidence.py -v
@@ -70,8 +97,10 @@ jobs:
           python -m unittest discover -s tests -p test_news_promotion.py -v
           python -m unittest discover -s tests -p test_sdmx_breaker.py -v
       - name: Convalida snapshot esistente
+        if: steps.refresh_mode.outputs.mode == 'all'
         run: python scripts/refresh_daily_safe.py --dry-run
       - name: Verifica categorie editoriali
+        if: steps.refresh_mode.outputs.mode == 'all'
         run: |
           python - <<'PY'
           from scripts.pulse_media_radar import eligible, media_brief
@@ -83,15 +112,10 @@ jobs:
       - name: Aggiornamento con verifica prima della pubblicazione
         shell: bash
         env:
-          MODE_REQUESTED: ${{ github.event.inputs.mode }}
-          SCHEDULE: ${{ github.event.schedule }}
+          PULSE_REFRESH_MODE: ${{ steps.refresh_mode.outputs.mode }}
         run: |
-          mode="${MODE_REQUESTED:-all}"
-          if [ "${{ github.event_name }}" = "push" ]; then mode=news; fi
-          if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 2,8,11,14,20,23 * * *' ]; then mode=news; fi
-          if [ -z "$MODE_REQUESTED" ] && [ "$SCHEDULE" = '17 5,17 * * *' ]; then mode=all; fi
-          echo "PULSE DATA mode=$mode"
-          python scripts/refresh_daily_safe.py --mode "$mode"
+          echo "PULSE DATA mode=$PULSE_REFRESH_MODE"
+          python scripts/refresh_daily_safe.py --mode "$PULSE_REFRESH_MODE"
       - name: Controlla integrità OGGI/IERI e divieto di grafici non verificati
         run: |
           python - <<'PY'
@@ -113,8 +137,10 @@ jobs:
                 'ARCHIVIO:',len(ids['archivio']))
           PY
       - name: Collaudo offline degli Osservatori
+        if: steps.refresh_mode.outputs.mode == 'all'
         run: python -m unittest discover -s tests -p test_observer_daily.py -v
       - name: Aggiorna archivio Osservatori da feed ufficiali
+        if: steps.refresh_mode.outputs.mode == 'all'
         shell: bash
         run: |
           python scripts/update_observer_daily.py
