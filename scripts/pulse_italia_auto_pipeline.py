@@ -209,7 +209,13 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                  data2story_root=None, now=None, external_evidence_dir=None):
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
-    sources, report = ((discovery_fn or official.discover)())
+    # IMPORTANT: the previous implementation always called official.discover()
+    # with its default of THREE, even when the workflow requested 30 sources.
+    # Keep the injection for tests, but pass the actual configured ceiling.
+    if discovery_fn is None:
+        sources, report = official.discover(max_sources=max_sources)
+    else:
+        sources, report = discovery_fn()
     if external_evidence_dir is not None:
         files, checks = load_official_file_evidences(external_evidence_dir)
         report["independent_csv_json_xlsx_discovery"] = {

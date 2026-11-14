@@ -101,6 +101,36 @@ class DiscoveryTests(unittest.TestCase):
                          ["123", "124", "121"])
         self.assertNotIn("999", str(series))
 
+    def test_multiple_regions_from_one_unmodified_original_source(self):
+        rows = (
+            "Anno;Mese;Regione;Tipo_intervento;Numero_lavoratori\n"
+            "2025;10;Piemonte;Ordinaria;18\n"
+            "2025;11;Piemonte;Ordinaria;19\n"
+            "2025;12;Piemonte;Ordinaria;20\n"
+            "2025;10;Lazio;Ordinaria;31\n"
+            "2025;11;Lazio;Ordinaria;35\n"
+            "2025;12;Lazio;Ordinaria;37\n"
+            "2025;10;Abruzzo;Ordinaria;8\n"
+            "2025;11;Abruzzo;Ordinaria;9\n"
+            "2025;12;Abruzzo;Ordinaria;11\n"
+            "2025;12;Francia;Ordinaria;999\n"
+        ).encode()
+        found = discover.csv_evidences(rows, PACKAGE, INPS_URL, max_series=3)
+        self.assertEqual({e["series"]["territory"] for e in found},
+                         {"Piemonte", "Lazio", "Abruzzo"})
+        for e in found:
+            self.assertEqual(e["source_sha256"], sha256(rows).hexdigest())
+            self.assertEqual(len(e["series"]["observations"]), 3)
+            self.assertNotIn("999", str(e))
+
+    def test_pipeline_forwards_configured_source_limit_to_real_discovery(self):
+        with tempfile.TemporaryDirectory() as td, patch.object(
+                discover, "discover", return_value=([], {"sources_considered":[]})
+        ) as mocked:
+            result = pipeline.run_pipeline(td, max_sources=24, ai_enabled=False)
+        mocked.assert_called_once_with(max_sources=24)
+        self.assertEqual(result["candidate_articles"], 0)
+
     def test_sdmx_exact_series_match_and_rows(self):
         e = discover.istat_evidence(SDMX, ISTAT, SDMX_URL)
         self.assertIsNotNone(e)
