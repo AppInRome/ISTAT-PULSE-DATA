@@ -39,6 +39,18 @@ class PublishTests(unittest.TestCase):
         self.assertEqual(added,0)
         self.assertEqual(len(a["articles"]),1)
 
+    def test_derived_chart_integrity_and_rejection_of_tampering(self):
+        from scripts.pulse_italia_chart_analytics import calculate
+        a = feature()
+        obs = [{"period":"2024","value":1.2},{"period":"2025","value":1.3}]
+        a["verified_series"] = [{"indicator":"Esempio", "unit":"%",
+                                 "observations":obs}]
+        a["chart_analyses"] = calculate({
+            "indicator":"Esempio", "unit":"%", "observations":obs})
+        self.assertTrue(is_published_feature(a))
+        a["chart_analyses"]["views"][0]["points"][0]["value"] = 999
+        self.assertFalse(is_published_feature(a))
+
     def test_exact_table_chart_equality_required(self):
         a=feature()
         a["table_spec"]["rows"][-1][1]=4
