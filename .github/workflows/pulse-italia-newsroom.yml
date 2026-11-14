@@ -2,6 +2,10 @@ name: PULSE Italia - dati ufficiali, grafici e bozze AI
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pulse-italia-newsroom.yml"
   schedule:
     - cron: "17 5 * * *"
 
