@@ -123,6 +123,22 @@ def editorial_family(evidence):
     return sha256(canonical((topic, territory, family)).encode()).hexdigest()[:24]
 
 
+def published_family(item):
+    """Identify an existing official feature from its persisted source facts."""
+    if not isinstance(item,dict) or item.get("publication_status")!="published":
+        return None
+    try:
+        source=item["source_documents"][0]["url"]
+        metric=item["verified_series_relevant"][0]
+        publisher=item.get("public_source",{}).get("domain")
+        return editorial_family({
+            "topic":item["topic"],"dataset_url":source,"publisher":publisher,
+            "series":{"indicator":metric["indicator"],
+                      "territory":metric["territory"]}})
+    except (KeyError, IndexError, TypeError):
+        return None
+
+
 def assess(item,evidence,known,now,topic_counts):
     """One checked dossier. A source updated timestamp alone NEVER means news."""
     now=now if now.tzinfo else now.replace(tzinfo=timezone.utc)
@@ -161,8 +177,9 @@ def assess(item,evidence,known,now,topic_counts):
         tier="review_revision"  # explicit review; never silently overwrite.
     elif qualified and signal>=15 and score>=65:
         tier="feature"
-    elif (novelty=="first_seen_by_pulse" and topic in CONTEXT_TOPICS
-          and topic_counts.get(topic,0)<3 and signal>=27
+    elif (novelty in ("first_seen_by_pulse", "unchanged")
+          and topic in CONTEXT_TOPICS
+          and topic_counts.get(topic,0)<5 and signal>=27
           and latest[:4].isdigit() and int(latest[:4])>=now.year-3):
         # Background analysis, never a claim of a freshly released source.
         tier="context"
@@ -210,6 +227,8 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
     old_versions=dict((previous_versions or {}).get("series") or {})
     counts=Counter(a.get("topic") for a in previous_articles
                    if isinstance(a,dict) and a.get("topic"))
+    published_families={key for a in previous_articles
+                        if (key:=published_family(a)) is not None}
     assessments=[]
     for item,evidence in verified_pairs:
         key=series_key(evidence)
@@ -239,7 +258,11 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
                 catalogue.append({**a,"tier":"catalogue",
                                   "reason":"editorial_capacity_or_topic_balance"})
         elif a["tier"]=="context":
-            context_candidates.append(a)
+            if a["editorial_family"] in published_families:
+                catalogue.append({**a,"tier":"catalogue",
+                                  "reason":"already_published_independent_family"})
+            else:
+                context_candidates.append(a)
         elif a["tier"]=="brief":
             if len(briefs)<MAX_BRIEFS_PER_DAY: briefs.append(a)
             else: catalogue.append({**a,"tier":"catalogue"})
