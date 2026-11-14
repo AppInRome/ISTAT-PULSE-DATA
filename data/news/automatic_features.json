@@ -1,6 +1,6 @@
 {
   "schema": "pulse-automatic-official-features-v1",
-  "generated_at": "2026-11-14T17:54:13Z",
+  "generated_at": "2026-11-14T18:00:44Z",
   "articles": [
     {
       "id": "PULSE-DATA-DB0A1DFC77B2169EF520F0CC",
@@ -6932,6 +6932,7 @@
         "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
         "measure": "numero_mensilita",
         "unit": "numero",
+        "classification_note": "Tipo intervento: cigs",
         "coverage": 9,
         "country_total_available": false,
         "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
@@ -7045,6 +7046,7 @@
         "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=3c4285ca-a608-499d-934a-2a2704c155b6",
         "measure": "numero_lavoratori",
         "unit": "numero",
+        "classification_note": "Tipo intervento: cigs",
         "coverage": 9,
         "country_total_available": false,
         "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
@@ -7158,6 +7160,7 @@
         "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
         "measure": "numero_mensilita",
         "unit": "numero",
+        "classification_note": "Tipo intervento: fis",
         "coverage": 3,
         "country_total_available": false,
         "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
@@ -7217,6 +7220,7 @@
         "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=3c4285ca-a608-499d-934a-2a2704c155b6",
         "measure": "numero_lavoratori",
         "unit": "numero",
+        "classification_note": "Tipo intervento: fis",
         "coverage": 3,
         "country_total_available": false,
         "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
