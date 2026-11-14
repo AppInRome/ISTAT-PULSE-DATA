@@ -25,10 +25,13 @@ class ComposerTests(unittest.TestCase):
                 orig=deepcopy(item)
                 converted=composer.attach(item)
                 self.assertEqual(item,orig)
-                self.assertIsNot(converted,item)
                 self.assertEqual(
                     {k:v for k,v in converted.items() if k!="editorial_story"},
-                    item)
+                    {k:v for k,v in item.items() if k!="editorial_story"})
+                if composer.compose(item) == item.get("editorial_story"):
+                    self.assertIs(converted,item)  # rerun idempotence
+                else:
+                    self.assertIsNot(converted,item)
                 story=converted["editorial_story"]
                 self.assertEqual(story["period_reference"],item["period_reference"])
                 self.assertEqual(story["source_sha256"],
