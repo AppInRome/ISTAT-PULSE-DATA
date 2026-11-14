@@ -54,7 +54,10 @@ class JournalisticHeadlineTests(unittest.TestCase):
         self.assertGreaterEqual(count,20)
 
     def test_never_invent_trends_without_adjacent_period(self):
-        sample=deepcopy(self.corpus[0])
+        # Multi-source newsroom: the first feed item may now be EUROSTAT.
+        # This regression specifically tests INPS headline terminology.
+        sample=deepcopy(next(item for item in self.corpus
+                             if (item.get("public_source") or {}).get("domain") == "INPS"))
         s=sample["verified_series_relevant"][0]
         s["observations"][-2]["period"]="2025-05"
         title=titles.journalistic_headline(sample)
@@ -64,7 +67,10 @@ class JournalisticHeadlineTests(unittest.TestCase):
         self.assertNotIn("stabili",title)
 
     def test_unverified_media_and_unsupported_measure_unchanged(self):
-        sample=deepcopy(self.corpus[0])
+        # Multi-source newsroom: the first feed item may now be EUROSTAT.
+        # This regression specifically tests INPS headline terminology.
+        sample=deepcopy(next(item for item in self.corpus
+                             if (item.get("public_source") or {}).get("domain") == "INPS"))
         for invalid in (
             {"automatic_review":{"passed":False,"model_used":False}},
             {"editorial_format":"media_radar"},
