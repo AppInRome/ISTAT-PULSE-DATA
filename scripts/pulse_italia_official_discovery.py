@@ -185,6 +185,38 @@ def find_year_column(row):
     return None
 
 
+ITALIAN_MONTHS = {
+    "gennaio": 1, "febbraio": 2, "marzo": 3, "aprile": 4,
+    "maggio": 5, "giugno": 6, "luglio": 7, "agosto": 8,
+    "settembre": 9, "ottobre": 10, "novembre": 11, "dicembre": 12,
+}
+
+def find_month_column(row):
+    for k in row:
+        norm = re.sub(r"[^a-z]", "", str(k or "").casefold())
+        if norm in ("mese", "meseriferimento", "mesedicompetenza", "month"):
+            return k
+    return None
+
+
+def exact_period(row, year_key, month_key):
+    year = str(row.get(year_key, "")).strip()
+    if PERIOD.fullmatch(year) and len(year) > 4 and not month_key:
+        return year
+    if not YEAR.fullmatch(year) or int(year) < 2000:
+        return None
+    if not month_key:
+        return year
+    raw_month = str(row.get(month_key, "")).strip().casefold()
+    if re.fullmatch(r"(?:0?[1-9]|1[0-2])", raw_month):
+        month = int(raw_month)
+    else:
+        month = ITALIAN_MONTHS.get(raw_month)
+    if not month:
+        return None
+    return year + "-" + str(month).zfill(2)
+
+
 def csv_evidences(raw, package, resource_url, max_series=1):
     """Extract only a classified time-series from original INPS CSV rows.
 
@@ -201,6 +233,7 @@ def csv_evidences(raw, package, resource_url, max_series=1):
         return []
     first = rows[0]
     period_key = find_year_column(first)
+    month_key = find_month_column(first)
     geo_key, geo_value = explicit_territory(first)
     pop_key, pop_value = explicit_population(first, package)
     if not period_key or not geo_key or not pop_value:
@@ -208,7 +241,7 @@ def csv_evidences(raw, package, resource_url, max_series=1):
     # Candidate measure needs an original column label declaring the unit.
     candidates = []
     for col in first:
-        if col in {period_key, geo_key, pop_key} or not col:
+        if col in {period_key, month_key, geo_key, pop_key} or not col:
             continue
         _, unit = explicit_unit(first, col)
         if unit:
@@ -221,8 +254,8 @@ def csv_evidences(raw, package, resource_url, max_series=1):
         for i, row in enumerate(rows, start=2):
             if str(row.get(geo_key, "")).strip() != geo_value:
                 continue
-            period = str(row.get(period_key, "")).strip()
-            if not YEAR.fullmatch(period) or int(period) < 2000:
+            period = exact_period(row, period_key, month_key)
+            if period is None:
                 continue
             val = valid_raw_number(row.get(value_key))
             if val is None:
@@ -234,7 +267,7 @@ def csv_evidences(raw, package, resource_url, max_series=1):
                 continue
             # Every classification other than time and the measure must match.
             fixed = tuple(sorted((str(k), str(v)) for k, v in row.items()
-                                 if k not in {period_key, value_key} and k is not None))
+                                 if k not in {period_key, month_key, value_key} and k is not None))
             buckets[fixed].append((period, val, i, str(row[value_key])))
         # Keep only the most recent aggregate with unique comparable periods.
         options = []
@@ -242,7 +275,7 @@ def csv_evidences(raw, package, resource_url, max_series=1):
             obs.sort()
             if len(obs) < 2 or len({x[0] for x in obs}) != len(obs):
                 continue
-            if int(obs[-1][0]) < OFFICIAL_LATEST_YEAR:
+            if int(obs[-1][0][:4]) < OFFICIAL_LATEST_YEAR:
                 continue
             options.append((obs[-1][0], len(obs), fixed, obs))
         if not options:
@@ -252,7 +285,8 @@ def csv_evidences(raw, package, resource_url, max_series=1):
         series = {
             "indicator": str(package.get("title") or value_key)[:160] + " — " + str(value_key)[:90],
             "unit": unit, "territory": geo_value, "population": pop_value,
-            "frequency": "Annuale (colonna anno nella fonte)",
+            "frequency": ("Mensile (anno e mese nelle righe)" if month_key
+                          else "Annuale (colonna anno nella fonte)"),
             "classification_values": dict(fixed),
             "observations": [{"period": x[0], "value": x[1], "raw": x[3]} for x in obs],
         }
