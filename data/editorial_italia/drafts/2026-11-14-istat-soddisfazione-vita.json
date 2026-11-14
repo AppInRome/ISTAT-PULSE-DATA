@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "PULSE-EDITORIAL-DRAFT-2026-11-14-ISTAT-SODDISFAZIONE-VITA",
+  "publication_status": "draft",
+  "editorial_status": "requires_independent_human_review",
+  "generation_method": "original_manually_researched_editorial_rewrite",
+  "model_provenance": "ChatGPT GPT-6, not Cloudflare Llama; not an automated GitHub workflow result",
+  "written_at": "2026-11-14",
+  "source_published_at": "2026-11-12",
+  "period_reference": "2025",
+  "headline": "Italia più soddisfatta, ma la fiducia resta fragile: il benessere che divide il Paese",
+  "summary": "La soddisfazione per la propria vita cresce al 47,6% nel 2025. Ma le differenze tra giovani e anziani, Nord e Sud, occupati e persone in cerca di lavoro raccontano un'Italia tutt'altro che uniforme.",
+  "pulse_article_body": [
+    {
+      "heading": "",
+      "text": "Quasi un italiano su due assegna un voto elevato alla propria vita, ma il miglioramento generale non cancella le distanze tra gruppi sociali e territori. Secondo l'indagine ISTAT sulle condizioni di vita, nel 2025 il 47,6% delle persone di almeno 14 anni esprime una soddisfazione complessiva pari a 8 o più su una scala da 0 a 10. Nel 2024 la stessa quota era del 46,3%, dunque il progresso è di 1,3 punti percentuali. È un segnale positivo, ma non significa che tutti stiano meglio allo stesso modo."
+    },
+    {
+      "heading": "",
+      "text": "Il 38,9% colloca invece la propria soddisfazione nella fascia intermedia, attribuendo un voto di 6 o 7. Il 12% assegna un giudizio basso, fino a 5, mentre l'1,5% non risponde. Il quadro mostra che un giudizio complessivo elevato è diffuso, ma non maggioritario in senso assoluto. E le differenze diventano più evidenti quando si considerano lavoro, istruzione ed età."
+    },
+    {
+      "heading": "",
+      "text": "Tra gli studenti, la quota di persone molto soddisfatte raggiunge il 53,1%, mentre tra gli occupati si attesta al 50%. La percentuale scende al 37,9% tra chi cerca lavoro. Anche il titolo di studio pesa sul quadro: il 52,3% dei laureati esprime un giudizio alto, contro il 41,3% di chi ha al massimo la licenza elementare. Sono distanze statistiche che descrivono condizioni di vita differenti, senza dimostrare da sole rapporti di causa ed effetto."
+    },
+    {
+      "heading": "",
+      "text": "Il territorio aggiunge un'altra frattura. Al Nord la quota di persone molto soddisfatte è del 50,1%, al Centro del 47,4% e nel Mezzogiorno del 44,2%. La forbice diventa ancora più ampia confrontando il Trentino-Alto Adige, al 60,9%, con la Campania, al 36%. Anche l'età incide: tra i ragazzi di 14-17 anni il valore è 58,4%, mentre fra gli ultrasettantacinquenni scende al 43%."
+    },
+    {
+      "heading": "",
+      "text": "Le relazioni personali costituiscono invece uno dei punti più solidi del benessere percepito: l'88,2% si dichiara soddisfatto dei rapporti familiari e l'80,4% di quelli con gli amici. La fiducia verso gli altri, tuttavia, rimane bassa e si ferma al 22%. È proprio questo contrasto a caratterizzare la fotografia ISTAT: le persone valutano abbastanza bene la propria vita e gli affetti più vicini, ma faticano a trasferire quella fiducia alla società nel suo insieme. Il miglioramento della soddisfazione è reale, anche se resta distribuito in modo diseguale."
+    }
+  ],
+  "topic": "SOCIETA",
+  "geographic_scope": {
+    "country_code": "IT",
+    "territory": "Italia"
+  },
+  "public_source": {
+    "url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
+    "role": "primary_statistical_source",
+    "publisher": "ISTAT"
+  },
+  "source_documents": [
+    {
+      "url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
+      "publisher": "ISTAT",
+      "type": "official_press_release"
+    }
+  ],
+  "chart_spec": {
+    "status": "source_reported_comparison_needs_editorial_review",
+    "source_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
+    "type": "bar",
+    "title": "Soddisfazione elevata per la vita, 2024–2025",
+    "unit": "%",
+    "data": [
+      {
+        "label": "2024",
+        "value": 46.3
+      },
+      {
+        "label": "2025",
+        "value": 47.6
+      }
+    ],
+    "comparison_note": "Persone di 14 anni e oltre che attribuiscono voto 8–10"
+  },
+  "table_spec": {
+    "status": "source_reported_comparison_needs_editorial_review",
+    "source_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
+    "headers": [
+      "Anno",
+      "Persone molto soddisfatte (%)"
+    ],
+    "rows": [
+      [
+        "2024",
+        46.3
+      ],
+      [
+        "2025",
+        47.6
+      ]
+    ],
+    "note": "Indicatore ISTAT omogeneo, variazione calcolata +1,3 punti percentuali"
+  },
+  "review_required": true,
+  "publishable_without_review": false,
+  "source_note": "Original writing based on the official institutional release, without copying its prose. Not a primary dataset-level audited series."
+}
