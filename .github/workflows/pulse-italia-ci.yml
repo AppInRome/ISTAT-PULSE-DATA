@@ -11,6 +11,9 @@ on:
       - "scripts/pulse_italia_chart_analytics.py"
       - "tests/test_pulse_italia_chart_analytics.py"
       - "scripts/pulse_italia_auto_pipeline.py"
+      - "scripts/pulse_editorial_architecture_v2.py"
+      - "scripts/pulse_ai_provider.py"
+      - "tests/test_pulse_editorial_architecture_v2.py"
       - "tests/test_pulse_italia_auto_pipeline_files.py"
       - "scripts/pulse_auto_sources.py"
       - "tests/test_pulse_auto_sources.py"
@@ -53,6 +56,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
           python -m unittest discover -s tests -p "test_pulse_auto_sources.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_auto_pipeline_files.py" -v
+          python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
 
   external-stack-smoke:
     runs-on: ubuntu-latest
