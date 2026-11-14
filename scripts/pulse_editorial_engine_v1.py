@@ -221,11 +221,15 @@ def call_model(evidence):
         raise ValueError("unsafe_LLM_endpoint")
     if p.scheme == "http" and p.hostname not in {"localhost", "127.0.0.1"}:
         raise ValueError("remote_LLM_must_use_https")
-    max_tokens = max(500, min(2000, int(os.getenv("PULSE_LLM_MAX_OUTPUT_TOKENS", "1400"))))
+    max_tokens = max(500, min(3000, int(os.getenv("PULSE_LLM_MAX_OUTPUT_TOKENS", "1400"))))
     body = {"model":model,"temperature":0.2,"max_tokens":max_tokens,
-            "messages":[{"role":"system","content":"Sei un giornalista statistico rigoroso. Nessuna cifra inventata."},
+            "messages":[{"role":"system","content":"Sei un giornalista statistico rigoroso. Nessuna cifra inventata. Rispondi in JSON."},
                         {"role":"user","content":ai_prompt(evidence)}],
             "response_format":{"type":"json_object"}}
+    # DeepSeek defaults to thinking mode (2026); turn it off for predictable,
+    # economical journalistic JSON output. Keep Cloudflare wire shape unchanged.
+    if p.hostname == "api.deepseek.com":
+        body["thinking"] = {"type": "disabled"}
     headers = {"Content-Type":"application/json"}
     if key:
         headers["Authorization"] = "Bearer " + key
