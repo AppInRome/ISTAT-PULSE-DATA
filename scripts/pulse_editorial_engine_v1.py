@@ -273,6 +273,8 @@ def confirmed_approval(approval, draft, evidence):
 def publish_article(draft, evidence, approval):
     confirmed_approval(approval, draft, evidence)
     series = evidence["series"]
+    from scripts.pulse_italia_chart_analytics import calculate
+    chart_analyses = calculate({**series, "observations": series["observations"][-24:]})
     latest = series["observations"][-1]
     source = evidence["source_url"]
     stamp = datetime.fromisoformat(approval["approved_at"].replace("Z", "+00:00")).astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
@@ -309,6 +311,7 @@ def publish_article(draft, evidence, approval):
                                 if evidence["extraction_method"].startswith("sdmx_")
                                 else "exact_classification_long_format_row")}],
         "chart_spec":chart,
+        "chart_analyses": chart_analyses,
         "table_spec":{"status":"verified","source_url":evidence["dataset_url"],
                       "headers":["Periodo",series["indicator"]],
                       "rows":[[p["period"],float(p["value"])] for p in series["observations"]]},
