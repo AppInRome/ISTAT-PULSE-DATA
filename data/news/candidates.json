@@ -1,36 +1,6 @@
 {
-  "generated_at": "2026-11-13T21:00:33.348545+00:00",
+  "generated_at": "2026-11-14T02:59:18.485521+00:00",
   "candidates": [
-    {
-      "radar": "Google News - Tasse redditi casa",
-      "status": "radar_fetched",
-      "items_fetched": 27
-    },
-    {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "status": "radar_fetched",
-      "items_fetched": 25
-    },
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 01",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 02",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 03",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 04",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
       "status": "radar_fetched",
@@ -114,7 +84,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 44
     },
     {
       "radar": "Google News - economia lavoro",
@@ -164,17 +134,17 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 53
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 25
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 48
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -229,12 +199,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 15
+      "items_fetched": 16
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 33
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -244,12 +214,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 57
+      "items_fetched": 60
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -293,8 +263,8 @@
     },
     {
       "radar": "Repubblica - Homepage",
-      "status": "radar_error",
-      "error": "HTTP Error 403: Forbidden"
+      "status": "radar_fetched",
+      "items_fetched": 30
     },
     {
       "radar": "Il Messaggero - Notizie",
@@ -319,7 +289,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 5
+      "items_fetched": 7
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -347,6 +317,36 @@
       "items_fetched": 60
     },
     {
+      "radar": "Google News - Tasse redditi casa",
+      "status": "radar_fetched",
+      "items_fetched": 26
+    },
+    {
+      "radar": "Google News - Disuguaglianze e famiglie",
+      "status": "radar_fetched",
+      "items_fetched": 25
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 01",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 02",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 03",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 04",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,65 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "radar": "PULSE 80 testate · agenzie · gruppo 06",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMzRWWFcycW9MdUwwU0xudFhWczRSa2gzNU51d2kxck4yd3lYSEJBT2JGaGo2Q284VEJ2bkNhYzBrR3pndExkZ2NIVUJFQTZvVUFELVFES1hESzgwZEI0UEU3eXNHTFRWUEtTRGNXM1hXbEJiLVZNcktCMDRFaDFqak9QZHFLMVlVYnE5UlAwSGRxbXFaUEo0Y0Q4d25DY3dYTzlpdlA2N3l3REt5Q01EQVdGU3A2dl9oUHpLbWtiYzkzYjZiVFJFUUJYY2JqWVNvdHFReFVCcXJjMXM4b0Jr0gHkAUFVX3lxTE5QMjB6Zld3T1IybkRpSUZ5SmYxaDZ6SHJyenBFcWdFU3FxMmxZNUo3WUFoWEJURzZEVmVCdm9fa0duZHQxM0ZEYzhJY1dIdXdrcDhFN2x2eHJYc0ZtX3FhU0FQRHlOcEQ1MV9PNnEtbXg3Q0tKQktyZjZ5cXAyWlF6LXpqVm0wWm9DZXVVVzJRMFFIenRnWjBlSmpEZ2Q4dUJoYkU2UWpmdXFSenEzMUl0VGJZV0JCTXdqSHVUQVJtaUZ0RnJzWlE3eHZ3aGtCUThrZjF6X2pKdWdCV0hXVmxuaF9leg?oc=5",
+      "discovery_title": "Bankitalia, 'nel 2026 in Puglia l'occupazione cresce dello 0,6%' - ANSA",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
+      "score_discovery": 49,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "2026 ",
+        "0,6%",
+        "2026 ",
+        "0,6%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": {
+        "url": "https://www.bancaditalia.it/pubblicazioni/economie-regionali/2025/2025-0016/2516-puglia.pdf",
+        "domain": "bancaditalia.it",
+        "matched_numbers": [
+          "0,6%",
+          "0,6%"
+        ],
+        "matched_non_year_numbers": [
+          "0,6%",
+          "0,6%"
+        ],
+        "matched_keywords": [
+          "puglia",
+          "occupazione",
+          "cresce",
+          "ansa"
+        ],
+        "verification_score": 87,
+        "text_excerpt": " Economie regionali L’economia della Puglia Rapporto annuale 16 2 0 2 5 giugno 2025 Economie regionali L’economia della Puglia Rapporto annuale Numero 16 - giugno 2025 La collana Economie regionali ha la /f_i nalità di presentare studi e documentazione sugli aspetti territoriali dell’economia italiana. Comprende i rapporti annuali regionali e gli aggiornamenti congiunturali; include inoltre la pubblicazione annuale L’economia delle regioni italiane. Dinamiche recenti e aspetti strutturali e quella semestrale La domanda e l’offerta di credito a livello territoriale. Indirizzo Via Nazionale, 91 – 00184 Roma – Italia Sito internet http://www.bancaditalia.it Sede di Bari Corso Cavour, 4 – 70121 Bari Telefono +39 080 5731111 ISSN 2283-9615 (stampa) ISSN 2283-9933 (online) Tutti i diritti riservati. È consentita la riproduzione a fi ni didattici e non commerciali, a condizione che venga citata",
+        "verified_series": [],
+        "method": "named_or_topic_domain_search",
+        "search_domain": "istat.it",
+        "attempts": [
+          {
+            "stage": "domain_search",
+            "domain": "bancaditalia.it",
+            "query": "site:bancaditalia.it \"bankitalia puglia occupazione cresce ansa\" 2026  0,6% 2026",
+            "results": 0
+          },
+          {
+            "stage": "domain_search",
+            "domain": "istat.it",
+            "query": "site:istat.it \"bankitalia puglia occupazione cresce ansa\" 2026  0,6% 2026",
+            "results": 6
+          }
+        ]
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "PULSE 80 testate · locali · gruppo 16",
       "discovery_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSGJlOVZyWUk3MlVra2tjVFU1ZG04bEtwMW1qNUZySmVhXzQxZS03WEhheUdMNmF6Ty1sQk1yelY5SjlzT2xrZmt1ZU5JTGtQUEFqNHM3ZE9haUNNVXZIYzBnbGRaOGxmcmhtZGh3TnJBcm94ajJMN1lpZjhobk1DUElRWnJ6WTdHQVc3WWZn?oc=5",
       "discovery_title": "Emilia-Romagna, Pil a +1%. Bene industria, export, turismo. Per il 2027 domina l’incertezza - Il Resto del Carlino",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -389,7 +444,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 19",
       "discovery_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPVGpUaHFlUU4tOTNCeHEzeTVEdnBBcnJfNk5ubmpwZEo1dVpsUjBTZkljX0FDQ0Rwdk50MC1WTHpvMWNreWFmWUdXTmh3SVQ4RU1oNWJJNzQ4VVdDN0RUMklvUlhzcWlOVHQ4cHJiNHJHbTRKcmpWV3BqUVRGUV85WEtTbXZDQ3c2RkhSc0VicjFhSHZ2VkNFZTBsM1R5dXdaVEFRVUdCSzBjU09IczZNUFhIbXl5RTNJWjMtRVRXaUI1ZWxTU1J2QkZwenQ5bzFFZ0M0bVZTNWhzZ2V2RG1wOUlQbFZ2TEJWTHpobFBlM3NmVGU30gHzAUFVX3lxTE40akx2SHVhNDBFU2NWM09jNkZ6N0tMTjBNX3dpMDJRaVZ3dHllQ3FQQVRzN1dlcUtmcGh4NGM2VHJxbG0wOVN1MnlYSlBNRkh2VHV5YlB0ZzdmZFVhNnprSzdDdlRxV1h1MHA5T0tNRXVkWmhFVE9XOWl1bkgxNUNfLUgzdjRBNnJsZGdTamZhUXZNWC04MV9JXzBXdnJxaTV6ZjN1N0VrSnRlTXc4RlBWYnViYXc1YjhfeFJsNmhqTmx0bDI3SWNneEZTV3BmWmhCZVdrU3gwN3RBcXI2RzBQcjhXZU5xZlphdGhNNzg5RGdsVQ?oc=5",
       "discovery_title": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6% - La Gazzetta del Mezzogiorno",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -404,70 +459,6 @@
       ],
       "official_links": [],
       "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.bancaditalia.it/pubblicazioni/economie-regionali/2026/2026-0016/index.html",
-        "domain": "bancaditalia.it",
-        "matched_numbers": [
-          "6 ",
-          "2026 ",
-          "1%",
-          "6 ",
-          "2026 ",
-          "1%"
-        ],
-        "matched_non_year_numbers": [
-          "6 ",
-          "1%",
-          "6 ",
-          "1%"
-        ],
-        "matched_keywords": [
-          "puglia",
-          "cresce",
-          "dell",
-          "occupazione",
-          "segna"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Banca d'Italia - N. 16 - L'economia della Puglia Vai al contenuto principale Apri menu di navigazione Home page Menu Chiudi IT EN Go to english version Chi siamo Chi siamo La Banca d'Italia è la banca centrale della Repubblica italiana e persegue finalità d'interesse generale nel settore monetario e finanziario. È parte dell'Eurosistema, composto dalle banche centrali nazionali dell'area euro e dalla Banca centrale europea. Vai alla pagina Chi siamo Visite a Palazzo Koch (si apre in una nuova finestra) In questa sezione Storia Funzioni e governance Organizzazione Eurosistema Personale Lavorare in Banca d'Italia La Banca d'Italia e la sostenibilità ambientale e sociale La Banca d'Italia per la cybersicurezza Etica e prevenzione corruzione Patrimonio immobiliare della Banca d'Italia Archivio storico Biblioteca Bilancio e situazioni contabili mensili Procedimenti amministrativi e diritto di",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "istat.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "bancaditalia.it",
-            "query": "site:bancaditalia.it \"bankitalia puglia primi mesi cresce dell\" 6  2026  1%",
-            "results": 0
-          },
-          {
-            "stage": "domain_search",
-            "domain": "istat.it",
-            "query": "site:istat.it \"bankitalia puglia primi mesi cresce dell\" 6  2026  1%",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "Google News - Corriere dati e statistiche",
-      "discovery_url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNZzdBWEgybUFMUHBkcTZOMlp6YXdyYWJhSGxmdWFZQVhEU2I2cmNPMzFCQzVMQTU1OEFqUG5QSjVRVTRiME9ZbTJ1bHNKZ295a0hac3pDUEtkWU9zdkg3c2syTG1NTVJOaEZWV3lDeGlQUWlERS1QVDhuQnNSc1RvNEx2UmxPSjlsWkhnRFNYQ05WTXc5TGdqRFRnQ3hXWkZFZTkyRUU5ck1fR3paYXJnbWpYZ2QtTE5JV2duWXhsU0VQYXJoVVl1cHY0YjR2MmVIVmg5R0NRUGFtS3hUeHdOX2RkRFVJRkpIU0J5U1h5YUFVaUhjZ0pfbzRNY2VOMy1qTUh4YkJlanVMb3lORXRZa09sYi1RMlFHalVRZnNnVXB3QmYyaFlicUNjc05FNjI5LVdwcjQ2QXhhd2JzUFNuZHVXQzFMeEY1QWtJSdIB0gJBVV95cUxPWFRnSUZmNXVNdHZseEhyUS1IWjJQNzdnckYtdmRVUDhET1ZkemtlR09jZzlVQ3ZjUklYdU9TbkpNTUhhX041THhMQzg1bzM1M0hXXy1lWWlWUHdPMzBxeEpQdDQ5V1FHMkY0U2hyX0tERzdlbXFkSFRtdkZPQ3ZJNVhjdzNsTTBPZjdCM2ZUS2J0ZmFhWEtBTzZkbXdnTDdtYVUtVjBpTzI2QUEyQmNFek8xTUF4MUdrWTM0QXZZUnQ2aWJHVFNkOFZJd1VxbUFnU3JMMkxBb2Y0TVJMVmdPLVFkb1lNSi1uTklXa3BYT3k2N3lNZFROMHhQdkVJNlJaejNYVk11OUxYTG5rcUN5dzltUk9LaFpDR3h1a3J0UVIxdDZ3bm1xMHl2ZVJiU3RpQkZycm02OU44aWFESHpXbWZKNk9HaUxYR0ZqcEEzUUlEUQ?oc=5",
-      "discovery_title": "Bankitalia, in Puglia Pil in crescita dell'1% nei primi sei mesi. Occupazione in ripresa (+0,6%), ma schizzano del 40% le richieste di cig per l'ex Ilva - Corriere Bari",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
-      "score_discovery": 50,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "1%",
-        "+0,6%",
-        "40%",
-        "1%",
-        "+0,6%",
-        "40%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
@@ -476,7 +467,7 @@
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOOXc2UWtJajN0ZjM0WDcwbFAwNjJjY1NqQUphelNxd2ZBSjdKRzh2MlM5RjJ5MWVuMmJUZVBCeXItaXFGUE42Y1R4TXJBSUp3alJ4SG84UGlyenZ6eTNQLTJkTGlaVHRmSVZPOUV0WnJCSWQzYWk0WEZaUWQ5LWJPc1BKOWpZcUp1RjY5VUlUU1U2U0ZVaV9R?oc=5",
       "discovery_title": "Enel: utile 9 mesi 6 mld (+6%), traina estero, calo Italia per idro e prezzi - Ore12",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -494,29 +485,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia lavoro e imprese",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQllRcE5ISEpsUGlRNzNnQTFlTVR3d2RlMGFJVjUyNjVUMTdjb0Z2M01IYURQSnkyWW1HVFUydlJBNVpRdDZBUlRUUTQ1OVFSUERLUFRRMndxNFg2OHJNMFVqWjhFNGx4alc2eHJ1b2RNc0J0X3FaZ1RLUzNfUFM3SWlWdzlHbjA5c3Bvd0twQXlKVXlZdklwY3JWSWNGU2J3dmtXUDBhRHlraWMtczB3dGRUS0xtV1JXWlRUSnZpbjV4Q295SjQzdw?oc=5",
-      "discovery_title": "America’s Cup, Napoli 2027 si presenta a Ginevra: la nautica italiana vale 4,4 miliardi di export - Adriaeco",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
-      "score_discovery": 49,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2027 ",
-        "4,4 miliardi",
-        "2027 ",
-        "4,4 miliardi"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Italia popolazione e territori",
       "discovery_url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPM1ZZejZ5TnNMdG5jd0N2QnJFLXJ6aHhyVllENFRPSUNVTjJYeFQ5Q0tlVzV6eHF0UHc5RE9ZTTJpZEZzSHRHN1VDSEtKdElfdWI2a0s4YU0zZlByZTN6M3hsbGRMR09IenpYV01sTElxWkhkbDQ2aTc1WllrLXExaEFYRG5sVnFvbmpBWHBwWVUxZnp2eFpYRTc3b2gwQ1l2LVhjellKZWlMNjNqZ3VzSXBlaUs0alprZWhEQUVRaWN2Um9WbUZYWUtELVpoN3NxYUluMHMtNG10Q04zTTExaGdPZkl3NXczLXRXQzNDVGhiZEgtNGQwQTBsVm5JbG9nT0V1MHd0cllyZFVSa2JDZE1Gcjd4OUxLekh5RThsbkpGLWJWNjhYUmRrVXljZw?oc=5",
       "discovery_title": "FONDAZIONE MIGRANTES * RAPPORTO ITALIANI NEL MONDO 2026: «6.630.284 I CITTADINI RESIDENTI ALL'ESTERO ISCRITTI ALL'AIRE, IN VENT'ANNI SONO PIÙ CHE RADDOPPIATI - agenzia giornalistica opinione",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 45,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -534,10 +506,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Tasse redditi casa",
+      "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUmNESG1nSWFTbklZdzBuTWE1VEFhejJsNl9fQ2cxTFFRUWFqX1B1T19vZEtzay0ycWIxdFF2QzZNZFZwOUUzQ3ZGcWY1SjJJTVhnbTR2bWRveHhjSVJZWHdTVHJaZUhjamwwQjk3R1pwdlhXbmUtZHAzQTBUdGRQRy01dTZYaThybFl6bzNoMUhJejQ2eDREU0VEYW1tTFVUTlBRZWExQ0hBVU9lWlE?oc=5",
+      "discovery_title": "Accessibilità abitativa UE 2025: rapporto prezzo-reddito in aumento del 6,8%, in calo in 17 paesi - Notizie e Statistiche - IndexBox",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
+      "score_discovery": 65,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "2025",
+        "6,8%",
+        "17 ",
+        "2025",
+        "6,8%",
+        "17 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
       "discovery_title": "Commercio con l’estero e prezzi all’import – Settembre 2026",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -596,93 +589,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione",
-      "discovery_title": "Dal Rifugio Galassi a Venezia: il workshop \"Risorsa Acqua\" celebra la quinta edizione",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
-      "score_discovery": 60,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "13",
-        "11",
-        "2026 ",
-        "18 ",
-        "19 ",
-        "2026 "
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.cnr.it/it/news/allegato/3405",
-        "https://www.cnr.it/it/news/allegato/3406",
-        "https://www.cnr.it/it/news/allegato/3407"
-      ],
-      "official_domain_hints": [
-        "aci.it",
-        "iss.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "13",
-          "11",
-          "2026 ",
-          "18 ",
-          "19 ",
-          "2026 "
-        ],
-        "matched_non_year_numbers": [
-          "13",
-          "11",
-          "18 ",
-          "19 "
-        ],
-        "matched_keywords": [
-          "rifugio",
-          "galassi",
-          "venezia",
-          "workshop",
-          "risorsa",
-          "acqua",
-          "celebra",
-          "quinta"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Dal Rifugio Galassi a Venezia: il workshop \"Risorsa Acqua\" celebra la quinta edizione | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Str",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "Google News - Tasse redditi casa",
-      "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUmNESG1nSWFTbklZdzBuTWE1VEFhejJsNl9fQ2cxTFFRUWFqX1B1T19vZEtzay0ycWIxdFF2QzZNZFZwOUUzQ3ZGcWY1SjJJTVhnbTR2bWRveHhjSVJZWHdTVHJaZUhjamwwQjk3R1pwdlhXbmUtZHAzQTBUdGRQRy01dTZYaThybFl6bzNoMUhJejQ2eDREU0VEYW1tTFVUTlBRZWExQ0hBVU9lWlE?oc=5",
-      "discovery_title": "Accessibilità abitativa UE 2025: rapporto prezzo-reddito in aumento del 6,8%, in calo in 17 paesi - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
-      "score_discovery": 65,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "2025",
-        "6,8%",
-        "17 ",
-        "2025",
-        "6,8%",
-        "17 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxONkR6djVmZjZvc0V4VW5vTmJXaDF1azB2dEhmRW1KTERXVDNrS25PZERENlJGMVd2ejVJNjNTWkZLTlJ3MDMySVk3aEwwRDlvMDVsRnYyQzVVNDdqdUZCR1pMN2F2U0gxWmtPT2xBdVNDY3d5RFg4QVZFTDJWYS0xTWdUMkpkc3loc2szRVdWZUU0NnBwcF8wNllMLUJxRXhOemV6Ynh5Y0VIZlV3aFBwajhOaGJoV0J6ZDlMSUJOdDMxQ2kzRzFCVUNzWUt0U3dKQkN6XzcybVJtbXgwZjJZaEZJTkE3dktmTFZOaURwa0FsZXc4eXZHYXhBaUJfTnR6SndpZU1KYWZuQQ?oc=5",
       "discovery_title": "Agricoltura, De Carlo (FdI): \"Rapporto Ismea 2026 certifica la forza dell'agroalimentare italiano: 75,2 miliardi di produzione e occupazione in crescita\" - La Voce del Patriota",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 54,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -698,10 +608,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Corriere della Sera - Economia",
+      "discovery_url": "https://bari.corriere.it/notizie/economia/26_novembre_13/bankitalia-il-pil-in-puglia-cresce-dell-1-nei-primi-sei-mesi-occupazione-in-ripresa-0-6-ma-la-questione-ex-ilva-fa-schizzare-del-6993512b-89bb-46ea-90b4-be58d19ddxlk.shtml",
+      "discovery_title": "Bankitalia, in Puglia Pil in crescita dell'1% nei primi sei mesi. Occupazione in ripresa (+0,6%), ma schizzano del 40% le richieste di cig per l’ex Ilva",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
+      "score_discovery": 48,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "1%",
+        "+0,6%",
+        "40%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "bancaditalia.it",
+        "iss.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Open - Notizie",
       "discovery_url": "https://www.open.online/2026/11/13/abusi-su-bimbi-asilo-roma-risarcimento/",
       "discovery_title": "Abusi su 26 bambini in un asilo di Roma: perché la scuola dovrà pagare 1,3 milioni alle famiglie",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 55,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -728,7 +659,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
       "discovery_title": "Soddisfazione dei cittadini – Anno 2025",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -787,10 +718,33 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "PULSE 80 testate · locali · gruppo 16",
+      "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vX19qUFJvZlA1bUE4bEVHVEV3dUQ4ZFRGczhwODlWQVhFd20ySkVFMi16RVk5X0xRLXlpMzZGdHpvako5X2hheHdjQTZjMThESEtQanRHc1JjN0k5eDV6WVY4SmlnMFJHSnBycW13c0ZLT1hWYnNIT2lfUUw?oc=5",
+      "discovery_title": "Istat, Pil 2026 +0,9%, +0,6% nel 2027 - Quotidiano Nazionale",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "+0,9%",
+        "+0,6%",
+        "2027 ",
+        "2026 ",
+        "+0,9%",
+        "+0,6%",
+        "2027 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://www.corriere.it/economia/casa/26_novembre_13/le-citta-piu-care-del-mondo-nel-2026-new-york-prima-milano-al-29-posto-ma-bisogna-anche-confrontare-gli-stipendi-c681162f-fec2-42b7-af07-60e3e4966xlk.shtml",
       "discovery_title": "Le città più care del mondo nel 2026: New York prima, Milano al 29° posto (ma bisogna anche confrontare gli stipendi)",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 45,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -811,7 +765,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/nota-sullandamento-e-prospettive-delleconomia-italiana-anni-2026-2027-aggiornamento-novembre/",
       "discovery_title": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
+      "detected_at": "2026-11-14T02:59:18.485521+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -871,72 +825,6 @@
         ],
         "verification_score": 95,
         "text_excerpt": "Nota sull’andamento e prospettive dell’economia italiana – Anni 2026-2027 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
-      "discovery_title": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE",
-      "detected_at": "2026-11-13T21:00:33.348545+00:00",
-      "score_discovery": 45,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "12",
-        "11",
-        "2026 ",
-        "2026",
-        "30 ",
-        "12 ",
-        "7 "
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.cnr.it/it/news/immagine/12804/large",
-        "https://www.cnr.it/it/news/immagine/12805/large",
-        "https://www.cnr.it/it/news/immagine/12806/large",
-        "https://www.cnr.it/it/news/immagine/12807/large",
-        "https://www.cnr.it/it/news/immagine/12808/large"
-      ],
-      "official_domain_hints": [
-        "iss.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "12",
-          "11",
-          "2026 ",
-          "2026",
-          "30 ",
-          "12 "
-        ],
-        "matched_non_year_numbers": [
-          "12",
-          "11",
-          "30 ",
-          "12 ",
-          "7 "
-        ],
-        "matched_keywords": [
-          "kolumbo",
-          "vulcano",
-          "sommerso",
-          "santorini",
-          "osservato",
-          "vicino",
-          "conclude",
-          "campagna"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sci",
         "verified_series": [],
         "method": "direct_official_rss"
       },
