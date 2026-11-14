@@ -190,9 +190,9 @@ class ProviderTests(unittest.TestCase):
             "PULSE_AI_PROVIDER":"mistral", "PULSE_MISTRAL_API_KEY":"FAKE-KEY",
         }), TemporaryDirectory() as td, \
              patch.object(pipeline, "run_data_tools", return_value={
-                 "analyst":{"status":"completed"},
+                 "data_analyst":{"status":"completed"},
                  "dstory":{"status":"completed"},
-                 "inspector":{"status":"completed"},
+                 "data2story_inspector":{"status":"completed"},
              }), \
              patch.object(pipeline.engine, "call_model", return_value={
                  "title":"Esempio di verifica di una serie italiana",
