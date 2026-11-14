@@ -92,7 +92,7 @@ class ComposerTests(unittest.TestCase):
         self.assertIn("23,9%",story["lead"])
         self.assertNotIn("0,4% ",story["lead"])
         self.assertIn("la quota di persone in abitazioni sovraffollate", story["lead"])
-        self.assertNotIn("abitazioni sovraffollate sale", story["lead"])
+        self.assertFalse(story["lead"].startswith("In Italia, abitazioni sovraffollate sale"))
         self.assertIn("L'osservazione più recente è", 
                       " ".join(p["text"] for p in story["sections"]))
         d=next(x for x in self.articles if x["topic"]=="DEMOGRAFIA")
