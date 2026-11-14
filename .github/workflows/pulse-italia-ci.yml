@@ -7,6 +7,10 @@ on:
       - "scripts/pulse_cloudflare_llama.py"
       - "scripts/pulse_italia_official_discovery.py"
       - "scripts/pulse_italia_auto_pipeline.py"
+      - "scripts/pulse_italia_reviewed_publish.py"
+      - "scripts/refresh_daily_safe.py"
+      - "tests/test_pulse_italia_reviewed_publish.py"
+      - ".github/workflows/pulse-italia-publish.yml"
       - "tests/test_pulse_italia_official_discovery.py"
       - "tests/test_pulse_cloudflare_llama.py"
       - ".github/workflows/pulse-italia-newsroom.yml"
@@ -37,6 +41,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_data_story_stack.py" -v
           python -m unittest discover -s tests -p "test_pulse_cloudflare_llama.py" -v
           python -m unittest discover -s tests -p "test_pulse_italia_official_discovery.py" -v
+          python -m unittest discover -s tests -p "test_pulse_italia_reviewed_publish.py" -v
 
   external-stack-smoke:
     runs-on: ubuntu-latest
