@@ -32,7 +32,7 @@ class SelectorTests(unittest.TestCase):
         e=fake(source_update=None)
         a=news.assess(item(e),e,None,datetime.fromisoformat(NOW.replace("Z","+00:00")),{})
         self.assertEqual(a["novelty"],"first_seen_by_pulse")
-        self.assertEqual(a["tier"],"catalogue")
+        self.assertEqual(a["tier"],"context")
         self.assertFalse(a["source_release_proven"])
 
     def test_new_official_period_large_change_selected(self):
@@ -52,7 +52,7 @@ class SelectorTests(unittest.TestCase):
         a=news.assess(item(e),e,state,
             datetime.fromisoformat(NOW.replace("Z","+00:00")),{})
         self.assertEqual(a["novelty"],"unchanged")
-        self.assertEqual(a["tier"],"catalogue")
+        self.assertEqual(a["tier"],"context")
         self.assertEqual(a["parts"]["newness"],0)
 
     def test_same_period_revised_requires_review(self):
@@ -97,6 +97,28 @@ class SelectorTests(unittest.TestCase):
         self.assertEqual(len(result["features_new"]),2)
         self.assertGreaterEqual(result["catalogue_updates_count"],7)
         self.assertEqual(len(ledger["series"]),9)
+
+    def test_context_backfill_is_not_mislabeled_as_official_news(self):
+        e=fake(source_update=None)
+        news_item=item(e)
+        frontpage,ledger,_=news.evaluate([(news_item,e)],[],
+                                         {"series":{}},{},NOW)
+        self.assertEqual(frontpage["features_new"],[])
+        self.assertEqual(frontpage["context_analyses_new"],[news_item["id"]])
+        self.assertTrue(frontpage["context_analyses_not_source_news"])
+        published={
+            "id":news_item["id"],"topic":e["topic"],
+            "publication_status":"published",
+            "public_source":{"domain":"EUROSTAT"},
+            "source_documents":[{"url":e["dataset_url"]}],
+            "verified_series_relevant":[{
+                "indicator":e["series"]["indicator"],
+                "territory":e["series"]["territory"]}],
+        }
+        second,_,_=news.evaluate([(news_item,e)],[published],ledger,
+                                 frontpage,"2026-11-15T18:40:00Z")
+        self.assertEqual(second["context_analyses_new"],[])
+        self.assertEqual(second["features_new"],[])
 
     def test_same_official_indicator_gender_splits_are_one_feature(self):
         samples=[]
