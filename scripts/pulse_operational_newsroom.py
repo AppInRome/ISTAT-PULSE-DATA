@@ -16,6 +16,7 @@ from scripts import pulse_editorial_audit_v1 as audit
 from scripts.pulse_cloudflare_llama import (
     BUDGET_NEURONS, configure_environment, reserved_neurons
 )
+from scripts.pulse_italia_newsroom import REGIONS
 from scripts.pulse_data_story_stack import (
     exact_verified_csv, run_data_analyst, run_dstory,
     run_data2story_inspector, source_trace
@@ -37,7 +38,7 @@ def analyze_verified(evidence_path, output_dir, *, data_analyst_script=None,
     if evidence.get("verified") is not True or not evidence.get("auto_discovered"):
         raise ValueError("requires_auto_discovered_verifiable_primary_series")
     series = evidence["series"]
-    if series["territory"].casefold() != "italia" and not series["territory"]:
+    if series["territory"].casefold() not in {"italia", *(r.casefold() for r in REGIONS)}:
         raise ValueError("not_italian_series")
     observations = series["observations"]
     if len(observations) < 2:
