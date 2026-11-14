@@ -145,3 +145,52 @@ class AutomaticOfficialFeatureTests(TestCase):
             result=release.publish(root/"missing",root/"automatic_features.json")
             self.assertEqual(result["published_new"],0)
             self.assertEqual(json.loads((root/"automatic_features.json").read_text())["articles"],[])
+
+    def test_end_to_end_release_to_mobile_source_contract_and_corrupt_input(self):
+        """Fixture evidence only: never copied into the production feed."""
+        from scripts import pulse_editorial_selector as selection
+        e=fixture()
+        with TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            research(root/"work"/"valid",e)
+            feed=root/"news"/"automatic_features.json"
+            versions=root/"news"/"source_versions.json"
+            front=root/"news"/"editorial_frontpage.json"
+            versions.parent.mkdir(parents=True, exist_ok=True)
+            versions.write_text(json.dumps({"schema":selection.REGISTRY,"series":{
+                selection.series_key(e):{
+                    "last_period":e["series"]["observations"][-2]["period"],
+                    "observation_signature":"0"*64,
+                    "history":[]
+                }
+            }}))
+            result=release.publish(root/"work",feed,smart=True,
+                now="2026-11-14T18:40:00Z",
+                versions_file=versions,frontpage_file=front)
+            self.assertEqual(result["published_new"],1,result)
+            article=json.loads(feed.read_text())["articles"][0]
+            self.assertEqual(article["publication_status"],"published")
+            self.assertEqual(article["automatic_review"]["original_source_sha256"],
+                             article["source_documents"][0]["sha256"])
+            self.assertTrue(article["editorial_story"]["source_locked"])
+            self.assertEqual(article["chart_spec"]["status"],"verified")
+            self.assertEqual(article["table_spec"]["status"],"verified")
+            self.assertGreaterEqual(len(article["pulse_article_body"]),4)
+            self.assertIn(article["id"],json.loads(front.read_text())["featured_article_ids"])
+            baseline=feed.read_bytes()
+            rerun=release.publish(root/"work",feed,smart=True,
+                now="2026-11-14T19:00:00Z",
+                versions_file=versions,frontpage_file=front)
+            self.assertEqual(rerun["published_new"],0,rerun)
+            self.assertEqual(feed.read_bytes(),baseline)
+            # The original published dossier survives a malformed new candidate.
+            research(root/"work"/"tampered",e)
+            p=root/"work"/"tampered"/"preview.json"
+            bad=json.loads(p.read_text())
+            bad["chart_spec"]["data"][-1]["value"]+=100
+            p.write_text(json.dumps(bad))
+            blocked=release.publish(root/"work",feed,smart=True,
+                now="2026-11-14T19:10:00Z",
+                versions_file=versions,frontpage_file=front)
+            self.assertGreaterEqual(blocked["rejected"],1)
+            self.assertEqual(feed.read_bytes(),baseline)
