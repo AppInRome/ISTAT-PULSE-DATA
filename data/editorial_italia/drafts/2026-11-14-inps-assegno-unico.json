@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "PULSE-EDITORIAL-DRAFT-2026-11-14-INPS-ASSEGNO-UNICO",
+  "publication_status": "draft",
+  "editorial_status": "requires_independent_human_review",
+  "generation_method": "original_manually_researched_editorial_rewrite",
+  "model_provenance": "ChatGPT GPT-6, not Cloudflare Llama; not an automated GitHub workflow result",
+  "written_at": "2026-11-14",
+  "source_published_at": "2026-11-12",
+  "period_reference": "2026-01/2026-09",
+  "headline": "Assegno unico, 15 miliardi alle famiglie in nove mesi: quanto conta l'ISEE",
+  "summary": "Oltre 6,1 milioni di nuclei beneficiari e quasi 9,75 milioni di figli coinvolti da gennaio a settembre 2026. L'importo medio mensile per figlio è di 177 euro, ma le differenze tra fasce ISEE restano molto marcate.",
+  "pulse_article_body": [
+    {
+      "heading": "",
+      "text": "Quindici miliardi di euro nei primi nove mesi dell'anno: è la dimensione delle risorse erogate attraverso l'Assegno unico e universale nel 2026. L'aggiornamento dell'Osservatorio INPS, diffuso il 12 novembre, fotografa una prestazione che raggiunge milioni di famiglie italiane. Da gennaio a settembre risultano beneficiari 6.175.770 nuclei familiari, con un totale di 9.744.851 figli interessati. I numeri si riferiscono al periodo osservato e non rappresentano una previsione per l'intero anno."
+    },
+    {
+      "heading": "",
+      "text": "Nel mese di settembre l'importo medio per figlio, comprensivo delle maggiorazioni applicabili, è pari a 177 euro. Questa media, però, non coincide con la cifra effettivamente ricevuta da ciascuna famiglia. La misura tiene conto anche della situazione economica rilevata attraverso l'ISEE. Per chi non presenta l'indicatore o supera la soglia massima prevista per il 2026, l'importo medio indicato dall'INPS è di circa 58 euro per figlio."
+    },
+    {
+      "heading": "",
+      "text": "All'estremo opposto, per la classe di ISEE più bassa, l'importo medio raggiunge circa 227 euro. La distanza tra i due valori è quindi di circa 169 euro mensili per figlio. Si tratta di importi medi riferiti a gruppi differenti, non dell'importo dovuto a ogni singolo beneficiario. Maggiorazioni e caratteristiche familiari possono infatti incidere sulla somma effettiva."
+    },
+    {
+      "heading": "",
+      "text": "Per il 2026, le soglie ISEE richiamate dall'INPS sono 17.468,51 euro per la classe minima e 46.582,71 euro per quella massima. Conoscere questi riferimenti aiuta a leggere il dato, ma non basta da solo a calcolare il proprio assegno. L'osservatorio offre una fotografia statistica del sistema, non un preventivo personalizzato. Per verificare il diritto e la cifra spettante occorrono quindi le regole applicabili alla situazione del nucleo."
+    },
+    {
+      "heading": "",
+      "text": "L'INPS ricorda anche che nell'intero 2025 sono stati erogati 19,8 miliardi di euro. Quel dato, però, copre dodici mesi e non va confrontato direttamente con i 15 miliardi dei primi nove mesi del 2026 come se riguardasse periodi identici. La distinzione è essenziale per evitare conclusioni affrettate sull'aumento o sulla diminuzione della spesa. Quello che emerge con certezza dall'ultimo aggiornamento è il peso dell'Assegno unico nel sostegno ordinario a milioni di famiglie e l'importanza dell'ISEE nel determinare il livello del beneficio."
+    }
+  ],
+  "topic": "FAMIGLIA",
+  "geographic_scope": {
+    "country_code": "IT",
+    "territory": "Italia"
+  },
+  "public_source": {
+    "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2026/11/12/Comunicato_52685/Allegati/62018_cs-osservatorio-assegno-unico-universale.pdf",
+    "role": "primary_statistical_source",
+    "publisher": "INPS"
+  },
+  "source_documents": [
+    {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2026/11/12/Comunicato_52685/Allegati/62018_cs-osservatorio-assegno-unico-universale.pdf",
+      "publisher": "INPS",
+      "type": "official_press_release"
+    }
+  ],
+  "chart_spec": {
+    "status": "source_reported_comparison_needs_editorial_review",
+    "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2026/11/12/Comunicato_52685/Allegati/62018_cs-osservatorio-assegno-unico-universale.pdf",
+    "type": "bar",
+    "title": "Assegno unico a settembre 2026: importi medi per figlio",
+    "unit": "€ / figlio",
+    "data": [
+      {
+        "label": "Senza ISEE / fascia più alta",
+        "value": 58
+      },
+      {
+        "label": "Media complessiva",
+        "value": 177
+      },
+      {
+        "label": "Fascia ISEE minima",
+        "value": 227
+      }
+    ],
+    "comparison_note": "58 e 227 euro sono importi approssimativi riferiti a classi diverse; 177 è la media di tutti i percettori, non una terza classe"
+  },
+  "table_spec": {
+    "status": "source_reported_comparison_needs_editorial_review",
+    "source_url": "https://www.inps.it/content/dam/inps-site/it/scorporati/comunicati-stampa/2026/11/12/Comunicato_52685/Allegati/62018_cs-osservatorio-assegno-unico-universale.pdf",
+    "headers": [
+      "Tipologia",
+      "Importo medio mensile per figlio (euro)"
+    ],
+    "rows": [
+      [
+        "Nessun ISEE o sopra soglia massima",
+        "circa 58"
+      ],
+      [
+        "Media complessiva",
+        177
+      ],
+      [
+        "Classe ISEE minima",
+        "circa 227"
+      ]
+    ],
+    "note": "Non una serie storica. Aggregati INPS settembre 2026"
+  },
+  "review_required": true,
+  "publishable_without_review": false,
+  "source_note": "Original writing based on the official institutional release, without copying its prose. Not a primary dataset-level audited series."
+}
