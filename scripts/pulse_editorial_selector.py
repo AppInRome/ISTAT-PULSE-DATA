@@ -181,7 +181,10 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
         key=series_key(evidence)
         result=assess(item,evidence,old_versions.get(key),now_dt,counts)
         assessments.append(result)
-        old_versions[key]=_updated_state(evidence,old_versions.get(key),now)
+        # An unchanged official series is not a new source version and should
+        # never create a daily Git commit by updating last_checked_at.
+        if result["novelty"] != "unchanged":
+            old_versions[key]=_updated_state(evidence,old_versions.get(key),now)
     # Never privilege input order/INPS position: highest verified signal first.
     assessments.sort(key=lambda x:(-x["score"],x["topic"],x["article_id"]))
     selected=[];briefs=[];catalogue=[];revisions=[];chosen_topic=Counter()
