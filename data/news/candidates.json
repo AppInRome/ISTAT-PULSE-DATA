@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:56:17.046626+00:00",
+  "generated_at": "2026-11-14T19:50:40.489013+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
@@ -79,12 +79,12 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 45
+      "items_fetched": 44
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -129,7 +129,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 53
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -139,17 +139,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 37
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 59
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 30
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -209,12 +209,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 27
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 39
+      "items_fetched": 42
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -284,7 +284,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 4
+      "items_fetched": 3
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMzRWWFcycW9MdUwwU0xudFhWczRSa2gzNU51d2kxck4yd3lYSEJBT2JGaGo2Q284VEJ2bkNhYzBrR3pndExkZ2NIVUJFQTZvVUFELVFES1hESzgwZEI0UEU3eXNHTFRWUEtTRGNXM1hXbEJiLVZNcktCMDRFaDFqak9QZHFLMVlVYnE5UlAwSGRxbXFaUEo0Y0Q4d25DY3dYTzlpdlA2N3l3REt5Q01EQVdGU3A2dl9oUHpLbWtiYzkzYjZiVFJFUUJYY2JqWVNvdHFReFVCcXJjMXM4b0Jr0gHkAUFVX3lxTE5QMjB6Zld3T1IybkRpSUZ5SmYxaDZ6SHJyenBFcWdFU3FxMmxZNUo3WUFoWEJURzZEVmVCdm9fa0duZHQxM0ZEYzhJY1dIdXdrcDhFN2x2eHJYc0ZtX3FhU0FQRHlOcEQ1MV9PNnEtbXg3Q0tKQktyZjZ5cXAyWlF6LXpqVm0wWm9DZXVVVzJRMFFIenRnWjBlSmpEZ2Q4dUJoYkU2UWpmdXFSenEzMUl0VGJZV0JCTXdqSHVUQVJtaUZ0RnJzWlE3eHZ3aGtCUThrZjF6X2pKdWdCV0hXVmxuaF9leg?oc=5",
       "discovery_title": "Bankitalia, 'nel 2026 in Puglia l'occupazione cresce dello 0,6%' - ANSA",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 49,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxONGpMdkh1YTQwRVNjVjNPYzZGejdLTE4wTV93aTAyUWlWd3R5ZUNxUEFUczdXZXFLZnBoeDRjNlRycWxtMDlTdTJ5WEpQTUZIdlR1eWJQdGc3ZmRVYTZ6a0s3Q3ZUcVdYdTBwOU9LTUV1ZFpoRVRPVzlpdW5IMTVDXy1IM3Y0QTZybGRnU2pmYVF2TVgtODFfSV8wV3ZycWk1emYzdTdFa0p0ZU13OEZQVmJ1YmF3NWI4X3hSbDZoak5sdGwyN0ljZ3hGU1dwZlpoQmVXa1N4MDd0QXFyNkcwUHI4V2VOcWZaYXRoTTc4OURnbFXSAfMBQVVfeXFMTjRqTHZIdWE0MEVTY1YzT2M2Rno3S0xOME1fd2kwMlFpVnd0eWVDcVBBVHM3V2VxS2ZwaHg0YzZUcnFsbTA5U3UyeVhKUE1GSHZUdXliUHRnN2ZkVWE2emtLN0N2VHFXWHUwcDlPS01FdWRaaEVUT1c5aXVuSDE1Q18tSDN2NEE2cmxkZ1NqZmFRdk1YLTgxX0lfMFd2cnFpNXpmM3U3RWtKdGVNdzhGUFZidWJhdzViOF94Umw2aGpObHRsMjdJY2d4RlNXcGZaaEJlV2tTeDA3dEFxcjZHMFByOFdlTnFmWmF0aE03ODlEZ2xV?oc=5",
       "discovery_title": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6% - La Gazzetta del Mezzogiorno",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 55,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -412,7 +412,7 @@
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbGY1eklUNmtZbkhqUjBmX0dHMV90bW1ZV0V3YVRwRldsNW5sLWNWNWpyMHZ2SXRKWmNYa3k2b3lGRF90SVRZOVFuNWlqQzBDUFlNNUpwY2NNYmxqM1NlT1dLX2MxdF8tOTVOUDlLN0E2alRLTk9pd0xNRFpvd3ozTUd3bmctWUxiVUZVZkhTcVFCZkV2Qno3UHBFUFpNeDZM?oc=5",
       "discovery_title": "Inflazione 2026, a Verona più 4,6%: è la quarta città più cara d’Italia - La Cronaca di Verona",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -431,7 +431,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBjZ0lTSkhrOGZIOElHN09MNGZTaHhiQXE1d3pzMy1sZXd6VlFhQ3RNeE1qODZtZnZxUmJsVVhGX3o1bG1FWVZZUnk0UTNxQmxVZDlyT3JNdEpQMlpQLVQyMlFjN3hBYXhKYlJKWFV3X1oteFo5bHQ3MXBTU1g?oc=5",
       "discovery_title": "Export, il Veneto traina l’Italia: 80 miliardi nel 2025. Verona ne vale 16 - L\\'Adige di Verona",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -449,31 +449,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia popolazione e territori",
-      "discovery_url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPM1ZZejZ5TnNMdG5jd0N2QnJFLXJ6aHhyVllENFRPSUNVTjJYeFQ5Q0tlVzV6eHF0UHc5RE9ZTTJpZEZzSHRHN1VDSEtKdElfdWI2a0s4YU0zZlByZTN6M3hsbGRMR09IenpYV01sTElxWkhkbDQ2aTc1WllrLXExaEFYRG5sVnFvbmpBWHBwWVUxZnp2eFpYRTc3b2gwQ1l2LVhjellKZWlMNjNqZ3VzSXBlaUs0alprZWhEQUVRaWN2Um9WbUZYWUtELVpoN3NxYUluMHMtNG10Q04zTTExaGdPZkl3NXczLXRXQzNDVGhiZEgtNGQwQTBsVm5JbG9nT0V1MHd0cllyZFVSa2JDZE1Gcjd4OUxLekh5RThsbkpGLWJWNjhYUmRrVXljZw?oc=5",
-      "discovery_title": "FONDAZIONE MIGRANTES * RAPPORTO ITALIANI NEL MONDO 2026: «6.630.284 I CITTADINI RESIDENTI ALL'ESTERO ISCRITTI ALL'AIRE, IN VENT'ANNI SONO PIÙ CHE RADDOPPIATI - agenzia giornalistica opinione",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
-      "score_discovery": 45,
-      "topic": "DEMOGRAFIA",
-      "numbers_detected": [
-        "2026",
-        "6.630",
-        "284 ",
-        "2026",
-        "6.630",
-        "284 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
       "discovery_title": "Commercio con l’estero e prezzi all’import – Settembre 2026",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 60,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -532,10 +511,72 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione",
+      "discovery_title": "Dal Rifugio Galassi a Venezia: il workshop \"Risorsa Acqua\" celebra la quinta edizione",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
+      "score_discovery": 60,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "13",
+        "11",
+        "2026 ",
+        "18 ",
+        "19 ",
+        "2026 "
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/allegato/3405",
+        "https://www.cnr.it/it/news/allegato/3406",
+        "https://www.cnr.it/it/news/allegato/3407"
+      ],
+      "official_domain_hints": [
+        "aci.it",
+        "iss.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "13",
+          "11",
+          "2026 ",
+          "18 ",
+          "19 ",
+          "2026 "
+        ],
+        "matched_non_year_numbers": [
+          "13",
+          "11",
+          "18 ",
+          "19 "
+        ],
+        "matched_keywords": [
+          "rifugio",
+          "galassi",
+          "venezia",
+          "workshop",
+          "risorsa",
+          "acqua",
+          "celebra",
+          "quinta"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Dal Rifugio Galassi a Venezia: il workshop \"Risorsa Acqua\" celebra la quinta edizione | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture scientifiche Str",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "PULSE 80 testate · locali · gruppo 16",
       "discovery_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSGJlOVZyWUk3MlVra2tjVFU1ZG04bEtwMW1qNUZySmVhXzQxZS03WEhheUdMNmF6Ty1sQk1yelY5SjlzT2xrZmt1ZU5JTGtQUEFqNHM3ZE9haUNNVXZIYzBnbGRaOGxmcmhtZGh3TnJBcm94ajJMN1lpZjhobk1DUElRWnJ6WTdHQVc3WWZn?oc=5",
       "discovery_title": "Emilia-Romagna, Pil a +1%. Bene industria, export, turismo. Per il 2027 domina l’incertezza - Il Resto del Carlino",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -554,7 +595,7 @@
       "radar": "Google News - economia lavoro",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxONkR6djVmZjZvc0V4VW5vTmJXaDF1azB2dEhmRW1KTERXVDNrS25PZERENlJGMVd2ejVJNjNTWkZLTlJ3MDMySVk3aEwwRDlvMDVsRnYyQzVVNDdqdUZCR1pMN2F2U0gxWmtPT2xBdVNDY3d5RFg4QVZFTDJWYS0xTWdUMkpkc3loc2szRVdWZUU0NnBwcF8wNllMLUJxRXhOemV6Ynh5Y0VIZlV3aFBwajhOaGJoV0J6ZDlMSUJOdDMxQ2kzRzFCVUNzWUt0U3dKQkN6XzcybVJtbXgwZjJZaEZJTkE3dktmTFZOaURwa0FsZXc4eXZHYXhBaUJfTnR6SndpZU1KYWZuQQ?oc=5",
       "discovery_title": "Agricoltura, De Carlo (FdI): \"Rapporto Ismea 2026 certifica la forza dell'agroalimentare italiano: 75,2 miliardi di produzione e occupazione in crescita\" - La Voce del Patriota",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 54,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -570,10 +611,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Italia popolazione e territori",
+      "discovery_url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPM1ZZejZ5TnNMdG5jd0N2QnJFLXJ6aHhyVllENFRPSUNVTjJYeFQ5Q0tlVzV6eHF0UHc5RE9ZTTJpZEZzSHRHN1VDSEtKdElfdWI2a0s4YU0zZlByZTN6M3hsbGRMR09IenpYV01sTElxWkhkbDQ2aTc1WllrLXExaEFYRG5sVnFvbmpBWHBwWVUxZnp2eFpYRTc3b2gwQ1l2LVhjellKZWlMNjNqZ3VzSXBlaUs0alprZWhEQUVRaWN2Um9WbUZYWUtELVpoN3NxYUluMHMtNG10Q04zTTExaGdPZkl3NXczLXRXQzNDVGhiZEgtNGQwQTBsVm5JbG9nT0V1MHd0cllyZFVSa2JDZE1Gcjd4OUxLekh5RThsbkpGLWJWNjhYUmRrVXljZw?oc=5",
+      "discovery_title": "FONDAZIONE MIGRANTES * RAPPORTO ITALIANI NEL MONDO 2026: «6.630.284 I CITTADINI RESIDENTI ALL'ESTERO ISCRITTI ALL'AIRE, IN VENT'ANNI SONO PIÙ CHE RADDOPPIATI - agenzia giornalistica opinione",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
+      "score_discovery": 45,
+      "topic": "DEMOGRAFIA",
+      "numbers_detected": [
+        "2026",
+        "6.630",
+        "284 ",
+        "2026",
+        "6.630",
+        "284 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/soddisfazione-dei-cittadini-anno-2025/",
       "discovery_title": "Soddisfazione dei cittadini – Anno 2025",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 50,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -635,7 +697,7 @@
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNblFFYjkxTHhqaDlVd2FtVUtWSVJhbEVQXzMzcV9mbDBMNEdEaFJkNXUtQnQ1cUhtT2pvSzB6YTh1V2JxSkVHUTJsNG9JeTZkdXQtMGlOcHo1SzBFT1JKRElKZzlWLVV3Y3lBWkZOb19TVGlma3Z6a19DU1ctdmZUcW1iajFITHFmckE?oc=5",
       "discovery_title": "Istat. Quasi 8 italiani su 10 soddisfatti della propria salute, ma dopo i 75 anni la quota crolla al 59,2%. Donne e Sud più indietro - Il Farmacista Online",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
       "score_discovery": 45,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -655,25 +717,70 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Tasse redditi casa",
-      "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUmNESG1nSWFTbklZdzBuTWE1VEFhejJsNl9fQ2cxTFFRUWFqX1B1T19vZEtzay0ycWIxdFF2QzZNZFZwOUUzQ3ZGcWY1SjJJTVhnbTR2bWRveHhjSVJZWHdTVHJaZUhjamwwQjk3R1pwdlhXbmUtZHAzQTBUdGRQRy01dTZYaThybFl6bzNoMUhJejQ2eDREU0VEYW1tTFVUTlBRZWExQ0hBVU9lWlE?oc=5",
-      "discovery_title": "Accessibilità abitativa UE 2025: rapporto prezzo-reddito in aumento del 6,8%, in calo in 17 paesi - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-14T18:56:17.046626+00:00",
-      "score_discovery": 65,
-      "topic": "ALTRO",
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
+      "discovery_title": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE",
+      "detected_at": "2026-11-14T19:50:40.489013+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
       "numbers_detected": [
-        "2025",
-        "6,8%",
-        "17 ",
-        "2025",
-        "6,8%",
-        "17 "
+        "12",
+        "11",
+        "2026 ",
+        "2026",
+        "30 ",
+        "12 ",
+        "7 "
       ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
+      "official_links": [
+        "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/immagine/12804/large",
+        "https://www.cnr.it/it/news/immagine/12805/large",
+        "https://www.cnr.it/it/news/immagine/12806/large",
+        "https://www.cnr.it/it/news/immagine/12807/large",
+        "https://www.cnr.it/it/news/immagine/12808/large"
+      ],
+      "official_domain_hints": [
+        "iss.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "12",
+          "11",
+          "2026 ",
+          "2026",
+          "30 ",
+          "12 "
+        ],
+        "matched_non_year_numbers": [
+          "12",
+          "11",
+          "30 ",
+          "12 ",
+          "7 "
+        ],
+        "matched_keywords": [
+          "kolumbo",
+          "vulcano",
+          "sommerso",
+          "santorini",
+          "osservato",
+          "vicino",
+          "conclude",
+          "campagna"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sci",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
       "editorial_excluded": false,
-      "status": "needs_primary_source"
+      "status": "primary_statistical_source_verified"
     }
   ]
 }
