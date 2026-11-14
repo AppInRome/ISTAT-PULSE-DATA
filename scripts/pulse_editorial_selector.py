@@ -214,7 +214,8 @@ def _updated_state(evidence,current,now):
         history.append({"period":latest,"sha256":signature,"first_seen_at":now})
     return {
         "dataset_url":evidence["dataset_url"], "indicator":s["indicator"],
-        "territory":s["territory"],"last_period":latest,
+        "territory":s["territory"],"topic":str(evidence.get("topic") or "").upper(),
+        "last_period":latest,
         "observation_signature":signature,"source_bytes_sha256":evidence["source_sha256"],
         "source_updated_at":evidence.get("source_publication_date"),
         "last_checked_at":now,"history":history[-HISTORY_LIMIT:],

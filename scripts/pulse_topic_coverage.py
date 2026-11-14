@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 from urllib.parse import urlsplit,parse_qsl,urlencode
 
@@ -28,12 +29,59 @@ def independent_metric_identity(dataset_url):
     return (p.hostname,p.path,urlencode(keep))
 
 
+
+def _historical_topics(entries, articles):
+    """Recover labels ONLY for previously verified registry series.
+
+    A bounded daily candidate scan must not un-count already verified work.
+    The mere existence of a catalogue candidate is NEVER a verification.
+    """
+    from scripts import pulse_eurostat_topics as eurostat
+    catalogue = {(eurostat.request_url(c), c["indicator"]): c["topic"]
+                 for c in eurostat.CATALOG}
+    published = {}
+    for a in articles:
+        if not isinstance(a,dict) or a.get("publication_status")!="published":
+            continue
+        docs=a.get("source_documents") or []
+        metrics=a.get("verified_series_relevant") or []
+        if not docs or not metrics or not isinstance(docs[0],dict) or not isinstance(metrics[0],dict):
+            continue
+        k=(docs[0].get("url"), metrics[0].get("indicator"),
+           metrics[0].get("territory"))
+        published.setdefault(k,set()).add(str(a.get("topic") or "").upper())
+    recovered={}
+    for key,entry in entries.items():
+        if not isinstance(entry,dict):
+            continue
+        if (not re.fullmatch(r"[0-9a-f]{64}",str(entry.get("source_bytes_sha256","")))
+                or not re.fullmatch(r"[0-9a-f]{64}",str(entry.get("observation_signature","")))
+                or not entry.get("last_period")):
+            continue
+        topic=str(entry.get("topic") or "").upper()
+        if topic not in TOPIC_TARGETS:
+            k=(entry.get("dataset_url"),entry.get("indicator"),entry.get("territory"))
+            from_archive=published.get(k,set()) & set(TOPIC_TARGETS)
+            if len(from_archive)==1:
+                topic=next(iter(from_archive))
+            else:
+                topic=catalogue.get((entry.get("dataset_url"),entry.get("indicator")),"")
+        if topic in TOPIC_TARGETS:
+            recovered[key]=topic
+    return recovered
+
+
 def build(versions,frontpage,feed):
     entries=(versions or {}).get("series") or {}
     assessments=(frontpage or {}).get("assessments") or []
     articles=(feed or {}).get("articles") or []
     topics_by_key={x.get("series_key"):str(x.get("topic") or "").upper()
                    for x in assessments if isinstance(x,dict)}
+    recovered=_historical_topics(entries,articles)
+    recovered_only={key:topic for key,topic in recovered.items()
+                    if key not in topics_by_key}
+    for key,topic in recovered.items():
+        topics_by_key.setdefault(key,topic)
     result={}
     for topic,target in TOPIC_TARGETS.items():
         matched=[e for k,e in entries.items() if isinstance(e,dict)
@@ -56,7 +104,8 @@ def build(versions,frontpage,feed):
         }
     return {
         "schema":SCHEMA,
-        "measured_from":"verified_source_versions_and_editorial_assessments",
+        "measured_from":"historically_verified_source_versions_and_current_editorial_assessments",
+        "previously_verified_series_classified_from_audited_history":len(recovered_only),
         "not_a_claim_of_complete_subject_coverage":True,
         "source_checked_at":frontpage.get("generated_at"),
         "target_total":sum(TOPIC_TARGETS.values()),
