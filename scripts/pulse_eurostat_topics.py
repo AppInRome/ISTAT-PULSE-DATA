@@ -50,18 +50,19 @@ CATALOG = (
         "filters": {"sex": "T"},
     },
     {
-        "id": "tps00208", "topic": "SALUTE",
+        "id": "hlth_hlye", "topic": "SALUTE",
         "indicator": "Speranza di vita alla nascita",
         "unit": "anni", "unit_code": "YR",
         "population": "Speranza di vita alla nascita, entrambi i sessi",
-        "filters": {"sex": "T"},
+        "filters": {"sex": "T", "freq": "A", "unit": "YR",
+                    "hlth_hle": "LE_Y0"},
     },
     {
         "id": "tessi171", "topic": "CASA",
         "indicator": "Popolazione che vive in abitazioni sovraffollate",
         "unit": "%", "unit_code": "PC",
         "population": "Totale popolazione, entrambi i sessi, indagine EU-SILC",
-        "filters": {"sex": "T", "age": "TOTAL", "incgrp": "TOTAL"},
+        "filters": {"sex": "T", "age": "TOTAL"},
     },
     {
         "id": "env_wasmun", "topic": "AMBIENTE",
