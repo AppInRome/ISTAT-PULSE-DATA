@@ -20,6 +20,9 @@ SCHEMA = "pulse-editorial-frontpage-v1"
 REGISTRY = "pulse-source-versions-v1"
 MAX_STORIES_PER_TOPIC = 2
 MAX_FEATURES_PER_DAY = 12
+MAX_CONTEXT_ANALYSES_PER_DAY = 6
+CONTEXT_TOPICS = frozenset(("DEMOGRAFIA", "SALUTE", "ISTRUZIONE",
+                            "CASA", "AMBIENTE", "ENERGIA"))
 MAX_BRIEFS_PER_DAY = 20
 HISTORY_LIMIT = 8
 REGISTRY_LIMIT = 4000
@@ -158,6 +161,11 @@ def assess(item,evidence,known,now,topic_counts):
         tier="review_revision"  # explicit review; never silently overwrite.
     elif qualified and signal>=15 and score>=65:
         tier="feature"
+    elif (novelty=="first_seen_by_pulse" and topic in CONTEXT_TOPICS
+          and topic_counts.get(topic,0)<3 and signal>=27
+          and latest[:4].isdigit() and int(latest[:4])>=now.year-3):
+        # Background analysis, never a claim of a freshly released source.
+        tier="context"
     elif (qualified or first_seen_brief) and (score>=45 or signal>=15):
         tier="brief"
     else:
@@ -214,6 +222,7 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
     # Never privilege input order/INPS position: highest verified signal first.
     assessments.sort(key=lambda x:(-x["score"],x["topic"],x["article_id"]))
     selected=[];briefs=[];catalogue=[];revisions=[];chosen_topic=Counter()
+    context_candidates=[];context_analyses=[];context_topics=set()
     chosen_families=set()
     for a in assessments:
         if a["tier"]=="review_revision":
@@ -229,11 +238,27 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
             else:
                 catalogue.append({**a,"tier":"catalogue",
                                   "reason":"editorial_capacity_or_topic_balance"})
+        elif a["tier"]=="context":
+            context_candidates.append(a)
         elif a["tier"]=="brief":
             if len(briefs)<MAX_BRIEFS_PER_DAY: briefs.append(a)
             else: catalogue.append({**a,"tier":"catalogue"})
         else:
             catalogue.append(a)
+    # New official reference periods always take precedence over archives.
+    # Context dossiers are published separately and explicitly labelled.
+    for a in context_candidates:
+        if (len(context_analyses)<MAX_CONTEXT_ANALYSES_PER_DAY
+                and len(selected)+len(context_analyses)<MAX_FEATURES_PER_DAY
+                and a["topic"] not in context_topics
+                and chosen_topic[a["topic"]]==0
+                and a["editorial_family"] not in chosen_families):
+            context_analyses.append(a)
+            context_topics.add(a["topic"])
+            chosen_families.add(a["editorial_family"])
+        else:
+            catalogue.append({**a,"tier":"catalogue",
+                              "reason":"context_capacity_or_family_balance"})
     # Keep today's previously featured IDs while checking again the same day.
     last=previous_frontpage if isinstance(previous_frontpage,dict) else {}
     recent_same_day=str(last.get("generated_at",""))[:10]==now[:10]
@@ -244,6 +269,9 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
         "editorial_method":"source_versions_and_verified_material_change_no_ai",
         "featured_article_ids":featured[:MAX_FEATURES_PER_DAY],
         "features_new":[a["article_id"] for a in selected],
+        "context_analyses_new":[a["article_id"] for a in context_analyses],
+        "context_analyses_not_source_news":True,
+        "context_topics":sorted(context_topics),
         "briefs":[{"article_id":a["article_id"],"topic":a["topic"],
                    "headline":a["headline"],"source_url":a["source_url"],
                    "score":a["score"],"reason":a["reason"],
@@ -265,7 +293,9 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
         "no_automatic_publication_from_revision":True,
         "source_date_not_inferred_from_observation_period":True,
         "thresholds":{"feature":65,"brief":45,"max_features_per_day":MAX_FEATURES_PER_DAY,
-                      "max_features_per_topic":MAX_STORIES_PER_TOPIC},
+                      "max_features_per_topic":MAX_STORIES_PER_TOPIC,
+                      "max_context_analyses_per_day":MAX_CONTEXT_ANALYSES_PER_DAY,
+                      "context_min_signal":27},
         "assessments":assessments[:200],
     }
     ledger={"schema":REGISTRY,"generated_at":now,"series":dict(
