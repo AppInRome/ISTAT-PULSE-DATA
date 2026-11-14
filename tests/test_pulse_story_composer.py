@@ -35,6 +35,14 @@ class ComposerTests(unittest.TestCase):
                                  item["source_documents"][0]["sha256"])
                 self.assertLessEqual(len(story["headline"]),110)
                 self.assertEqual(story["schema"],composer.SCHEMA)
+                self.assertTrue(50 <= len(story["lead"]) <= 700)
+                self.assertTrue(3 <= len(story["sections"]) <= 5)
+                for section in story["sections"]:
+                    self.assertTrue(5 <= len(section["heading"]) <= 80)
+                    self.assertTrue(60 <= len(section["text"]) <= 1300)
+                # Android v0.14 only displays the optional story when these
+                # source-bound conditions are all satisfied.
+                self.assertTrue(story["original_text_preserved"])
                 self.assertNotIn("Il dato più recente disponibile",story["lead"])
                 self.assertNotIn("i dati di",story["headline"])
                 self.assertTrue(story["source_locked"])
