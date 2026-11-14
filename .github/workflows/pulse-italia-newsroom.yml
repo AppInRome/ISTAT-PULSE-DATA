@@ -133,7 +133,12 @@ jobs:
             echo "No new verified deterministic features"
           else
             git commit -m "PULSE: release source-verified deterministic statistics (no AI)"
-            git push origin HEAD:main
+            if ! git push origin HEAD:main; then
+              echo "Repository main changed during newsroom run; rebasing own published feed"
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            fi
           fi
 
       - name: Report what actually passed, including exact AI activity
