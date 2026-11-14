@@ -1,6 +1,6 @@
 {
   "schema": "pulse-automatic-official-features-v1",
-  "generated_at": "2026-11-14T20:31:24Z",
+  "generated_at": "2026-11-14T20:42:58Z",
   "articles": [
     {
       "id": "PULSE-DATA-E51B6C0E305D0B6FBDD4A294",
@@ -258,7 +258,37 @@
       },
       "period_reference": "2024",
       "editorial_kind": "verified_context_analysis",
-      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente."
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente.",
+      "editorial_story": {
+        "schema": "pulse-journalistic-presentation-v1",
+        "headline": "Contesto — Italia, dipendenza dalle importazioni di energia: quota al 73,88% nel 2024",
+        "lead": "Approfondimento su dati ufficiali già disponibili, non una nuova pubblicazione dell'ente. In Italia, la dipendenza dell'Italia dalle importazioni energetiche scende al 73,88% nel 2024, rispetto a 75,36% nel 2023. Lo scarto è di 1,47 punti percentuali, secondo la serie ufficiale EUROSTAT.",
+        "sections": [
+          {
+            "heading": "Che cosa cambia",
+            "text": "Il segnale principale è un valore in calo rispetto al periodo precedente: 75,36% nel 2023 e 73,88% nel 2024. La differenza descrive le osservazioni della stessa serie, non un cambiamento dimostrato nelle condizioni individuali."
+          },
+          {
+            "heading": "Nel contesto della serie",
+            "text": "All'inizio dell'intervallo documentato, nel 2013, il valore era 76,74%. L'osservazione più recente è più bassa rispetto a quel riferimento. Il confronto è descrittivo: non attribuisce cause alla variazione."
+          },
+          {
+            "heading": "La sequenza recente",
+            "text": "Le osservazioni successive sono 79,49% nel 2022, 75,36% nel 2023 e 73,88% nel 2024; indicano la stessa direzione. Non basta a stabilire che la tendenza proseguirà."
+          },
+          {
+            "heading": "Fonte e limiti",
+            "text": "I valori sono quelli pubblicati da EUROSTAT, per il periodo statistico 2024. Il periodo a cui si riferiscono i numeri non coincide necessariamente con il giorno di pubblicazione di PULSE. Questi dati non permettono di attribuire automaticamente cause, effetti o responsabilità."
+          }
+        ],
+        "period_reference": "2024",
+        "source_sha256": "a9c9a1f9ccc449dd6fb271d6cacb77677a60260c01de249ababc9180a0b4a3fc",
+        "source_locked": true,
+        "original_text_preserved": true,
+        "editorial_kind": "verified_context_analysis",
+        "not_a_new_source_release": true,
+        "method": "deterministic_verified_observations_no_ai"
+      }
     },
     {
       "id": "PULSE-DATA-4488835E6527D8A3183B0D9D",
@@ -477,7 +507,37 @@
       },
       "period_reference": "2025",
       "editorial_kind": "verified_context_analysis",
-      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente."
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente.",
+      "editorial_story": {
+        "schema": "pulse-journalistic-presentation-v1",
+        "headline": "Contesto — Italia, abbandono precoce degli studi: quota al 8,2% nel 2025",
+        "lead": "Approfondimento su dati ufficiali già disponibili, non una nuova pubblicazione dell'ente. In Italia, la quota di giovani che abbandonano precocemente gli studi scende al 8,2% nel 2025, rispetto a 9,8% nel 2024. Lo scarto è di 1,6 punti percentuali, secondo la serie ufficiale EUROSTAT.",
+        "sections": [
+          {
+            "heading": "Che cosa cambia",
+            "text": "Il segnale principale è un valore in calo rispetto al periodo precedente: 9,8% nel 2024 e 8,2% nel 2025. La differenza descrive le osservazioni della stessa serie, non un cambiamento dimostrato nelle condizioni individuali."
+          },
+          {
+            "heading": "Nel contesto della serie",
+            "text": "All'inizio dell'intervallo documentato, nel 2015, il valore era 14,7%. L'osservazione più recente è più bassa rispetto a quel riferimento. Il confronto è descrittivo: non attribuisce cause alla variazione."
+          },
+          {
+            "heading": "La sequenza recente",
+            "text": "Le osservazioni successive sono 10,5% nel 2023, 9,8% nel 2024 e 8,2% nel 2025; indicano la stessa direzione. Non basta a stabilire che la tendenza proseguirà."
+          },
+          {
+            "heading": "Fonte e limiti",
+            "text": "I valori sono quelli pubblicati da EUROSTAT, per il periodo statistico 2025. Il periodo a cui si riferiscono i numeri non coincide necessariamente con il giorno di pubblicazione di PULSE. Questi dati non permettono di attribuire automaticamente cause, effetti o responsabilità."
+          }
+        ],
+        "period_reference": "2025",
+        "source_sha256": "f950f3808b008060c13b4703ec2271dc9b87ebbbe1dbe3b00fe4f51479d21870",
+        "source_locked": true,
+        "original_text_preserved": true,
+        "editorial_kind": "verified_context_analysis",
+        "not_a_new_source_release": true,
+        "method": "deterministic_verified_observations_no_ai"
+      }
     },
     {
       "id": "PULSE-DATA-BC36EB7D736FD75701CA5F2A",
@@ -722,7 +782,37 @@
       },
       "period_reference": "2025",
       "editorial_kind": "verified_context_analysis",
-      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente."
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2025; non segnala una nuova pubblicazione dell'ente.",
+      "editorial_story": {
+        "schema": "pulse-journalistic-presentation-v1",
+        "headline": "Contesto — Italia, persone con buona salute percepita: quota al 73,7% nel 2025",
+        "lead": "Approfondimento su dati ufficiali già disponibili, non una nuova pubblicazione dell'ente. In Italia, la quota di persone che dichiarano una buona salute scende al 73,7% nel 2025, rispetto a 75,5% nel 2024. Lo scarto è di 1,8 punti percentuali, secondo la serie ufficiale EUROSTAT.",
+        "sections": [
+          {
+            "heading": "Che cosa cambia",
+            "text": "Il segnale principale è un valore in calo rispetto al periodo precedente: 75,5% nel 2024 e 73,7% nel 2025. La differenza descrive le osservazioni della stessa serie, non un cambiamento dimostrato nelle condizioni individuali."
+          },
+          {
+            "heading": "Nel contesto della serie",
+            "text": "All'inizio dell'intervallo documentato, nel 2014, il valore era 68%. L'osservazione più recente è più alta rispetto a quel riferimento. Il confronto è descrittivo: non attribuisce cause alla variazione."
+          },
+          {
+            "heading": "Un'inversione nella sequenza",
+            "text": "Nel 2023 il valore era 73,9%; nel 2024 era 75,5%. Con l'ultima osservazione (73,7%), la direzione del cambiamento rispetto al periodo precedente si è invertita. La sequenza, da sola, non consente una previsione."
+          },
+          {
+            "heading": "Fonte e limiti",
+            "text": "I valori sono quelli pubblicati da EUROSTAT, per il periodo statistico 2025. Il periodo a cui si riferiscono i numeri non coincide necessariamente con il giorno di pubblicazione di PULSE. Questi dati non permettono di attribuire automaticamente cause, effetti o responsabilità."
+          }
+        ],
+        "period_reference": "2025",
+        "source_sha256": "304083d163e4d33216eba62d5813d9ed75a5c31885de13460ea9c13468e64f9d",
+        "source_locked": true,
+        "original_text_preserved": true,
+        "editorial_kind": "verified_context_analysis",
+        "not_a_new_source_release": true,
+        "method": "deterministic_verified_observations_no_ai"
+      }
     },
     {
       "id": "PULSE-DATA-77B9C2B4EAA98D5F1D4A5562",
@@ -967,7 +1057,37 @@
       },
       "period_reference": "2024",
       "editorial_kind": "verified_context_analysis",
-      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente."
+      "editorial_context_notice": "Analisi di contesto PULSE sui dati ufficiali riferiti al periodo 2024; non segnala una nuova pubblicazione dell'ente.",
+      "editorial_story": {
+        "schema": "pulse-journalistic-presentation-v1",
+        "headline": "Contesto — Italia, tasso di riciclo dei rifiuti urbani: tasso al 52,3% nel 2024",
+        "lead": "Approfondimento su dati ufficiali già disponibili, non una nuova pubblicazione dell'ente. In Italia, il tasso di riciclo dei rifiuti urbani sale al 52,3% nel 2024, rispetto a 50,8% nel 2023. Lo scarto è di 1,5 punti percentuali, secondo la serie ufficiale EUROSTAT.",
+        "sections": [
+          {
+            "heading": "Che cosa cambia",
+            "text": "Il segnale principale è un valore in aumento rispetto al periodo precedente: 50,8% nel 2023 e 52,3% nel 2024. La differenza descrive le osservazioni della stessa serie, non un cambiamento dimostrato nelle condizioni individuali."
+          },
+          {
+            "heading": "Nel contesto della serie",
+            "text": "All'inizio dell'intervallo documentato, nel 2013, il valore era 39,4%. L'osservazione più recente è più alta rispetto a quel riferimento. Il confronto è descrittivo: non attribuisce cause alla variazione."
+          },
+          {
+            "heading": "Un'inversione nella sequenza",
+            "text": "Nel 2022 il valore era 53,3%; nel 2023 era 50,8%. Con l'ultima osservazione (52,3%), la direzione del cambiamento rispetto al periodo precedente si è invertita. La sequenza, da sola, non consente una previsione."
+          },
+          {
+            "heading": "Fonte e limiti",
+            "text": "I valori sono quelli pubblicati da EUROSTAT, per il periodo statistico 2024. Il periodo a cui si riferiscono i numeri non coincide necessariamente con il giorno di pubblicazione di PULSE. Questi dati non permettono di attribuire automaticamente cause, effetti o responsabilità."
+          }
+        ],
+        "period_reference": "2024",
+        "source_sha256": "5a3ba34c2362e5e06f0b3f3e463d8ff1d791c1c8fde41f9e16aa0ee50ed8d1af",
+        "source_locked": true,
+        "original_text_preserved": true,
+        "editorial_kind": "verified_context_analysis",
+        "not_a_new_source_release": true,
+        "method": "deterministic_verified_observations_no_ai"
+      }
     },
     {
       "id": "PULSE-DATA-48EB098BBB6111E2496CB338",
@@ -1250,6 +1370,8 @@
         "source_sha256": "1bdaf86ce09877060d29549f2566e95ef369468a1ea6bc111ef777cbb7baabf1",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -1534,6 +1656,8 @@
         "source_sha256": "32206a560c72208aaeadd401646ac0cacbe50efbd88cb1bb67c8fceb2741ee3f",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -1818,6 +1942,8 @@
         "source_sha256": "8be85fbde9d7e0856598ec89e4a279aeb3910d60b9fdf611ca5d75ff3f178eb6",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -2089,6 +2215,8 @@
         "source_sha256": "6e1028e270419eb85a2f1ae9f4653f4fa126b4fbe5d9a0c69c392243365dd8db",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -2373,6 +2501,8 @@
         "source_sha256": "a447919964b970f37134a95cba691637bb567856972199f1cb463861743e8a2e",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -2657,6 +2787,8 @@
         "source_sha256": "ae5f9cb57f17689380c1f46a6a58aa27c9369b18c22f1145b665ac6ed0e162f5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -2902,6 +3034,8 @@
         "source_sha256": "7b7ccba3581962f5a46a884bb1024d0a29df8bfa89c3af8f1577423dd0b3e3e3",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -3186,6 +3320,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -3470,6 +3606,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -3754,6 +3892,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -4038,6 +4178,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -4322,6 +4464,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -4606,6 +4750,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -4890,6 +5036,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -5174,6 +5322,8 @@
         "source_sha256": "a8b02116355f3c1becaf93a6785d8cbbbcc24230832d2bf3c10433102767b663",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -5458,6 +5608,8 @@
         "source_sha256": "a8b02116355f3c1becaf93a6785d8cbbbcc24230832d2bf3c10433102767b663",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -5742,6 +5894,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -6026,6 +6180,8 @@
         "source_sha256": "a8b02116355f3c1becaf93a6785d8cbbbcc24230832d2bf3c10433102767b663",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -6310,6 +6466,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -6594,6 +6752,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -6878,6 +7038,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -7162,6 +7324,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -7446,6 +7610,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -7730,6 +7896,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -8014,6 +8182,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -8298,6 +8468,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -8582,6 +8754,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -8866,6 +9040,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -9150,6 +9326,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -9434,6 +9612,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -9718,6 +9898,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -10002,6 +10184,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -10286,6 +10470,8 @@
         "source_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     },
@@ -10570,6 +10756,8 @@
         "source_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
         "source_locked": true,
         "original_text_preserved": true,
+        "editorial_kind": "verified_official_news",
+        "not_a_new_source_release": false,
         "method": "deterministic_verified_observations_no_ai"
       }
     }
