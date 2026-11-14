@@ -398,7 +398,22 @@ def verified_jsonstat_evidence(raw, config, url):
 def discover(fetch_fn=engine.fetch, limit=None):
     """Return only validated official series and an honest per-theme report."""
     results, checks = [], []
-    configs = CATALOG if limit is None else CATALOG[:max(0,min(int(limit),len(CATALOG)))]
+    if limit is None:
+        configs = CATALOG
+    else:
+        # Round-robin among the official disciplines, rather than taking the
+        # first many datasets from a single subject. Repeated gender/age
+        # subgroups do not crowd out missing subject areas.
+        groups = {}
+        for c in CATALOG:
+            groups.setdefault(c["topic"], []).append(c)
+        chosen = []
+        slots = max(0, min(int(limit), len(CATALOG)))
+        while len(chosen) < slots and any(groups.values()):
+            for topic in groups:
+                if groups[topic] and len(chosen) < slots:
+                    chosen.append(groups[topic].pop(0))
+        configs = chosen
     for spec in configs:
         url=request_url(spec)
         report = {"source":"EUROSTAT","topic":spec["topic"],"dataset":spec["id"]}
