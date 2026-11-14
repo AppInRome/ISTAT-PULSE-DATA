@@ -91,6 +91,18 @@ class ComposerTests(unittest.TestCase):
         self.assertIn("24,3%",story["lead"])
         self.assertIn("23,9%",story["lead"])
         self.assertNotIn("0,4% ",story["lead"])
+        self.assertIn("la quota di persone in abitazioni sovraffollate", story["lead"])
+        self.assertNotIn("abitazioni sovraffollate sale", story["lead"])
+        self.assertIn("L'osservazione più recente è", 
+                      " ".join(p["text"] for p in story["sections"]))
+        d=next(x for x in self.articles if x["topic"]=="DEMOGRAFIA")
+        demographic=composer.compose(d)
+        self.assertIsNotNone(demographic)
+        self.assertIn("58.943.464",demographic["lead"])
+        w=next(x for x in self.articles if x["topic"]=="AMBIENTE")
+        environment=composer.compose(w)
+        self.assertIsNotNone(environment)
+        self.assertIn("la produzione di rifiuti urbani per abitante", environment["lead"])
 
 
 if __name__ == "__main__":
