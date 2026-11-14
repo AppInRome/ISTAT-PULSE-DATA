@@ -1,6 +1,6 @@
 {
   "schema": "pulse-source-versions-v1",
-  "generated_at": "2026-11-14T19:06:49Z",
+  "generated_at": "2026-11-14T19:45:58Z",
   "series": {
     "0230d3cb6e5d1a16e1d6b1828bef79bb": {
       "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=THS_T&wst_oper=GEN",
@@ -138,6 +138,23 @@
         }
       ]
     },
+    "4daceff1499c0aaa138bebc60af3c14e": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&geo=IT&lastTimePeriod=12&sex=F&age=TOTAL",
+      "indicator": "Popolazione femminile al primo gennaio",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "379ee17285245febc63761ae839837bf9c860fee5c06de903cd8ef0ba0e69cea",
+      "source_bytes_sha256": "66f5dc75ed00e0c7ad2a19839781f5175502382030d37cb12ea313729d248113",
+      "source_updated_at": "2026-11-13T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "379ee17285245febc63761ae839837bf9c860fee5c06de903cd8ef0ba0e69cea",
+          "first_seen_at": "2026-11-14T19:45:58Z"
+        }
+      ]
+    },
     "52a46f5ce6b5461c30fed4ea35f6fc6e": {
       "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
       "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
@@ -152,6 +169,23 @@
           "period": "2025-12",
           "sha256": "27f3ec8ab42364d96cee3a51701f9acee1cdacef5306e3a7fec3546127d9c5a3",
           "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "531f33045201247ff18c3043658bd9ba": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_30?lang=EN&geo=IT&lastTimePeriod=12&unit=EUR_KGOE",
+      "indicator": "Produttività energetica",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "8fdd9a61fa4a4870c7c6f0efbc9cdfb9591d0a690850e8edbc039c194b9f61ea",
+      "source_bytes_sha256": "0003b098ee87a55981ec5955d1a69a67f5e0d71eb17e1cda33d57ff323e5ad02",
+      "source_updated_at": "2026-04-21T23:00:00+0200",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "8fdd9a61fa4a4870c7c6f0efbc9cdfb9591d0a690850e8edbc039c194b9f61ea",
+          "first_seen_at": "2026-11-14T19:45:58Z"
         }
       ]
     },
@@ -206,6 +240,40 @@
         }
       ]
     },
+    "63340cd34eabb74bea885ed063f41ddc": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?lang=EN&geo=IT&lastTimePeriod=12&coicop=CP01&unit=RCH_A",
+      "indicator": "Inflazione armonizzata per alimentari",
+      "territory": "Italia",
+      "last_period": "2025-12",
+      "observation_signature": "13a59a745cdf68e53449fca0656f2b9568668b2af97373707ead60ca55dcd453",
+      "source_bytes_sha256": "e0086eb1a00b9f5db4d763b8609ec86a5c1499f06feb1e7147fc4af1ca835a19",
+      "source_updated_at": "2026-02-06T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "13a59a745cdf68e53449fca0656f2b9568668b2af97373707ead60ca55dcd453",
+          "first_seen_at": "2026-11-14T19:45:58Z"
+        }
+      ]
+    },
+    "67e5ffaab534fb7966fe65f7342a8a80": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tepsr_lm410?lang=EN&geo=IT&lastTimePeriod=12&sex=F",
+      "indicator": "Rischio di povertà o esclusione sociale delle donne",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "64be8e0345749b1bff28f09267b5f6dfea367c979d320681f02d8507f4ce8088",
+      "source_bytes_sha256": "d14dabd6f3a7c1040d5ce4efbb58691a1c58e8e1d75c775dd16824001c00e9d3",
+      "source_updated_at": "2026-10-20T11:00:00+0200",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "64be8e0345749b1bff28f09267b5f6dfea367c979d320681f02d8507f4ce8088",
+          "first_seen_at": "2026-11-14T19:45:58Z"
+        }
+      ]
+    },
     "680e626017367d131a62da6fe3ff8202": {
       "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tepsr_lm410?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
       "indicator": "Persone a rischio di povertà o esclusione sociale",
@@ -237,6 +305,23 @@
           "period": "2025",
           "sha256": "3c07f52acfbf1e4de7275551310272ed05f2957f2feff8afa7d9a4872ce0f09c",
           "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "7c535055e6d9afc9730896a4ce84c076": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_20?lang=EN&geo=IT&lastTimePeriod=12&sex=F",
+      "indicator": "Istruzione terziaria fra le giovani donne",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "ed69cec06b02c1dfe2e8f3c52efe1467e28e0139e07e0c889a2ea1153aa46f17",
+      "source_bytes_sha256": "b23bf0d5af8074d9371aad86c9ef7c5683bdf63b0a4a97fb2f3b6048fa5eada7",
+      "source_updated_at": "2026-10-30T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "ed69cec06b02c1dfe2e8f3c52efe1467e28e0139e07e0c889a2ea1153aa46f17",
+          "first_seen_at": "2026-11-14T19:45:58Z"
         }
       ]
     },
@@ -376,6 +461,23 @@
         }
       ]
     },
+    "de94acf94ad87683d910551bc6f8a68b": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?lang=EN&geo=IT&lastTimePeriod=12",
+      "indicator": "Tasso di riciclo dei rifiuti urbani",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "6678f77901fd94e13a663593a4e4a30cbfd6dacd520c0a17ef9ae3f954e0e343",
+      "source_bytes_sha256": "5a3ba34c2362e5e06f0b3f3e463d8ff1d791c1c8fde41f9e16aa0ee50ed8d1af",
+      "source_updated_at": "2026-10-15T11:00:00+0200",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "6678f77901fd94e13a663593a4e4a30cbfd6dacd520c0a17ef9ae3f954e0e343",
+          "first_seen_at": "2026-11-14T19:45:58Z"
+        }
+      ]
+    },
     "e3163adfc2937e5a318b6c7f211473a5": {
       "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&geo=IT&lastTimePeriod=12&sex=T&age=TOTAL",
       "indicator": "Popolazione al primo gennaio",
@@ -458,6 +560,23 @@
           "period": "2025-12",
           "sha256": "1d4762bccaad782713075be196c706a168059b88e2cee2fe5060d830d523937c",
           "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "f2eca02450c7f60e4543e611a1dc2e7d": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?lang=EN&geo=IT&lastTimePeriod=12&sex=F&freq=A&unit=YR&hlth_hle=LE_Y0",
+      "indicator": "Speranza di vita delle donne alla nascita",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "65cb24f738bbe6dace1ddb50961ee238b2e53ba3aecd8fe13157a45f189e6b87",
+      "source_bytes_sha256": "ba71c200331322eb1c30b0c005ade8d7af66255ccca269668d157f116799dc64",
+      "source_updated_at": "2026-07-17T23:00:00+0200",
+      "last_checked_at": "2026-11-14T19:45:58Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "65cb24f738bbe6dace1ddb50961ee238b2e53ba3aecd8fe13157a45f189e6b87",
+          "first_seen_at": "2026-11-14T19:45:58Z"
         }
       ]
     },
