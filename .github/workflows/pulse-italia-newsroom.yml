@@ -103,10 +103,10 @@ jobs:
             "- Llama drafts passing numeric audit: " + str(rr.get("llama_audited_drafts", "not executed")),
             "- Public feed publications by this job: 0 (human approval still required)",
           ]
-          print("\\n".join(lines))
+          print("\n".join(lines))
           import os
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as out:
-              out.write("\\n".join(lines) + "\\n")
+              out.write("\n".join(lines) + "\n")
           PY
 
       - name: Preserve review packages, not published news
