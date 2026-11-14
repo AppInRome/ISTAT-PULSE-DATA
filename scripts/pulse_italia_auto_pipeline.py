@@ -20,8 +20,8 @@ from scripts import pulse_italia_official_discovery as official
 from scripts import pulse_data_story_stack as storytelling
 from scripts import pulse_editorial_engine_v1 as engine
 from scripts import pulse_editorial_audit_v1 as audit
-from scripts.pulse_cloudflare_llama import (
-    BUDGET_NEURONS, configure_environment, reserved_neurons
+from scripts.pulse_ai_provider import (
+    configure_environment, active_provider, reserved_budget, run_budget_limit, budget_unit
 )
 
 UTC = timezone.utc
@@ -205,11 +205,13 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
     sources = list(unique.values())
     now = now or datetime.now(UTC)
     budget = 0.0
+    provider = active_provider()
+    budget_limit = run_budget_limit()
     can_ai = bool(ai_enabled and configure_environment())
     # Not having a token is not the same as deliberately switching AI off.
     # The CI report must state unambiguously whether Llama ran.
     no_ai_status = ("disabled_by_operator" if not ai_enabled else
-                    "missing_cloudflare_credentials" if not can_ai else None)
+                    "missing_" + provider + "_credentials" if not can_ai else None)
     results = []
     for evidence in sources[:max(0, min(max_sources, 8))]:
         ident = evidence_id(evidence)
@@ -223,9 +225,9 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         all_tools_ok = all(c.get("status") == "completed" for c in components.values())
         draft, status = None, {"status": no_ai_status or "not_attempted"}
         if can_ai:
-            estimate = reserved_neurons(engine.ai_prompt(evidence))
-            if budget + estimate > BUDGET_NEURONS:
-                status = {"status": "daily_budget_estimate_exceeded"}
+            estimate = reserved_budget(engine.ai_prompt(evidence))
+            if budget + estimate > budget_limit:
+                status = {"status": "run_budget_estimate_exceeded"}
             else:
                 budget += estimate
                 try:
@@ -263,14 +265,24 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         "generated_at": now.isoformat(), "scope": "IT",
         "official_discovery": report, "results": results,
         "candidate_articles": len(results), "published_articles": 0,
+        "ai_provider": provider,
+        "ai_configured": bool(can_ai),
+        "ai_status": ("configured" if can_ai else no_ai_status),
+        "ai_audited_drafts": sum(r["llama"] == "audited_draft" for r in results),
+        "ai_attempts": sum(r["llama"] in
+            {"audited_draft", "rejected", "insufficient_evidence",
+             "ai_unavailable_or_invalid"} for r in results),
+        # Retain old keys for older clients, but their units are provider-specific.
         "llama_configured": bool(can_ai),
         "llama_status": ("configured" if can_ai else no_ai_status),
         "llama_audited_drafts": sum(r["llama"] == "audited_draft" for r in results),
         "llama_attempts": sum(r["llama"] in
             {"audited_draft", "rejected", "insufficient_evidence",
              "ai_unavailable_or_invalid"} for r in results),
-        "reserved_neurons_estimate": round(budget, 2),
-        "budget_limit_estimate": BUDGET_NEURONS,
+        "budget_estimate_unit": budget_unit(),
+        "budget_used_estimate": round(budget, 6),
+        "budget_limit_estimate": budget_limit,
+        "reserved_neurons_estimate": round(budget, 2) if provider == "cloudflare" else None,
         "requires_human_editorial_review": True,
     }
     save(output / "pipeline_report.json", index)
@@ -298,7 +310,9 @@ def main(argv=None):
                       "published": 0, "llama_status": result["llama_status"],
                       "llama_attempts": result["llama_attempts"],
                       "audited_llama_drafts": result["llama_audited_drafts"],
-                      "ai_budget_reserved_estimate": result["reserved_neurons_estimate"],
+                      "budget_estimate": result["budget_used_estimate"],
+                      "budget_unit": result["budget_estimate_unit"],
+                      "provider": result["ai_provider"],
                       "discovery_checks": len(result["official_discovery"]["sources_considered"])},
                      ensure_ascii=False))
 
