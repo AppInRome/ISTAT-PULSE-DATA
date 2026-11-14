@@ -46,7 +46,7 @@ CATALOG = (
         "id": "sdg_04_20", "topic": "ISTRUZIONE",
         "indicator": "Giovani con titolo di istruzione terziaria (25–34 anni)",
         "unit": "%", "unit_code": "PC",
-        "population": "Persone di 25–34 anni, entrambi i sessi",
+        "population": "Giovani adulti, entrambi i sessi",
         "filters": {"sex": "T"},
     },
     {
