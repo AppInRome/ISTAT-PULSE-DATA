@@ -63,10 +63,10 @@ class AutomaticFilePipelineTests(TestCase):
             "paragraphs": ["Testo di prova per la pipeline."] * 4,
         }
         accepted = {"passed": True, "issues": []}
-        with tempfile.TemporaryDirectory() as td, \\
-             patch("scripts.pulse_italia_auto_pipeline.configure_environment", return_value=True), \\
-             patch("scripts.pulse_italia_auto_pipeline.engine.call_model", return_value=proposal) as model, \\
-             patch("scripts.pulse_italia_auto_pipeline.audit.audit", return_value=accepted), \\
+        with tempfile.TemporaryDirectory() as td, \
+             patch("scripts.pulse_italia_auto_pipeline.configure_environment", return_value=True), \
+             patch("scripts.pulse_italia_auto_pipeline.engine.call_model", return_value=proposal) as model, \
+             patch("scripts.pulse_italia_auto_pipeline.audit.audit", return_value=accepted), \
              patch("scripts.pulse_italia_auto_pipeline.run_data_tools", return_value={
                  "data_analyst": {"status": "completed"},
                  "dstory": {"status": "completed"},
@@ -89,9 +89,9 @@ class AutomaticFilePipelineTests(TestCase):
 
     def test_missing_cloudflare_credentials_are_explicit_in_result(self):
         evidence, _ = self.fixture_evidence()
-        with tempfile.TemporaryDirectory() as td, \\
-             patch("scripts.pulse_italia_auto_pipeline.configure_environment", return_value=False), \\
-             patch("scripts.pulse_italia_auto_pipeline.engine.call_model") as model, \\
+        with tempfile.TemporaryDirectory() as td, \
+             patch("scripts.pulse_italia_auto_pipeline.configure_environment", return_value=False), \
+             patch("scripts.pulse_italia_auto_pipeline.engine.call_model") as model, \
              patch("scripts.pulse_italia_auto_pipeline.run_data_tools", return_value={}):
             report = run_pipeline(
                 td, discovery_fn=lambda: ([evidence], {"sources_considered": []}),
