@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "PULSE-EDITORIAL-DRAFT-2026-11-14-ISTAT-EXPORT-SETTEMBRE",
+  "publication_status": "draft",
+  "editorial_status": "requires_independent_human_review",
+  "generation_method": "original_manually_researched_editorial_rewrite",
+  "model_provenance": "ChatGPT GPT-6, not Cloudflare Llama; not an automated GitHub workflow result",
+  "written_at": "2026-11-14",
+  "source_published_at": "2026-11-13",
+  "period_reference": "2026-09",
+  "headline": "Export italiano, più incassi ma meno merci vendute: il paradosso di settembre",
+  "summary": "Le esportazioni crescono del 3,8% in valore, ma i volumi calano del 3,4%. Il commercio estero italiano mostra due facce molto diverse, mentre il rincaro dell'energia torna a pesare sui conti del Paese.",
+  "pulse_article_body": [
+    {
+      "heading": "",
+      "text": "L'Italia esporta merci per un valore maggiore rispetto a un anno fa, ma questo non significa che ne stia vendendo di più. I dati ISTAT relativi a settembre 2026 raccontano infatti una situazione meno favorevole di quanto suggerisca il solo aumento del fatturato estero. Le esportazioni crescono del 3,8% in valore rispetto a settembre 2025, mentre la quantità complessiva dei prodotti esportati diminuisce del 3,4%. È una divergenza importante, perché ricorda quanto i risultati monetari e quelli misurati in volume possano raccontare storie differenti."
+    },
+    {
+      "heading": "",
+      "text": "Anche il confronto con agosto segnala un rallentamento. Le vendite oltreconfine diminuiscono dello 0,2%, per effetto soprattutto della contrazione dei mercati extraeuropei, dove si registra un calo dell'1,2%. Gli scambi verso i Paesi dell'Unione europea crescono invece dello 0,8%. Il risultato complessivo nasconde dunque una differenza significativa tra le due principali aree commerciali."
+    },
+    {
+      "heading": "",
+      "text": "Non tutti i settori, però, attraversano la stessa fase. Le esportazioni di metalli e prodotti metallici registrano una crescita annua del 27,1%, mentre i prodotti petroliferi raffinati aumentano del 76,2%. Segnali positivi arrivano anche dagli autoveicoli, in progresso del 17%, e dalla chimica, che avanza dell'11,8%. In direzione opposta si muovono i mezzi di trasporto diversi dagli autoveicoli, in calo del 30,3%, e i prodotti farmaceutici, che perdono l'8,3%."
+    },
+    {
+      "heading": "",
+      "text": "Il bilancio commerciale complessivo resta positivo, con un avanzo di circa 2,08 miliardi di euro. Dietro questo risultato si trova però un deficit energetico di quasi 5,89 miliardi, più elevato rispetto ai circa 3,78 miliardi di settembre 2025. L'aumento della spesa energetica viene compensato dall'avanzo dei prodotti non energetici, salito a 7,97 miliardi. Nel frattempo, i prezzi dei prodotti importati aumentano del 9,6% rispetto a un anno prima."
+    },
+    {
+      "heading": "",
+      "text": "Il quadro che emerge non è quindi quello di un commercio estero semplicemente in crescita o in crisi. Le imprese italiane mostrano risultati molto differenti a seconda dei prodotti e dei mercati di destinazione. Il punto da osservare nei prossimi mesi sarà soprattutto la capacità di trasformare gli aumenti in valore in una ripresa effettiva dei volumi, senza che i rincari energetici assorbano una parte crescente dei benefici commerciali."
+    }
+  ],
+  "topic": "ECONOMIA",
+  "geographic_scope": {
+    "country_code": "IT",
+    "territory": "Italia"
+  },
+  "public_source": {
+    "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
+    "role": "primary_statistical_source",
+    "publisher": "ISTAT"
+  },
+  "source_documents": [
+    {
+      "url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
+      "publisher": "ISTAT",
+      "type": "official_press_release"
+    }
+  ],
+  "chart_spec": {
+    "status": "source_reported_comparison_needs_editorial_review",
+    "source_url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
+    "type": "bar",
+    "title": "Esportazioni italiane: variazioni annuali di settembre 2026",
+    "unit": "%",
+    "data": [
+      {
+        "label": "In valore",
+        "value": 3.8
+      },
+      {
+        "label": "In volume",
+        "value": -3.4
+      }
+    ],
+    "comparison_note": "Stesso mese 2025, due misure diverse; non è una serie temporale"
+  },
+  "table_spec": {
+    "status": "source_reported_comparison_needs_editorial_review",
+    "source_url": "https://www.istat.it/comunicato-stampa/commercio-con-lestero-e-prezzi-allimport-settembre-2026/",
+    "headers": [
+      "Grandezza",
+      "Variazione annua (%)"
+    ],
+    "rows": [
+      [
+        "Esportazioni in valore",
+        3.8
+      ],
+      [
+        "Esportazioni in volume",
+        -3.4
+      ]
+    ],
+    "note": "Confronto settembre 2026/settembre 2025"
+  },
+  "review_required": true,
+  "publishable_without_review": false,
+  "source_note": "Original writing based on the official institutional release, without copying its prose. Not a primary dataset-level audited series."
+}
