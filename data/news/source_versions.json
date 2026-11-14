@@ -1,0 +1,499 @@
+{
+  "schema": "pulse-source-versions-v1",
+  "generated_at": "2026-11-14T19:06:49Z",
+  "series": {
+    "0230d3cb6e5d1a16e1d6b1828bef79bb": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=THS_T&wst_oper=GEN",
+      "indicator": "Totale dei rifiuti urbani prodotti",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "e315109d6b8ff05185ba713278d6960a9cb34c5245c0cb33fd170ff61d792ac5",
+      "source_bytes_sha256": "4a1312f6a2b2707cf7166f75bdf0fefe1d8fce6d6a598297bdd33dbdb3545058",
+      "source_updated_at": "2026-10-15T11:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "e315109d6b8ff05185ba713278d6960a9cb34c5245c0cb33fd170ff61d792ac5",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "0a3e200757a48f13724a75b309207810": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "MARCHE",
+      "last_period": "2025-12",
+      "observation_signature": "47675e12dd74aaa7a4e635035d14ad72d73d734d5b019015d18bc68e4365ae52",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "47675e12dd74aaa7a4e635035d14ad72d73d734d5b019015d18bc68e4365ae52",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "1132b83902067e01d544f657619ab555": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+      "indicator": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori",
+      "territory": "PIEMONTE",
+      "last_period": "2025-12",
+      "observation_signature": "02a84882e269bef66e0d05010dd33cb9857d23b7ba3bbfd1301e252de7ca2784",
+      "source_bytes_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
+      "source_updated_at": "2026-10-22T15:49:35.564617",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "02a84882e269bef66e0d05010dd33cb9857d23b7ba3bbfd1301e252de7ca2784",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "1566c015f3c7952d0a86d246c39210b2": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_manr?lang=EN&geo=IT&lastTimePeriod=12&coicop=CP00&unit=RCH_A",
+      "indicator": "Variazione annuale dei prezzi al consumo armonizzati",
+      "territory": "Italia",
+      "last_period": "2025-12",
+      "observation_signature": "b16039f29bee1f4267de21a4874df9eddf260f06a7f4474051aaacc79d35937c",
+      "source_bytes_sha256": "e7fac74c61e400e37d1a34531a0f3af07ece8c73c6398a863daa62a9fd733d32",
+      "source_updated_at": "2026-02-06T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "b16039f29bee1f4267de21a4874df9eddf260f06a7f4474051aaacc79d35937c",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "1be8bd001250c276a92e7c38f6a014d0": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "BASILICATA",
+      "last_period": "2025-12",
+      "observation_signature": "337275177748d8f364c738ddcc3b08c507b974d2a6d8bafb640c5c0e71723e63",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "337275177748d8f364c738ddcc3b08c507b974d2a6d8bafb640c5c0e71723e63",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "23f01a512fbbd37ad1a134371975202b": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_10?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+      "indicator": "Giovani che abbandonano precocemente istruzione e formazione",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "eb477537444fa2bffc01f31865e9c2ebe673745e2f5a03c0f4b49ffe698feb81",
+      "source_bytes_sha256": "f950f3808b008060c13b4703ec2271dc9b87ebbbe1dbe3b00fe4f51479d21870",
+      "source_updated_at": "2026-10-30T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "eb477537444fa2bffc01f31865e9c2ebe673745e2f5a03c0f4b49ffe698feb81",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "30bed9eec95f42a95294ca5874196332": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "LOMBARDIA",
+      "last_period": "2025-12",
+      "observation_signature": "e1aff5a83d27528ae3400ed944fb7a5eaed61003603d0ec202d20856a0701915",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "e1aff5a83d27528ae3400ed944fb7a5eaed61003603d0ec202d20856a0701915",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "377baadf5ccf4c3a6501acffc05166ab": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "CAMPANIA",
+      "last_period": "2025-12",
+      "observation_signature": "2c0b404f8dc904f3ebf30329ef0c6bcd5b258034dd0d131e712e2377f5602bd9",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "2c0b404f8dc904f3ebf30329ef0c6bcd5b258034dd0d131e712e2377f5602bd9",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "52a46f5ce6b5461c30fed4ea35f6fc6e": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "ABRUZZO",
+      "last_period": "2025-12",
+      "observation_signature": "27f3ec8ab42364d96cee3a51701f9acee1cdacef5306e3a7fec3546127d9c5a3",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "27f3ec8ab42364d96cee3a51701f9acee1cdacef5306e3a7fec3546127d9c5a3",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "58eb2b9e5b822f1406116f3764c99606": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_gdp?lang=EN&geo=IT&lastTimePeriod=12&freq=A&na_item=B1G&unit=CP_MEUR",
+      "indicator": "Prodotto interno lordo a prezzi correnti",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "c7bc20a3a9904a685305764a678cac9d2bb08d958648a146c2387c28db28c0b5",
+      "source_bytes_sha256": "ae5f9cb57f17689380c1f46a6a58aa27c9369b18c22f1145b665ac6ed0e162f5",
+      "source_updated_at": "2026-11-11T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "c7bc20a3a9904a685305764a678cac9d2bb08d958648a146c2387c28db28c0b5",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "598760eabd1578fcb0b21cf8984cad72": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+      "indicator": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori",
+      "territory": "ABRUZZO",
+      "last_period": "2025-12",
+      "observation_signature": "480b02b0817a4b39e34f93dce1bee0f5f0ff230aa693f9a4cbc839357a58b4b0",
+      "source_bytes_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
+      "source_updated_at": "2026-10-22T15:49:35.564617",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "480b02b0817a4b39e34f93dce1bee0f5f0ff230aa693f9a4cbc839357a58b4b0",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "5a775b06e4071dba88beb2fcb6ee821e": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?lang=EN&geo=IT&lastTimePeriod=12&sex=T&freq=A&unit=YR&hlth_hle=LE_Y0",
+      "indicator": "Speranza di vita alla nascita",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "a7b2bea7d6a7464972177bbd1be0f0f6ebe81387766974a7d29a92f477b54fee",
+      "source_bytes_sha256": "1bdaf86ce09877060d29549f2566e95ef369468a1ea6bc111ef777cbb7baabf1",
+      "source_updated_at": "2026-07-17T23:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "a7b2bea7d6a7464972177bbd1be0f0f6ebe81387766974a7d29a92f477b54fee",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "680e626017367d131a62da6fe3ff8202": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tepsr_lm410?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+      "indicator": "Persone a rischio di povertà o esclusione sociale",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "01446bfa6471102d81d55368316cebd7da6f2df1da8ea323078dc3decb7d23db",
+      "source_bytes_sha256": "068997584e5bb7612bca9b4989d7cdfe63d1dc34ce58a7e84bb896cc62d7fd1d",
+      "source_updated_at": "2026-10-20T11:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "01446bfa6471102d81d55368316cebd7da6f2df1da8ea323078dc3decb7d23db",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "71847eb83f76f0f0922515cb1c3cdd9d": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_20?lang=EN&geo=IT&lastTimePeriod=12&sex=T",
+      "indicator": "Quota di giovani adulti con istruzione terziaria",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "3c07f52acfbf1e4de7275551310272ed05f2957f2feff8afa7d9a4872ce0f09c",
+      "source_bytes_sha256": "7b7ccba3581962f5a46a884bb1024d0a29df8bfa89c3af8f1577423dd0b3e3e3",
+      "source_updated_at": "2026-10-30T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "3c07f52acfbf1e4de7275551310272ed05f2957f2feff8afa7d9a4872ce0f09c",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "7f80f7b50bbdaf3eb69f86093c19d31b": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_40?lang=EN&geo=IT&lastTimePeriod=12&nrg_bal=REN",
+      "indicator": "Quota di energia da fonti rinnovabili",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "fa73d3cee2c75ca9b05b0aa138e7189fec0afff104c054d27a3bfda8cccf7c19",
+      "source_bytes_sha256": "8be85fbde9d7e0856598ec89e4a279aeb3910d60b9fdf611ca5d75ff3f178eb6",
+      "source_updated_at": "2026-09-15T23:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "fa73d3cee2c75ca9b05b0aa138e7189fec0afff104c054d27a3bfda8cccf7c19",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "94e779f809fcefc77deb68997856d550": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?lang=EN&geo=IT&lastTimePeriod=12&sex=T&freq=A&unit=YR&hlth_hle=HLY_Y0",
+      "indicator": "Speranza di vita in buona salute alla nascita",
+      "territory": "Italia",
+      "last_period": "2023",
+      "observation_signature": "1a46608de800202f4a5e2c2260022aa23b42f0fbd319697f8c10e718e8879d45",
+      "source_bytes_sha256": "61e41418217ee5b8da2eaec4bb1688ae82c2197565e98d46fd6298f2ff76cf78",
+      "source_updated_at": "2026-07-17T23:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2023",
+          "sha256": "1a46608de800202f4a5e2c2260022aa23b42f0fbd319697f8c10e718e8879d45",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "a001f79ab72d1f3ccc87e473cecee493": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "LAZIO",
+      "last_period": "2025-12",
+      "observation_signature": "00e86934f7d09683f4cee89a9db84f1856ce7f15a4ffefd899014e21d76ac31d",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "00e86934f7d09683f4cee89a9db84f1856ce7f15a4ffefd899014e21d76ac31d",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "a25aae4290e26c08f7835df5f520190b": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+      "indicator": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori",
+      "territory": "CALABRIA",
+      "last_period": "2025-12",
+      "observation_signature": "237e360904e3192c92c17ccf8172a7f70bf1bee0cd3eeef7eceb5012541e74a9",
+      "source_bytes_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
+      "source_updated_at": "2026-10-22T15:49:35.564617",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "237e360904e3192c92c17ccf8172a7f70bf1bee0cd3eeef7eceb5012541e74a9",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "d082499b1f209ea2ebf944be9abe7c7b": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "MOLISE",
+      "last_period": "2025-12",
+      "observation_signature": "0481ecb71d817e58acfd58a535e0d9cf39151009631ba86911bb2a20bd3ae853",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "0481ecb71d817e58acfd58a535e0d9cf39151009631ba86911bb2a20bd3ae853",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "d0d64341d21c786be94ea39457cd0a81": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "CALABRIA",
+      "last_period": "2025-12",
+      "observation_signature": "d66d68ff0d9828ffc5848cc6b6d83b2407c61cce8db6e2eab8336c2e5b71b11a",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "d66d68ff0d9828ffc5848cc6b6d83b2407c61cce8db6e2eab8336c2e5b71b11a",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "d10e83a29139117b33c75cb47e263355": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&geo=IT&lastTimePeriod=12&sex=M&age=TOTAL",
+      "indicator": "Popolazione maschile al primo gennaio",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "be53819b71be70f1dab5af404f54f1a6534ee953829bb82bc9ed721d9ea9ac35",
+      "source_bytes_sha256": "f8afe4e1ad6619afd47e37da470b15a836ec20aeb67282943bf782b0facc6d82",
+      "source_updated_at": "2026-11-13T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "be53819b71be70f1dab5af404f54f1a6534ee953829bb82bc9ed721d9ea9ac35",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "d14e8c5bc3399f24d55ec151d856e2a4": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_lavoratori_2025.csv",
+      "indicator": "Integrazioni Salariali Lavoratori 2025 — Numero_lavoratori",
+      "territory": "BASILICATA",
+      "last_period": "2025-12",
+      "observation_signature": "f76799220233bc5773856f33894692385b4012924399b121e323b0ee00897ec5",
+      "source_bytes_sha256": "5324104e803525bdc8db9cc55103eba1c656b339190674cf22516fce836f7af0",
+      "source_updated_at": "2026-10-22T15:49:35.564617",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "f76799220233bc5773856f33894692385b4012924399b121e323b0ee00897ec5",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "e3163adfc2937e5a318b6c7f211473a5": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_pjan?lang=EN&geo=IT&lastTimePeriod=12&sex=T&age=TOTAL",
+      "indicator": "Popolazione al primo gennaio",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "34988fb245fb2b221d06d8c235e51f1c941bf3dcd74084fdebb910d45e92a9c5",
+      "source_bytes_sha256": "6e1028e270419eb85a2f1ae9f4653f4fa126b4fbe5d9a0c69c392243365dd8db",
+      "source_updated_at": "2026-11-13T23:00:00+0100",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "34988fb245fb2b221d06d8c235e51f1c941bf3dcd74084fdebb910d45e92a9c5",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "ea72eeec88bfc3fc2cf1f7a5824e982d": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "SARDEGNA",
+      "last_period": "2025-12",
+      "observation_signature": "40560c011b0c00e8e3030ec4ba7713d17447df6ce1eb030d94a49c4ecbd09c11",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "40560c011b0c00e8e3030ec4ba7713d17447df6ce1eb030d94a49c4ecbd09c11",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "ed189a684a1b6b74c527b0f2710b4e54": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "LIGURIA",
+      "last_period": "2025-12",
+      "observation_signature": "352af1634bdb87cb4b0a482a433030a1d07e50b4beea3453a5972e5b5e639f6f",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "352af1634bdb87cb4b0a482a433030a1d07e50b4beea3453a5972e5b5e639f6f",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "ed30e64dd79521ad72808a303407b178": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "PIEMONTE",
+      "last_period": "2025-12",
+      "observation_signature": "ea8c800d3f10a55709ddbcc00f6b4e45c4a82a5f95bc71b7a438b4da81d26935",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "ea8c800d3f10a55709ddbcc00f6b4e45c4a82a5f95bc71b7a438b4da81d26935",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "eee653769f93f4053ec3750187961ad1": {
+      "dataset_url": "https://opendata.inps.it/download/dataset/fileod_2026/as/inpsod_integrazionisalariali_mensilita_2025.csv",
+      "indicator": "Integrazioni Salariali Mensilita 2025 — Numero_mensilita",
+      "territory": "PUGLIA",
+      "last_period": "2025-12",
+      "observation_signature": "1d4762bccaad782713075be196c706a168059b88e2cee2fe5060d830d523937c",
+      "source_bytes_sha256": "aedba1394c6ec17e7a1fe15b197c2bdde81f8757c7057f890d7bbe7890f1e9e5",
+      "source_updated_at": "2026-10-22T15:51:31.555714",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025-12",
+          "sha256": "1d4762bccaad782713075be196c706a168059b88e2cee2fe5060d830d523937c",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "fc43911da3858472c9164ae0324d120a": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tessi171?lang=EN&geo=IT&lastTimePeriod=12&sex=T&age=TOTAL",
+      "indicator": "Popolazione che vive in abitazioni sovraffollate",
+      "territory": "Italia",
+      "last_period": "2025",
+      "observation_signature": "42b72f2465c6113f17ed4a1b302b5e977ea4d6b76ac4c9ab4053eb273ed9a310",
+      "source_bytes_sha256": "32206a560c72208aaeadd401646ac0cacbe50efbd88cb1bb67c8fceb2741ee3f",
+      "source_updated_at": "2026-10-20T11:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2025",
+          "sha256": "42b72f2465c6113f17ed4a1b302b5e977ea4d6b76ac4c9ab4053eb273ed9a310",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    },
+    "ff9f458d018a7059151460e3a6af1295": {
+      "dataset_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?lang=EN&geo=IT&lastTimePeriod=12&freq=A&unit=KG_HAB&wst_oper=GEN",
+      "indicator": "Rifiuti urbani prodotti per abitante",
+      "territory": "Italia",
+      "last_period": "2024",
+      "observation_signature": "12aeeb333a054f9d15eb708856c8161d41980edeab646ed336424572069d58ff",
+      "source_bytes_sha256": "a447919964b970f37134a95cba691637bb567856972199f1cb463861743e8a2e",
+      "source_updated_at": "2026-10-15T11:00:00+0200",
+      "last_checked_at": "2026-11-14T19:06:49Z",
+      "history": [
+        {
+          "period": "2024",
+          "sha256": "12aeeb333a054f9d15eb708856c8161d41980edeab646ed336424572069d58ff",
+          "first_seen_at": "2026-11-14T19:06:49Z"
+        }
+      ]
+    }
+  }
+}
