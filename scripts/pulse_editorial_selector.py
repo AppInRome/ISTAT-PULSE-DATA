@@ -130,12 +130,16 @@ def assess(item,evidence,known,now,topic_counts):
     # Frequency-based bonus, only to break ties, cannot create "news".
     diversity=max(0,10-min(10,int(topic_counts.get(topic,0))*2))
     score=freshness+signal+impact+diversity
-    qualified=novelty=="new_reference_period" or (novelty=="first_seen_by_pulse" and release_recent)
+    # First discovery is NOT proof of a new official release. At most a
+    # labelled short briefing; no long-form "new" article until a later
+    # reference period arrives or an explicit human editor approves it.
+    qualified=novelty=="new_reference_period"
+    first_seen_brief=novelty=="first_seen_by_pulse" and release_recent
     if novelty=="revision":
         tier="review_revision"  # explicit review; never silently overwrite.
     elif qualified and signal>=15 and score>=65:
         tier="feature"
-    elif qualified and (score>=45 or signal>=15):
+    elif (qualified or first_seen_brief) and (score>=45 or signal>=15):
         tier="brief"
     else:
         tier="catalogue"
