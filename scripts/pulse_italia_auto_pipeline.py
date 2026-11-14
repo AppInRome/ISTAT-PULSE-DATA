@@ -206,6 +206,10 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
     now = now or datetime.now(UTC)
     budget = 0.0
     can_ai = bool(ai_enabled and configure_environment())
+    # Not having a token is not the same as deliberately switching AI off.
+    # The CI report must state unambiguously whether Llama ran.
+    no_ai_status = ("disabled_by_operator" if not ai_enabled else
+                    "missing_cloudflare_credentials" if not can_ai else None)
     results = []
     for evidence in sources[:max(0, min(max_sources, 8))]:
         ident = evidence_id(evidence)
@@ -217,7 +221,7 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                                     data2story_root)
         # Nothing may be marked publication-ready if external validation failed.
         all_tools_ok = all(c.get("status") == "completed" for c in components.values())
-        draft, status = None, {"status": "ai_disabled"}
+        draft, status = None, {"status": no_ai_status or "not_attempted"}
         if can_ai:
             estimate = reserved_neurons(engine.ai_prompt(evidence))
             if budget + estimate > BUDGET_NEURONS:
@@ -227,8 +231,10 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                 try:
                     proposed = engine.call_model(evidence)
                     draft, status = audit_draft(evidence, proposed)
-                    if draft:
+                    if draft and status["status"] == "audited_draft":
                         save(folder / "llama_draft.json", draft)
+                    elif draft:
+                        save(folder / "llama_rejected_by_audit.json", draft)
                 except (ValueError, TypeError, KeyError, OSError, URLError,
                         HTTPError, json.JSONDecodeError) as exc:
                     status = {"status": "ai_unavailable_or_invalid",
@@ -257,6 +263,12 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
         "generated_at": now.isoformat(), "scope": "IT",
         "official_discovery": report, "results": results,
         "candidate_articles": len(results), "published_articles": 0,
+        "llama_configured": bool(can_ai),
+        "llama_status": ("configured" if can_ai else no_ai_status),
+        "llama_audited_drafts": sum(r["llama"] == "audited_draft" for r in results),
+        "llama_attempts": sum(r["llama"] in
+            {"audited_draft", "rejected", "insufficient_evidence",
+             "ai_unavailable_or_invalid"} for r in results),
         "reserved_neurons_estimate": round(budget, 2),
         "budget_limit_estimate": BUDGET_NEURONS,
         "requires_human_editorial_review": True,
@@ -283,7 +295,10 @@ def main(argv=None):
         dstory_command=args.dstory_command,
         data2story_root=args.data2story_root)
     print(json.dumps({"candidates": result["candidate_articles"],
-                      "published": 0, "ai_budget_reserved_estimate": result["reserved_neurons_estimate"],
+                      "published": 0, "llama_status": result["llama_status"],
+                      "llama_attempts": result["llama_attempts"],
+                      "audited_llama_drafts": result["llama_audited_drafts"],
+                      "ai_budget_reserved_estimate": result["reserved_neurons_estimate"],
                       "discovery_checks": len(result["official_discovery"]["sources_considered"])},
                      ensure_ascii=False))
 
