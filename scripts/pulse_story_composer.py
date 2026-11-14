@@ -102,7 +102,7 @@ def _subject(indicator, fallback):
     if "produttività energetica" in key:
         return "la produttività energetica"
     if "dipendenza dalle importazioni di energia" in key:
-        return "la dipendenza dell'Italia dalle importazioni energetiche"
+        return "la dipendenza dalle importazioni energetiche"
     if "buona salute percepita" in key:
         return "la quota di persone che dichiarano una buona salute"
     if "tasso di riciclo dei rifiuti" in key:
@@ -129,16 +129,26 @@ def _subject(indicator, fallback):
     return "l'indicatore «"+fallback+"»"
 
 
+def _percent_preposition(value):
+    """Italian euphony for official percentage observations."""
+    numeric = str(value).split("%", 1)[0].split(",", 1)[0].replace(".", "")
+    try:
+        n = int(numeric)
+    except ValueError:
+        return "al "
+    return "all'" if n in (1, 8, 11) or 80 <= n <= 89 or 800 <= n <= 899 else "al "
+
+
 def _title_metric(indicator,unit,value):
     if unit!="%": return value
     key=str(indicator).casefold()
     if any(w in key for w in ("inflazione","prezzi al consumo","disoccupazione",
                              "tasso di riciclo")):
-        return "tasso al "+value
+        return "tasso "+_percent_preposition(value)+value
     if any(w in key for w in ("quota","popolazione","sovraffoll","energia da fonti",
                              "salute percepita","dipendenza dalle importazioni",
                              "istruzione","rifiut","povertà","abbandon")):
-        return "quota al "+value
+        return "quota "+_percent_preposition(value)+value
     return value
 
 
@@ -260,7 +270,7 @@ def compose(item):
             gap=f"{_fmt(distance)} punti percentuali" if unit=="%" else _measure(distance,unit)
             # We never describe a change in percentage points as percentage growth.
             lead=(f"{region}, {subject} {movement} " +
-                  ("al " if unit=="%" else "a ") + f"{value} {_when(period)}, "
+                  (_percent_preposition(value) if unit=="%" else "a ") + f"{value} {_when(period)}, "
                   f"rispetto a {base} {_when(previous)}. "
                   f"Lo scarto è di {gap}, secondo la serie ufficiale {source}.")
         else:
@@ -276,8 +286,8 @@ def compose(item):
             sections.append({"heading":"Che cosa cambia",
                 "text":(f"Il segnale principale è un valore {trend} rispetto al "
                         f"periodo precedente: {base} {_when(previous)} e {value} {_when(period)}. "
-                        "La differenza descrive le osservazioni della stessa serie, "
-                        "non un cambiamento dimostrato nelle condizioni individuali.")})
+                        "Il confronto riguarda la stessa definizione statistica nei "
+                        "due periodi: il dato, da solo, non chiarisce le cause.")})
         elif recent:
             sections.append({"heading":"Il dato da osservare",
                 "text":(f"Il livello rimane {value} sia {_when(previous)} sia {_when(period)}. "
@@ -293,7 +303,8 @@ def compose(item):
             "text":(f"All'inizio dell'intervallo documentato, {_when(initial['period'])}, "
                     f"il valore era {_measure(z,unit)}. L'osservazione più recente "
                     f"è {initial_word} rispetto a quel riferimento. "
-                    "Il confronto è descrittivo: non attribuisce cause alla variazione.")})
+                    "Il confronto documenta la distanza dall'inizio della serie, "
+                     "senza trasformarla in una spiegazione causale.")})
         # Lead with the main fact instead of boilerplate; use a second data-led
         # angle only if the source provides three adjacent observations.
         if len(obs)>=3:
