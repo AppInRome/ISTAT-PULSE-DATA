@@ -1,6 +1,6 @@
 {
   "schema": "pulse-automatic-official-features-v1",
-  "generated_at": "2026-11-14T15:45:48Z",
+  "generated_at": "2026-11-14T17:54:13Z",
   "articles": [
     {
       "id": "PULSE-DATA-DB0A1DFC77B2169EF520F0CC",
@@ -6914,5 +6914,354 @@
       },
       "period_reference": "2025-12"
     }
-  ]
+  ],
+  "regional_editorial": {
+    "schema": "pulse-regional-comparisons-v1",
+    "groups": [
+      {
+        "id": "PULSE-CMP-F2152F12CAB6B9740FE176",
+        "published_at": "2026-11-14T17:54:13Z",
+        "title": "Integrazioni salariali: mensilità rilevate in 9 regioni, dicembre 2025",
+        "summary": "I dati INPS consentono di confrontare 9 regioni per mensilità rilevate (dicembre 2025). In 2 i valori crescono, in 7 diminuiscono e in 0 restano invariati.",
+        "caution": "Non è un totale Italia né una classifica corretta per popolazione. Il grafico confronta le variazioni entro ciascuna regione fra due periodi omogenei; nessuna causa è dedotta dai numeri.",
+        "heading": "ITALIA · CONFRONTO FRA REGIONI",
+        "period_reference": "2025-12",
+        "previous_period": "2025-11",
+        "period_display": "dicembre 2025",
+        "publisher": "INPS",
+        "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
+        "measure": "numero_mensilita",
+        "unit": "numero",
+        "coverage": 9,
+        "country_total_available": false,
+        "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
+        "paragraphs": [
+          "L'INPS rileva mensilità rilevate in 9 regioni confrontabili a dicembre 2025. Le serie derivano dallo stesso dataset e hanno classificazioni, periodi e unità omogenee.",
+          "Fra le regioni disponibili i valori crescono in 2, diminuiscono in 7 e rimangono invariati in 0. Il dato aggregato nazionale non è disponibile da questa selezione.",
+          "Il confronto grafico riguarda le variazioni percentuali interne alle regioni, non una graduatoria del numero di beneficiari per residente.",
+          "La selezione dei territori in evidenza identifica scarti marcati osservati: non è un test di significatività statistica e non dimostra relazioni causali."
+        ],
+        "regions": [
+          {
+            "article_id": "PULSE-DATA-DCA2C37215A353A661801461",
+            "territory": "ABRUZZO",
+            "latest": 112.0,
+            "previous": 254.0,
+            "difference": -142.0,
+            "relative_percent": -55.91
+          },
+          {
+            "article_id": "PULSE-DATA-1A5F8270AF009C9F9CEDDBB7",
+            "territory": "BASILICATA",
+            "latest": 383.0,
+            "previous": 461.0,
+            "difference": -78.0,
+            "relative_percent": -16.92
+          },
+          {
+            "article_id": "PULSE-DATA-DC72ECC015FB6F4D5C694584",
+            "territory": "CALABRIA",
+            "latest": 223.0,
+            "previous": 220.0,
+            "difference": 3.0,
+            "relative_percent": 1.36
+          },
+          {
+            "article_id": "PULSE-DATA-3A628B55D3A4A110B7A0FA40",
+            "territory": "CAMPANIA",
+            "latest": 787.0,
+            "previous": 583.0,
+            "difference": 204.0,
+            "relative_percent": 34.99
+          },
+          {
+            "article_id": "PULSE-DATA-7A6ECC84E1F875732AB3890C",
+            "territory": "LAZIO",
+            "latest": 601.0,
+            "previous": 759.0,
+            "difference": -158.0,
+            "relative_percent": -20.82
+          },
+          {
+            "article_id": "PULSE-DATA-D2E3F59175F7DEF9AD98A5CB",
+            "territory": "LIGURIA",
+            "latest": 202.0,
+            "previous": 213.0,
+            "difference": -11.0,
+            "relative_percent": -5.16
+          },
+          {
+            "article_id": "PULSE-DATA-503052F64ECF933AE4CFCE42",
+            "territory": "MARCHE",
+            "latest": 285.0,
+            "previous": 339.0,
+            "difference": -54.0,
+            "relative_percent": -15.93
+          },
+          {
+            "article_id": "PULSE-DATA-60BBBF18DC37EDBE92FA3B52",
+            "territory": "MOLISE",
+            "latest": 127.0,
+            "previous": 315.0,
+            "difference": -188.0,
+            "relative_percent": -59.68
+          },
+          {
+            "article_id": "PULSE-DATA-9D53D6FBE581B416B05A767B",
+            "territory": "SARDEGNA",
+            "latest": 481.0,
+            "previous": 509.0,
+            "difference": -28.0,
+            "relative_percent": -5.5
+          }
+        ],
+        "related_article_ids": [
+          "PULSE-DATA-DCA2C37215A353A661801461",
+          "PULSE-DATA-1A5F8270AF009C9F9CEDDBB7",
+          "PULSE-DATA-DC72ECC015FB6F4D5C694584",
+          "PULSE-DATA-3A628B55D3A4A110B7A0FA40",
+          "PULSE-DATA-7A6ECC84E1F875732AB3890C",
+          "PULSE-DATA-D2E3F59175F7DEF9AD98A5CB",
+          "PULSE-DATA-503052F64ECF933AE4CFCE42",
+          "PULSE-DATA-60BBBF18DC37EDBE92FA3B52",
+          "PULSE-DATA-9D53D6FBE581B416B05A767B"
+        ],
+        "spotlight_article_ids": [
+          "PULSE-DATA-DCA2C37215A353A661801461",
+          "PULSE-DATA-60BBBF18DC37EDBE92FA3B52"
+        ]
+      },
+      {
+        "id": "PULSE-CMP-E142279EDAF0A66AA378D8",
+        "published_at": "2026-11-14T17:54:13Z",
+        "title": "Integrazioni salariali: lavoratori rilevati in 9 regioni, dicembre 2025",
+        "summary": "I dati INPS consentono di confrontare 9 regioni per lavoratori rilevati (dicembre 2025). In 2 i valori crescono, in 7 diminuiscono e in 0 restano invariati.",
+        "caution": "Non è un totale Italia né una classifica corretta per popolazione. Il grafico confronta le variazioni entro ciascuna regione fra due periodi omogenei; nessuna causa è dedotta dai numeri.",
+        "heading": "ITALIA · CONFRONTO FRA REGIONI",
+        "period_reference": "2025-12",
+        "previous_period": "2025-11",
+        "period_display": "dicembre 2025",
+        "publisher": "INPS",
+        "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=3c4285ca-a608-499d-934a-2a2704c155b6",
+        "measure": "numero_lavoratori",
+        "unit": "numero",
+        "coverage": 9,
+        "country_total_available": false,
+        "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
+        "paragraphs": [
+          "L'INPS rileva lavoratori rilevati in 9 regioni confrontabili a dicembre 2025. Le serie derivano dallo stesso dataset e hanno classificazioni, periodi e unità omogenee.",
+          "Fra le regioni disponibili i valori crescono in 2, diminuiscono in 7 e rimangono invariati in 0. Il dato aggregato nazionale non è disponibile da questa selezione.",
+          "Il confronto grafico riguarda le variazioni percentuali interne alle regioni, non una graduatoria del numero di beneficiari per residente.",
+          "La selezione dei territori in evidenza identifica scarti marcati osservati: non è un test di significatività statistica e non dimostra relazioni causali."
+        ],
+        "regions": [
+          {
+            "article_id": "PULSE-DATA-C5406E4EFE9BD54128B080EF",
+            "territory": "ABRUZZO",
+            "latest": 111.0,
+            "previous": 238.0,
+            "difference": -127.0,
+            "relative_percent": -53.36
+          },
+          {
+            "article_id": "PULSE-DATA-F0DFE728C1634FE0EDE80E47",
+            "territory": "BASILICATA",
+            "latest": 383.0,
+            "previous": 405.0,
+            "difference": -22.0,
+            "relative_percent": -5.43
+          },
+          {
+            "article_id": "PULSE-DATA-F3B509D97E9E1B27DDF16FCC",
+            "territory": "CALABRIA",
+            "latest": 223.0,
+            "previous": 212.0,
+            "difference": 11.0,
+            "relative_percent": 5.19
+          },
+          {
+            "article_id": "PULSE-DATA-9A033BB9CB1FF4D3D7090406",
+            "territory": "CAMPANIA",
+            "latest": 787.0,
+            "previous": 582.0,
+            "difference": 205.0,
+            "relative_percent": 35.22
+          },
+          {
+            "article_id": "PULSE-DATA-4003EBF90058905BE80766C7",
+            "territory": "LAZIO",
+            "latest": 600.0,
+            "previous": 759.0,
+            "difference": -159.0,
+            "relative_percent": -20.95
+          },
+          {
+            "article_id": "PULSE-DATA-A4C75D46A58E4AED3EBE5650",
+            "territory": "LIGURIA",
+            "latest": 202.0,
+            "previous": 213.0,
+            "difference": -11.0,
+            "relative_percent": -5.16
+          },
+          {
+            "article_id": "PULSE-DATA-7C7DF85497F159D7C28BD83C",
+            "territory": "MARCHE",
+            "latest": 268.0,
+            "previous": 331.0,
+            "difference": -63.0,
+            "relative_percent": -19.03
+          },
+          {
+            "article_id": "PULSE-DATA-78DFFFD651D9BF71EBC0D2A3",
+            "territory": "MOLISE",
+            "latest": 127.0,
+            "previous": 257.0,
+            "difference": -130.0,
+            "relative_percent": -50.58
+          },
+          {
+            "article_id": "PULSE-DATA-DB0A1DFC77B2169EF520F0CC",
+            "territory": "SARDEGNA",
+            "latest": 481.0,
+            "previous": 509.0,
+            "difference": -28.0,
+            "relative_percent": -5.5
+          }
+        ],
+        "related_article_ids": [
+          "PULSE-DATA-C5406E4EFE9BD54128B080EF",
+          "PULSE-DATA-F0DFE728C1634FE0EDE80E47",
+          "PULSE-DATA-F3B509D97E9E1B27DDF16FCC",
+          "PULSE-DATA-9A033BB9CB1FF4D3D7090406",
+          "PULSE-DATA-4003EBF90058905BE80766C7",
+          "PULSE-DATA-A4C75D46A58E4AED3EBE5650",
+          "PULSE-DATA-7C7DF85497F159D7C28BD83C",
+          "PULSE-DATA-78DFFFD651D9BF71EBC0D2A3",
+          "PULSE-DATA-DB0A1DFC77B2169EF520F0CC"
+        ],
+        "spotlight_article_ids": [
+          "PULSE-DATA-C5406E4EFE9BD54128B080EF",
+          "PULSE-DATA-78DFFFD651D9BF71EBC0D2A3"
+        ]
+      },
+      {
+        "id": "PULSE-CMP-89DDC53B69D959FB14B095",
+        "published_at": "2026-11-14T17:54:13Z",
+        "title": "Integrazioni salariali: mensilità rilevate in 3 regioni, dicembre 2025",
+        "summary": "I dati INPS consentono di confrontare 3 regioni per mensilità rilevate (dicembre 2025). In 1 i valori crescono, in 2 diminuiscono e in 0 restano invariati.",
+        "caution": "Non è un totale Italia né una classifica corretta per popolazione. Il grafico confronta le variazioni entro ciascuna regione fra due periodi omogenei; nessuna causa è dedotta dai numeri.",
+        "heading": "ITALIA · CONFRONTO FRA REGIONI",
+        "period_reference": "2025-12",
+        "previous_period": "2025-11",
+        "period_display": "dicembre 2025",
+        "publisher": "INPS",
+        "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
+        "measure": "numero_mensilita",
+        "unit": "numero",
+        "coverage": 3,
+        "country_total_available": false,
+        "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
+        "paragraphs": [
+          "L'INPS rileva mensilità rilevate in 3 regioni confrontabili a dicembre 2025. Le serie derivano dallo stesso dataset e hanno classificazioni, periodi e unità omogenee.",
+          "Fra le regioni disponibili i valori crescono in 1, diminuiscono in 2 e rimangono invariati in 0. Il dato aggregato nazionale non è disponibile da questa selezione.",
+          "Il confronto grafico riguarda le variazioni percentuali interne alle regioni, non una graduatoria del numero di beneficiari per residente.",
+          "La selezione dei territori in evidenza identifica scarti marcati osservati: non è un test di significatività statistica e non dimostra relazioni causali."
+        ],
+        "regions": [
+          {
+            "article_id": "PULSE-DATA-BFFB140786968E49F3D43F27",
+            "territory": "LOMBARDIA",
+            "latest": 41.0,
+            "previous": 33.0,
+            "difference": 8.0,
+            "relative_percent": 24.24
+          },
+          {
+            "article_id": "PULSE-DATA-16C6763B0CF62357180E7E6D",
+            "territory": "PIEMONTE",
+            "latest": 2.0,
+            "previous": 19.0,
+            "difference": -17.0,
+            "relative_percent": -89.47
+          },
+          {
+            "article_id": "PULSE-DATA-D982CB796136E0E1FE595FEC",
+            "territory": "PUGLIA",
+            "latest": 28.0,
+            "previous": 43.0,
+            "difference": -15.0,
+            "relative_percent": -34.88
+          }
+        ],
+        "related_article_ids": [
+          "PULSE-DATA-BFFB140786968E49F3D43F27",
+          "PULSE-DATA-16C6763B0CF62357180E7E6D",
+          "PULSE-DATA-D982CB796136E0E1FE595FEC"
+        ],
+        "spotlight_article_ids": [
+          "PULSE-DATA-16C6763B0CF62357180E7E6D",
+          "PULSE-DATA-D982CB796136E0E1FE595FEC"
+        ]
+      },
+      {
+        "id": "PULSE-CMP-68C8A6B2BEE9DBBC11875C",
+        "published_at": "2026-11-14T17:54:13Z",
+        "title": "Integrazioni salariali: lavoratori rilevati in 3 regioni, dicembre 2025",
+        "summary": "I dati INPS consentono di confrontare 3 regioni per lavoratori rilevati (dicembre 2025). In 1 i valori crescono, in 2 diminuiscono e in 0 restano invariati.",
+        "caution": "Non è un totale Italia né una classifica corretta per popolazione. Il grafico confronta le variazioni entro ciascuna regione fra due periodi omogenei; nessuna causa è dedotta dai numeri.",
+        "heading": "ITALIA · CONFRONTO FRA REGIONI",
+        "period_reference": "2025-12",
+        "previous_period": "2025-11",
+        "period_display": "dicembre 2025",
+        "publisher": "INPS",
+        "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=3c4285ca-a608-499d-934a-2a2704c155b6",
+        "measure": "numero_lavoratori",
+        "unit": "numero",
+        "coverage": 3,
+        "country_total_available": false,
+        "regional_selection_rule": "relative_change_at_least_25pct_and_difference_at_least_10_max_2",
+        "paragraphs": [
+          "L'INPS rileva lavoratori rilevati in 3 regioni confrontabili a dicembre 2025. Le serie derivano dallo stesso dataset e hanno classificazioni, periodi e unità omogenee.",
+          "Fra le regioni disponibili i valori crescono in 1, diminuiscono in 2 e rimangono invariati in 0. Il dato aggregato nazionale non è disponibile da questa selezione.",
+          "Il confronto grafico riguarda le variazioni percentuali interne alle regioni, non una graduatoria del numero di beneficiari per residente.",
+          "La selezione dei territori in evidenza identifica scarti marcati osservati: non è un test di significatività statistica e non dimostra relazioni causali."
+        ],
+        "regions": [
+          {
+            "article_id": "PULSE-DATA-6DBCD4A41B3F506946A74E43",
+            "territory": "LOMBARDIA",
+            "latest": 41.0,
+            "previous": 33.0,
+            "difference": 8.0,
+            "relative_percent": 24.24
+          },
+          {
+            "article_id": "PULSE-DATA-C862DA6C194E719F19A9D060",
+            "territory": "PIEMONTE",
+            "latest": 2.0,
+            "previous": 19.0,
+            "difference": -17.0,
+            "relative_percent": -89.47
+          },
+          {
+            "article_id": "PULSE-DATA-EE7684A957F0C69AC6767620",
+            "territory": "PUGLIA",
+            "latest": 28.0,
+            "previous": 43.0,
+            "difference": -15.0,
+            "relative_percent": -34.88
+          }
+        ],
+        "related_article_ids": [
+          "PULSE-DATA-6DBCD4A41B3F506946A74E43",
+          "PULSE-DATA-C862DA6C194E719F19A9D060",
+          "PULSE-DATA-EE7684A957F0C69AC6767620"
+        ],
+        "spotlight_article_ids": [
+          "PULSE-DATA-C862DA6C194E719F19A9D060",
+          "PULSE-DATA-EE7684A957F0C69AC6767620"
+        ]
+      }
+    ]
+  }
 }
