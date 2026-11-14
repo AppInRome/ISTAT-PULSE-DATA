@@ -501,16 +501,30 @@ def discover(fetch_fn=get_bytes, inps_catalog=None, istat_datasets=None, today=N
              max_sources=3):
     """One bounded pass; returns evidence and audit report, never fake articles."""
     sources, checks = [], []
+    # Additional FREE and official EU statistical source for Italy. Never
+    # generate a dossier from an unverified JSON-stat cell or foreign territory.
+    # Testing with injected ISTAT/INPS stubs remains fully offline.
+    if fetch_fn is get_bytes and inps_catalog is None and istat_datasets is None:
+        try:
+            from scripts import pulse_eurostat_topics as eurostat
+            eu, eu_checks = eurostat.discover(limit=min(7, max_sources))
+            sources.extend(eu)
+            checks.extend(eu_checks)
+        except (ImportError, OSError, ValueError, TypeError) as exc:
+            checks.append({"provider":"EUROSTAT", "status":"unavailable",
+                           "error_type":type(exc).__name__})
     try:
         new, report = scan_istat(fetch_fn=fetch_fn, today=today,
-                                 datasets=istat_datasets, limit=min(4,max_sources))
+                                 datasets=istat_datasets,
+                                 limit=min(4,max(0,max_sources-len(sources))))
         sources.extend(new); checks.extend(report)
     except (ImportError, OSError, ValueError, TypeError) as exc:
         checks.append({"provider": "ISTAT", "status": "unavailable",
                        "error_type": type(exc).__name__})
     try:
         new, report = scan_inps(
-            fetch_fn=fetch_fn, catalog=inps_catalog, limit=min(6,max_sources),
+            fetch_fn=fetch_fn, catalog=inps_catalog,
+            limit=min(6,max(0,max_sources-len(sources))),
             max_series_total=max(0, max_sources-len(sources)),
             max_series_per_csv=12)
         sources.extend(new); checks.extend(report)
@@ -527,6 +541,8 @@ def discover(fetch_fn=get_bytes, inps_catalog=None, istat_datasets=None, today=N
     return list(unique.values())[:max_sources], {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "italian_primary_sources_only": True,
+        "non_italian_eu_countries_excluded": True,
+        "additional_EU_official_source": "Eurostat country IT only",
         "sources_considered": checks, "verified_series_found": len(unique),
         "note": "A valid series is a data candidate, NOT an approved article.",
     }
