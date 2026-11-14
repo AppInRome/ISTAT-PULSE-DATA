@@ -126,5 +126,39 @@ class ComposerTests(unittest.TestCase):
         self.assertIn("la produzione di rifiuti urbani per abitante", environment["lead"])
 
 
+    def test_human_sample_regressions_in_italian_and_original_data_unchanged(self):
+        # Eight real, source-locked articles were read manually: one per topic.
+        samples = {}
+        for item in self.articles:
+            samples.setdefault(item["topic"], item)
+        self.assertGreaterEqual(len(samples), 8)
+        for topic, item in samples.items():
+            with self.subTest(topic=topic):
+                before = deepcopy(item)
+                story = composer.compose(item)
+                self.assertIsNotNone(story)
+                full_text = story["headline"] + " " + story["lead"]
+                self.assertNotIn("al 8,2%", full_text)
+                self.assertNotIn("la dipendenza dell'Italia dalle", full_text)
+                self.assertNotIn("nelle condizioni individuali",
+                                 " ".join(p["text"] for p in story["sections"]))
+                self.assertEqual(item, before)
+        learning = composer.compose(next(a for a in self.articles
+                                         if a["topic"] == "ISTRUZIONE"
+                                         and a["period_reference"] == "2025"))
+        self.assertIn("all'8,2%", learning["lead"])
+        self.assertIn("all'8,2%", learning["headline"])
+
+    def test_context_still_explicit_and_no_source_numbers_invented(self):
+        for article in self.articles:
+            story = composer.compose(article)
+            self.assertIsNotNone(story)
+            source = article["source_documents"][0]
+            self.assertEqual(story["source_sha256"], source["sha256"])
+            if article.get("editorial_kind") == "verified_context_analysis":
+                self.assertTrue(story["not_a_new_source_release"])
+                self.assertIn("non una nuova pubblicazione dell'ente", story["lead"])
+
+
 if __name__ == "__main__":
     unittest.main()
