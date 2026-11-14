@@ -92,6 +92,7 @@ def validated_article(folder, published_at):
         "sdmx_csv_explicit_dimensions",
         "sdmx_flat_json_explicit_dimensions",
         "sdmx_json_indexed_resolved_dimensions",
+        "eurostat_jsonstat2_exact_multidimensional_cell",
         "same_row_explicit_year_html_table",
         "same_row_explicit_year_structured_table",
     }:
