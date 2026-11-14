@@ -110,6 +110,35 @@ class AutomaticOfficialFeatureTests(TestCase):
             self.assertEqual(next_run["published_new"],0)
             self.assertEqual(output.read_bytes(),before)
 
+    def test_context_analysis_publishes_once_with_explicit_old_data_warning(self):
+        # These are fabricated test observations, NOT Italian public data.
+        manifest=json.loads((FIX/"pulse_italia_integration_manifest.json").read_text())
+        raw=(FIX/"pulse_italia_integration_FAKE.csv").read_bytes().replace(
+            b";2025;14,1", b";2025;16,1")
+        e=engine.extract(manifest,raw)
+        e["topic"]="DEMOGRAFIA"
+        with TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            research(root/"work"/"a",e)
+            out=root/"data"/"automatic_features.json"
+            ledger=root/"data"/"source_versions.json"
+            frontpage=root/"data"/"editorial_frontpage.json"
+            first=release.publish(root/"work",out,now="2026-11-14T18:40:00Z",
+                    smart=True,versions_file=ledger,frontpage_file=frontpage)
+            self.assertEqual(first["published_new"],1,first)
+            self.assertEqual(first["new_features_selected"],0,first)
+            self.assertEqual(first["new_context_analyses_published"],1,first)
+            article=json.loads(out.read_text())["articles"][0]
+            self.assertEqual(article["editorial_kind"],"verified_context_analysis")
+            self.assertIn("non segnala una nuova pubblicazione",article["summary"])
+            self.assertEqual(article["period_reference"],"2025")
+            self.assertEqual(article["publication_status"],"published")
+            self.assertEqual(json.loads(frontpage.read_text())["features_new"],[])
+            again=release.publish(root/"work",out,now="2026-11-15T18:40:00Z",
+                    smart=True,versions_file=ledger,frontpage_file=frontpage)
+            self.assertEqual(again["published_new"],0,again)
+            self.assertEqual(len(json.loads(out.read_text())["articles"]),1)
+
     def test_without_evidence_never_publishes_media_article(self):
         with TemporaryDirectory() as tmp:
             root=Path(tmp)
