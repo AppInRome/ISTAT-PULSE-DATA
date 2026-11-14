@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 
 from scripts import pulse_editorial_audit_v1 as audit
+from scripts import pulse_headline_editor as headline_editor
 from scripts import pulse_editorial_architecture_v2 as verify
 from scripts.pulse_italia_newsroom import italian_official_url
 
@@ -96,7 +97,7 @@ def validated_article(folder, published_at):
         raise ValueError("extraction_method_not_supported_by_mobile")
     if len(str(evidence["source_sha256"])) != 64:
         raise ValueError("source_fingerprint_invalid")
-    return {
+    item = {
         "id": stable_id(evidence),
         "published_at": published_at,
         "first_published_at_utc": published_at,
@@ -138,6 +139,9 @@ def validated_article(folder, published_at):
         },
         "period_reference":observations[-1]["period"],
     }
+    # All checks and the signed draft are completed BEFORE this display-only
+    # two-field adapter. The original draft, charts and audit are untouched.
+    return headline_editor.with_editorial_headline(item)
 
 
 def publish(review_root, output_file, now=None):
@@ -149,6 +153,15 @@ def publish(review_root, output_file, now=None):
         raise ValueError("malformed_existing_feed")
     accepted = {r["id"]:r for r in previous if isinstance(r,dict)
                 and isinstance(r.get("id"),str) and r.get("id","").startswith("PULSE-DATA-")}
+    # One-time, idempotent update of already published technical headings.
+    # All unchanged article content, images, graphics, timestamps and IDs
+    # remain exactly as they were in the persisted feed.
+    retitled = 0
+    for key, old_item in list(accepted.items()):
+        updated = headline_editor.with_editorial_headline(old_item)
+        if updated is not old_item:
+            accepted[key] = updated
+            retitled += 1
     checked = rejected = added = 0
     for folder in sorted(review_root.iterdir()) if review_root.is_dir() else []:
         if not folder.is_dir():
@@ -165,9 +178,10 @@ def publish(review_root, output_file, now=None):
     # Do NOT change the generation timestamp or create a new Git commit
     # when the source series and the published article IDs are unchanged.
     # Otherwise a daily noop races with the radar or unrelated PR merges.
-    if added == 0 and output_file.exists():
+    if added == 0 and retitled == 0 and output_file.exists():
         return {"research_checked":checked,"rejected":rejected,
-                "published_new":0,"persisted_in_mobile_feed":len(previous),
+                "published_new":0,"retitled_existing":0,
+                "persisted_in_mobile_feed":len(previous),
                 "ai_calls":0,"source_facts_required":True,"status":"unchanged"}
     final = sorted(accepted.values(),key=lambda x:x["published_at"],reverse=True)
     if len(final) > MAX_FEED_ENTRIES:
@@ -180,7 +194,8 @@ def publish(review_root, output_file, now=None):
     temp.write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     temp.replace(output_file)
     return {"research_checked":checked,"rejected":rejected,
-            "published_new":added,"persisted_in_mobile_feed":len(final),
+            "published_new":added,"retitled_existing":retitled,
+            "persisted_in_mobile_feed":len(final),
             "ai_calls":0,"source_facts_required":True}
 
 
