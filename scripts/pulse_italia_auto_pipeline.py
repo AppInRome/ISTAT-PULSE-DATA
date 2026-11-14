@@ -20,6 +20,7 @@ from scripts import pulse_italia_official_discovery as official
 from scripts import pulse_data_story_stack as storytelling
 from scripts import pulse_editorial_engine_v1 as engine
 from scripts import pulse_editorial_audit_v1 as audit
+from scripts import pulse_deterministic_writer as no_ai_writer
 from scripts.pulse_ai_provider import (
     active_provider, configure_environment, reserved_cost, run_budget_limit,
     budget_unit, credentials_status
@@ -273,15 +274,27 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                         HTTPError, json.JSONDecodeError) as exc:
                     status = {"status": "ai_unavailable_or_invalid",
                               "error_type": type(exc).__name__}
-        save(folder / "preview.json", build_preview(
-            evidence, draft if status.get("status") == "audited_draft" else None))
+        # Historical PULSE source-locked writing runs OFFLINE, even if the
+        # optional AI provider has no credentials. It cannot change the source,
+        # any chart or any reviewed publication. Only accepted after arithmetic audit.
+        rule_draft, rule_report = (no_ai_writer.write_verified_article(evidence)
+                                   if all_data_ready else (None, {
+                                       "passed": False, "issues": ["independent_data_tools_incomplete"]}))
+        if rule_draft is not None:
+            save(folder / "deterministic_draft.json", rule_draft)
+        selected = (draft if status.get("status") == "audited_draft"
+                    else rule_draft)
+        save(folder / "preview.json", build_preview(evidence, selected))
         review = {
             "review_status": "pending_human_signoff",
             "id": ident, "publication_allowed": False,
             "source_sha256": evidence["source_sha256"],
             "evidence_sha256": audit.digest(evidence),
-            "draft_sha256": audit.digest({k: v for k, v in draft.items()
-                                          if k != "audit"}) if draft else None,
+            "draft_sha256": audit.digest({k: v for k, v in selected.items()
+                                          if k != "audit"}) if selected else None,
+            "draft_origin": ("ai" if selected is draft and draft else
+                             "deterministic_no_ai" if rule_draft is not None else "none"),
+            "deterministic_audit": rule_report,
             "data_components": components, "llama": status,
         }
         save(folder / "review_required.json", review)
@@ -294,12 +307,18 @@ def run_pipeline(output_dir, max_sources=3, discovery_fn=None, ai_enabled=True,
                         "verified_data_tools_ready": all_data_ready,
                         "deterministic_graph_fallback_used": (
                             components.get("dstory", {}).get("status") == "verified_fallback"),
-                        "llama": status["status"], "article_published": False,
+                        "llama": status["status"],
+                        "deterministic_draft": ("audited_draft" if rule_draft else
+                                                 "rejected_or_unavailable"),
+                        "deterministic_audit_issues": rule_report.get("issues", []),
+                        "article_published": False,
                         "preview": str(folder / "preview.json")})
     index = {
         "generated_at": now.isoformat(), "scope": "IT",
         "official_discovery": report, "results": results,
         "candidate_articles": len(results), "published_articles": 0,
+        "deterministic_no_ai_drafts": sum(
+            r["deterministic_draft"] == "audited_draft" for r in results),
         "ai_provider": provider,
         "ai_configured": bool(can_ai),
         "ai_status": ("configured" if can_ai else no_ai_status),
@@ -347,6 +366,7 @@ def main(argv=None):
                       "ai_status": result["ai_status"],
                       "ai_attempts": result["ai_attempts"],
                       "audited_ai_drafts": result["ai_audited_drafts"],
+                      "deterministic_no_ai_drafts": result["deterministic_no_ai_drafts"],
                       "ai_budget_reserved_estimate": result["reserved_budget_estimate"],
                       "budget_unit": result["budget_unit"],
                       "discovery_checks": len(result["official_discovery"]["sources_considered"])},
