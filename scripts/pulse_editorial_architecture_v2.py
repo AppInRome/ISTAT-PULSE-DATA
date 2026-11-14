@@ -186,10 +186,16 @@ def prepare(review_root, output_dir, headline_file=None, published_store=None, t
                     review.get("evidence_sha256") != audit.digest(e)):
                 reasons.append("missing_independent_review_lock")
             components = review.get("data_components")
-            if not (isinstance(components, dict) and len(components) >= 3
-                    and all(isinstance(c, dict) and c.get("status") == "completed"
-                            for c in components.values())):
+            if not (isinstance(components, dict)
+                    and components.get("data_analyst", {}).get("status") == "completed"
+                    and components.get("data2story_inspector", {}).get("status") == "completed"
+                    and components.get("dstory", {}).get("status") in ("completed", "verified_fallback")):
                 reasons.append("independent_analytics_incomplete")
+            if (isinstance(components, dict)
+                    and components.get("dstory", {}).get("status") == "verified_fallback"
+                    and (components["dstory"].get("chart_engine") !=
+                         "pulse_italia_chart_analytics.calculate" or not analytics)):
+                reasons.append("invalid_deterministic_graph_fallback")
             key = identity(e) if not reasons else None
             if key in seen and key is not None:
                 reasons.append("duplicate_statistical_story")
@@ -207,6 +213,10 @@ def prepare(review_root, output_dir, headline_file=None, published_store=None, t
                 "publish_allowed": False,
                 "topic": official.official_topic(e["series"]["indicator"]),
                 "evidence_sha256": audit.digest(e),
+                "visualization_engine": (
+                    "PULSE deterministic graphs (external renderer unavailable)"
+                    if components["dstory"]["status"] == "verified_fallback"
+                    else "verified external renderer plus PULSE deterministic graphs"),
                 "brief": build_brief(e, analytics),
                 "not_yet_an_article": True,
             }
