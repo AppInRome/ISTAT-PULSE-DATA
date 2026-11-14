@@ -32,7 +32,7 @@ CATALOG = (
         "id": "nama_10_gdp", "topic": "ECONOMIA",
         "indicator": "Prodotto interno lordo a prezzi correnti",
         "unit": "milioni di euro", "unit_code": "CP_MEUR",
-        "population": "Economia italiana; PIL a prezzi di mercato (ESA 2010)",
+        "population": "Economia italiana; prodotto interno lordo a prezzi di mercato",
         "filters": {"freq": "A", "na_item": "B1G", "unit": "CP_MEUR"},
     },
     {
