@@ -26,6 +26,19 @@ def is_published_feature(item):
     chart = item.get("chart_spec") or {}
     table = item.get("table_spec") or {}
     documents = item.get("source_documents") or []
+    if item.get("chart_analyses") is not None:
+        # Derived graphs are computed from the *same* verified source values.
+        # Never accept editorially edited numbers in a graph transformation.
+        try:
+            from scripts.pulse_italia_chart_analytics import calculate
+            original = (item.get("verified_series") or [])[0]["observations"][-24:]
+            measured = {"observations": original,
+                        "unit": (item.get("verified_series") or [])[0]["unit"],
+                        "indicator": (item.get("verified_series") or [])[0]["indicator"]}
+            if item["chart_analyses"] != calculate(measured):
+                return False
+        except (KeyError, ValueError, TypeError, IndexError):
+            return False
     return (
         item.get("publication_status") == "published" and
         item.get("editorial_status") == "verified" and
