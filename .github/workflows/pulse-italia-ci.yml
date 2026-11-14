@@ -15,6 +15,8 @@ on:
       - "scripts/pulse_deterministic_writer.py"
       - "tests/test_pulse_deterministic_writer.py"
       - "scripts/pulse_automatic_feature_publish.py"
+      - "scripts/pulse_topic_coverage.py"
+      - "tests/test_pulse_topic_coverage.py"
       - "scripts/pulse_story_composer.py"
       - "tests/test_pulse_story_composer.py"
       - "scripts/pulse_editorial_selector.py"
@@ -74,6 +76,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_deterministic_writer.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
           python -m unittest discover -s tests -p "test_pulse_story_composer.py" -v
+          python -m unittest discover -s tests -p "test_pulse_topic_coverage.py" -v
           python -m unittest discover -s tests -p "test_pulse_editorial_selector.py" -v
           python -m unittest discover -s tests -p "test_pulse_eurostat_topics.py" -v
           python -m unittest discover -s tests -p "test_pulse_regional_editing.py" -v
