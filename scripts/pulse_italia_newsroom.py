@@ -289,15 +289,16 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
     from scripts.pulse_editorial_engine_v1 import verify_manifest
     import scripts.pulse_editorial_engine_v1 as editorial
 
-    from scripts.pulse_cloudflare_llama import (
-        BUDGET_NEURONS, configure_environment, reserved_neurons
+    from scripts.pulse_ai_provider import (
+        configure_environment, active_provider, reserved_cost, run_budget_limit, budget_unit
     )
     output = Path(output_dir)
     made = []
     reserved = 0.0
-    # Never reuse an unrelated key or the retired Tommy Worker.
+    # No implicit fallback to a different provider or a legacy Worker.
+    provider = active_provider()
     if not configure_environment():
-        return {"status": "cloudflare_not_configured", "generated": []}
+        return {"status": provider + "_not_configured", "generated": []}
     for manifest_path in sorted(Path(manifests_dir).glob("*.json"))[:max(1, min(limit, 20))]:
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         spec = verify_manifest(manifest)
@@ -314,9 +315,9 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
             manifest=str(manifest_path), source_file=None, output=str(evidence_path)
         ))
         evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
-        reservation = reserved_neurons(editorial.ai_prompt(evidence))
-        if reserved + reservation > BUDGET_NEURONS:
-            break  # Keep headroom below Cloudflare's 10,000 daily free Neurons.
+        reservation = reserved_cost(editorial.ai_prompt(evidence))
+        if reserved + reservation > run_budget_limit():
+            break  # Conservative run-level estimate; set monthly hard cap in provider console.
         reserved += reservation  # Reserve even if the model's JSON is rejected.
         try:
             editorial.run_draft(argparse.Namespace(
@@ -327,8 +328,10 @@ def generate_verified_drafts(manifests_dir, output_dir, limit=20):
             # Rejected drafts stay visible as artifacts, never enter production.
             continue
     return {"status": "draft_only", "generated": made, "count": len(made),
-            "neuron_reservation_for_run": round(reserved, 2),
-            "budget_neurons_for_run": BUDGET_NEURONS,
+            "ai_provider": provider,
+            "estimated_budget_reserved": round(reserved, 6),
+            "estimated_budget_limit": run_budget_limit(),
+            "budget_unit": budget_unit(),
             "budget_estimate_only": True}
 
 
