@@ -16,6 +16,7 @@ from pathlib import Path
 
 from scripts import pulse_editorial_audit_v1 as audit
 from scripts import pulse_headline_editor as headline_editor
+from scripts import pulse_regional_editing as regional
 from scripts import pulse_editorial_architecture_v2 as verify
 from scripts.pulse_italia_newsroom import italian_official_url
 
@@ -163,24 +164,34 @@ def publish(review_root, output_file, now=None):
             accepted[key] = updated
             retitled += 1
     checked = rejected = added = 0
+    verified_pairs = []
     for folder in sorted(review_root.iterdir()) if review_root.is_dir() else []:
         if not folder.is_dir():
             continue
         checked += 1
         try:
             item = validated_article(folder, now)
+            evidence = read_json(folder / "evidence.json")
         except (KeyError, IndexError, TypeError, ValueError, OSError, json.JSONDecodeError):
             rejected += 1
             continue
         if item["id"] not in accepted:
             accepted[item["id"]] = item
             added += 1
+        # The new regional reading uses the original checked evidence, never
+        # newspaper headlines and never the generated article prose.
+        verified_pairs.append((accepted[item["id"]], evidence))
+    old_digest = old.get("regional_editorial")
+    digest = regional.build_digest(verified_pairs, old_digest, now)
+    digest_changed = regional.canonical(digest) != regional.canonical(
+        old_digest if isinstance(old_digest, dict) else {})
     # Do NOT change the generation timestamp or create a new Git commit
     # when the source series and the published article IDs are unchanged.
     # Otherwise a daily noop races with the radar or unrelated PR merges.
-    if added == 0 and retitled == 0 and output_file.exists():
+    if added == 0 and retitled == 0 and not digest_changed and output_file.exists():
         return {"research_checked":checked,"rejected":rejected,
                 "published_new":0,"retitled_existing":0,
+                "regional_groups":len(digest["groups"]),"digest_changed":False,
                 "persisted_in_mobile_feed":len(previous),
                 "ai_calls":0,"source_facts_required":True,"status":"unchanged"}
     final = sorted(accepted.values(),key=lambda x:x["published_at"],reverse=True)
@@ -188,13 +199,15 @@ def publish(review_root, output_file, now=None):
         # Feed is bounded for mobile. Historical published entries are retained
         # separately in Git history; no deletion from the source research bundles.
         final = final[:MAX_FEED_ENTRIES]
-    result = {"schema":SCHEMA,"generated_at":now,"articles":final}
+    result = {"schema":SCHEMA,"generated_at":now,"articles":final,
+              "regional_editorial":digest}
     output_file.parent.mkdir(parents=True, exist_ok=True)
     temp = output_file.with_suffix(".tmp")
     temp.write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     temp.replace(output_file)
     return {"research_checked":checked,"rejected":rejected,
             "published_new":added,"retitled_existing":retitled,
+            "regional_groups":len(digest["groups"]),"digest_changed":digest_changed,
             "persisted_in_mobile_feed":len(final),
             "ai_calls":0,"source_facts_required":True}
 
