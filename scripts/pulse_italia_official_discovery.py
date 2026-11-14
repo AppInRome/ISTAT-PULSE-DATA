@@ -80,9 +80,13 @@ class SafeSameHostRedirect(urllib.request.HTTPRedirectHandler):
 def get_bytes(url, domain, max_bytes=MAX_BYTES):
     if not allow_data_url(url, domain):
         raise ValueError("outside_official_domain")
+    accept = ("application/vnd.sdmx.genericdata+xml;version=2.1"
+              if domain == "esploradati.istat.it" else
+              "application/json" if "/api/3/action/" in url else
+              "text/csv,application/octet-stream;q=0.5")
     req = urllib.request.Request(url, headers={
         "User-Agent": "PULSE-Italia-Autoresearch/1.0",
-        "Accept": "application/json,application/vnd.sdmx.genericdata+xml;version=2.1,text/csv;q=0.8,*/*;q=0.5",
+        "Accept": accept,
     })
     opener = urllib.request.build_opener(SafeSameHostRedirect)
     with opener.open(req, timeout=27) as reply:
