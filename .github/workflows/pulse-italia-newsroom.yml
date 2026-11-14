@@ -12,9 +12,9 @@ on:
       - "scripts/pulse_editorial_architecture_v2.py"
       - "scripts/pulse_italia_auto_pipeline.py"
       - "tests/test_pulse_editorial_architecture_v2.py"
-  # Run after the lightweight/full radar snapshots, Europe/Rome including DST.
+  # Run after the morning full radar snapshot, Europe/Rome including DST; once daily to avoid double AI billing.
   schedule:
-    - cron: "47 8,20 * * *"
+    - cron: "47 8 * * *"
       timezone: "Europe/Rome"
 
 permissions:
