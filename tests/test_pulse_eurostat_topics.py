@@ -18,12 +18,14 @@ def payload(country="IT", unit="CP_MEUR", values=None, status=None, geography_fi
     # Multidimensional JSON-stat 2.0 (time NOT necessarily the final index).
     if values is None:
         values = {"0":1000.0, "1":1050.0, "2":1100.0}
-    axes=["geo","time","unit"] if geography_first else ["time","unit","geo"]
+    axes=(["geo","time","unit"] if geography_first else ["time","unit","geo"]) + ["freq","na_item"]
     dims={
         "time":{"category":{"index":{"2023":0,"2024":1,"2025":2},
                             "label":{"2023":"2023","2024":"2024","2025":"2025"}}},
         "geo":{"category":{"index":{country:0},"label":{country:"Country"}}},
-        "unit":{"category":{"index":{unit:0},"label":{unit:"Unit"}}}
+        "unit":{"category":{"index":{unit:0},"label":{unit:"Unit"}}},
+        "freq":{"category":{"index":{"A":0}}},
+        "na_item":{"category":{"index":{"B1G":0}}}
     }
     return json.dumps({
         "class":"dataset","id":axes,"size":[3 if k=="time" else 1 for k in axes],
@@ -106,6 +108,38 @@ class EurostatVerifiedSeriesTests(unittest.TestCase):
         self.assertEqual(len(checks),len(euro.CATALOG))
         self.assertEqual(sum(c["status"]=="source_series_found" for c in checks),1)
         self.assertTrue(all(c["status"]!="source_series_found" for c in checks[1:]))
+
+    def test_missing_filter_dimensions_fail_closed(self):
+        blob=json.loads(payload())
+        blob["id"].remove("na_item")
+        blob["size"].pop()
+        blob["dimension"].pop("na_item")
+        with self.assertRaisesRegex(ValueError, "requested_dimension_missing"):
+            euro.verified_jsonstat_evidence(json.dumps(blob).encode(), self.c, self.u)
+
+    def test_new_candidacies_are_official_dataset_queries_not_fake_counts(self):
+        ids={c["id"] for c in euro.CATALOG}
+        self.assertTrue({"demo_find", "demo_gind", "sdg_04_60",
+                         "ilc_lvho07a", "hlth_silc_08",
+                         "sdg_12_51", "sdg_07_50"}.issubset(ids))
+        # The official URL of each candidate is only an intention to query.
+        # Verification requires actual source cells and a separate audit.
+        for candidate in euro.CATALOG:
+            self.assertIn("geo=IT", euro.request_url(candidate))
+            self.assertIsInstance(candidate["filters"], dict)
+            self.assertTrue(candidate["indicator"])
+
+    def test_discovery_budget_prefers_independent_metrics_over_gender_slices(self):
+        checked=[]
+        def fake_get(url):
+            checked.append(url)
+            raise OSError("offline candidate - never fake source statistics")
+        found,reports=euro.discover(fetch_fn=fake_get, limit=16)
+        self.assertFalse(found)
+        self.assertEqual(len(reports),16)
+        self.assertTrue(any("demo_find?" in url for url in checked))
+        self.assertFalse(any("demo_pjan?" in url and "sex=M" in url
+                             for url in checked))
 
     def test_status_unchanged_on_script_injection(self):
         with self.assertRaises(ValueError):
