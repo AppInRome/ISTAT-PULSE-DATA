@@ -257,69 +257,92 @@ def csv_evidences(raw, package, resource_url, max_series=1):
             candidates.append((col, unit))
     if not candidates:
         return []
+    # A single official INPS resource often provides distinct, comparable
+    # regional series. The historical one-region shortcut silently hid them.
+    # Additional series are allowed ONLY when an explicit official region
+    # label and an independent, same-classification time sequence exist.
+    from scripts.pulse_italia_newsroom import REGIONS
+    allowed_territories = {"italia", "it", "nazionale", "totale italia", *REGIONS}
+    geo_values = [geo_value]
+    if max_series > 1:
+        seen_values = {geo_value.casefold()}
+        extra_values = []
+        for row in rows:
+            current = str(row.get(geo_key, "")).strip()
+            normal = current.casefold()
+            if (normal in allowed_territories and normal not in seen_values):
+                extra_values.append(current)
+                seen_values.add(normal)
+                if len(extra_values) >= 24:
+                    break
+        geo_values.extend(sorted(extra_values, key=lambda v: v.casefold()))
     result = []
-    for value_key, unit in candidates[:5]:
-        buckets = defaultdict(list)
-        for i, row in enumerate(rows, start=2):
-            if str(row.get(geo_key, "")).strip() != geo_value:
-                continue
-            period = exact_period(row, period_key, month_key)
-            if period is None:
-                continue
-            val = valid_raw_number(row.get(value_key))
-            if val is None:
-                continue
-            if unit == "%" and not (Decimal(0) <= Decimal(val) <= Decimal(100)):
-                continue
-            unit_k, current_unit = explicit_unit(row, value_key)
-            if current_unit != unit:
-                continue
-            # Every classification other than time and the measure must match.
-            fixed = tuple(sorted((str(k), str(v)) for k, v in row.items()
-                                 if k not in {period_key, month_key, value_key} and k is not None))
-            buckets[fixed].append((period, val, i, str(row[value_key])))
-        # Keep only the most recent aggregate with unique comparable periods.
-        options = []
-        for fixed, obs in buckets.items():
-            obs.sort()
-            if len(obs) < 2 or len({x[0] for x in obs}) != len(obs):
-                continue
-            if int(obs[-1][0][:4]) < OFFICIAL_LATEST_YEAR:
-                continue
-            options.append((obs[-1][0], len(obs), fixed, obs))
-        if not options:
-            continue
-        _, _, fixed, obs = max(options)
-        obs = obs[-24:]
-        series = {
-            "indicator": str(package.get("title") or value_key)[:160] + " — " + str(value_key)[:90],
-            "unit": unit, "territory": geo_value, "population": pop_value,
-            "frequency": ("Mensile (anno e mese nelle righe)" if month_key
-                          else "Annuale (colonna anno nella fonte)"),
-            "classification_values": dict(fixed),
-            "observations": [{"period": x[0], "value": x[1], "raw": x[3]} for x in obs],
-        }
-        evidence = {
-            "schema_version": 1, "verified": True, "source_url": (
-                INPS_API + "package_show?id=" + urllib.parse.quote(str(package["id"]), safe="")
-            ),
-            "dataset_url": resource_url, "publisher": "INPS",
-            "source_sha256": sha256(raw).hexdigest(), "retrieval_mode": "https",
-            "source_locations": [{"period": x[0], "source_row": x[2]} for x in obs],
-            "extraction_method": "original_inps_csv_fixed_classification_rows",
-            "series": series, "topic": official_topic(series["indicator"]),
-            "methodology_url": package.get("url") or INPS_API + "package_show",
-            "source_publication_date": package.get("metadata_modified"),
-            "auto_discovered_from": INPS_API + "package_list",
-            "editorial_status": "requires_human_semantic_review",
-        }
-        result.append(evidence)
+    for geo_value in geo_values[:max_series]:
         if len(result) >= max_series:
             break
+        for value_key, unit in candidates[:5]:
+            buckets = defaultdict(list)
+            for i, row in enumerate(rows, start=2):
+                if str(row.get(geo_key, "")).strip() != geo_value:
+                    continue
+                period = exact_period(row, period_key, month_key)
+                if period is None:
+                    continue
+                val = valid_raw_number(row.get(value_key))
+                if val is None:
+                    continue
+                if unit == "%" and not (Decimal(0) <= Decimal(val) <= Decimal(100)):
+                    continue
+                unit_k, current_unit = explicit_unit(row, value_key)
+                if current_unit != unit:
+                    continue
+                # Every classification other than time and the measure must match.
+                fixed = tuple(sorted((str(k), str(v)) for k, v in row.items()
+                                     if k not in {period_key, month_key, value_key} and k is not None))
+                buckets[fixed].append((period, val, i, str(row[value_key])))
+            # Keep only the most recent aggregate with unique comparable periods.
+            options = []
+            for fixed, obs in buckets.items():
+                obs.sort()
+                if len(obs) < 2 or len({x[0] for x in obs}) != len(obs):
+                    continue
+                if int(obs[-1][0][:4]) < OFFICIAL_LATEST_YEAR:
+                    continue
+                options.append((obs[-1][0], len(obs), fixed, obs))
+            if not options:
+                continue
+            _, _, fixed, obs = max(options)
+            obs = obs[-24:]
+            series = {
+                "indicator": str(package.get("title") or value_key)[:160] + " — " + str(value_key)[:90],
+                "unit": unit, "territory": geo_value, "population": pop_value,
+                "frequency": ("Mensile (anno e mese nelle righe)" if month_key
+                              else "Annuale (colonna anno nella fonte)"),
+                "classification_values": dict(fixed),
+                "observations": [{"period": x[0], "value": x[1], "raw": x[3]} for x in obs],
+            }
+            evidence = {
+                "schema_version": 1, "verified": True, "source_url": (
+                    INPS_API + "package_show?id=" + urllib.parse.quote(str(package["id"]), safe="")
+                ),
+                "dataset_url": resource_url, "publisher": "INPS",
+                "source_sha256": sha256(raw).hexdigest(), "retrieval_mode": "https",
+                "source_locations": [{"period": x[0], "source_row": x[2]} for x in obs],
+                "extraction_method": "original_inps_csv_fixed_classification_rows",
+                "series": series, "topic": official_topic(series["indicator"]),
+                "methodology_url": package.get("url") or INPS_API + "package_show",
+                "source_publication_date": package.get("metadata_modified"),
+                "auto_discovered_from": INPS_API + "package_list",
+                "editorial_status": "requires_human_semantic_review",
+            }
+            result.append(evidence)
+            if len(result) >= max_series:
+                break
     return result
 
 
-def scan_inps(fetch_fn=get_bytes, catalog=None, limit=4):
+def scan_inps(fetch_fn=get_bytes, catalog=None, limit=4,
+              max_series_total=2, max_series_per_csv=1):
     ids = latest_inps_package_ids(fetch_fn, catalog=catalog, limit=limit)
     found, checks = [], []
     for id_ in ids:
@@ -344,19 +367,22 @@ def scan_inps(fetch_fn=get_bytes, catalog=None, limit=4):
                     sample_columns = list(preview[0])[:12] if preview else []
                 except (UnicodeError, ValueError, csv.Error):
                     sample_columns = []
-                found.extend(csv_evidences(raw, pkg, url, max_series=1))
+                remaining = max(0, max_series_total - len(found))
+                if remaining:
+                    found.extend(csv_evidences(
+                        raw, pkg, url, max_series=min(max_series_per_csv, remaining)))
             checks.append({"provider": "INPS", "dataset": id_,
                            "csv_columns": sample_columns,
                            "csv_resources_found": len(candidates),
                            "status": "source_series_found" if len(found) > found_before
                                      else "no_safe_comparable_series"})
-            if len(found) >= 2:
+            if len(found) >= max_series_total:
                 break
         except (OSError, TimeoutError, ValueError, KeyError, TypeError,
                 urllib.error.URLError) as exc:
             checks.append({"provider": "INPS", "dataset": id_, "status": "inaccessible_or_unsupported",
                            "error_type": type(exc).__name__})
-    return found[:2], checks
+    return found[:max_series_total], checks
 
 
 def parse_sdmx(raw):
@@ -452,7 +478,7 @@ def scan_istat(fetch_fn=get_bytes, today=None, datasets=None, limit=1):
     day = today or date.today()
     idx = day.toordinal() % len(eligible)
     selected = [eligible[(idx + offset) % len(eligible)]
-                for offset in range(max(0, min(limit, 1)))]
+                for offset in range(max(0, min(limit, 4)))]
     found, checks = [], []
     for d in selected:
         url = (ISTAT_SDMX + "IT1," + urllib.parse.quote(d["flow"], safe="_") +
@@ -477,13 +503,16 @@ def discover(fetch_fn=get_bytes, inps_catalog=None, istat_datasets=None, today=N
     sources, checks = [], []
     try:
         new, report = scan_istat(fetch_fn=fetch_fn, today=today,
-                                 datasets=istat_datasets, limit=1)
+                                 datasets=istat_datasets, limit=min(4,max_sources))
         sources.extend(new); checks.extend(report)
     except (ImportError, OSError, ValueError, TypeError) as exc:
         checks.append({"provider": "ISTAT", "status": "unavailable",
                        "error_type": type(exc).__name__})
     try:
-        new, report = scan_inps(fetch_fn=fetch_fn, catalog=inps_catalog, limit=3)
+        new, report = scan_inps(
+            fetch_fn=fetch_fn, catalog=inps_catalog, limit=min(6,max_sources),
+            max_series_total=max(0, max_sources-len(sources)),
+            max_series_per_csv=12)
         sources.extend(new); checks.extend(report)
     except (OSError, ValueError, TypeError, KeyError, urllib.error.URLError) as exc:
         checks.append({"provider": "INPS", "status": "unavailable",
