@@ -98,6 +98,27 @@ class SelectorTests(unittest.TestCase):
         self.assertGreaterEqual(result["catalogue_updates_count"],7)
         self.assertEqual(len(ledger["series"]),9)
 
+    def test_same_official_indicator_gender_splits_are_one_feature(self):
+        samples=[]
+        versions={"series":{}}
+        for sex in ("F", "M"):
+            e=fake()
+            e["dataset_url"] += "&sex=" + sex + "&age=TOTAL"
+            e["series"]["indicator"] = "Residenti " + sex
+            e["series"]["classification_values"]["sex"] = sex
+            samples.append((item(e,"SIM-" + sex),e))
+            older=deepcopy(e)
+            older["series"]["observations"][-1]["period"]="2024"
+            older["series"]["observations"][-2]["period"]="2023"
+            versions["series"][news.series_key(e)] = news._updated_state(
+                older,None,NOW)
+        frontpage, _, _ = news.evaluate(samples,[],versions,{},NOW)
+        self.assertEqual(len(frontpage["features_new"]),1)
+        self.assertEqual(frontpage["independent_feature_families_selected"],1)
+        self.assertEqual(frontpage["new_feature_topics"],{"DEMOGRAFIA":1})
+        self.assertEqual(frontpage["unpublished_eligible_features_by_topic"],
+                         {"DEMOGRAFIA":1})
+
     def test_no_duplicate_frontpage_in_same_day_and_no_republish_next_day(self):
         e=fake()
         old=deepcopy(e)
