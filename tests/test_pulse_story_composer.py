@@ -1,4 +1,4 @@
-"""Regression: all 34 real source-locked PULSE articles preserve original facts.
+"""Regression: every real source-locked PULSE article preserves original facts.
 
 No synthetic fixtures are published; no AI, network or Android compilation.
 """
@@ -18,7 +18,7 @@ class ComposerTests(unittest.TestCase):
     def setUpClass(cls):
         cls.articles=json.loads(CORPUS.read_text(encoding="utf-8"))["articles"]
 
-    def test_actual_feed_34_articles_have_verified_nonformulaic_readings(self):
+    def test_actual_feed_articles_have_verified_nonformulaic_readings(self):
         created=[]
         for item in self.articles:
             with self.subTest(item=item["id"]):
@@ -53,6 +53,25 @@ class ComposerTests(unittest.TestCase):
                 created.append(story)
         self.assertGreaterEqual(len(created),30)
         self.assertGreater(len({x["headline"] for x in created}),20)
+
+    def test_context_journalistic_level_explicitly_says_not_new_source_news(self):
+        recent=[a for a in self.articles
+                if a.get("editorial_kind")=="verified_context_analysis"]
+        self.assertGreaterEqual(len(recent),4)
+        for item in recent:
+            with self.subTest(id=item["id"]):
+                story=composer.compose(item)
+                self.assertIsNotNone(story,item["id"])
+                self.assertTrue(story["not_a_new_source_release"])
+                self.assertEqual(story["editorial_kind"],
+                                 "verified_context_analysis")
+                self.assertTrue(story["headline"].startswith("Contesto — "))
+                self.assertIn("non una nuova pubblicazione dell'ente",
+                              story["lead"])
+                self.assertEqual(story["period_reference"],
+                                 item["period_reference"])
+                self.assertEqual(composer.attach(item)["chart_spec"],
+                                 item["chart_spec"])
 
     def test_tampered_chart_or_table_never_gets_new_editorial_presentation(self):
         original=deepcopy(self.articles[0])
@@ -99,7 +118,9 @@ class ComposerTests(unittest.TestCase):
         demographic=composer.compose(d)
         self.assertIsNotNone(demographic)
         self.assertIn("58.943.464",demographic["lead"])
-        w=next(x for x in self.articles if x["topic"]=="AMBIENTE")
+        w=next(x for x in self.articles if x["topic"]=="AMBIENTE"
+               and "rifiuti urbani prodotti per abitante" in
+               x["verified_series_relevant"][0]["indicator"].casefold())
         environment=composer.compose(w)
         self.assertIsNotNone(environment)
         self.assertIn("la produzione di rifiuti urbani per abitante", environment["lead"])
