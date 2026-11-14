@@ -79,8 +79,10 @@ def verify_preview(preview, evidence, analytics):
         problems.append("unsafe_publication_flag")
     source = preview.get("chart_spec") or {}
     table = preview.get("table_spec") or {}
+    # Android previews intentionally expose the last 24 original data points.
+    original = evidence["series"]["observations"][-24:]
     expected = [(str(p["period"]), float(p["value"]))
-                for p in evidence["series"]["observations"]]
+                for p in original]
     actual = [(str(p["period"]), float(p["value"]))
               for p in source.get("data", [])] if isinstance(source.get("data"), list) else []
     rows = table.get("rows")
@@ -89,7 +91,10 @@ def verify_preview(preview, evidence, analytics):
         problems.append("chart_differs_from_verified_observations")
     if tabulated != expected:
         problems.append("table_differs_from_verified_observations")
-    if preview.get("chart_analyses") != analytics:
+    preview_analytics = chart.calculate({
+        **evidence["series"], "observations": original
+    })
+    if preview.get("chart_analyses") != preview_analytics:
         problems.append("derived_graphs_do_not_match_recalculation")
     if preview.get("publication_status") not in ("draft", "not_published"):
         problems.append("preview_claims_publication")
