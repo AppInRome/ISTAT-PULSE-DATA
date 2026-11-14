@@ -283,8 +283,8 @@ def compose(item):
                                 "non consente una previsione.")})
                 elif d0!=0 and d1!=0 and (d0>0)==(d1>0):
                     sections.append({"heading":"La sequenza recente",
-                        "text":(f"Da {_when(p0)} ({_measure(v0,unit)}) a {_when(previous)} ({base}) "
-                                f"e poi {_when(period)} ({value}), le osservazioni consecutive "
+                        "text":(f"Le osservazioni successive sono {_measure(v0,unit)} {_when(p0)}, "
+                                f"{base} {_when(previous)} e {value} {_when(period)}; "
                                 "indicano la stessa direzione. Non basta a stabilire "
                                 "che la tendenza proseguirà.")})
         if len(sections)<3:
