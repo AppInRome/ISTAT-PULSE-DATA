@@ -90,6 +90,16 @@ def host(url):
 
 def italian_official_url(url):
     h = host(url)
+    if h == "ec.europa.eu":
+        # Eurostat is an EU source, but only Italy-filtered official statistical
+        # dataset endpoints and dataset-browser pages are acceptable here.
+        from urllib.parse import urlsplit, parse_qs
+        parsed = urlsplit(str(url))
+        if parsed.path.startswith("/eurostat/databrowser/view/"):
+            return True
+        if parsed.path.startswith("/eurostat/api/dissemination/statistics/1.0/data/"):
+            return parse_qs(parsed.query).get("geo") == ["IT"]
+        return False
     return any(h == domain or h.endswith("." + domain) for domain in ITALIAN_OFFICIAL_HOSTS)
 
 
