@@ -80,8 +80,6 @@ class AutomaticOfficialFeatureTests(TestCase):
     def test_smart_editorial_only_releases_relevant_new_reference_period(self):
         from scripts import pulse_editorial_selector as selection
         e=fixture()
-        e["series"]["observations"][-1]["value"]="90"
-        e["series"]["observations"][-1]["raw"]="90"
         with TemporaryDirectory() as tmp:
             root=Path(tmp)
             research(root/"work"/"a",e)
