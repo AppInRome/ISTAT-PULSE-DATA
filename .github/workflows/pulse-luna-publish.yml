@@ -1,0 +1,61 @@
+name: PULSE Luna - AI articles from verified sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC. Check twice per day; no per-day limit on the number of news items.
+    - cron: "35 10,20 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-data-only
+  cancel-in-progress: false
+
+jobs:
+  luna:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout official PULSE news
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Safety and arithmetic regression tests
+        run: |
+          python -m compileall -q scripts/pulse_luna_publisher.py
+          python -m unittest discover -s tests -p test_pulse_luna_publisher.py -v
+      - name: Generate original Luna copy, keep historical charts and source-verified fallback
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python -m scripts.pulse_luna_publisher \
+            --feed data/news/automatic_features.json \
+            --ledger data/news/luna_ledger.json \
+            --status data/news/luna_status.json \
+            --budget-usd 4.00
+      - name: Publish verified additions and public non-secret usage report
+        run: |
+          git config user.name "PULSE Statistical Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/news/automatic_features.json data/news/luna_ledger.json data/news/luna_status.json
+          if git diff --cached --quiet; then
+            echo "Luna: nothing changed"
+          else
+            git commit -m "PULSE Luna: source-checked articles and measured AI consumption"
+            if ! git push origin HEAD:main; then
+              git fetch origin main
+              git rebase origin/main
+              git push origin HEAD:main
+            fi
+          fi
+
+# The OpenAI key must be configured as a GitHub Actions secret.
+# Never put the API key in Android, the JSON feed, a Gradle file, or a commit.
+# Monthly budget is in USD, not the true prepaid OpenAI credit balance.
