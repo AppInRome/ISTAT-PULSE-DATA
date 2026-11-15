@@ -82,7 +82,7 @@ class SelectorTests(unittest.TestCase):
         self.assertTrue(news.consecutive("2025-Q4","2026-Q1"))
         self.assertFalse(news.consecutive("2025-Q2","2025-Q4"))
 
-    def test_topic_diversity_and_daily_caps(self):
+    def test_distinct_verified_articles_never_lost_to_daily_caps(self):
         inputs=[]
         for i in range(9):
             e=fake(region="Regione"+str(i))
@@ -94,9 +94,10 @@ class SelectorTests(unittest.TestCase):
             older["series"]["observations"][-2]["period"]="2023"
             prior["series"][news.series_key(e)]=news._updated_state(older,None,NOW)
         result,ledger,byid=news.evaluate(inputs,[],prior,{},NOW)
-        self.assertEqual(len(result["features_new"]),2)
-        self.assertGreaterEqual(result["catalogue_updates_count"],7)
+        self.assertEqual(len(result["features_new"]),9)
+        self.assertEqual(result["catalogue_updates_count"],0)
         self.assertEqual(len(ledger["series"]),9)
+        self.assertLessEqual(len(result["featured_article_ids"]),12)
 
     def test_context_backfill_is_not_mislabeled_as_official_news(self):
         e=fake(source_update=None)
