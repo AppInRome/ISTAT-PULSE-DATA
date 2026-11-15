@@ -1,6 +1,16 @@
 name: PULSE Luna - AI articles from verified sources
 
 on:
+  push:
+    paths:
+      - 'scripts/pulse_luna_publisher.py'
+      - 'tests/test_pulse_luna_publisher.py'
+      - '.github/workflows/pulse-luna-publish.yml'
+  pull_request:
+    paths:
+      - 'scripts/pulse_luna_publisher.py'
+      - 'tests/test_pulse_luna_publisher.py'
+      - '.github/workflows/pulse-luna-publish.yml'
   workflow_dispatch:
   schedule:
     # UTC. Check twice per day; no per-day limit on the number of news items.
@@ -14,8 +24,20 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests without API calls
+        run: |
+          python -m compileall -q scripts/pulse_luna_publisher.py
+          python -m unittest discover -s tests -p test_pulse_luna_publisher.py -v
   luna:
-    if: github.ref == 'refs/heads/main'
+    needs: validate
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:
