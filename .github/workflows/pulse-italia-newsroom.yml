@@ -69,6 +69,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_llama_live_probe.py" -v
           python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
           python -m unittest discover -s tests -p "test_pulse_deterministic_writer.py" -v
+          python -m unittest discover -s tests -p "test_pulse_historical_restoration.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
           python -m unittest discover -s tests -p "test_pulse_story_composer.py" -v
           python -m unittest discover -s tests -p "test_pulse_topic_coverage.py" -v
