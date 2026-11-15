@@ -1,13 +1,13 @@
 {
-  "last_check_at": "2026-11-15T18:57:08+00:00",
+  "last_check_at": "2026-11-15T19:50:51+00:00",
   "latest_check_errors": 0,
   "note": "La raccolta Notizie viene controllata ogni tre ore; Green e Territori seguono la frequenza dei rispettivi servizi API. Un controllo non equivale a nuove osservazioni. Le APK installate non sono modificate dal repository.",
   "sections": {
     "green": {
       "events_added_or_updated": 0,
       "events_validated": 427,
-      "last_attempt_at": "2026-11-15T08:19:39+00:00",
-      "last_success_at": "2026-11-15T08:19:39+00:00",
+      "last_attempt_at": "2026-11-15T19:53:37+00:00",
+      "last_success_at": "2026-11-15T19:53:37+00:00",
       "message": "Indicatori aggiornati solo quando la rispettiva fonte ha fornito dati verificati.",
       "sources_error": 0,
       "sources_total": 19,
@@ -22,8 +22,8 @@
       "ieri": 21,
       "ieri_stampa": 21,
       "ieri_verificati": 0,
-      "last_attempt_at": "2026-11-15T18:58:13+00:00",
-      "last_success_at": "2026-11-15T18:58:13+00:00",
+      "last_attempt_at": "2026-11-15T19:51:57+00:00",
+      "last_success_at": "2026-11-15T19:51:57+00:00",
       "message": "Le notizie di stampa sono identificate come segnalazioni: solo dati primari verificati generano grafici PULSE.",
       "oggi": 12,
       "oggi_stampa": 11,
@@ -31,14 +31,14 @@
       "status": "ok"
     },
     "territori": {
-      "connected_series": 4,
-      "events_added_or_updated": 0,
+      "connected_series": 5,
+      "events_added_or_updated": 1,
       "events_validated": 21,
-      "fallback_series": 17,
-      "last_attempt_at": "2026-11-15T08:23:55+00:00",
-      "last_success_at": "2026-11-15T08:23:55+00:00",
+      "fallback_series": 16,
+      "last_attempt_at": "2026-11-15T19:55:16+00:00",
+      "last_success_at": "2026-11-15T19:55:16+00:00",
       "message": "Serie SDMX: i periodi statistici originali restano visibili.",
-      "observations_new_or_revised": 0,
+      "observations_new_or_revised": 1,
       "status": "ok"
     }
   },
