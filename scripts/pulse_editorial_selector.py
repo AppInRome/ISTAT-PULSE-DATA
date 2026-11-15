@@ -18,8 +18,8 @@ from scripts.pulse_topic_coverage import independent_metric_identity
 
 SCHEMA = "pulse-editorial-frontpage-v1"
 REGISTRY = "pulse-source-versions-v1"
-MAX_STORIES_PER_TOPIC = 2
-MAX_FEATURES_PER_DAY = 12
+MAX_STORIES_PER_TOPIC = 2  # visual front-page balance only, never publishing quota
+MAX_FEATURES_PER_DAY = 12  # only the featured front-page display, not publishing
 MAX_CONTEXT_ANALYSES_PER_DAY = 6
 CONTEXT_TOPICS = frozenset(("DEMOGRAFIA", "SALUTE", "ISTRUZIONE",
                             "CASA", "AMBIENTE", "ENERGIA"))
@@ -251,13 +251,12 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
             if a["editorial_family"] in chosen_families:
                 catalogue.append({**a,"tier":"catalogue",
                                   "reason":"same_independent_indicator_family"})
-            elif (len(selected)<MAX_FEATURES_PER_DAY
-                    and chosen_topic[a["topic"]]<MAX_STORIES_PER_TOPIC):
-                selected.append(a);chosen_topic[a["topic"]]+=1
-                chosen_families.add(a["editorial_family"])
             else:
-                catalogue.append({**a,"tier":"catalogue",
-                                  "reason":"editorial_capacity_or_topic_balance"})
+                # Every genuinely new, distinct source-verified feature can be
+                # published. The front-page remains a separate visual shortlist.
+                selected.append(a)
+                chosen_topic[a["topic"]] += 1
+                chosen_families.add(a["editorial_family"])
         elif a["tier"]=="context":
             if a["editorial_family"] in published_families:
                 catalogue.append({**a,"tier":"catalogue",
@@ -272,11 +271,7 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
     # New official reference periods always take precedence over archives.
     # Context dossiers are published separately and explicitly labelled.
     for a in context_candidates:
-        if (len(context_analyses)<MAX_CONTEXT_ANALYSES_PER_DAY
-                and len(selected)+len(context_analyses)<MAX_FEATURES_PER_DAY
-                and a["topic"] not in context_topics
-                and chosen_topic[a["topic"]]==0
-                and a["editorial_family"] not in chosen_families):
+        if a["editorial_family"] not in chosen_families:
             context_analyses.append(a)
             context_topics.add(a["topic"])
             chosen_families.add(a["editorial_family"])
@@ -316,9 +311,10 @@ def evaluate(verified_pairs,previous_articles,previous_versions,previous_frontpa
         "all_existing_articles_remain_in_archive":True,
         "no_automatic_publication_from_revision":True,
         "source_date_not_inferred_from_observation_period":True,
-        "thresholds":{"feature":65,"brief":45,"max_features_per_day":MAX_FEATURES_PER_DAY,
-                      "max_features_per_topic":MAX_STORIES_PER_TOPIC,
-                      "max_context_analyses_per_day":MAX_CONTEXT_ANALYSES_PER_DAY,
+        "thresholds":{"feature":65,"brief":45,"max_frontpage_features":MAX_FEATURES_PER_DAY,
+                      "max_articles_per_day":None,
+                      "max_features_per_topic":None,
+                      "max_context_analyses_per_day":None,
                       "context_min_signal":27},
         "assessments":assessments[:200],
     }
