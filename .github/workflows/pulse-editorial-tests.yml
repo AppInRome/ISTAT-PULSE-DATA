@@ -35,6 +35,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p test_original_editorial.py -v
           python -m unittest discover -s tests -p test_pulse_historical_restoration.py -v
+          python -m unittest discover -s tests -p test_pulse_historical_interactive_export.py -v
           python -m unittest discover -s tests -p test_primary_research.py -v
           python -m unittest discover -s tests -p test_reviewed_drafts.py -v
           python -m unittest discover -s tests -p test_editorial_publish.py -v

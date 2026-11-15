@@ -70,6 +70,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_editorial_architecture_v2.py" -v
           python -m unittest discover -s tests -p "test_pulse_deterministic_writer.py" -v
           python -m unittest discover -s tests -p "test_pulse_historical_restoration.py" -v
+          python -m unittest discover -s tests -p "test_pulse_historical_interactive_export.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
           python -m unittest discover -s tests -p "test_pulse_story_composer.py" -v
           python -m unittest discover -s tests -p "test_pulse_topic_coverage.py" -v
@@ -132,9 +133,12 @@ jobs:
             --frontpage data/news/editorial_frontpage.json \
             --feed data/news/automatic_features.json \
             --output data/news/topic_coverage.json
+          python -m scripts.pulse_historical_interactive_export \
+            --feed data/news/automatic_features.json \
+            --output docs/PULSE_STORICO_INTERATTIVO.html
           git config user.name "PULSE Statistical Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json data/news/topic_coverage.json
+          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json data/news/topic_coverage.json docs/PULSE_STORICO_INTERATTIVO.html
           if git diff --cached --quiet; then
             echo "No new verified deterministic features"
           else
