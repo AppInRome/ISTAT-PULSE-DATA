@@ -1,6 +1,6 @@
 {
   "schema": "pulse-editorial-frontpage-v1",
-  "generated_at": "2026-11-15T07:47:54Z",
+  "generated_at": "2026-11-15T08:26:55Z",
   "editorial_method": "source_versions_and_verified_material_change_no_ai",
   "featured_article_ids": [],
   "features_new": [],
@@ -9,7 +9,7 @@
   "context_topics": [],
   "briefs": [],
   "revision_review": [],
-  "catalogue_updates_count": 24,
+  "catalogue_updates_count": 18,
   "new_feature_topics": {},
   "independent_feature_families_selected": 0,
   "unpublished_eligible_features_by_topic": {},
@@ -48,75 +48,6 @@
       "series_key": "48cd0c5e8ddfbb3d234648e54be581d0",
       "editorial_family": "1f19dd8db058b54024b55f8d",
       "observations_sha256": "054c53a5bd119082405f1e4db22aa91a049b19ed40fce49c626e53088630d95d"
-    },
-    {
-      "article_id": "PULSE-DATA-16C6763B0CF62357180E7E6D",
-      "topic": "LAVORO",
-      "score": 51,
-      "headline": "Piemonte, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 35,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_25pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "ed30e64dd79521ad72808a303407b178",
-      "editorial_family": "af2112afb9466d576fd8b8bd",
-      "observations_sha256": "ea8c800d3f10a55709ddbcc00f6b4e45c4a82a5f95bc71b7a438b4da81d26935"
-    },
-    {
-      "article_id": "PULSE-DATA-3A628B55D3A4A110B7A0FA40",
-      "topic": "LAVORO",
-      "score": 51,
-      "headline": "Campania, integrazioni salariali: aumentano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 35,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_25pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "377baadf5ccf4c3a6501acffc05166ab",
-      "editorial_family": "42a8bcf0dc2394a9cbb77431",
-      "observations_sha256": "2c0b404f8dc904f3ebf30329ef0c6bcd5b258034dd0d131e712e2377f5602bd9"
-    },
-    {
-      "article_id": "PULSE-DATA-DCA2C37215A353A661801461",
-      "topic": "LAVORO",
-      "score": 51,
-      "headline": "Abruzzo, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 35,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_25pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "52a46f5ce6b5461c30fed4ea35f6fc6e",
-      "editorial_family": "450ce52b37d43eab78398282",
-      "observations_sha256": "27f3ec8ab42364d96cee3a51701f9acee1cdacef5306e3a7fec3546127d9c5a3"
     },
     {
       "article_id": "PULSE-DATA-77B9C2B4EAA98D5F1D4A5562",
@@ -232,52 +163,6 @@
       "series_key": "680e626017367d131a62da6fe3ff8202",
       "editorial_family": "b7ac18a20c92c62d80142773",
       "observations_sha256": "01446bfa6471102d81d55368316cebd7da6f2df1da8ea323078dc3decb7d23db"
-    },
-    {
-      "article_id": "PULSE-DATA-1A5F8270AF009C9F9CEDDBB7",
-      "topic": "LAVORO",
-      "score": 41,
-      "headline": "Basilicata, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 25,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_10pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "1be8bd001250c276a92e7c38f6a014d0",
-      "editorial_family": "8aa5da7ee5c4c1143c67de93",
-      "observations_sha256": "337275177748d8f364c738ddcc3b08c507b974d2a6d8bafb640c5c0e71723e63"
-    },
-    {
-      "article_id": "PULSE-DATA-7A6ECC84E1F875732AB3890C",
-      "topic": "LAVORO",
-      "score": 41,
-      "headline": "Lazio, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 25,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_10pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "a001f79ab72d1f3ccc87e473cecee493",
-      "editorial_family": "990f05de42ca21a09827c7a9",
-      "observations_sha256": "00e86934f7d09683f4cee89a9db84f1856ce7f15a4ffefd899014e21d76ac31d"
     },
     {
       "article_id": "PULSE-DATA-4E18F405E1A68E1D1949D062",
@@ -554,29 +439,6 @@
       "series_key": "531f33045201247ff18c3043658bd9ba",
       "editorial_family": "c16eaddc491fcc67aa7d9dac",
       "observations_sha256": "8fdd9a61fa4a4870c7c6f0efbc9cdfb9591d0a690850e8edbc039c194b9f61ea"
-    },
-    {
-      "article_id": "PULSE-DATA-DC72ECC015FB6F4D5C694584",
-      "topic": "LAVORO",
-      "score": 16,
-      "headline": "Calabria, integrazioni salariali: aumentano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 0,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "segnale_non_sufficiente_o_base_zero",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "d0d64341d21c786be94ea39457cd0a81",
-      "editorial_family": "be7a70954d519bf3d120a2ce",
-      "observations_sha256": "d66d68ff0d9828ffc5848cc6b6d83b2407c61cce8db6e2eab8336c2e5b71b11a"
     }
   ]
 }
