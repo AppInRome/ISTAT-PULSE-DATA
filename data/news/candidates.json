@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T21:58:35.334165+00:00",
+  "generated_at": "2026-11-16T22:57:59.802710+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · locali · gruppo 20",
@@ -18,8 +18,8 @@
     },
     {
       "radar": "Google News - salute scuola ambiente",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 30
     },
     {
       "radar": "Repubblica Economia",
@@ -43,8 +43,8 @@
     },
     {
       "radar": "Google News - Repubblica dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "Google News - Corriere dati e statistiche",
@@ -59,7 +59,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -79,7 +79,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 25
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -88,13 +88,13 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 2/9",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE osservatori ufficiali 3/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE osservatori ufficiali 4/9",
@@ -103,8 +103,8 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 5/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE osservatori ufficiali 6/9",
@@ -113,8 +113,8 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE osservatori ufficiali 8/9",
@@ -123,13 +123,13 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 9/9",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 7
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 36
+      "items_fetched": 35
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -144,7 +144,7 @@
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 39
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -248,13 +248,13 @@
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 24
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 02",
@@ -268,8 +268,8 @@
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 04",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
@@ -278,8 +278,8 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
@@ -313,8 +313,8 @@
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 13",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 14",
@@ -323,18 +323,18 @@
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 16",
       "status": "radar_error",
       "error": "provider_rate_limited"
     },
     {
-      "radar": "PULSE 80 testate · locali · gruppo 16",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
       "radar": "PULSE 80 testate · locali · gruppo 17",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · locali · gruppo 18",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,31 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14R2kxc3k5aWpIbEJDcEIzdktxQWdsQ2JzTFZiY2hFcVlFejBUbFV5NUFnT0g0WGp6YjFwZ0d3aEpLRU51a2NKSzZBeFo4N3J4YW81ZWJjckx6U3JEMDFiSjctSi1jQ1dOSFFOQ2hKTUJJOFpLdWo0UEFJekRfZ0U?oc=5",
+      "discovery_title": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
+      "detected_at": "2026-11-16T22:57:59.802710+00:00",
+      "score_discovery": 60,
+      "topic": "ENERGIA",
+      "numbers_detected": [
+        "+54%",
+        "2020",
+        "2030 ",
+        "+54%",
+        "2020",
+        "2030 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia salute e welfare",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
       "discovery_title": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-16T21:58:35.334165+00:00",
+      "detected_at": "2026-11-16T22:57:59.802710+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -397,7 +418,7 @@
       "radar": "PULSE Italia - dati di regioni province comuni",
       "discovery_url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0ycWI2bDZ6MXUtVF90YXFWTC1pM1JZd3pDWjljNDhuUHNsZ3NqdTQ2UGRLT1BPeUNsUXZUUkdjUFkzZTJacEZVVUdwcVR0X3R4bUFUNUVwV19ULTF3UVlqNW5kQl91WDBWU3phLVhR?oc=5",
       "discovery_title": "Caro pane in Sicilia, Palermo: prezzi su del 49% dal 2017 - QdS",
-      "detected_at": "2026-11-16T21:58:35.334165+00:00",
+      "detected_at": "2026-11-16T22:57:59.802710+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -413,31 +434,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE Italia - Sud e Isole",
-      "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14R2kxc3k5aWpIbEJDcEIzdktxQWdsQ2JzTFZiY2hFcVlFejBUbFV5NUFnT0g0WGp6YjFwZ0d3aEpLRU51a2NKSzZBeFo4N3J4YW81ZWJjckx6U3JEMDFiSjctSi1jQ1dOSFFOQ2hKTUJJOFpLdWo0UEFJekRfZ0U?oc=5",
-      "discovery_title": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
-      "detected_at": "2026-11-16T21:58:35.334165+00:00",
-      "score_discovery": 60,
-      "topic": "ENERGIA",
-      "numbers_detected": [
-        "+54%",
-        "2020",
-        "2030 ",
-        "+54%",
-        "2020",
-        "2030 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
       "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "detected_at": "2026-11-16T21:58:35.334165+00:00",
+      "detected_at": "2026-11-16T22:57:59.802710+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -456,7 +456,7 @@
       "radar": "Google News - Sole 24 Ore dati e statistiche",
       "discovery_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Db09oTklzWno4ajZLVE04b1pLOXNyMnQ5THhLaG9LTzIyM1RCNElsNC1DYWtYYW95ZGYyN2Q5eXdSaUpfOGlPSFlUMDNvMEV5QVRZdWV4c2ZqRktlLWJVbms3dFNhUU96dkJCdjBsLTNvaVE?oc=5",
       "discovery_title": "***Ocse: reddito reale famiglie -0,1% nell'area nel II trim, Italia -1% causa inflazione - Il Sole 24 ORE",
-      "detected_at": "2026-11-16T21:58:35.334165+00:00",
+      "detected_at": "2026-11-16T22:57:59.802710+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -477,7 +477,7 @@
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://www.corriere.it/economia/lavoro/26_novembre_16/redditi-ancora-in-calo-dell-1-il-pil-cresce-ma-le-famiglie-diventano-piu-povere-perche-succede-in-italia-e-non-altrove-i-dati-ocse-659832e5-b385-480d-8660-8b90bbef7xlk.shtml",
       "discovery_title": "Redditi ancora in calo (dell’1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
-      "detected_at": "2026-11-16T21:58:35.334165+00:00",
+      "detected_at": "2026-11-16T22:57:59.802710+00:00",
       "score_discovery": 53,
       "topic": "ECONOMIA",
       "numbers_detected": [
