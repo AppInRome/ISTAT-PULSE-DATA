@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-16T09:48:31.385193+00:00",
+  "generated_at": "2026-11-16T10:47:00.881278+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-16T09:48:31.385193+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "published_at": "2026-11-16T10:47:00.881278+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -112,7 +112,7 @@
       "id": "PULSE-MEDIA-199319F9D911DB90",
       "story_fingerprint": "199319f9d911db90e793db3df24a219c37eac93cb6068756e5c8b8e27ae58ead",
       "published_at": "2026-11-16T09:41:06+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Case in Lombardia, prezzi in crescita del 3,2%. Milano resta la più cara d'Italia, ma Varese e Lecco corrono di più",
       "reported_headline": "Case in Lombardia, prezzi in crescita del 3,2%. Milano resta la più cara d'Italia, ma Varese e Lecco corrono di più - Affaritaliani",
       "summary": "La testata Affaritaliani segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 3,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -176,10 +176,76 @@
       "primary_research_status": "primary_evidence_not_found"
     },
     {
+      "id": "PULSE-MEDIA-076B69D8550FF234",
+      "story_fingerprint": "076b69d8550ff234ef20708cbc805a1afb64be7e80994d0e20b36d7b50b63f39",
+      "published_at": "2026-11-16T09:41:00+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
+      "headline": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro",
+      "reported_headline": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro - La Nuova Sardegna",
+      "summary": "La testata La Nuova Sardegna segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 76,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro",
+      "pulse_summary": "La testata La Nuova Sardegna segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 76,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata La Nuova Sardegna segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 76,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · locali · gruppo 20». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQNHcxNnJaSEdtSzljbDRPcERxaHlzZktMSWM3Q18waG1NNjl0d19mdVo4b0JCdnhid21meG45T0hYcmxVVjNwN3cyQVVuSmJPYkZzd29MclhvQUNsam9UUDBhZVdEcUhaTDYxSTRQZG9yVXA2VlUteFBwOFZ1X0Y2V1FTZnlQbXI0SnVlTG9JVE5zT3ZkN0tVRVZYMzltLU1Md3Y1MmVBWUI3TklfelBxSExkcmVPZUlPclVSaE9rNERfUlpvdEE5UnM3dlFRMzkyZi00QTRaNjB3WjdsbGd0U1RKd3ZGajRUTTliSzgyWkNyWHJldHVMY01LLWhXZHNiYjNOMlFCUW5VRUdKaWxOQV9n?oc=5",
+        "domain": "La Nuova Sardegna",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "76,5 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "sardegna"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "La Nuova Sardegna",
+        "original_url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQNHcxNnJaSEdtSzljbDRPcERxaHlzZktMSWM3Q18waG1NNjl0d19mdVo4b0JCdnhid21meG45T0hYcmxVVjNwN3cyQVVuSmJPYkZzd29MclhvQUNsam9UUDBhZVdEcUhaTDYxSTRQZG9yVXA2VlUteFBwOFZ1X0Y2V1FTZnlQbXI0SnVlTG9JVE5zT3ZkN0tVRVZYMzltLU1Md3Y1MmVBWUI3TklfelBxSExkcmVPZUlPclVSaE9rNERfUlpvdEE5UnM3dlFRMzkyZi00QTRaNjB3WjdsbGd0U1RKd3ZGajRUTTliSzgyWkNyWHJldHVMY01LLWhXZHNiYjNOMlFCUW5VRUdKaWxOQV9n?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-16T10:47:00.881278+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
       "id": "PULSE-MEDIA-35F70F66C19CD071",
       "story_fingerprint": "35f70f66c19cd07179405e540a07388b2fbe7ef1b53fbe120fd5e915390b2584",
       "published_at": "2026-11-16T09:30:37+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Pensioni dicembre 2026, la guida. Tredicesima, bonus 154,94 euro, recuperi Inps: come sarà il cedolino",
       "reported_headline": "Pensioni dicembre 2026, la guida. Tredicesima, bonus 154,94 euro, recuperi Inps: come sarà il cedolino",
       "summary": "La testata ilmessaggero.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 154,94 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -243,7 +309,7 @@
       "id": "PULSE-MEDIA-619733A2132CFF7B",
       "story_fingerprint": "619733a2132cff7be711d2b41dcff74f7f8747895dbe276f3399ce5ab4060d1d",
       "published_at": "2026-11-16T09:14:06+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Imprese digitali, Sardegna terza in Italia per peso dell’artigianato nel digitale ma manca il 55% del personale competente",
       "reported_headline": "Imprese digitali, Sardegna terza in Italia per peso dell’artigianato nel digitale ma manca il 55% del personale competente - YouTG.NET",
       "summary": "La testata YouTG.NET segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 55%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -301,13 +367,15 @@
         "outlet": "YouTG.NET",
         "original_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOaWt4dmhfRlRwVzZIRFdURWxxLUs4SFRvWTgzTjBKYlBIYk1OQTBKVHJ3QTgzVE45MHVNNkpWLUFtU01scVBVNmt0ZlhjVEtpckJqUzBmWlRwUmNfdDZtNFY1OVhTWWtlTUEyMFdoRHNISEhXaFNKTy1BUmRDTEVHLUNPaVltRlFpamZod0w3MjBDbEFQS2VUODlrUUx5Y21kUkRZRW4tOVBGUzBpTVpEMDliRXdMY2d6Z3otT1VRMG9NUW1rLTlEczBueXFZejd2ZnJncUtKOTNFSG5aNXl0TzRNNDRISXNUVTlpM2ZwVERzYzZQT0FfUWZn?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      }
+      },
+      "primary_research_last_attempt_at": "2026-11-16T10:47:00.881278+00:00",
+      "primary_research_status": "primary_evidence_not_found"
     },
     {
       "id": "PULSE-MEDIA-C098E02317EAF762",
       "story_fingerprint": "c098e02317eaf76202aa22dc1a7271cf65942f69a6dece2a18e4f418e2725caa",
       "published_at": "2026-11-16T09:01:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Auto in Cina, vendite al dettaglio a -21,4% a ottobre: l’export sale del 68,5% e in Italia i marchi cinesi crescono a tre cifre",
       "reported_headline": "Auto in Cina, vendite al dettaglio a -21,4% a ottobre: l’export sale del 68,5% e in Italia i marchi cinesi crescono a tre cifre - Motori.money",
       "summary": "La testata Motori.money segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -21,4%, 68,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -373,7 +441,7 @@
       "id": "PULSE-MEDIA-6F7FAE6A624C870F",
       "story_fingerprint": "6f7fae6a624c870f57e005240c55124de02f31157db06c5b18aeadc79caf30c5",
       "published_at": "2026-11-16T08:40:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "La montagna italiana torna a popolarsi: oltre 174mila nuovi residenti in 6 anni: ecco le migliori località",
       "reported_headline": "La montagna italiana torna a popolarsi: oltre 174mila nuovi residenti in 6 anni: ecco le migliori località - Torino Cronaca",
       "summary": "La testata Torino Cronaca segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 174mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -505,7 +573,7 @@
       "id": "PULSE-MEDIA-B5DC71E8784B419C",
       "story_fingerprint": "b5dc71e8784b419c1decac7c070149de2ad78f41c57db797470ce4ad570980cf",
       "published_at": "2026-11-15T22:52:53+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Inflazione in Italia: +4,4% da inizio guerra, dati CGIA",
       "reported_headline": "Inflazione in Italia: +4,4% da inizio guerra, dati CGIA - Gazzetta di Roma",
       "summary": "La testata Gazzetta di Roma segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -571,7 +639,7 @@
       "id": "PULSE-MEDIA-830EF97533EAE6D0",
       "story_fingerprint": "830ef97533eae6d03ad73a8d892ba8a734902e3e3368a5cd37cee9a46e9b874d",
       "published_at": "2026-11-15T22:01:10+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Belgio-Italia 4-1, pagelle: non basta super Donnarumma (7,5), Bastoni monumento immobile (5), Koleosho si brucia subito (5). Mancini travolto (5,5)",
       "reported_headline": "Belgio-Italia 4-1, pagelle: non basta super Donnarumma (7,5), Bastoni monumento immobile (5), Koleosho si brucia subito (5). Mancini travolto (5,5)",
       "summary": "La testata ilmessaggero.it segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 7,5, 5,5. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -639,7 +707,7 @@
       "id": "PULSE-MEDIA-4A7FEDEBD803CF5F",
       "story_fingerprint": "4a7fedebd803cf5ff0a21eb20e63fbe4c4e0594f5ab20f93211f9cc7c74fcec1",
       "published_at": "2026-11-15T18:25:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Caro vita, l'inflazione sale al 4,4% in Italia: ecco le province piemontesi più colpite",
       "reported_headline": "Caro vita, l'inflazione sale al 4,4% in Italia: ecco le province piemontesi più colpite - Torino Cronaca",
       "summary": "La testata Torino Cronaca segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -652,7 +720,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Disuguaglianze e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -878,7 +946,7 @@
       "id": "PULSE-MEDIA-B82029076618763B",
       "story_fingerprint": "b82029076618763b476903ec78694e0b6d8c53161f19cbdbd3b71d938c12e251",
       "published_at": "2026-11-15T12:39:09+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Classifica Qualità della vita 2026: la Basilicata resta nella parte bassa della classifica, tra luci sulla sicurezza e ombre su demografia e sanità. Ecco i dati dell'indagine",
       "reported_headline": "Classifica Qualità della vita 2026: la Basilicata resta nella parte bassa della classifica, tra luci sulla sicurezza e ombre su demografia e sanità. Ecco i dati dell'indagine - VultureNews.net",
       "summary": "La testata VultureNews.net segnala una notizia su salute. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1225,7 +1293,7 @@
       "id": "PULSE-MEDIA-7952AE0836553C3E",
       "story_fingerprint": "7952ae0836553c3e453bf3536a1ae01308dc78f4adfdabed63a88a9fedc4260e",
       "published_at": "2026-11-15T09:07:59+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "L’Italia s’è fermata a Hormuz. Proiezioni del pil al ribasso e inflazione al 5,6% a fine anno",
       "reported_headline": "L’Italia s’è fermata a Hormuz. Proiezioni del pil al ribasso e inflazione al 5,6% a fine anno - Quotidiano Nazionale",
       "summary": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1450,7 +1518,7 @@
       "id": "PULSE-MEDIA-088AD3CAB9A350DF",
       "story_fingerprint": "088ad3cab9a350dffd38f392dff78b7bf58f14613b4fcaefce8df2b840d915b2",
       "published_at": "2026-11-15T06:00:03+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Scuola, la docente che ha analizzato 5mila note disciplinari: «Nel 70% dei casi riguardano condotte non pericolose. Ma alla fine i ragazzi sospesi hanno più bocciature»",
       "reported_headline": "Scuola, la docente che ha analizzato 5mila note disciplinari: «Nel 70% dei casi riguardano condotte non pericolose. Ma alla fine i ragazzi sospesi hanno più bocciature» - Corriere di Bologna",
       "summary": "La testata Corriere di Bologna segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 5mila, 70%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1627,7 +1695,7 @@
       "id": "PULSE-MEDIA-003C3554D962D9B2",
       "story_fingerprint": "003c3554d962d9b2b5a451cadf2cd1e29c8bef2a6538f44e7ddd32ee1a45b395",
       "published_at": "2026-11-14T21:45:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Cresce l'inflazione, il Molise tiene, ma è un +3,3% e si temono nuovi rialzi",
       "reported_headline": "Cresce l'inflazione, il Molise tiene, ma è un +3,3% e si temono nuovi rialzi - RaiNews",
       "summary": "La testata RaiNews segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +3,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1693,7 +1761,7 @@
       "id": "PULSE-MEDIA-F776A59DC58D807D",
       "story_fingerprint": "f776a59dc58d807dbb03a088bf6846b256e0249deb892a6f01983e8ede93ce03",
       "published_at": "2026-11-14T17:14:02+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Cgia, da inizio conflitto nel Golfo Persico, in Molise inflazione a +2,9%",
       "reported_headline": "Cgia, da inizio conflitto nel Golfo Persico, in Molise inflazione a +2,9% - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +2,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1759,7 +1827,7 @@
       "id": "PULSE-MEDIA-A906A493FBFAE72F",
       "story_fingerprint": "a906a493fbfae72fa428b5e1f4595daf9aacfca762d9c60fb1cb46688002d907",
       "published_at": "2026-11-14T17:01:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Royal Enfield Himalayan 750, le prime prove: pregi, difetti e prezzi in Italia da 7.390 euro",
       "reported_headline": "Royal Enfield Himalayan 750, le prime prove: pregi, difetti e prezzi in Italia da 7.390 euro - Motori.money",
       "summary": "La testata Motori.money segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 7.390 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2145,7 +2213,7 @@
       "id": "PULSE-MEDIA-5CE7551AC3B7DA25",
       "story_fingerprint": "5ce7551ac3b7da25082d94ee3014377c509f52f6641ed70e45750905d06ecee5",
       "published_at": "2026-11-14T13:02:32+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Export, il Veneto traina l’Italia: 80 miliardi nel 2025. Verona ne vale 16",
       "reported_headline": "Export, il Veneto traina l’Italia: 80 miliardi nel 2025. Verona ne vale 16 - L\\'Adige di Verona",
       "summary": "La testata L\\'Adige di Verona segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 80 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2386,7 +2454,7 @@
       "id": "PULSE-MEDIA-FFEB56DE0E7B5956",
       "story_fingerprint": "ffeb56de0e7b5956eaef624d0f94bd493d4e2da7fe4ccfd3bedbc65a15f77874",
       "published_at": "2026-11-14T11:04:02+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Inflazione, Toscana prima in Italia per rincari. Prezzi su del 4,2%. Siena e Lucca seconde nella classifica nazionale",
       "reported_headline": "Inflazione, Toscana prima in Italia per rincari. Prezzi su del 4,2%. Siena e Lucca seconde nella classifica nazionale - La Nazione",
       "summary": "La testata La Nazione segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2452,7 +2520,7 @@
       "id": "PULSE-MEDIA-D4B8FB7ADBE1254E",
       "story_fingerprint": "d4b8fb7adbe1254e8fc907455f0c33ee3d319897afcb328970d0fcc0a2929ef7",
       "published_at": "2026-11-14T10:12:34+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Dall'inizio della guerra Usa-Iran l'inflazione è stata del +4,4%: Verona la più colpita in Veneto",
       "reported_headline": "Dall'inizio della guerra Usa-Iran l'inflazione è stata del +4,4%: Verona la più colpita in Veneto - L'Arena",
       "summary": "La testata L'Arena segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2518,7 +2586,7 @@
       "id": "PULSE-MEDIA-746302E198B832FC",
       "story_fingerprint": "746302e198b832fc113c1251251b417874e5e3fa396268ab6ea78184b418e6e3",
       "published_at": "2026-11-14T09:38:23+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Dall’inizio della guerra in Iran l’inflazione è aumentata del 4,4%: Sardegna seconda Regione più colpita",
       "reported_headline": "Dall’inizio della guerra in Iran l’inflazione è aumentata del 4,4%: Sardegna seconda Regione più colpita - L'Unione Sarda",
       "summary": "La testata L'Unione Sarda segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3888,7 +3956,7 @@
       "id": "PULSE-MEDIA-CD92B4BA35C7BE2A",
       "story_fingerprint": "cd92b4ba35c7be2a3e33595d77c429d322919735b20c412ed9fa48132574b589",
       "published_at": "2026-11-13T15:29:51+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Rifiuti tessili, 2,3 milioni di tonnellate nel 2024 a livello UE. Italia prima per quantità prodotte e riciclate",
       "reported_headline": "Rifiuti tessili, 2,3 milioni di tonnellate nel 2024 a livello UE. Italia prima per quantità prodotte e riciclate - Quotidiano Nazionale",
       "summary": "La testata Quotidiano Nazionale segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 2,3 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4063,7 +4131,7 @@
       "id": "PULSE-MEDIA-5406157139B35B04",
       "story_fingerprint": "5406157139b35b04cc8c1da9cfe823d06ce4585de794df179b53e871ea424705",
       "published_at": "2026-11-13T14:53:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Lo choc energetico frena l’Italia: “Pil fermo e inflazione verso il 5,7%”",
       "reported_headline": "Lo choc energetico frena l’Italia: “Pil fermo e inflazione verso il 5,7%” - La Stampa",
       "summary": "La testata La Stampa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,7%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4086,7 +4154,7 @@
       "topic": "ECONOMIA",
       "pulse_score": 27,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDNXSW51SkVUdmRaeVc2QWxOY19pNVAxYTFETWtfZW93U0ViOC1CVGRqbEFJNnJSSkhPTmgwV2JFS1ExRGhfelpVWnVJb2ZJYWlaZC1ZMFRXMWZVcG9GLUpXSkdkeURvcEM3S1JLbTZ6cXJyaHFLa0ZHYkhfcmx0MTgzTDlNZXJfeVljVVhCQ2swcnlaSzllLVBJUjc3QlBic2xRSXZCMmtveEpYbm41cUEzMW8zUENoNXRJb3ZQUVJYeDE1?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaFVhLUQxbkhWYndRUGRtR09na3dVdnA1UVFFTllibzlyckNoeUZPcEpTQnV6azQtZmY5Ykt5YlVrRXJqSFE0SjhfX2YxNnRoTUpvMURnZjZYVGtPbGo5b3NFQXJtUGVDY0cxdGJNeUM1NXFxT2dTSmFYNWdiTEFxOElYQzJUOEd5UDNTVVhtaHgyRHFlT2p3YlVoSWN2MlNnQmRGYkU2LWZOTVlZSzYyeVJ5RUdkUWNLVnlKSlFleDBvazFubmlEeWx30gHKAUFVX3lxTE1oVWEtRDFuSFZid1FQZG1HT2drd1V2cDVRUUVOWWJvOXJyQ2h5Rk9wSlNCdXprNC1mZjliS3liVWtFcmpIUTRKOF9fZjE2dGhNSm8xRGdmNlhUa09sajlvc0VBcm1QZUNjRzF0Yk15QzU1cXFPZ1NKYVg1Z2JMQXE4SVhDMlQ4R3lQM1NVWG1oeDJEcWVPandiVWhJY3YyU2dCZEZiRTYtZk5NWVlLNjJ5UnlFR2RRY0tWeUpKUWV4MG9rMW5uaUR5bHc?oc=5",
         "domain": "La Stampa",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
@@ -4117,7 +4185,7 @@
       "discovery": {
         "role": "journalistic_radar",
         "outlet": "La Stampa",
-        "original_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDNXSW51SkVUdmRaeVc2QWxOY19pNVAxYTFETWtfZW93U0ViOC1CVGRqbEFJNnJSSkhPTmgwV2JFS1ExRGhfelpVWnVJb2ZJYWlaZC1ZMFRXMWZVcG9GLUpXSkdkeURvcEM3S1JLbTZ6cXJyaHFLa0ZHYkhfcmx0MTgzTDlNZXJfeVljVVhCQ2swcnlaSzllLVBJUjc3QlBic2xRSXZCMmtveEpYbm41cUEzMW8zUENoNXRJb3ZQUVJYeDE1?oc=5",
+        "original_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNaFVhLUQxbkhWYndRUGRtR09na3dVdnA1UVFFTllibzlyckNoeUZPcEpTQnV6azQtZmY5Ykt5YlVrRXJqSFE0SjhfX2YxNnRoTUpvMURnZjZYVGtPbGo5b3NFQXJtUGVDY0cxdGJNeUM1NXFxT2dTSmFYNWdiTEFxOElYQzJUOEd5UDNTVVhtaHgyRHFlT2p3YlVoSWN2MlNnQmRGYkU2LWZOTVlZSzYyeVJ5RUdkUWNLVnlKSlFleDBvazFubmlEeWx30gHKAUFVX3lxTE1oVWEtRDFuSFZid1FQZG1HT2drd1V2cDVRUUVOWWJvOXJyQ2h5Rk9wSlNCdXprNC1mZjliS3liVWtFcmpIUTRKOF9fZjE2dGhNSm8xRGdmNlhUa09sajlvc0VBcm1QZUNjRzF0Yk15QzU1cXFPZ1NKYVg1Z2JMQXE4SVhDMlQ4R3lQM1NVWG1oeDJEcWVPandiVWhJY3YyU2dCZEZiRTYtZk5NWVlLNjJ5UnlFR2RRY0tWeUpKUWV4MG9rMW5uaUR5bHc?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-14T20:50:47.597786+00:00",
@@ -4127,7 +4195,7 @@
       "id": "PULSE-3DB1E5799958EF5F",
       "story_fingerprint": "3db1e5799958ef5f54566e82",
       "published_at": "2026-11-13T14:46:28+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 95,
       "public_source": {
@@ -4569,7 +4637,7 @@
       "id": "PULSE-MEDIA-4281D61DC0BF20AC",
       "story_fingerprint": "4281d61dc0bf20ac1b8e58cccca05be9bf1094507cf594d9f805ad7c535ef7f4",
       "published_at": "2026-11-13T13:04:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Crisi climatica, in Italia oltre 2mila eventi estremi in 12 anni. Legambiente: \"Rendere operativo il Piano di adattamento\"",
       "reported_headline": "Crisi climatica, in Italia oltre 2mila eventi estremi in 12 anni. Legambiente: \"Rendere operativo il Piano di adattamento\" - Sanità Informazione",
       "summary": "La testata Sanità Informazione segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 2mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4800,7 +4868,7 @@
       "id": "PULSE-MEDIA-74E4B6B1621CCEF5",
       "story_fingerprint": "74e4b6b1621ccef599665d0b7dbdc1ec0bc3486017ef4682d76a875db6a79c8f",
       "published_at": "2026-11-13T12:34:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Influenza. Nel Lazio 531.569 vaccinati (-13%) ma crescono le somministrazioni in farmacia e nei centri vaccinali",
       "reported_headline": "Influenza. Nel Lazio 531.569 vaccinati (-13%) ma crescono le somministrazioni in farmacia e nei centri vaccinali - Quotidiano Sanità",
       "summary": "La testata Quotidiano Sanità segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 531.569, -13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4944,7 +5012,7 @@
       "id": "PULSE-MEDIA-53B6194FEAA6AEF9",
       "story_fingerprint": "53b6194feaa6aef9cd577cbace9b6c27d013983c45893b713ff076066f90173b",
       "published_at": "2026-11-13T12:06:40+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Bankitalia, in Puglia Pil in crescita dell'1% nei primi sei mesi. Occupazione in ripresa (+0,6%), ma schizzano del 40% le richieste di cig per l'ex Ilva",
       "reported_headline": "Bankitalia, in Puglia Pil in crescita dell'1% nei primi sei mesi. Occupazione in ripresa (+0,6%), ma schizzano del 40% le richieste di cig per l'ex Ilva - Corriere Bari",
       "summary": "La testata Corriere Bari segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 1%, +0,6%, 40%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5107,7 +5175,7 @@
       "id": "PULSE-MEDIA-49B5F202B74C0725",
       "story_fingerprint": "49b5f202b74c0725a70f639511d4db4d24a1a3f47364b8cfe852b73b5050a045",
       "published_at": "2026-11-13T11:37:46+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6%",
       "reported_headline": "Bankitalia, in Puglia nei primi 6 mesi del 2026 il Pil cresce dell'1%. E l'occupazione segna il +0,6% - La Gazzetta del Mezzogiorno",
       "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 1%, +0,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5452,11 +5520,11 @@
       "id": "PULSE-MEDIA-F92D954D1C4F411E",
       "story_fingerprint": "f92d954d1c4f411ecef63a65f2e53d229d06ab939099db1d70dce9aed698dea4",
       "published_at": "2026-11-13T11:20:06+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
-      "headline": "++ Istat, a settembre prezzi all'importazione +9,6% su anno, +1,9% su mese ++",
-      "reported_headline": "++ Istat, a settembre prezzi all'importazione +9,6% su anno, +1,9% su mese ++ - ANSA",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
+      "headline": "Istat, a settembre prezzi all'importazione +9,6% su anno, +1,9% su mese",
+      "reported_headline": "Istat, a settembre prezzi all'importazione +9,6% su anno, +1,9% su mese - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +9,6%, +1,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
-      "pulse_title": "++ Istat, a settembre prezzi all'importazione +9,6% su anno, +1,9% su mese ++",
+      "pulse_title": "Istat, a settembre prezzi all'importazione +9,6% su anno, +1,9% su mese",
       "pulse_summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +9,6%, +1,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_article_body": [
         {
@@ -5475,7 +5543,7 @@
       "topic": "ECONOMIA",
       "pulse_score": 39,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPaEdwbW81ejVfWkVxX0ZCMXJmR0xBb3Y4OUd3NUc2NkdvU3NxUVJDOGxDNjA2YjRUVkpGSnYxRXVrV05TMi1YZHUzczl2ZGZqRnNlbm04RktManRITnVEQTVkYm05OExsbXM5M2xzdG5YUkQtN3ZRTUNuNUgwMlRwWjZKc0E1MGVkR2xFRFVjNVZYUnUzUUVyNlIxTHA4Y25Ga1V2ei1yVjlDRnYtSjJOZDVjRGZEZWswRDVCYkJQX1BGTkZZQ1dnWUxnVFlzUmV3bGlnOFBIYWRudkEwdHR0bHVZMkMyc0J3UmRyNnF3QzltNDTSAfgBQVVfeXFMUExRWnNiVkVvNGQ2UkMteEhQSFMtcElOb3pNSF8xVkVrMG42Mmd2b21BSk1DRjBHOFZWNVp5TzI1YURlNnBpdnVfNmVPcTRmRi1EM2hINGJkTnFncEoxR2Z6S1RFNi05eDVtRC1hU2dRNFVjXzhWaDdBeWNCcVdQMm5jVHU2UHB0RVpyNGJLVmVnNEF1UDBUVThYTk1INDdlQ2M3LWpuYVAxR0sxQnJNcmlqbDZqSTBaQ0d5bEtTWDhzMG5keVhNX3lVcFh3OEJUdDJnR2xmZUFEM2xzbi1yYXh0M1RPZEJVR3AyUFhfc3VhVHljNUlraVc?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOX29BUkNvVmtQZW5HQmFCWnBDNlFnLV9yOGxqQUptMEhjSzdtd1M4UkJicjFGN1hfSnd5d1RZWjl1bmJxSVAtVkNieTVwRm91bTE0WFBqZWx6Y1FpOWllM0NjYlNodjRNc3NvN1NxamZYTEtXWG00dVRaRUlUQkxsNVhPYXQzLVZwdGVNam1YWFR2elBLakFlRndxVmRJYzVDcDZwNlBqelJGT1BGT2hSMmwtNlRtVUJTYmR4VFd4UHFRUVNNSlliS0tReVUzV05yMVFoU0tGTEN0YTFoV1R6QllGWkdHUW82U2tQRGV30gHzAUFVX3lxTE1VZjNEOGtpX0NldHpqZkJzUFhteTZDVWNmc3BlQkVIaHdtdHpMNFRCaWdrYm1mbGNId2xfVFNTUWVLZzFXYmV1dndQNnNyRzVGbVMtMzNnZWlnUjI0N21PWVVmVEtSeXdsdm1QYjlRMnl4U1lfd05HYlo3azNVWkxqVFFqcGVnNzNEV1NXejV1U1lCMGlhODVOUHl3amdMUEN5NWRNbGVubzltdmpHTU1zcTFDbjJfeDRkVDJXTnhJSEJ0WU1oUklvTWVPSGtadWo0Z2lJbEpfS1FpUkZTaW5Sb2NaSHpTUmFTUkNpNFJTelZ0SQ?oc=5",
         "domain": "ANSA",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
@@ -5510,7 +5578,7 @@
       "discovery": {
         "role": "journalistic_radar",
         "outlet": "ANSA",
-        "original_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPaEdwbW81ejVfWkVxX0ZCMXJmR0xBb3Y4OUd3NUc2NkdvU3NxUVJDOGxDNjA2YjRUVkpGSnYxRXVrV05TMi1YZHUzczl2ZGZqRnNlbm04RktManRITnVEQTVkYm05OExsbXM5M2xzdG5YUkQtN3ZRTUNuNUgwMlRwWjZKc0E1MGVkR2xFRFVjNVZYUnUzUUVyNlIxTHA4Y25Ga1V2ei1yVjlDRnYtSjJOZDVjRGZEZWswRDVCYkJQX1BGTkZZQ1dnWUxnVFlzUmV3bGlnOFBIYWRudkEwdHR0bHVZMkMyc0J3UmRyNnF3QzltNDTSAfgBQVVfeXFMUExRWnNiVkVvNGQ2UkMteEhQSFMtcElOb3pNSF8xVkVrMG42Mmd2b21BSk1DRjBHOFZWNVp5TzI1YURlNnBpdnVfNmVPcTRmRi1EM2hINGJkTnFncEoxR2Z6S1RFNi05eDVtRC1hU2dRNFVjXzhWaDdBeWNCcVdQMm5jVHU2UHB0RVpyNGJLVmVnNEF1UDBUVThYTk1INDdlQ2M3LWpuYVAxR0sxQnJNcmlqbDZqSTBaQ0d5bEtTWDhzMG5keVhNX3lVcFh3OEJUdDJnR2xmZUFEM2xzbi1yYXh0M1RPZEJVR3AyUFhfc3VhVHljNUlraVc?oc=5",
+        "original_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOX29BUkNvVmtQZW5HQmFCWnBDNlFnLV9yOGxqQUptMEhjSzdtd1M4UkJicjFGN1hfSnd5d1RZWjl1bmJxSVAtVkNieTVwRm91bTE0WFBqZWx6Y1FpOWllM0NjYlNodjRNc3NvN1NxamZYTEtXWG00dVRaRUlUQkxsNVhPYXQzLVZwdGVNam1YWFR2elBLakFlRndxVmRJYzVDcDZwNlBqelJGT1BGT2hSMmwtNlRtVUJTYmR4VFd4UHFRUVNNSlliS0tReVUzV05yMVFoU0tGTEN0YTFoV1R6QllGWkdHUW82U2tQRGV30gHzAUFVX3lxTE1VZjNEOGtpX0NldHpqZkJzUFhteTZDVWNmc3BlQkVIaHdtdHpMNFRCaWdrYm1mbGNId2xfVFNTUWVLZzFXYmV1dndQNnNyRzVGbVMtMzNnZWlnUjI0N21PWVVmVEtSeXdsdm1QYjlRMnl4U1lfd05HYlo3azNVWkxqVFFqcGVnNzNEV1NXejV1U1lCMGlhODVOUHl3amdMUEN5NWRNbGVubzltdmpHTU1zcTFDbjJfeDRkVDJXTnhJSEJ0WU1oUklvTWVPSGtadWo0Z2lJbEpfS1FpUkZTaW5Sb2NaSHpTUmFTUkNpNFJTelZ0SQ?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-15T08:58:38.463809+00:00",
@@ -5520,7 +5588,7 @@
       "id": "PULSE-MEDIA-5459C303BCC02222",
       "story_fingerprint": "5459c303bcc02222959f90d7b6d0da7087de8d8862206d43beb60003e64eaf0e",
       "published_at": "2026-11-13T10:51:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Bankitalia, 'nel 2026 in Puglia l'occupazione cresce dello 0,6%'",
       "reported_headline": "Bankitalia, 'nel 2026 in Puglia l'occupazione cresce dello 0,6%' - ANSA",
       "summary": "La testata ANSA segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 0,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5586,7 +5654,7 @@
       "id": "PULSE-E3740D2E26A35E9B",
       "story_fingerprint": "e3740d2e26a35e9ba071d630",
       "published_at": "2026-11-13T10:51:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "topic": "LAVORO",
       "pulse_score": 49,
       "patterns": [],
@@ -5809,7 +5877,7 @@
       "id": "PULSE-MEDIA-794924F14E3FBEE3",
       "story_fingerprint": "794924f14e3fbee3f351a83c3302aae031759842b35a3cf3e95f1cf3920147b6",
       "published_at": "2026-11-13T10:47:00+00:00",
-      "last_seen_at": "2026-11-16T09:48:31.385193+00:00",
+      "last_seen_at": "2026-11-16T10:47:00.881278+00:00",
       "headline": "Istat, a settembre export -3,4% in volume e +3,8% in valore (2)",
       "reported_headline": "Istat, a settembre export -3,4% in volume e +3,8% in valore (2) - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -3,4%, +3,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5832,7 +5900,7 @@
       "topic": "ECONOMIA",
       "pulse_score": 40,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPUVdpUTAybzZuS1IyMFlud1lraEV5MVp1ZEtYN0VKYUpGWGNYbXo0T3lUX1NLd1hiajNBM29MY1hCZ2pka2xOb05TV1hHT003U0NXeGJ5T0RnR1VlY3o3UHprR1NfMjU0RDhvMVZKNXhfZUZOVHIwTmF1dnZNRTAzZzF5d3E4RlBWQjVLdFlhLVB6ZThfMjVCRFF5YldnV2xuTDlzb3FuenVuNmUxT0U1YWFuTEZKNVNRUjQ3UW9nVUFvZ21yQTRaeTYtNXZEU3p5MC1rWjNxUUZHT2M2VVU1Q055cWowY2dn0gHuAUFVX3lxTE5yam5RckQySnBQTHFKczZLSU9BV2JzM1ZRTkRyS2t5WFV0b3RXX3NCRDhFNEJkcExjanhTMXpNTC1ydmdRYk1HT1d4Zm1hSXBjTmVqdEM1MFFERlJReFV2UjRrU09LbGRydG5uU0V4UkVXb0g3TEZCeURJSlByRDRyY2NmRXBIN2dkXzd5RFNDNm5EaWZiSjdBeEk5WDJHdVhvd25vRVFsOVB4Y2R6UmR0SmYydmlYTVNwTmVqcEN0M1U3OE9OODBxMGlRTFg1SmdpM3k3SlVQa3BqdG9DOGU5dnlsWkdQZUJhRUItb2c?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcmpuUXJEMkpwUExxSnM2S0lPQVdiczNWUU5EcktreVhVdG90V19zQkQ4RTRCZHBMY2p4UzF6TUwtcnZnUWJNR09XeGZtYUlwY05lanRDNTBRREZSUXhVdlI0a1NPS2xkcnRublNFeFJFV29IN0xGQnlESUpQckQ0cmNjZkVwSDdnZF83eURTQzZuRGlmYko3QXhJOVgyR3VYb3dub0VRbDlQeGNkelJkdEpmMnZpWE1TcE5lanBDdDNVNzhPTjgwcTBpUUxYNUpnaTN5N0pVUGtwanRvQzhlOXZ5bFpHUGVCYUVCLW9n?oc=5",
         "domain": "ANSA",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
@@ -5867,7 +5935,7 @@
       "discovery": {
         "role": "journalistic_radar",
         "outlet": "ANSA",
-        "original_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPUVdpUTAybzZuS1IyMFlud1lraEV5MVp1ZEtYN0VKYUpGWGNYbXo0T3lUX1NLd1hiajNBM29MY1hCZ2pka2xOb05TV1hHT003U0NXeGJ5T0RnR1VlY3o3UHprR1NfMjU0RDhvMVZKNXhfZUZOVHIwTmF1dnZNRTAzZzF5d3E4RlBWQjVLdFlhLVB6ZThfMjVCRFF5YldnV2xuTDlzb3FuenVuNmUxT0U1YWFuTEZKNVNRUjQ3UW9nVUFvZ21yQTRaeTYtNXZEU3p5MC1rWjNxUUZHT2M2VVU1Q055cWowY2dn0gHuAUFVX3lxTE5yam5RckQySnBQTHFKczZLSU9BV2JzM1ZRTkRyS2t5WFV0b3RXX3NCRDhFNEJkcExjanhTMXpNTC1ydmdRYk1HT1d4Zm1hSXBjTmVqdEM1MFFERlJReFV2UjRrU09LbGRydG5uU0V4UkVXb0g3TEZCeURJSlByRDRyY2NmRXBIN2dkXzd5RFNDNm5EaWZiSjdBeEk5WDJHdVhvd25vRVFsOVB4Y2R6UmR0SmYydmlYTVNwTmVqcEN0M1U3OE9OODBxMGlRTFg1SmdpM3k3SlVQa3BqdG9DOGU5dnlsWkdQZUJhRUItb2c?oc=5",
+        "original_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOcmpuUXJEMkpwUExxSnM2S0lPQVdiczNWUU5EcktreVhVdG90V19zQkQ4RTRCZHBMY2p4UzF6TUwtcnZnUWJNR09XeGZtYUlwY05lanRDNTBRREZSUXhVdlI0a1NPS2xkcnRublNFeFJFV29IN0xGQnlESUpQckQ0cmNjZkVwSDdnZF83eURTQzZuRGlmYko3QXhJOVgyR3VYb3dub0VRbDlQeGNkelJkdEpmMnZpWE1TcE5lanBDdDNVNzhPTjgwcTBpUUxYNUpnaTN5N0pVUGtwanRvQzhlOXZ5bFpHUGVCYUVCLW9n?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-15T13:05:59.884390+00:00",
