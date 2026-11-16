@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-16T12:23:16.900509+00:00",
+  "generated_at": "2026-11-16T15:52:28.088827+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-16T12:23:16.900509+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "published_at": "2026-11-16T15:52:28.088827+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -109,10 +109,655 @@
       "verification_tier": "previously_verified_official_single_observation"
     },
     {
+      "id": "PULSE-MEDIA-AE34CB08BEA1E8AA",
+      "story_fingerprint": "ae34cb08bea1e8aaa4b7dd7e1b9abae8b1c656fede2e3eb5869830c812085d1f",
+      "published_at": "2026-11-16T15:35:19+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Ocse, reddito reale delle famiglie -0,1% nel secondo trimestre. In Italia calo dell’1%",
+      "reported_headline": "Ocse, reddito reale delle famiglie -0,1% nel secondo trimestre. In Italia calo dell’1% - Italpress",
+      "summary": "La testata Italpress segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati -0,1%, 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ocse, reddito reale delle famiglie -0,1% nel secondo trimestre. In Italia calo dell’1%",
+      "pulse_summary": "La testata Italpress segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati -0,1%, 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Italpress segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati -0,1%, 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 34,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5VeEczalZJSWRQT0lGWDltdGc0Q1dtbFR0dlJ5bHVLNHNHaTZZUVo1ZnFpa0RrVmFQMXFDcEZVZ1BZUWY4ZjF5VEFHc2ZsY2RydHRCd2VsMk85Y3hsZ1k3b0VkTHJJYnpkNmY1QXpmTm50Yk1PQVE?oc=5",
+        "domain": "Italpress",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "-0,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Italpress",
+        "original_url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5VeEczalZJSWRQT0lGWDltdGc0Q1dtbFR0dlJ5bHVLNHNHaTZZUVo1ZnFpa0RrVmFQMXFDcEZVZ1BZUWY4ZjF5VEFHc2ZsY2RydHRCd2VsMk85Y3hsZ1k3b0VkTHJJYnpkNmY1QXpmTm50Yk1PQVE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-16T15:52:28.088827+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-30A68649534D6564",
+      "story_fingerprint": "30a68649534d6564133588697df9cd8c8b53f98fd97a32235c3bc65146b1bf25",
+      "published_at": "2026-11-16T15:18:51+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Nel secondo trimestre scende dell’1% il reddito reale pro capite delle famiglie italiane: peggio che negli altri Paesi sviluppati",
+      "reported_headline": "Nel secondo trimestre scende dell’1% il reddito reale pro capite delle famiglie italiane: peggio che negli altri Paesi sviluppati",
+      "summary": "La testata ilfattoquotidiano.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Nel secondo trimestre scende dell’1% il reddito reale pro capite delle famiglie italiane: peggio che negli altri Paesi sviluppati",
+      "pulse_summary": "La testata ilfattoquotidiano.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ilfattoquotidiano.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Il Fatto Quotidiano - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "public_source": {
+        "url": "https://www.ilfattoquotidiano.it/2026/11/16/reddito-reale-famiglie-italiane-secondo-trimestre-notizie/8573720/",
+        "domain": "ilfattoquotidiano.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ilfattoquotidiano.it",
+        "original_url": "https://www.ilfattoquotidiano.it/2026/11/16/reddito-reale-famiglie-italiane-secondo-trimestre-notizie/8573720/",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-16T15:52:28.088827+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-2C4BB9C6D223A953",
+      "story_fingerprint": "2c4bb9c6d223a95388786897",
+      "published_at": "2026-11-16T15:18:51+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "patterns": [],
+      "public_source": {
+        "url": "https://www.ilfattoquotidiano.it/2026/11/16/reddito-reale-famiglie-italiane-secondo-trimestre-notizie/8573720/",
+        "domain": "ilfattoquotidiano.it",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Nel secondo trimestre scende dell’1% il reddito reale pro capite delle famiglie italiane: peggio che negli altri Paesi sviluppati",
+      "summary": "Tra aprile e giugno di quest’anno il reddito reale pro capite delle famiglie italiane è sceso dell’1% rispetto al trimestre precedente, dopo essere aumentato dello 0,4% nei primi tre mesi dell’anno. È la fotografia restituita dagli ultimi dati dell’Ocse. Nello stesso periodo il Pil reale pro capite ha registrato una crescita dello 0,2%. Ma da […] L'articolo Nel secondo trimestre scende dell’1% il reddito reale pro capite delle famiglie italiane: peggio che negli altri Paesi sviluppati proviene da Il Fatto Quotidiano .",
+      "statistical_claims": [
+        {
+          "raw_value": "1%",
+          "verified": false
+        },
+        {
+          "raw_value": "1%",
+          "verified": false
+        },
+        {
+          "raw_value": "0,4%",
+          "verified": false
+        },
+        {
+          "raw_value": "0,2%",
+          "verified": false
+        },
+        {
+          "raw_value": "1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-468F191D17A4B4C7",
+      "story_fingerprint": "468f191d17a4b4c72b4c073fba935270aea95546266af1c9ffcac45fc1e5f25f",
+      "published_at": "2026-11-16T15:11:00+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1%",
+      "reported_headline": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1%",
+      "summary": "La testata rainews.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1%",
+      "pulse_summary": "La testata rainews.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata rainews.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «RaiNews - Notizie italiane». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 43,
+      "public_source": {
+        "url": "https://www.rainews.it/articoli/2026/11/ocse-in-italia-linflazione-continua-a-mordere-il-reddito-reale-pro-capite-scende-dell1-d2b9feb4-5219-44c3-b42b-97acf01bb222.html",
+        "domain": "rainews.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "rainews.it",
+        "original_url": "https://www.rainews.it/articoli/2026/11/ocse-in-italia-linflazione-continua-a-mordere-il-reddito-reale-pro-capite-scende-dell1-d2b9feb4-5219-44c3-b42b-97acf01bb222.html",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-3F9B7C1F2E42D363",
+      "story_fingerprint": "3f9b7c1f2e42d363c82544257cb0fa8f97d3dace4e9b2cf5b045dc530a51fea5",
+      "published_at": "2026-11-16T14:46:00+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Imprese Benefit, la Puglia supera la media nazionale: 286 aziende attive e oltre 2 miliardi di valore produttivo",
+      "reported_headline": "Imprese Benefit, la Puglia supera la media nazionale: 286 aziende attive e oltre 2 miliardi di valore produttivo - BariToday",
+      "summary": "La testata BariToday segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 2 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Imprese Benefit, la Puglia supera la media nazionale: 286 aziende attive e oltre 2 miliardi di valore produttivo",
+      "pulse_summary": "La testata BariToday segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 2 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata BariToday segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 2 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - economia lavoro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 44,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNazZSajN3VHE2ZjNCX3IzSXgyZmR6TjVLSWZnaEpVeUduUGlUZkRwQ19Zb3lsREdBMkRpdzRfLWdYdzdlZlphWG5oRE5wVUZXbWQ1dDY5ZVNOb1JNeFFSYkJXYzV2UDZtUkNvWlJEazBXRHhBU3QtVzhkc25ndWh0Y1ZrQQ?oc=5",
+        "domain": "BariToday",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "2 miliardi",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "puglia"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "BariToday",
+        "original_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNazZSajN3VHE2ZjNCX3IzSXgyZmR6TjVLSWZnaEpVeUduUGlUZkRwQ19Zb3lsREdBMkRpdzRfLWdYdzdlZlphWG5oRE5wVUZXbWQ1dDY5ZVNOb1JNeFFSYkJXYzV2UDZtUkNvWlJEazBXRHhBU3QtVzhkc25ndWh0Y1ZrQQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-28AAAA865B9B2428",
+      "story_fingerprint": "28aaaa865b9b2428e06c23653ed853d8ece04c91235c5df22cf4287645dd2e80",
+      "published_at": "2026-11-16T14:39:00+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Ocse: -0,1% t/t reddito reale famiglie in 2* trim, -1% in Italia",
+      "reported_headline": "Ocse: -0,1% t/t reddito reale famiglie in 2* trim, -1% in Italia - Milano Finanza",
+      "summary": "La testata Milano Finanza segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati -0,1%, -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ocse: -0,1% t/t reddito reale famiglie in 2* trim, -1% in Italia",
+      "pulse_summary": "La testata Milano Finanza segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati -0,1%, -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Milano Finanza segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati -0,1%, -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · nazionali · gruppo 05». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 40,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObjhJQUh2b09iSmVZbThVVUZlckJXOU1IeDBBT0FIM29jcjJzSVRnSEN0ZkhseFZkdjUtbklmNmlDRFFLR01nbzFTT0pYTXUyQWdleXVHckhIZ1JUZW80bnl4X3E4QWVwd3daQjRtbXJDbkhzMFlESmk2d3ZJc2tDQ3dYb2lXcVk0V2p3Yk5ubnVmR3gyTmVNMFhlUHFxbVlLSF92elZKSTZSQmR2WnhUT085NmlBejFP?oc=5",
+        "domain": "Milano Finanza",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "-0,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "-1%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Milano Finanza",
+        "original_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObjhJQUh2b09iSmVZbThVVUZlckJXOU1IeDBBT0FIM29jcjJzSVRnSEN0ZkhseFZkdjUtbklmNmlDRFFLR01nbzFTT0pYTXUyQWdleXVHckhIZ1JUZW80bnl4X3E4QWVwd3daQjRtbXJDbkhzMFlESmk2d3ZJc2tDQ3dYb2lXcVk0V2p3Yk5ubnVmR3gyTmVNMFhlUHFxbVlLSF92elZKSTZSQmR2WnhUT085NmlBejFP?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-DEBE34F1A80B2549",
+      "story_fingerprint": "debe34f1a80b254918481d6b7a4dbc9b5b7c790b54787f2496de6118fee935db",
+      "published_at": "2026-11-16T14:33:52+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050",
+      "reported_headline": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
+      "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 59,8%, 53,3%, 52,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050",
+      "pulse_summary": "La testata Orizzonte Scuola Notizie segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 59,8%, 53,3%, 52,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Orizzonte Scuola Notizie segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 59,8%, 53,3%, 52,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - salute scuola ambiente». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "SALUTE",
+      "pulse_score": 55,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
+        "domain": "Orizzonte Scuola Notizie",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "59,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "53,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "52,6%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Orizzonte Scuola Notizie",
+        "original_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-520F66922C507515",
+      "story_fingerprint": "520f66922c507515f799091e",
+      "published_at": "2026-11-16T14:33:52+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "topic": "SALUTE",
+      "pulse_score": 55,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
+        "domain": "Orizzonte Scuola Notizie",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
+      "summary": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 Orizzonte Scuola Notizie",
+      "statistical_claims": [
+        {
+          "raw_value": "14 ",
+          "verified": false
+        },
+        {
+          "raw_value": "18 ",
+          "verified": false
+        },
+        {
+          "raw_value": "59,8%",
+          "verified": false
+        },
+        {
+          "raw_value": "53,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "52,6%",
+          "verified": false
+        },
+        {
+          "raw_value": "14 ",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-D8C74DECF99EAE50",
+      "story_fingerprint": "d8c74decf99eae507b6a836e55aa2e75a2856d5c05d81692759af3869b7d4ec2",
+      "published_at": "2026-11-16T14:23:56+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Pesa l’inflazione, nel II trimestre in Italia reddito reale procapite -1%",
+      "reported_headline": "Pesa l’inflazione, nel II trimestre in Italia reddito reale procapite -1% - Conquiste del Lavoro",
+      "summary": "La testata Conquiste del Lavoro segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Pesa l’inflazione, nel II trimestre in Italia reddito reale procapite -1%",
+      "pulse_summary": "La testata Conquiste del Lavoro segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Conquiste del Lavoro segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Tasse redditi casa». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbU1CdllOM21uaU4yQTVXN2tKTkdrellvMEtHaXItT1I1bk9CLWpDTlBCc3BRdG82RXpBajdaYWp0b2ZSQTdkcWR0REZaNE9VenRGU1dzNVJkSWVxRlhXbzVtejBkbXY5TW9XelVaZUNOdE1yQzVXWXhkcEd3d29lNDM3cjRtb1dJT2NoWnlmdTJER001S2dfLVlFZldRN3VEZkhBRkxyTXdTQUlmcHpHRVRhQW1GaXQyTWNvamJYMlF5MjFlUU1uXw?oc=5",
+        "domain": "Conquiste del Lavoro",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "-1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Conquiste del Lavoro",
+        "original_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbU1CdllOM21uaU4yQTVXN2tKTkdrellvMEtHaXItT1I1bk9CLWpDTlBCc3BRdG82RXpBajdaYWp0b2ZSQTdkcWR0REZaNE9VenRGU1dzNVJkSWVxRlhXbzVtejBkbXY5TW9XelVaZUNOdE1yQzVXWXhkcEd3d29lNDM3cjRtb1dJT2NoWnlmdTJER001S2dfLVlFZldRN3VEZkhBRkxyTXdTQUlmcHpHRVRhQW1GaXQyTWNvamJYMlF5MjFlUU1uXw?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-52742A878332AA13",
+      "story_fingerprint": "52742a878332aa13b0bdc2e7",
+      "published_at": "2026-11-16T12:49:48+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 53,
+      "patterns": [],
+      "public_source": {
+        "url": "https://www.corriere.it/economia/lavoro/26_novembre_16/redditi-ancora-in-calo-dell-1-il-pil-cresce-ma-le-famiglie-diventano-piu-povere-perche-succede-in-italia-e-non-altrove-i-dati-ocse-659832e5-b385-480d-8660-8b90bbef7xlk.shtml",
+        "domain": "corriere.it",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Redditi ancora in calo (dell’1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
+      "summary": "Il reddito reale delle famiglie italiane arretra dell’1% nel secondo trimestre. A pesare l’inflazione e il calo delle prestazioni sociali. La media Ocse si ferma a -0,1%",
+      "statistical_claims": [
+        {
+          "raw_value": "1%",
+          "verified": false
+        },
+        {
+          "raw_value": "1%",
+          "verified": false
+        },
+        {
+          "raw_value": "-0,1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-E8102925AC0A6A0D",
+      "story_fingerprint": "e8102925ac0a6a0d7345adef92d2345a2498b01b1b5e1acca91624e8d692b6b0",
+      "published_at": "2026-11-16T12:49:00+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
+      "reported_headline": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse - Corriere della Sera",
+      "summary": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
+      "pulse_summary": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · nazionali · gruppo 01». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 32,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UdIB0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UQ?oc=5",
+        "domain": "Corriere della Sera",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Corriere della Sera",
+        "original_url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UdIB0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-9F1A5806531ABEF7",
       "story_fingerprint": "9f1a5806531abef77331f6c6",
       "published_at": "2026-11-16T12:15:23+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 54,
       "patterns": [],
@@ -211,7 +856,7 @@
       "id": "PULSE-MEDIA-8C9F5860B5C3CA94",
       "story_fingerprint": "8c9f5860b5c3ca949fafcaa7704ce8f09695a2e22c450aed02bb84f74489e816",
       "published_at": "2026-11-16T12:07:51+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
       "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1% - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -275,20 +920,20 @@
       "id": "PULSE-MEDIA-AC130D46F803FDBF",
       "story_fingerprint": "ac130d46f803fdbf2d0566469a09f5010d04143e20e865ba4c752473466b0ac1",
       "published_at": "2026-11-16T12:01:07+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1%",
-      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1% - Quotidiano Nazionale",
-      "summary": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1% - La Gazzetta del Mezzogiorno",
+      "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1%",
-      "pulse_summary": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_article_body": [
         {
           "heading": "La notizia segnalata",
-          "text": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+          "text": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · nazionali · gruppo 04». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · locali · gruppo 19». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -298,8 +943,8 @@
       "topic": "ECONOMIA",
       "pulse_score": 27,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA0ZDB6ci01dm9FNHFUbnN1Zmc0cjJLbjhkUEtMNk1oa1JoTkY0NVNSX3VUWWM0SW5GdjlPOVZ4VFBzTG1pZWpleHZtU3ZCY183UVZ3OVBka19sUGl6QnlIejhQcFBRYk51U3JERk13YWlzU09EdW1uV0hzODNnQQ?oc=5",
-        "domain": "Quotidiano Nazionale",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTDNXRGViT004QWJINFRYcmRLQ3BCSW1qNll2S3BYSEJneFRWeEJnZlZ3bXJHM1A5STByS2cxZVpWbVIzNDN0ZWIyY0luUmRqRFBtMWdjT3hqeXFjVzJ1QS1zT2g0dWFRUkRsWWZJTTJPcWZqX01GNjg5bGJleGVHZWdURjIyNUp4UW83YkFBdlpOUEktVWVYQUxtWkpVVE1ObWVScnBOeGVmanpOWlRRSzdnR2dvTURRMG9xWk4tb3hZVDJZT1NZdjZtSjRLVHJyMjRPbWYxY29PUdIB2AFBVV95cUxORkVjcS04TUFZVVRHOFl4bUU0QUJKZ0pjeVhYLXRYbXJqTkZTUVYyaGdTTmhmcUhESk9WR1NpekpaRV84NzI2bjlYQ1BVSFBwamVCMG1qWHFibnZvY3k2SFl1YUVCdkEzZ2kwNDlnNVVRTE1kR0g3ZmxoTTg5cFhnMWtaSDdCX21aQV9qei12UzZaQXIwOE1YQ0FvWXdPMzZaVzhEamZzRU5NLXdWQnhKX0hEMUpRYTlkOEtfY1hnLUFjWXcwc2pCVHExandoM0I2Y2NYQXZZSUQ?oc=5",
+        "domain": "La Gazzetta del Mezzogiorno",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -328,16 +973,187 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "Quotidiano Nazionale",
-        "original_url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA0ZDB6ci01dm9FNHFUbnN1Zmc0cjJLbjhkUEtMNk1oa1JoTkY0NVNSX3VUWWM0SW5GdjlPOVZ4VFBzTG1pZWpleHZtU3ZCY183UVZ3OVBka19sUGl6QnlIejhQcFBRYk51U3JERk13YWlzU09EdW1uV0hzODNnQQ?oc=5",
+        "outlet": "La Gazzetta del Mezzogiorno",
+        "original_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTDNXRGViT004QWJINFRYcmRLQ3BCSW1qNll2S3BYSEJneFRWeEJnZlZ3bXJHM1A5STByS2cxZVpWbVIzNDN0ZWIyY0luUmRqRFBtMWdjT3hqeXFjVzJ1QS1zT2g0dWFRUkRsWWZJTTJPcWZqX01GNjg5bGJleGVHZWdURjIyNUp4UW83YkFBdlpOUEktVWVYQUxtWkpVVE1ObWVScnBOeGVmanpOWlRRSzdnR2dvTURRMG9xWk4tb3hZVDJZT1NZdjZtSjRLVHJyMjRPbWYxY29PUdIB2AFBVV95cUxORkVjcS04TUFZVVRHOFl4bUU0QUJKZ0pjeVhYLXRYbXJqTkZTUVYyaGdTTmhmcUhESk9WR1NpekpaRV84NzI2bjlYQ1BVSFBwamVCMG1qWHFibnZvY3k2SFl1YUVCdkEzZ2kwNDlnNVVRTE1kR0g3ZmxoTTg5cFhnMWtaSDdCX21aQV9qei12UzZaQXIwOE1YQ0FvWXdPMzZaVzhEamZzRU5NLXdWQnhKX0hEMUpRYTlkOEtfY1hnLUFjWXcwc2pCVHExandoM0I2Y2NYQXZZSUQ?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       }
+    },
+    {
+      "id": "PULSE-MEDIA-F0CEF8A973EC77A5",
+      "story_fingerprint": "f0cef8a973ec77a517ed8e62a4fab79817a51a7129a4515bee4d7e93dade73d6",
+      "published_at": "2026-11-16T12:01:00+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1% (2)",
+      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1% (2) - ANSA",
+      "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1% (2)",
+      "pulse_summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQTkluNER0bXhqZy1abW1tdVl2cHRfMXZ5bm9jeVBxSEdBaTFBdk4wZl9Oa3hFenNsZVd0ZEk1MHh3Q0dUaWNPOTN0R0NZSmJEUGVxakMxRFZ5RER4eUNzaUNoMEJaVDl2dXBlb01xbElsaGptcloxMFhWOHBIT3kwY3lXenlWV183UE5zZmZaWWMyNG5jMFFBUVlpeXJGRTJMLXVQTDNEck02ZDdSd19ZRzZGeG5iYXdpLVc1ZkdQUTl6dm5TYWR6empZSGNwNGJnV0RtbjZOa291WGN0VnZITHpqcFUzVHVJNW1adXI0TDRwNV9MUExJMkdpWElLSkZsT3JCUtIBigJBVV95cUxOa01RZGZnNkJwMVpoNU5wMlpTR01yQTl4UWdLdHhYSnIxQTNyVFpkd3RZcUtoR1lwTy1CN1I1djZVTU4yNmxvMHhxbDJneFFpcTg1cXJwZmRBcU5fQ2lGWkxYN050OHBXQWUyaERZT3FhZU1SYTREaFNNcG9JTUJvaFY5QWJkQ2lYem1uQ2hXTVpNMFhTUUZXTXNQdF9idVE1eXJxamNRaHU5bjNieThScWVudVVJWDNmUUF3bURGM3lkaDA3RGRTRE5qME9Dek9ESjJsUGMxNlFScW1YZUNzSU9lOUI5c05rM2lpc2MtV2NLaVNCMW9BbW1PWTVsVzlpZ2VsVkdQdlBJUQ?oc=5",
+        "domain": "ANSA",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "-1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ANSA",
+        "original_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQTkluNER0bXhqZy1abW1tdVl2cHRfMXZ5bm9jeVBxSEdBaTFBdk4wZl9Oa3hFenNsZVd0ZEk1MHh3Q0dUaWNPOTN0R0NZSmJEUGVxakMxRFZ5RER4eUNzaUNoMEJaVDl2dXBlb01xbElsaGptcloxMFhWOHBIT3kwY3lXenlWV183UE5zZmZaWWMyNG5jMFFBUVlpeXJGRTJMLXVQTDNEck02ZDdSd19ZRzZGeG5iYXdpLVc1ZkdQUTl6dm5TYWR6empZSGNwNGJnV0RtbjZOa291WGN0VnZITHpqcFUzVHVJNW1adXI0TDRwNV9MUExJMkdpWElLSkZsT3JCUtIBigJBVV95cUxOa01RZGZnNkJwMVpoNU5wMlpTR01yQTl4UWdLdHhYSnIxQTNyVFpkd3RZcUtoR1lwTy1CN1I1djZVTU4yNmxvMHhxbDJneFFpcTg1cXJwZmRBcU5fQ2lGWkxYN050OHBXQWUyaERZT3FhZU1SYTREaFNNcG9JTUJvaFY5QWJkQ2lYem1uQ2hXTVpNMFhTUUZXTXNQdF9idVE1eXJxamNRaHU5bjNieThScWVudVVJWDNmUUF3bURGM3lkaDA3RGRTRE5qME9Dek9ESjJsUGMxNlFScW1YZUNzSU9lOUI5c05rM2lpc2MtV2NLaVNCMW9BbW1PWTVsVzlpZ2VsVkdQdlBJUQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-8CA068C3597C17B2",
+      "story_fingerprint": "8ca068c3597c17b26889c7f6079f6a32f604fee5d46746b3fe26ff852af2a299",
+      "published_at": "2026-11-16T11:57:00+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Ocse: 'Pesa l'inflazione, nel II trimestre in Italia reddito reale procapite -1%'",
+      "reported_headline": "Ocse: 'Pesa l'inflazione, nel II trimestre in Italia reddito reale procapite -1%'",
+      "summary": "La testata ansa.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Ocse: 'Pesa l'inflazione, nel II trimestre in Italia reddito reale procapite -1%'",
+      "pulse_summary": "La testata ansa.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ansa.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «ANSA - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 37,
+      "public_source": {
+        "url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/ocse-pesa-inflazione-nel-ii-trimestre-in-italia-reddito-reale-procapite-1_e42da10d-7bac-49ae-a6af-be8d21631c64.html",
+        "domain": "ansa.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "-1%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ansa.it",
+        "original_url": "https://www.ansa.it/sito/notizie/economia/2026/11/16/ocse-pesa-inflazione-nel-ii-trimestre-in-italia-reddito-reale-procapite-1_e42da10d-7bac-49ae-a6af-be8d21631c64.html",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-288274B5C901F0BF",
+      "story_fingerprint": "288274b5c901f0bf0b0b7451",
+      "published_at": "2026-11-16T11:54:22+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 45,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lM3haQ1hCNG42UWhrXzhhZFFhSmtpUlVnV2dkOU1lMkJJV2pQcFZsTmswN2RmMW9kZEF4eWthd09lVVdSdG92MU9GSXJSbmlvZW1QeWJ2Z0ZJU3pCcG82X2RrWXJnaFpXUHBZLXVteWRMLW1G?oc=5",
+        "domain": "Il Sole 24 ORE",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "***Ocse: reddito reale famiglie -0,1% nell'area nel II trim, Italia -1% causa inflazione - Il Sole 24 ORE",
+      "summary": "***Ocse: reddito reale famiglie -0,1% nell'area nel II trim, Italia -1% causa inflazione Il Sole 24 ORE",
+      "statistical_claims": [
+        {
+          "raw_value": "-0,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "-1%",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        },
+        {
+          "raw_value": "-0,1%",
+          "verified": false
+        },
+        {
+          "raw_value": "-1%",
+          "verified": false
+        },
+        {
+          "raw_value": "24 ",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
     },
     {
       "id": "PULSE-MEDIA-469A2E8D5AD610E3",
       "story_fingerprint": "469a2e8d5ad610e3adb57b8a995baa2a496ff0d2cf7e493ec7d490f22a4a1559",
       "published_at": "2026-11-16T11:53:52+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "***Ocse: reddito reale famiglie -0,1% nell'area nel II trim, Italia -1% causa inflazione",
       "reported_headline": "***Ocse: reddito reale famiglie -0,1% nell'area nel II trim, Italia -1% causa inflazione - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -0,1%, -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -350,7 +1166,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · agenzie · gruppo 07». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -360,7 +1176,7 @@
       "topic": "ECONOMIA",
       "pulse_score": 45,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Db09oTklzWno4ajZLVE04b1pLOXNyMnQ5THhLaG9LTzIyM1RCNElsNC1DYWtYYW95ZGYyN2Q5eXdSaUpfOGlPSFlUMDNvMEV5QVRZdWV4c2ZqRktlLWJVbms3dFNhUU96dkJCdjBsLTNvaVE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lM3haQ1hCNG42UWhrXzhhZFFhSmtpUlVnV2dkOU1lMkJJV2pQcFZsTmswN2RmMW9kZEF4eWthd09lVVdSdG92MU9GSXJSbmlvZW1QeWJ2Z0ZJU3pCcG82X2RrWXJnaFpXUHBZLXVteWRMLW1G?oc=5",
         "domain": "Il Sole 24 ORE",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
@@ -395,7 +1211,7 @@
       "discovery": {
         "role": "journalistic_radar",
         "outlet": "Il Sole 24 ORE",
-        "original_url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Db09oTklzWno4ajZLVE04b1pLOXNyMnQ5THhLaG9LTzIyM1RCNElsNC1DYWtYYW95ZGYyN2Q5eXdSaUpfOGlPSFlUMDNvMEV5QVRZdWV4c2ZqRktlLWJVbms3dFNhUU96dkJCdjBsLTNvaVE?oc=5",
+        "original_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lM3haQ1hCNG42UWhrXzhhZFFhSmtpUlVnV2dkOU1lMkJJV2pQcFZsTmswN2RmMW9kZEF4eWthd09lVVdSdG92MU9GSXJSbmlvZW1QeWJ2Z0ZJU3pCcG82X2RrWXJnaFpXUHBZLXVteWRMLW1G?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       }
     },
@@ -515,7 +1331,7 @@
       "id": "PULSE-MEDIA-199319F9D911DB90",
       "story_fingerprint": "199319f9d911db90e793db3df24a219c37eac93cb6068756e5c8b8e27ae58ead",
       "published_at": "2026-11-16T09:41:06+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Case in Lombardia, prezzi in crescita del 3,2%. Milano resta la più cara d'Italia, ma Varese e Lecco corrono di più",
       "reported_headline": "Case in Lombardia, prezzi in crescita del 3,2%. Milano resta la più cara d'Italia, ma Varese e Lecco corrono di più - Affaritaliani",
       "summary": "La testata Affaritaliani segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 3,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -528,7 +1344,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Disuguaglianze e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -582,7 +1398,7 @@
       "id": "PULSE-MEDIA-076B69D8550FF234",
       "story_fingerprint": "076b69d8550ff234ef20708cbc805a1afb64be7e80994d0e20b36d7b50b63f39",
       "published_at": "2026-11-16T09:41:00+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro",
       "reported_headline": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro - La Nuova Sardegna",
       "summary": "La testata La Nuova Sardegna segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 76,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -648,7 +1464,7 @@
       "id": "PULSE-MEDIA-35F70F66C19CD071",
       "story_fingerprint": "35f70f66c19cd07179405e540a07388b2fbe7ef1b53fbe120fd5e915390b2584",
       "published_at": "2026-11-16T09:30:37+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Pensioni dicembre 2026, la guida. Tredicesima, bonus 154,94 euro, recuperi Inps: come sarà il cedolino",
       "reported_headline": "Pensioni dicembre 2026, la guida. Tredicesima, bonus 154,94 euro, recuperi Inps: come sarà il cedolino",
       "summary": "La testata ilmessaggero.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 154,94 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -778,7 +1594,7 @@
       "id": "PULSE-MEDIA-C098E02317EAF762",
       "story_fingerprint": "c098e02317eaf76202aa22dc1a7271cf65942f69a6dece2a18e4f418e2725caa",
       "published_at": "2026-11-16T09:01:00+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Auto in Cina, vendite al dettaglio a -21,4% a ottobre: l’export sale del 68,5% e in Italia i marchi cinesi crescono a tre cifre",
       "reported_headline": "Auto in Cina, vendite al dettaglio a -21,4% a ottobre: l’export sale del 68,5% e in Italia i marchi cinesi crescono a tre cifre - Motori.money",
       "summary": "La testata Motori.money segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -21,4%, 68,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -844,7 +1660,7 @@
       "id": "PULSE-MEDIA-6F7FAE6A624C870F",
       "story_fingerprint": "6f7fae6a624c870f57e005240c55124de02f31157db06c5b18aeadc79caf30c5",
       "published_at": "2026-11-16T08:40:00+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "La montagna italiana torna a popolarsi: oltre 174mila nuovi residenti in 6 anni: ecco le migliori località",
       "reported_headline": "La montagna italiana torna a popolarsi: oltre 174mila nuovi residenti in 6 anni: ecco le migliori località - Torino Cronaca",
       "summary": "La testata Torino Cronaca segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 174mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -973,6 +1789,72 @@
       "primary_research_status": "primary_evidence_not_found"
     },
     {
+      "id": "PULSE-MEDIA-E2152E8CCD5A26D5",
+      "story_fingerprint": "e2152e8ccd5a26d5b51f03d8042285988d2f57c0f80ac2419d3c8d5a9dafca19",
+      "published_at": "2026-11-16T06:22:35+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
+      "headline": "Come sarà il B2B industriale nel 2027? La risposta di Paolo Delnevo (Ptc Italia) a Industria Italiana Summit il 24 novembre 2026 (ore 10.45-12.00, online)",
+      "reported_headline": "Come sarà il B2B industriale nel 2027? La risposta di Paolo Delnevo (Ptc Italia) a Industria Italiana Summit il 24 novembre 2026 (ore 10.45-12.00, online) - Industria Italiana",
+      "summary": "La testata Industria Italiana segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 10.45, 12.00. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Come sarà il B2B industriale nel 2027? La risposta di Paolo Delnevo (Ptc Italia) a Industria Italiana Summit il 24 novembre 2026 (ore 10.45-12.00, online)",
+      "pulse_summary": "La testata Industria Italiana segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 10.45, 12.00. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Industria Italiana segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 10.45, 12.00. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ALTRO",
+      "pulse_score": 40,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRjZwdjNWYlJmcnR4aW9Zem85MkwtTEdhNXpsTVZ3Y1pZWGNqQU11MGZEaXdZM1k4Skk3eXZiQ2VMdjNEVXJsclIyc1RRNlUtcWl1UDU3LVYycERtOHJvQjVfV3pHdWxNR28yVUg5TTUyUWQ2OTJJUEFoZ3E0WkEyVEM4SXhCcXE4bXBQWFRGRVpTdUk?oc=5",
+        "domain": "Industria Italiana",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "10.45",
+          "verified": false
+        },
+        {
+          "raw_value": "12.00",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Industria Italiana",
+        "original_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRjZwdjNWYlJmcnR4aW9Zem85MkwtTEdhNXpsTVZ3Y1pZWGNqQU11MGZEaXdZM1k4Skk3eXZiQ2VMdjNEVXJsclIyc1RRNlUtcWl1UDU3LVYycERtOHJvQjVfV3pHdWxNR28yVUg5TTUyUWQ2OTJJUEFoZ3E0WkEyVEM4SXhCcXE4bXBQWFRGRVpTdUk?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-B5DC71E8784B419C",
       "story_fingerprint": "b5dc71e8784b419c1decac7c070149de2ad78f41c57db797470ce4ad570980cf",
       "published_at": "2026-11-15T22:52:53+00:00",
@@ -1042,7 +1924,7 @@
       "id": "PULSE-MEDIA-830EF97533EAE6D0",
       "story_fingerprint": "830ef97533eae6d03ad73a8d892ba8a734902e3e3368a5cd37cee9a46e9b874d",
       "published_at": "2026-11-15T22:01:10+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Belgio-Italia 4-1, pagelle: non basta super Donnarumma (7,5), Bastoni monumento immobile (5), Koleosho si brucia subito (5). Mancini travolto (5,5)",
       "reported_headline": "Belgio-Italia 4-1, pagelle: non basta super Donnarumma (7,5), Bastoni monumento immobile (5), Koleosho si brucia subito (5). Mancini travolto (5,5)",
       "summary": "La testata ilmessaggero.it segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 7,5, 5,5. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1349,7 +2231,7 @@
       "id": "PULSE-MEDIA-B82029076618763B",
       "story_fingerprint": "b82029076618763b476903ec78694e0b6d8c53161f19cbdbd3b71d938c12e251",
       "published_at": "2026-11-15T12:39:09+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Classifica Qualità della vita 2026: la Basilicata resta nella parte bassa della classifica, tra luci sulla sicurezza e ombre su demografia e sanità. Ecco i dati dell'indagine",
       "reported_headline": "Classifica Qualità della vita 2026: la Basilicata resta nella parte bassa della classifica, tra luci sulla sicurezza e ombre su demografia e sanità. Ecco i dati dell'indagine - VultureNews.net",
       "summary": "La testata VultureNews.net segnala una notizia su salute. Nel titolo o nell'estratto sono riportati i dati citati. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1826,7 +2708,7 @@
       "id": "PULSE-MEDIA-13771B314580E6E5",
       "story_fingerprint": "13771b314580e6e57211542a5a157d6382d8166c6d5af7f701b4d75a20b9304e",
       "published_at": "2026-11-15T06:01:12+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Inflazione, da febbraio in Italia è aumentata del 4,4%. Le città con i rincari record",
       "reported_headline": "Inflazione, da febbraio in Italia è aumentata del 4,4%. Le città con i rincari record - Sky TG24",
       "summary": "La testata Sky TG24 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1921,7 +2803,7 @@
       "id": "PULSE-MEDIA-088AD3CAB9A350DF",
       "story_fingerprint": "088ad3cab9a350dffd38f392dff78b7bf58f14613b4fcaefce8df2b840d915b2",
       "published_at": "2026-11-15T06:00:03+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Scuola, la docente che ha analizzato 5mila note disciplinari: «Nel 70% dei casi riguardano condotte non pericolose. Ma alla fine i ragazzi sospesi hanno più bocciature»",
       "reported_headline": "Scuola, la docente che ha analizzato 5mila note disciplinari: «Nel 70% dei casi riguardano condotte non pericolose. Ma alla fine i ragazzi sospesi hanno più bocciature» - Corriere di Bologna",
       "summary": "La testata Corriere di Bologna segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 5mila, 70%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2098,7 +2980,7 @@
       "id": "PULSE-MEDIA-003C3554D962D9B2",
       "story_fingerprint": "003c3554d962d9b2b5a451cadf2cd1e29c8bef2a6538f44e7ddd32ee1a45b395",
       "published_at": "2026-11-14T21:45:00+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Cresce l'inflazione, il Molise tiene, ma è un +3,3% e si temono nuovi rialzi",
       "reported_headline": "Cresce l'inflazione, il Molise tiene, ma è un +3,3% e si temono nuovi rialzi - RaiNews",
       "summary": "La testata RaiNews segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +3,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2164,7 +3046,7 @@
       "id": "PULSE-MEDIA-F776A59DC58D807D",
       "story_fingerprint": "f776a59dc58d807dbb03a088bf6846b256e0249deb892a6f01983e8ede93ce03",
       "published_at": "2026-11-14T17:14:02+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Cgia, da inizio conflitto nel Golfo Persico, in Molise inflazione a +2,9%",
       "reported_headline": "Cgia, da inizio conflitto nel Golfo Persico, in Molise inflazione a +2,9% - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +2,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2616,7 +3498,7 @@
       "id": "PULSE-MEDIA-5CE7551AC3B7DA25",
       "story_fingerprint": "5ce7551ac3b7da25082d94ee3014377c509f52f6641ed70e45750905d06ecee5",
       "published_at": "2026-11-14T13:02:32+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Export, il Veneto traina l’Italia: 80 miliardi nel 2025. Verona ne vale 16",
       "reported_headline": "Export, il Veneto traina l’Italia: 80 miliardi nel 2025. Verona ne vale 16 - L\\'Adige di Verona",
       "summary": "La testata L\\'Adige di Verona segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 80 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2857,7 +3739,7 @@
       "id": "PULSE-MEDIA-FFEB56DE0E7B5956",
       "story_fingerprint": "ffeb56de0e7b5956eaef624d0f94bd493d4e2da7fe4ccfd3bedbc65a15f77874",
       "published_at": "2026-11-14T11:04:02+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Inflazione, Toscana prima in Italia per rincari. Prezzi su del 4,2%. Siena e Lucca seconde nella classifica nazionale",
       "reported_headline": "Inflazione, Toscana prima in Italia per rincari. Prezzi su del 4,2%. Siena e Lucca seconde nella classifica nazionale - La Nazione",
       "summary": "La testata La Nazione segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2923,7 +3805,7 @@
       "id": "PULSE-MEDIA-D4B8FB7ADBE1254E",
       "story_fingerprint": "d4b8fb7adbe1254e8fc907455f0c33ee3d319897afcb328970d0fcc0a2929ef7",
       "published_at": "2026-11-14T10:12:34+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Dall'inizio della guerra Usa-Iran l'inflazione è stata del +4,4%: Verona la più colpita in Veneto",
       "reported_headline": "Dall'inizio della guerra Usa-Iran l'inflazione è stata del +4,4%: Verona la più colpita in Veneto - L'Arena",
       "summary": "La testata L'Arena segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2989,7 +3871,7 @@
       "id": "PULSE-MEDIA-746302E198B832FC",
       "story_fingerprint": "746302e198b832fc113c1251251b417874e5e3fa396268ab6ea78184b418e6e3",
       "published_at": "2026-11-14T09:38:23+00:00",
-      "last_seen_at": "2026-11-16T12:23:16.900509+00:00",
+      "last_seen_at": "2026-11-16T15:52:28.088827+00:00",
       "headline": "Dall’inizio della guerra in Iran l’inflazione è aumentata del 4,4%: Sardegna seconda Regione più colpita",
       "reported_headline": "Dall’inizio della guerra in Iran l’inflazione è aumentata del 4,4%: Sardegna seconda Regione più colpita - L'Unione Sarda",
       "summary": "La testata L'Unione Sarda segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4,4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
