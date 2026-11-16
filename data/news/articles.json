@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-16T20:04:16.432420+00:00",
+  "generated_at": "2026-11-16T20:59:31.747017+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-16T20:04:16.432420+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "published_at": "2026-11-16T20:59:31.747017+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -170,6 +170,84 @@
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-16T19:08:18.998220+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-487112808C04C18E",
+      "story_fingerprint": "487112808c04c18eb54dd97cdab5fde95977644e7726ef95fc0842dd13923802",
+      "published_at": "2026-11-16T18:48:30+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
+      "headline": "Apre al pubblico il gioiello nascosto dei Fori di Traiano [VIDEO]",
+      "reported_headline": "Apre al pubblico il gioiello nascosto dei Fori di Traiano [VIDEO]",
+      "summary": "La testata agi.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 1.755.000 euro, 20 persone, 9.20, 15.20. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Apre al pubblico il gioiello nascosto dei Fori di Traiano [VIDEO]",
+      "pulse_summary": "La testata agi.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 1.755.000 euro, 20 persone, 9.20, 15.20. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata agi.it segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 1.755.000 euro, 20 persone, 9.20, 15.20. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «AGI - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "LAVORO",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://www.agi.it/cronaca/news/2026-11-16/biblioteca-ulpia-apre-pubblico-fori-traiano-40053489/",
+        "domain": "agi.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "1.755.000 euro",
+          "verified": false
+        },
+        {
+          "raw_value": "20 persone",
+          "verified": false
+        },
+        {
+          "raw_value": "9.20",
+          "verified": false
+        },
+        {
+          "raw_value": "15.20",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "roma"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "agi.it",
+        "original_url": "https://www.agi.it/cronaca/news/2026-11-16/biblioteca-ulpia-apre-pubblico-fori-traiano-40053489/",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-16T20:59:31.747017+00:00",
       "primary_research_status": "primary_evidence_not_found"
     },
     {
@@ -642,7 +720,7 @@
       "id": "PULSE-MEDIA-468F191D17A4B4C7",
       "story_fingerprint": "468f191d17a4b4c72b4c073fba935270aea95546266af1c9ffcac45fc1e5f25f",
       "published_at": "2026-11-16T15:11:00+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "headline": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1%",
       "reported_headline": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1%",
       "summary": "La testata rainews.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -764,7 +842,9 @@
         "outlet": "BariToday",
         "original_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNazZSajN3VHE2ZjNCX3IzSXgyZmR6TjVLSWZnaEpVeUduUGlUZkRwQ19Zb3lsREdBMkRpdzRfLWdYdzdlZlphWG5oRE5wVUZXbWQ1dDY5ZVNOb1JNeFFSYkJXYzV2UDZtUkNvWlJEazBXRHhBU3QtVzhkc25ndWh0Y1ZrQQ?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      }
+      },
+      "primary_research_last_attempt_at": "2026-11-16T20:59:31.747017+00:00",
+      "primary_research_status": "primary_evidence_not_found"
     },
     {
       "id": "PULSE-MEDIA-28AAAA865B9B2428",
@@ -1017,7 +1097,7 @@
       "id": "PULSE-52742A878332AA13",
       "story_fingerprint": "52742a878332aa13b0bdc2e7",
       "published_at": "2026-11-16T12:49:48+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 53,
       "patterns": [],
@@ -1052,20 +1132,20 @@
       "id": "PULSE-MEDIA-E8102925AC0A6A0D",
       "story_fingerprint": "e8102925ac0a6a0d7345adef92d2345a2498b01b1b5e1acca91624e8d692b6b0",
       "published_at": "2026-11-16T12:49:00+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
-      "headline": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
-      "reported_headline": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse - Corriere della Sera",
-      "summary": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
-      "pulse_title": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
-      "pulse_summary": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
+      "headline": "Redditi ancora in calo (dell’1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
+      "reported_headline": "Redditi ancora in calo (dell’1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
+      "summary": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Redditi ancora in calo (dell’1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
+      "pulse_summary": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_article_body": [
         {
           "heading": "La notizia segnalata",
-          "text": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+          "text": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · nazionali · gruppo 01». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Corriere della Sera - Economia». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -1073,10 +1153,10 @@
         }
       ],
       "topic": "ECONOMIA",
-      "pulse_score": 32,
+      "pulse_score": 53,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UdIB0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UQ?oc=5",
-        "domain": "Corriere della Sera",
+        "url": "https://www.corriere.it/economia/lavoro/26_novembre_16/redditi-ancora-in-calo-dell-1-il-pil-cresce-ma-le-famiglie-diventano-piu-povere-perche-succede-in-italia-e-non-altrove-i-dati-ocse-659832e5-b385-480d-8660-8b90bbef7xlk.shtml",
+        "domain": "corriere.it",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -1105,8 +1185,8 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "Corriere della Sera",
-        "original_url": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UdIB0gJBVV95cUxQYWprOXpPX1RnWjY2UTdWTVdVczB2Ul9YUHdXM25aUXVnYmFKNFBHLVBUOVBhQnBIRTFOTGhFcElYbF82QUFFNEVJcF9pS2ttWEFRSnJKVTk1VGwtTXFiSmk1S3N1OXRRa2owTE15Y1JLZVEzUy1pQnV3U1p5Mk9ia0MtSG5GQldGYjhpMllRTGdXWWVsY1lkSkdpbTk3T1V0ZXpKc1gxWTM4SmEwb2x4VlBrTnNWb195NndzTVZrSkh3VDZRRWU4VjJyOGlRNV90Yi1ZTjMycnNEOFVDUEx0UGZILUhFbFp0Q28wb09qc0p3bnVrRzZQSlIxVERJUzdkN3NWeFFzUHljdzFQVFY4S21mZURBdHpVX2VBUGRhRWM3eEkwRGp6MUt1YTZ5bU0tSlZ5al9fUVc2OXZVNkNkNk1kWExlOHlZNVZMTmpKN2E1UQ?oc=5",
+        "outlet": "corriere.it",
+        "original_url": "https://www.corriere.it/economia/lavoro/26_novembre_16/redditi-ancora-in-calo-dell-1-il-pil-cresce-ma-le-famiglie-diventano-piu-povere-perche-succede-in-italia-e-non-altrove-i-dati-ocse-659832e5-b385-480d-8660-8b90bbef7xlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
       }
     },
@@ -1114,7 +1194,7 @@
       "id": "PULSE-9F1A5806531ABEF7",
       "story_fingerprint": "9f1a5806531abef77331f6c6",
       "published_at": "2026-11-16T12:15:23+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 54,
       "patterns": [],
@@ -1213,20 +1293,20 @@
       "id": "PULSE-MEDIA-8C9F5860B5C3CA94",
       "story_fingerprint": "8c9f5860b5c3ca949fafcaa7704ce8f09695a2e22c450aed02bb84f74489e816",
       "published_at": "2026-11-16T12:07:51+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1% - Il Sole 24 ORE",
-      "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
+      "summary": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "pulse_summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_summary": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_article_body": [
         {
           "heading": "La notizia segnalata",
-          "text": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+          "text": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · agenzie · gruppo 07». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Il Sole 24 Ore - Italia Attualità». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -1234,10 +1314,10 @@
         }
       ],
       "topic": "ECONOMIA",
-      "pulse_score": 39,
+      "pulse_score": 54,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMjhsaGlhQ29SQkREQkRWclZPaHJ6eW1NWDhVWDJqeUVJLVV6SkpCc1ljVUtHdDRsOHZOakZmLTFfT2tzSGY2R3R1NEljd0hPR053MDdGQ2xPOExBd1RadlBzaXhGLU95WTZONkg1NmZrU3FfVnQ2RTIwdnpnMVcxMnk4Q3drc3NPOEQ2R3JkOEFNLXFvb0pxMHc4UU91Yjd1cGg1eUJpanNSWml1UUpWOG5jWkd5cUk?oc=5",
-        "domain": "Il Sole 24 ORE",
+        "url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
+        "domain": "ilsole24ore.com",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -1266,8 +1346,8 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "Il Sole 24 ORE",
-        "original_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMjhsaGlhQ29SQkREQkRWclZPaHJ6eW1NWDhVWDJqeUVJLVV6SkpCc1ljVUtHdDRsOHZOakZmLTFfT2tzSGY2R3R1NEljd0hPR053MDdGQ2xPOExBd1RadlBzaXhGLU95WTZONkg1NmZrU3FfVnQ2RTIwdnpnMVcxMnk4Q3drc3NPOEQ2R3JkOEFNLXFvb0pxMHc4UU91Yjd1cGg1eUJpanNSWml1UUpWOG5jWkd5cUk?oc=5",
+        "outlet": "ilsole24ore.com",
+        "original_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-16T12:23:16.900509+00:00",
@@ -1821,7 +1901,7 @@
       "id": "PULSE-MEDIA-35F70F66C19CD071",
       "story_fingerprint": "35f70f66c19cd07179405e540a07388b2fbe7ef1b53fbe120fd5e915390b2584",
       "published_at": "2026-11-16T09:30:37+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "headline": "Pensioni dicembre 2026, la guida. Tredicesima, bonus 154,94 euro, recuperi Inps: come sarà il cedolino",
       "reported_headline": "Pensioni dicembre 2026, la guida. Tredicesima, bonus 154,94 euro, recuperi Inps: come sarà il cedolino",
       "summary": "La testata ilmessaggero.it segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 154,94 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2281,7 +2361,7 @@
       "id": "PULSE-MEDIA-830EF97533EAE6D0",
       "story_fingerprint": "830ef97533eae6d03ad73a8d892ba8a734902e3e3368a5cd37cee9a46e9b874d",
       "published_at": "2026-11-15T22:01:10+00:00",
-      "last_seen_at": "2026-11-16T20:04:16.432420+00:00",
+      "last_seen_at": "2026-11-16T20:59:31.747017+00:00",
       "headline": "Belgio-Italia 4-1, pagelle: non basta super Donnarumma (7,5), Bastoni monumento immobile (5), Koleosho si brucia subito (5). Mancini travolto (5,5)",
       "reported_headline": "Belgio-Italia 4-1, pagelle: non basta super Donnarumma (7,5), Bastoni monumento immobile (5), Koleosho si brucia subito (5). Mancini travolto (5,5)",
       "summary": "La testata ilmessaggero.it segnala una notizia su abitazioni. Nel titolo o nell'estratto sono riportati 7,5, 5,5. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
