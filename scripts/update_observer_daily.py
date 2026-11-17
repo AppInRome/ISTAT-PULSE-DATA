@@ -45,7 +45,7 @@ GENERIC_TITLES = {
 }
 
 def is_publication_title(title: str) -> bool:
-    cleaned = re.sub(r"\\s+", " ", title.strip().casefold())
+    cleaned = re.sub(r"\s+", " ", title.strip().casefold())
     return len(cleaned) >= 8 and cleaned not in GENERIC_TITLES
 
 
