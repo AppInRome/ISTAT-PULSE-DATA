@@ -23,6 +23,10 @@ FEEDS = (
     ("CNR", "cnr.it", "https://www.cnr.it/it/news/rss"),
     ("SVIMEZ", "svimez.it", "https://www.svimez.it/feed/"),
     ("SINAB", "sinab.it", "https://sinab.it/feed/"),
+    # Feed ufficiali alternativi, non Google News. Le fonti in HTTP 403
+    # restano monitorate, non vengono spacciate per aggiornate.
+    ("ISTAT", "istat.it", "https://www.istat.it/feed"),
+    ("ISTAT_STAMPA", "istat.it", "https://www.istat.it/documenti/comunicato-stampa/feed"),
 )
 STAT_TERMS = (
     "dati", "statistic", "rapporto", "osservatorio", "indagine", "ricerca",
@@ -30,6 +34,23 @@ STAT_TERMS = (
     "salute", "tasso", "percentual", "prezzi", "reddito", "pension",
     "agricoltur", "biologic", "clima", "economia", "industria"
 )
+
+
+# Navigation and boilerplate titles are never official publications.
+# Match exact titles only to avoid hiding meaningful reports.
+GENERIC_TITLES = {
+    "open data", "dati | dati.gov.it", "navigazione", "news", "home",
+    "privacy policy", "preferenze cookie", "menu di accesso rapido",
+    "menu di servizio", "salta al contenuto", "vai ai contenuti",
+    "risultati di ricerca per:", "ricerca", "archivio", "archivio anni",
+    "comunicati e news", "comunicati stampa", "pubblicazioni",
+    "prossimi eventi", "contatti", "fascicolo", "serie storiche",
+    "testo integrale", "« indietro", "prossima pagina prossima ›"
+}
+
+def is_publication_title(title: str) -> bool:
+    cleaned = re.sub(r"\s+", " ", title.strip().casefold())
+    return len(cleaned) >= 8 and cleaned not in GENERIC_TITLES
 
 
 def host_allowed(url: str, domain: str) -> bool:
@@ -115,7 +136,8 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
                 dt = parse_date(date)
                 if not dt or dt.year != now.year or dt > now + timedelta(hours=6):
                     continue
-                if not host_allowed(link, domain) or not any(term in title.casefold() for term in STAT_TERMS):
+                if (not host_allowed(link, domain) or not is_publication_title(title) or
+                    not any(term in title.casefold() for term in STAT_TERMS)):
                     continue
                 uid = "OBS-" + hashlib.sha256((name + "|" + link.split("#", 1)[0]).encode()).hexdigest()[:18].upper()
                 if uid in by_id or link in existing_urls:
@@ -144,6 +166,8 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
     status_path.parent.mkdir(parents=True, exist_ok=True)
     status_path.write_text(json.dumps({
         "checked_at": now.isoformat(), "feeds_configured": len(FEEDS),
+        "verified_primary_sources_only": True,
+        "failed_source_count": sum(x["status"] != "ok" for x in stats.values()),
         "feeds_reached": sum(x["status"] == "ok" for x in stats.values()),
         "articles_new": additions, "articles_total": len(by_id),
         "sources": stats, "other_institutions": "not_yet_connected"
