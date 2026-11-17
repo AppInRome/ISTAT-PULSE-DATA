@@ -31,7 +31,7 @@ def latest_mim():
         stamps=sorted(set(re.findall(rf"{ds}(20\d{{4}}20\d{{6}})\.csv",html)),reverse=True)
         stamps=[s for s in stamps if 2020<=int(s[:4])<=datetime.now(timezone.utc).year]
         if not stamps:raise ValueError("Official MIM catalog missing CSV: "+ds)
-        result[ds]=f"https://dati.istruzione.it/opendata/opendata/catalog/{ds}/{ds}{stamps[0]}.csv"
+        result[ds]=f"https://dati.istruzione.it/opendata/opendata/catalogo/elements1/{ds}{stamps[0]}.csv"
     return result
 
 def school_rows(body, source):
