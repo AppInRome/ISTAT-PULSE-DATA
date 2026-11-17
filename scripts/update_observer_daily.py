@@ -32,6 +32,23 @@ STAT_TERMS = (
 )
 
 
+# A navigation menu or RSS landing page is not a statistical publication,
+# even when the old snapshot classified its source as 'verified'.
+GENERIC_TITLES = {
+    "open data", "dati | dati.gov.it", "navigazione", "news", "home",
+    "privacy policy", "preferenze cookie", "menu di accesso rapido",
+    "menu di servizio", "salta al contenuto", "vai ai contenuti",
+    "risultati di ricerca per:", "ricerca", "archivio", "archivio anni",
+    "comunicati e news", "comunicati stampa", "pubblicazioni",
+    "prossimi eventi", "contatti", "fascicolo", "serie storiche",
+    "testo integrale", "« indietro", "prossima pagina prossima ›"
+}
+
+def is_publication_title(title: str) -> bool:
+    cleaned = re.sub(r"\\s+", " ", title.strip().casefold())
+    return len(cleaned) >= 8 and cleaned not in GENERIC_TITLES
+
+
 def host_allowed(url: str, domain: str) -> bool:
     try:
         parsed = urllib.parse.urlparse(url)
@@ -115,7 +132,8 @@ def update(archive: Path = ARCHIVE, status_path: Path = STATUS, fetcher=get_feed
                 dt = parse_date(date)
                 if not dt or dt.year != now.year or dt > now + timedelta(hours=6):
                     continue
-                if not host_allowed(link, domain) or not any(term in title.casefold() for term in STAT_TERMS):
+                if (not host_allowed(link, domain) or not is_publication_title(title) or
+                    not any(term in title.casefold() for term in STAT_TERMS)):
                     continue
                 uid = "OBS-" + hashlib.sha256((name + "|" + link.split("#", 1)[0]).encode()).hexdigest()[:18].upper()
                 if uid in by_id or link in existing_urls:
