@@ -44,6 +44,7 @@ def school_rows(body, source):
     sep="\t" if first.count("\t")>first.count(";") else ";" if first.count(";")>=first.count(",") else ","
     rdr=csv.DictReader(io.StringIO(raw),delimiter=sep)
     norm={re.sub("[^A-Z0-9]","",x.upper()):x for x in (rdr.fieldnames or [])}
+    print("PROXIMA MIM",source,"headers",repr((rdr.fieldnames or [])[:20]),"preview",repr(raw[:180]),flush=True)
     def col(*candidates):
         for x in candidates:
             k=norm.get(re.sub("[^A-Z0-9]","",x.upper()))
