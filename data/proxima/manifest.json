@@ -13,6 +13,19 @@
       "source": "ISTAT POSAS",
       "source_url": "https://demo.istat.it/data/posas/POSAS_2026_it_Comuni.zip",
       "published_at": "2026-11-17T16:59:28.285913+00:00"
+    },
+    "schools": {
+      "status": "ready",
+      "schema": 1,
+      "family": "schools",
+      "reference_year": 2026,
+      "filename": "schools_2026_f979954335.json.gz",
+      "sha256": "f979954335fe8e106d8936ee18258d1ec9a9c38132b1569f43d65ebe5a8daf23",
+      "bytes": 1338467,
+      "rows": 62842,
+      "source": "Ministero Istruzione e Merito, anagrafiche sedi scolastiche",
+      "source_url": "https://dati.istruzione.it/opendata/opendata/catalogo/elements1/SCUANAGRAFESTAT20262720260901.csv",
+      "published_at": "2026-11-17T17:03:48.729439+00:00"
     }
   },
   "geographies": {
