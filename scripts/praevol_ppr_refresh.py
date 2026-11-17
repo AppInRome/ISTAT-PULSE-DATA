@@ -76,7 +76,8 @@ def csv_records(contents,expected_base):
         if age_text.isdecimal():age=int(age_text)
         elif re.match(r"^100\s*(?:e|anni|\+|ed|o)",age_text,re.I):age=100
         else:continue
-        if not 0<=age<=100:raise ValueError("Età impossibile")
+        if age==999:continue # synthetic CSV total, not a real age
+        if not 0<=age<=125:raise ValueError("Età impossibile: "+age_text)
         gender=0 if sex_text=="Maschi" else 1
         key=(year,gender)
         if age in checks[key]:raise ValueError("Duplicazione età/sesso")
@@ -87,7 +88,9 @@ def csv_records(contents,expected_base):
         if count<0:raise ValueError("Valore demografico negativo")
         band=min(age//5,19)
         data[year,band][gender]+=count
-    required=set(range(101))
+    required=checks.get((expected_base,0),set())
+    if len(required)<101 or required!=set(range(max(required)+1)):
+        raise ValueError("Età ufficiali incomplete, comprese quelle ultracentenarie")
     for year in range(expected_base,2051):
         for gender in (0,1):
             if checks.get((year,gender))!=required:
