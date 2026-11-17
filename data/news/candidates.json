@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T08:26:31.046719+00:00",
+  "generated_at": "2026-11-17T09:15:05.952815+00:00",
   "candidates": [
     {
       "radar": "Google News - Adnkronos dati e statistiche",
@@ -29,7 +29,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -39,7 +39,7 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -49,7 +49,7 @@
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 25
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -99,7 +99,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 38
+      "items_fetched": 39
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -109,12 +109,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 20
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 39
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -214,7 +214,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -324,7 +324,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 26
     },
     {
       "radar": "Google News - economia lavoro",
@@ -334,7 +334,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "Repubblica Economia",
@@ -370,7 +370,7 @@
       "radar": "Google News - Italia salute e welfare",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
       "discovery_title": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-17T08:26:31.046719+00:00",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -397,7 +397,7 @@
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14R2kxc3k5aWpIbEJDcEIzdktxQWdsQ2JzTFZiY2hFcVlFejBUbFV5NUFnT0g0WGp6YjFwZ0d3aEpLRU51a2NKSzZBeFo4N3J4YW81ZWJjckx6U3JEMDFiSjctSi1jQ1dOSFFOQ2hKTUJJOFpLdWo0UEFJekRfZ0U?oc=5",
       "discovery_title": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
-      "detected_at": "2026-11-17T08:26:31.046719+00:00",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
       "score_discovery": 60,
       "topic": "ENERGIA",
       "numbers_detected": [
@@ -415,29 +415,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Il Sole 24 Ore - Italia Attualità",
-      "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
-      "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "detected_at": "2026-11-17T08:26:31.046719+00:00",
-      "score_discovery": 54,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "-1%",
-        "1%",
-        "2026",
-        "0,4%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Il Fatto Quotidiano - Notizie",
       "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/17/borse-studio-veneto-stefani-copertura-notizie/8573711/",
       "discovery_title": "Veneto, il presidente Stefani promette borse di studio al 100%. Ma quasi 3mila universitari aspettano ancora",
-      "detected_at": "2026-11-17T08:26:31.046719+00:00",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
       "score_discovery": 60,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -455,18 +436,119 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lM3haQ1hCNG42UWhrXzhhZFFhSmtpUlVnV2dkOU1lMkJJV2pQcFZsTmswN2RmMW9kZEF4eWthd09lVVdSdG92MU9GSXJSbmlvZW1QeWJ2Z0ZJU3pCcG82X2RrWXJnaFpXUHBZLXVteWRMLW1G?oc=5",
-      "discovery_title": "***Ocse: reddito reale famiglie -0,1% nell'area nel II trim, Italia -1% causa inflazione - Il Sole 24 ORE",
-      "detected_at": "2026-11-17T08:26:31.046719+00:00",
+      "radar": "Il Messaggero - Notizie",
+      "discovery_url": "https://www.ilmessaggero.it/economia/news/inflazione_ottobre_vola_oltre_cinque_per_centro_aumento_prezzi_cosa_succede-9895453.html",
+      "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime)",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
+      "score_discovery": 59,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "5,5%",
+        "2026 ",
+        "5,5%",
+        "+4,2%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "istat.it",
+        "terna.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "ISTAT - Aggiornamenti ufficiali",
+      "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
+      "discovery_title": "Prezzi al consumo – Ottobre 2026",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026 ",
+        "2026 ",
+        "+1,0%",
+        "+5,5%"
+      ],
+      "official_links": [
+        "https://contact.istat.it/s/piu-sportello-per-i-media?language=it",
+        "https://contact.istat.it",
+        "https://www.istat.it/it/archivio/30440",
+        "http://rivaluta.istat.it/",
+        "https://www.istat.it/statistiche-per-temi/economia/prezzi/",
+        "https://www.istat.it/?tag=consumi",
+        "https://www.istat.it/?tag=foi",
+        "https://www.istat.it/?tag=inflazione",
+        "https://www.istat.it/?tag=ipca",
+        "https://www.istat.it/?tag=nic",
+        "https://www.istat.it/?tag=prezzi-2",
+        "https://www.istat.it/?tag=prezzi-al-consumo"
+      ],
+      "official_domain_hints": [
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
+        "domain": "istat.it",
+        "matched_numbers": [
+          "2026 ",
+          "2026 ",
+          "+1,0%",
+          "+5,5%"
+        ],
+        "matched_non_year_numbers": [
+          "+1,0%",
+          "+5,5%"
+        ],
+        "matched_keywords": [
+          "prezzi",
+          "consumo",
+          "ottobre",
+          "indice",
+          "intera",
+          "collettività",
+          "settembre"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Prezzi al consumo – Ottobre 2026 – Istat Vai al menù della testata Vai al menù principale Vai al contenuto principale Vai al menù laterale Vai al contenuto di pagina English Homepage Home Informazioni sulle rilevazioni Attività e servizi per tipo di utenti Per tutti Sportelli sul territorio European data support Biblioteca Archivio storico Giornalisti Appuntamenti Embargo Articoli e interviste Istat in breve Storia Rispondenti Informazioni sulle rilevazioni e questionari Elenco soggetti esterni trattamento dati Sanzioni amministrative Ricercatori Eventi segnalati dalle società scientifiche Laboratorio ADELE Promozione della ricerca Studenti e docenti Master EMOS Statistica e Cittadinanza Formazione per docenti Progetti per le scuole Pacchetti didattici Competizioni e premi Enti del Sistan English This Page HomePage Imposta Lingua Language Settings Per favore conferma la tua preferenza. P",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Il Sole 24 Ore - Italia Attualità",
+      "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
+      "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
+      "score_discovery": 54,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "-1%",
+        "1%",
+        "2026",
+        "0,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 01",
+      "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc3FnZFg2bkRWcGdvUGtzRm5uZEtBdV9zYzl6UUo0bUdIOHZ6M3JZZDVieGRVV3ZrN3BOLVFTZFlWSHNXTThFQjZyNy00S1Etb1Bvcm9NakdteXFBd2NsTDhRck5SMG1KRDVPNVVoMG1nNnZnVDFodTlqaXpRUVhCLWxOR1F0emxPWk1pTk9hckpfWElmUjNZTU81NHM0VnpxT1N3NQ?oc=5",
+      "discovery_title": "Inflazione: Istat, +1% a ottobre, alza stima a +5,5% su anno - Il Sole 24 ORE",
+      "detected_at": "2026-11-17T09:15:05.952815+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "-0,1%",
-        "-1%",
+        "+1%",
+        "+5,5%",
         "24 ",
-        "-0,1%",
-        "-1%",
+        "+1%",
+        "+5,5%",
         "24 "
       ],
       "official_links": [],
