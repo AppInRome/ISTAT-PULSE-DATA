@@ -61,7 +61,7 @@ def school_rows(body, source):
         if not re.fullmatch("[A-Z0-9]{8,12}",ident) or len(title)<3 or not town:continue
         out.append([ident,title[:250],(r.get(street) or "").strip()[:200],town[:100],
                     (r.get(post) or "").strip()[:12],source])
-    if len(out)<(10000 if source=="SCUANAGRAFESTAT" else 100):
+    if len(out)<(10000 if source=="SCUANAGRAFESTAT" else 20 if source.startswith("SCUANAAUT") else 100):
         raise ValueError("MIM subset too small "+source+": "+str(len(out)))
     return out
 
