@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "family": "istat_posas_age_sex",
+  "reference_year": 2026,
+  "period": "1 gennaio 2026",
+  "source_url": "https://demo.istat.it/data/posas/POSAS_2026_it_Comuni.zip",
+  "source": "ISTAT Demo POSAS",
+  "unit": "residenti",
+  "denominator_definition": "residenti dello stesso territorio e periodo",
+  "national_total": 58942828,
+  "observations": 4242,
+  "filename": "posas_age_sex_2026.json.gz",
+  "sha256": "b7b8bae8407f545e1114588366fd5e2ec7638a76ebe92b89207d5e79ab6d7c3b",
+  "generated_at": "2026-11-17T16:21:02.074550+00:00"
+}
