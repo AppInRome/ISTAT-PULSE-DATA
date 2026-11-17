@@ -55,8 +55,9 @@ def from_istat(year, zipped, registry, url):
     print("POPULIV POSAS: intestazioni ufficiali", repr(headers[:30]), flush=True)
     idcol=field(headers,"Codice comune")
     agecol=field(headers,"Età")
-    mcol=field(headers,"Maschi")
-    fcol=field(headers,"Femmine")
+    # The official 2026 export names these columns “Totale maschi/femmine”.
+    mcol=field(headers,"Totale maschi" if "Totale maschi" in headers else "Maschi")
+    fcol=field(headers,"Totale femmine" if "Totale femmine" in headers else "Femmine")
     by_region=defaultdict(lambda:[0,0])
     seen=defaultdict(set)
     city_total={}
