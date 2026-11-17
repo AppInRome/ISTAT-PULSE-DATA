@@ -52,6 +52,7 @@ def from_istat(year, zipped, registry, url):
     stream.readline() # first line: source description
     csvrows=csv.DictReader(stream,delimiter=";")
     headers=csvrows.fieldnames or []
+    print("POPULIV POSAS: intestazioni ufficiali", repr(headers[:30]), flush=True)
     idcol=field(headers,"Codice comune")
     agecol=field(headers,"Età")
     mcol=field(headers,"Maschi")
