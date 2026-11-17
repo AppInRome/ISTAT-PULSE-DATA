@@ -1,9 +1,11 @@
 {
-  "checked_at": "2026-11-17T08:29:58.071659+00:00",
-  "feeds_configured": 4,
-  "feeds_reached": 2,
-  "articles_new": 0,
-  "articles_total": 5871,
+  "checked_at": "2026-11-17T20:19:11.347818+00:00",
+  "feeds_configured": 6,
+  "verified_primary_sources_only": true,
+  "failed_source_count": 3,
+  "feeds_reached": 3,
+  "articles_new": 11,
+  "articles_total": 5882,
   "sources": {
     "CNA": {
       "status": "error",
@@ -11,9 +13,9 @@
       "error": "HTTP Error 403: Forbidden"
     },
     "CNR": {
-      "status": "ok",
+      "status": "error",
       "new": 0,
-      "items": 20
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     "SVIMEZ": {
       "status": "ok",
@@ -24,6 +26,16 @@
       "status": "error",
       "new": 0,
       "error": "HTTP Error 403: Forbidden"
+    },
+    "ISTAT": {
+      "status": "ok",
+      "new": 5,
+      "items": 10
+    },
+    "ISTAT_STAMPA": {
+      "status": "ok",
+      "new": 6,
+      "items": 10
     }
   },
   "other_institutions": "not_yet_connected"
