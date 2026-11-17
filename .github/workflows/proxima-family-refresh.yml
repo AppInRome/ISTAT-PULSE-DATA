@@ -27,6 +27,8 @@ jobs:
           python-version: "3.11"
       - name: Verify publisher syntax
         run: python -m py_compile scripts/proxima_family_refresh.py
+      - name: Run offline regression tests
+        run: python -m unittest discover -s tests -p 'test_proxima_family_refresh.py' -v
       - name: Check official MIM and ISTAT feeds (preserve last good on failure)
         run: python scripts/proxima_family_refresh.py
       - name: Verify each published family checksum and shape
