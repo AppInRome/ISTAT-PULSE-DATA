@@ -20,6 +20,12 @@ class ObserverCollectorTests(unittest.TestCase):
         self.assertTrue(mod.host_allowed("https://www.cna.it/pubblicazioni/test", "cna.it"))
         self.assertFalse(mod.host_allowed("https://cna.it.evil.example/article", "cna.it"))
 
+    def test_navigation_is_not_statistical_news(self):
+        for title in ("Navigazione", "Menu di accesso rapido", "Privacy Policy", "Open Data"):
+            self.assertFalse(mod.is_publication_title(title))
+        self.assertTrue(mod.is_publication_title("Rapporto sul mercato del lavoro in Italia"))
+        self.assertFalse(mod.host_allowed("https://istat.it.evil.example/feed", "istat.it"))
+
     def test_preserves_last_good_and_adds_only_official(self):
         with tempfile.TemporaryDirectory() as tmp:
             archive = Path(tmp) / "observer_articles.json"
@@ -42,7 +48,7 @@ class ObserverCollectorTests(unittest.TestCase):
             self.assertEqual(1, x["new"])
             self.assertEqual(1051, len(json.loads(archive.read_text())["articles"]))
             self.assertEqual(65, json.loads(archive.read_text())["source_count"])
-            self.assertEqual(3, len([k for k,v in json.loads(status.read_text())["sources"].items()
+            self.assertEqual(len(mod.FEEDS)-1, len([k for k,v in json.loads(status.read_text())["sources"].items()
                                      if v["status"] == "error"]))
             # No new items -> original content and generated_at remain unchanged.
             snapshot = archive.read_bytes()

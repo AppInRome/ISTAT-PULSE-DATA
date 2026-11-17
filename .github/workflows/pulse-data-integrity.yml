@@ -4,6 +4,10 @@ on:
   push:
     paths:
       - "scripts/pulse_data_integrity.py"
+      - "scripts/pulse_health_monitor.py"
+      - "tests/test_pulse_health_monitor.py"
+      - "scripts/update_observer_daily.py"
+      - "tests/test_observer_daily.py"
       - "tests/test_pulse_data_integrity.py"
       - ".github/workflows/pulse-data-integrity.yml"
   workflow_dispatch:
@@ -12,6 +16,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 concurrency:
   group: pulse-data-integrity-check
@@ -30,14 +35,56 @@ jobs:
           python-version: "3.11"
       - name: Regressione offline anti-notizie-vuote e link errati
         run: python -m unittest discover -s tests -p test_pulse_data_integrity.py -v
+      - name: Regressione filtri Osservatori e monitor operativo
+        run: |
+          python -m unittest discover -s tests -p test_observer_daily.py -v
+          python -m unittest discover -s tests -p test_pulse_health_monitor.py -v
       - name: Controllo preventivo schema e filiere editoriali
+        id: schema
         run: |
           python -m compileall -q scripts/pulse_data_integrity.py
           python scripts/pulse_data_integrity.py --data-root data --report PULSE_DATA_INTEGRITY_REPORT.json
+      - name: Monitor di freschezza (novita assenti NON sono un errore)
+        if: always()
+        id: health
+        run: python scripts/pulse_health_monitor.py --data-root data --report PULSE_HEALTH_REPORT.json --summary PULSE_HEALTH_SUMMARY.md
+      - name: Mostra stato nel riepilogo GitHub
+        if: always()
+        shell: bash
+        run: |
+          if test -f PULSE_HEALTH_SUMMARY.md; then cat PULSE_HEALTH_SUMMARY.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Apri o risolvi un solo avviso persistente su GitHub Issues
+        if: always() && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          SCHEMA_RESULT: ${{ steps.schema.outcome }}
+          HEALTH_RESULT: ${{ steps.health.outcome }}
+        shell: bash
+        run: |
+          title="PULSE BACKEND — monitor aggiornamenti automatici"
+          number="$(gh issue list --repo "$GH_REPO" --state all --limit 100 --json number,title --jq '.[] | select(.title == "PULSE BACKEND — monitor aggiornamenti automatici") | .number' | head -n1)"
+          if [ "$SCHEMA_RESULT" != "success" ] || [ "$HEALTH_RESULT" != "success" ]; then
+            if ! test -s PULSE_HEALTH_SUMMARY.md; then
+              printf '%s\n' '# PULSE Backend: un controllo di integrita non e riuscito' > PULSE_HEALTH_SUMMARY.md
+            fi
+            if [ -z "$number" ]; then
+              gh issue create --repo "$GH_REPO" --title "$title" --body-file PULSE_HEALTH_SUMMARY.md
+            else
+              gh issue reopen "$number" --repo "$GH_REPO" 2>/dev/null || true
+              gh issue edit "$number" --repo "$GH_REPO" --body-file PULSE_HEALTH_SUMMARY.md
+            fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --repo "$GH_REPO" --reason completed 2>/dev/null || true
+          fi
+
       - name: Conserva rapporto anche in caso di errore
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: pulse-integrity-${{ github.run_id }}
-          path: PULSE_DATA_INTEGRITY_REPORT.json
+          path: |
+            PULSE_DATA_INTEGRITY_REPORT.json
+            PULSE_HEALTH_REPORT.json
+            PULSE_HEALTH_SUMMARY.md
           if-no-files-found: warn
