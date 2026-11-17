@@ -64,6 +64,10 @@ def from_istat(year, zipped, registry, url):
     city_by_age=defaultdict(lambda:[0,0])
     for r in csvrows:
         ident=str(r[idcol]).strip().zfill(6)
+        # ISTAT appends free-text notes below the CSV table. Never treat
+        # those footnotes as a municipality; unknown numeric codes still fail.
+        if not re.fullmatch(r"\d{6}", ident):
+            continue
         reg=codes.get(ident)
         if reg not in REGIONS:raise ValueError("Comune non presente in anagrafica "+ident)
         age=str(r[agecol]).strip()
