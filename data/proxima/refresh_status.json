@@ -1,8 +1,10 @@
 {
-  "checked_at": "2026-11-17T17:03:48.754045+00:00",
+  "checked_at": "2026-11-17T17:06:10.891304+00:00",
   "families_available": [
     "schools",
     "territorial_population"
   ],
-  "errors": {}
+  "errors": {
+    "schools": "'NoneType' object has no attribute 'group'"
+  }
 }
