@@ -1,0 +1,60 @@
+name: PRAEVOL - previsioni ufficiali ISTAT PPR
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 10 * * *'
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/praevol-official-daily.yml"
+      - "scripts/praevol_ppr_refresh.py"
+      - "tests/test_praevol_ppr.py"
+permissions:
+  contents: write
+concurrency:
+  group: praevol-verified-forecast-publish
+  cancel-in-progress: false
+jobs:
+  validate-and-publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test statico
+        run: |
+          python -m py_compile scripts/praevol_ppr_refresh.py
+          python -m unittest discover -s tests -p test_praevol_ppr.py -v
+      - name: Leggi previsioni originali ISTAT, valida anni, geografie e sesso
+        run: python scripts/praevol_ppr_refresh.py
+      - name: Verifica integrità prima del commit
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,gzip
+          root=Path("data/praevol")
+          m=json.loads((root/"manifest.json").read_text())
+          raw=(root/m["filename"]).read_bytes()
+          assert hashlib.sha256(raw).hexdigest()==m["sha256"]
+          assert len(raw)==m["bytes"]
+          d=json.loads(gzip.decompress(raw))
+          assert len(d["observations"])==m["observations"]
+          assert d["scenario"]=="Scenario mediano"
+          assert not d["experimental_rebased"]
+          print("PRAEVOL PPR verificato",m["reference_base"],m["observations"])
+          PY
+      - name: Pubblica solo pacchetti completi e verificati
+        run: |
+          git config user.name "PRAEVOL ISTAT Data Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/praevol/manifest.json data/praevol/ppr_median_*.json.gz
+          if git diff --cached --quiet; then echo "Nessuna nuova base/revisione"; exit 0; fi
+          git commit -m 'PRAEVOL: official ISTAT PPR verified release'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
