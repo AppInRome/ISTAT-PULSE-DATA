@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "family": "istat_ppr_median",
+  "status": "ready",
+  "base_year": 2025,
+  "reference_base": "2025-01-01",
+  "last_year": 2050,
+  "scenario": "Scenario mediano",
+  "kind": "ISTAT",
+  "source": "ISTAT Demo PPR",
+  "source_urls": {
+    "regions": "https://demo.istat.it/data/previsioni/Previsioni-Popolazione_per_eta-Regioni.zip",
+    "italy": "https://demo.istat.it/data/previsioni/Previsioni-Popolazione_per_eta-Ripartizioni.zip"
+  },
+  "source_zip_sha256": {
+    "regions": "e55c9054e86f37b8d0fc77e9b5866b9651104183449d4cfc606cefa61363070c",
+    "italy": "daaca34c7579884df7fe60a396b15d9f23d5ae11750038d594ab53a52b5a35aa"
+  },
+  "filename": "ppr_median_2025_e61ca9d40583.json.gz",
+  "sha256": "e61ca9d405835ae29b7e3e1bebe8e3c5d089e765b4b2457e6354d2394a9ba81a",
+  "bytes": 99003,
+  "observations": 10920,
+  "geographies": 21,
+  "experimental_rebased": false,
+  "generated_at": "2026-11-17T17:37:24.036892+00:00"
+}
