@@ -1,0 +1,58 @@
+name: POPULIV - Aggiornamento ISTAT POSAS verificato
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/populiv-posas-daily.yml"
+      - "scripts/populiv_posas_refresh.py"
+      - "tests/test_populiv_posas_refresh.py"
+permissions:
+  contents: write
+concurrency:
+  group: populiv-posas-publish
+  cancel-in-progress: false
+jobs:
+  official-demography:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Test schema e feed ufficiale
+        run: |
+          python -m py_compile scripts/populiv_posas_refresh.py
+          python -m unittest discover -s tests -p test_populiv_posas_refresh.py -v
+      - name: Acquisisci archivio ISTAT, verifica comuni, regioni, età, sesso e anno
+        run: python scripts/populiv_posas_refresh.py
+      - name: Controllo pacchetto pubblicato
+        run: |
+          python - <<'PY'
+          import gzip,hashlib,json,pathlib
+          base=pathlib.Path("data/populiv")
+          m=json.loads((base/"manifest.json").read_text())
+          raw=(base/m["filename"]).read_bytes()
+          assert hashlib.sha256(raw).hexdigest()==m["sha256"]
+          data=json.loads(gzip.decompress(raw))
+          assert m["reference_year"]==data["reference_year"]
+          assert len(data["observations"])==4242
+          assert m["national_total"]==data["national_total"]
+          print("Pacchetto POPULIV verificato:",m["reference_year"],m["national_total"])
+          PY
+      - name: Pubblica soltanto dati validati
+        run: |
+          git config user.name "POPULIV ISTAT Data Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/populiv/manifest.json data/populiv/posas_age_sex_*.json.gz
+          if git diff --cached --quiet; then echo "ISTAT: nessun nuovo dato"; exit 0; fi
+          git commit -m "POPULIV: official ISTAT POSAS demographic release"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
