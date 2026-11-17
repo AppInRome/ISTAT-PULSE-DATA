@@ -5,6 +5,8 @@ on:
     paths:
       - ".github/workflows/praevol-discovery.yml"
       - "scripts/praevol_discovery.py"
+      - "scripts/praevol_ppr_refresh.py"
+      - "tests/test_praevol_ppr.py"
   workflow_dispatch:
 permissions: {contents: read}
 jobs:
