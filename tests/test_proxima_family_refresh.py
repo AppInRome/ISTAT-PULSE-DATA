@@ -34,7 +34,8 @@ class ProximaFamilyTests(unittest.TestCase):
                 (p.POPULIV/"manifest.json").write_text(json.dumps({"filename":"pack.json.gz","sha256":hashlib.sha256(gz).hexdigest()}))
                 self.assertEqual(national,p.territorial_document()["national_total"])
                 counts["national_total"]=111
-                with self.assertRaises(ValueError):p.territorial_document() # unchanged archive; cannot slip bad claims
+                (p.POPULIV/"pack.json.gz").write_bytes(gzip.compress(json.dumps(counts).encode()))
+                with self.assertRaises(ValueError):p.territorial_document() # changed archive must fail hash gate
             finally:p.POPULIV=old
 
 if __name__=="__main__":unittest.main()
