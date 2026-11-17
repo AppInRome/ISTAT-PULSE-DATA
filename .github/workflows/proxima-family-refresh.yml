@@ -1,0 +1,58 @@
+name: PROXIMA - official service and territory updates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "31 10 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/proxima_family_refresh.py"
+      - ".github/workflows/proxima-family-refresh.yml"
+permissions:
+  contents: write
+concurrency:
+  group: proxima-verified-family-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify publisher syntax
+        run: python -m py_compile scripts/proxima_family_refresh.py
+      - name: Run offline regression tests
+        run: python -m unittest discover -s tests -p 'test_proxima_family_refresh.py' -v
+      - name: Check official MIM and ISTAT feeds (preserve last good on failure)
+        run: python scripts/proxima_family_refresh.py
+      - name: Verify each published family checksum and shape
+        run: |
+          python - <<'PY'
+          import gzip,hashlib,json,pathlib
+          root=pathlib.Path('data/proxima')
+          manifest=json.loads((root/'manifest.json').read_text())
+          assert manifest['schema']==1
+          for family,entry in manifest['families'].items():
+              data=(root/entry['filename']).read_bytes()
+              assert hashlib.sha256(data).hexdigest()==entry['sha256']
+              obj=json.loads(gzip.decompress(data))
+              assert obj['schema']==1 and obj['family']==family
+              assert len(obj['records'])==entry['rows']
+              print(family,entry['reference_year'],entry['rows'])
+          PY
+      - name: Commit validated data only
+        run: |
+          git config user.name "PROXIMA Data Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/proxima/manifest.json data/proxima/refresh_status.json data/proxima/*.json.gz
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "PROXIMA: official validated data family snapshots"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
