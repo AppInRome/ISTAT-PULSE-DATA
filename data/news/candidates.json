@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-11-17T10:23:27.220916+00:00",
+  "generated_at": "2026-11-17T11:59:36.208343+00:00",
   "candidates": [
-    {
-      "radar": "Google News - Adnkronos dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "Google News - Sole 24 Ore dati e statistiche",
       "status": "radar_fetched",
@@ -39,17 +34,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 35
+      "items_fetched": 38
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 48
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 21
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -99,7 +94,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 39
+      "items_fetched": 36
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -109,7 +104,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 23
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -184,7 +179,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 12
+      "items_fetched": 14
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -214,12 +209,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 21
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -324,7 +319,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 19
     },
     {
       "radar": "Google News - economia lavoro",
@@ -343,6 +338,11 @@
     },
     {
       "radar": "Google News - ANSA dati e statistiche",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "Google News - Adnkronos dati e statistiche",
       "status": "radar_fetched",
       "items_fetched": 60
     },
@@ -367,10 +367,29 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYWdlRWJDb3JBcjdsQVNXVWNtMHp2SXpkVmhjLVA2c21IUk1xMUJaVUh4NEw0MkFLNUtJeFRiaTh6M3VSZ01aMXZaM3lqaFpscDJVMTZXWjE5d0M5YWduRWlMTDg1TFQ3ampBOWYwTEtsdENZc0V1LWFGN2NGNDdRZ3ZERUc?oc=5",
+      "discovery_title": "Inflazione in Italia a ottobre 2026: l'indice dei prezzi al consumo sale del 5,5% su base annua - Notizie e Statistiche - IndexBox",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 64,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "2026",
+        "5,5%",
+        "2026",
+        "5,5%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Google News - Italia salute e welfare",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
       "discovery_title": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 55,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -397,7 +416,7 @@
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14R2kxc3k5aWpIbEJDcEIzdktxQWdsQ2JzTFZiY2hFcVlFejBUbFV5NUFnT0g0WGp6YjFwZ0d3aEpLRU51a2NKSzZBeFo4N3J4YW81ZWJjckx6U3JEMDFiSjctSi1jQ1dOSFFOQ2hKTUJJOFpLdWo0UEFJekRfZ0U?oc=5",
       "discovery_title": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 60,
       "topic": "ENERGIA",
       "numbers_detected": [
@@ -418,7 +437,7 @@
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/caro-pane-prezzi-cresciuti-32percento-2017-ecco-citta-dove-costa-piu-AJiRHEJC",
       "discovery_title": "Caro pane, prezzi cresciuti del 32% dal 2017: ecco le città dove costa di più",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -437,7 +456,7 @@
       "radar": "Il Messaggero - Notizie",
       "discovery_url": "https://www.ilmessaggero.it/economia/news/inflazione_ottobre_vola_oltre_cinque_per_centro_aumento_prezzi_cosa_succede-9895453.html",
       "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il ?carrello della spesa? accelera (da +1,5% a +2,5%)",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 65,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -458,10 +477,60 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Adnkronos - Notizie",
+      "discovery_url": "https://www.adnkronos.com/economia/inflazione-italia-ottobre-carrello-spesa-rincari-alimenti_5SCKoxeM66lKeFoxQK4Sf4",
+      "discovery_title": "Inflazione a ottobre segna +5,5%, ai massimi dal 2023. Sale il 'carrello della spesa', rincari record per alimenti ed energia",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 95,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+5,5%",
+        "2023",
+        "+1,0%",
+        "+5,5%",
+        "+4,2%",
+        "+5,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [
+        "istat.it"
+      ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Milano Finanza dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWDVYWmRST1l3NmpReGdjaVloU2xDMW5xRkwyTHNZNVRfbmwtN2M4NDhWR01hRVg1dmZTZXNhMnozdldyeE0wdlhLNDhLaDBNeVp0aTlWY05fZjNLVE01aEVkblQzR1RORlpKTkp6cWJ4NGIxX21faHZkeUtQTElKTXVFVXo4WHNCWmljZ1k4TjJwRy10SDlpLXhlMlNHS1RJZHlXSm9QTkVXRWstX0pqV015UFliamlWUHJlQ2Jqa1otQkpvbnc?oc=5",
+      "discovery_title": "*Inflazione: Ue stima in Italia +3,4% in 2026, +3,1% in 2027 e +1,8% in 2028 - Milano Finanza",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 55,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "+3,4%",
+        "2026",
+        "+3,1%",
+        "2027 ",
+        "+1,8%",
+        "2028 ",
+        "+3,4%",
+        "2026",
+        "+3,1%",
+        "2027 ",
+        "+1,8%",
+        "2028 mila"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
       "discovery_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY2xqUzNuTWc4Mnh1ZWh0bXplWnAxdjBUNHczbDIxNTc5MTdxeFV3MFhsZXFGLTJtNk9JUkhMWHQxRFAyNVhxSnRxNDJaMGc4WWU5UFhxaWU2a2lJWVZVZjhJa1BCWlR3M1pkWWQ4LTdCSXgxdnZoUHRXeXl6RXkxZ2dzYmFjUEFxdXZtUw?oc=5",
       "discovery_title": "Ue: previsioni, picco inflazione tra 2026-2027, +4% (AGI) - AGI",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -480,18 +549,16 @@
     },
     {
       "radar": "PULSE 80 testate · locali · gruppo 16",
-      "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNDc4R0l5anlHOXh2T3EzTElPbVM2QnlqNWkwd2FONm1lODd4XzhvUDFQOUVYNlBScDJHSTMwQ2NGNkc3ZTI1Qi15VkhOc01VS3FsRVM4UUtKa085Ql81RVF3NDNVa1JjdXJWVjNEOEdRdW1QdFU0VnRfSTlhbjhNV1c4U3Z2cUlJd253MVlPZksxdUVSREx2aU9rMFV2a0o0V2Q2WkhONC1saGRMWjZPbFVfWDJiVDBKY0NnX3FSSTFMUWVXNWfSAcgBQVVfeXFMT1NrTU1BeVNiTEpLSlpqVkhCSlV6YWlOVTJSUE0yc2trTzMwb1d6OWY0ZDNtYjlJRVU1RU12UFlQeWNGeXpvajFFM19ETXkycHdYdnJBbFhILTcyakVja0x2bl81ZUpCRU9GSy04cWVTQldxTWNXSGxXdzFxbDFlc1RuNWFWdG5nZllDeWJ3MS1UaXN1MkNRNGRCMXAxaGg4QlhXc2xmMldncHZQY2F5blVtS1lFRGJiQ3JxUF90YVJCRG4wNnRKUGk?oc=5",
-      "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
-      "score_discovery": 45,
+      "discovery_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdkl0RkpIUDRhdTFxa1RsUkJ1QnlQRmw3U1ZDYkdTdENWVDNHME8wdktzOEhER3ZRdzRpRm5QanhIYllfUXFXMkFna2dNWjdWdkNiRnZ3ejR4ZHQya01kYjJZcWRMNDJJaE04RU9ZbjhWcmtuUEQwT0xYUG9qUEdFYmhKWFozanptNUJ3?oc=5",
+      "discovery_title": "Carovita, l’inflazione accelera anche a ottobre: a Bologna è in crescita del 5,6% rispetto al 2025 - Il Resto del Carlino",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "5,5%",
-        "+1,5%",
-        "+2,5%",
-        "5,5%",
-        "+1,5%",
-        "+2,5%"
+        "5,6%",
+        "2025 ",
+        "5,6%",
+        "2025 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -503,7 +570,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
       "discovery_title": "Prezzi al consumo – Ottobre 2026",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -560,17 +627,67 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Il Sole 24 Ore - Italia Attualità",
-      "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
-      "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
-      "score_discovery": 54,
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOLS1ReTU5VXcxWGFuaEZ5M0d6cHdFdVdTcmZKZmlWNmF6SjViWEYyS3h0b2ZMY2xPM2dZWnBUVUJ5UE5iMWtyQWl0MjZ2TGZaQ3hZMjdObVpEdm9sSDJ0MUpKelp4bFV6ekdKVmpiZ0ZNODIwZ2FzR0NVeXlKS3FMVEwzNWUzbFJJbmM5ODJ4SkRHclo3TXh5UVBjZHFRUHFGeDdtRmZ6LWR1QmdxUlBLMW9rRW5NNlU0eE1LLWNmRkxNVzY1bWtjT0lCcUViajFwN2dnb3h4Sjl5VGRRVWdBM3lGV2VpenNEQTJXVEN6WEprWVBlZ0V2VmxzdzhkQ0hHY2NB0gGIAkFVX3lxTE4zR0luU2d3OWprWWFiQXpjTUN3ZFBJeDUyMW1xS0d6R010dWJMTUlJcTR6NmNabmxtQ0lTX0I4bVJtM2J2eFBYQ2Ftc2VvQkR1N1F0RUppMTQzeXdEcGJfWGZMNG1qcF8tYWpnNWstUWlyQkNodnFUMVpDTEdLaHgtY203Y0tURVdmOXd2V0pCQVVVTllEOGl0bDRZZ2ZjZm5zODQ3ZWQxdkVTQXBsdkMyMFBnVTJqRmUtZTBMTnZLdnpxNG1DMG5WLXRmQUR2UW8yNjNNbThNMGdkMjVqYzh2QTJ6QlNETjl3aDFQY1k0ZFcwb2ZTdGtVSEpQRC15aDRUdVdrSzlpUQ?oc=5",
+      "discovery_title": "L'Ue vede l'inflazione al 3,2% nell'Eurozona e al 3,4% in Italia nel 2026 - ANSA",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "-1%",
-        "1%",
-        "2026",
-        "0,4%"
+        "3,2%",
+        "3,4%",
+        "2026 ",
+        "3,2%",
+        "3,4%",
+        "2026 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "AGI - Notizie",
+      "discovery_url": "https://www.agi.it/economia/news/2026-11-17/bar-italiani-fipe-23-miliardi-tazzina-caffe-40065481/",
+      "discovery_title": "Il bar vale 23 miliardi ma il modello è sotto pressione: dal 2015 chiusi o riconvertiti 21...",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 80,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "23 miliardi",
+        "2015 ",
+        "21",
+        "23 miliardi",
+        "125 mila",
+        "374 mila",
+        "124.917 ",
+        "-1,5%",
+        "2024",
+        "5 miliardi",
+        "16 milioni",
+        "23 miliardi"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 02",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
+      "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "5,5%",
+        "+1,5%",
+        "+2,5%",
+        "5,5%",
+        "+1,5%",
+        "+2,5%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -582,7 +699,7 @@
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTXZZdUdsNDZFTDBBeEZ2WC1PRjh6MW55YzBrNzl4eGxGUUpTd1pQeE9ZemdsUnNnakU0aWx3NGk2d3J6eV9kczI2NXE3RkRPNW5pV2FiVlh4d1l0MllTUFVIOTdfd0RtYzRiczhxbE1WNHloR2RjTFNFeUFqQVR1UmhoWE84NldJaDN3?oc=5",
       "discovery_title": "Ue: cresce stima inflazione Italia 2026, 3,4% (AGI) - AGI",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -598,10 +715,56 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Il Sole 24 Ore - Italia Attualità",
+      "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
+      "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 54,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "-1%",
+        "1%",
+        "2026",
+        "0,4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "AGI - Notizie",
+      "discovery_url": "https://www.agi.it/economia/news/2026-11-17/inflazione-ottobre-2026-istat-carrello-della-spesa-40064871/",
+      "discovery_title": "Inflazione al 5,5% a ottobre, l’energia spinge i prezzi: carrello della spesa a +2,3%",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
+      "score_discovery": 80,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "5,5%",
+        "+2,3%",
+        "5,5%",
+        "4,2%",
+        "+1,5%",
+        "+2,3%",
+        "+5,2%",
+        "+5,8%",
+        "+2,0%",
+        "+1,6%",
+        "+22,6%",
+        "+31,9%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
       "discovery_url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81T1FHbS1YTFhZXzZOT29oRjFPbTdLbjMxMDZ5MWpOSHoxbU9LOVRzenNvU1MzdTNtS011RzNzYkw5OWZtODBWZzZoTVRzYVhmcTVhczVfOTJ4V0lBNkhEMWlpQ3ZqQ1d2UGlHWDhfZFQtZE9T?oc=5",
       "discovery_title": "Inflazione: Istat, +1% a ottobre, alza stima a +5,5% su anno (RCO) - Il Sole 24 ORE",
-      "detected_at": "2026-11-17T10:23:27.220916+00:00",
+      "detected_at": "2026-11-17T11:59:36.208343+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
