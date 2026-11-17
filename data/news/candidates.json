@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:23:42.305529+00:00",
+  "generated_at": "2026-11-17T15:03:54.258643+00:00",
   "candidates": [
     {
       "radar": "Google News - Sole 24 Ore dati e statistiche",
@@ -24,22 +24,22 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 45
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 49
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -78,8 +78,8 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE osservatori ufficiali 8/9",
@@ -94,7 +94,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 36
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -104,12 +104,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 21
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 39
+      "items_fetched": 36
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -319,12 +319,12 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 24
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYWdlRWJDb3JBcjdsQVNXVWNtMHp2SXpkVmhjLVA2c21IUk1xMUJaVUh4NEw0MkFLNUtJeFRiaTh6M3VSZ01aMXZaM3lqaFpscDJVMTZXWjE5d0M5YWduRWlMTDg1TFQ3ampBOWYwTEtsdENZc0V1LWFGN2NGNDdRZ3ZERUc?oc=5",
       "discovery_title": "Inflazione in Italia a ottobre 2026: l'indice dei prezzi al consumo sale del 5,5% su base annua - Notizie e Statistiche - IndexBox",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 64,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14R2kxc3k5aWpIbEJDcEIzdktxQWdsQ2JzTFZiY2hFcVlFejBUbFV5NUFnT0g0WGp6YjFwZ0d3aEpLRU51a2NKSzZBeFo4N3J4YW81ZWJjckx6U3JEMDFiSjctSi1jQ1dOSFFOQ2hKTUJJOFpLdWo0UEFJekRfZ0U?oc=5",
       "discovery_title": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 60,
       "topic": "ENERGIA",
       "numbers_detected": [
@@ -410,7 +410,7 @@
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/caro-pane-prezzi-cresciuti-32percento-2017-ecco-citta-dove-costa-piu-AJiRHEJC",
       "discovery_title": "Caro pane, prezzi cresciuti del 32% dal 2017: ecco le città dove costa di più",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -429,7 +429,7 @@
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://www.corriere.it/economia/life/nautica/26_novembre_17/metstrade-amsterdam-2026-anche-77-imprese-italiane-alla-piu-grande-fiera-di-materiali-e-accessori-per-la-nautica-7229880e-c166-4ec0-877b-849ea4c43xlk.shtml",
       "discovery_title": "Metstrade Amsterdam 2026, anche 77 imprese italiane alla più grande fiera di materiali e accessori per la nautica",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -451,26 +451,25 @@
     {
       "radar": "Il Fatto Quotidiano - Notizie",
       "discovery_url": "https://www.ilfattoquotidiano.it/2026/11/17/previsioni-commissione-europea-italia-deficit-notizie/8574699/",
-      "discovery_title": "Ue, ecco le previsioni sui conti italiani: deficit al 3,5% e Pil in rallentamento nel 2027. Salari reali in ripresa solo dal 2028",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
-      "score_discovery": 55,
+      "discovery_title": "Ue, le previsioni sui conti italiani: Pil in rallentamento nel 2027, salari reali in ripresa solo dal 2028. Verso l’uscita dalla procedura d’infrazione",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
+      "score_discovery": 65,
       "topic": "LAVORO",
       "numbers_detected": [
-        "3,5%",
         "2027",
-        "2028 ",
+        "2028",
         "2026",
+        "2027 ",
+        "2028",
         "1%",
         "2026",
-        "0,5%",
-        "0,7%",
-        "3,5%",
         "2027",
-        "2028 "
+        "2028"
       ],
       "official_links": [],
       "official_domain_hints": [
-        "iss.it"
+        "aci.it",
+        "istat.it"
       ],
       "primary_resolution": null,
       "editorial_excluded": false,
@@ -480,7 +479,7 @@
       "radar": "Il Messaggero - Notizie",
       "discovery_url": "https://www.ilmessaggero.it/economia/news/inflazione_ottobre_vola_oltre_cinque_per_centro_aumento_prezzi_cosa_succede-9895453.html",
       "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il ?carrello della spesa? accelera (da +1,5% a +2,5%)",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 65,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -502,9 +501,9 @@
     },
     {
       "radar": "Google News - Milano Finanza dati",
-      "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWDVYWmRST1l3NmpReGdjaVloU2xDMW5xRkwyTHNZNVRfbmwtN2M4NDhWR01hRVg1dmZTZXNhMnozdldyeE0wdlhLNDhLaDBNeVp0aTlWY05fZjNLVE01aEVkblQzR1RORlpKTkp6cWJ4NGIxX21faHZkeUtQTElKTXVFVXo4WHNCWmljZ1k4TjJwRy10SDlpLXhlMlNHS1RJZHlXSm9QTkVXRWstX0pqV015UFliamlWUHJlQ2Jqa1otQkpvbnc?oc=5",
-      "discovery_title": "*Inflazione: Ue stima in Italia +3,4% in 2026, +3,1% in 2027 e +1,8% in 2028 - Milano Finanza",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOGp4R1RfME5ST2dTdHA1ajBoMVlPc0dEelhlUzZZbjIyRVotQ1IyaEdBRU1sOWIwMUkteHdpeFhUWm1FMERIVjN5N1JhT202ZGRGdThfdHRIbTFXOEx2VGZDNWZEaWo0dWVTTnJNTk5uV3B0b2xRYVZNa29XQ2FEeTNZZ2FqbENMQV9IWmNlWkhXT3FueFljWjJ5MFBQZ0lUczZ2RG5NR2lHSlV0eUNlclFwcXZzbjkxQUdtZ000VlBoYjdzNHc?oc=5",
+      "discovery_title": "Inflazione: Ue stima in Italia +3,4% in 2026, +3,1% in 2027 e +1,8% in 2028 - Milano Finanza",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -531,7 +530,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 16",
       "discovery_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdkl0RkpIUDRhdTFxa1RsUkJ1QnlQRmw3U1ZDYkdTdENWVDNHME8wdktzOEhER3ZRdzRpRm5QanhIYllfUXFXMkFna2dNWjdWdkNiRnZ3ejR4ZHQya01kYjJZcWRMNDJJaE04RU9ZbjhWcmtuUEQwT0xYUG9qUEdFYmhKWFozanptNUJ3?oc=5",
       "discovery_title": "Carovita, l’inflazione accelera anche a ottobre: a Bologna è in crescita del 5,6% rispetto al 2025 - Il Resto del Carlino",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -550,7 +549,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
       "discovery_title": "Prezzi al consumo – Ottobre 2026",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -607,10 +606,67 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica",
+      "discovery_title": "Giornata Mondiale del Diabete: il fegato, un protagonista spesso trascurato della salute metabolica",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
+      "score_discovery": 45,
+      "topic": "SALUTE",
+      "numbers_detected": [
+        "16",
+        "11",
+        "2026 ",
+        "14 ",
+        "2 "
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news"
+      ],
+      "official_domain_hints": [
+        "aci.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "16",
+          "11",
+          "2026 ",
+          "14 ",
+          "2 "
+        ],
+        "matched_non_year_numbers": [
+          "16",
+          "11",
+          "14 ",
+          "2 "
+        ],
+        "matched_keywords": [
+          "giornata",
+          "mondiale",
+          "diabete",
+          "fegato",
+          "protagonista",
+          "spesso",
+          "trascurato",
+          "salute"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Giornata Mondiale del Diabete: il fegato, un protagonista spesso trascurato della salute metabolica | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sc",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOLS1ReTU5VXcxWGFuaEZ5M0d6cHdFdVdTcmZKZmlWNmF6SjViWEYyS3h0b2ZMY2xPM2dZWnBUVUJ5UE5iMWtyQWl0MjZ2TGZaQ3hZMjdObVpEdm9sSDJ0MUpKelp4bFV6ekdKVmpiZ0ZNODIwZ2FzR0NVeXlKS3FMVEwzNWUzbFJJbmM5ODJ4SkRHclo3TXh5UVBjZHFRUHFGeDdtRmZ6LWR1QmdxUlBLMW9rRW5NNlU0eE1LLWNmRkxNVzY1bWtjT0lCcUViajFwN2dnb3h4Sjl5VGRRVWdBM3lGV2VpenNEQTJXVEN6WEprWVBlZ0V2VmxzdzhkQ0hHY2NB0gGIAkFVX3lxTE4zR0luU2d3OWprWWFiQXpjTUN3ZFBJeDUyMW1xS0d6R010dWJMTUlJcTR6NmNabmxtQ0lTX0I4bVJtM2J2eFBYQ2Ftc2VvQkR1N1F0RUppMTQzeXdEcGJfWGZMNG1qcF8tYWpnNWstUWlyQkNodnFUMVpDTEdLaHgtY203Y0tURVdmOXd2V0pCQVVVTllEOGl0bDRZZ2ZjZm5zODQ3ZWQxdkVTQXBsdkMyMFBnVTJqRmUtZTBMTnZLdnpxNG1DMG5WLXRmQUR2UW8yNjNNbThNMGdkMjVqYzh2QTJ6QlNETjl3aDFQY1k0ZFcwb2ZTdGtVSEpQRC15aDRUdVdrSzlpUQ?oc=5",
       "discovery_title": "L'Ue vede l'inflazione al 3,2% nell'Eurozona e al 3,4% in Italia nel 2026 - ANSA",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -628,10 +684,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "Google News - Il Fatto Quotidiano dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
+      "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
+      "score_discovery": 50,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "3,5%",
+        "2027 ",
+        "2028 ",
+        "3,5%",
+        "2027 ",
+        "2028 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE 80 testate · nazionali · gruppo 02",
       "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
       "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -649,37 +726,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
-      "discovery_title": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
-      "score_discovery": 55,
-      "topic": "SALUTE",
-      "numbers_detected": [
-        "14 ",
-        "18 ",
-        "59,8%",
-        "53,3%",
-        "52,6%",
-        "2050 ",
-        "14 ",
-        "18 ",
-        "59,8%",
-        "53,3%",
-        "52,6%",
-        "2050 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
       "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -695,25 +745,25 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "AGI - Notizie",
-      "discovery_url": "https://www.agi.it/economia/news/2026-11-17/bar-italiani-fipe-23-miliardi-tazzina-caffe-40065481/",
-      "discovery_title": "Il bar vale 23 miliardi ma il modello è sotto pressione: dal 2015 chiusi o riconvertiti 21...",
-      "detected_at": "2026-11-17T13:23:42.305529+00:00",
-      "score_discovery": 80,
-      "topic": "LAVORO",
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNTm0wa0RQNzRydjg3S3YxRUtZYjZRYVJtbjBMbDRaNHFLZXZsUzhPUVU5dklMaWZMcW9PTFhidFNRaXY1NGhiUlRJajUwNkNkTWVzSWc4Qlg1LTRORDROZEFuRmNCa0t0LUd4WlhFVWdrTzFPYkhuY3RjWG1ib0E1RGIwRmVQeHhpVmJKUmxiS1JJMnllUDRvdzh5VENpYXkzOGhvOWl0VzNia1ExNzJiM1ZzWUdPQU9vNGpSZ09SbDRyYzJna1ZWTFp6bFlUNU9vSjJ5cTQ0a0ZsbDMybWl0MU9sbjF0WmNtZUZUNjdSc3ZmMmJEY1FnSk5QeGdGQVlpaFYzYzhwT3E?oc=5",
+      "discovery_title": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-17T15:03:54.258643+00:00",
+      "score_discovery": 55,
+      "topic": "SALUTE",
       "numbers_detected": [
-        "23 miliardi",
-        "2015 ",
-        "21",
-        "23 miliardi",
-        "125 mila",
-        "374 mila",
-        "124.917 ",
-        "-1,5%",
-        "2024",
-        "5 miliardi",
-        "16 milioni",
-        "23 miliardi"
+        "14 ",
+        "18 ",
+        "59,8%",
+        "53,3%",
+        "52,6%",
+        "2050 ",
+        "14 ",
+        "18 ",
+        "59,8%",
+        "53,3%",
+        "52,6%",
+        "2050 "
       ],
       "official_links": [],
       "official_domain_hints": [],
