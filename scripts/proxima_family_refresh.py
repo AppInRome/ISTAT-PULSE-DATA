@@ -67,6 +67,8 @@ def school_rows(body, source):
 
 def school_document():
     sources=latest_mim()
+    school_terms={re.search(r"(20\\d{4})20\\d{6}\\.csv$",u).group(1) for u in sources.values()}
+    if len(school_terms)!=1:raise ValueError("Le anagrafi MIM hanno annualita scolastiche diverse")
     schools={}
     for src,url in sources.items():
         for entry in school_rows(fetch(url),src):
@@ -103,6 +105,8 @@ def add_family(state,family,data):
     year=data["reference_year"]
     prior=state.get("families",{}).get(family,{})
     if prior.get("reference_year",0)>year:raise ValueError("Backdated pack rejected")
+    if family=="schools" and prior.get("rows") and len(data["records"])<prior["rows"]*0.88:
+        raise ValueError("School registry unexpectedly shrunk")
     raw=gzip.compress(json.dumps(data,ensure_ascii=False,sort_keys=True,separators=(",",":")).encode(),compresslevel=9,mtime=0)
     sha=hashlib.sha256(raw).hexdigest()
     if prior.get("sha256")==sha:return False
