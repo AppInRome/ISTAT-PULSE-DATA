@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "families": {
+    "territorial_population": {
+      "status": "ready",
+      "schema": 1,
+      "family": "territorial_population",
+      "reference_year": 2026,
+      "filename": "territorial_population_2026_67ced03f5f.json.gz",
+      "sha256": "67ced03f5fffb189d93e604ebee2fc5fab66515f055d4d1311deddb8e8d391a5",
+      "bytes": 539,
+      "rows": 21,
+      "source": "ISTAT POSAS",
+      "source_url": "https://demo.istat.it/data/posas/POSAS_2026_it_Comuni.zip",
+      "published_at": "2026-11-17T16:59:28.285913+00:00"
+    }
+  },
+  "geographies": {
+    "status": "catalog_only",
+    "official_reference_year": 2026,
+    "source": "ISTAT confini amministrativi",
+    "source_url": "https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/",
+    "note": "Administrative boundaries cannot replace ISTAT BT2021 census-section polygons"
+  }
+}
