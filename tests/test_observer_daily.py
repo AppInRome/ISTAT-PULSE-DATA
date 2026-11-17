@@ -20,6 +20,12 @@ class ObserverCollectorTests(unittest.TestCase):
         self.assertTrue(mod.host_allowed("https://www.cna.it/pubblicazioni/test", "cna.it"))
         self.assertFalse(mod.host_allowed("https://cna.it.evil.example/article", "cna.it"))
 
+    def test_discards_navigation_titles_but_keeps_real_reports(self):
+        self.assertFalse(mod.is_publication_title("Navigazione"))
+        self.assertFalse(mod.is_publication_title("Open Data"))
+        self.assertFalse(mod.is_publication_title("Menu di accesso rapido"))
+        self.assertTrue(mod.is_publication_title("Rapporto sul lavoro autonomo in Italia 2026"))
+
     def test_preserves_last_good_and_adds_only_official(self):
         with tempfile.TemporaryDirectory() as tmp:
             archive = Path(tmp) / "observer_articles.json"
