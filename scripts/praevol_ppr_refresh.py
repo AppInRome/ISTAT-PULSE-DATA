@@ -127,7 +127,8 @@ def build(base,regions_zip,italy_zip):
             if geo not in src:raise ValueError("Codice geografico mancante")
             for band in range(20):
                 male,female=src[geo][year,band]
-                if not 0<=male<=2_000_000 or not 0<=female<=2_000_000:
+                cap=6_000_000 if geo=="I:ITA" else 2_000_000
+                if not 0<=male<=cap or not 0<=female<=cap:
                     raise ValueError("Conteggio demografico anomalo")
                 records.append([geo,year,band,male,female])
                 if geo=="I:ITA":
