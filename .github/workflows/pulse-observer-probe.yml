@@ -1,0 +1,26 @@
+name: PULSE - smoke official observer RSS sources (temporary)
+on:
+  push:
+    branches: [fix/pulse-editorial-health-official-2026-11-17]
+    paths: [".github/workflows/pulse-observer-probe.yml"]
+permissions: {contents: read}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Probe each official URL without modifying the archive
+        run: |
+          python - <<'PY'
+          from scripts.update_observer_daily import FEEDS,get_feed,items_from_xml
+          for name,host,url in FEEDS:
+              try:
+                  contents=get_feed(url,host)
+                  entries=items_from_xml(contents)
+                  print(name,"OK",len(entries),"items",len(contents),"bytes",flush=True)
+              except Exception as exc:
+                  print(name,"UNAVAILABLE",str(exc)[:130],flush=True)
+          PY
