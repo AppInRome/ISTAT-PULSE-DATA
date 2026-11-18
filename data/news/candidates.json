@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-18T12:09:17.612694+00:00",
+  "generated_at": "2026-11-18T13:27:17.762431+00:00",
   "candidates": [
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 55
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -69,7 +69,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 26
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -109,7 +109,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "AGI - Notizie",
@@ -174,7 +174,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -284,17 +284,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 25
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 24
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 31
     },
     {
       "radar": "Repubblica Economia",
@@ -334,12 +334,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 38
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 39
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/caro-pane-prezzi-cresciuti-32percento-2017-ecco-citta-dove-costa-piu-AJiRHEJC",
       "discovery_title": "Caro pane, prezzi cresciuti del 32% dal 2017: ecco le città dove costa di più",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "AGI - Notizie",
       "discovery_url": "https://www.agi.it/scienza/news/2026-11-18/ai-act-sanzioni-imprese-40081975/",
       "discovery_title": "AI Act in Italia, a che punto sono le imprese",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 95,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -416,7 +416,7 @@
       "radar": "Google News - Il Fatto Quotidiano dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
       "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -437,7 +437,7 @@
       "radar": "PULSE 80 testate · nazionali · gruppo 02",
       "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
       "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -458,7 +458,7 @@
       "radar": "Google News - statistiche Italia",
       "discovery_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPak5sREZMUnRBemR6a2hXNmt1Zm1DMkltc3BvSkNkajdFdDlBVE1yYjVQay1rXzFpZkpVeFB1ZnNXTXhyei05c1NpS29SWHdEbGg3MDVhcXdtWHZROEE0bHlveUVDZGVBWkdpTHA5UVNIcWVNcjJaU0dYLU8wSHQyQ3BncXF0ci1mYlI3Yl94SVBrSzc5bnlvZFRkenNNNlRaR05GbUUtb2taWFZGTEM0VGk4enRsYkFNcDl5SjdPZF85bGNRSUh5eUJ4UUJBQ0FPQW4tS18ycGU1NHIzUHpINVJDYVV5SkxFZFJoYjRXNkJaTG04QTQtQ2h1QUYxdi1sWDNxOA?oc=5",
       "discovery_title": "Studenti universitari dall’estero, nell’Ue record di 1,65 milioni. L’Italia è quarta con 123mila iscritti e cresce del 16% in un anno. I dati Eurostat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 75,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -479,7 +479,7 @@
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOaWhOZzVJNnAyUjRMOVBZbUFxMzh3UWxQdjdiSVNOWGREMzdDeUUwUWtBTFlUVkkxczdCT0U5WDFsanFPdEgwNGowLWhTOURHWGoyaUo3ek9vVWJVaGpicVU5OUFkWjN1dlNmVUxHUkhNMFJOYWl5bU1BYUNTUmZzSDg4UGs2SlpxVUFxazk3V0dNZnJDc3ktR2dXU2UwNUxma0FNV3U1ZHVvYWhLcmxQaXVKLUFEelh3TmZXYW8zZ1VhdzNwSURJMWVVWjdzVkRuWWxKVW9B?oc=5",
       "discovery_title": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3% - Giornale Radio",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 75,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -500,7 +500,7 @@
       "radar": "Google News - Italia lavoro e imprese",
       "discovery_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVjZVRl9oN3VHeE5EeVNuZ3dWWXpEOXZrdUNzV0RWOEtwazVqLVY4ZEtsY2s3Skc5QVVNemVkQ0lwWG5hVllTRVR5bm4ycGFaaE1PTVpGcHRjZ3hsUndzX25lbV8xRWM3RW03ckVlSFBSY0ZtbXNPXzZGUVlxLWpvd1hIcF9GQnZhVXpxYkdRWGE5aWJaeF9MY00zNGhDUWt0ajY3S09Sbl9uRXQ1VEdOdkhaNnJDckhDYUFHaHJEZi1uWXE0eFM1QmFkdG9laHQ5ZlVfVFVSdTRUNnBBMVItSXZKSGVteHJZdUJhNXhn0gH2AUFVX3lxTE1SS0JBVFIyUTVtbW1jN1lMdmMzYjJMbUZYNTc0aTlKMUVvNUItSDRrdlduMDlHc2gxclQ1cFhielR0Tm9MR3FnTmtNaHFDcXJ2QXNVd1I1ZjhxSkpoU0N1UXRweGd1SDZWMTJZTXZzR0NkcDkwZGFnT2NxQmVjNk9kQnR2ZkdDSmxmanBzOHdnUUpjUVRBWFNqbVdXUG1Xd214WXZHbXpGQ3JpS0dOdE1RNEpvLVpTeEZmWXh2c3JOSzYzMlpia0ZjeWdFODVIeHBITjlHSm1XZmZIb252c0lBaTY0U2VLNWg1N2EzMW5wNHV1VnBBdw?oc=5",
       "discovery_title": "Space&Blue Economy, un tesoro da 46,3 miliardi per l’Italia: export in crescita del 31,4% e 168mila occupati, il rapporto - MeteoWeb",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -521,7 +521,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/",
       "discovery_title": "Incidenti stradali – Stima preliminare – Gennaio-giugno 2026",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -580,67 +580,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica",
-      "discovery_title": "Giornata Mondiale del Diabete: il fegato, un protagonista spesso trascurato della salute metabolica",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
-      "score_discovery": 45,
-      "topic": "SALUTE",
-      "numbers_detected": [
-        "16",
-        "11",
-        "2026 ",
-        "14 ",
-        "2 "
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news"
-      ],
-      "official_domain_hints": [
-        "aci.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "16",
-          "11",
-          "2026 ",
-          "14 ",
-          "2 "
-        ],
-        "matched_non_year_numbers": [
-          "16",
-          "11",
-          "14 ",
-          "2 "
-        ],
-        "matched_keywords": [
-          "giornata",
-          "mondiale",
-          "diabete",
-          "fegato",
-          "protagonista",
-          "spesso",
-          "trascurato",
-          "salute"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Giornata Mondiale del Diabete: il fegato, un protagonista spesso trascurato della salute metabolica | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sc",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "Google News - Italia economia e famiglie",
       "discovery_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TQTA0TTFzd3pEd1pMN3ZLM29qbkpJMmFPdm9hRnlFQXUyN1hScFlzejBBdXdvc1QxZE5YbmdWR1B6Q1hyeVNERUZaUGpISUk1VnAxcUVQNjhGY1FycW5NSS0waEo2UG55SGc?oc=5",
       "discovery_title": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE - Euroborsa",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -661,7 +604,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZGNKVU93Q2dHNDVhaFg0ZzN6dnB6a3Y1VXJiSFBreEhjUkN3ZFZlcUg2Q2N5cmRKcXFZSVFwRDhNTVFDN0RSVE10RUp2cFdLS0R1Q1VrN3lKSWVQSjREN0FPcVRTd0pMaGZQVkw5OER0REx3V1JweG1sazRfV3ByYlNBZmIxeWdyZV9wVkpaWWRzOGRIalduamJBZ3R6RTIteXNzU3BQRHp3cmpnaHNiLXlLT01UOTBsUFVJ?oc=5",
       "discovery_title": "GTA 6, l'Italia va in ferie per giocare: record mondiale del +91%. Abruzzo decimo, a scuola rischio assenze di massa - I Due Punti",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 59,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -680,7 +623,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
       "discovery_title": "Prezzi al consumo – Ottobre 2026",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -740,7 +683,7 @@
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
       "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "detected_at": "2026-11-18T12:09:17.612694+00:00",
+      "detected_at": "2026-11-18T13:27:17.762431+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
