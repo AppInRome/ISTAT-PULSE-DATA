@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-18T10:24:19.394627+00:00",
+  "generated_at": "2026-11-18T12:09:17.612694+00:00",
   "articles": [
     {
       "id": "PULSE-09A775E5DFC74C50",
       "story_fingerprint": "09a775e5dfc74c5066016ceb",
-      "published_at": "2026-11-18T10:24:19.394627+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "published_at": "2026-11-18T12:09:17.612694+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "MOBILITA",
       "pulse_score": 97,
       "patterns": [
@@ -109,10 +109,702 @@
       "verification_tier": "previously_verified_official_single_observation"
     },
     {
+      "id": "PULSE-MEDIA-BE47DC46FE51B8E6",
+      "story_fingerprint": "be47dc46fe51b8e665e9216e08c93a4e6de64781379b2a4fed7a19e7906bb717",
+      "published_at": "2026-11-18T11:28:00+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Arpa Piemonte compie 30 anni: oltre 3.500 cittadini chiedono informazioni, ecco cosa fa l'Agenzia per l'ambiente",
+      "reported_headline": "Arpa Piemonte compie 30 anni: oltre 3.500 cittadini chiedono informazioni, ecco cosa fa l'Agenzia per l'ambiente - Unione Monregalese",
+      "summary": "La testata Unione Monregalese segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 3.500. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Arpa Piemonte compie 30 anni: oltre 3.500 cittadini chiedono informazioni, ecco cosa fa l'Agenzia per l'ambiente",
+      "pulse_summary": "La testata Unione Monregalese segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 3.500. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Unione Monregalese segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 3.500. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE Italia - Nord e Centro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "AMBIENTE",
+      "pulse_score": 29,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOdVdlX3dCRmlSQmlpRHliQUVHVzJPS3ZvaEk3V0NhNWRELVNJdXJYSjRkeUxzZjVoSGotcUFOdzFCNWw0U01OanRMU2k5RWwwUEZTaVZCOXEwOFVZQUV5LWd2Zkdwejc0cEZLci1zdTdEc2R0d1VucDAtcmpveGZWYmRjSGRfNTJBWjNXdUZLS2I3bXFDenAxWFREbjZaSDY0ZVRNeVZ6b3h1WjFfZkNUZ0d0eEp6Qm1MNmhPWmUyRWFpUVlDb2RNQ05KWWtPTWp4U3hPLVZWLV9TUjJSNmtDQTdwU0pTcVVNVWtNM01pSDZyZ3pOLUlrcVhLV0Q2UQ?oc=5",
+        "domain": "Unione Monregalese",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "3.500",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "piemonte"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Unione Monregalese",
+        "original_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOdVdlX3dCRmlSQmlpRHliQUVHVzJPS3ZvaEk3V0NhNWRELVNJdXJYSjRkeUxzZjVoSGotcUFOdzFCNWw0U01OanRMU2k5RWwwUEZTaVZCOXEwOFVZQUV5LWd2Zkdwejc0cEZLci1zdTdEc2R0d1VucDAtcmpveGZWYmRjSGRfNTJBWjNXdUZLS2I3bXFDenAxWFREbjZaSDY0ZVRNeVZ6b3h1WjFfZkNUZ0d0eEp6Qm1MNmhPWmUyRWFpUVlDb2RNQ05KWWtPTWp4U3hPLVZWLV9TUjJSNmtDQTdwU0pTcVVNVWtNM01pSDZyZ3pOLUlrcVhLV0Q2UQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-18T12:09:17.612694+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-EA9526AD1CEC9367",
+      "story_fingerprint": "ea9526ad1cec936771ce832ec98ae30c7d00e02b57438b4d4367e5ae6d74e444",
+      "published_at": "2026-11-18T11:24:50+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Caropane in Italia: prezzi su del 32% dal 2017, la classifica delle città più care",
+      "reported_headline": "Caropane in Italia: prezzi su del 32% dal 2017, la classifica delle città più care - capitalist.it",
+      "summary": "La testata capitalist.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 32%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Caropane in Italia: prezzi su del 32% dal 2017, la classifica delle città più care",
+      "pulse_summary": "La testata capitalist.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 32%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata capitalist.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 32%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 44,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOHd6UnBQZzRpRUhyR3kyU2drb29BQ2dXcmU4YmdGRDQ5a09XWFFZRjlUZHd3MlMwWVJ3cDc3bEFvM3J4ejZWTHgtWTVsYmtES3ZLS2dPcTNSXzAweEFSS2kwWUxBenJPMmctVUFWT1ZNby1kRTVITEMweUxpbFJrbXpJeUVKVktHcUE?oc=5",
+        "domain": "capitalist.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "32%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "capitalist.it",
+        "original_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOHd6UnBQZzRpRUhyR3kyU2drb29BQ2dXcmU4YmdGRDQ5a09XWFFZRjlUZHd3MlMwWVJ3cDc3bEFvM3J4ejZWTHgtWTVsYmtES3ZLS2dPcTNSXzAweEFSS2kwWUxBenJPMmctVUFWT1ZNby1kRTVITEMweUxpbFJrbXpJeUVKVktHcUE?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      },
+      "primary_research_last_attempt_at": "2026-11-18T12:09:17.612694+00:00",
+      "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-AD4D95559A3CC1B4",
+      "story_fingerprint": "ad4d95559a3cc1b4054ea47c597b4d43361bea20d1bfb701652f4e781b357c61",
+      "published_at": "2026-11-18T11:06:52+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Riciclo di carta e cartone, l’Italia raggiunge il 93%: export in crescita del 13%",
+      "reported_headline": "Riciclo di carta e cartone, l’Italia raggiunge il 93%: export in crescita del 13% - Alternativa Sostenibile",
+      "summary": "La testata Alternativa Sostenibile segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 93%, 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Riciclo di carta e cartone, l’Italia raggiunge il 93%: export in crescita del 13%",
+      "pulse_summary": "La testata Alternativa Sostenibile segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 93%, 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Alternativa Sostenibile segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 93%, 13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia lavoro e imprese». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPc2kzS18tX083WTRKN1p1QkxXMVBJbDZaWVVSX2Q1UG4yTUNkOThiS1hka2NETzg0X2xMd2ZnaG9TUlVxVDlxNTBHYUJxQmhiNWEwTUV1bHRtVXlsTUxhVjlQb0l5d3I0LXIweVY1SE5FMVB2b3VPc0s2TDU0eHNpcEdidlpYM1dyaHlPaFMxMWhGRzZtRkktM3NsLWc4UUtHWXQxbXdVN0hJdEdmeEVfZjB1UjZpSDJKblA5UXBNQldENXJwTUdsLQ?oc=5",
+        "domain": "Alternativa Sostenibile",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "93%",
+          "verified": false
+        },
+        {
+          "raw_value": "13%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Alternativa Sostenibile",
+        "original_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPc2kzS18tX083WTRKN1p1QkxXMVBJbDZaWVVSX2Q1UG4yTUNkOThiS1hka2NETzg0X2xMd2ZnaG9TUlVxVDlxNTBHYUJxQmhiNWEwTUV1bHRtVXlsTUxhVjlQb0l5d3I0LXIweVY1SE5FMVB2b3VPc0s2TDU0eHNpcEdidlpYM1dyaHlPaFMxMWhGRzZtRkktM3NsLWc4UUtHWXQxbXdVN0hJdEdmeEVfZjB1UjZpSDJKblA5UXBNQldENXJwTUdsLQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-1B0ECFC51B3F832A",
+      "story_fingerprint": "1b0ecfc51b3f832aa54bfd0f88b814000b1cfc5dedbf4daf806378a5d6efa2a1",
+      "published_at": "2026-11-18T11:04:00+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE",
+      "reported_headline": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE - Euroborsa",
+      "summary": "La testata Euroborsa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%, +21%, 5,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE",
+      "pulse_summary": "La testata Euroborsa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%, +21%, 5,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Euroborsa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%, +21%, 5,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 50,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TQTA0TTFzd3pEd1pMN3ZLM29qbkpJMmFPdm9hRnlFQXUyN1hScFlzejBBdXdvc1QxZE5YbmdWR1B6Q1hyeVNERUZaUGpISUk1VnAxcUVQNjhGY1FycW5NSS0waEo2UG55SGc?oc=5",
+        "domain": "Euroborsa",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "4%",
+          "verified": false
+        },
+        {
+          "raw_value": "+21%",
+          "verified": false
+        },
+        {
+          "raw_value": "5,6%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Euroborsa",
+        "original_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TQTA0TTFzd3pEd1pMN3ZLM29qbkpJMmFPdm9hRnlFQXUyN1hScFlzejBBdXdvc1QxZE5YbmdWR1B6Q1hyeVNERUZaUGpISUk1VnAxcUVQNjhGY1FycW5NSS0waEo2UG55SGc?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-D513757E55DA046D",
+      "story_fingerprint": "d513757e55da046dce7d22e8",
+      "published_at": "2026-11-18T11:04:00+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 50,
+      "patterns": [],
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TQTA0TTFzd3pEd1pMN3ZLM29qbkpJMmFPdm9hRnlFQXUyN1hScFlzejBBdXdvc1QxZE5YbmdWR1B6Q1hyeVNERUZaUGpISUk1VnAxcUVQNjhGY1FycW5NSS0waEo2UG55SGc?oc=5",
+        "domain": "Euroborsa",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE - Euroborsa",
+      "summary": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE Euroborsa",
+      "statistical_claims": [
+        {
+          "raw_value": "4%",
+          "verified": false
+        },
+        {
+          "raw_value": "+21%",
+          "verified": false
+        },
+        {
+          "raw_value": "5,6%",
+          "verified": false
+        },
+        {
+          "raw_value": "4%",
+          "verified": false
+        },
+        {
+          "raw_value": "+21%",
+          "verified": false
+        },
+        {
+          "raw_value": "5,6%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-B72F2FB68DA6EC29",
+      "story_fingerprint": "b72f2fb68da6ec29b5ded8e1bbb4f17aed1144c0c6aea44b67038dbe8ab945b2",
+      "published_at": "2026-11-18T11:02:18+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "AI Act in Italia, a che punto sono le imprese",
+      "reported_headline": "AI Act in Italia, a che punto sono le imprese",
+      "summary": "La testata agi.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 35 milioni, 71%, 9%, 15%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "AI Act in Italia, a che punto sono le imprese",
+      "pulse_summary": "La testata agi.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 35 milioni, 71%, 9%, 15%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata agi.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 35 milioni, 71%, 9%, 15%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «AGI - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 75,
+      "public_source": {
+        "url": "https://www.agi.it/scienza/news/2026-11-18/ai-act-sanzioni-imprese-40081975/",
+        "domain": "agi.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "35 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "71%",
+          "verified": false
+        },
+        {
+          "raw_value": "9%",
+          "verified": false
+        },
+        {
+          "raw_value": "15%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "agi.it",
+        "original_url": "https://www.agi.it/scienza/news/2026-11-18/ai-act-sanzioni-imprese-40081975/",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-AEE3574DAB933E7B",
+      "story_fingerprint": "aee3574dab933e7bff25102e",
+      "published_at": "2026-11-18T11:02:18+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "topic": "ECONOMIA",
+      "pulse_score": 75,
+      "patterns": [],
+      "public_source": {
+        "url": "https://www.agi.it/scienza/news/2026-11-18/ai-act-sanzioni-imprese-40081975/",
+        "domain": "agi.it",
+        "role": "journalistic_source",
+        "verification_method": "reported_statistical_figures_not_primary_verified",
+        "verification_score": 0
+      },
+      "headline": "AI Act in Italia, a che punto sono le imprese",
+      "summary": "AGI - Il 2 dicembre entrano in vigore i nuovi divieti dell'articolo 5 dell' AI Act e scade il termine per marcare i sistemi di intelligenza artificiale già sul mercato. È la prima scadenza europea da quando in Italia sono operative le autorità che controllano le imprese e possono sanzionarle fino a 35 milioni di euro. Le aziende, però, usano l'IA molto più di quanto la sappiano governare. Secondo l'Osservatorio Artificial Intelligence del Politecnico di Milano, nel 2025 il 71% delle grandi imprese italiane ha avviato almeno un progetto di IA. Solo il 9% si è dato una struttura di governo con r",
+      "statistical_claims": [
+        {
+          "raw_value": "2 ",
+          "verified": false
+        },
+        {
+          "raw_value": "5 ",
+          "verified": false
+        },
+        {
+          "raw_value": "35 milioni",
+          "verified": false
+        },
+        {
+          "raw_value": "71%",
+          "verified": false
+        },
+        {
+          "raw_value": "9%",
+          "verified": false
+        },
+        {
+          "raw_value": "15%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "editorial_status": "needs_primary_source",
+      "publication_status": "quarantined"
+    },
+    {
+      "id": "PULSE-MEDIA-10695143C3BA3CD1",
+      "story_fingerprint": "10695143c3ba3cd1901b9bd7cd2cea6323d94d3b59653ac03c44fb69df1af975",
+      "published_at": "2026-11-18T10:40:17+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Eurostat, a ottobre l'inflazione sale al 4% nell'eurozona",
+      "reported_headline": "Eurostat, a ottobre l'inflazione sale al 4% nell'eurozona - Quotidiano Nazionale",
+      "summary": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Eurostat, a ottobre l'inflazione sale al 4% nell'eurozona",
+      "pulse_summary": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Quotidiano Nazionale segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · nazionali · gruppo 04». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPajgwcDdBY1F6d3U5WGcwSHJKYnM4THlvLXRyMkd0VDlMTnA1OWtuc015akt4dTl5U2pMb0FwMkU1Mlp3Nm05NGVzVHAtX3djenEtNXhWemU0Y2NwdFVNeUp6Yk5UTjdTc19kd0lRQl91YnpET2hFVDRKSW1qZWpfSFdKdjhINXhjZkpKM2t1WVJXMFl3?oc=5",
+        "domain": "Quotidiano Nazionale",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Quotidiano Nazionale",
+        "original_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPajgwcDdBY1F6d3U5WGcwSHJKYnM4THlvLXRyMkd0VDlMTnA1OWtuc015akt4dTl5U2pMb0FwMkU1Mlp3Nm05NGVzVHAtX3djenEtNXhWemU0Y2NwdFVNeUp6Yk5UTjdTc19kd0lRQl91YnpET2hFVDRKSW1qZWpfSFdKdjhINXhjZkpKM2t1WVJXMFl3?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-4388CE43C01231B3",
+      "story_fingerprint": "4388ce43c01231b3a329e26557221e255aef3b2538262f3a8c9153dd70c23b04",
+      "published_at": "2026-11-18T10:29:13+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "A ottobre l'inflazione sale al 4% nell'eurozona",
+      "reported_headline": "A ottobre l'inflazione sale al 4% nell'eurozona",
+      "summary": "La testata ansa.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "A ottobre l'inflazione sale al 4% nell'eurozona",
+      "pulse_summary": "La testata ansa.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata ansa.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «ANSA - Notizie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://www.ansa.it/sito/notizie/economia/aziende/2026/11/18/a-ottobre-linflazione-sale-al-4-nelleurozona_1398f626-6c5f-43e3-bf1f-1c9ef6919183.html",
+        "domain": "ansa.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ansa.it",
+        "original_url": "https://www.ansa.it/sito/notizie/economia/aziende/2026/11/18/a-ottobre-linflazione-sale-al-4-nelleurozona_1398f626-6c5f-43e3-bf1f-1c9ef6919183.html",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-45DADFF0C974A471",
+      "story_fingerprint": "45dadff0c974a47183b71b870d7d2562fd2f13a3fdab5d25c2e2ca377789e7f4",
+      "published_at": "2026-11-18T10:24:00+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Eurozona: +0,5% m/m inflazione finale ottobre (+4% a/a)",
+      "reported_headline": "Eurozona: +0,5% m/m inflazione finale ottobre (+4% a/a) - Milano Finanza",
+      "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, +4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Eurozona: +0,5% m/m inflazione finale ottobre (+4% a/a)",
+      "pulse_summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, +4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, +4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Milano Finanza dati». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcUlEZ0NxRS1SNjRDZDF4UjVuOHNLeE1OZTNTWnNCbVVTZFE1OVdqV00wQ19HZnZzc1NocldsVi1weWVia1ltY3RSd0hSakV3NnBZTS1meWE3SFRYb1VqRFhaa3VOMDdsYWQzek83b185dlJ4Qzg2MWM3Vm5sM3lSaE9PZ2JpVTdLamhBc2paTkJXUmt4S1lDempFRnpsVTNMRldHVEJBVzl2eUxx?oc=5",
+        "domain": "Milano Finanza",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,5%",
+          "verified": false
+        },
+        {
+          "raw_value": "+4%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Milano Finanza",
+        "original_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcUlEZ0NxRS1SNjRDZDF4UjVuOHNLeE1OZTNTWnNCbVVTZFE1OVdqV00wQ19HZnZzc1NocldsVi1weWVia1ltY3RSd0hSakV3NnBZTS1meWE3SFRYb1VqRFhaa3VOMDdsYWQzek83b185dlJ4Qzg2MWM3Vm5sM3lSaE9PZ2JpVTdLamhBc2paTkJXUmt4S1lDempFRnpsVTNMRldHVEJBVzl2eUxx?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-05A84CFF352C1356",
+      "story_fingerprint": "05a84cff352c1356fe164305105b5cb5616c928f947a82394c0c4db775eec51e",
+      "published_at": "2026-11-18T10:08:13+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "Area dell'euro: inflazione confermata al 4% a ottobre",
+      "reported_headline": "Area dell'euro: inflazione confermata al 4% a ottobre - MarketScreener Italia",
+      "summary": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "Area dell'euro: inflazione confermata al 4% a ottobre",
+      "pulse_summary": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata MarketScreener Italia segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 4%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 27,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQWpGeEZZNmtLTUp6U1ozRjhGSjg5WEV5dFNBNS03Q2VKQVBFakplUk1aZ2RmYVRSSmsxODcyX1BfRXVxeFQyXzlmcTI0a21JOXBWVWtqby16ZnhQNWNEcEdwcWY5R1FlZjg2aGdzMm9uVHQ4SDJiT3IyLWYyT2NBRHBzZE94Z3Z6RDhiYUp6emhDTU5iOENXQTJGREtRVHdhdTAtYW1aZ2tWQQ?oc=5",
+        "domain": "MarketScreener Italia",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "4%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "MarketScreener Italia",
+        "original_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQWpGeEZZNmtLTUp6U1ozRjhGSjg5WEV5dFNBNS03Q2VKQVBFakplUk1aZ2RmYVRSSmsxODcyX1BfRXVxeFQyXzlmcTI0a21JOXBWVWtqby16ZnhQNWNEcEdwcWY5R1FlZjg2aGdzMm9uVHQ4SDJiT3IyLWYyT2NBRHBzZE94Z3Z6RDhiYUp6emhDTU5iOENXQTJGREtRVHdhdTAtYW1aZ2tWQQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-MEDIA-1556C4CCEEE98851",
       "story_fingerprint": "1556c4cceee988512e894adaf3cacad16d00a571f5d29d7cd22cc5d09d05c19c",
       "published_at": "2026-11-18T10:07:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Space&Blue Economy, un tesoro da 46,3 miliardi per l’Italia: export in crescita del 31,4% e 168mila occupati, il rapporto",
       "reported_headline": "Space&Blue Economy, un tesoro da 46,3 miliardi per l’Italia: export in crescita del 31,4% e 168mila occupati, il rapporto - MeteoWeb",
       "summary": "La testata MeteoWeb segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 46,3 miliardi, 31,4%, 168mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -184,7 +876,7 @@
       "id": "PULSE-42850FB8021BA703",
       "story_fingerprint": "42850fb8021ba70393aa2e7c",
       "published_at": "2026-11-18T10:07:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 55,
       "patterns": [],
@@ -228,10 +920,78 @@
       "publication_status": "quarantined"
     },
     {
+      "id": "PULSE-MEDIA-AD7DE09FC6F6D5EE",
+      "story_fingerprint": "ad7de09fc6f6d5ee25a49394855645a18124a5ffaca7086a437b5c7ad765cb69",
+      "published_at": "2026-11-18T10:05:00+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
+      "headline": "*Eurozona: +0,3% m/m inflazione core finale ottobre (+2,6% a/a)",
+      "reported_headline": "*Eurozona: +0,3% m/m inflazione core finale ottobre (+2,6% a/a) - Milano Finanza",
+      "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,3%, +2,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_title": "*Eurozona: +0,3% m/m inflazione core finale ottobre (+2,6% a/a)",
+      "pulse_summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,3%, +2,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_article_body": [
+        {
+          "heading": "La notizia segnalata",
+          "text": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,3%, +2,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+        },
+        {
+          "heading": "Fonte e contesto",
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Milano Finanza dati». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+        },
+        {
+          "heading": "Verifica statistica PULSE",
+          "text": "Per produrre un grafico PULSE servono una fonte primaria accessibile, l'indicatore, l'unità di misura e i periodi di riferimento. Finché questi elementi non sono verificati non viene disegnato alcun grafico né simulata una variazione."
+        }
+      ],
+      "topic": "ECONOMIA",
+      "pulse_score": 39,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWHNaeUNkc0NkaGlWMFk2ZVY3b2ZIV2Y3MWVnV3RLMXkyaWh6V1VqanZGUnNNS2pzdlBnNjZEeHIwXy0zQ0Z0Wkh4dFkxd0V2QzZhR0NXSTdDb3Zra09LdGhVZks2cmM2QUZpMC1Rbi1PakVfanhTaDRub1VHX1pIcW5yWjZMSmRITjlvamhHYWtZVU42WTBsRHNFbk10Nkw2cmxUczQ4VTVjSTFDX2ZkdldJZ1hxdw?oc=5",
+        "domain": "Milano Finanza",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+0,3%",
+          "verified": false
+        },
+        {
+          "raw_value": "+2,6%",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "milano"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Milano Finanza",
+        "original_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWHNaeUNkc0NkaGlWMFk2ZVY3b2ZIV2Y3MWVnV3RLMXkyaWh6V1VqanZGUnNNS2pzdlBnNjZEeHIwXy0zQ0Z0Wkh4dFkxd0V2QzZhR0NXSTdDb3Zra09LdGhVZks2cmM2QUZpMC1Rbi1PakVfanhTaDRub1VHX1pIcW5yWjZMSmRITjlvamhHYWtZVU42WTBsRHNFbk10Nkw2cmxUczQ4VTVjSTFDX2ZkdldJZ1hxdw?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
       "id": "PULSE-7C096AFDBCC9B002",
       "story_fingerprint": "7c096afdbcc9b002067970e0",
       "published_at": "2026-11-18T10:02:55+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ALTRO",
       "pulse_score": 77,
       "public_source": {
@@ -317,7 +1077,7 @@
       "id": "PULSE-MEDIA-7FE2488BD85E8C4C",
       "story_fingerprint": "7fe2488bd85e8c4ce24dba17486e05425a9e1094f4c9c106bc3ba1d00dd5645d",
       "published_at": "2026-11-18T09:58:06+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Studenti universitari dall’estero, nell’Ue record di 1,65 milioni. L’Italia è quarta con 123mila iscritti e cresce del 16% in un anno. I dati Eurostat",
       "reported_headline": "Studenti universitari dall’estero, nell’Ue record di 1,65 milioni. L’Italia è quarta con 123mila iscritti e cresce del 16% in un anno. I dati Eurostat - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 1,65 milioni, 123mila, 16%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -330,7 +1090,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - statistiche Italia». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia scuola e università». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -389,7 +1149,7 @@
       "id": "PULSE-B0C53D5645F50D5D",
       "story_fingerprint": "b0c53d5645f50d5de391c41d",
       "published_at": "2026-11-18T09:58:06+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 75,
       "patterns": [],
@@ -436,7 +1196,7 @@
       "id": "PULSE-MEDIA-431872C56837A703",
       "story_fingerprint": "431872c56837a703bb344926ecc486403f1d6a3ea7a9eb11c8c64c4ba52070c9",
       "published_at": "2026-11-18T08:00:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Export italiano, i controlli Ue sui beni dual use frenano gli scambi fino al 20%: le imprese puntano sugli Stati Uniti",
       "reported_headline": "Export italiano, i controlli Ue sui beni dual use frenano gli scambi fino al 20%: le imprese puntano sugli Stati Uniti - Euroborsa",
       "summary": "La testata Euroborsa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -500,7 +1260,7 @@
       "id": "PULSE-MEDIA-3B0BB4BE144C6A6D",
       "story_fingerprint": "3b0bb4be144c6a6de4955c3f8d2d3f80cfbe0779c157ddfeb62be836c39d935f",
       "published_at": "2026-11-18T07:52:37+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Ram Rampage arriva in Italia: pickup da 200 e 272 CV, prezzi da 48.000 euro",
       "reported_headline": "Ram Rampage arriva in Italia: pickup da 200 e 272 CV, prezzi da 48.000 euro - Il Giornale di Vicenza",
       "summary": "La testata Il Giornale di Vicenza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 48.000 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -564,7 +1324,7 @@
       "id": "PULSE-MEDIA-13EC125F686EA3F1",
       "story_fingerprint": "13ec125f686ea3f1e74c27c1808b3e0c563ea46b86550d1efaf1341f894591ab",
       "published_at": "2026-11-18T07:28:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "GB: +0,5% m/m inflazione ottobre (+3,6% a/a)",
       "reported_headline": "GB: +0,5% m/m inflazione ottobre (+3,6% a/a) - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +0,5%, +3,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -768,7 +1528,7 @@
       "id": "PULSE-MEDIA-DF72DBFFCBD0CBA7",
       "story_fingerprint": "df72dbffcbd0cba72b91f74cac9b8069702e8f5f60dd85cf7cb42054d7da50ae",
       "published_at": "2026-11-18T07:00:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Banca d'Italia, l'IA può spingere il PIL dell'Eurozona oltre l'1,5% in cinque anni. Inflazione in rialzo nella prima fase",
       "reported_headline": "Banca d'Italia, l'IA può spingere il PIL dell'Eurozona oltre l'1,5% in cinque anni. Inflazione in rialzo nella prima fase - Euroborsa",
       "summary": "La testata Euroborsa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -830,7 +1590,7 @@
       "id": "PULSE-MEDIA-3563FF404CEFDD12",
       "story_fingerprint": "3563ff404cefdd1244d138ad5e3d3161e5c9b3186b2cb1cc784522fbcaffa37f",
       "published_at": "2026-11-18T06:30:42+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Sanità, gli italiani pagano 50 miliardi. Triplicata in 10 anni la spesa nelle cliniche",
       "reported_headline": "Sanità, gli italiani pagano 50 miliardi. Triplicata in 10 anni la spesa nelle cliniche - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 50 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -894,7 +1654,7 @@
       "id": "PULSE-MEDIA-C0BACDF6F152E832",
       "story_fingerprint": "c0bacdf6f152e8320316286f0322ced079b37ad46565e06eab6bb9811505e58c",
       "published_at": "2026-11-18T06:30:38+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "GTA 6, l'Italia va in ferie per giocare: record mondiale del +91%. Abruzzo decimo, a scuola rischio assenze di massa",
       "reported_headline": "GTA 6, l'Italia va in ferie per giocare: record mondiale del +91%. Abruzzo decimo, a scuola rischio assenze di massa - I Due Punti",
       "summary": "La testata I Due Punti segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati +91%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -907,7 +1667,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - statistiche Italia». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia scuola e università». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -960,7 +1720,7 @@
       "id": "PULSE-E4AAEC833DAE5B3C",
       "story_fingerprint": "e4aaec833dae5b3c994db928",
       "published_at": "2026-11-18T06:30:38+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ISTRUZIONE",
       "pulse_score": 59,
       "patterns": [],
@@ -1001,7 +1761,7 @@
       "id": "PULSE-MEDIA-EB6362C3FB99A2A2",
       "story_fingerprint": "eb6362c3fb99a2a2df03c1bc423740883a54255acf66e16a21a77b69263e2b71",
       "published_at": "2026-11-18T06:30:22+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "IL SOLE 24 ORE * ITALIA: «SANITÀ, GLI ITALIANI PAGANO 50 MILIARDI. TRIPLICATA IN 10 ANNI LA SPESA NELLE CLINICHE",
       "reported_headline": "IL SOLE 24 ORE * ITALIA: «SANITÀ, GLI ITALIANI PAGANO 50 MILIARDI. TRIPLICATA IN 10 ANNI LA SPESA NELLE CLINICHE - agenzia giornalistica opinione",
       "summary": "La testata agenzia giornalistica opinione segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 50 MILIARDI. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1063,7 +1823,7 @@
       "id": "PULSE-MEDIA-3F8B344CCD1B001C",
       "story_fingerprint": "3f8b344ccd1b001cdcec1cc8c564919faa0f3ff449a0b3d2ac97c96678cc86b7",
       "published_at": "2026-11-18T06:00:25+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3%",
       "reported_headline": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3% - Giornale Radio",
       "summary": "La testata Giornale Radio segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%, 3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1129,7 +1889,7 @@
       "id": "PULSE-34772A3308243FAA",
       "story_fingerprint": "34772a3308243faa66905cd4",
       "published_at": "2026-11-18T06:00:25+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 75,
       "patterns": [],
@@ -1168,7 +1928,7 @@
       "id": "PULSE-MEDIA-E89B64F785D4759B",
       "story_fingerprint": "e89b64f785d4759bd3f97e1c7f78e33df12fd8d690e7389591f96e54af555cbb",
       "published_at": "2026-11-18T05:31:02+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Nord Milano, imprese in crescita. Giro d’affari da quasi 30 miliardi",
       "reported_headline": "Nord Milano, imprese in crescita. Giro d’affari da quasi 30 miliardi - Il Giorno",
       "summary": "La testata Il Giorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 30 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1181,7 +1941,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - economia lavoro». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · locali · gruppo 16». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -1232,7 +1992,7 @@
       "id": "PULSE-MEDIA-655D86BEA023FF45",
       "story_fingerprint": "655d86bea023ff4524e6664a8888733f864c4292465cd3830cfe51fa76a3a46f",
       "published_at": "2026-11-18T04:38:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Imprese green, Pescara terza in Italia per investimenti ambientali con il 45,6%",
       "reported_headline": "Imprese green, Pescara terza in Italia per investimenti ambientali con il 45,6% - Notizie d'Abruzzo",
       "summary": "La testata Notizie d'Abruzzo segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 45,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1296,7 +2056,7 @@
       "id": "PULSE-MEDIA-1E4564D509C2AAAA",
       "story_fingerprint": "1e4564d509c2aaaa7b4658587fdf493e882f0d478fd5530ab7a1ff0f7a7456bc",
       "published_at": "2026-11-18T00:15:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Scuola Lombardia, il caso alunni stranieri. “Il tetto del 30% è inapplicabile, mancano i docenti di italiano”",
       "reported_headline": "Scuola Lombardia, il caso alunni stranieri. “Il tetto del 30% è inapplicabile, mancano i docenti di italiano” - Il Giorno",
       "summary": "La testata Il Giorno segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 30%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -1642,7 +2402,7 @@
       "id": "PULSE-MEDIA-2F57A8F2BEBF186C",
       "story_fingerprint": "2f57a8f2bebf186c853dceda8deacf14617e896cc85fe799c77afbdde5418f87",
       "published_at": "2026-11-17T19:48:57+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "TG5: Inflazione vola al 5,5%. Europa apre all'Italia Video",
       "reported_headline": "TG5: Inflazione vola al 5,5%. Europa apre all'Italia Video - Mediaset Infinity",
       "summary": "La testata Mediaset Infinity segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2124,7 +2884,7 @@
       "id": "PULSE-MEDIA-BAC43A67479AFAAF",
       "story_fingerprint": "bac43a67479afaaf1cf40b80b2bf46b883c210b9c8f577d280988e7d94a82d29",
       "published_at": "2026-11-17T15:43:54+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Ocse: -0,1% reddito reale famiglie in II trimestre, -1% Italia a causa inflazione",
       "reported_headline": "Ocse: -0,1% reddito reale famiglie in II trimestre, -1% Italia a causa inflazione - Ore12",
       "summary": "La testata Ore12 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -0,1%, -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2192,7 +2952,7 @@
       "id": "PULSE-MEDIA-013E03EAFC21C69D",
       "story_fingerprint": "013e03eafc21c69d73f4f80eac292b9c6bb93edd5e9d2f82814904a327439e1c",
       "published_at": "2026-11-17T14:50:36+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Studenti e IA. In Italia quasi un 15enne su 5 usa l’intelligenza artificiale ogni giorno: oltre il 20% le chiede quotidianamente...",
       "reported_headline": "Studenti e IA. In Italia quasi un 15enne su 5 usa l’intelligenza artificiale ogni giorno: oltre il 20% le chiede quotidianamente... - Il Messaggero",
       "summary": "La testata Il Messaggero segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 20%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2320,7 +3080,7 @@
       "id": "PULSE-MEDIA-CA72F20CFF16E465",
       "story_fingerprint": "ca72f20cff16e465294b36f76b08fca2e7002608ee7c67dd046d39f37b1666cb",
       "published_at": "2026-11-17T14:14:17+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028",
       "reported_headline": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
       "summary": "La testata Il Fatto Quotidiano segnala una notizia su lavoro. Nel titolo o nell'estratto sono riportati 3,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -2384,7 +3144,7 @@
       "id": "PULSE-0908BEB23C468238",
       "story_fingerprint": "0908beb23c4682381984a2dd",
       "published_at": "2026-11-17T14:14:17+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "LAVORO",
       "pulse_score": 50,
       "patterns": [],
@@ -2968,7 +3728,7 @@
       "id": "PULSE-MEDIA-8FE501F540714CBB",
       "story_fingerprint": "8fe501f540714cbbcc3001f6fa477ac4bae3ed060f74aec9d584335ade002225",
       "published_at": "2026-11-17T12:45:56+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Il Lido di Milano riaprirà nell'estate 2027: la storica vasca diventa un lago, nuova piscina scoperta e due coperte del centro GOfit, ecco i prezzi",
       "reported_headline": "Il Lido di Milano riaprirà nell'estate 2027: la storica vasca diventa un lago, nuova piscina scoperta e due coperte del centro GOfit, ecco i prezzi",
       "summary": "La testata milano.corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 74 euro, 12 euro. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3038,7 +3798,7 @@
       "id": "PULSE-MEDIA-286F3D70E437A523",
       "story_fingerprint": "286f3d70e437a52318d1f5505d333ccc11b2dc94835d3e4bf43f4ce0e631bab7",
       "published_at": "2026-11-17T12:43:32+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Rilevazione Istat, inflazione in aumento a ottobre in Umbria: 5,4 per cento",
       "reported_headline": "Rilevazione Istat, inflazione in aumento a ottobre in Umbria: 5,4 per cento - Il Messaggero",
       "summary": "La testata Il Messaggero segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,4. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3102,7 +3862,7 @@
       "id": "PULSE-MEDIA-0F69C55F36A83C81",
       "story_fingerprint": "0f69c55f36a83c810679856f8d45cdc19112f839ab213d048ea1a687cb2123e1",
       "published_at": "2026-11-17T12:40:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, inflazione di ottobre vola al 5,5%. Buone notizie Ue su stime deficit al 2,9%",
       "reported_headline": "Istat, inflazione di ottobre vola al 5,5%. Buone notizie Ue su stime deficit al 2,9% - RaiNews",
       "summary": "La testata RaiNews segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%, 2,9%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3168,7 +3928,7 @@
       "id": "PULSE-MEDIA-7C0296CD31721F2C",
       "story_fingerprint": "7c0296cd31721f2c142ada8d2cd0d99ddd828110eaa205627952a9062f7202a4",
       "published_at": "2026-11-17T12:34:41+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Metstrade Amsterdam 2026, anche 77 imprese italiane alla più grande fiera di materiali e accessori per la nautica",
       "reported_headline": "Metstrade Amsterdam 2026, anche 77 imprese italiane alla più grande fiera di materiali e accessori per la nautica",
       "summary": "La testata corriere.it segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 2 miliardi. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3611,7 +4371,7 @@
       "id": "PULSE-MEDIA-91C002ABB4A52D35",
       "story_fingerprint": "91c002abb4a52d35bb3d79d7c09ceaae1a45e0a4d4ee0e35a79e477311ae8fa3",
       "published_at": "2026-11-17T11:24:11+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, l’inflazione a ottobre sale al 5,5%. Pesano i prezzi energetici",
       "reported_headline": "Istat, l’inflazione a ottobre sale al 5,5%. Pesano i prezzi energetici - La Gazzetta del Mezzogiorno",
       "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -3994,7 +4754,7 @@
       "id": "PULSE-MEDIA-E39EF2DE8ED3BF77",
       "story_fingerprint": "e39ef2de8ed3bf7704a9d98a4807b3a845b082a71634c53ef2776754f73b7d5f",
       "published_at": "2026-11-17T10:43:45+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Carta da macero, in Italia export +13%: metà va in India",
       "reported_headline": "Carta da macero, in Italia export +13%: metà va in India - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +13%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4056,7 +4816,7 @@
       "id": "PULSE-FFF306C6665709D3",
       "story_fingerprint": "fff306c6665709d3bbd2e1cf",
       "published_at": "2026-11-17T10:41:43+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 45,
       "patterns": [],
@@ -4165,7 +4925,7 @@
       "id": "PULSE-MEDIA-185A14366B3CF3B6",
       "story_fingerprint": "185a14366b3cf3b68290ba5960cf4b6e2c5014d24b4ece73fe84909a478a5e18",
       "published_at": "2026-11-17T10:32:59+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, inflazione di ottobre vola al 5,5%, oltre le stime (2)",
       "reported_headline": "Istat, inflazione di ottobre vola al 5,5%, oltre le stime (2) - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4291,7 +5051,7 @@
       "id": "PULSE-MEDIA-F3BA1164E257812B",
       "story_fingerprint": "f3ba1164e257812be10e2ead4cd17e8184e70465b17842122c2628dfd46b8829",
       "published_at": "2026-11-17T10:25:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat: inflazione in ottobre al 5,5%",
       "reported_headline": "Istat: inflazione in ottobre al 5,5% - RaiNews",
       "summary": "La testata RaiNews segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4700,7 +5460,7 @@
       "id": "PULSE-MEDIA-097A382000043A0C",
       "story_fingerprint": "097a382000043a0c7b3b57cf046322a470f7e1830dfd5f7a0060fe5d2b606e3c",
       "published_at": "2026-11-17T10:08:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "*Inflazione: Ue stima in Italia +3,4% in 2026, +3,1% in 2027 e +1,8% in 2028",
       "reported_headline": "*Inflazione: Ue stima in Italia +3,4% in 2026, +3,1% in 2027 e +1,8% in 2028 - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +3,4%, +3,1%, +1,8%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -4821,7 +5581,7 @@
       "id": "PULSE-MEDIA-E7BC043EAC99CBE3",
       "story_fingerprint": "e7bc043eac99cbe3c65f9f2ddfc8048bd5480daf34835aeb8a3c55379a40b86b",
       "published_at": "2026-11-17T10:06:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "TOP NEWS ITALIA: Istat rivede al rialzo inflazione a +5,5% spinta da energetici, carrello balza a +2,3%",
       "reported_headline": "TOP NEWS ITALIA: Istat rivede al rialzo inflazione a +5,5% spinta da energetici, carrello balza a +2,3% - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +5,5%, +2,3%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5054,7 +5814,7 @@
       "id": "PULSE-MEDIA-FC7A10B773C47730",
       "story_fingerprint": "fc7a10b773c477304b752ad82cd5e6945d3cfc3b5d22e0da835a85f7ae1e3325",
       "published_at": "2026-11-17T10:03:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Inflazione, l'Istat rivede le stime di ottobre al rialzo: prezzi in aumento del 5,5%. Pesano energetici e alimentari",
       "reported_headline": "Inflazione, l'Istat rivede le stime di ottobre al rialzo: prezzi in aumento del 5,5%. Pesano energetici e alimentari - Milano Finanza",
       "summary": "La testata Milano Finanza segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5213,7 +5973,7 @@
       "id": "PULSE-MEDIA-DDDCAD90E0B2FDAE",
       "story_fingerprint": "dddcad90e0b2fdae7dc2fe72d5533fbe20a69b8fb43f36b9699f67d51c47d712",
       "published_at": "2026-11-17T09:57:07+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, l'inflazione in Italia a ottobre vola al 5,5%, oltre le stime",
       "reported_headline": "Istat, l'inflazione in Italia a ottobre vola al 5,5%, oltre le stime - Sky TG24",
       "summary": "La testata Sky TG24 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5226,7 +5986,7 @@
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «PULSE 80 testate · specializzate · gruppo 10». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -5343,7 +6103,7 @@
       "id": "PULSE-MEDIA-315E93CCA7D46A56",
       "story_fingerprint": "315e93cca7d46a56d7e663eeb15736f8cfba311eb614f8d68c4e9c14e13013dc",
       "published_at": "2026-11-17T09:44:39+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, l'inflazione a ottobre 2026 vola al +5,5% annuo. Codacons: \"Arriva la stangata di Natale\"",
       "reported_headline": "Istat, l'inflazione a ottobre 2026 vola al +5,5% annuo. Codacons: \"Arriva la stangata di Natale\" - LaPresse",
       "summary": "La testata LaPresse segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5531,7 +6291,7 @@
       "id": "PULSE-MEDIA-068F96F8233F3215",
       "story_fingerprint": "068f96f8233f321596761c57e7beb0f9e7cd73fa928f679e13859827fc90da2b",
       "published_at": "2026-11-17T09:41:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "ISTAT, inflazione di ottobre rivista al rialzo al 5,5% annuo",
       "reported_headline": "ISTAT, inflazione di ottobre rivista al rialzo al 5,5% annuo - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5717,7 +6477,7 @@
       "id": "PULSE-MEDIA-96260667597BEF30",
       "story_fingerprint": "96260667597bef30385a40788b0cd2f4aeaf59c9d7d6fa4b00d63391383e555b",
       "published_at": "2026-11-17T09:33:54+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Inflazione: Istat, +1% a ottobre, alza stima a +5,5% su anno (RCO)",
       "reported_headline": "Inflazione: Istat, +1% a ottobre, alza stima a +5,5% su anno (RCO) - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +1%, +5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5909,7 +6669,7 @@
       "id": "PULSE-MEDIA-6869BFDFB81C23F3",
       "story_fingerprint": "6869bfdfb81c23f3aa2b4a28453b27706e142f43eaa4fc8fd706dec686fc9575",
       "published_at": "2026-11-17T09:28:32+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "L’inflazione balza a ottobre al 5,5%, l’Istat ha rivisto le stime",
       "reported_headline": "L’inflazione balza a ottobre al 5,5%, l’Istat ha rivisto le stime - Askanews",
       "summary": "La testata Askanews segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -5971,7 +6731,7 @@
       "id": "PULSE-MEDIA-9BB6FF2D2C6D20C7",
       "story_fingerprint": "9bb6ff2d2c6d20c7316ae11eee18d0efbba7d5e4663e7bba0ede0e61c338ea0a",
       "published_at": "2026-11-17T09:23:24+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, l'inflazione di ottobre vola al 5,5%, oltre le stime",
       "reported_headline": "Istat, l'inflazione di ottobre vola al 5,5%, oltre le stime - ANSA",
       "summary": "La testata ANSA segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6095,7 +6855,7 @@
       "id": "PULSE-MEDIA-D52B291637103494",
       "story_fingerprint": "d52b291637103494eaff1e709761e9aa3820078a570b9dc708c0187e9752e90f",
       "published_at": "2026-11-17T09:20:14+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, a ottobre l'inflazione vola al 5,5%",
       "reported_headline": "Istat, a ottobre l'inflazione vola al 5,5% - Tgcom24",
       "summary": "La testata Tgcom24 segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6283,7 +7043,7 @@
       "id": "PULSE-MEDIA-3466AC44E751B1AE",
       "story_fingerprint": "3466ac44e751b1ae21138ad94fdc9e110692a76aaffc54b2c813ff7f3c927f2c",
       "published_at": "2026-11-17T09:13:13+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Inflation: Istat reports +1 per cent in October, raises annual estimate to +5.5 per cent",
       "reported_headline": "Inflation: Istat reports +1 per cent in October, raises annual estimate to +5.5 per cent - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 5.5. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6345,7 +7105,7 @@
       "id": "PULSE-MEDIA-B99DBF13CB5089EE",
       "story_fingerprint": "b99dbf13cb5089ee94e8d5b9dbd224d8f74b23025ec1c2f9c77f68d5aa628ec5",
       "published_at": "2026-11-17T09:12:53+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, inflazione di ottobre vola al 5,5%, oltre le stime",
       "reported_headline": "Istat, inflazione di ottobre vola al 5,5%, oltre le stime - La Gazzetta del Mezzogiorno",
       "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6444,7 +7204,7 @@
       "id": "PULSE-MEDIA-47FEB8ED589A7BE0",
       "story_fingerprint": "47feb8ed589a7be09f9bfbbf37a6b62d9bceb1e0b9afa297fb19beddc60ff924",
       "published_at": "2026-11-17T09:12:53+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%)",
       "reported_headline": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
       "summary": "La testata Il Messaggero segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%, +1,5%, +2,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6668,7 +7428,7 @@
       "id": "PULSE-MEDIA-063F5CFCDEF4615E",
       "story_fingerprint": "063f5cfcdef4615eef115e29ed65377b89fb0936e4140f244024cd0118459860",
       "published_at": "2026-11-17T09:09:38+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Inflazione: Istat, +1% a ottobre, alza stima a +5,5% su anno",
       "reported_headline": "Inflazione: Istat, +1% a ottobre, alza stima a +5,5% su anno - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati +1%, +5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6781,7 +7541,7 @@
       "id": "PULSE-MEDIA-6EDCF26DDA106DEE",
       "story_fingerprint": "6edcf26dda106deed3bbb31161486d8d0bc46de5700bf76d90dcd99a8caf5b5d",
       "published_at": "2026-11-17T09:09:30+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Istat rivede al rialzo l’inflazione a ottobre: sale al 5,5%",
       "reported_headline": "Istat rivede al rialzo l’inflazione a ottobre: sale al 5,5% - Il Sole 24 ORE",
       "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 5,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -6843,7 +7603,7 @@
       "id": "PULSE-5CD4AE55607DA0FA",
       "story_fingerprint": "5cd4ae55607da0fa6a251f77",
       "published_at": "2026-11-17T09:06:43+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 79,
       "public_source": {
@@ -6856,7 +7616,7 @@
       "discovery": {
         "visible": false,
         "role": "direct_official",
-        "outlet": "ISTAT - Aggiornamenti ufficiali",
+        "outlet": "ISTAT - Comunicati stampa ufficiali",
         "original_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
         "evidence_gate": "official_release"
       },
@@ -6991,7 +7751,7 @@
       "id": "PULSE-269D88972FD627B1",
       "story_fingerprint": "269d88972fd627b1553c8cde",
       "published_at": "2026-11-17T08:49:50+00:00",
-      "last_seen_at": "2026-11-18T09:16:32.133107+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "SALUTE",
       "pulse_score": 77,
       "public_source": {
@@ -7077,7 +7837,7 @@
       "id": "PULSE-MEDIA-68004C0111046BE3",
       "story_fingerprint": "68004c0111046be3c51e98259840975fb1a153b2f3895c9d327ce9d0d87025c6",
       "published_at": "2026-11-17T08:46:56+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Caro pane, prezzi cresciuti del 32% dal 2017: ecco le città dove costa di più",
       "reported_headline": "Caro pane, prezzi cresciuti del 32% dal 2017: ecco le città dove costa di più",
       "summary": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 32%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -7141,7 +7901,7 @@
       "id": "PULSE-B54B843ED8449B5E",
       "story_fingerprint": "b54b843ed8449b5e796aac89",
       "published_at": "2026-11-17T08:46:56+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 54,
       "patterns": [],
@@ -7561,7 +8321,7 @@
       "id": "PULSE-MEDIA-CDD2E4B998522835",
       "story_fingerprint": "cdd2e4b998522835ed28511622197cf72e5d3759377afa18c151cd0532e525b6",
       "published_at": "2026-11-17T03:46:47+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Eventi meteo estremi in Italia, 2.689 casi in 12 anni. Il report Città Clima 2026 di Legambiente",
       "reported_headline": "Eventi meteo estremi in Italia, 2.689 casi in 12 anni. Il report Città Clima 2026 di Legambiente - Infobuildenergia",
       "summary": "La testata Infobuildenergia segnala una notizia su ambiente. Nel titolo o nell'estratto sono riportati 2.689. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -7662,7 +8422,7 @@
       "id": "PULSE-MEDIA-575931462AD420D8",
       "story_fingerprint": "575931462ad420d8571a2eb77231568866341d03bf596f280cae7732237f0806",
       "published_at": "2026-11-17T03:16:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Rapporto GreenItaly, eco-investimenti per il 36,2% delle imprese italiane",
       "reported_headline": "Rapporto GreenItaly, eco-investimenti per il 36,2% delle imprese italiane - Italia Informa",
       "summary": "La testata Italia Informa segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 36,2%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -7825,7 +8585,7 @@
       "id": "PULSE-MEDIA-87792E8C9602C7CD",
       "story_fingerprint": "87792e8c9602c7cdae177d54a933ed860c734b7e05e3298acda3198976b5157b",
       "published_at": "2026-11-16T19:53:39+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Caro pane in Sicilia, Palermo tra le città con i rincari più alti: prezzi in aumento del 49%",
       "reported_headline": "Caro pane in Sicilia, Palermo tra le città con i rincari più alti: prezzi in aumento del 49% - QdS",
       "summary": "La testata QdS segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 49%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -7956,7 +8716,7 @@
       "id": "PULSE-MEDIA-A1D691652806D399",
       "story_fingerprint": "a1d691652806d3993fbaac8a521524f963c6f45598a7d1a43a012ea88a55855b",
       "published_at": "2026-11-16T18:50:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "46.663 studenti dagli Usa/ Eduitalia: l’Italia si conferma 1ª destinazione di studio per il 5° anno consecutivo - Aise.it",
       "reported_headline": "46.663 studenti dagli Usa/ Eduitalia: l’Italia si conferma 1ª destinazione di studio per il 5° anno consecutivo - Aise.it - Agenzia Internazionale Stampa Estero",
       "summary": "La testata Aise.it - Agenzia Internazionale Stampa Estero segnala una notizia su istruzione. Nel titolo o nell'estratto sono riportati 46.663. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -8162,7 +8922,7 @@
       "id": "PULSE-MEDIA-8D03CE3D73AC3E38",
       "story_fingerprint": "8d03ce3d73ac3e3896cd3c48c80688c5f67fc8371f944df47ed9c4ece7f3c4c6",
       "published_at": "2026-11-16T17:17:05+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio",
       "reported_headline": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
       "summary": "La testata Qui Salute Magazine segnala una notizia su energia. Nel titolo o nell'estratto sono riportati +54%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -8261,7 +9021,7 @@
       "id": "PULSE-MEDIA-22AECC82B67B95F8",
       "story_fingerprint": "22aecc82b67b95f877d9378485ff5093d5fb2af4e1b74d9c82dd68de3617b67e",
       "published_at": "2026-11-16T16:39:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Auto nuove, prezzi troppo alti per 3 italiani su 4. Il 75% non vuole spendere più di 30mila euro - Il Messaggero",
       "reported_headline": "Auto nuove, prezzi troppo alti per 3 italiani su 4. Il 75% non vuole spendere più di 30mila euro - Il Messaggero - Motori",
       "summary": "La testata Il Messaggero - Motori segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 75%, 30mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -8630,7 +9390,7 @@
       "id": "PULSE-MEDIA-468F191D17A4B4C7",
       "story_fingerprint": "468f191d17a4b4c72b4c073fba935270aea95546266af1c9ffcac45fc1e5f25f",
       "published_at": "2026-11-16T15:11:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1%",
       "reported_headline": "Ocse: in Italia l'inflazione continua a mordere, il reddito reale pro capite scende dell'1% - RaiNews",
       "summary": "La testata RaiNews segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -8830,7 +9590,7 @@
       "id": "PULSE-MEDIA-DEBE34F1A80B2549",
       "story_fingerprint": "debe34f1a80b254918481d6b7a4dbc9b5b7c790b54787f2496de6118fee935db",
       "published_at": "2026-11-16T14:33:52+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050",
       "reported_headline": "Adolescenti e futuro, tra i 14 e i 18 anni la sanità preoccupa il 59,8%, la sicurezza il 53,3% e le guerre il 52,6%: ecco cosa temono per l’Italia del 2050 - Orizzonte Scuola Notizie",
       "summary": "La testata Orizzonte Scuola Notizie segnala una notizia su salute. Nel titolo o nell'estratto sono riportati 59,8%, 53,3%, 52,6%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -9048,7 +9808,7 @@
       "id": "PULSE-MEDIA-E8102925AC0A6A0D",
       "story_fingerprint": "e8102925ac0a6a0d7345adef92d2345a2498b01b1b5e1acca91624e8d692b6b0",
       "published_at": "2026-11-16T12:49:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse",
       "reported_headline": "Redditi ancora in calo (dell'1%), il Pil cresce ma le famiglie diventano più povere: perché succede in Italia e non altrove, i dati Ocse - Corriere della Sera",
       "summary": "La testata Corriere della Sera segnala una notizia su economia. Nel titolo o nell'estratto sono riportati 1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -9110,7 +9870,7 @@
       "id": "PULSE-9F1A5806531ABEF7",
       "story_fingerprint": "9f1a5806531abef77331f6c6",
       "published_at": "2026-11-16T12:15:23+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "topic": "ECONOMIA",
       "pulse_score": 54,
       "patterns": [],
@@ -9209,20 +9969,20 @@
       "id": "PULSE-MEDIA-8C9F5860B5C3CA94",
       "story_fingerprint": "8c9f5860b5c3ca949fafcaa7704ce8f09695a2e22c450aed02bb84f74489e816",
       "published_at": "2026-11-16T12:07:51+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1% - Il Sole 24 ORE",
-      "summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
+      "summary": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "pulse_summary": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
+      "pulse_summary": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
       "pulse_article_body": [
         {
           "heading": "La notizia segnalata",
-          "text": "La testata Il Sole 24 ORE segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
+          "text": "La testata ilsole24ore.com segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE."
         },
         {
           "heading": "Fonte e contesto",
-          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Google News - Italia economia e famiglie». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
+          "text": "Il radar PULSE ha rilevato questa pubblicazione attraverso il canale «Il Sole 24 Ore - Italia Attualità». Il testo del giornale non viene riprodotto: per approfondire e conoscere definizioni, territorio e periodo esatti consulta la fonte collegata."
         },
         {
           "heading": "Verifica statistica PULSE",
@@ -9230,10 +9990,10 @@
         }
       ],
       "topic": "ECONOMIA",
-      "pulse_score": 39,
+      "pulse_score": 54,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMjhsaGlhQ29SQkREQkRWclZPaHJ6eW1NWDhVWDJqeUVJLVV6SkpCc1ljVUtHdDRsOHZOakZmLTFfT2tzSGY2R3R1NEljd0hPR053MDdGQ2xPOExBd1RadlBzaXhGLU95WTZONkg1NmZrU3FfVnQ2RTIwdnpnMVcxMnk4Q3drc3NPOEQ2R3JkOEFNLXFvb0pxMHc4UU91Yjd1cGg1eUJpanNSWml1UUpWOG5jWkd5cUk?oc=5",
-        "domain": "Il Sole 24 ORE",
+        "url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
+        "domain": "ilsole24ore.com",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -9262,8 +10022,8 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "Il Sole 24 ORE",
-        "original_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMjhsaGlhQ29SQkREQkRWclZPaHJ6eW1NWDhVWDJqeUVJLVV6SkpCc1ljVUtHdDRsOHZOakZmLTFfT2tzSGY2R3R1NEljd0hPR053MDdGQ2xPOExBd1RadlBzaXhGLU95WTZONkg1NmZrU3FfVnQ2RTIwdnpnMVcxMnk4Q3drc3NPOEQ2R3JkOEFNLXFvb0pxMHc4UU91Yjd1cGg1eUJpanNSWml1UUpWOG5jWkd5cUk?oc=5",
+        "outlet": "ilsole24ore.com",
+        "original_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-16T12:23:16.900509+00:00",
@@ -9273,7 +10033,7 @@
       "id": "PULSE-MEDIA-AC130D46F803FDBF",
       "story_fingerprint": "ac130d46f803fdbf2d0566469a09f5010d04143e20e865ba4c752473466b0ac1",
       "published_at": "2026-11-16T12:01:07+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1%",
       "reported_headline": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale procapite -1% - La Gazzetta del Mezzogiorno",
       "summary": "La testata La Gazzetta del Mezzogiorno segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -1%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -9751,7 +10511,7 @@
       "id": "PULSE-MEDIA-076B69D8550FF234",
       "story_fingerprint": "076b69d8550ff234ef20708cbc805a1afb64be7e80994d0e20b36d7b50b63f39",
       "published_at": "2026-11-16T09:41:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro",
       "reported_headline": "Revolut, amministrazione giudiziaria in Italia per un anno: indagine su 76,5 milioni di euro - La Nuova Sardegna",
       "summary": "La testata La Nuova Sardegna segnala una notizia su statistiche. Nel titolo o nell'estratto sono riportati 76,5 milioni. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -9947,7 +10707,7 @@
       "id": "PULSE-MEDIA-C098E02317EAF762",
       "story_fingerprint": "c098e02317eaf76202aa22dc1a7271cf65942f69a6dece2a18e4f418e2725caa",
       "published_at": "2026-11-16T09:01:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "Auto in Cina, vendite al dettaglio a -21,4% a ottobre: l’export sale del 68,5% e in Italia i marchi cinesi crescono a tre cifre",
       "reported_headline": "Auto in Cina, vendite al dettaglio a -21,4% a ottobre: l’export sale del 68,5% e in Italia i marchi cinesi crescono a tre cifre - Motori.money",
       "summary": "La testata Motori.money segnala una notizia su economia. Nel titolo o nell'estratto sono riportati -21,4%, 68,5%. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
@@ -10013,7 +10773,7 @@
       "id": "PULSE-MEDIA-6F7FAE6A624C870F",
       "story_fingerprint": "6f7fae6a624c870f57e005240c55124de02f31157db06c5b18aeadc79caf30c5",
       "published_at": "2026-11-16T08:40:00+00:00",
-      "last_seen_at": "2026-11-18T10:24:19.394627+00:00",
+      "last_seen_at": "2026-11-18T12:09:17.612694+00:00",
       "headline": "La montagna italiana torna a popolarsi: oltre 174mila nuovi residenti in 6 anni: ecco le migliori località",
       "reported_headline": "La montagna italiana torna a popolarsi: oltre 174mila nuovi residenti in 6 anni: ecco le migliori località - Torino Cronaca",
       "summary": "La testata Torino Cronaca segnala una notizia su popolazione. Nel titolo o nell'estratto sono riportati 174mila. Questi valori sono attribuiti alla testata: la corrispondenza con la pubblicazione statistica originale non è ancora stata verificata da PULSE.",
