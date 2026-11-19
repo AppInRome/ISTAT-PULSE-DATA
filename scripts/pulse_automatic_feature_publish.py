@@ -174,6 +174,9 @@ def publish(review_root, output_file, now=None, *, smart=False,
             accepted[key] = updated
             retitled += 1
     checked = rejected = added = 0
+    rejected_reasons = {}
+    candidate_decisions = []
+    published_article_ids = []
     verified_pairs = []
     prospective = []
     for folder in sorted(review_root.iterdir()) if review_root.is_dir() else []:
@@ -183,8 +186,12 @@ def publish(review_root, output_file, now=None, *, smart=False,
         try:
             item = validated_article(folder, now)
             evidence = read_json(folder / "evidence.json")
-        except (KeyError, IndexError, TypeError, ValueError, OSError, json.JSONDecodeError):
+        except (KeyError, IndexError, TypeError, ValueError, OSError, json.JSONDecodeError) as exc:
             rejected += 1
+            # Report the blocked dossier without lowering any verification gate.
+            reason = str(exc).split(":", 1)[0] if isinstance(exc, ValueError) else type(exc).__name__
+            reason = reason[:80] or "invalid_evidence"
+            rejected_reasons[reason] = rejected_reasons.get(reason, 0) + 1
             continue
         if smart:
             # Selection uses verified evidence only, after all audits, but
@@ -224,7 +231,38 @@ def publish(review_root, output_file, now=None, *, smart=False,
                             "pulse_summary":notice+" "+item["pulse_summary"]}
                 accepted[item["id"]] = item
                 verified_pairs.append((item, evidence))
+                published_article_ids.append(item["id"])
                 added += 1
+        # Auditable decisions for every verified candidate, including the ones
+        # left out because the period is unchanged, already published or needs
+        # human review. No timestamps are relabelled as fresh news.
+        published_families = {family for prior in previous
+                              if (family := selector.published_family(prior))}
+        for item, evidence in prospective:
+            assessment = selected_stats.get(item["id"], {})
+            tier = assessment.get("tier", "unclassified")
+            novelty = assessment.get("novelty", "unknown")
+            if item["id"] in published_article_ids:
+                decision = "published_new"
+            elif item["id"] in {r["id"] for r in previous if isinstance(r, dict) and "id" in r}:
+                decision = "already_published"
+            elif tier == "review_revision":
+                decision = "revision_requires_review"
+            elif tier == "context" and assessment.get("editorial_family") in published_families:
+                decision = "already_published_independent_family"
+            elif item["id"] in approved_ids:
+                decision = "eligible_but_not_persisted"
+            elif novelty == "unchanged":
+                decision = "unchanged_source_period"
+            elif tier in ("brief", "catalogue"):
+                decision = "editorial_threshold_not_met"
+            else:
+                decision = "not_selected_for_publication"
+            candidate_decisions.append({
+                "article_id": item["id"], "topic": assessment.get("topic"),
+                "period": assessment.get("period_reference"),
+                "novelty": novelty, "tier": tier, "decision": decision
+            })
         # Never expose a featured ID that was not actually published.
         frontpage["featured_article_ids"] = [
             id_ for id_ in frontpage["featured_article_ids"] if id_ in accepted]
@@ -267,7 +305,10 @@ def publish(review_root, output_file, now=None, *, smart=False,
                 "journalistic_story_updates":0,
                 "short_briefs":len(frontpage["briefs"]) if smart else 0,
                 "persisted_in_mobile_feed":len(previous),
-                "ai_calls":0,"source_facts_required":True,"status":"unchanged"}
+                "ai_calls":0,"source_facts_required":True,"status":"unchanged",
+                "rejected_reasons":rejected_reasons,
+                "candidate_decisions":candidate_decisions,
+                "published_article_ids":published_article_ids}
     final = sorted(accepted.values(),key=lambda x:x["published_at"],reverse=True)
     if len(final) > MAX_FEED_ENTRIES:
         # Feed is bounded for mobile. Historical published entries are retained
@@ -296,7 +337,10 @@ def publish(review_root, output_file, now=None, *, smart=False,
             "short_briefs":len(frontpage["briefs"]) if smart else 0,
             "revision_alerts":len(frontpage["revision_review"]) if smart else 0,
             "persisted_in_mobile_feed":len(final),
-            "ai_calls":0,"source_facts_required":True}
+            "ai_calls":0,"source_facts_required":True,
+            "rejected_reasons":rejected_reasons,
+            "candidate_decisions":candidate_decisions,
+            "published_article_ids":published_article_ids}
 
 
 def main(argv=None):

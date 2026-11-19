@@ -28,6 +28,8 @@ on:
       - "scripts/pulse_headline_editor.py"
       - "tests/test_pulse_headline_editor.py"
       - "tests/test_pulse_automatic_feature_publish.py"
+      - "scripts/pulse_editorial_status.py"
+      - "tests/test_pulse_editorial_status.py"
   # Run after the morning full radar snapshot, Europe/Rome including DST; source-verification cadence.
   schedule:
     - cron: "47 8 * * *"
@@ -72,6 +74,7 @@ jobs:
           python -m unittest discover -s tests -p "test_pulse_historical_restoration.py" -v
           python -m unittest discover -s tests -p "test_pulse_historical_interactive_export.py" -v
           python -m unittest discover -s tests -p "test_pulse_automatic_feature_publish.py" -v
+          python -m unittest discover -s tests -p "test_pulse_editorial_status.py" -v
           python -m unittest discover -s tests -p "test_pulse_story_composer.py" -v
           python -m unittest discover -s tests -p "test_pulse_topic_coverage.py" -v
           python -m unittest discover -s tests -p "test_pulse_editorial_selector.py" -v
@@ -133,12 +136,20 @@ jobs:
             --frontpage data/news/editorial_frontpage.json \
             --feed data/news/automatic_features.json \
             --output data/news/topic_coverage.json
+          # Every checked day gets its own diagnostic status, even when the
+          # original publication feed is unchanged. Never fake article dates.
+          python -m scripts.pulse_editorial_status \
+            --feed data/news/automatic_features.json \
+            --frontpage data/news/editorial_frontpage.json \
+            --publication-report editorial_output/automatic_publish_report.json \
+            --pipeline-report editorial_output/official_data_stories/pipeline_report.json \
+            --output data/news/editorial_refresh_status.json
           python -m scripts.pulse_historical_interactive_export \
             --feed data/news/automatic_features.json \
             --output docs/PULSE_STORICO_INTERATTIVO.html
           git config user.name "PULSE Statistical Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json data/news/topic_coverage.json docs/PULSE_STORICO_INTERATTIVO.html
+          git add -- data/news/automatic_features.json data/news/source_versions.json data/news/editorial_frontpage.json data/news/topic_coverage.json data/news/editorial_refresh_status.json docs/PULSE_STORICO_INTERATTIVO.html
           if git diff --cached --quiet; then
             echo "No new verified deterministic features"
           else
@@ -176,6 +187,9 @@ jobs:
               "- Budget reserved (conservative): " + str(pipeline.get("reserved_budget_estimate", 0)) + " " + str(pipeline.get("budget_unit", "unknown")),
               "- New source-audited non-AI features in Android feed: " + str(auto.get("published_new", "not executed")),
               "- Existing article titles improved (no other field changed): " + str(auto.get("retitled_existing", 0)),
+              "- Candidate decisions by reason: " + str({key: sum(d.get("decision") == key for d in auto.get("candidate_decisions", [])) for key in sorted({d.get("decision") for d in auto.get("candidate_decisions", [])})}),
+              "- Rejected numeric evidence by reason: " + str(auto.get("rejected_reasons", {})),
+              "- Editorial status separately updated: data/news/editorial_refresh_status.json",
               "- Total source-audited features in Android feed: " + str(auto.get("persisted_in_mobile_feed", "not executed")),
               "- Cross-regional national-reading groups: " + str(auto.get("regional_groups", "not executed")),
               "- Smart selector features released: " + str(auto.get("new_features_selected", "not executed")),
