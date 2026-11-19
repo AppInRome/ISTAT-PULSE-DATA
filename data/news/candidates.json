@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:10:03.205466+00:00",
+  "generated_at": "2026-11-19T16:14:39.369690+00:00",
   "candidates": [
     {
       "radar": "PULSE osservatori ufficiali 6/9",
@@ -34,12 +34,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 28
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 32
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -144,7 +144,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 30
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -249,7 +249,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 27
     },
     {
       "radar": "Google News - economia lavoro",
@@ -259,7 +259,7 @@
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Repubblica Economia",
@@ -299,12 +299,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 40
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 32
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -314,7 +314,7 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 53
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,32 +367,10 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "Adnkronos - Notizie",
-      "discovery_url": "https://www.adnkronos.com/economia/ventura-a2a-in-sicilia-44-milioni-di-valore-distribuito-e-23-milioni-di-investimenti_25rsPMmlPeVNnxfq9Db6gE",
-      "discovery_title": "Ventura (A2A): \"In Sicilia 44 milioni di valore distribuito e 23 milioni di investimenti\"",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
-      "score_discovery": 65,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "44 milioni",
-        "23 milioni",
-        "2025",
-        "44 milioni",
-        "23 milioni",
-        "50%",
-        "50 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Tasse redditi casa",
+      "radar": "PULSE 80 testate · specializzate · gruppo 10",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBldGJzSjFWbTBRVXJVT2ViNHdpYzg2eWtWOW40bnprd1lJWmZtcDBCSDIxM3p6YVZGWWJqeUVfX2JpY0Z1Y2RqWThMalhvRTc4elBEN0hPdmRLWnZ4STE4WGMxby1VN0tfckVMWXk2c19tUXRydmgwRjdTNXU?oc=5",
       "discovery_title": "Mutui per case all'asta, 106mila euro la richiesta media in Italia: i dati 2026 - Sky TG24",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 49,
       "topic": "CASA",
       "numbers_detected": [
@@ -411,7 +389,7 @@
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUUdGZi1FbEI2b0JCWGtwN1VDLUJDVEVBOXNnblF1YkFWTm9qNEZha0NGdVBMeUEyLTZNTl9BTE01UF9kckZubG43X3ozWHRNNHRfcFpzMVJac2Zxa3B5MEpLaGF2aW1tLU1vWDJPRml6Ml9mUW9MV1VFWDBqV0ttc3dNU1hfeHdFb0pYelVjOFVidFliNFVKeHR3MmcwVjNqUmowYUJQU0Y2VXJCTl9EanN3eDR2N25LcGJZejZldmRXUXZHVWlKZENoTGhRUDc5NFBtR2pmSUZORmZRVDZuQ0ZnRldNLVZXNjdjXw?oc=5",
       "discovery_title": "Abbandoni scolastici, il doppio volto dell’Italia: sotto la soglia Ue del 9%, ma i ragazzi restano al 10,1%. Le ragazze al 6,2%. I dati - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -432,7 +410,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/sistema-informativo-6/bilancio-demografico-mensile-agosto-2026/",
       "discovery_title": "Bilancio demografico mensile – agosto 2026",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 50,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -499,7 +477,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/",
       "discovery_title": "Incidenti stradali – Stima preliminare – Gennaio-giugno 2026",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -558,67 +536,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica",
-      "discovery_title": "Giornata Mondiale del Diabete: il fegato, un protagonista spesso trascurato della salute metabolica",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
-      "score_discovery": 45,
-      "topic": "SALUTE",
-      "numbers_detected": [
-        "16",
-        "11",
-        "2026 ",
-        "14 ",
-        "2 "
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news"
-      ],
-      "official_domain_hints": [
-        "aci.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14816/giornata-mondiale-del-diabete-il-fegato-un-protagonista-spesso-trascurato-della-salute-metabolica",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "16",
-          "11",
-          "2026 ",
-          "14 ",
-          "2 "
-        ],
-        "matched_non_year_numbers": [
-          "16",
-          "11",
-          "14 ",
-          "2 "
-        ],
-        "matched_keywords": [
-          "giornata",
-          "mondiale",
-          "diabete",
-          "fegato",
-          "protagonista",
-          "spesso",
-          "trascurato",
-          "salute"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Giornata Mondiale del Diabete: il fegato, un protagonista spesso trascurato della salute metabolica | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Strutture sc",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "AGI - Notizie",
       "discovery_url": "https://www.agi.it/cronaca/news/2026-11-19/anafilassi-ricerca-40101743/",
       "discovery_title": "\"Un italiano su due non sa cosa sia l'anafilassi\". E il 60% non sa cosa fare in caso di emergenza",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 65,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -635,10 +556,28 @@
         "23 "
       ],
       "official_links": [],
-      "official_domain_hints": [
-        "aci.it",
-        "iss.it"
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Il Fatto Quotidiano dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
+      "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
+      "score_discovery": 50,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "3,5%",
+        "2027 ",
+        "2028 ",
+        "3,5%",
+        "2027 ",
+        "2028 "
       ],
+      "official_links": [],
+      "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
@@ -647,7 +586,7 @@
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPMWN1eFRrQmstekE1MnNmdThoaTA5X3NVNjF0eURHRmVIRXAtMVIxYzB0X0tJQjJjc2d2RjRGZTkwS0diTDBybzhoOXJwNTh2VXJKZ0ZXNHBPOGhOd0tnR3BlTklCTWxNR0ZJTFBmMk1kdjE3NkhHYVJqUFNycWNkRWh3d2M4cXpZcHNuZFByaWJUYWRHQnNHcXNmY1dDYlZwdGRmZHVVSFJsMDlteWtpZE12dHNyc2JENkU3WmxOdGdoY29lVzVNdy14Wk55b0NZUmxWUmtVbUs0M0cwNmpodmdTQVFHRHpmTjRQTWUxNFcxYktQUlFvV1liVXRjNVNkeXVN?oc=5",
       "discovery_title": "Il 36,7% degli alunni di quinta elementare non ha competenze adeguate in matematica: erano il 27,7% sei anni fa. In italiano indietro il 27,4%. I dati - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -668,7 +607,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
       "discovery_title": "Prezzi al consumo – Ottobre 2026",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -725,31 +664,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Il Fatto Quotidiano dati",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
-      "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
-      "score_discovery": 50,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "3,5%",
-        "2027 ",
-        "2028 ",
-        "3,5%",
-        "2027 ",
-        "2028 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "PULSE 80 testate · nazionali · gruppo 02",
       "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
       "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -770,7 +688,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 17",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOV3ZJdHluZm41MzFjVUJ0ekUyNVBiZUpNS016UDJlX0FzWDNpSFdIVm5HTTQ3ZVRRWFlESUxpRmZJczIyN285a3RNNTItdHVMLXd4LXNEbVJUNHJfdkloa0h0N3FBeWRpdlV3TnhVTmlCSi1aV1FzZXY5UTFiT2hRTzJjc2lJYzRia1FvbExCanFJeWlwenlwV3VkTlRsdnVfTkp4Rlc4RWtaOXUyZklQLUxST1RmVlMycG1MQ0V6VE1XZUdfMzRkSVNxMXRyWkkzclRDNHlIXzRHUlNDbWJHaDBGLUxDMDJpcTdxVGpUOEZvVTJQLUxXeHVFMEtnTzR4bkE?oc=5",
       "discovery_title": "Salute mentale, in Toscana quasi raddoppiati i ricoveri dei minori dal 2019. Il disagio psicologico riguarda il 30% degli adolescenti - La Nazione",
-      "detected_at": "2026-11-19T15:10:03.205466+00:00",
+      "detected_at": "2026-11-19T16:14:39.369690+00:00",
       "score_discovery": 49,
       "topic": "SALUTE",
       "numbers_detected": [
