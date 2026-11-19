@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T12:10:33.558356+00:00",
+  "generated_at": "2026-11-19T13:30:15.482353+00:00",
   "candidates": [
     {
       "radar": "PULSE osservatori ufficiali 6/9",
@@ -24,7 +24,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -34,12 +34,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 33
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -139,7 +139,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
@@ -178,8 +178,8 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 08",
@@ -193,8 +193,8 @@
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 10",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 11",
@@ -249,17 +249,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 27
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 60
     },
     {
       "radar": "Repubblica Economia",
@@ -299,27 +299,27 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 32
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 34
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 59
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -370,7 +370,7 @@
       "radar": "Google News - Tasse redditi casa",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBldGJzSjFWbTBRVXJVT2ViNHdpYzg2eWtWOW40bnprd1lJWmZtcDBCSDIxM3p6YVZGWWJqeUVfX2JpY0Z1Y2RqWThMalhvRTc4elBEN0hPdmRLWnZ4STE4WGMxby1VN0tfckVMWXk2c19tUXRydmgwRjdTNXU?oc=5",
       "discovery_title": "Mutui per case all'asta, 106mila euro la richiesta media in Italia: i dati 2026 - Sky TG24",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 49,
       "topic": "CASA",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 17",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOV3ZJdHluZm41MzFjVUJ0ekUyNVBiZUpNS016UDJlX0FzWDNpSFdIVm5HTTQ3ZVRRWFlESUxpRmZJczIyN285a3RNNTItdHVMLXd4LXNEbVJUNHJfdkloa0h0N3FBeWRpdlV3TnhVTmlCSi1aV1FzZXY5UTFiT2hRTzJjc2lJYzRia1FvbExCanFJeWlwenlwV3VkTlRsdnVfTkp4Rlc4RWtaOXUyZklQLUxST1RmVlMycG1MQ0V6VE1XZUdfMzRkSVNxMXRyWkkzclRDNHlIXzRHUlNDbWJHaDBGLUxDMDJpcTdxVGpUOEZvVTJQLUxXeHVFMEtnTzR4bkE?oc=5",
       "discovery_title": "Salute mentale, in Toscana quasi raddoppiati i ricoveri dei minori dal 2019. Il disagio psicologico riguarda il 30% degli adolescenti - La Nazione",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 49,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -405,31 +405,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUUdGZi1FbEI2b0JCWGtwN1VDLUJDVEVBOXNnblF1YkFWTm9qNEZha0NGdVBMeUEyLTZNTl9BTE01UF9kckZubG43X3ozWHRNNHRfcFpzMVJac2Zxa3B5MEpLaGF2aW1tLU1vWDJPRml6Ml9mUW9MV1VFWDBqV0ttc3dNU1hfeHdFb0pYelVjOFVidFliNFVKeHR3MmcwVjNqUmowYUJQU0Y2VXJCTl9EanN3eDR2N25LcGJZejZldmRXUXZHVWlKZENoTGhRUDc5NFBtR2pmSUZORmZRVDZuQ0ZnRldNLVZXNjdjXw?oc=5",
-      "discovery_title": "Abbandoni scolastici, il doppio volto dell’Italia: sotto la soglia Ue del 9%, ma i ragazzi restano al 10,1%. Le ragazze al 6,2%. I dati - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
-      "score_discovery": 45,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "9%",
-        "10,1%",
-        "6,2%",
-        "9%",
-        "10,1%",
-        "6,2%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/sistema-informativo-6/bilancio-demografico-mensile-agosto-2026/",
       "discovery_title": "Bilancio demografico mensile – agosto 2026",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 50,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -496,7 +475,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/",
       "discovery_title": "Incidenti stradali – Stima preliminare – Gennaio-giugno 2026",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -555,50 +534,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "PULSE Italia - Nord e Centro",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
-      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
-      "score_discovery": 49,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "73 milioni",
-        "2024 ",
-        "73 milioni",
-        "2024 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - Il Fatto Quotidiano dati",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
-      "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
-      "score_discovery": 50,
-      "topic": "LAVORO",
-      "numbers_detected": [
-        "3,5%",
-        "2027 ",
-        "2028 ",
-        "3,5%",
-        "2027 ",
-        "2028 "
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPMWN1eFRrQmstekE1MnNmdThoaTA5X3NVNjF0eURHRmVIRXAtMVIxYzB0X0tJQjJjc2d2RjRGZTkwS0diTDBybzhoOXJwNTh2VXJKZ0ZXNHBPOGhOd0tnR3BlTklCTWxNR0ZJTFBmMk1kdjE3NkhHYVJqUFNycWNkRWh3d2M4cXpZcHNuZFByaWJUYWRHQnNHcXNmY1dDYlZwdGRmZHVVSFJsMDlteWtpZE12dHNyc2JENkU3WmxOdGdoY29lVzVNdy14Wk55b0NZUmxWUmtVbUs0M0cwNmpodmdTQVFHRHpmTjRQTWUxNFcxYktQUlFvV1liVXRjNVNkeXVN?oc=5",
       "discovery_title": "Il 36,7% degli alunni di quinta elementare non ha competenze adeguate in matematica: erano il 27,7% sei anni fa. In italiano indietro il 27,4%. I dati - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -619,7 +558,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
       "discovery_title": "Prezzi al consumo – Ottobre 2026",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -676,10 +615,50 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "Google News - Il Messaggero statistiche",
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
+      "score_discovery": 49,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "73 milioni",
+        "2024 ",
+        "73 milioni",
+        "2024 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Il Fatto Quotidiano dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
+      "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
+      "score_discovery": 50,
+      "topic": "LAVORO",
+      "numbers_detected": [
+        "3,5%",
+        "2027 ",
+        "2028 ",
+        "3,5%",
+        "2027 ",
+        "2028 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · nazionali · gruppo 02",
       "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
       "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
-      "detected_at": "2026-11-19T12:10:33.558356+00:00",
+      "detected_at": "2026-11-19T13:30:15.482353+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
