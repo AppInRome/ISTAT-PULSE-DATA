@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-19T02:59:32.601613+00:00",
+  "generated_at": "2026-11-19T07:30:37.226029+00:00",
   "discovery_feeds_configured": 73,
-  "discovery_feeds_reached": 68,
-  "discovery_feeds_failed": 5,
-  "articles_pending_research": 424,
+  "discovery_feeds_reached": 60,
+  "discovery_feeds_failed": 13,
+  "articles_pending_research": 425,
   "automatic_primary_research": {
     "attempted": 2,
     "promoted": 0,
-    "pending": 854
+    "pending": 867
   },
   "daily": {
     "oggi": {
-      "published": 1,
+      "published": 6,
       "with_verified_chart": 1,
-      "media_discovered": 0,
-      "media_reports_not_primary_verified": 0,
+      "media_discovered": 5,
+      "media_reports_not_primary_verified": 5,
       "original_pulse_verified": 1,
-      "distinct_primary_domains": 1
+      "distinct_primary_domains": 4
     },
     "ieri": {
       "published": 42,

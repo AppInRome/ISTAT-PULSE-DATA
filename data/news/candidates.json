@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T02:59:32.601613+00:00",
+  "generated_at": "2026-11-19T07:30:37.226029+00:00",
   "candidates": [
     {
       "radar": "PULSE osservatori ufficiali 5/9",
@@ -39,7 +39,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 33
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -114,7 +114,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 9
+      "items_fetched": 10
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -144,12 +144,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 30
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -158,8 +158,8 @@
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 02",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 03",
@@ -208,8 +208,8 @@
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 12",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 13",
@@ -223,13 +223,13 @@
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 15",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · locali · gruppo 16",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · locali · gruppo 17",
@@ -254,7 +254,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "Google News - economia lavoro",
@@ -263,8 +263,8 @@
     },
     {
       "radar": "Google News - salute scuola ambiente",
-      "status": "radar_fetched",
-      "items_fetched": 29
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "Repubblica Economia",
@@ -283,13 +283,13 @@
     },
     {
       "radar": "Google News - Sole 24 Ore dati e statistiche",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "Google News - Repubblica dati e statistiche",
-      "status": "radar_error",
-      "error": "HTTP Error 404: Not Found"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Corriere dati e statistiche",
@@ -308,8 +308,8 @@
     },
     {
       "radar": "Google News - Italia salute e welfare",
-      "status": "radar_fetched",
-      "items_fetched": 44
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -319,12 +319,12 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 58
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 26
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -338,13 +338,13 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 3/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE osservatori ufficiali 4/9",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -367,10 +367,29 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
+      "radar": "PULSE Italia - Nord e Centro",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
+      "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 49,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "73 milioni",
+        "2024 ",
+        "73 milioni",
+        "2024 "
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/caro-pane-prezzi-cresciuti-32percento-2017-ecco-citta-dove-costa-piu-AJiRHEJC",
       "discovery_title": "Caro pane, prezzi cresciuti del 32% dal 2017: ecco le città dove costa di più",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -386,42 +405,17 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/agritech-agrifood/26_novembre_18/l-india-e-un-mercato-strategico-per-le-imprese-italiane-6-su-10-vogliono-investire-nel-paese-b32d4f45-4f66-40e3-97b5-fc8921b07xlk.shtml",
-      "discovery_title": "L’India è un mercato strategico per le imprese italiane: 6 su 10 vogliono investire nel Paese",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 55,
-      "topic": "ECONOMIA",
+      "radar": "Google News - Tasse redditi casa",
+      "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBldGJzSjFWbTBRVXJVT2ViNHdpYzg2eWtWOW40bnprd1lJWmZtcDBCSDIxM3p6YVZGWWJqeUVfX2JpY0Z1Y2RqWThMalhvRTc4elBEN0hPdmRLWnZ4STE4WGMxby1VN0tfckVMWXk2c19tUXRydmgwRjdTNXU?oc=5",
+      "discovery_title": "Mutui per case all'asta, 106mila euro la richiesta media in Italia: i dati 2026 - Sky TG24",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 49,
+      "topic": "CASA",
       "numbers_detected": [
-        "6 ",
-        "10 ",
-        "14,25 miliardi",
-        "2025",
-        "2026"
-      ],
-      "official_links": [],
-      "official_domain_hints": [
-        "istat.it",
-        "terna.it"
-      ],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE 80 testate · nazionali · gruppo 02",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
-      "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 45,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "5,5%",
-        "+1,5%",
-        "+2,5%",
-        "5,5%",
-        "+1,5%",
-        "+2,5%"
+        "106mila",
+        "2026 ",
+        "106mila",
+        "2026 "
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -433,7 +427,7 @@
       "radar": "PULSE 80 testate · locali · gruppo 17",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOV3ZJdHluZm41MzFjVUJ0ekUyNVBiZUpNS016UDJlX0FzWDNpSFdIVm5HTTQ3ZVRRWFlESUxpRmZJczIyN285a3RNNTItdHVMLXd4LXNEbVJUNHJfdkloa0h0N3FBeWRpdlV3TnhVTmlCSi1aV1FzZXY5UTFiT2hRTzJjc2lJYzRia1FvbExCanFJeWlwenlwV3VkTlRsdnVfTkp4Rlc4RWtaOXUyZklQLUxST1RmVlMycG1MQ0V6VE1XZUdfMzRkSVNxMXRyWkkzclRDNHlIXzRHUlNDbWJHaDBGLUxDMDJpcTdxVGpUOEZvVTJQLUxXeHVFMEtnTzR4bkE?oc=5",
       "discovery_title": "Salute mentale, in Toscana quasi raddoppiati i ricoveri dei minori dal 2019. Il disagio psicologico riguarda il 30% degli adolescenti - La Nazione",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 49,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -449,10 +443,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - statistiche Italia",
+      "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPak5sREZMUnRBemR6a2hXNmt1Zm1DMkltc3BvSkNkajdFdDlBVE1yYjVQay1rXzFpZkpVeFB1ZnNXTXhyei05c1NpS29SWHdEbGg3MDVhcXdtWHZROEE0bHlveUVDZGVBWkdpTHA5UVNIcWVNcjJaU0dYLU8wSHQyQ3BncXF0ci1mYlI3Yl94SVBrSzc5bnlvZFRkenNNNlRaR05GbUUtb2taWFZGTEM0VGk4enRsYkFNcDl5SjdPZF85bGNRSUh5eUJ4UUJBQ0FPQW4tS18ycGU1NHIzUHpINVJDYVV5SkxFZFJoYjRXNkJaTG04QTQtQ2h1QUYxdi1sWDNxOA?oc=5",
       "discovery_title": "Studenti universitari dall’estero, nell’Ue record di 1,65 milioni. L’Italia è quarta con 123mila iscritti e cresce del 16% in un anno. I dati Eurostat - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 75,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -470,31 +464,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia lavoro e imprese",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVjZVRl9oN3VHeE5EeVNuZ3dWWXpEOXZrdUNzV0RWOEtwazVqLVY4ZEtsY2s3Skc5QVVNemVkQ0lwWG5hVllTRVR5bm4ycGFaaE1PTVpGcHRjZ3hsUndzX25lbV8xRWM3RW03ckVlSFBSY0ZtbXNPXzZGUVlxLWpvd1hIcF9GQnZhVXpxYkdRWGE5aWJaeF9MY00zNGhDUWt0ajY3S09Sbl9uRXQ1VEdOdkhaNnJDckhDYUFHaHJEZi1uWXE0eFM1QmFkdG9laHQ5ZlVfVFVSdTRUNnBBMVItSXZKSGVteHJZdUJhNXhn0gH2AUFVX3lxTE1SS0JBVFIyUTVtbW1jN1lMdmMzYjJMbUZYNTc0aTlKMUVvNUItSDRrdlduMDlHc2gxclQ1cFhielR0Tm9MR3FnTmtNaHFDcXJ2QXNVd1I1ZjhxSkpoU0N1UXRweGd1SDZWMTJZTXZzR0NkcDkwZGFnT2NxQmVjNk9kQnR2ZkdDSmxmanBzOHdnUUpjUVRBWFNqbVdXUG1Xd214WXZHbXpGQ3JpS0dOdE1RNEpvLVpTeEZmWXh2c3JOSzYzMlpia0ZjeWdFODVIeHBITjlHSm1XZmZIb252c0lBaTY0U2VLNWg1N2EzMW5wNHV1VnBBdw?oc=5",
-      "discovery_title": "Space&Blue Economy, un tesoro da 46,3 miliardi per l’Italia: export in crescita del 31,4% e 168mila occupati, il rapporto - MeteoWeb",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 55,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "46,3 miliardi",
-        "31,4%",
-        "168mila",
-        "46,3 miliardi",
-        "31,4%",
-        "168mila"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Italia ambiente energia mobilità",
       "discovery_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TQTA0TTFzd3pEd1pMN3ZLM29qbkpJMmFPdm9hRnlFQXUyN1hScFlzejBBdXdvc1QxZE5YbmdWR1B6Q1hyeVNERUZaUGpISUk1VnAxcUVQNjhGY1FycW5NSS0waEo2UG55SGc?oc=5",
       "discovery_title": "Eurozona, inflazione al 4% in ottobre: energia +21%, Italia al 5,6%. Nuove pressioni sulla BCE - Euroborsa",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 50,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -515,7 +488,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/",
       "discovery_title": "Incidenti stradali – Stima preliminare – Gennaio-giugno 2026",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -574,65 +547,10 @@
       "status": "primary_statistical_source_verified"
     },
     {
-      "radar": "PULSE osservatori ufficiali 6/9",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQaFdtS0wxTlV0RUNORGpHQWx4OF9VdUpwandWVXFwRnN5WUFJMVBjYU1iNkRtaVFpTWVzYWFtQmxkbG51UXQwZHNpZjAxbnpqWUc4UUk0XzdPZzNWOUw2al9JSEdXWWw1dDFKUXdmaXJUeHp1ZEtEclRCcjBzbkU2XzFYTGxrMGhqeGFEUlZ2RzNMNHM2ZnVLekUxa1ZoSXVGZThTQ0s0dWl6NWF5c2hFNTlZam1uMEUySVpXd0xpRlBnaUN2aDdlX0NmNUdUYmZzajlpNWxvLXc4ZVV6aldqcWFNTHFuUTI1OUc3Y05GRExQV09kd0Zub2pma3ZrVmFWU2E0WEZJamZCQWxIRDdrc3M2eFB0VWUyUkVoUHAxa044djg?oc=5",
-      "discovery_title": "Comunicato Stampa Roma, 18 novembre 2026 RAPPORTO ANNUALE INPS: nei servizi commerciali 1,66 milioni di dipendenti in più tra i - INPS",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 55,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "18 ",
-        "2026 ",
-        "1,66 milioni",
-        "18 ",
-        "2026 ",
-        "1,66 milioni"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": {
-        "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.11.gli-impegni-istituzionali-dal-16-al-21-novembre.html",
-        "domain": "inps.it",
-        "matched_numbers": [
-          "18 ",
-          "2026 ",
-          "18 ",
-          "2026 "
-        ],
-        "matched_non_year_numbers": [
-          "18 ",
-          "18 "
-        ],
-        "matched_keywords": [
-          "stampa",
-          "roma",
-          "novembre",
-          "annuale",
-          "inps",
-          "servizi"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Portale Inps - Gli impegni istituzionali dal 16 al 21 novembre it Vai al menu principale Vai al contenuto principale Vai al pie' di pagina Pensione e Previdenza Pensione e Previdenza Domanda di pensione Fondi e Gestioni Ricongiunzioni e riscatti Versamento Contributi Accredito Contributi figurativi Rimborso di contributi Benefici previdenziali e detrazioni Prestiti e anticipi Servizi generali – Pensione e Previdenza Banche Dati – Pensione e Previdenza Per i pensionati – Pensione e Previdenza Posizione contributiva – Pensione e Previdenza Servizi usati di frequente Apri Per ricevere o inviare informazioni da INPS, effettuare dei pagamenti, consultare banche dati, modificare il proprio stato, simulare scenari futuri. Accedi a MyINPS Cedolino della pensione Visualizzazione indebiti Stato di una pratica o di una domanda Vedi tutti Esplora Pensione e Previdenza Lavoro Lavoro Congedi, permessi",
-        "verified_series": [],
-        "method": "named_or_topic_domain_search",
-        "search_domain": "inps.it",
-        "attempts": [
-          {
-            "stage": "domain_search",
-            "domain": "inps.it",
-            "query": "site:inps.it \"comunicato stampa roma novembre annuale inps\" 18  2026  1,66 milioni",
-            "results": 6
-          }
-        ]
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "Il Sole 24 Ore - Italia Attualità",
       "discovery_url": "https://www.ilsole24ore.com/art/ocse-pesa-inflazione-ii-trimestre-italia-reddito-reale-pro-capite-1percento-AJxbtCIC",
       "discovery_title": "Ocse, pesa inflazione, nel II trimestre in Italia reddito reale pro capite -1%",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -648,32 +566,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Corriere della Sera - Economia",
-      "discovery_url": "https://www.corriere.it/economia/consumi/26_novembre_18/natale-2026-gli-italiani-tagliano-il-budget-spesa-media-di-351-euro-ma-cresce-il-ricorso-all-ai-288b7192-782f-4f76-af26-34f3cb08bxlk.shtml",
-      "discovery_title": "Natale 2026, gli italiani tagliano il budget: spesa media di 351 euro, ma cresce il ricorso all’Ai",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 49,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "2026",
-        "351 ",
-        "19%",
-        "2025"
-      ],
-      "official_links": [],
-      "official_domain_hints": [
-        "istat.it",
-        "terna.it"
-      ],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Google News - Il Fatto Quotidiano dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
       "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -692,16 +588,60 @@
     },
     {
       "radar": "Google News - AGI ricerche e dati",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTXZZdUdsNDZFTDBBeEZ2WC1PRjh6MW55YzBrNzl4eGxGUUpTd1pQeE9ZemdsUnNnakU0aWx3NGk2d3J6eV9kczI2NXE3RkRPNW5pV2FiVlh4d1l0MllTUFVIOTdfd0RtYzRiczhxbE1WNHloR2RjTFNFeUFqQVR1UmhoWE84NldJaDN3?oc=5",
-      "discovery_title": "Ue: cresce stima inflazione Italia 2026, 3,4% (AGI) - AGI",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 49,
+      "discovery_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY2xqUzNuTWc4Mnh1ZWh0bXplWnAxdjBUNHczbDIxNTc5MTdxeFV3MFhsZXFGLTJtNk9JUkhMWHQxRFAyNVhxSnRxNDJaMGc4WWU5UFhxaWU2a2lJWVZVZjhJa1BCWlR3M1pkWWQ4LTdCSXgxdnZoUHRXeXl6RXkxZ2dzYmFjUEFxdXZtUw?oc=5",
+      "discovery_title": "Ue: previsioni, picco inflazione tra 2026-2027, +4% (AGI) - AGI",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
         "2026",
-        "3,4%",
+        "2027",
+        "+4%",
         "2026",
-        "3,4%"
+        "2027",
+        "+4%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Il Messaggero statistiche",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcm0yOUptYkNVcGsweEZZXzh2NlFlajRoemtITWhvUkFWbkNLMUN5MUVBZUxmN0l4S1U1RFdTSGpMaWVhdm5pM3R5ZWJ5S1hFelNpWnMtaElMSE1uaFJMTG9DRG11b2o4RTlHbWw2Mi04blZhcnJTaHFQekxnOGhTRU9pWWtwSTc4Vl9TcU1HY0dUYjVZRV9idHl3UXJvLVk2c0pGUUM0NGNBVFNrQUZ3bzBPbHNWaGRlQ2Z3SWIwS3I2S2NpU0JSSFl30gHIAUFVX3lxTE9Ta01NQXlTYkxKS0paalZIQkpVemFpTlUyUlBNMnNra08zMG9XejlmNGQzbWI5SUVVNUVNdlBZUHljRnl6b2oxRTNfRE15MnB3WHZyQWxYSC03MmpFY2tMdm5fNWVKQkVPRkstOHFlU0JXcU1jV0hsV3cxcWwxZXNUbjVhVnRuZ2ZZQ3lidzEtVGlzdTJDUTRkQjFwMWhoOEJYV3NsZjJXZ3B2UGNheW5VbUtZRURiYkNycVBfdGFSQkRuMDZ0SlBp?oc=5",
+      "discovery_title": "Istat, inflazione di ottobre vola al 5,5% (oltre le stime): il “carrello della spesa” accelera (da +1,5% a +2,5%) - Il Messaggero",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 45,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "5,5%",
+        "+1,5%",
+        "+2,5%",
+        "5,5%",
+        "+1,5%",
+        "+2,5%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "Google News - Italia lavoro e imprese",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVjZVRl9oN3VHeE5EeVNuZ3dWWXpEOXZrdUNzV0RWOEtwazVqLVY4ZEtsY2s3Skc5QVVNemVkQ0lwWG5hVllTRVR5bm4ycGFaaE1PTVpGcHRjZ3hsUndzX25lbV8xRWM3RW03ckVlSFBSY0ZtbXNPXzZGUVlxLWpvd1hIcF9GQnZhVXpxYkdRWGE5aWJaeF9MY00zNGhDUWt0ajY3S09Sbl9uRXQ1VEdOdkhaNnJDckhDYUFHaHJEZi1uWXE0eFM1QmFkdG9laHQ5ZlVfVFVSdTRUNnBBMVItSXZKSGVteHJZdUJhNXhn0gH2AUFVX3lxTE1SS0JBVFIyUTVtbW1jN1lMdmMzYjJMbUZYNTc0aTlKMUVvNUItSDRrdlduMDlHc2gxclQ1cFhielR0Tm9MR3FnTmtNaHFDcXJ2QXNVd1I1ZjhxSkpoU0N1UXRweGd1SDZWMTJZTXZzR0NkcDkwZGFnT2NxQmVjNk9kQnR2ZkdDSmxmanBzOHdnUUpjUVRBWFNqbVdXUG1Xd214WXZHbXpGQ3JpS0dOdE1RNEpvLVpTeEZmWXh2c3JOSzYzMlpia0ZjeWdFODVIeHBITjlHSm1XZmZIb252c0lBaTY0U2VLNWg1N2EzMW5wNHV1VnBBdw?oc=5",
+      "discovery_title": "Space&Blue Economy, un tesoro da 46,3 miliardi per l’Italia: export in crescita del 31,4% e 168mila occupati, il rapporto - MeteoWeb",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 55,
+      "topic": "ECONOMIA",
+      "numbers_detected": [
+        "46,3 miliardi",
+        "31,4%",
+        "168mila",
+        "46,3 miliardi",
+        "31,4%",
+        "168mila"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -713,7 +653,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/prezzi-al-consumo-ottobre-2026/",
       "discovery_title": "Prezzi al consumo – Ottobre 2026",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -771,18 +711,18 @@
     },
     {
       "radar": "PULSE osservatori ufficiali 6/9",
-      "discovery_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPMi1DMXk3Si0xWDVjNnNpMHlpV0ItRU40UzFDTDNqYnVvblVmQmttRmNnYTV4MG1Db0lkY3lkZm5LY1FSSURvbDYwSndwcXBWY2EzYW1YMnh0ZExSc2JCMnNnUHFJTnBUUl9iTGpKWjFoZzhzZFMxVmkySzFoM1dqaE1SZS1wM1ZlalZhVG1ZVXlnbHFJSFVya01YNW12TUtpbXlrUGh6VE5oNDhSLUtvdjczVDdNQk5ENW4zNkRMN0dNaDMtTU15LTU0SUQzbjJlLTMwVllVWmJLRHMxdXZpQnJObHV2M0hXUThyUnZQTWNvQ1gwellMV052NlpUSnJ1bS0w?oc=5",
-      "discovery_title": "RAPPORTO ANNUALE INPS: nei servizi commerciali 1,66 milioni di dipendenti in più tra il 2007 e il 2025 - INPS",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 50,
+      "discovery_url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQaFdtS0wxTlV0RUNORGpHQWx4OF9VdUpwandWVXFwRnN5WUFJMVBjYU1iNkRtaVFpTWVzYWFtQmxkbG51UXQwZHNpZjAxbnpqWUc4UUk0XzdPZzNWOUw2al9JSEdXWWw1dDFKUXdmaXJUeHp1ZEtEclRCcjBzbkU2XzFYTGxrMGhqeGFEUlZ2RzNMNHM2ZnVLekUxa1ZoSXVGZThTQ0s0dWl6NWF5c2hFNTlZam1uMEUySVpXd0xpRlBnaUN2aDdlX0NmNUdUYmZzajlpNWxvLXc4ZVV6aldqcWFNTHFuUTI1OUc3Y05GRExQV09kd0Zub2pma3ZrVmFWU2E0WEZJamZCQWxIRDdrc3M2eFB0VWUyUkVoUHAxa044djg?oc=5",
+      "discovery_title": "Comunicato Stampa Roma, 18 novembre 2026 RAPPORTO ANNUALE INPS: nei servizi commerciali 1,66 milioni di dipendenti in più tra i - INPS",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 55,
       "topic": "ALTRO",
       "numbers_detected": [
+        "18 ",
+        "2026 ",
         "1,66 milioni",
-        "2007 ",
-        "2025 ",
-        "1,66 milioni",
-        "2007 ",
-        "2025 "
+        "18 ",
+        "2026 ",
+        "1,66 milioni"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -791,19 +731,17 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - salute scuola ambiente",
-      "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14R2kxc3k5aWpIbEJDcEIzdktxQWdsQ2JzTFZiY2hFcVlFejBUbFV5NUFnT0g0WGp6YjFwZ0d3aEpLRU51a2NKSzZBeFo4N3J4YW81ZWJjckx6U3JEMDFiSjctSi1jQ1dOSFFOQ2hKTUJJOFpLdWo0UEFJekRfZ0U?oc=5",
-      "discovery_title": "Energie rinnovabili, Campania prima in Italia per crescita: +54% dal 2020. Ma il 2030 è a rischio - Qui Salute Magazine",
-      "detected_at": "2026-11-19T02:59:32.601613+00:00",
-      "score_discovery": 60,
-      "topic": "ENERGIA",
+      "radar": "Google News - AGI ricerche e dati",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTXZZdUdsNDZFTDBBeEZ2WC1PRjh6MW55YzBrNzl4eGxGUUpTd1pQeE9ZemdsUnNnakU0aWx3NGk2d3J6eV9kczI2NXE3RkRPNW5pV2FiVlh4d1l0MllTUFVIOTdfd0RtYzRiczhxbE1WNHloR2RjTFNFeUFqQVR1UmhoWE84NldJaDN3?oc=5",
+      "discovery_title": "Ue: cresce stima inflazione Italia 2026, 3,4% (AGI) - AGI",
+      "detected_at": "2026-11-19T07:30:37.226029+00:00",
+      "score_discovery": 49,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "+54%",
-        "2020",
-        "2030 ",
-        "+54%",
-        "2020",
-        "2030 "
+        "2026",
+        "3,4%",
+        "2026",
+        "3,4%"
       ],
       "official_links": [],
       "official_domain_hints": [],
