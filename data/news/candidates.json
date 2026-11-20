@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-20T09:16:13.741207+00:00",
+  "generated_at": "2026-11-20T10:23:58.964075+00:00",
   "candidates": [
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 37
+      "items_fetched": 40
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -98,8 +98,8 @@
     },
     {
       "radar": "Google News - Milano Finanza dati",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Fanpage dati e statistiche",
@@ -114,7 +114,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -143,8 +143,8 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
@@ -219,17 +219,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 32
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 29
     },
     {
       "radar": "Repubblica Economia",
@@ -269,12 +269,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 41
+      "items_fetched": 42
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 27
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -284,7 +284,7 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 53
+      "items_fetched": 50
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -334,12 +334,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 15
+      "items_fetched": 16
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -370,7 +370,7 @@
       "radar": "PULSE 80 testate · specializzate · gruppo 10",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBldGJzSjFWbTBRVXJVT2ViNHdpYzg2eWtWOW40bnprd1lJWmZtcDBCSDIxM3p6YVZGWWJqeUVfX2JpY0Z1Y2RqWThMalhvRTc4elBEN0hPdmRLWnZ4STE4WGMxby1VN0tfckVMWXk2c19tUXRydmgwRjdTNXU?oc=5",
       "discovery_title": "Mutui per case all'asta, 106mila euro la richiesta media in Italia: i dati 2026 - Sky TG24",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 49,
       "topic": "CASA",
       "numbers_detected": [
@@ -389,7 +389,7 @@
       "radar": "Google News - Italia ambiente energia mobilità",
       "discovery_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOYmtIQ2hXeDlxTDNaR1VSSHd0RlVObUhoQ3pLY2dmeUZMcmJOdFpnenhZZzdVUGM5VGRSaHE1SER5NjR1XzdfQ1NWWWNMRnRyUkVXVFRySDd3TE5qT2tpMExLcVQ2Sy1uMjlfR1Q3bTFvMVdjUkRYZ09TcVpaNFlPcFFRdHB3MUNSalNlWmtuRXdLcWlPdGtZbGVuTWVLdHZUZGxWNDZaam0xUi1qcThYYkdMb19hMFhxWnFyeUhCdkZWdWh5a3VBQWZVT3hXNF9abkR3cTZHMGRtWWtRMnRKVGx4Y2JVVkRyVDU5d01YXzZBVVpIRlUtT2o5RFh2OUlOOGROa25kRFNBLWpYM2lwOUpNODZrOWfSAZwCQVVfeXFMT3cyajJMVWlMX1pQZkhNMERNMExCZ3AxTHdxcHR1dHgwTTF5V1dpT29QUUZUeFNpYU9GZzFCOWowZ1lSa3dJVERGa2RleW0xMWh4LThTY29TcWlBSmRsckR0Y1BZVDVxTHE4bElqQzc1QUIwNjJBY1VpV2ltaTVDSmNXZTVsNXdrcFRrUG5aQWFpNlNQUVNyRXRkY1loV3YwZXdvc0c4VklVSnRMeWRISkVfU3VWMndKbDVaTzMxeGRwdG5mQlB6OWR6enJxbks0VVo5OGg0TGY4MFVlUWE1a0tHbGo2WVdhRTNfYjQ2ZENJc3QxcnBXTHdZR3Rtbk5hOGpHWURsRHo2MlR5MXBrRDFvSTJQQjF2ZENVUTA?oc=5",
       "discovery_title": "Mercato auto, la Cina avanza in Italia: importazioni in crescita del 121% nei primi otto mesi del 2026 - Corriere della Sera",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 49,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -405,71 +405,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "CNR - Notizie ufficiali",
-      "discovery_url": "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione",
-      "discovery_title": "Giorgio Rossi Co-Chair del 10-Member-Group delle Nazioni Unite per la Scienza, la Tecnologia e l'Innovazione",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
-      "score_discovery": 45,
-      "topic": "ISTRUZIONE",
-      "numbers_detected": [
-        "10",
-        "19",
-        "11",
-        "2026 ",
-        "2026",
-        "10"
-      ],
-      "official_links": [
-        "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione#main-content",
-        "https://www.cnr.it/it",
-        "https://www.cnr.it/it/news",
-        "https://www.cnr.it/it/news/immagine/12822/large",
-        "https://www.cnr.it/it/news/immagine/12823/large"
-      ],
-      "official_domain_hints": [
-        "aci.it",
-        "terna.it"
-      ],
-      "primary_resolution": {
-        "url": "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione",
-        "domain": "cnr.it",
-        "matched_numbers": [
-          "10",
-          "19",
-          "11",
-          "2026 ",
-          "2026",
-          "10"
-        ],
-        "matched_non_year_numbers": [
-          "10",
-          "19",
-          "11",
-          "10"
-        ],
-        "matched_keywords": [
-          "giorgio",
-          "rossi",
-          "chair",
-          "member",
-          "group",
-          "nazioni",
-          "unite",
-          "scienza"
-        ],
-        "verification_score": 95,
-        "text_excerpt": "Giorgio Rossi Co-Chair del 10-Member-Group delle Nazioni Unite per la Scienza, la Tecnologia e l'Innovazione | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Str",
-        "verified_series": [],
-        "method": "direct_official_rss"
-      },
-      "editorial_excluded": false,
-      "status": "primary_statistical_source_verified"
-    },
-    {
       "radar": "Google News - Il Fatto Quotidiano dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOam1nSTZZYlBTYjhOZkRJbEctNTNhTlRodTl0cFpVSE50ell1QXFla2VoYUtUWHFlWEJSbWtPVWZoM2s2M0hqNmNwb3FHWDJ2VFNacFFLVnBvR00wX0dhWk56UDFLeGZjYWI0Vk9XYlpyRm0yVF9TMG54dDFkM29MV2V5bk5XbDRGMThZY0FRMUdOZDlIWkVOVmlJREVJZU43S3BwemNtV1AyQQ?oc=5",
       "discovery_title": "Ue: deficit italiano al 3,5% nel 2027 e salari in ripresa solo nel 2028 - Il Fatto Quotidiano",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 50,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -490,7 +429,7 @@
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "discovery_url": "https://www.istat.it/sistema-informativo-6/bilancio-demografico-mensile-agosto-2026/",
       "discovery_title": "Bilancio demografico mensile – agosto 2026",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 50,
       "topic": "DEMOGRAFIA",
       "numbers_detected": [
@@ -557,7 +496,7 @@
       "radar": "ISTAT - Comunicati stampa ufficiali",
       "discovery_url": "https://www.istat.it/comunicato-stampa/incidenti-stradali-stima-preliminare-gennaio-giugno-2026/",
       "discovery_title": "Incidenti stradali – Stima preliminare – Gennaio-giugno 2026",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -616,10 +555,71 @@
       "status": "primary_statistical_source_verified"
     },
     {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione",
+      "discovery_title": "Giorgio Rossi Co-Chair del 10-Member-Group delle Nazioni Unite per la Scienza, la Tecnologia e l'Innovazione",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "10",
+        "19",
+        "11",
+        "2026 ",
+        "2026",
+        "10"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/immagine/12822/large",
+        "https://www.cnr.it/it/news/immagine/12823/large"
+      ],
+      "official_domain_hints": [
+        "aci.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "10",
+          "19",
+          "11",
+          "2026 ",
+          "2026",
+          "10"
+        ],
+        "matched_non_year_numbers": [
+          "10",
+          "19",
+          "11",
+          "10"
+        ],
+        "matched_keywords": [
+          "giorgio",
+          "rossi",
+          "chair",
+          "member",
+          "group",
+          "nazioni",
+          "unite",
+          "scienza"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Giorgio Rossi Co-Chair del 10-Member-Group delle Nazioni Unite per la Scienza, la Tecnologia e l'Innovazione | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Str",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "PULSE 80 testate · locali · gruppo 17",
       "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOV3ZJdHluZm41MzFjVUJ0ekUyNVBiZUpNS016UDJlX0FzWDNpSFdIVm5HTTQ3ZVRRWFlESUxpRmZJczIyN285a3RNNTItdHVMLXd4LXNEbVJUNHJfdkloa0h0N3FBeWRpdlV3TnhVTmlCSi1aV1FzZXY5UTFiT2hRTzJjc2lJYzRia1FvbExCanFJeWlwenlwV3VkTlRsdnVfTkp4Rlc4RWtaOXUyZklQLUxST1RmVlMycG1MQ0V6VE1XZUdfMzRkSVNxMXRyWkkzclRDNHlIXzRHUlNDbWJHaDBGLUxDMDJpcTdxVGpUOEZvVTJQLUxXeHVFMEtnTzR4bkE?oc=5",
       "discovery_title": "Salute mentale, in Toscana quasi raddoppiati i ricoveri dei minori dal 2019. Il disagio psicologico riguarda il 30% degli adolescenti - La Nazione",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 49,
       "topic": "SALUTE",
       "numbers_detected": [
@@ -638,7 +638,7 @@
       "radar": "Google News - salute scuola ambiente",
       "discovery_url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQd1lxM0s2b01XWVNRb2hkRWRLeVlOeU5MNml3VzZUYXdDNjdUME5BZnJjX1FTbklRMC1HR1l6Q1QxYlFVbjFtRmJ0UXFlRWlLX0tpYzZ1aW8tcHFBajV2Y0ZaX01CeHQtWC04a2J6UmhOM213bC10NHZ6cTZWOE90QmRCcXlaYkRmNjFfWm1VYjlWTGxUYzFrSVZrMDZLTzF0d3JyUlZOdW9qSE1ndUwzSkt2NGlyQi13WnBkQnMwc3djQ3RxMVlVTUk3TTNuaEozNTBlS3VQZW9YU1VBZEpMTUpSdl9KV0JKdE5NUTFBdDdwS2hqY0FaWDdfVGFFRVZXTzFNNElkSjgxczd4Q2NwZ1dSeXg?oc=5",
       "discovery_title": "Famiglia, i nuclei con un solo genitore passano dal 5,5 al 20,2% in oltre quarant’anni. E le famiglie con un figlio solo salgono al 55,9%: il rapporto Istat-Unicef - Orizzonte Scuola Notizie",
-      "detected_at": "2026-11-20T09:16:13.741207+00:00",
+      "detected_at": "2026-11-20T10:23:58.964075+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
