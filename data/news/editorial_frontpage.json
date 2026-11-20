@@ -1,6 +1,6 @@
 {
   "schema": "pulse-editorial-frontpage-v1",
-  "generated_at": "2026-11-19T14:45:48Z",
+  "generated_at": "2026-11-20T08:45:22Z",
   "editorial_method": "source_versions_and_verified_material_change_no_ai",
   "featured_article_ids": [],
   "features_new": [],
@@ -9,7 +9,7 @@
   "context_topics": [],
   "briefs": [],
   "revision_review": [],
-  "catalogue_updates_count": 28,
+  "catalogue_updates_count": 24,
   "new_feature_topics": {},
   "independent_feature_families_selected": 0,
   "unpublished_eligible_features_by_topic": {},
@@ -43,7 +43,7 @@
       "tier": "context",
       "period_reference": "2025",
       "source_release_date": "2026-10-20T21:00:00+00:00",
-      "source_release_recent": true,
+      "source_release_recent": false,
       "source_release_proven": false,
       "series_key": "48cd0c5e8ddfbb3d234648e54be581d0",
       "editorial_family": "1f19dd8db058b54024b55f8d",
@@ -94,29 +94,6 @@
       "series_key": "377baadf5ccf4c3a6501acffc05166ab",
       "editorial_family": "42a8bcf0dc2394a9cbb77431",
       "observations_sha256": "2c0b404f8dc904f3ebf30329ef0c6bcd5b258034dd0d131e712e2377f5602bd9"
-    },
-    {
-      "article_id": "PULSE-DATA-60BBBF18DC37EDBE92FA3B52",
-      "topic": "LAVORO",
-      "score": 51,
-      "headline": "Molise, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 35,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_25pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "d082499b1f209ea2ebf944be9abe7c7b",
-      "editorial_family": "538cce29eb326b7fad74fe8c",
-      "observations_sha256": "0481ecb71d817e58acfd58a535e0d9cf39151009631ba86911bb2a20bd3ae853"
     },
     {
       "article_id": "PULSE-DATA-DCA2C37215A353A661801461",
@@ -280,29 +257,6 @@
       "observations_sha256": "337275177748d8f364c738ddcc3b08c507b974d2a6d8bafb640c5c0e71723e63"
     },
     {
-      "article_id": "PULSE-DATA-503052F64ECF933AE4CFCE42",
-      "topic": "LAVORO",
-      "score": 41,
-      "headline": "Marche, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 25,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_10pct_e_10_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "0a3e200757a48f13724a75b309207810",
-      "editorial_family": "cd17d90dae05f3362af034f7",
-      "observations_sha256": "47675e12dd74aaa7a4e635035d14ad72d73d734d5b019015d18bc68e4365ae52"
-    },
-    {
       "article_id": "PULSE-DATA-7A6ECC84E1F875732AB3890C",
       "topic": "LAVORO",
       "score": 41,
@@ -349,52 +303,6 @@
       "observations_sha256": "3c07f52acfbf1e4de7275551310272ed05f2957f2feff8afa7d9a4872ce0f09c"
     },
     {
-      "article_id": "PULSE-DATA-BFFB140786968E49F3D43F27",
-      "topic": "LAVORO",
-      "score": 31,
-      "headline": "Lombardia, integrazioni salariali: aumentano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 15,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_5pct_e_5_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "30bed9eec95f42a95294ca5874196332",
-      "editorial_family": "eadf5b449e506d73daafeaf0",
-      "observations_sha256": "e1aff5a83d27528ae3400ed944fb7a5eaed61003603d0ec202d20856a0701915"
-    },
-    {
-      "article_id": "PULSE-DATA-D2E3F59175F7DEF9AD98A5CB",
-      "topic": "LAVORO",
-      "score": 31,
-      "headline": "Liguria, integrazioni salariali: calano le mensilità rilevate a dicembre 2025",
-      "source_url": "https://opendata.inps.it/opendata/api/3/action/package_show?id=b6a4f4a9-ddd5-46a2-bff4-3b55af9cb323",
-      "parts": {
-        "newness": 0,
-        "signal": 15,
-        "impact": 16,
-        "diversity": 0
-      },
-      "reason": "scarto_almeno_5pct_e_5_unita",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "period_reference": "2025-12",
-      "source_release_date": null,
-      "source_release_recent": false,
-      "source_release_proven": false,
-      "series_key": "ed189a684a1b6b74c527b0f2710b4e54",
-      "editorial_family": "3cd574101bd8cc7585d4561c",
-      "observations_sha256": "352af1634bdb87cb4b0a482a433030a1d07e50b4beea3453a5972e5b5e639f6f"
-    },
-    {
       "article_id": "PULSE-DATA-E15AE17E5053B79D76BDDC77",
       "topic": "CASA",
       "score": 27,
@@ -433,7 +341,7 @@
       "novelty": "unchanged",
       "tier": "catalogue",
       "period_reference": "2025",
-      "source_release_date": "2026-11-15T22:00:00+00:00",
+      "source_release_date": "2026-11-19T22:00:00+00:00",
       "source_release_recent": true,
       "source_release_proven": false,
       "series_key": "e3163adfc2937e5a318b6c7f211473a5",
