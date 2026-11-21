@@ -1,0 +1,76 @@
+name: PULSE - controlla ogni sezione e segnala i guasti
+on:
+  schedule:
+    - cron: '35 9,21 * * *'
+      timezone: "Europe/Rome"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: pulse-daily-watchdog
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Stato distinto di Notizie, Territorio, Pubblicazioni e redazione
+        id: health
+        continue-on-error: true
+        env:
+          PULSE_WATCHDOG_REPORT: pulse_health_report.json
+        run: python scripts/pulse_daily_watchdog.py --data data
+      - name: Conserva il rapporto diagnostico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pulse-watchdog-report
+          path: pulse_health_report.json
+          if-no-files-found: warn
+      - name: Segnala o chiudi l'incidente nel repository
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const title = '[PULSE] Monitoraggio quotidiano: sorgenti o sezioni non aggiornate';
+            const { owner, repo } = context.repo;
+            const report = fs.existsSync('pulse_health_report.json')
+              ? JSON.parse(fs.readFileSync('pulse_health_report.json','utf8'))
+              : {ok:false,problems:['Il controllo non ha prodotto un rapporto'],notes:[]};
+            const rows = [
+              '# Verifica automatica PULSE',
+              'Data controllo: ' + (report.checked_at || new Date().toISOString()),
+              ...report.problems.map(x => '- ⚠️ ' + x),
+              '',
+              ...report.notes.map(x => '- ✅ ' + x),
+              '',
+              'I dati validati esistenti non sono stati cancellati. Questa issue rimane aperta finché il controllo non torna regolare.'
+            ];
+            const body = rows.join('\n');
+            const open = await github.paginate(github.rest.issues.listForRepo,{
+              owner,repo,state:'open',per_page:100
+            });
+            const existing = open.find(x => !x.pull_request && x.title === title);
+            if (!report.ok) {
+              if (existing) {
+                if (existing.body !== body) await github.rest.issues.update({
+                  owner,repo,issue_number:existing.number,body
+                });
+              } else {
+                await github.rest.issues.create({owner,repo,title,body});
+              }
+            } else if (existing) {
+              await github.rest.issues.update({
+                owner,repo,issue_number:existing.number,state:'closed',
+                state_reason:'completed'
+              });
+            }
+      - name: Marca la verifica come fallita se esistono anomalie
+        if: steps.health.outcome == 'failure'
+        run: exit 1
