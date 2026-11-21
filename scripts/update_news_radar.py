@@ -58,7 +58,7 @@ TOPIC_DOMAINS={
  "ISTRUZIONE":["invalsi.it","istruzione.it","istat.it","mur.gov.it","skuola.net","gigroupholding.com"],
  "AMBIENTE":["isprambiente.gov.it","istat.it","eea.europa.eu"],
  "ENERGIA":["terna.it","gse.it","arera.it","istat.it"],
- "MOBILITA":["aci.it","unrae.it","anfia.it","aniasa.it","istat.it"],
+ "MOBILITA":["aci.it","aci.gov.it","unrae.it","anfia.it","aniasa.it","istat.it"],
  "CASA":["agenziaentrate.gov.it","bancaditalia.it","istat.it"],
  "DEMOGRAFIA":["istat.it"]
 }
@@ -422,7 +422,7 @@ PRIMARY_ENTITY_PATTERNS=[
 TRUSTED_PRIMARY_DOMAINS={
  "istat.it","inps.it","inail.it","bancaditalia.it","mef.gov.it","agenziaentrate.gov.it",
  "salute.gov.it","iss.it","agenas.gov.it","aifa.gov.it","invalsi.it","istruzione.it","mur.gov.it",
- "isprambiente.gov.it","arera.it","gse.it","terna.it","aci.it","anfia.it","unrae.it",
+ "isprambiente.gov.it","arera.it","gse.it","terna.it","aci.it","aci.gov.it","anfia.it","unrae.it",
  "unioncamere.gov.it","assofranchising.it","tuttoscuola.com","crif.it","confindustrianautica.net",
  "deloitte.com","legambiente.it","legambienteveneto.it","garanteprivacy.it","edison.it",
  "confcommerciomilano.it","lifeturtlenest.eu","aniasa.it","dataforce.de","skuola.net","gigroupholding.com"
