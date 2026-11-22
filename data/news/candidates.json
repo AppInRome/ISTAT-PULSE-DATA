@@ -1,15 +1,10 @@
 {
-  "generated_at": "2026-11-22T10:56:26.978381+00:00",
+  "generated_at": "2026-11-22T11:53:44.847519+00:00",
   "candidates": [
-    {
-      "radar": "Fanpage - Notizie",
-      "status": "radar_error",
-      "error": "HTTP Error 403: Forbidden"
-    },
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 6
+      "items_fetched": 8
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -44,7 +39,7 @@
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 58
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -149,7 +144,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 23
     },
     {
       "radar": "Google News - economia lavoro",
@@ -199,12 +194,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -214,7 +209,7 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 57
+      "items_fetched": 56
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -249,7 +244,7 @@
     {
       "radar": "PULSE osservatori ufficiali 6/9",
       "status": "radar_fetched",
-      "items_fetched": 48
+      "items_fetched": 60
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
@@ -269,7 +264,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -279,12 +274,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 22
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -347,6 +342,11 @@
       "items_fetched": 12
     },
     {
+      "radar": "Fanpage - Notizie",
+      "status": "radar_error",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -370,7 +370,7 @@
       "radar": "Google News - ANSA dati e statistiche",
       "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdTdwZ09YSkd3N2QzMDVQNW9vVm5GLUROVVFCb0RBS3p5al8xdDE4MXpBQnctdWVWVnRrRGtvLTlWV0dSVzl0ZVlWQUtfV3ZxRVlEczNjaXppeEpSY3lKYjRoQnhvQnNMREQ5RWhhVEFWc3hEM0dLc0VwTGVRaW10UUdxQmk1VnlqSWw0SmRWYktiOEtfWGs4NW5CRkVheXRQbTFXVG1KOHVpZVllRU1hWnZnOThZQ2NxTGYybWJFU0ZtMnNhUlV6OGFKOElpQ2ZVREstZ3dhV0VrelIyX0UyX2Z3alpPQllDRkdPaGNZUnhUckHSAfMBQVVfeXFMTnU3cGdPWEpHdzdkMzA1UDVvb1ZuRi1ETlVRQm9EQUt6eWpfMXQxODF6QUJ3LXVlVlZ0a0Rrby05VldHUlc5dGVZVkFLX1d2cUVZRHMzY2l6aXhKUmN5SmI0aEJ4b0JzTEREOUVoYVRBVnN4RDNHS3NFcExlUWltdFFHcUJpNVZ5aklsNEpkVmJLYjhLX1hrODVuQkZFYXl0UG0xV1RtSjh1aWVZZUVNYVp2Zzk4WUNjcUxmMm1iRVNGbTJzYVJVejhhSjhJaUNmVURLLWd3YVdFa3pSMl9FMl9md2paT0JZQ0ZHT2hjWVJ4VHJB?oc=5",
       "discovery_title": "GreenItaly, in Umbria 8.760 imprese investono nell'ambiente, +4,4% dal 2024 - ANSA",
-      "detected_at": "2026-11-22T10:56:26.978381+00:00",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
       "score_discovery": 55,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -391,7 +391,7 @@
       "radar": "PULSE Italia - Sud e Isole",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNY0hUdnU4SFo3eTlSVVRHOEUwcTkwUGFkTUd6WkFONVpVUXlGZ2I3QVVTSjVLUEUwenBrV0NqbWR3aEpnX3IydXN4SGV6di1qQlAxMWlHdjNaNUZiTHpsMlpjSkdYejlrd2lvM1I5RnBlNXA1dmtvdTFQSGdySTVhQUwwb01ObUlBVzBURzdMODQ5RFd0T2ZBYVM0czV3TW5YMEw4d1V1a2pMb0FhNlFkNWJCa3JsUmxUU29lQjRWRmxfZzl6dHdsSzI4dVExX3F5cklkRjNTUkM0cmtQYWpR0gHnAUFVX3lxTE5oYlctZGN0MXJ1TGh2eTduWl9oNWJXY2hLc1d0ZFRhVjVCU29wdkxmRWJCZ3JyZnVYVzJrQjM0MUtBR0EzZTkwNjFyNVFNMjh0MFpLcGtCdXp0em9adlhXWGl5WFRyRHBMNjhuNFIyY0RVbWVfOV82X2N1aXM3cjFKYTVrSUE4Tm50clA4Ui0wQk4yM3BialhTdEtIc00tcmtDTGp5emVONGRoNnB1dzZQcUNRaW1FZmNCX1JyWFpjNzlRRDFfcmdPZ2hHTEFjNEpkOEt6bkRmLTVzc0hIM1FYSERWQmotbw?oc=5",
       "discovery_title": "Commercio in Sardegna sempre più anziano: età media a 53,3 anni e oltre 4 mila imprese perse in 6 anni - L'Unione Sarda",
-      "detected_at": "2026-11-22T10:56:26.978381+00:00",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -409,10 +409,79 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo",
+      "discovery_title": "Conferenza annuale Istituto per i Sistemi Agricoli e Forestali del Mediterraneo - ISAFoM \"L'Innovazione nella Ricerca dei sistemi Agricoli e Forestali del Mediterraneo\"",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "20",
+        "11",
+        "2026 ",
+        "17 ",
+        "18 ",
+        "2026 ",
+        "25 "
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/allegato/3411",
+        "https://www.cnr.it/it/news/allegato/3412",
+        "https://www.cnr.it/it/news/allegato/3413",
+        "https://www.cnr.it/it/news/immagine/12827/large",
+        "https://www.cnr.it/it/news/immagine/12828/large",
+        "https://www.cnr.it/it/news/immagine/12829/large",
+        "https://www.cnr.it/it/news/immagine/12830/large"
+      ],
+      "official_domain_hints": [
+        "aci.it",
+        "iss.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "20",
+          "11",
+          "2026 ",
+          "17 ",
+          "18 ",
+          "2026 "
+        ],
+        "matched_non_year_numbers": [
+          "20",
+          "11",
+          "17 ",
+          "18 ",
+          "25 "
+        ],
+        "matched_keywords": [
+          "conferenza",
+          "annuale",
+          "istituto",
+          "sistemi",
+          "agricoli",
+          "forestali",
+          "mediterraneo",
+          "isafom"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Conferenza annuale Istituto per i Sistemi Agricoli e Forestali del Mediterraneo - ISAFoM \"L'Innovazione nella Ricerca dei sistemi Agricoli e Forestali del Mediterraneo\" | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
       "radar": "Google News - Milano Finanza dati",
       "discovery_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSUJCdF80YU1YZjJIMmNNUEV5Z1hyVlpFVllwenNYUHNRMlFFeVJ4Z0ZRTk9rWjdpQjhMTXVkQ1NfRlZtNnpLUlN6TmxiYUJTeEVETXV4cjgtS1p6M1p5Z0FjLUkzNjNCOEdSME5BTURxd1RPb3g1SHRObldvOW5QUkp3RTM1WUYxUVBEVWt5WW0td3V6YmlCMXhheWJhTElNYmN0eEpIbWpaeVB3QWtFUlRXQmJtSzdo?oc=5",
       "discovery_title": "Investimenti, 18 azioni e 12 bond per battere l’inflazione al 5,5% - Milano Finanza",
-      "detected_at": "2026-11-22T10:56:26.978381+00:00",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
       "score_discovery": 45,
       "topic": "ECONOMIA",
       "numbers_detected": [
@@ -430,31 +499,10 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWWRHZTFXVU9OUUsxQUpZNXVjSWpnSnlFRXFvcmwxMTZMcVZua1BJd1ItenZ3YXA3OE5udTlFX1NPcnJIS0tqUHEtNTlDWXlEMnYwQW9HVWdTeHduZUd0V08yS2VrRFAzLXpKQTU0cnJtZXpZczlPTGM0eFNCOUdoVThyYnhuYkNHdXdtVVYxUHpfOGxNYklUUmZLQkxMbmJvcENHTXhhWFNHQVU?oc=5",
-      "discovery_title": "Calabria, 143mila famiglie in povertà energetica. Nel 2026 bollette più care di 215 milioni - Corriere della Calabria",
-      "detected_at": "2026-11-22T10:56:26.978381+00:00",
-      "score_discovery": 50,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "143mila",
-        "2026 ",
-        "215 milioni",
-        "143mila",
-        "2026 ",
-        "215 milioni"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
       "radar": "Corriere della Sera - Economia",
       "discovery_url": "https://www.corriere.it/economia/lavoro/26_novembre_22/stipendi-statali-aumenti-arretrati-e-nuove-regole-sui-premi-cosa-cambia-nel-2027-per-comuni-e-scuola-1e641848-59e9-4f62-90a8-dd8562692xlk.shtml",
       "discovery_title": "Stipendi statali, aumenti, arretrati e nuove regole sui premi: cosa cambia nel 2027 per Comuni e scuola",
-      "detected_at": "2026-11-22T10:56:26.978381+00:00",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
       "score_discovery": 49,
       "topic": "LAVORO",
       "numbers_detected": [
@@ -467,6 +515,88 @@
       "official_domain_hints": [
         "iss.it"
       ],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione",
+      "discovery_title": "Giorgio Rossi Co-Chair del 10-Member-Group delle Nazioni Unite per la Scienza, la Tecnologia e l'Innovazione",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
+      "score_discovery": 45,
+      "topic": "ISTRUZIONE",
+      "numbers_detected": [
+        "10",
+        "19",
+        "11",
+        "2026 ",
+        "2026",
+        "10"
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/immagine/12822/large",
+        "https://www.cnr.it/it/news/immagine/12823/large"
+      ],
+      "official_domain_hints": [
+        "aci.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14827/giorgio-rossi-co-chair-del-10-member-group-delle-nazioni-unite-per-la-scienza-la-tecnologia-e-l-innovazione",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "10",
+          "19",
+          "11",
+          "2026 ",
+          "2026",
+          "10"
+        ],
+        "matched_non_year_numbers": [
+          "10",
+          "19",
+          "11",
+          "10"
+        ],
+        "matched_keywords": [
+          "giorgio",
+          "rossi",
+          "chair",
+          "member",
+          "group",
+          "nazioni",
+          "unite",
+          "scienza"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Giorgio Rossi Co-Chair del 10-Member-Group delle Nazioni Unite per la Scienza, la Tecnologia e l'Innovazione | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale Direzione centrale Risorse umane Servizi per la Ricerca Str",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
+    },
+    {
+      "radar": "Google News - salute scuola ambiente",
+      "discovery_url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQd1lxM0s2b01XWVNRb2hkRWRLeVlOeU5MNml3VzZUYXdDNjdUME5BZnJjX1FTbklRMC1HR1l6Q1QxYlFVbjFtRmJ0UXFlRWlLX0tpYzZ1aW8tcHFBajV2Y0ZaX01CeHQtWC04a2J6UmhOM213bC10NHZ6cTZWOE90QmRCcXlaYkRmNjFfWm1VYjlWTGxUYzFrSVZrMDZLTzF0d3JyUlZOdW9qSE1ndUwzSkt2NGlyQi13WnBkQnMwc3djQ3RxMVlVTUk3TTNuaEozNTBlS3VQZW9YU1VBZEpMTUpSdl9KV0JKdE5NUTFBdDdwS2hqY0FaWDdfVGFFRVZXTzFNNElkSjgxczd4Q2NwZ1dSeXg?oc=5",
+      "discovery_title": "Famiglia, i nuclei con un solo genitore passano dal 5,5 al 20,2% in oltre quarant’anni. E le famiglie con un figlio solo salgono al 55,9%: il rapporto Istat-Unicef - Orizzonte Scuola Notizie",
+      "detected_at": "2026-11-22T11:53:44.847519+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "5,5 ",
+        "20,2%",
+        "55,9%",
+        "5,5 ",
+        "20,2%",
+        "55,9%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
