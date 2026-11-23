@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-23T11:17:28.795934+00:00",
+  "generated_at": "2026-11-23T12:18:20.235329+00:00",
   "candidates": [
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 30
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -109,12 +109,12 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 25
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 24
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -154,27 +154,27 @@
     {
       "radar": "Google News - Italia economia e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 48
+      "items_fetched": 50
     },
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 32
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 35
+      "items_fetched": 34
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 47
+      "items_fetched": 48
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -209,7 +209,7 @@
     {
       "radar": "PULSE osservatori ufficiali 6/9",
       "status": "radar_fetched",
-      "items_fetched": 49
+      "items_fetched": 42
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
@@ -229,7 +229,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 25
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -239,12 +239,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 24
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 17
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -279,7 +279,7 @@
     {
       "radar": "ANSA - Notizie",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "AGI - Notizie",
@@ -344,7 +344,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 22
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,19 +367,19 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 06",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdTdwZ09YSkd3N2QzMDVQNW9vVm5GLUROVVFCb0RBS3p5al8xdDE4MXpBQnctdWVWVnRrRGtvLTlWV0dSVzl0ZVlWQUtfV3ZxRVlEczNjaXppeEpSY3lKYjRoQnhvQnNMREQ5RWhhVEFWc3hEM0dLc0VwTGVRaW10UUdxQmk1VnlqSWw0SmRWYktiOEtfWGs4NW5CRkVheXRQbTFXVG1KOHVpZVllRU1hWnZnOThZQ2NxTGYybWJFU0ZtMnNhUlV6OGFKOElpQ2ZVREstZ3dhV0VrelIyX0UyX2Z3alpPQllDRkdPaGNZUnhUckHSAfMBQVVfeXFMTnU3cGdPWEpHdzdkMzA1UDVvb1ZuRi1ETlVRQm9EQUt6eWpfMXQxODF6QUJ3LXVlVlZ0a0Rrby05VldHUlc5dGVZVkFLX1d2cUVZRHMzY2l6aXhKUmN5SmI0aEJ4b0JzTEREOUVoYVRBVnN4RDNHS3NFcExlUWltdFFHcUJpNVZ5aklsNEpkVmJLYjhLX1hrODVuQkZFYXl0UG0xV1RtSjh1aWVZZUVNYVp2Zzk4WUNjcUxmMm1iRVNGbTJzYVJVejhhSjhJaUNmVURLLWd3YVdFa3pSMl9FMl9md2paT0JZQ0ZHT2hjWVJ4VHJB?oc=5",
-      "discovery_title": "GreenItaly, in Umbria 8.760 imprese investono nell'ambiente, +4,4% dal 2024 - ANSA",
-      "detected_at": "2026-11-23T11:17:28.795934+00:00",
-      "score_discovery": 55,
-      "topic": "ECONOMIA",
+      "radar": "Google News - Disuguaglianze e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzBEaWxzelc5S3RZLXV1ZDAwU2lkek9fMUNrUTMwanJsMTNadXpqV19qc29GS20wM0pyODY0UmdRVXljdFN3bHY4RzF4QkpOOW13R0pKbWdPNFVQN190Y3luUWlqdW1ra1Z4Z21kV19oZkNuX2dsNjhJWjdwNWhyYWt0bHBURW02T1ZMbF9BMFVHcC1OUzBv?oc=5",
+      "discovery_title": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia - Quotidiano Nazionale",
+      "detected_at": "2026-11-23T12:18:20.235329+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
       "numbers_detected": [
-        "8.760 ",
-        "+4,4%",
-        "2024 ",
-        "8.760 ",
-        "+4,4%",
-        "2024 "
+        "+29,5%",
+        "2025",
+        "+27%",
+        "+29,5%",
+        "2025",
+        "+27%"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -388,25 +388,94 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "Google News - Italia lavoro e imprese",
-      "discovery_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9zSl9xUllhV2ZTWUdVdVZDVkEtTmJrRVdibk9PWk5CcTVMTjl4NDVqTS11YmJxdExwNU9MMWdQVnlkSHRuMmRrTTJsbG1rUmpfZlBxaEtRMjJqbHBEZmhnMVgxZnBWWjFLVGxFVU41Tk9uaHFBYUx1N2wzRQ?oc=5",
-      "discovery_title": "Grano francese, export extra-UE a 7,2 mln t: meno disponibilità per l’Italia e UE nel 2026/27 - OmniTrattore.it",
-      "detected_at": "2026-11-23T11:17:28.795934+00:00",
+      "radar": "PULSE 80 testate · nazionali · gruppo 05",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVzFRVFpidk1OeDdqMlJYeFVQWjBpQVNDbnhtWEJYME1FdGhac002aXRZVjBZaVVnVjlEbU1BSTdtTjYzUVZLZE52MG5KUFp4UTNHSk5wVWZsbi1xcmZ2NndOWWpOLVQ3aDNCNzQtSlBKOVgzQUxuOGRRT0Foa1JIeHpZTzJac0c5dklQMFV5Vi1CSzl2UjVCSVZhdTJlS2t5dHFZNzRTNUpYSVJHSUNEVHdCRjlFRG1vMzc2bkJ6T0FYQmpCemQ4ZXdUb19rc3VCSkxPYzRvd3k?oc=5",
+      "discovery_title": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
+      "detected_at": "2026-11-23T12:18:20.235329+00:00",
       "score_discovery": 45,
-      "topic": "ECONOMIA",
+      "topic": "ALTRO",
       "numbers_detected": [
-        "7,2 ",
-        "2026",
-        "27 ",
-        "7,2 ",
-        "2026",
-        "27 "
+        "3",
+        "0,5%",
+        "+3%",
+        "3",
+        "0,5%",
+        "+3%"
       ],
       "official_links": [],
       "official_domain_hints": [],
       "primary_resolution": null,
       "editorial_excluded": false,
       "status": "needs_primary_source"
+    },
+    {
+      "radar": "CNR - Notizie ufficiali",
+      "discovery_url": "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo",
+      "discovery_title": "Conferenza annuale Istituto per i Sistemi Agricoli e Forestali del Mediterraneo - ISAFoM \"L'Innovazione nella Ricerca dei sistemi Agricoli e Forestali del Mediterraneo\"",
+      "detected_at": "2026-11-23T12:18:20.235329+00:00",
+      "score_discovery": 50,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "20",
+        "11",
+        "2026 ",
+        "17 ",
+        "18 ",
+        "2026 ",
+        "25 "
+      ],
+      "official_links": [
+        "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo#main-content",
+        "https://www.cnr.it/it",
+        "https://www.cnr.it/it/news",
+        "https://www.cnr.it/it/news/allegato/3411",
+        "https://www.cnr.it/it/news/allegato/3412",
+        "https://www.cnr.it/it/news/allegato/3413",
+        "https://www.cnr.it/it/news/immagine/12827/large",
+        "https://www.cnr.it/it/news/immagine/12828/large",
+        "https://www.cnr.it/it/news/immagine/12829/large",
+        "https://www.cnr.it/it/news/immagine/12830/large"
+      ],
+      "official_domain_hints": [
+        "aci.it",
+        "iss.it",
+        "terna.it"
+      ],
+      "primary_resolution": {
+        "url": "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo",
+        "domain": "cnr.it",
+        "matched_numbers": [
+          "20",
+          "11",
+          "2026 ",
+          "17 ",
+          "18 ",
+          "2026 "
+        ],
+        "matched_non_year_numbers": [
+          "20",
+          "11",
+          "17 ",
+          "18 ",
+          "25 "
+        ],
+        "matched_keywords": [
+          "conferenza",
+          "annuale",
+          "istituto",
+          "sistemi",
+          "agricoli",
+          "forestali",
+          "mediterraneo",
+          "isafom"
+        ],
+        "verification_score": 95,
+        "text_excerpt": "Conferenza annuale Istituto per i Sistemi Agricoli e Forestali del Mediterraneo - ISAFoM \"L'Innovazione nella Ricerca dei sistemi Agricoli e Forestali del Mediterraneo\" | Consiglio Nazionale delle Ricerche Salta al contenuto principale Navigazione IT | EN Scienze biomediche Chimica e tecnologia materiali Terra e ambiente Ingegneria, ICT, energia e trasporti Fisica e materia Scienze umane e patrimonio culturale Bio e agroalimentare Cittadini Imprese Scuole Ricercatori Giornalisti Personale Home Chi siamo Chi siamo Dove siamo Tappe storiche Presidenti Il Cnr in numeri Bibliografia Statuto Organizzazione Organizzazione Organigramma Presidente Vicepresidente Consiglio di Amministrazione Direttore Generale Organi Collegiali Organi Collegiali Consiglio Scientifico Consiglio Scientifico Riunioni Collegio dei Revisori dei Conti Amministrazione centrale Amministrazione centrale Direzione Generale",
+        "verified_series": [],
+        "method": "direct_official_rss"
+      },
+      "editorial_excluded": false,
+      "status": "primary_statistical_source_verified"
     }
   ]
 }
