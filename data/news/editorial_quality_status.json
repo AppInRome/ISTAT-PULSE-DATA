@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-23T22:02:10.564969+00:00",
+  "generated_at": "2026-11-23T23:04:34.833207+00:00",
   "discovery_feeds_configured": 73,
-  "discovery_feeds_reached": 69,
-  "discovery_feeds_failed": 4,
+  "discovery_feeds_reached": 70,
+  "discovery_feeds_failed": 3,
   "articles_pending_research": 457,
   "automatic_primary_research": {
     "attempted": 2,
@@ -11,6 +11,14 @@
   },
   "daily": {
     "oggi": {
+      "published": 0,
+      "with_verified_chart": 0,
+      "media_discovered": 0,
+      "media_reports_not_primary_verified": 0,
+      "original_pulse_verified": 0,
+      "distinct_primary_domains": 0
+    },
+    "ieri": {
       "published": 22,
       "with_verified_chart": 0,
       "media_discovered": 22,
@@ -18,21 +26,13 @@
       "original_pulse_verified": 0,
       "distinct_primary_domains": 19
     },
-    "ieri": {
-      "published": 11,
-      "with_verified_chart": 0,
-      "media_discovered": 11,
-      "media_reports_not_primary_verified": 11,
-      "original_pulse_verified": 0,
-      "distinct_primary_domains": 11
-    },
     "archivio": {
-      "published": 1028,
+      "published": 1039,
       "with_verified_chart": 5,
-      "media_discovered": 997,
-      "media_reports_not_primary_verified": 992,
+      "media_discovered": 1008,
+      "media_reports_not_primary_verified": 1003,
       "original_pulse_verified": 36,
-      "distinct_primary_domains": 361
+      "distinct_primary_domains": 366
     }
   },
   "note": "Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."
