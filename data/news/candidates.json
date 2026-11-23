@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-23T14:32:28.664427+00:00",
+  "generated_at": "2026-11-23T16:19:41.634009+00:00",
   "candidates": [
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 30
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -23,8 +23,8 @@
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 04",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 05",
@@ -109,12 +109,12 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 21
+      "items_fetched": 60
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 20
+      "items_fetched": 19
     },
     {
       "radar": "Google News - salute scuola ambiente",
@@ -154,27 +154,27 @@
     {
       "radar": "Google News - Italia economia e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 33
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 35
+      "items_fetched": 32
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 57
     },
     {
       "radar": "Google News - Italia popolazione e territori",
@@ -209,7 +209,7 @@
     {
       "radar": "PULSE osservatori ufficiali 6/9",
       "status": "radar_fetched",
-      "items_fetched": 46
+      "items_fetched": 47
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
@@ -239,7 +239,7 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 25
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
@@ -314,7 +314,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 4
+      "items_fetched": 5
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -344,7 +344,7 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 27
     },
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,10 +367,31 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "Google News - Disuguaglianze e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzBEaWxzelc5S3RZLXV1ZDAwU2lkek9fMUNrUTMwanJsMTNadXpqV19qc29GS20wM0pyODY0UmdRVXljdFN3bHY4RzF4QkpOOW13R0pKbWdPNFVQN190Y3luUWlqdW1ra1Z4Z21kV19oZkNuX2dsNjhJWjdwNWhyYWt0bHBURW02T1ZMbF9BMFVHcC1OUzBv?oc=5",
-      "discovery_title": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia - Quotidiano Nazionale",
-      "detected_at": "2026-11-23T14:32:28.664427+00:00",
+      "radar": "PULSE 80 testate · nazionali · gruppo 05",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVzFRVFpidk1OeDdqMlJYeFVQWjBpQVNDbnhtWEJYME1FdGhac002aXRZVjBZaVVnVjlEbU1BSTdtTjYzUVZLZE52MG5KUFp4UTNHSk5wVWZsbi1xcmZ2NndOWWpOLVQ3aDNCNzQtSlBKOVgzQUxuOGRRT0Foa1JIeHpZTzJac0c5dklQMFV5Vi1CSzl2UjVCSVZhdTJlS2t5dHFZNzRTNUpYSVJHSUNEVHdCRjlFRG1vMzc2bkJ6T0FYQmpCemQ4ZXdUb19rc3VCSkxPYzRvd3k?oc=5",
+      "discovery_title": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
+      "detected_at": "2026-11-23T16:19:41.634009+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "3",
+        "0,5%",
+        "+3%",
+        "3",
+        "0,5%",
+        "+3%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 19",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQekRDcjFvcU9YUlZRalktbWkxOVc2SUhCSkt6eFZSS3J3QXBZaEpZM0xkZ2lZM1ZGbHRVV0tVX3pVRVcwYlhic3VrUUtwalBlTmdWTllGdWRYYXJyRldHaHVqR2t0MHlWNTAzYlllRjFDMk85NDFWVmdYanBQc1NPUm1rT2JoaWk2b3ZqOElvUktHY25xc3l5WWVibjB1aUZjVWFaVTlOQmc4QTdldXM5TXJEbTgzSjRMLVFCT3NGTzBEQnR3ZUUwbk5qcW92RGVZ0gHPAUFVX3lxTE1veFEtZ1BycFczUWxmZXkxbnd1WWlMMWNfOWRvOVhiNVQzWHV5NWZYSmdBakRsZDl6ZDlEQzVyZkpZRkFmMkpLZjQxYzI2RFlRSkxTUGhUbFZUMnlrYkJfNUU0SENtdjBmX19XV3NTVGpwUVRFTHV3Tl9EaEhoTHUyRi1COWswdHAwcm1BN2lHTXlsdGJpa3RoTS05MVhhVTF2VzRENHZkZVVpZ2I1bHVhUXFMM0VJN0pTay1Ccm1NUDBnSjB1eHprNHhTSTFwWQ?oc=5",
+      "discovery_title": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia - La Gazzetta del Mezzogiorno",
+      "detected_at": "2026-11-23T16:19:41.634009+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -388,19 +409,19 @@
       "status": "needs_primary_source"
     },
     {
-      "radar": "PULSE 80 testate · nazionali · gruppo 05",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVzFRVFpidk1OeDdqMlJYeFVQWjBpQVNDbnhtWEJYME1FdGhac002aXRZVjBZaVVnVjlEbU1BSTdtTjYzUVZLZE52MG5KUFp4UTNHSk5wVWZsbi1xcmZ2NndOWWpOLVQ3aDNCNzQtSlBKOVgzQUxuOGRRT0Foa1JIeHpZTzJac0c5dklQMFV5Vi1CSzl2UjVCSVZhdTJlS2t5dHFZNzRTNUpYSVJHSUNEVHdCRjlFRG1vMzc2bkJ6T0FYQmpCemQ4ZXdUb19rc3VCSkxPYzRvd3k?oc=5",
-      "discovery_title": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
-      "detected_at": "2026-11-23T14:32:28.664427+00:00",
-      "score_discovery": 45,
-      "topic": "ALTRO",
+      "radar": "Google News - statistiche Italia",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOaWhOZzVJNnAyUjRMOVBZbUFxMzh3UWxQdjdiSVNOWGREMzdDeUUwUWtBTFlUVkkxczdCT0U5WDFsanFPdEgwNGowLWhTOURHWGoyaUo3ek9vVWJVaGpicVU5OUFkWjN1dlNmVUxHUkhNMFJOYWl5bU1BYUNTUmZzSDg4UGs2SlpxVUFxazk3V0dNZnJDc3ktR2dXU2UwNUxma0FNV3U1ZHVvYWhLcmxQaXVKLUFEelh3TmZXYW8zZ1VhdzNwSURJMWVVWjdzVkRuWWxKVW9B?oc=5",
+      "discovery_title": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3% - Giornale Radio",
+      "detected_at": "2026-11-23T16:19:41.634009+00:00",
+      "score_discovery": 75,
+      "topic": "ECONOMIA",
       "numbers_detected": [
-        "3",
-        "0,5%",
-        "+3%",
-        "3",
-        "0,5%",
-        "+3%"
+        "5,5%",
+        "2023",
+        "3%",
+        "5,5%",
+        "2023",
+        "3%"
       ],
       "official_links": [],
       "official_domain_hints": [],
