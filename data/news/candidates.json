@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T16:29:29.696410+00:00",
+  "generated_at": "2026-11-24T18:02:29.042171+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
@@ -13,8 +13,8 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 09",
-      "status": "radar_fetched",
-      "items_fetched": 60
+      "status": "radar_error",
+      "error": "provider_rate_limited"
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 10",
@@ -74,7 +74,7 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 18
     },
     {
       "radar": "Google News - economia lavoro",
@@ -124,12 +124,12 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 30
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 50
+      "items_fetched": 47
     },
     {
       "radar": "Google News - Italia scuola e università",
@@ -139,12 +139,12 @@
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 52
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 55
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -194,7 +194,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 30
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -204,12 +204,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 25
+      "items_fetched": 56
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 23
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -309,12 +309,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 51
+      "items_fetched": 24
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 27
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
