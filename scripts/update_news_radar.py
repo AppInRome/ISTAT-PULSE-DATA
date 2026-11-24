@@ -943,6 +943,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
                                  "role":"primary_statistical_source",
                                  "verification_method":"official_rss_source_headline"},
                 "publication_tier":"official_source_headline",
+                "geographic_scope":{"country_code":"IT"},
                 "publication_status":"published",
                 "editorial_status":"source_only_verified_link",
                 "image_url":candidate_image if image_ok else "",
