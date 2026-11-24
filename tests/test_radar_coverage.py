@@ -54,8 +54,15 @@ class NewsRadarCoverageTests(unittest.TestCase):
                 self.assertEqual(0,audit["discovery_feeds_failed"])
                 published=json.loads(idx.read_text())["counts"]["oggi"]
                 self.assertEqual(4,published)
-                self.assertEqual(4,audit["daily"]["oggi"]["media_reports_not_primary_verified"])
-                self.assertEqual(0,audit["daily"]["oggi"]["with_verified_chart"])
+                if audit.get("mode") == "source_only":
+                    # Source-only publishes attributed links, not verified editorial analyses.
+                    # Its daily audit intentionally contains only publication counts.
+                    self.assertEqual(4,audit["daily"]["oggi"]["published"])
+                    self.assertNotIn("media_reports_not_primary_verified", audit["daily"]["oggi"])
+                    self.assertNotIn("with_verified_chart", audit["daily"]["oggi"])
+                else:
+                    self.assertEqual(4,audit["daily"]["oggi"]["media_reports_not_primary_verified"])
+                    self.assertEqual(0,audit["daily"]["oggi"]["with_verified_chart"])
             finally:
                 radar.ROOT,radar.CFG,radar.ARTICLES,radar.CANDIDATES,radar.INDEX=old
 
