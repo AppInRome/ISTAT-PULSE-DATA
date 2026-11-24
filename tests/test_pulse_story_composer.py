@@ -88,12 +88,12 @@ class ComposerTests(unittest.TestCase):
                 prose=" ".join(paragraphs)
                 sentences=[part.strip() for part in audit.SENTENCE.split(prose)
                            if part.strip()]
-                words=re.findall(r"\\b[\\wÀ-ÿ]+\\b",prose)
+                words=re.findall(r"\b[\wÀ-ÿ]+\b",prose)
                 self.assertGreaterEqual(len(sentences),15)
                 self.assertLessEqual(len(sentences),25)
                 self.assertGreaterEqual(len(words),250)
                 self.assertLessEqual(len(words),500)
-                normalized=[re.sub(r"\\s+"," ",part.casefold()).strip(" .!?\\\"«»")
+                normalized=[re.sub(r"\s+"," ",part.casefold()).strip(" .!?\\\"«»")
                             for part in sentences]
                 self.assertEqual(len(normalized),len(set(normalized)))
 
