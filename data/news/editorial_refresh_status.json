@@ -1,24 +1,24 @@
 {
   "schema": "pulse-editorial-refresh-status-v1",
-  "last_editorial_check_at": "2026-11-23T09:03:29.901708Z",
+  "last_editorial_check_at": "2026-11-24T08:49:47.868386Z",
   "last_published_article_at": "2026-11-14T20:31:24Z",
   "published_articles_total": 38,
   "published_new_in_last_check": 0,
-  "verified_candidate_dossiers": 24,
-  "research_checked": 30,
-  "research_rejected": 6,
+  "verified_candidate_dossiers": 18,
+  "research_checked": 20,
+  "research_rejected": 2,
   "rejection_reasons": {
-    "FileNotFoundError": 6
+    "FileNotFoundError": 2
   },
   "novelty_counts": {
-    "unchanged": 24
+    "unchanged": 18
   },
   "selection_counts": {
-    "already_published": 17,
+    "already_published": 11,
     "unchanged_source_period": 7
   },
   "editorial_tiers": {
-    "catalogue": 19,
+    "catalogue": 13,
     "context": 5
   },
   "candidate_decisions": [
@@ -61,14 +61,6 @@
       "novelty": "unchanged",
       "tier": "catalogue",
       "decision": "unchanged_source_period"
-    },
-    {
-      "article_id": "PULSE-DATA-3A628B55D3A4A110B7A0FA40",
-      "topic": "LAVORO",
-      "period": "2025-12",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "decision": "already_published"
     },
     {
       "article_id": "PULSE-DATA-D2E358B115652573CFABDECA",
@@ -135,22 +127,6 @@
       "decision": "unchanged_source_period"
     },
     {
-      "article_id": "PULSE-DATA-7A6ECC84E1F875732AB3890C",
-      "topic": "LAVORO",
-      "period": "2025-12",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "decision": "already_published"
-    },
-    {
-      "article_id": "PULSE-DATA-DCA2C37215A353A661801461",
-      "topic": "LAVORO",
-      "period": "2025-12",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "decision": "already_published"
-    },
-    {
       "article_id": "PULSE-DATA-3C351F4A26E56E74733D7F0A",
       "topic": "SOCIETA",
       "period": "2025",
@@ -183,36 +159,12 @@
       "decision": "unchanged_source_period"
     },
     {
-      "article_id": "PULSE-DATA-16C6763B0CF62357180E7E6D",
-      "topic": "LAVORO",
-      "period": "2025-12",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "decision": "already_published"
-    },
-    {
-      "article_id": "PULSE-DATA-1A5F8270AF009C9F9CEDDBB7",
-      "topic": "LAVORO",
-      "period": "2025-12",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "decision": "already_published"
-    },
-    {
       "article_id": "PULSE-DATA-719C8C58EE07A901DC1C958E",
       "topic": "ECONOMIA",
       "period": "2025-12",
       "novelty": "unchanged",
       "tier": "catalogue",
       "decision": "unchanged_source_period"
-    },
-    {
-      "article_id": "PULSE-DATA-DC72ECC015FB6F4D5C694584",
-      "topic": "LAVORO",
-      "period": "2025-12",
-      "novelty": "unchanged",
-      "tier": "catalogue",
-      "decision": "already_published"
     }
   ],
   "sources_unavailable": [
@@ -231,9 +183,29 @@
     {
       "source": "EUROSTAT",
       "status": "inaccessible_or_not_comparable"
+    },
+    {
+      "source": "ISTAT",
+      "status": "inaccessible_or_unsupported"
+    },
+    {
+      "source": "ISTAT",
+      "status": "inaccessible_or_unsupported"
+    },
+    {
+      "source": "ISTAT",
+      "status": "inaccessible_or_unsupported"
+    },
+    {
+      "source": "ISTAT",
+      "status": "inaccessible_or_unsupported"
+    },
+    {
+      "source": "INPS",
+      "status": "unavailable"
     }
   ],
   "official_sources_examined": 29,
-  "editorial_frontpage_checked_at": "2026-11-23T09:03:29Z",
+  "editorial_frontpage_checked_at": "2026-11-24T08:49:47Z",
   "note": "An unchanged series is not a new official publication. First discovery does not prove a fresh release. An absent new article is not a failed editorial check."
 }
