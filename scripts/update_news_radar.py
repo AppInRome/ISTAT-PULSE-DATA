@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import hashlib, html, io, json, re, time, urllib.parse, urllib.request, signal
+import hashlib, html, io, json, os, re, time, urllib.parse, urllib.request, signal
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -863,6 +863,108 @@ def bucket_date(iso, now):
     if d==local_now-timedelta(days=1): return "IERI"
     return "ARCHIVIO"
 
+def publish_source_only(by_id, feed_items, candidates, now):
+    """Publish RSS source headlines and genuine links, never PULSE prose/graphs.
+
+    Preserve old RSS media records but remove generated bodies. The official RSS
+    branch retains the exact publisher headline and source publication date.
+    Failed feeds cannot erase previously downloaded press titles.
+    """
+    public={}
+    for raw in by_id.values():
+        if raw.get("origin_kind") != "pulse_media_radar":
+            continue  # decommission all PULSE-created analytical articles
+        src=raw.get("public_source") or {}
+        if (raw.get("publication_status")!="published" or
+                src.get("role")!="journalistic_source" or
+                not str(src.get("url","")).startswith("https://")):
+            continue
+        item=dict(raw)
+        item.pop("pulse_article_body",None)
+        item.pop("pulse_summary",None)
+        item.pop("pulse_title",None)
+        item.pop("editorial_story",None)
+        item.pop("verified_series_relevant",None)
+        item["summary"]=""
+        item["pulse_score"]=0
+        item["chart_spec"]={"type":"none","status":"requires_primary_source"}
+        item["table_spec"]={"status":"requires_primary_source","columns":[],"rows":[]}
+        public[item["id"]]=item
+
+    for feed, items in feed_items:
+        if not feed.get("primary_source"):
+            continue
+        for entry in items:
+            url=str(entry.get("url") or "").strip()
+            title=clean_text(entry.get("title") or "").strip()[:220]
+            dt=None
+            try:
+                dt=parsedate_to_datetime(entry.get("published_raw",""))
+                if dt.tzinfo is None: continue
+                dt=dt.astimezone(timezone.utc)
+                if not timedelta(0)<=now-dt<=timedelta(days=3): continue
+            except (ValueError,TypeError,OverflowError):
+                continue
+            if (not url.startswith("https://") or len(title)<25 or
+                    disallowed_headline(title)):
+                continue
+            # Stable publisher URL + title; same item is not republished tomorrow.
+            identity=hashlib.sha256((url+"|"+title.casefold()).encode()).hexdigest()
+            id_="PULSE-OFFICIAL-"+identity[:20].upper()
+            old=public.get(id_) or by_id.get(id_) or {}
+            original_date=old.get("published_at") or dt.isoformat()
+            topic=classify_topic(title+" "+str(entry.get("summary") or ""))
+            geos=detect_geo(title+" "+str(entry.get("summary") or ""))
+            src_host=urllib.parse.urlsplit(url).hostname or ""
+            candidate_image=str(entry.get("image_url") or "").strip()
+            image_host=urllib.parse.urlsplit(candidate_image).hostname or ""
+            image_ok=(candidate_image.startswith("https://") and image_host and
+                      (image_host==src_host or image_host.endswith("."+src_host)))
+            public[id_]={
+                "id":id_,"published_at":original_date,"last_seen_at":now.isoformat(),
+                "headline":title,"summary":"","topic":topic,"territories":geos,
+                "pulse_score":0,"patterns":[],"origin_kind":"pulse_source_only_official",
+                "public_source":{"url":url,"domain":str(feed.get("name") or src_host),
+                                 "role":"primary_statistical_source",
+                                 "verification_method":"official_rss_source_headline"},
+                "publication_tier":"official_source_headline",
+                "publication_status":"published",
+                "editorial_status":"source_only_verified_link",
+                "image_url":candidate_image if image_ok else "",
+                "chart_spec":{"type":"none","status":"source_only"},
+                "table_spec":{"status":"source_only","rows":[]},
+            }
+    items=sorted(public.values(),key=lambda x:x.get("published_at",""),reverse=True)
+    # Keep the index stable and date-correct even after a feed goes offline.
+    seen=set()
+    idx={"generated_at":now.isoformat(),"oggi":[],"ieri":[],"archivio":[]}
+    for item in items:
+        source=item.get("public_source") or {}
+        key=(source.get("url",""),item["headline"].casefold())
+        if key in seen:continue
+        seen.add(key)
+        idx[bucket_date(item.get("published_at",""),now).lower()].append(item["id"])
+    idx["counts"]={name:len(idx[name]) for name in ("oggi","ieri","archivio")}
+    idx["counts"].update({"withheld":0,"candidates":len(candidates)})
+    ROOT.mkdir(parents=True,exist_ok=True)
+    ARTICLES.write_text(json.dumps({"generated_at":now.isoformat(),"articles":items},
+                                   ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    INDEX.write_text(json.dumps(idx,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    CANDIDATES.write_text(json.dumps({"generated_at":now.isoformat(),"candidates":candidates},
+                                     ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    (ROOT/"editorial_quality_status.json").write_text(json.dumps({
+        "generated_at":now.isoformat(),"mode":"source_only",
+        "discovery_feeds_configured":len(feed_items),
+        "discovery_feeds_reached":sum(c.get("status")=="radar_fetched" for c in candidates),
+        "discovery_feeds_failed":sum(c.get("status")=="radar_error" for c in candidates),
+        "daily":{k:{"published":len(idx[k])} for k in ("oggi","ieri","archivio")},
+        "note":"Solo titoli attribuiti, link HTTPS e date originali. Nessuna AI o analisi generata."
+    },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    save_indices(items,idx,ROOT)
+    print("[PULSE SOURCE ONLY] ",idx["counts"],flush=True)
+    return idx
+
+
 def main():
     started=time.monotonic()
     def runtime_exceeded():
@@ -1000,6 +1102,10 @@ def main():
                 radar_added+=1
             by_id[brief["id"]]=brief
     print(f"[RADAR] notizie stampa segnalate con attribuzione: {radar_added}", flush=True)
+
+    if os.environ.get("PULSE_SOURCE_ONLY") == "1":
+        publish_source_only(by_id, feed_items, candidates, now)
+        return
 
     # Permanent evidence-first editorial pipeline. Each scheduled RSS refresh
     # retries a bounded number of unverified reports, without user intervention.
