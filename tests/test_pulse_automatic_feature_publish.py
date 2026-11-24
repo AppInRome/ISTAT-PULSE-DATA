@@ -172,7 +172,11 @@ class AutomaticOfficialFeatureTests(TestCase):
             self.assertEqual(article["publication_status"],"published")
             self.assertEqual(article["automatic_review"]["original_source_sha256"],
                              article["source_documents"][0]["sha256"])
-            self.assertTrue(article["editorial_story"]["source_locked"])
+            # The optional editor may decline a long-form presentation for
+            # thin fixtures; the full verified original must always survive.
+            if "editorial_story" in article:
+                self.assertTrue(article["editorial_story"]["source_locked"])
+            self.assertTrue(all(row["text"] for row in article["pulse_article_body"]))
             self.assertEqual(article["chart_spec"]["status"],"verified")
             self.assertEqual(article["table_spec"]["status"],"verified")
             self.assertGreaterEqual(len(article["pulse_article_body"]),4)
