@@ -81,8 +81,10 @@ class ComposerTests(unittest.TestCase):
                 story=composer.compose(item)
                 self.assertIsNotNone(story)
                 paragraphs=[row["text"] for row in story["sections"]]
-                self.assertEqual(paragraphs,
-                                 [row["text"] for row in item["pulse_article_body"]])
+                originals=[row["text"] for row in item["pulse_article_body"]]
+                self.assertTrue(paragraphs[0].startswith(item["pulse_summary"]))
+                self.assertTrue(paragraphs[0].endswith(originals[0]))
+                self.assertEqual(paragraphs[1:],originals[1:])
                 prose=" ".join(paragraphs)
                 sentences=[part.strip() for part in audit.SENTENCE.split(prose)
                            if part.strip()]
