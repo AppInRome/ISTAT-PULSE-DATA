@@ -83,7 +83,7 @@ class ComposerTests(unittest.TestCase):
                 paragraphs=[row["text"] for row in story["sections"]]
                 self.assertEqual(paragraphs,
                                  [row["text"] for row in item["pulse_article_body"]])
-                prose=" ".join([story["lead"],*paragraphs])
+                prose=" ".join(paragraphs)
                 sentences=[part.strip() for part in audit.SENTENCE.split(prose)
                            if part.strip()]
                 words=re.findall(r"\\b[\\wÀ-ÿ]+\\b",prose)
