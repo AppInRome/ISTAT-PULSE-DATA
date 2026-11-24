@@ -314,8 +314,8 @@ def compose(item):
         full_prose=" ".join(body)
         sentences=[part.strip() for part in audit.SENTENCE.split(full_prose)
                    if part.strip()]
-        words=len(re.findall(r"\\b[\\wÀ-ÿ]+\\b",full_prose))
-        normalized=[re.sub(r"\\s+"," ",part.casefold()).strip(" .!?\\\"«»")
+        words=len(re.findall(r"\b[\wÀ-ÿ]+\b",full_prose))
+        normalized=[re.sub(r"\s+"," ",part.casefold()).strip(" .!?\\\"«»")
                     for part in sentences]
         if not (15<=len(sentences)<=25 and 250<=words<=500
                 and len(set(normalized))==len(normalized)):
