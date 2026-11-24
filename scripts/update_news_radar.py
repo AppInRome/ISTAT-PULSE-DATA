@@ -887,11 +887,14 @@ def publish_source_only(by_id, feed_items, candidates, now):
     """
     public={}
     for raw in by_id.values():
-        if raw.get("origin_kind") != "pulse_media_radar":
+        kind=raw.get("origin_kind")
+        if kind not in ("pulse_media_radar", "pulse_source_only_official"):
             continue  # decommission all PULSE-created analytical articles
         src=raw.get("public_source") or {}
+        role=("journalistic_source" if kind=="pulse_media_radar"
+              else "primary_statistical_source")
         if (raw.get("publication_status")!="published" or
-                src.get("role")!="journalistic_source" or
+                src.get("role")!=role or
                 not str(src.get("url","")).startswith("https://")):
             continue
         item=dict(raw)
@@ -936,6 +939,10 @@ def publish_source_only(by_id, feed_items, candidates, now):
             image_ok=(candidate_image.startswith("https://") and image_host and
                       (image_host==src_host or image_host.endswith("."+src_host)))
             public[id_]={
+                **({"ai_article":old["ai_article"]} if
+                   isinstance(old.get("ai_article"),dict) and
+                   old["ai_article"].get("source_url")==url and
+                   old["ai_article"].get("source_headline")==title else {}),
                 "id":id_,"published_at":original_date,"last_seen_at":now.isoformat(),
                 "headline":title,"summary":"","topic":topic,"territories":geos,
                 "pulse_score":0,"patterns":[],"origin_kind":"pulse_source_only_official",

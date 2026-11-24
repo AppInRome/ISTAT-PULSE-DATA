@@ -1,0 +1,56 @@
+name: PULSE - Sonnet 5.5 articoli Oggi (spesa disabilitata per default)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 20 * * *"
+      timezone: "Europe/Rome"
+  pull_request:
+    paths:
+      - "scripts/pulse_claude_today.py"
+      - "tests/test_pulse_claude_today.py"
+      - ".github/workflows/pulse-claude-today.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-data-only
+  cancel-in-progress: false
+
+jobs:
+  source-locked-sonnet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install source reader
+        run: python -m pip install --disable-pip-version-check requests "trafilatura>=2,<3"
+      - name: Offline regressions (no keys)
+        run: python -m unittest discover -s tests -p "test_pulse_claude_today.py" -v
+      - name: Generate at most 20 source-grounded articles
+        if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
+        env:
+          PULSE_CLAUDE_ENABLED: ${{ vars.PULSE_CLAUDE_ENABLED }}
+          VALE_CLAUDE_GATEWAY_URL: ${{ vars.VALE_CLAUDE_GATEWAY_URL }}
+          PULSE_JOB_TOKEN: ${{ secrets.PULSE_JOB_TOKEN }}
+        run: python -m scripts.pulse_claude_today
+      - name: Verify original title, dates and links unchanged
+        if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
+        run: python -m json.tool data/news/articles.json > /dev/null
+      - name: Save same IDs to today's original news feed
+        if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
+        run: |
+          git config user.name "PULSE verified feed bot"
+          git config user.email "pulse-feed-bot@users.noreply.github.com"
+          git add data/news/articles.json
+          if ! git diff --cached --quiet; then
+            git commit -m "PULSE: Claude 5.5 source-grounded summaries (once per article)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
