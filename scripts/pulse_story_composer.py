@@ -226,7 +226,7 @@ def _numeric_guard(story,s,item):
 
 
 def compose(item):
-    """A safe, compact, genuinely news-led variant. Return None on ambiguity."""
+    """A verified, source-locked long-form presentation. Return None on ambiguity."""
     try:
         s=_verified_source(item)
         if s is None:
@@ -281,64 +281,39 @@ def compose(item):
         if is_context:
             lead=("Approfondimento su dati ufficiali già disponibili, "
                   "non una nuova pubblicazione dell'ente. "+lead)
-        sections=[]
-        if recent and y!=x:
-            sections.append({"heading":"Che cosa cambia",
-                "text":(f"Il segnale principale è un valore {trend} rispetto al "
-                        f"periodo precedente: {base} {_when(previous)} e {value} {_when(period)}. "
-                        "Il confronto riguarda la stessa definizione statistica nei "
-                        "due periodi: il dato, da solo, non chiarisce le cause.")})
-        elif recent:
-            sections.append({"heading":"Il dato da osservare",
-                "text":(f"Il livello rimane {value} sia {_when(previous)} sia {_when(period)}. "
-                        "L'assenza di variazione fra queste due osservazioni non significa "
-                        "che la serie sia stata invariata in tutti i periodi.")})
-        else:
-            sections.append({"heading":"Il confronto possibile",
-                "text":(f"La serie riporta {base} {_when(previous)} e {value} {_when(period)}. "
-                        "L'intervallo disponibile non permette di chiamare questa "
-                        "differenza una variazione rispetto al periodo immediatamente precedente.")})
-        initial_word="più alta" if y>z else "più bassa" if y<z else "uguale"
-        sections.append({"heading":"Nel contesto della serie",
-            "text":(f"All'inizio dell'intervallo documentato, {_when(initial['period'])}, "
-                    f"il valore era {_measure(z,unit)}. L'osservazione più recente "
-                    f"è {initial_word} rispetto a quel riferimento. "
-                    "Il confronto documenta la distanza dall'inizio della serie, "
-                     "senza trasformarla in una spiegazione causale.")})
-        # Lead with the main fact instead of boilerplate; use a second data-led
-        # angle only if the source provides three adjacent observations.
-        if len(obs)>=3:
-            prior=obs[-3]
-            p0=str(prior["period"])
-            v0=audit.decimal_value(prior["value"])
-            if recent and selector.consecutive(p0,previous):
-                d0=x-v0
-                d1=y-x
-                if d0!=0 and d1!=0 and (d0>0)!=(d1>0):
-                    sections.append({"heading":"Un'inversione nella sequenza",
-                        "text":(f"{_when(p0).capitalize()} il valore era {_measure(v0,unit)}; "
-                                f"{_when(previous)} era {base}. Con l'ultima osservazione "
-                                f"({value}), la direzione del cambiamento rispetto al "
-                                "periodo precedente si è invertita. La sequenza, da sola, "
-                                "non consente una previsione.")})
-                elif d0!=0 and d1!=0 and (d0>0)==(d1>0):
-                    sections.append({"heading":"La sequenza recente",
-                        "text":(f"Le osservazioni successive sono {_measure(v0,unit)} {_when(p0)}, "
-                                f"{base} {_when(previous)} e {value} {_when(period)}; "
-                                "indicano la stessa direzione. Non basta a stabilire "
-                                "che la tendenza proseguirà.")})
-        if len(sections)<3:
-            sections.append({"heading":"Il perimetro dell'indicatore",
-                "text":(f"La misura descrive «{s['indicator']}» per il territorio "
-                        f"{where}. È espressa in {unit}; per comprenderne il "
-                        "significato bisogna mantenere la definizione e la popolazione "
-                        "di riferimento della serie ufficiale.")})
-        sections.append({"heading":"Fonte e limiti",
-            "text":(f"I valori sono quelli pubblicati da {source}, per il periodo "
-                    f"statistico {period}. Il periodo a cui si riferiscono i numeri "
-                    "non coincide necessariamente con il giorno di pubblicazione "
-                    "di PULSE. Questi dati non permettono di attribuire automaticamente "
-                    "cause, effetti o responsabilità.")})
+        # The original publisher already independently audits a full 250-500
+        # word article. The old presentation shortened it to 3-5 tiny sections.
+        # Keep the news-led title/lead but display the verified long-form body.
+        original_body=item.get("pulse_article_body") or []
+        if not isinstance(original_body,list) or len(original_body)!=5:
+            return None
+        body=[]
+        for entry in original_body:
+            if not isinstance(entry,dict) or not isinstance(entry.get("text"),str):
+                return None
+            content=entry["text"].strip()
+            if len(content)<60:
+                return None
+            body.append(content)
+        headings=("Il confronto con il periodo precedente",
+                  "L'evoluzione dall'inizio della serie",
+                  "Che cosa misura l'indicatore",
+                  "Come interpretare i risultati",
+                  "Fonti, grafici e verificabilità")
+        sections=[{"heading":heading,"text":content}
+                  for heading,content in zip(headings,body)]
+        # A long article must contain verified information, not padding or
+        # repeated sentences. Do not manufacture additional claims to reach a
+        # threshold; fail closed and retain the original audited article.
+        full_prose=" ".join([lead,*body])
+        sentences=[part.strip() for part in audit.SENTENCE.split(full_prose)
+                   if part.strip()]
+        words=len(re.findall(r"\\b[\\wÀ-ÿ]+\\b",full_prose))
+        normalized=[re.sub(r"\\s+"," ",part.casefold()).strip(" .!?\\\"«»")
+                    for part in sentences]
+        if not (15<=len(sentences)<=25 and 250<=words<=500
+                and len(set(normalized))==len(normalized)):
+            return None
         story={"schema":SCHEMA,"headline":title,"lead":lead,
                "sections":sections,
                "period_reference":period,"source_sha256":item["source_documents"][0]["sha256"],
