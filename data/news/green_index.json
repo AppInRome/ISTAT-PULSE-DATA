@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T09:21:05.404001+00:00",
+  "generated_at": "2026-11-24T10:07:14.056198+00:00",
   "type": "editorial_news_index_not_api_observations",
   "articles_file": "data/news/articles.json",
   "statistics_file": "data/pulse_events.tsv",
@@ -7,10 +7,10 @@
   "source_publication_dates_preserved": true,
   "counts": {
     "oggi": 4,
-    "ieri": 4,
-    "archivio": 102,
-    "officially_verified_stories": 6,
-    "press_reports_pending_primary_verification": 104
+    "ieri": 5,
+    "archivio": 97,
+    "officially_verified_stories": 0,
+    "press_reports_pending_primary_verification": 106
   },
   "oggi": [
     "PULSE-MEDIA-135B6B87AA679507",
@@ -20,6 +20,7 @@
   ],
   "ieri": [
     "PULSE-MEDIA-78D4EE736A61FB53",
+    "PULSE-MEDIA-F493892F371CB84D",
     "PULSE-MEDIA-1C14FFF0E50BB87B",
     "PULSE-MEDIA-B721EEE31FD65347",
     "PULSE-MEDIA-A263E99D5C0B02EB"
@@ -31,7 +32,6 @@
     "PULSE-MEDIA-305E6D564E1D698B",
     "PULSE-MEDIA-AD32A800CDF3EC04",
     "PULSE-MEDIA-773221E662D7597E",
-    "PULSE-09A775E5DFC74C50",
     "PULSE-MEDIA-DF59A8FA06FD08F2",
     "PULSE-MEDIA-AD72B908E6A04E5F",
     "PULSE-MEDIA-CC87FADDC01B7125",
@@ -118,14 +118,10 @@
     "PULSE-MEDIA-1C3F4BFEA7493D3F",
     "PULSE-MEDIA-8A501F03094197E6",
     "PULSE-MEDIA-69AEB25E182E72E6",
-    "PULSE-59072DCA55A1DD87",
-    "PULSE-B56FBD9B8A561FFA",
-    "PULSE-3F5D3CD14A4D4B54",
     "PULSE-MEDIA-9341138206F9B5D5",
     "PULSE-MEDIA-A6D3B39F4E71E199",
+    "PULSE-MEDIA-3D3AF28EA5A9EBC5",
     "PULSE-MEDIA-A38C1577804E6637",
-    "PULSE-MEDIA-4C6787F23EF4993D",
-    "PULSE-C83742A96A0CB784",
-    "PULSE-5634C8423DB12585"
+    "PULSE-MEDIA-4C6787F23EF4993D"
   ]
 }
