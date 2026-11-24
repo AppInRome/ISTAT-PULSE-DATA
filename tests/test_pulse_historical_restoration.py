@@ -20,7 +20,15 @@ class HistoricalRestoration(unittest.TestCase):
 
     def test_no_active_paid_ai_schedule(self):
         workflow=(ROOT/".github/workflows/pulse-italia-newsroom.yml").read_text()
-        self.assertIn("--no-ai",workflow)
+        # This legacy workflow is a manual, read-only notice: it no longer
+        # invokes any newsroom command, so a historical --no-ai flag is obsolete.
+        self.assertIn("workflow_dispatch:",workflow)
+        self.assertNotIn("schedule:",workflow)
+        self.assertIn("contents: read",workflow)
+        self.assertIn("editorial-disabled:",workflow)
+        self.assertIn("PULSE source-only:",workflow)
+        self.assertNotIn("python ",workflow)
+        self.assertNotIn("secrets.ANTHROPIC_API_KEY",workflow)
         self.assertNotIn("secrets.OPENAI_API_KEY",workflow)
         self.assertNotIn("PULSE_MISTRAL_API_KEY",workflow)
         self.assertFalse((ROOT/".github/workflows/pulse-luna-publish.yml").exists())
