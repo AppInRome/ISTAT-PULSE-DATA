@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T18:02:29.042171+00:00",
+  "generated_at": "2026-11-24T19:13:02.757658+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 07",
@@ -13,8 +13,8 @@
     },
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 09",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · specializzate · gruppo 10",
@@ -74,17 +74,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 18
+      "items_fetched": 60
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 57
+      "items_fetched": 28
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 31
     },
     {
       "radar": "Repubblica Economia",
@@ -124,7 +124,7 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia salute e welfare",
@@ -134,17 +134,17 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 60
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 52
+      "items_fetched": 53
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 55
+      "items_fetched": 28
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -194,7 +194,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -204,12 +204,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 26
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 23
+      "items_fetched": 56
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -253,8 +253,8 @@
     },
     {
       "radar": "Repubblica - Homepage",
-      "status": "radar_fetched",
-      "items_fetched": 30
+      "status": "radar_error",
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "radar": "Il Messaggero - Notizie",
@@ -279,7 +279,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 6
+      "items_fetched": 8
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -309,12 +309,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 24
+      "items_fetched": 49
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 27
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
