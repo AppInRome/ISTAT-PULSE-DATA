@@ -1,46 +1,157 @@
 {
-  "generated_at": "2026-11-24T10:07:14.056198+00:00",
+  "generated_at": "2026-11-24T11:04:01.289949+00:00",
   "articles": [
     {
-      "id": "PULSE-OFFICIAL-C325141991BDD06FB013",
-      "published_at": "2026-11-24T09:55:05+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
-      "headline": "Bando AriSLA 2026: i progetti del CNR premiati",
+      "id": "PULSE-MEDIA-99E4F259BEFC3E87",
+      "story_fingerprint": "99e4f259befc3e875852557f4b164ca9ef62e574cfe0bd1c540a2e416533d335",
+      "published_at": "2026-11-24T10:54:54+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
+      "headline": "Immobiliare in Europa – L’Italia ha il maggior numero di case in vendita per abitante, con prezzi in crescita solo del 5% contro una media europea dell’11%",
+      "reported_headline": "Immobiliare in Europa – L’Italia ha il maggior numero di case in vendita per abitante, con prezzi in crescita solo del 5% contro una media europea dell’11% - Zeroventiquattro.it",
       "summary": "",
-      "topic": "ALTRO",
-      "territories": [
-        "milano"
-      ],
+      "topic": "ECONOMIA",
       "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
       "public_source": {
-        "url": "https://www.cnr.it/it/news/14839/bando-arisla-2026-i-progetti-del-cnr-premiati",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
+        "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPSnQxSnJfbFlGQ3VNYmNhVmtWMkhmRGhTdzRvZWdXZHpKNDB5TndRMnZUQVBmTW9SVHVZSDdsNExCSmUydmZiSm5sMkJMdm8zYXZqb051WUUzZ1R6WGIweHotWEl0NE01dC0tME5KaE4yVEMtajNNX3J2M1Zra3dHeVJralkzWVlhOXZTQjY5NUtBR2M3ODNJeWFYRHdGZ1BuczdTSHU2MGJxQ2UwdHU4UmFoMzQyLVZBQW9YWnhPcFEwUGF5OGFSaWNOOW1VeTVMeEdzWk1iQlBtVGlHN0gyWEFhalJwMzM2OHk2TS1GRVM1bUcwRkVEdjRLZGJIVWtMOG1RRktsRmFFSm5Zdk1XcjhkOFlPS0pXLWFabW0yMGZkWmhIcHpJ?oc=5",
+        "domain": "Zeroventiquattro.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
       },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "5%",
+          "verified": false
+        },
+        {
+          "raw_value": "11%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
       "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12848/medium",
       "chart_spec": {
         "type": "none",
-        "status": "source_only"
+        "status": "requires_primary_source"
       },
       "table_spec": {
-        "status": "source_only",
+        "status": "requires_primary_source",
+        "columns": [],
         "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Zeroventiquattro.it",
+        "original_url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPSnQxSnJfbFlGQ3VNYmNhVmtWMkhmRGhTdzRvZWdXZHpKNDB5TndRMnZUQVBmTW9SVHVZSDdsNExCSmUydmZiSm5sMkJMdm8zYXZqb051WUUzZ1R6WGIweHotWEl0NE01dC0tME5KaE4yVEMtajNNX3J2M1Zra3dHeVJralkzWVlhOXZTQjY5NUtBR2M3ODNJeWFYRHdGZ1BuczdTSHU2MGJxQ2UwdHU4UmFoMzQyLVZBQW9YWnhPcFEwUGF5OGFSaWNOOW1VeTVMeEdzWk1iQlBtVGlHN0gyWEFhalJwMzM2OHk2TS1GRVM1bUcwRkVEdjRLZGJIVWtMOG1RRktsRmFFSm5Zdk1XcjhkOFlPS0pXLWFabW0yMGZkWmhIcHpJ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-285728F348DE71E9",
+      "story_fingerprint": "285728f348de71e9b98cf2a863a30d2c8987076e47624bf734587062caf15c8e",
+      "published_at": "2026-11-24T10:33:41+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
+      "headline": "Prezzi delle case in Europa +11% nell’H1 2026, in Italia su del 5%",
+      "reported_headline": "Prezzi delle case in Europa +11% nell’H1 2026, in Italia su del 5% - Requadro",
+      "summary": "",
+      "topic": "ECONOMIA",
+      "pulse_score": 0,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxON0NDNkV1VXlFVjY4QXNLVDdrbnYydVYwUUFWSXVQZkF0SUpIcUtwQldrWS1qOXM3cmc3dG1YbEF3SjJoTndGeDZCdTFtaUhQR1FOdTRaUXNzNGFZUjNfTjc5SnpMOThRRmYyeHFoNHVsVGRlYTAxa0UyU3ltOUZFT0VLRnIwZXB2U1c4?oc=5",
+        "domain": "Requadro",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "+11%",
+          "verified": false
+        },
+        {
+          "raw_value": "5%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Requadro",
+        "original_url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxON0NDNkV1VXlFVjY4QXNLVDdrbnYydVYwUUFWSXVQZkF0SUpIcUtwQldrWS1qOXM3cmc3dG1YbEF3SjJoTndGeDZCdTFtaUhQR1FOdTRaUXNzNGFZUjNfTjc5SnpMOThRRmYyeHFoNHVsVGRlYTAxa0UyU3ltOUZFT0VLRnIwZXB2U1c4?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-65F476363A859FF3",
+      "story_fingerprint": "65f476363a859ff376e6934b5844e99baf4b249f79d2d919708564ca8b86d61e",
+      "published_at": "2026-11-24T10:20:07+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
+      "headline": "Il mondo del fuori casa vale 243 miliardi di euro, per l'Italia export in crescita",
+      "reported_headline": "Il mondo del fuori casa vale 243 miliardi di euro, per l'Italia export in crescita - Quotidiano Nazionale",
+      "summary": "",
+      "topic": "ECONOMIA",
+      "pulse_score": 0,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPc01iQ1VtVUkzTV90T1l4RkNiX1BqbVpuQWk0RGYwVFVuMGtCQmxzWkRiWHVjV2cxTGhUbl9MTF9Lc24zeVdCTTNoaDRIcWZYbkR4bGxSWURpVWxDVUNCeXhNQkJ2MnVFaGVjNTA0a25DM2EtZVBWRExrV25CZ2lvNWYybVI?oc=5",
+        "domain": "Quotidiano Nazionale",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "243 miliardi",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Quotidiano Nazionale",
+        "original_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPc01iQ1VtVUkzTV90T1l4RkNiX1BqbVpuQWk0RGYwVFVuMGtCQmxzWkRiWHVjV2cxTGhUbl9MTF9Lc24zeVdCTTNoaDRIcWZYbkR4bGxSWURpVWxDVUNCeXhNQkJ2MnVFaGVjNTA0a25DM2EtZVBWRExrV25CZ2lvNWYybVI?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
       }
     },
     {
       "id": "PULSE-MEDIA-02F00301100FBBDA",
       "story_fingerprint": "02f00301100fbbda4235fe320152923371c4c53c00056d44ad44c504119cf5f5",
       "published_at": "2026-11-24T09:35:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Lexus NX 2027 arriva in Italia: oltre 100 km in elettrico, ricarica DC e prezzi da 58.400 euro",
       "reported_headline": "Lexus NX 2027 arriva in Italia: oltre 100 km in elettrico, ricarica DC e prezzi da 58.400 euro - TechDrive",
       "summary": "",
@@ -86,7 +197,7 @@
       "id": "PULSE-MEDIA-135B6B87AA679507",
       "story_fingerprint": "135b6b87aa6795070cfec6c6a86706b877a859a2893c8de5d8be86dafad6eba5",
       "published_at": "2026-11-24T08:58:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Mercato auto europeo a ottobre +2,6% nell’UE: BYD supera Fiat, Stellantis perde il 7% e le elettriche salgono al 29,8%",
       "reported_headline": "Mercato auto europeo a ottobre +2,6% nell’UE: BYD supera Fiat, Stellantis perde il 7% e le elettriche salgono al 29,8% - Motori.money",
       "summary": "",
@@ -142,7 +253,7 @@
       "id": "PULSE-MEDIA-24B98040E744E77C",
       "story_fingerprint": "24b98040e744e77c7f0bc4c8758707bff2c813be6676f3633fac6a41b036fd8a",
       "published_at": "2026-11-24T08:55:50+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Vino, export Piemonte secondo in Italia: vendite all’etero per 567 milioni di euro",
       "reported_headline": "Vino, export Piemonte secondo in Italia: vendite all’etero per 567 milioni di euro - Il Torinese",
       "summary": "",
@@ -238,7 +349,7 @@
       "id": "PULSE-MEDIA-147048990EDF0C8A",
       "story_fingerprint": "147048990edf0c8a52063308fd86691d32de8fd31bc515ae0b92d0747bfae456",
       "published_at": "2026-11-24T08:04:10+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Export, la Sardegna cresce dell'8,7% ma le piccole imprese isolane sono il fanalino di coda in Italia",
       "reported_headline": "Export, la Sardegna cresce dell'8,7% ma le piccole imprese isolane sono il fanalino di coda in Italia - SassariToday",
       "summary": "",
@@ -336,7 +447,7 @@
       "id": "PULSE-MEDIA-186E9FD4F9EE30AC",
       "story_fingerprint": "186e9fd4f9ee30ac1c2ce82034a1410bb7816ebede6f356bb7b3ec05c1f7a698",
       "published_at": "2026-11-24T07:28:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Turismo, il Veneto vola verso nuovi record. A Venezia +7% di presenze",
       "reported_headline": "Turismo, il Veneto vola verso nuovi record. A Venezia +7% di presenze - VeneziaToday",
       "summary": "",
@@ -385,7 +496,7 @@
       "id": "PULSE-MEDIA-49D2BC0E649779AE",
       "story_fingerprint": "49d2bc0e649779aea58d445197614636e241602ceea3178c9f89df2b3e484332",
       "published_at": "2026-11-24T07:08:42+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Una montagna gonfiabile alta 3mila metri alle porte di Milano: da dove nasce l’idea e perché potrebbe far piovere",
       "reported_headline": "Una montagna gonfiabile alta 3mila metri alle porte di Milano: da dove nasce l’idea e perché potrebbe far piovere",
       "summary": "",
@@ -485,7 +596,7 @@
       "id": "PULSE-MEDIA-81078964377FDEA0",
       "story_fingerprint": "81078964377fdea0d280ad7d8822ef19cd6d0566bd7198200f88fd8ea495d969",
       "published_at": "2026-11-23T18:27:38+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Visti USA per indiani -62%: all'Italia arrivano 1.888 studenti nel 2025",
       "reported_headline": "Visti USA per indiani -62%: all'Italia arrivano 1.888 studenti nel 2025 - EduNews24",
       "summary": "",
@@ -532,41 +643,6 @@
       },
       "primary_research_last_attempt_at": "2026-11-23T19:14:19.172032+00:00",
       "primary_research_status": "primary_evidence_not_found"
-    },
-    {
-      "id": "PULSE-OFFICIAL-95798B55A6B112503925",
-      "published_at": "2026-11-23T17:15:34+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
-      "headline": "Il presidente Lenzi riceve il \"Premio Roma Capitale della Chimica Italiana\"",
-      "summary": "",
-      "topic": "ECONOMIA",
-      "territories": [
-        "roma"
-      ],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14838/il-presidente-lenzi-riceve-il-premio-roma-capitale-della-chimica-italiana",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12847/medium",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
     },
     {
       "id": "PULSE-MEDIA-8DB802BEDADE4C7A",
@@ -620,7 +696,7 @@
       "id": "PULSE-MEDIA-78D4EE736A61FB53",
       "story_fingerprint": "78d4ee736a61fb538b0b3e04aa64d1312526e4c729ebb6f1deb54b419ef1e3ae",
       "published_at": "2026-11-23T15:27:28+00:00",
-      "last_seen_at": "2026-11-24T09:21:05.404001+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "In Puglia 8 famiglie su 10 preferiscono prezzi fissi per l’energia timori per le microimprese",
       "reported_headline": "In Puglia 8 famiglie su 10 preferiscono prezzi fissi per l’energia timori per le microimprese - Zazoom Social News",
       "summary": "",
@@ -670,7 +746,7 @@
       "id": "PULSE-MEDIA-D6CCCC8FB1DA6EC2",
       "story_fingerprint": "d6cccc8fb1da6ec288cd3641a81f0064b277809e7f486b261c6cb942b54bc6a6",
       "published_at": "2026-11-23T15:10:30+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Italia Paese di automobilisti: auto e moto per il 69,1% delle persone. I mezzi pubblici si fermano al 9,7%, dietro Francia e Germania. I dati",
       "reported_headline": "Italia Paese di automobilisti: auto e moto per il 69,1% delle persone. I mezzi pubblici si fermano al 9,7%, dietro Francia e Germania. I dati - Orizzonte Scuola Notizie",
       "summary": "",
@@ -722,7 +798,7 @@
       "id": "PULSE-MEDIA-449D8FB07F54946E",
       "story_fingerprint": "449d8fb07f54946e2810a0cc21cf7938f4307dff0fc602d3ac1a6bb71a5f2668",
       "published_at": "2026-11-23T14:47:19+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Montagne Italia 2026: +174 mila residenti in sette anni. La montagna non è solo un luogo da cui partire",
       "reported_headline": "Montagne Italia 2026: +174 mila residenti in sette anni. La montagna non è solo un luogo da cui partire - PlanetMountain.com",
       "summary": "",
@@ -770,7 +846,7 @@
       "id": "PULSE-MEDIA-C725B2D9F97472CD",
       "story_fingerprint": "c725b2d9f97472cdcbc8de91e1b75e4bc5d7e31df61c78dd5e13eb14e0d79873",
       "published_at": "2026-11-23T14:26:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Perché 25 milioni di italiani non hanno redditi per il Fisco? Il paradosso Irpef e gli incentivi al sommerso",
       "reported_headline": "Perché 25 milioni di italiani non hanno redditi per il Fisco? Il paradosso Irpef e gli incentivi al sommerso - Milano Finanza",
       "summary": "",
@@ -872,7 +948,7 @@
       "id": "PULSE-MEDIA-96B41611CFCC9402",
       "story_fingerprint": "96b41611cfcc9402d2f90829d85c9606f79c703d6d62f97c9df615e0a62bd4fd",
       "published_at": "2026-11-23T12:15:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Bond per proteggersi dall’inflazione: 4 obbligazioni indicizzate che rendono oltre il 5,5%",
       "reported_headline": "Bond per proteggersi dall’inflazione: 4 obbligazioni indicizzate che rendono oltre il 5,5% - Milano Finanza",
       "summary": "",
@@ -922,15 +998,15 @@
       "id": "PULSE-MEDIA-C338A0C34C9B670E",
       "story_fingerprint": "c338a0c34c9b670e09dd068e37b6a0b53b63cb904cb8348d3929ffc69d63af32",
       "published_at": "2026-11-23T11:55:05+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Il 30% degli italiani versa il 78% di Irpef e 24 milioni non dichiarano reddito",
-      "reported_headline": "Il 30% degli italiani versa il 78% di Irpef e 24 milioni non dichiarano reddito - La Gazzetta del Mezzogiorno",
+      "reported_headline": "Il 30% degli italiani versa il 78% di Irpef e 24 milioni non dichiarano reddito - ANSA",
       "summary": "",
       "topic": "ALTRO",
       "pulse_score": 0,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNa01WM2ExMGIxaWx5NGtaSGluVmlaQ2FuWTMwYm9iWkVDSkdnSVBpZkVVMzYtOFZFVEp4M0lVUUd4X1VHclVMb2RRZnRQMm02NjVYUTh6SnhPcktBQWRQbHhUMEk3bzUwWmdjRUFOckJPcjJ6Y1laR0t4TWtTV3h2bGxESFRNd3g5dTVQQm51MHktNVZVbzg1MG1VWVBmQzlTRG9JUy11aW40Q1FrcVF3QlphQzd6dW5BT1g0LW5ORlJqVUgyZDNpT1BZTnFPWDVxOUdqN1Q2M3BmQ3BIY3fSAd4BQVVfeXFMTWtNVjNhMTBiMWlseTRrWkhpblZpWkNhblkzMGJvYlpFQ0pHZ0lQaWZFVTM2LThWRVRKeDNJVVFHeF9VR3JVTG9kUWZ0UDJtNjY1WFE4ekp4T3JLQUFkUGx4VDBJN281MFpnY0VBTnJCT3IyemNZWkdLeE1rU1d4dmxsREhUTXd4OXU1UEJudTB5LTVWVW84NTBtVVlQZkM5U0RvSVMtdWluNENRa3FRd0JaYUM3enVuQU9YNC1uTkZSalVIMmQzaU9QWU5xT1g1cTlHajdUNjNwZkNwSGN3?oc=5",
-        "domain": "La Gazzetta del Mezzogiorno",
+        "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNU1VmaUJhVE5ydWVZQmZsN1lVRl9hQ0FuX1VCX0ZvUHp3MXVlTHJxNjJwRzk2bWdTWUNRU1MzMzFSc2tLdy1vV1NBclZVdEltT2FmSE81QWpNc0FWaDc3b3cxNjdzX0RwbnduaDlVbjM5cV9PdG1zMmJlaTdxTG85dVJPM3lfS1VzOUNYbm1nOXUzNWNTTlZVN1MxUy1xZ0Nuay0zWFR0WkJGVTA4NHZiTWdUZFZXbXlNZHNXRk1GY2RRV0g1SENJa0liNkVxTmNFNDNJald2aldaT1UtRV9XT0xjcldEZVJaWjFWcnZyMmwtRVluZTVpMWQ1RU8yeGM4cWfSAYICQVVfeXFMTVNVZmlCYVROcnVlWUJmbDdZVUZfYUNBbl9VQl9Gb1B6dzF1ZUxycTYycEc5Nm1nU1lDUVNTMzMxUnNrS3ctb1dTQXJWVXRJbU9hZkhPNUFqTXNBVmg3N293MTY3c19EcG53bmg5VW4zOXFfT3RtczJiZWk3cUxvOXVSTzN5X0tVczlDWG5tZzl1MzVjU05WVTdTMVMtcWdDbmstM1hUdFpCRlUwODR2Yk1nVGRWV215TWRzV0ZNRmNkUVdINUhDSWtJYjZFcU5jRTQzSWpXdmpXWk9VLUVfV09MY3JXRGVSWloxVnJ2cjJsLUVZbmU1aTFkNUVPMnhjOHFn?oc=5",
+        "domain": "ANSA",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -967,8 +1043,8 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "La Gazzetta del Mezzogiorno",
-        "original_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNa01WM2ExMGIxaWx5NGtaSGluVmlaQ2FuWTMwYm9iWkVDSkdnSVBpZkVVMzYtOFZFVEp4M0lVUUd4X1VHclVMb2RRZnRQMm02NjVYUTh6SnhPcktBQWRQbHhUMEk3bzUwWmdjRUFOckJPcjJ6Y1laR0t4TWtTV3h2bGxESFRNd3g5dTVQQm51MHktNVZVbzg1MG1VWVBmQzlTRG9JUy11aW40Q1FrcVF3QlphQzd6dW5BT1g0LW5ORlJqVUgyZDNpT1BZTnFPWDVxOUdqN1Q2M3BmQ3BIY3fSAd4BQVVfeXFMTWtNVjNhMTBiMWlseTRrWkhpblZpWkNhblkzMGJvYlpFQ0pHZ0lQaWZFVTM2LThWRVRKeDNJVVFHeF9VR3JVTG9kUWZ0UDJtNjY1WFE4ekp4T3JLQUFkUGx4VDBJN281MFpnY0VBTnJCT3IyemNZWkdLeE1rU1d4dmxsREhUTXd4OXU1UEJudTB5LTVWVW84NTBtVVlQZkM5U0RvSVMtdWluNENRa3FRd0JaYUM3enVuQU9YNC1uTkZSalVIMmQzaU9QWU5xT1g1cTlHajdUNjNwZkNwSGN3?oc=5",
+        "outlet": "ANSA",
+        "original_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNU1VmaUJhVE5ydWVZQmZsN1lVRl9hQ0FuX1VCX0ZvUHp3MXVlTHJxNjJwRzk2bWdTWUNRU1MzMzFSc2tLdy1vV1NBclZVdEltT2FmSE81QWpNc0FWaDc3b3cxNjdzX0RwbnduaDlVbjM5cV9PdG1zMmJlaTdxTG85dVJPM3lfS1VzOUNYbm1nOXUzNWNTTlZVN1MxUy1xZ0Nuay0zWFR0WkJGVTA4NHZiTWdUZFZXbXlNZHNXRk1GY2RRV0g1SENJa0liNkVxTmNFNDNJald2aldaT1UtRV9XT0xjcldEZVJaWjFWcnZyMmwtRVluZTVpMWQ1RU8yeGM4cWfSAYICQVVfeXFMTVNVZmlCYVROcnVlWUJmbDdZVUZfYUNBbl9VQl9Gb1B6dzF1ZUxycTYycEc5Nm1nU1lDUVNTMzMxUnNrS3ctb1dTQXJWVXRJbU9hZkhPNUFqTXNBVmg3N293MTY3c19EcG53bmg5VW4zOXFfT3RtczJiZWk3cUxvOXVSTzN5X0tVczlDWG5tZzl1MzVjU05WVTdTMVMtcWdDbmstM1hUdFpCRlUwODR2Yk1nVGRWV215TWRzV0ZNRmNkUVdINUhDSWtJYjZFcU5jRTQzSWpXdmpXWk9VLUVfV09MY3JXRGVSWloxVnJ2cjJsLUVZbmU1aTFkNUVPMnhjOHFn?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-23T12:18:20.235329+00:00",
@@ -978,7 +1054,7 @@
       "id": "PULSE-MEDIA-EC16BA19C3326B95",
       "story_fingerprint": "ec16ba19c3326b95e6d8b24abb16dc71d32101d4d2d24cfbeef7568f1bb0a765",
       "published_at": "2026-11-23T11:40:36+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia",
       "reported_headline": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia - Quotidiano Nazionale",
       "summary": "",
@@ -1080,7 +1156,7 @@
       "id": "PULSE-MEDIA-302EFB8DC5686CEF",
       "story_fingerprint": "302efb8dc5686cef7b8ba7b7743af5ec2d5af0260afe549bd81be05712156012",
       "published_at": "2026-11-23T11:14:03+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "L’Ue apre indagine antitrust sull’imbottigliatore Coca-Cola in 8 Paesi europei",
       "reported_headline": "L’Ue apre indagine antitrust sull’imbottigliatore Coca-Cola in 8 Paesi europei - Il Sole 24 ORE",
       "summary": "",
@@ -1123,7 +1199,7 @@
       "id": "PULSE-MEDIA-D632A21C12EBA35B",
       "story_fingerprint": "d632a21c12eba35b7381fd31f4e870aa9a5e22eb287cb07ab689897a1ab8812a",
       "published_at": "2026-11-23T11:03:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Turismo, Istat: arrivi -0,5%, presenze +3%",
       "reported_headline": "Turismo, Istat: arrivi -0,5%, presenze +3% - RaiNews",
       "summary": "",
@@ -1223,7 +1299,7 @@
       "id": "PULSE-MEDIA-F493892F371CB84D",
       "story_fingerprint": "f493892f371cb84dc2bc297bbd3d39008195f26bb60e07732f7892fc0aa9a31b",
       "published_at": "2026-11-23T10:36:41+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Nuove tariffe rifiuti: aumento solo dell’1,5%, tra le più basse in Italia",
       "reported_headline": "Nuove tariffe rifiuti: aumento solo dell’1,5%, tra le più basse in Italia - www.lavitadelpopolo.it",
       "summary": "",
@@ -1269,7 +1345,7 @@
       "id": "PULSE-MEDIA-45DC0C798D590028",
       "story_fingerprint": "45dc0c798d590028148eae47f7579202911f28ae092c695d131f5abcf84817b2",
       "published_at": "2026-11-23T10:33:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat)",
       "reported_headline": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
       "summary": "",
@@ -1323,7 +1399,7 @@
       "id": "PULSE-MEDIA-1C14FFF0E50BB87B",
       "story_fingerprint": "1c14fff0e50bb87b8758b8fe82354e0baab265f221e4d8c9025bc36e0820ac0d",
       "published_at": "2026-11-23T10:05:43+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Estra inizia a vendere l’energia autoprodotta: primo PPA retail 100% eolico in Italia",
       "reported_headline": "Estra inizia a vendere l’energia autoprodotta: primo PPA retail 100% eolico in Italia - Canale 3",
       "summary": "",
@@ -1371,7 +1447,7 @@
       "id": "PULSE-MEDIA-B721EEE31FD65347",
       "story_fingerprint": "b721eee31fd65347c0ec2d156434d7d7114a03b7a43c17ebc236d4dd4c5dc55c",
       "published_at": "2026-11-23T10:03:23+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Caro energia, in Umbria stangata da 144 milioni di euro sulle famiglie: oltre 55 mila persone in difficoltà per pagare tutto",
       "reported_headline": "Caro energia, in Umbria stangata da 144 milioni di euro sulle famiglie: oltre 55 mila persone in difficoltà per pagare tutto - Corriere dell’Umbria",
       "summary": "",
@@ -1425,7 +1501,7 @@
       "id": "PULSE-MEDIA-B7D66704CEFB9E74",
       "story_fingerprint": "b7d66704cefb9e749f12d08d7137439b49a357fb916ef7d76da24427acdfac72",
       "published_at": "2026-11-23T09:17:46+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Perché il prezzo dell’olio d’oliva extravergine è crollato in Italia: Sicilia - 3,1% e Puglia - 9,6%",
       "reported_headline": "Perché il prezzo dell’olio d’oliva extravergine è crollato in Italia: Sicilia - 3,1% e Puglia - 9,6% - Geopop",
       "summary": "",
@@ -1479,7 +1555,7 @@
     {
       "id": "PULSE-OFFICIAL-5E3BA3B6FD97918F251F",
       "published_at": "2026-11-23T09:01:15+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Flussi turistici – III trimestre 2026",
       "summary": "",
       "topic": "ALTRO",
@@ -1563,7 +1639,7 @@
       "id": "PULSE-MEDIA-A4EBA81B549DFB28",
       "story_fingerprint": "a4eba81b549dfb28891e4c7219ec4491fe0f992d3de5302fece6f3009811064e",
       "published_at": "2026-11-23T07:19:25+00:00",
-      "last_seen_at": "2026-11-24T08:34:32.430915+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "TFR in azienda o fondo pensione, fino al 59% di capitale in più nelle simulazioni: confronto su rendimenti, tasse e nuove regole 2026",
       "reported_headline": "TFR in azienda o fondo pensione, fino al 59% di capitale in più nelle simulazioni: confronto su rendimenti, tasse e nuove regole 2026 - Il Giornale d'Italia",
       "summary": "",
@@ -1611,7 +1687,7 @@
       "id": "PULSE-MEDIA-0B8E783EE1EAB56E",
       "story_fingerprint": "0b8e783ee1eab56e8049f907f2dc1e17e81d31d3e83f9334eb4d60a0781ea407",
       "published_at": "2026-11-23T05:03:39+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "HONGQI EHS4 arriva in Italia: prezzi da 32.900 euro e autonomia fino a 470 km",
       "reported_headline": "HONGQI EHS4 arriva in Italia: prezzi da 32.900 euro e autonomia fino a 470 km - Inforicambi.it",
       "summary": "",
@@ -1659,7 +1735,7 @@
       "id": "PULSE-MEDIA-979ECAB1755C5E50",
       "story_fingerprint": "979ecab1755c5e50c63473484efb19b845b4cdaa2e1b1022d8732a489bb588a1",
       "published_at": "2026-11-23T05:00:00+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Goldman Sachs, Pil italiano allo 0,5% nel 2027: inflazione e investimenti frenano la crescita",
       "reported_headline": "Goldman Sachs, Pil italiano allo 0,5% nel 2027: inflazione e investimenti frenano la crescita - Euroborsa",
       "summary": "",
@@ -1702,6 +1778,54 @@
       },
       "primary_research_last_attempt_at": "2026-11-23T23:04:34.833207+00:00",
       "primary_research_status": "primary_evidence_not_found"
+    },
+    {
+      "id": "PULSE-MEDIA-31AB460CF3B151DF",
+      "story_fingerprint": "31ab460cf3b151df2f7d78b2e39c80ab59dda2d4333097da2814ab2349f0bbec",
+      "published_at": "2026-11-22T23:30:00+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
+      "headline": "Lazio, la cultura vale 17,7 miliardi: la Regione punta su imprese e investimenti",
+      "reported_headline": "Lazio, la cultura vale 17,7 miliardi: la Regione punta su imprese e investimenti - Castelli Notizie",
+      "summary": "",
+      "topic": "ECONOMIA",
+      "pulse_score": 0,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOEc1WlNLS0t5b1lTcjV1N19LbGlZNVZURmdaZ0EyZzE0N2VKZTh1UExIVnN0NlBvTUxKajlVRWNMMElZTVJ1alFnVVlQSzhTZG1PekVFSWVoR01iU01SVXFzclFfbDZoRXVDT3Nob1JxVWYxT2xqRTJYZTRZN0hFUWpNU2Nzb2p3dWxJUVFuS3hhUXg0XzJUclB1bFJMbmt6OG5sRkxCYnhPcGFXeUZidlcteVVLTDhKSHpndGdFZG9sQdIBwgFBVV95cUxQOEc1WlNLS0t5b1lTcjV1N19LbGlZNVZURmdaZ0EyZzE0N2VKZTh1UExIVnN0NlBvTUxKajlVRWNMMElZTVJ1alFnVVlQSzhTZG1PekVFSWVoR01iU01SVXFzclFfbDZoRXVDT3Nob1JxVWYxT2xqRTJYZTRZN0hFUWpNU2Nzb2p3dWxJUVFuS3hhUXg0XzJUclB1bFJMbmt6OG5sRkxCYnhPcGFXeUZidlcteVVLTDhKSHpndGdFZG9sQQ?oc=5",
+        "domain": "Castelli Notizie",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "17,7 miliardi",
+          "verified": false
+        }
+      ],
+      "territories": [
+        "lazio"
+      ],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "Castelli Notizie",
+        "original_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOEc1WlNLS0t5b1lTcjV1N19LbGlZNVZURmdaZ0EyZzE0N2VKZTh1UExIVnN0NlBvTUxKajlVRWNMMElZTVJ1alFnVVlQSzhTZG1PekVFSWVoR01iU01SVXFzclFfbDZoRXVDT3Nob1JxVWYxT2xqRTJYZTRZN0hFUWpNU2Nzb2p3dWxJUVFuS3hhUXg0XzJUclB1bFJMbmt6OG5sRkxCYnhPcGFXeUZidlcteVVLTDhKSHpndGdFZG9sQdIBwgFBVV95cUxQOEc1WlNLS0t5b1lTcjV1N19LbGlZNVZURmdaZ0EyZzE0N2VKZTh1UExIVnN0NlBvTUxKajlVRWNMMElZTVJ1alFnVVlQSzhTZG1PekVFSWVoR01iU01SVXFzclFfbDZoRXVDT3Nob1JxVWYxT2xqRTJYZTRZN0hFUWpNU2Nzb2p3dWxJUVFuS3hhUXg0XzJUclB1bFJMbmt6OG5sRkxCYnhPcGFXeUZidlcteVVLTDhKSHpndGdFZG9sQQ?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
     },
     {
       "id": "PULSE-MEDIA-55682C1DC2CE46F8",
@@ -1755,7 +1879,7 @@
       "id": "PULSE-MEDIA-FB2BB4A36C63F304",
       "story_fingerprint": "fb2bb4a36c63f30492305378fece2991311048f4a235ebc231055b802f6148f8",
       "published_at": "2026-11-22T15:24:40+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Italia fanalino di coda nelle discipline STEM: laurea per il 4,4% degli italiani, dietro Romania e Repubblica Ceca. In testa Irlanda e Svezia",
       "reported_headline": "Italia fanalino di coda nelle discipline STEM: laurea per il 4,4% degli italiani, dietro Romania e Repubblica Ceca. In testa Irlanda e Svezia - Orizzonte Scuola Notizie",
       "summary": "",
@@ -1803,7 +1927,7 @@
       "id": "PULSE-MEDIA-B70BA9F57E65D22F",
       "story_fingerprint": "b70ba9f57e65d22fbd60e55e5bcf4b0c4fa98e287fbe7818c364aa3d7794e34d",
       "published_at": "2026-11-22T13:04:49+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Luce e gas, in Sardegna bollette aumentate del 21%: «Oltre 114mila famiglie in povertà energetica»",
       "reported_headline": "Luce e gas, in Sardegna bollette aumentate del 21%: «Oltre 114mila famiglie in povertà energetica» - L'Unione Sarda",
       "summary": "",
@@ -2361,7 +2485,7 @@
       "id": "PULSE-MEDIA-305E6D564E1D698B",
       "story_fingerprint": "305e6d564e1d698b6f6561a50d046068ac9664847113bd01cbe944af47858f18",
       "published_at": "2026-11-21T16:15:09+00:00",
-      "last_seen_at": "2026-11-24T03:00:16.105622+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "GreenItaly, in Umbria 8.760 imprese investono nell'ambiente, +4,4% dal 2024",
       "reported_headline": "GreenItaly, in Umbria 8.760 imprese investono nell'ambiente, +4,4% dal 2024 - ANSA",
       "summary": "",
@@ -2415,7 +2539,7 @@
       "id": "PULSE-MEDIA-10C35827348F3AA6",
       "story_fingerprint": "10c35827348f3aa625a95e50d2990b58b185f4165bb52541dfffdf80ba207986",
       "published_at": "2026-11-21T15:17:32+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "In vent’anni (2005-2025) 43 comuni montani del Friuli hanno perso il 14,1% dei residenti",
       "reported_headline": "In vent’anni (2005-2025) 43 comuni montani del Friuli hanno perso il 14,1% dei residenti - Friuli Sera",
       "summary": "",
@@ -50047,7 +50171,7 @@
       "id": "PULSE-MEDIA-6FC2EC3284C2ECBD",
       "story_fingerprint": "6fc2ec3284c2ecbd5ddebc0ed66233da2db80ea8ade6538251d243dcaec3b40e",
       "published_at": "2026-10-26T11:17:35+00:00",
-      "last_seen_at": "2026-11-24T10:07:14.056198+00:00",
+      "last_seen_at": "2026-11-24T11:04:01.289949+00:00",
       "headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali",
       "reported_headline": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
       "summary": "",
