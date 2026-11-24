@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T03:00:16.105622+00:00",
+  "generated_at": "2026-11-24T07:33:36.796162+00:00",
   "candidates": [
     {
       "radar": "PULSE 80 testate · agenzie · gruppo 06",
@@ -79,17 +79,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 28
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 43
+      "items_fetched": 44
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 28
     },
     {
       "radar": "Repubblica Economia",
@@ -129,27 +129,27 @@
     {
       "radar": "Google News - Italia lavoro e imprese",
       "status": "radar_fetched",
-      "items_fetched": 34
+      "items_fetched": 36
     },
     {
       "radar": "Google News - Italia salute e welfare",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 31
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
       "status": "radar_fetched",
-      "items_fetched": 58
+      "items_fetched": 51
     },
     {
       "radar": "Google News - Italia popolazione e territori",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 53
     },
     {
       "radar": "PULSE osservatori ufficiali 1/9",
@@ -179,7 +179,7 @@
     {
       "radar": "PULSE osservatori ufficiali 6/9",
       "status": "radar_fetched",
-      "items_fetched": 49
+      "items_fetched": 51
     },
     {
       "radar": "PULSE osservatori ufficiali 7/9",
@@ -199,7 +199,7 @@
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 31
+      "items_fetched": 60
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -209,12 +209,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 42
+      "items_fetched": 50
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 45
+      "items_fetched": 53
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -258,8 +258,8 @@
     },
     {
       "radar": "Repubblica - Homepage",
-      "status": "radar_error",
-      "error": "HTTP Error 403: Forbidden"
+      "status": "radar_fetched",
+      "items_fetched": 30
     },
     {
       "radar": "Il Messaggero - Notizie",
@@ -314,12 +314,12 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 29
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 30
+      "items_fetched": 29
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
@@ -367,40 +367,17 @@
       "error": "HTTP Error 403: Forbidden"
     },
     {
-      "radar": "PULSE 80 testate · agenzie · gruppo 08",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVzFRVFpidk1OeDdqMlJYeFVQWjBpQVNDbnhtWEJYME1FdGhac002aXRZVjBZaVVnVjlEbU1BSTdtTjYzUVZLZE52MG5KUFp4UTNHSk5wVWZsbi1xcmZ2NndOWWpOLVQ3aDNCNzQtSlBKOVgzQUxuOGRRT0Foa1JIeHpZTzJac0c5dklQMFV5Vi1CSzl2UjVCSVZhdTJlS2t5dHFZNzRTNUpYSVJHSUNEVHdCRjlFRG1vMzc2bkJ6T0FYQmpCemQ4ZXdUb19rc3VCSkxPYzRvd3k?oc=5",
-      "discovery_title": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
-      "detected_at": "2026-11-24T03:00:16.105622+00:00",
-      "score_discovery": 45,
-      "topic": "ALTRO",
-      "numbers_detected": [
-        "3",
-        "0,5%",
-        "+3%",
-        "3",
-        "0,5%",
-        "+3%"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "Google News - statistiche Italia",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOaWhOZzVJNnAyUjRMOVBZbUFxMzh3UWxQdjdiSVNOWGREMzdDeUUwUWtBTFlUVkkxczdCT0U5WDFsanFPdEgwNGowLWhTOURHWGoyaUo3ek9vVWJVaGpicVU5OUFkWjN1dlNmVUxHUkhNMFJOYWl5bU1BYUNTUmZzSDg4UGs2SlpxVUFxazk3V0dNZnJDc3ktR2dXU2UwNUxma0FNV3U1ZHVvYWhLcmxQaXVKLUFEelh3TmZXYW8zZ1VhdzNwSURJMWVVWjdzVkRuWWxKVW9B?oc=5",
-      "discovery_title": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3% - Giornale Radio",
-      "detected_at": "2026-11-24T03:00:16.105622+00:00",
-      "score_discovery": 75,
+      "radar": "Google News - Italia economia e famiglie",
+      "discovery_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVDhTRzBsZElqenFIaHkzNzVkZEF1amRuaWRpZWdPQTlweHBkZ0RMLTdmMFlxMWdHaVZRclZuOGc3VE5ENGg5Vl8tcEM5QW5MaGIxTzJDYndlZmZnSExPQ05hbklRTkh4T1liN0NHSHUzUDc3UEc5d1A2ZTRPY2tSbXUtbjZtRXotTEk5X0ZUcm1hZ2k5VmtDYVozc1I0QQ?oc=5",
+      "discovery_title": "Goldman Sachs, Pil italiano allo 0,5% nel 2027: inflazione e investimenti frenano la crescita - Euroborsa",
+      "detected_at": "2026-11-24T07:33:36.796162+00:00",
+      "score_discovery": 54,
       "topic": "ECONOMIA",
       "numbers_detected": [
-        "5,5%",
-        "2023",
-        "3%",
-        "5,5%",
-        "2023",
-        "3%"
+        "0,5%",
+        "2027",
+        "0,5%",
+        "2027"
       ],
       "official_links": [],
       "official_domain_hints": [],
@@ -412,7 +389,7 @@
       "radar": "Google News - Italia scuola e università",
       "discovery_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQjBuRkhITk1EWUV0NmRuY0VwM044Q1liY0txWUo4d2FBSWdpbDRTc2pDWXhYUkRpalgzX21OLWwtZHhOMzAxWmQyUEs3clNXWUQxcWxmN0V1YXpGSnNWMkY2bjZ0RHdJcXM2MEFUMTA1bW1KS3VaRVBlZ1ZNOUkxQTkzWTNUd3B2OVhnTEZzajNtQjI1UDRTZUhWbEg2UkpaSFHSAacBQVVfeXFMT3EwTEYyX1RELUZVbjVIY3NtaV9NenM0Y2p5Q08xREM4YU14ajBhdm1GVDlpV0Q3MDZoVFA0N2ZFRUJ4YzJpazhHelQ0X0N3WUd4MWtFcWxHdzRSUGd6TzV6ZFhfMTNLbnJqSHhvQjJuanMwWUdTVkdENnFfLUV5bWk1QVVCSGdpWVNTZFpiS1Bwd3hyOC1qalBwT1Z2YkFoMDdtLVBKWkE?oc=5",
       "discovery_title": "Visti USA per indiani -62%: all'Italia arrivano 1.888 studenti nel 2025 - EduNews24",
-      "detected_at": "2026-11-24T03:00:16.105622+00:00",
+      "detected_at": "2026-11-24T07:33:36.796162+00:00",
       "score_discovery": 50,
       "topic": "ISTRUZIONE",
       "numbers_detected": [
@@ -431,28 +408,9 @@
     },
     {
       "radar": "Google News - Italia economia e famiglie",
-      "discovery_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVDhTRzBsZElqenFIaHkzNzVkZEF1amRuaWRpZWdPQTlweHBkZ0RMLTdmMFlxMWdHaVZRclZuOGc3VE5ENGg5Vl8tcEM5QW5MaGIxTzJDYndlZmZnSExPQ05hbklRTkh4T1liN0NHSHUzUDc3UEc5d1A2ZTRPY2tSbXUtbjZtRXotTEk5X0ZUcm1hZ2k5VmtDYVozc1I0QQ?oc=5",
-      "discovery_title": "Goldman Sachs, Pil italiano allo 0,5% nel 2027: inflazione e investimenti frenano la crescita - Euroborsa",
-      "detected_at": "2026-11-24T03:00:16.105622+00:00",
-      "score_discovery": 54,
-      "topic": "ECONOMIA",
-      "numbers_detected": [
-        "0,5%",
-        "2027",
-        "0,5%",
-        "2027"
-      ],
-      "official_links": [],
-      "official_domain_hints": [],
-      "primary_resolution": null,
-      "editorial_excluded": false,
-      "status": "needs_primary_source"
-    },
-    {
-      "radar": "PULSE 80 testate · locali · gruppo 19",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQekRDcjFvcU9YUlZRalktbWkxOVc2SUhCSkt6eFZSS3J3QXBZaEpZM0xkZ2lZM1ZGbHRVV0tVX3pVRVcwYlhic3VrUUtwalBlTmdWTllGdWRYYXJyRldHaHVqR2t0MHlWNTAzYlllRjFDMk85NDFWVmdYanBQc1NPUm1rT2JoaWk2b3ZqOElvUktHY25xc3l5WWVibjB1aUZjVWFaVTlOQmc4QTdldXM5TXJEbTgzSjRMLVFCT3NGTzBEQnR3ZUUwbk5qcW92RGVZ0gHPAUFVX3lxTE1veFEtZ1BycFczUWxmZXkxbnd1WWlMMWNfOWRvOVhiNVQzWHV5NWZYSmdBakRsZDl6ZDlEQzVyZkpZRkFmMkpLZjQxYzI2RFlRSkxTUGhUbFZUMnlrYkJfNUU0SENtdjBmX19XV3NTVGpwUVRFTHV3Tl9EaEhoTHUyRi1COWswdHAwcm1BN2lHTXlsdGJpa3RoTS05MVhhVTF2VzRENHZkZVVpZ2I1bHVhUXFMM0VJN0pTay1Ccm1NUDBnSjB1eHprNHhTSTFwWQ?oc=5",
-      "discovery_title": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia - La Gazzetta del Mezzogiorno",
-      "detected_at": "2026-11-24T03:00:16.105622+00:00",
+      "discovery_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVzBEaWxzelc5S3RZLXV1ZDAwU2lkek9fMUNrUTMwanJsMTNadXpqV19qc29GS20wM0pyODY0UmdRVXljdFN3bHY4RzF4QkpOOW13R0pKbWdPNFVQN190Y3luUWlqdW1ra1Z4Z21kV19oZkNuX2dsNjhJWjdwNWhyYWt0bHBURW02T1ZMbF9BMFVHcC1OUzBv?oc=5",
+      "discovery_title": "Eurostat, a ottobre rincari carburanti +29,5% dal 2025, +27% in Italia - Quotidiano Nazionale",
+      "detected_at": "2026-11-24T07:33:36.796162+00:00",
       "score_discovery": 45,
       "topic": "ALTRO",
       "numbers_detected": [
@@ -470,10 +428,31 @@
       "status": "needs_primary_source"
     },
     {
+      "radar": "PULSE 80 testate · nazionali · gruppo 05",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVzFRVFpidk1OeDdqMlJYeFVQWjBpQVNDbnhtWEJYME1FdGhac002aXRZVjBZaVVnVjlEbU1BSTdtTjYzUVZLZE52MG5KUFp4UTNHSk5wVWZsbi1xcmZ2NndOWWpOLVQ3aDNCNzQtSlBKOVgzQUxuOGRRT0Foa1JIeHpZTzJac0c5dklQMFV5Vi1CSzl2UjVCSVZhdTJlS2t5dHFZNzRTNUpYSVJHSUNEVHdCRjlFRG1vMzc2bkJ6T0FYQmpCemQ4ZXdUb19rc3VCSkxPYzRvd3k?oc=5",
+      "discovery_title": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
+      "detected_at": "2026-11-24T07:33:36.796162+00:00",
+      "score_discovery": 45,
+      "topic": "ALTRO",
+      "numbers_detected": [
+        "3",
+        "0,5%",
+        "+3%",
+        "3",
+        "0,5%",
+        "+3%"
+      ],
+      "official_links": [],
+      "official_domain_hints": [],
+      "primary_resolution": null,
+      "editorial_excluded": false,
+      "status": "needs_primary_source"
+    },
+    {
       "radar": "PULSE Italia - Nord e Centro",
       "discovery_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONXFKeFRoYmI4UmxtMElhOW1PX1gwZkNmMXpCR290RkZCWUwzRDQ0UHY0SmRNeFJDRkV0b18yZWozc1ktVWMtQmtqanlZaHROVWY1MWcxTGdwMEVUSGtGQmYybVI2QjVzZjZrNkN4V2dhcVhYYnQ0eVJyMmd2Wk5OXzlWX3VlUGs3bW9zY2VUR0dmQjdPRG81NlZNcFFGQ3RURlU2d1dvbmNxMFRpdlNIS1YtSWRIUTRqUjliNlBfazJ6SUZMMmZEbEViZ081SnFMQnFn?oc=5",
       "discovery_title": "Turismo. Il Veneto supera i 73 milioni di presenze nel 2024 con una crescita degli arrivi internazionali - Marcadoc",
-      "detected_at": "2026-11-24T03:00:16.105622+00:00",
+      "detected_at": "2026-11-24T07:33:36.796162+00:00",
       "score_discovery": 49,
       "topic": "ALTRO",
       "numbers_detected": [
