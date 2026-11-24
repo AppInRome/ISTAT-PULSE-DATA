@@ -73,6 +73,38 @@ class ComposerTests(unittest.TestCase):
                 self.assertEqual(composer.attach(item)["chart_spec"],
                                  item["chart_spec"])
 
+    def test_published_editorial_story_is_substantial_and_source_locked(self):
+        from scripts import pulse_editorial_audit_v1 as audit
+        import re
+        for item in self.articles:
+            with self.subTest(article=item["id"]):
+                story=composer.compose(item)
+                self.assertIsNotNone(story)
+                paragraphs=[row["text"] for row in story["sections"]]
+                originals=[row["text"] for row in item["pulse_article_body"]]
+                self.assertTrue(paragraphs[0].startswith(item["pulse_summary"]))
+                self.assertTrue(paragraphs[0].endswith(originals[0]))
+                self.assertEqual(paragraphs[1:],originals[1:])
+                prose=" ".join(paragraphs)
+                sentences=[part.strip() for part in audit.SENTENCE.split(prose)
+                           if part.strip()]
+                words=re.findall(r"\b[\wÀ-ÿ]+\b",prose)
+                self.assertGreaterEqual(len(sentences),15)
+                self.assertLessEqual(len(sentences),25)
+                self.assertGreaterEqual(len(words),250)
+                self.assertLessEqual(len(words),500)
+                normalized=[re.sub(r"\s+"," ",part.casefold()).strip(" .!?\\\"«»")
+                            for part in sentences]
+                self.assertEqual(len(normalized),len(set(normalized)))
+
+    def test_short_or_repeated_body_does_not_replace_original(self):
+        item=deepcopy(self.articles[0])
+        item["pulse_article_body"][0]["text"]="Testo breve."
+        self.assertIsNone(composer.compose(item))
+        item=deepcopy(self.articles[0])
+        item["pulse_article_body"][1]["text"]=item["pulse_article_body"][0]["text"]
+        self.assertIsNone(composer.compose(item))
+
     def test_tampered_chart_or_table_never_gets_new_editorial_presentation(self):
         original=deepcopy(self.articles[0])
         for key in ("chart_spec","table_spec","source_documents","automatic_review"):
@@ -112,7 +144,7 @@ class ComposerTests(unittest.TestCase):
         self.assertNotIn("0,4% ",story["lead"])
         self.assertIn("la quota di persone in abitazioni sovraffollate", story["lead"])
         self.assertFalse(story["lead"].startswith("In Italia, abitazioni sovraffollate sale"))
-        self.assertIn("L'osservazione più recente è", 
+        self.assertIn("Il punto iniziale di questa serie", 
                       " ".join(p["text"] for p in story["sections"]))
         d=next(x for x in self.articles if x["topic"]=="DEMOGRAFIA")
         demographic=composer.compose(d)
