@@ -105,8 +105,23 @@ def rss_items(url):
         # Prefer that field over a guessed suffix from the article title.
         source_el=item.find("source")
         publisher=clean_text(source_el.text or "") if source_el is not None else ""
+        # Source feed thumbnails only: no generative or stock imagery.
+        image_url=""
+        for el in (item.find("{http://search.yahoo.com/mrss/}thumbnail"),
+                   item.find("{http://search.yahoo.com/mrss/}content"),
+                   item.find("enclosure")):
+            if el is not None:
+                candidate=str(el.attrib.get("url") or "").strip()
+                mime=str(el.attrib.get("type") or "").casefold()
+                if candidate.startswith("https://") and (
+                        el.tag.endswith("thumbnail") or
+                        mime.startswith("image/") or
+                        candidate.lower().split("?")[0].endswith((".jpg",".jpeg",".png",".webp"))):
+                    image_url=candidate
+                    break
         if title and link: out.append({"title":title,"url":link,"summary":clean_text(desc),
-                                       "published_raw":pub,"publisher":publisher})
+                                       "published_raw":pub,"publisher":publisher,
+                                       "image_url":image_url})
     return out[:MAX_ITEMS_PER_FEED]
 
 def score_candidate(text):
