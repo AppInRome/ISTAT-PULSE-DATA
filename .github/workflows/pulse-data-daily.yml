@@ -44,6 +44,7 @@ jobs:
     timeout-minutes: 47
     env:
       PYTHONUNBUFFERED: '1'
+      PULSE_SOURCE_ONLY: '1' # Preserve daily RSS/newspapers and official links; disable generated editorial articles
       PULSE_HTTP_CACHE_DIR: ${{ github.workspace }}/.pulse_http_cache
     steps:
       - name: Scegli aggiornamento leggero o completo
