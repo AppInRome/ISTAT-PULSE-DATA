@@ -295,6 +295,12 @@ def compose(item):
             if len(content)<60:
                 return None
             body.append(content)
+        original_lead=str(item.get("pulse_summary") or "").strip()
+        if len(original_lead)<60:
+            return None
+        # Include the source-audited opening paragraph as well: the five body
+        # paragraphs alone may legitimately contain fewer than 15 sentences.
+        body[0]=original_lead+" "+body[0]
         headings=("Il confronto con il periodo precedente",
                   "L'evoluzione dall'inizio della serie",
                   "Che cosa misura l'indicatore",
