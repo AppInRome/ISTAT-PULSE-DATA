@@ -305,7 +305,7 @@ def compose(item):
         # A long article must contain verified information, not padding or
         # repeated sentences. Do not manufacture additional claims to reach a
         # threshold; fail closed and retain the original audited article.
-        full_prose=" ".join([lead,*body])
+        full_prose=" ".join(body)
         sentences=[part.strip() for part in audit.SENTENCE.split(full_prose)
                    if part.strip()]
         words=len(re.findall(r"\\b[\\wÀ-ÿ]+\\b",full_prose))
