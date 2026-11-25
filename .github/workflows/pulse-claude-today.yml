@@ -34,17 +34,17 @@ jobs:
       - name: Offline regressions (no keys)
         run: python -m unittest discover -s tests -p "test_pulse_claude_today.py" -v
       - name: Generate at most 20 source-grounded articles
-        if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
+        if: ${{ false }}
         env:
           PULSE_CLAUDE_ENABLED: ${{ vars.PULSE_CLAUDE_ENABLED }}
           VALE_CLAUDE_GATEWAY_URL: ${{ vars.VALE_CLAUDE_GATEWAY_URL }}
           PULSE_JOB_TOKEN: ${{ secrets.PULSE_JOB_TOKEN }}
         run: python -m scripts.pulse_claude_today
       - name: Verify original title, dates and links unchanged
-        if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
+        if: ${{ false }}
         run: python -m json.tool data/news/articles.json > /dev/null
       - name: Save same IDs to original news feed
-        if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
+        if: ${{ false }}
         run: |
           git config user.name "PULSE verified feed bot"
           git config user.email "pulse-feed-bot@users.noreply.github.com"
