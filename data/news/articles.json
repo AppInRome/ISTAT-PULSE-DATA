@@ -1,11 +1,103 @@
 {
-  "generated_at": "2026-11-25T15:20:54.202788+00:00",
+  "generated_at": "2026-11-25T17:14:04.941038+00:00",
   "articles": [
+    {
+      "id": "PULSE-MEDIA-60DBDE5DAF7730BE",
+      "story_fingerprint": "60dbde5daf7730be898db1e4bb30270bbfc17b31102130f939300d99b7aaab85",
+      "published_at": "2026-11-25T16:55:42+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
+      "headline": "L'Istat: 'Una donna su 3 ha subito almeno una violenza nella vita'",
+      "reported_headline": "L'Istat: 'Una donna su 3 ha subito almeno una violenza nella vita'",
+      "summary": "",
+      "topic": "ALTRO",
+      "pulse_score": 0,
+      "public_source": {
+        "url": "https://www.ansa.it/sito/notizie/speciali/25-novembre/2026/11/25/istat-una-donna-su-3-ha-subito-almeno-una-violenza-nella-vita_b4c4fa56-2311-40d7-a10e-05c7a9ef2b66.html",
+        "domain": "ansa.it",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "7 milioni",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ansa.it",
+        "original_url": "https://www.ansa.it/sito/notizie/speciali/25-novembre/2026/11/25/istat-una-donna-su-3-ha-subito-almeno-una-violenza-nella-vita_b4c4fa56-2311-40d7-a10e-05c7a9ef2b66.html",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
+    {
+      "id": "PULSE-MEDIA-4B360A3027CCCF42",
+      "story_fingerprint": "4b360a3027cccf42db5e12840b300bc0ab32a8d179c77bb3aecd1d4711de93cf",
+      "published_at": "2026-11-25T16:51:49+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
+      "headline": "Imprese, senza burocrazia investirebbero fino al 40% in più in Italia: il Rapporto CED al Mimit",
+      "reported_headline": "Imprese, senza burocrazia investirebbero fino al 40% in più in Italia: il Rapporto CED al Mimit - ItaliaOggi",
+      "summary": "",
+      "topic": "ECONOMIA",
+      "pulse_score": 0,
+      "public_source": {
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQT3Y0c0dyWmhUZWZuVDFReWppNmhmMHF3RTJabnRwaDhJbHlxN2RFXzk0cVNDdW9NYk1KUzJZMEpubktiZUxIVnlCUFBQUjNpRk1iTGtMQUROLWtaOVpzWG9Fa2RSU1N2X2NKZmNzNnh2Y2dhTlk2Q1BVVEx5c0JiT0RhTmhERUptQ0lNZkZ3dmJJXzlsZWVSa0tkWU9kYWc4M0xyckEtb25ZWFY5djNYejJlX0dSZlJXdC1VUlFwd241VFJ2Tk5WN0hfTGxwZWZ6ZDNmZEdQUUZUanBqY0hPag?oc=5",
+        "domain": "ItaliaOggi",
+        "role": "journalistic_source",
+        "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
+        "verification_score": 0
+      },
+      "byline": "PULSE Radar · rassegna stampa",
+      "statistical_claims": [
+        {
+          "raw_value": "40%",
+          "verified": false
+        }
+      ],
+      "territories": [],
+      "patterns": [],
+      "origin_kind": "pulse_media_radar",
+      "publication_tier": "reported_by_media_pending_primary_verification",
+      "editorial_status": "journalistic_sourced",
+      "publication_status": "published",
+      "chart_spec": {
+        "type": "none",
+        "status": "requires_primary_source"
+      },
+      "table_spec": {
+        "status": "requires_primary_source",
+        "columns": [],
+        "rows": []
+      },
+      "discovery": {
+        "role": "journalistic_radar",
+        "outlet": "ItaliaOggi",
+        "original_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQT3Y0c0dyWmhUZWZuVDFReWppNmhmMHF3RTJabnRwaDhJbHlxN2RFXzk0cVNDdW9NYk1KUzJZMEpubktiZUxIVnlCUFBQUjNpRk1iTGtMQUROLWtaOVpzWG9Fa2RSU1N2X2NKZmNzNnh2Y2dhTlk2Q1BVVEx5c0JiT0RhTmhERUptQ0lNZkZ3dmJJXzlsZWVSa0tkWU9kYWc4M0xyckEtb25ZWFY5djNYejJlX0dSZlJXdC1VUlFwd241VFJ2Tk5WN0hfTGxwZWZ6ZDNmZEdQUUZUanBqY0hPag?oc=5",
+        "evidence_gate": "journalistic_rss_report_not_verified"
+      }
+    },
     {
       "id": "PULSE-MEDIA-FE349A42DFBEAAFD",
       "story_fingerprint": "fe349a42dfbeaafd006f6e411961a13c93b78f11f4fea3e6e0d6cee0ab716b24",
       "published_at": "2026-11-25T15:15:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Alimenti, l'indagine: per oltre 1 italiano su 2 la pentola diventa protagonista del servizio a tavola",
       "reported_headline": "Alimenti, l'indagine: per oltre 1 italiano su 2 la pentola diventa protagonista del servizio a tavola - Adnkronos",
       "summary": "",
@@ -43,45 +135,10 @@
       }
     },
     {
-      "id": "PULSE-OFFICIAL-238D506315ACA3D87AC9",
-      "published_at": "2026-11-25T14:12:58+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
-      "headline": "Il Presidente Andrea Lenzi al Convegno di presentazione del Rapporto SA-IA \"Salute & SanitÃ nell'era dell'Intelligenza Artificiale\"",
-      "summary": "",
-      "topic": "SALUTE",
-      "territories": [
-        "roma"
-      ],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14845/il-presidente-andrea-lenzi-al-convegno-di-presentazione-del-rapporto-sa-ia-salute-sanita-nell-era-dell-intelligenza-artificiale",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12857/medium",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
-    },
-    {
       "id": "PULSE-MEDIA-23E2CA8143AC6FBC",
       "story_fingerprint": "23e2ca8143ac6fbcc2b81ebe623a39ec03cb1e3e9dc91788ab8b7908d4c35fb4",
       "published_at": "2026-11-25T14:11:44+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Casa a due passi dalla metro con meno di 100 mila euro: le 10 fermate con i prezzi più bassi d'Italia",
       "reported_headline": "Casa a due passi dalla metro con meno di 100 mila euro: le 10 fermate con i prezzi più bassi d'Italia - Milano Città Stato",
       "summary": "",
@@ -129,7 +186,7 @@
       "id": "PULSE-MEDIA-69E0871565C81E08",
       "story_fingerprint": "69e0871565c81e080a801dca978a6e0153fecd8c33c497e60e04919bd2fc04ca",
       "published_at": "2026-11-25T13:57:26+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Trump propone nuovi dazi a Cina, Ue e 12 economie, cosa cambia",
       "reported_headline": "Trump propone nuovi dazi a Cina, Ue e 12 economie, cosa cambia",
       "summary": "",
@@ -183,7 +240,7 @@
       "id": "PULSE-MEDIA-6A971D919E3A9E2B",
       "story_fingerprint": "6a971d919e3a9e2b82424ae87e83e00ab9aee45f99fd32c5136f838dcac19d23",
       "published_at": "2026-11-25T13:34:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "*Usa: +0,3% m/m redditi personali ottobre",
       "reported_headline": "*Usa: +0,3% m/m redditi personali ottobre - Milano Finanza",
       "summary": "",
@@ -231,7 +288,7 @@
       "id": "PULSE-MEDIA-9F692671B59C4190",
       "story_fingerprint": "9f692671b59c419053dffa4f005a9023ad6d61312488c4c56c52b5d21ae7a0ca",
       "published_at": "2026-11-25T13:33:49+00:00",
-      "last_seen_at": "2026-11-25T13:41:47.099054+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Imprese, cresce il divario di credibilità: l'84% degli italiani chiede responsabilità, solo il 50% promuove le aziende",
       "reported_headline": "Imprese, cresce il divario di credibilità: l'84% degli italiani chiede responsabilità, solo il 50% promuove le aziende - Affaritaliani",
       "summary": "",
@@ -278,76 +335,10 @@
       }
     },
     {
-      "id": "PULSE-OFFICIAL-5E7480368D6A5D5A44FB",
-      "published_at": "2026-11-25T13:22:48+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
-      "headline": "Il contributo di CNR-IBBA per lo sviluppo di cibi piÃ¹ sicuri",
-      "summary": "",
-      "topic": "ALTRO",
-      "territories": [],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14825/il-contributo-di-cnr-ibba-per-lo-sviluppo-di-cibi-piu-sicuri",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
-    },
-    {
-      "id": "PULSE-OFFICIAL-785DD106027BD4474799",
-      "published_at": "2026-11-25T13:16:43+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
-      "headline": "Workshop Italia-Corea sui semiconduttori ad ampia banda proibita",
-      "summary": "",
-      "topic": "ISTRUZIONE",
-      "territories": [],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14842/workshop-italia-corea-sui-semiconduttori-ad-ampia-banda-proibita",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12855/medium",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
-    },
-    {
       "id": "PULSE-MEDIA-BFC1654A841DE74C",
       "story_fingerprint": "bfc1654a841de74c11c1e875cecdcee02651b188d328c67f0c707a0bd2abc832",
       "published_at": "2026-11-25T13:11:30+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Stipendi, l’Italia resta indietro: aumenti al 3%, sotto inflazione e media Ue",
       "reported_headline": "Stipendi, l’Italia resta indietro: aumenti al 3%, sotto inflazione e media Ue - Quotidiano Nazionale",
       "summary": "",
@@ -390,45 +381,10 @@
       }
     },
     {
-      "id": "PULSE-OFFICIAL-E6D3D13AF0D196C5DD61",
-      "published_at": "2026-11-25T13:09:42+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
-      "headline": "In collaborazione con il CNR nasce la rete ISTALAMTU della Biblioteca Nazionale del Qatar per rafforzare la condivisione delle risorse nella regione MENA (Middle East and North Africa)",
-      "summary": "",
-      "topic": "ALTRO",
-      "territories": [
-        "bologna"
-      ],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14815/in-collaborazione-con-il-cnr-nasce-la-rete-istalamtu-della-biblioteca-nazionale-del-qatar-per-rafforzare-la-condivisione-delle-risorse-nella-regione-mena-middle-east-and-north-africa",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12856/medium",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
-    },
-    {
       "id": "PULSE-MEDIA-F85B3BAA13269B47",
       "story_fingerprint": "f85b3baa13269b477efc466a5f42c504bc2703c15072c4c532b30feb4f2aaadb",
       "published_at": "2026-11-25T12:41:41+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "NOTA METODOLOGICA Indagine sulla sicurezza delle donne 2025",
       "reported_headline": "NOTA METODOLOGICA Indagine sulla sicurezza delle donne 2025 - Istat",
       "summary": "",
@@ -469,7 +425,7 @@
       "id": "PULSE-MEDIA-9F4AA4459796280B",
       "story_fingerprint": "9f4aa4459796280b0c8ff68345196f469366fcee2cf026d9f2e4bd670a3df893",
       "published_at": "2026-11-25T12:37:40+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Gli aiuti Inps: Reddito di libertà a 530 euro al mese e congedo retribuito al 100%, come funzionano",
       "reported_headline": "Gli aiuti Inps: Reddito di libertà a 530 euro al mese e congedo retribuito al 100%, come funzionano",
       "summary": "",
@@ -565,7 +521,7 @@
       "id": "PULSE-MEDIA-0CEB73F8A99519BE",
       "story_fingerprint": "0ceb73f8a99519be95f1cd1eb217bdf2a6451d6873f81f94f9a44e5243953605",
       "published_at": "2026-11-25T12:14:34+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Case a Genova, i prezzi dei trilocali corrono il doppio rispetto all'Italia: +11% in un anno",
       "reported_headline": "Case a Genova, i prezzi dei trilocali corrono il doppio rispetto all'Italia: +11% in un anno - GenovaToday",
       "summary": "",
@@ -613,7 +569,7 @@
       "id": "PULSE-MEDIA-EBB54AE0F5C1302F",
       "story_fingerprint": "ebb54ae0f5c1302fa88aa320cfb8bdfbb96e635c315ecf4a116ca193a5f17c8e",
       "published_at": "2026-11-25T12:03:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Italia sempre più anziana, nel 2080 gli over 65 saranno il 35,5% della popolazione. Cresce la domanda di assistenza sociosanitaria",
       "reported_headline": "Italia sempre più anziana, nel 2080 gli over 65 saranno il 35,5% della popolazione. Cresce la domanda di assistenza sociosanitaria - Quotidiano Sanità",
       "summary": "",
@@ -718,7 +674,7 @@
       "id": "PULSE-MEDIA-BCCB30466A26B04C",
       "story_fingerprint": "bccb30466a26b04c47c7c6e47dfa1e73e60ac0075820b1aa51d1fe2722eccd99",
       "published_at": "2026-11-25T11:26:33+00:00",
-      "last_seen_at": "2026-11-25T13:41:47.099054+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Industria, Rapporto Centro Economia Digitale: 8 grandi imprese su 11 investirebbero fino al 40% in più senza ostacoli burocrazia",
       "reported_headline": "Industria, Rapporto Centro Economia Digitale: 8 grandi imprese su 11 investirebbero fino al 40% in più senza ostacoli burocrazia - La Nuova Sardegna",
       "summary": "",
@@ -814,7 +770,7 @@
       "id": "PULSE-MEDIA-67DAC8F7528B389E",
       "story_fingerprint": "67dac8f7528b389e2b3da1884e245230a6cdc95622bf8a041803ebcff4f83312",
       "published_at": "2026-11-25T11:00:51+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Investimenti delle imprese nel sud, Fratelli d’Italia “2miliardi e 400milioni per la Zes Unica”",
       "reported_headline": "Investimenti delle imprese nel sud, Fratelli d’Italia “2miliardi e 400milioni per la Zes Unica” - Videoinformazioni",
       "summary": "",
@@ -985,7 +941,7 @@
       "id": "PULSE-MEDIA-942CDA25A0114A05",
       "story_fingerprint": "942cda25a0114a0590ee41bc9e05c561a8893007d8b2c643a5e0b2c1a0cd3316",
       "published_at": "2026-11-25T10:33:38+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Produttività, in Italia è cresciuta solo del 27% in 30 anni (mentre in Francia e Germania è praticamente raddoppiata)",
       "reported_headline": "Produttività, in Italia è cresciuta solo del 27% in 30 anni (mentre in Francia e Germania è praticamente raddoppiata)",
       "summary": "",
@@ -1025,22 +981,13 @@
         "outlet": "corriere.it",
         "original_url": "https://www.corriere.it/economia/aziende/26_novembre_25/produttivita-in-italia-e-cresciuta-del-27-in-30-anni-contro-il-76-della-germania-e-il-100-della-francia-063f4ff3-db61-4bf5-8644-970f8245bxlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.corriere.it/economia/aziende/26_novembre_25/produttivita-in-italia-e-cresciuta-del-27-in-30-anni-contro-il-76-della-germania-e-il-100-della-francia-063f4ff3-db61-4bf5-8644-970f8245bxlk.shtml",
-        "source_headline": "Produttività, in Italia è cresciuta solo del 27% in 30 anni (mentre in Francia e Germania è praticamente raddoppiata)",
-        "text": "Secondo il rapporto «Industria 2026», presentato a Roma da Confindustria e riportato dal Corriere della Sera, il nodo dell'economia italiana resta la produttività. Le cifre qui citate provengono dal centro studi degli industriali e non sono state verificate in modo indipendente.\n\nTra il 1995 e il 2025 la produttività italiana sarebbe cresciuta del 27%, circa lo 0,8% annuo. Per gli altri Paesi il rapporto indica il 76% della Germania, quasi il 50% della Spagna e oltre il 100% della Francia. Nel 2025 il valore aggiunto per ora lavorata in Italia era ancora sotto la media 2018-2019, mentre negli altri tre Paesi la superava di oltre il 5%.\n\nIl quadro cambia con la dimensione d'impresa. Confindustria sostiene che le medie imprese italiane superino di circa il 20% le omologhe tedesche, francesi e spagnole, e che le grandi siano in linea con quelle tedesche. Da qui la lettura del rapporto: il problema riguarderebbe soprattutto le piccole e medie imprese.\n\nPesa anche l'energia. Secondo l'analisi, nei primi dieci mesi del 2026 l'incidenza dei costi energetici sui costi di produzione manifatturieri sale al 5,5%, con un",
-        "generated_at": "2026-11-25T16:32:59.229366+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-AC08B7503499E6B4",
       "story_fingerprint": "ac08b7503499e6b4139a9a09a4cde5bb7fab025303cb34b3e6153cc61e63f6ce",
       "published_at": "2026-11-25T10:22:29+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Violenza sulle donne, il rapporto Istat: 7 milioni di vittime in Italia. Lazio prima regione al 12,7%",
       "reported_headline": "Violenza sulle donne, il rapporto Istat: 7 milioni di vittime in Italia. Lazio prima regione al 12,7% - Abitare A Roma",
       "summary": "",
@@ -1093,7 +1040,7 @@
       "id": "PULSE-MEDIA-3EC339EF9553D0CF",
       "story_fingerprint": "3ec339ef9553d0cf769d10291b52cdb84a0b0f7c9c23f3dbdce817e8914d07de",
       "published_at": "2026-11-25T09:46:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Comprare casa a Verona: dai «Borghi» (Trento, Milano e Roma) a Valdonega e Molini, i quartieri su cui puntare",
       "reported_headline": "Comprare casa a Verona: dai «Borghi» (Trento, Milano e Roma) a Valdonega e Molini, i quartieri su cui puntare",
       "summary": "",
@@ -1136,22 +1083,13 @@
         "outlet": "corriere.it",
         "original_url": "https://www.corriere.it/economia/life/real-estate/26_novembre_25/comprare-casa-a-verona-dai-borghi-trento-milano-e-roma-a-valdonega-e-molini-i-quartieri-su-cui-puntare-e0e0343f-bf7b-4d40-9939-20e9c05aexlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.corriere.it/economia/life/real-estate/26_novembre_25/comprare-casa-a-verona-dai-borghi-trento-milano-e-roma-a-valdonega-e-molini-i-quartieri-su-cui-puntare-e0e0343f-bf7b-4d40-9939-20e9c05aexlk.shtml",
-        "source_headline": "Comprare casa a Verona: dai «Borghi» (Trento, Milano e Roma) a Valdonega e Molini, i quartieri su cui puntare",
-        "text": "Secondo il Corriere della Sera, il mercato immobiliare di Verona esce da un biennio di forte attività e ora si scontra con poca offerta e con la difficoltà di accesso per i giovani. Il quadro si basa soprattutto sulle valutazioni di Gianluca Savoja, presidente Fiaip Veneto, e su un report del Centro studi Tecnocasa. Si tratta quindi di stime di operatori del settore, non di dati ufficiali verificati in modo indipendente.\n\nSavoja indica un prezzo medio cittadino di circa 2.575 euro al metro quadro, con punte fino a 6 mila nel centro storico per il nuovo o il ristrutturato. Quotazioni elevate riguarderebbero anche la prima Cittadella, Porta Nuova e Borgo Trento. Tra le zone in crescita a nord ovest viene citata Borgo Milano, la più richiesta, dove Tecnocasa parla di un aumento annuo a doppia cifra legato a più domanda e meno offerta.\n\nPer budget più contenuti l'articolo segnala Borgo Roma, Santa Lucia e Golosine, interessanti anche per chi cerca un investimento a reddito. Tecnocasa nota inoltre un interesse in aumento per Molini, Madonna di Campagna, San Michele Extra e Valdonega. A Molini le villette a schiera nuove sono indicate attorno a 400-450 mila euro.\n\nSul fronte affitti, Savoja ritiene che i contratti transitori e concordati prevalgano sui 4+4 e che la nuova manovra possa accentuare questa tendenza. Resta una valutazione dell'intervistato,",
-        "generated_at": "2026-11-25T16:32:23.480340+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-57AF0A4D4B0B79B9",
       "story_fingerprint": "57af0a4d4b0b79b9d6a1682c03c54e2ccf5a05e78b04fe5b4bc62460cdb59114",
       "published_at": "2026-11-25T09:14:42+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Immacolata 2026 last minute: 7 città italiane dove trascorrere il ponte (con prezzi tra 100 e 500 euro)",
       "reported_headline": "Immacolata 2026 last minute: 7 città italiane dove trascorrere il ponte (con prezzi tra 100 e 500 euro)",
       "summary": "",
@@ -1191,22 +1129,13 @@
         "outlet": "ilmessaggero.it",
         "original_url": "https://www.ilmessaggero.it/viaggi/italia/immacolata_2026_ponte_last_minute_citta_italiane_cosa_vedere-9881467.html",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.ilmessaggero.it/viaggi/italia/immacolata_2026_ponte_last_minute_citta_italiane_cosa_vedere-9881467.html",
-        "source_headline": "Immacolata 2026 last minute: 7 città italiane dove trascorrere il ponte (con prezzi tra 100 e 500 euro)",
-        "text": "Il ponte dell'Immacolata 2026, secondo Il Messaggero, va da sabato 5 a martedì 8 dicembre per chi prende il lunedì di ferie. La testata propone sette mete raggiungibili da Roma, con un filo comune: tradizioni locali, mostre e dolci tipici più che grandi itinerari.\n\nLe stime di spesa, precisa il giornale, sono medie. Si riferiscono a una persona in camera doppia e comprendono viaggio, pernottamento, pasti, visite e tassa di soggiorno. Dipendono però da disponibilità e data di prenotazione, quindi vanno intese come indicazioni della testata e non come tariffe verificate.\n\nIl ventaglio è ampio. A Viterbo, con una notte, si indicano circa 100 euro, con la Casa di Babbo Natale a Palazzo degli Alessandri e il presepe in piazza del Plebiscito. All'Aquila, Capitale italiana della Cultura 2026, si parla di circa 130 euro, tra la mostra di Fabio Mauri a Palazzo Ardinghelli e il Castello. Per Arezzo si stimano circa 230 euro, per Salerno circa 270, per Asti circa 390, con la mostra su Mucha a Palazzo Mazzetti. Cesenatico, con il presepe sulle barche storiche del Porto Canale, arriva a circa",
-        "generated_at": "2026-11-25T16:33:06.550479+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-2FEAD27616139821",
       "story_fingerprint": "2fead27616139821f8bd01500ee83da12e2223968ba775fb69c533e7b9fa7d74",
       "published_at": "2026-11-25T09:06:19+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "La sfida subacquea, un motore italiano da oltre 124 miliardi e 30 mila imprese",
       "reported_headline": "La sfida subacquea, un motore italiano da oltre 124 miliardi e 30 mila imprese - il Nord Est",
       "summary": "",
@@ -1255,7 +1184,7 @@
     {
       "id": "PULSE-OFFICIAL-FF299E1BF1491827E5F7",
       "published_at": "2026-11-25T09:01:09+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "La violenza contro le donne dentro e fuori la famiglia – Anno 2025",
       "summary": "",
       "topic": "ALTRO",
@@ -1283,22 +1212,13 @@
       "table_spec": {
         "status": "source_only",
         "rows": []
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.istat.it/comunicato-stampa/la-violenza-contro-le-donne-dentro-e-fuori-la-famiglia-2025/",
-        "source_headline": "La violenza contro le donne dentro e fuori la famiglia – Anno 2025",
-        "text": "Secondo il comunicato dell'Istat sulla terza edizione dell'indagine \"Sicurezza delle donne\", circa 7 milioni di donne tra i 16 e i 75 anni (31,5%) hanno subito almeno una violenza fisica o sessuale dai 16 anni in poi. Il dato si basa su circa 17.500 interviste telefoniche a donne con cittadinanza italiana, svolte tra marzo e agosto 2025, e su circa 3.100 interviste di persona a donne straniere. L'indagine, realizzata con il Dipartimento per le Pari Opportunità, vuole misurare anche il sommerso, cioè le violenze mai raccontate.\n\nIl comunicato distingue tra violenza nella coppia (12,6% delle donne) e fuori dalla coppia (25,9%). Quando l'autore è il partner, le vittime giudicano più spesso la violenza molto grave (48,7%, contro 24,8% fuori dalla coppia) e ricorrono più di frequente al pronto soccorso (20,7% contro 12,8%).\n\nTra le tendenze rispetto al 2014, l'Istat segnala che sono in aumento le violenze subite dalle 16-24enni (dal 27,1% al 36,1%) e dalle studentesse (dal 25,9% al 35,1%). Cresce anche il ricorso ai centri antiviolenza (8,2% contro 4,9%), mentre la quota di denun",
-        "generated_at": "2026-11-25T16:33:14.067436+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-B0DC5260EF865B34",
       "story_fingerprint": "b0dc5260ef865b340d6fbb81035ec8f098c49a83ecc6491e8eb0a8deb42b24ee",
       "published_at": "2026-11-25T08:43:21+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Indagine Ipsos Doxa per Moulinex \"I sapori di casa non passano di moda: 7 italiani su 10 vorrebbero cucinare più spesso i piatti della tradizione\"",
       "reported_headline": "Indagine Ipsos Doxa per Moulinex \"I sapori di casa non passano di moda: 7 italiani su 10 vorrebbero cucinare più spesso i piatti della tradizione\" - iGizmo.it",
       "summary": "",
@@ -1339,7 +1259,7 @@
       "id": "PULSE-MEDIA-AE06F3418C0F2FB2",
       "story_fingerprint": "ae06f3418c0f2fb22c1c6e7029a4201cf9f1464319b46d3868076254be669be1",
       "published_at": "2026-11-25T08:21:21+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "L'inflazione australiana si infiamma al 4,9% a ottobre",
       "reported_headline": "L'inflazione australiana si infiamma al 4,9% a ottobre - MarketScreener Italia",
       "summary": "",
@@ -1385,7 +1305,7 @@
       "id": "PULSE-MEDIA-5F721A885970C1D0",
       "story_fingerprint": "5f721a885970c1d0af8139f9418dd1c1d5c37e0427b66f77b333793ba036db93",
       "published_at": "2026-11-25T08:13:48+00:00",
-      "last_seen_at": "2026-11-25T13:41:47.099054+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Mercato auto Europa ottobre 2026: +3,4%, Italia penultima BEV",
       "reported_headline": "Mercato auto Europa ottobre 2026: +3,4%, Italia penultima BEV - Motorionline.com",
       "summary": "",
@@ -1431,7 +1351,7 @@
       "id": "PULSE-MEDIA-298F4CAC009DE7AA",
       "story_fingerprint": "298f4cac009de7aafd205e904df4a7d7f132da55d4de2a6cd8323a710f1a56df",
       "published_at": "2026-11-25T08:00:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Comuni, inizia la gestione del post Pnrr",
       "reported_headline": "Comuni, inizia la gestione del post Pnrr",
       "summary": "",
@@ -1483,22 +1403,13 @@
         "outlet": "ilsole24ore.com",
         "original_url": "https://www.ilsole24ore.com/art/comuni-inizia-gestione-post-pnrr-AJZhPbNC",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.ilsole24ore.com/art/comuni-inizia-gestione-post-pnrr-AJZhPbNC",
-        "source_headline": "Comuni, inizia la gestione del post Pnrr",
-        "text": "Con la chiusura del Pnrr, indicata dal Ministero dell'Economia per agosto 2026, per i Comuni la questione si sposta dalla realizzazione dei progetti alla loro tenuta nel tempo. Secondo l'articolo, servono sistemi mantenuti e competenze interne per presidiarli.\n\nIl quadro dimensionale citato, tratto dall'Annuario Istat con dati al 31 dicembre 2024, mostra una realtà molto frammentata: il 69,9% dei 7.896 Comuni ha meno di 5 mila abitanti, mentre i Comuni medi ospitano il 68,8% dei residenti. Tutti devono però garantire gli stessi servizi.\n\nLe fonti richiamate indicano le fragilità dei centri minori. L'Osservatorio Agenda digitale del Politecnico di Milano, su un campione di 391 piccoli comuni, rileva che il 67% non ha adottato misure di sicurezza informatica e l'82% non aderisce a forme di gestione associata del digitale. La Corte dei Conti, secondo il testo, ha segnalato più volte carenze di competenze tecniche e difficoltà nel trovare fornitori qualificati. Sul piano normativo vengono citati la legge 132/2025 sull'intelligenza artificiale nei procedimenti amministrativi e il decreto legislativo 138/2024, che recepisce la direttiva Nis2.\n\nLa seconda parte dell'articolo espone",
-        "generated_at": "2026-11-25T16:32:31.387251+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-21D803B9BCE72066",
       "story_fingerprint": "21d803b9bce7206642f67df2cb4c30cbad5b18e7f190a29437e88a421d03e110",
       "published_at": "2026-11-25T07:58:25+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "L’Italia spende per la sanità 730 euro in meno per abitante rispetto alla media Ue. Pochi infermieri e sottopagati, medici anziani e carenza posti letto. Ma ci confermiamo tra i più longevi d’Europa. Il Rapporto Health at a Glance 2026",
       "reported_headline": "L’Italia spende per la sanità 730 euro in meno per abitante rispetto alla media Ue. Pochi infermieri e sottopagati, medici anziani e carenza posti letto. Ma ci confermiamo tra i più longevi d’Europa. Il Rapporto Health at a Glance 2026 - Il Farmacista Online",
       "summary": "",
@@ -1544,7 +1455,7 @@
       "id": "PULSE-MEDIA-136C650E2BB6D5B9",
       "story_fingerprint": "136c650e2bb6d5b99f3354116a47eebb0ce522f15c22091c830e07835aba779c",
       "published_at": "2026-11-25T07:47:19+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Violenza sulle donne, in Italia il 61,5% delle madri vittime racconta che i figli hanno assistito agli episodi: il rapporto di Save the Children",
       "reported_headline": "Violenza sulle donne, in Italia il 61,5% delle madri vittime racconta che i figli hanno assistito agli episodi: il rapporto di Save the Children - Orizzonte Scuola Notizie",
       "summary": "",
@@ -1590,7 +1501,7 @@
       "id": "PULSE-MEDIA-079E033E64B2B6F3",
       "story_fingerprint": "079e033e64b2b6f3c5e68a3784cd4206e0be7c870318f5261650b0ee552790fc",
       "published_at": "2026-11-25T07:00:00+00:00",
-      "last_seen_at": "2026-11-25T09:25:39.914983+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Riciclo di carta e cartone da record in Italia: superato il 93%, traina l’export verso l’India",
       "reported_headline": "Riciclo di carta e cartone da record in Italia: superato il 93%, traina l’export verso l’India - SmartGreen Post",
       "summary": "",
@@ -1824,7 +1735,7 @@
       "id": "PULSE-MEDIA-B7FA34186C7B8128",
       "story_fingerprint": "b7fa34186c7b8128d9bbd1ed01768ef9d1882b5aa0b764b5f79f08744d7d0967",
       "published_at": "2026-11-25T04:30:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Piemonte, mille case a 100 euro al mese per gli under 35: ecco chi può averle e quali sono i requisiti. «Misura per la natalità»",
       "reported_headline": "Piemonte, mille case a 100 euro al mese per gli under 35: ecco chi può averle e quali sono i requisiti. «Misura per la natalità»",
       "summary": "",
@@ -1866,15 +1777,6 @@
         "outlet": "torino.corriere.it",
         "original_url": "https://torino.corriere.it/notizie/cronaca/26_novembre_25/piemonte-case-100-euro-al-mese-under-35-requisiti-bando-gennaio-mille-alloggi-0a8abf2e-1624-40e6-8720-064cac43exlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://torino.corriere.it/notizie/cronaca/26_novembre_25/piemonte-case-100-euro-al-mese-under-35-requisiti-bando-gennaio-mille-alloggi-0a8abf2e-1624-40e6-8720-064cac43exlk.shtml",
-        "source_headline": "Piemonte, mille case a 100 euro al mese per gli under 35: ecco chi può averle e quali sono i requisiti. «Misura per la natalità»",
-        "text": "Secondo il Corriere Torino, la giunta regionale piemontese ha approvato un disegno di legge chiamato «Una famiglia, una casa». Prevede mille alloggi pubblici a 100 euro al mese per nuclei con almeno un componente under 35. Il testo è un disegno di legge dell'esecutivo: l'estratto non chiarisce l'iter successivo né se serva il voto del Consiglio regionale, quindi non si può dire con certezza quando la misura diventerà operativa.\n\nStando alla ricostruzione del quotidiano, le risorse sarebbero 36 milioni di euro di fondi europei, destinati a ristrutturare mille dei 48 mila appartamenti Atc oggi occupati abusivamente o da recuperare. Il giornale indica i primi bandi a gennaio.\n\nPer i requisiti, il quotidiano riferisce che possono partecipare coppie sposate, unite civilmente o conviventi di fatto, residenti in Piemonte, con Isee minimo di 15 mila euro e senza tetto massimo. Il contratto durerebbe fino ai 18 anni dell'ultimo figlio, oppure dieci anni per chi non ha figli. La graduatoria avrebbe criteri distinti da quelli delle case popolari ordinarie, con punteggi aggiuntivi per figli, disabilità e figli di vittime del dovere.",
-        "generated_at": "2026-11-25T16:32:39.214455+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
@@ -2008,7 +1910,7 @@
       "id": "PULSE-MEDIA-6F5D0C03BB3FC496",
       "story_fingerprint": "6f5d0c03bb3fc496af6262d3df6ab20c8d4de1c375267e2cbe665580e6c5fed7",
       "published_at": "2026-11-24T18:22:12+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Anomalie nei dati portano l’export di vino del Piemonte da una crescita del 2,4% a un calo dello 0,3%",
       "reported_headline": "Anomalie nei dati portano l’export di vino del Piemonte da una crescita del 2,4% a un calo dello 0,3% - Vinetur",
       "summary": "",
@@ -2106,7 +2008,7 @@
       "id": "PULSE-MEDIA-CCFA0D45DAAE78FC",
       "story_fingerprint": "ccfa0d45daae78fc3edcfe725e62c3030495c08e59a42ab6b49d247f03ff207a",
       "published_at": "2026-11-24T17:22:24+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Tra le donne vittime di violenza più di una su tre ha figli, una su 12 ha temuto per la loro vita",
       "reported_headline": "Tra le donne vittime di violenza più di una su tre ha figli, una su 12 ha temuto per la loro vita",
       "summary": "",
@@ -2146,22 +2048,13 @@
         "outlet": "ilsole24ore.com",
         "original_url": "https://www.ilsole24ore.com/art/tra-donne-vittime-violenza-piu-una-tre-ha-figli-su-12-ha-temuto-la-loro-vita-AJweHQRC",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.ilsole24ore.com/art/tra-donne-vittime-violenza-piu-una-tre-ha-figli-su-12-ha-temuto-la-loro-vita-AJweHQRC",
-        "source_headline": "Tra le donne vittime di violenza più di una su tre ha figli, una su 12 ha temuto per la loro vita",
-        "text": "Secondo l'elaborazione di Istat e Polo Ricerche di Save the Children, riportata da Il Sole 24 Ore, la violenza domestica non colpisce solo le donne: quando in casa ci sono figli, diventa anche violenza assistita contro l'infanzia e l'adolescenza. Il dato di partenza è che il 12,6% delle donne tra i 16 e i 75 anni con una relazione di coppia, attuale o passata, ha subito violenza fisica o sessuale dal partner o dall'ex. Tra loro, più di una su tre ha figli, nel 94% dei casi minorenni.\n\nTra le madri che hanno subito violenza ripetuta, una su 12 (8,3%) ha temuto per la vita del figlio o della figlia. Nel 61,5% dei casi i minori hanno assistito agli abusi, e in un caso su cinque ne sono stati vittime diretti.\n\nUn'elaborazione inedita riguarda le «giovani vittime silenti», per lo più donne tra i 25 e i 44 anni. In questo gruppo il 56,9% ha figli e il 28,9% ha temuto per la loro vita, ma solo il 4,7% ha denunciato. Secondo l'analisi, questi numeri suggeriscono una normalizzazione della violenza tra le madri più giovani: è un'interpretazione dei ricercatori, non un dato misurato.\n\nAntonella Inverno, di Save the Children",
-        "generated_at": "2026-11-25T16:33:41.721894+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-1F735B2807FE8EBE",
       "story_fingerprint": "1f735b2807fe8ebee08666bfbddfb321e76a9c46e7da4d11d438589a7be1a2c7",
       "published_at": "2026-11-24T17:18:59+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Povertà alimentare, l’Antoniano: “A Bologna lavorare non basta più”. I dati: +105% di lavoratori in difficoltà",
       "reported_headline": "Povertà alimentare, l’Antoniano: “A Bologna lavorare non basta più”. I dati: +105% di lavoratori in difficoltà - Il Resto del Carlino",
       "summary": "",
@@ -2209,14 +2102,14 @@
       "id": "PULSE-MEDIA-A33082F159D4396C",
       "story_fingerprint": "a33082f159d4396c7700694583fc64c4224f2f2e4faa66a46faeca50c98d3daa",
       "published_at": "2026-11-24T17:14:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Ue: «Salari in Italia strutturalmente bassi, la situazione del reddito è critica». Occupazione al 67,6% ma restano i divari",
       "reported_headline": "Ue: «Salari in Italia strutturalmente bassi, la situazione del reddito è critica». Occupazione al 67,6% ma restano i divari - Corriere della Sera",
       "summary": "",
       "topic": "LAVORO",
       "pulse_score": 0,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQSFo0dFVGM29ZbkpFb2VuUzZIbHlsMVVIYUhyR1hQR2RsdllUNlZDaDRyQ1VSRWhFdTZJeXQ2c21STnlzMjRJZWltRE5lU1lVOExLX2RRRmhtREhqdkJyeWFYTDFqNFYxUld6Z0FIM3k0YVJKSXo4MGhwN1pQYlBkT3BWVnhqcmRHcHpvcmphdF9aS3cxSWstNmRUUkdfTDk1X2llbURNQXEwY1BNbktwajFOUklYTFdfaDZFa2tSWll1SXFLWWlkR29zVVNZMVUwbGM1ZW14d0pwMzFHRVRhR0dUZ1YxVXR5ajFVRDVqLTI3UlZiclNmZHBOeUtqdmNIRlVPYk9XNWNDTHJoeWtPSUZtQjB0bVkzRGM0eE00aFQwVVVsOUx1Z2ZHTFVVYWxGUGxiZXJlZktWT0NSdDFmVVFR0gHCAkFVX3lxTFBIWjR0VUYzb1luSkVvZW5TNkhseWwxVUhhSHJHWFBHZGx2WVQ2VkNoNHJDVVJFaEV1Nkl5dDZzbVJOeXMyNEllaW1ETmVTWVU4TEtfZFFGaG1ESGp2QnJ5YVhMMWo0VjFSV3pnQUgzeTRhUkpJejgwaHA3WlBiUGRPcFZWeGpyZEdwem9yamF0X1pLdzFJay02ZFRSR19MOTVfaWVtRE1BcTBjUE1uS3BqMU5SSVhMV19oNkVra1JaWXVJcUtZaWRHb3NVU1kxVTBsYzVlbXh3SnAzMUdFVGFHR1RnVjFVdHlqMVVENWotMjdSVmJyU2ZkcE55S2p2Y0hGVU9iT1c1Y0NMcmh5a09JRm1CMHRtWTNEYzR4TTRoVDBVVWw5THVnZkdMVVVhbEZQbGJlcmVmS1ZPQ1J0MWZVUVE?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPY0xWc3owTUlVT0dFeFZfUUJlVXNPUWRhQVJQc1BaTVRQeEUtM0twQjJGMWtjOHdCN2IzM255MHpMWVBwY1QxZDlVMFVGS2RaNFNMVkgta1NWSHl3YVQzWTd5UUoyQkNhM2pMQ3oyOF9VUkxhUmFHM1lJTlU5eVJnQ3BDM1VqU2RyeU9idUY2UjdMVDFNTVl2bzF2c0l1Q2JCaW0yQjEzTk1PRWlENUUyd1Z5bWw2bVdVX3ZwR3N6a3VDaDE5ZFFEMU5Vbzk5X0lYcERuLU5fc1o2Nk03VjV0R3NGYjdlTUozQlowN1VtWmszNDIyWWlONV83LUs3Q0owSTA2eGU1dXh2RkFVaS1RZWJIajlCVE1LVHFfU2NtaUpvOTl0YlRWNGNsWnluNF82UTdBcUhMbVVTRmdx0gHCAkFVX3lxTFBIWjR0VUYzb1luSkVvZW5TNkhseWwxVUhhSHJHWFBHZGx2WVQ2VkNoNHJDVVJFaEV1Nkl5dDZzbVJOeXMyNEllaW1ETmVTWVU4TEtfZFFGaG1ESGp2QnJ5YVhMMWo0VjFSV3pnQUgzeTRhUkpJejgwaHA3WlBiUGRPcFZWeGpyZEdwem9yamF0X1pLdzFJay02ZFRSR19MOTVfaWVtRE1BcTBjUE1uS3BqMU5SSVhMV19oNkVra1JaWXVJcUtZaWRHb3NVU1kxVTBsYzVlbXh3SnAzMUdFVGFHR1RnVjFVdHlqMVVENWotMjdSVmJyU2ZkcE55S2p2Y0hGVU9iT1c1Y0NMcmh5a09JRm1CMHRtWTNEYzR4TTRoVDBVVWw5THVnZkdMVVVhbEZQbGJlcmVmS1ZPQ1J0MWZVUVE?oc=5",
         "domain": "Corriere della Sera",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
@@ -2247,7 +2140,7 @@
       "discovery": {
         "role": "journalistic_radar",
         "outlet": "Corriere della Sera",
-        "original_url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQSFo0dFVGM29ZbkpFb2VuUzZIbHlsMVVIYUhyR1hQR2RsdllUNlZDaDRyQ1VSRWhFdTZJeXQ2c21STnlzMjRJZWltRE5lU1lVOExLX2RRRmhtREhqdkJyeWFYTDFqNFYxUld6Z0FIM3k0YVJKSXo4MGhwN1pQYlBkT3BWVnhqcmRHcHpvcmphdF9aS3cxSWstNmRUUkdfTDk1X2llbURNQXEwY1BNbktwajFOUklYTFdfaDZFa2tSWll1SXFLWWlkR29zVVNZMVUwbGM1ZW14d0pwMzFHRVRhR0dUZ1YxVXR5ajFVRDVqLTI3UlZiclNmZHBOeUtqdmNIRlVPYk9XNWNDTHJoeWtPSUZtQjB0bVkzRGM0eE00aFQwVVVsOUx1Z2ZHTFVVYWxGUGxiZXJlZktWT0NSdDFmVVFR0gHCAkFVX3lxTFBIWjR0VUYzb1luSkVvZW5TNkhseWwxVUhhSHJHWFBHZGx2WVQ2VkNoNHJDVVJFaEV1Nkl5dDZzbVJOeXMyNEllaW1ETmVTWVU4TEtfZFFGaG1ESGp2QnJ5YVhMMWo0VjFSV3pnQUgzeTRhUkpJejgwaHA3WlBiUGRPcFZWeGpyZEdwem9yamF0X1pLdzFJay02ZFRSR19MOTVfaWVtRE1BcTBjUE1uS3BqMU5SSVhMV19oNkVra1JaWXVJcUtZaWRHb3NVU1kxVTBsYzVlbXh3SnAzMUdFVGFHR1RnVjFVdHlqMVVENWotMjdSVmJyU2ZkcE55S2p2Y0hGVU9iT1c1Y0NMcmh5a09JRm1CMHRtWTNEYzR4TTRoVDBVVWw5THVnZkdMVVVhbEZQbGJlcmVmS1ZPQ1J0MWZVUVE?oc=5",
+        "original_url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPY0xWc3owTUlVT0dFeFZfUUJlVXNPUWRhQVJQc1BaTVRQeEUtM0twQjJGMWtjOHdCN2IzM255MHpMWVBwY1QxZDlVMFVGS2RaNFNMVkgta1NWSHl3YVQzWTd5UUoyQkNhM2pMQ3oyOF9VUkxhUmFHM1lJTlU5eVJnQ3BDM1VqU2RyeU9idUY2UjdMVDFNTVl2bzF2c0l1Q2JCaW0yQjEzTk1PRWlENUUyd1Z5bWw2bVdVX3ZwR3N6a3VDaDE5ZFFEMU5Vbzk5X0lYcERuLU5fc1o2Nk03VjV0R3NGYjdlTUozQlowN1VtWmszNDIyWWlONV83LUs3Q0owSTA2eGU1dXh2RkFVaS1RZWJIajlCVE1LVHFfU2NtaUpvOTl0YlRWNGNsWnluNF82UTdBcUhMbVVTRmdx0gHCAkFVX3lxTFBIWjR0VUYzb1luSkVvZW5TNkhseWwxVUhhSHJHWFBHZGx2WVQ2VkNoNHJDVVJFaEV1Nkl5dDZzbVJOeXMyNEllaW1ETmVTWVU4TEtfZFFGaG1ESGp2QnJ5YVhMMWo0VjFSV3pnQUgzeTRhUkpJejgwaHA3WlBiUGRPcFZWeGpyZEdwem9yamF0X1pLdzFJay02ZFRSR19MOTVfaWVtRE1BcTBjUE1uS3BqMU5SSVhMV19oNkVra1JaWXVJcUtZaWRHb3NVU1kxVTBsYzVlbXh3SnAzMUdFVGFHR1RnVjFVdHlqMVVENWotMjdSVmJyU2ZkcE55S2p2Y0hGVU9iT1c1Y0NMcmh5a09JRm1CMHRtWTNEYzR4TTRoVDBVVWw5THVnZkdMVVVhbEZQbGJlcmVmS1ZPQ1J0MWZVUVE?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       }
     },
@@ -2460,7 +2353,7 @@
       "id": "PULSE-MEDIA-DE7E3104696D196D",
       "story_fingerprint": "de7e3104696d196d2155cce1e2f21fea0dbff6be69a6f14fbbfd4d82b2a44c91",
       "published_at": "2026-11-24T15:56:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Il dossier Inps sul Lazio: occupazione ferma al 56% e pensioni quasi dimezzate nel privato",
       "reported_headline": "Il dossier Inps sul Lazio: occupazione ferma al 56% e pensioni quasi dimezzate nel privato - RaiNews",
       "summary": "",
@@ -2577,7 +2470,7 @@
       "id": "PULSE-MEDIA-6593E39A83C82291",
       "story_fingerprint": "6593e39a83c822918a54ec0fc6f3f2d5d635c6e4aefa392a1f7887b4fb9b0f80",
       "published_at": "2026-11-24T15:08:10+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Scoperti 6 «diplomifici» a Napoli, sequestri per 7 milioni e 32 indagati: rilasciati 5900 attestati irregolari a studenti fantasma",
       "reported_headline": "Scoperti 6 «diplomifici» a Napoli, sequestri per 7 milioni e 32 indagati: rilasciati 5900 attestati irregolari a studenti fantasma - Corriere Del Mezzogiorno",
       "summary": "",
@@ -2625,7 +2518,7 @@
       "id": "PULSE-MEDIA-63827DF82A53B2BC",
       "story_fingerprint": "63827df82a53b2bcf02890286b257ac404d5cff55a59e314dfcfe089ae4757ca",
       "published_at": "2026-11-24T14:50:37+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Auto ibride, dal 1° dicembre scatta il tetto Ue alle importazioni: dalla Cina massimo 192 mila veicoli, come funziona",
       "reported_headline": "Auto ibride, dal 1° dicembre scatta il tetto Ue alle importazioni: dalla Cina massimo 192 mila veicoli, come funziona",
       "summary": "",
@@ -2665,15 +2558,6 @@
         "outlet": "corriere.it",
         "original_url": "https://www.corriere.it/economia/aziende/26_novembre_24/auto-ibride-dal-1-dicembre-scatta-il-tetto-ue-alle-importazioni-dalla-cina-massimo-192-mila-veicoli-come-funziona-aa61db43-5eb7-4994-92ae-1958a79e2xlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.corriere.it/economia/aziende/26_novembre_24/auto-ibride-dal-1-dicembre-scatta-il-tetto-ue-alle-importazioni-dalla-cina-massimo-192-mila-veicoli-come-funziona-aa61db43-5eb7-4994-92ae-1958a79e2xlk.shtml",
-        "source_headline": "Auto ibride, dal 1° dicembre scatta il tetto Ue alle importazioni: dalla Cina massimo 192 mila veicoli, come funziona",
-        "text": "Secondo il Corriere della Sera, la Commissione europea introduce dal 1° dicembre misure di salvaguardia provvisorie sulle auto ibride importate da alcuni Paesi extra-Ue. Il regolamento, pubblicato nella Gazzetta Ufficiale Ue il 24 novembre, resterebbe in vigore per 200 giorni, fino al 18 giugno 2027. Il testo indica tetti per i principali esportatori: circa 192 mila veicoli per la Cina, 171 mila per il Giappone, 126 mila per la Turchia e 105 mila per il Regno Unito. Esaurita la quota, l'ingresso di quel prodotto non è più consentito.\n\nIl quotidiano riferisce che la misura riguarda ibride tradizionali e plug-in. Le quote nazionali si basano sui volumi del 2025, aumentati di poco più del 15%, e sono assegnate ai Paesi che superano il 2% delle importazioni. Per gli altri c'è una quota residua. Sono esclusi dal meccanismo Islanda, Liechtenstein, Norvegia, Ucraina, Kenya e alcuni Paesi in via di sviluppo. Per la Cina serve inoltre un certificato di esportazione rilasciato dalla Camera di commercio cinese competente.\n\nSul piano delle motivazioni, il giornale riporta la nota della Commissione: l'indagine avrebb",
-        "generated_at": "2026-11-25T16:34:16.698489+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
@@ -2728,7 +2612,7 @@
       "id": "PULSE-MEDIA-2550C9455031C29A",
       "story_fingerprint": "2550c9455031c29aeeb7b26a3a3e11a2a3722b6745b3e31384012c8144526ce1",
       "published_at": "2026-11-24T14:13:28+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Case di lusso, + 49% in un anno gli immobili oltre i 10 milioni. E la Toscana batte la Lombardia",
       "reported_headline": "Case di lusso, + 49% in un anno gli immobili oltre i 10 milioni. E la Toscana batte la Lombardia - Il Sole 24 ORE",
       "summary": "",
@@ -2983,7 +2867,7 @@
       "id": "PULSE-MEDIA-F73F589FBA3E4535",
       "story_fingerprint": "f73f589fba3e4535d2f90ad0185fa6ba4743b70dc81595b176b874d6621dd8da",
       "published_at": "2026-11-24T12:05:56+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Olio, in Puglia crolla del 21% il valore dell’export: in un anno bruciati 32 milioni tra crisi internazionali e mercati freddi",
       "reported_headline": "Olio, in Puglia crolla del 21% il valore dell’export: in un anno bruciati 32 milioni tra crisi internazionali e mercati freddi",
       "summary": "",
@@ -3029,22 +2913,13 @@
         "outlet": "bari.corriere.it",
         "original_url": "https://bari.corriere.it/notizie/economia/26_novembre_24/olio-in-puglia-crolla-del-21-il-valore-dell-export-in-un-anno-bruciati-32-milioni-tra-crisi-internazionali-e-mercati-freddi-1555144c-1dce-4cc5-8e71-7adafe1b5xlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://bari.corriere.it/notizie/economia/26_novembre_24/olio-in-puglia-crolla-del-21-il-valore-dell-export-in-un-anno-bruciati-32-milioni-tra-crisi-internazionali-e-mercati-freddi-1555144c-1dce-4cc5-8e71-7adafe1b5xlk.shtml",
-        "source_headline": "Olio, in Puglia crolla del 21% il valore dell’export: in un anno bruciati 32 milioni tra crisi internazionali e mercati freddi",
-        "text": "Secondo l'analisi di Coldiretti Puglia su dati Istat, nel primo semestre 2026 l'export pugliese di oli e grassi vegetali e animali è sceso del 20,6%: da 156,6 a 124,4 milioni di euro, circa 32 milioni in meno. Rispetto ai primi sei mesi del 2024, quando le vendite superavano i 182 milioni, il calo sarebbe del 31,7%.\n\nUna precisazione di metodo: le cifre sono state elaborate e diffuse dall'organizzazione agricola, e l'estratto non permette di verificarle direttamente sulla fonte statistica. La categoria merceologica, inoltre, è più ampia del solo olio extravergine di oliva, e ciò invita a leggere il dato con cautela quando lo si riferisce a un singolo prodotto.\n\nLe cause indicate sono la tensione geopolitica, l'incertezza sui dazi, l'instabilità delle rotte logistiche e la concorrenza di olio a basso prezzo dei Paesi mediterranei. Coldiretti cita anche il forte calo delle quotazioni, che incide sul valore dell'export a prescindere dai volumi. L'estratto non fornisce dati sulle quantità vendute, quindi non è possibile d",
-        "generated_at": "2026-11-25T16:34:09.257731+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
       "id": "PULSE-MEDIA-1888F515208DFA35",
       "story_fingerprint": "1888f515208dfa3570d0b8b01d1ae29f6fdc867a75843344e56bd403478462b4",
       "published_at": "2026-11-24T11:40:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Europa, nel 2027 l’inflazione tornerà sotto il 3%. Ecco perché secondo S&P Global Ratings",
       "reported_headline": "Europa, nel 2027 l’inflazione tornerà sotto il 3%. Ecco perché secondo S&P Global Ratings - Milano Finanza",
       "summary": "",
@@ -3092,7 +2967,7 @@
       "id": "PULSE-MEDIA-2437F83D1E00D853",
       "story_fingerprint": "2437f83d1e00d853e66b4fec58e8265c8a9dc27b329de7092d9211550cd817f5",
       "published_at": "2026-11-24T11:02:11+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Gas, Descalzi (Eni) avverte: «In inverno a rischio prezzi e forniture». Ipotesi proroga del price cap a fine 2026",
       "reported_headline": "Gas, Descalzi (Eni) avverte: «In inverno a rischio prezzi e forniture». Ipotesi proroga del price cap a fine 2026",
       "summary": "",
@@ -3132,15 +3007,6 @@
         "outlet": "corriere.it",
         "original_url": "https://www.corriere.it/economia/energie/26_novembre_24/gas-descalzi-eni-avverte-in-inverno-rischi-su-forniture-e-prezzi-hormuz-pesa-ancora-sui-carburanti-99234c0b-92ce-40c6-9a47-06d085f1dxlk.shtml",
         "evidence_gate": "journalistic_rss_report_not_verified"
-      },
-      "ai_article": {
-        "status": "published",
-        "model": "claude-sonnet-5-5",
-        "source_url": "https://www.corriere.it/economia/energie/26_novembre_24/gas-descalzi-eni-avverte-in-inverno-rischi-su-forniture-e-prezzi-hormuz-pesa-ancora-sui-carburanti-99234c0b-92ce-40c6-9a47-06d085f1dxlk.shtml",
-        "source_headline": "Gas, Descalzi (Eni) avverte: «In inverno a rischio prezzi e forniture». Ipotesi proroga del price cap a fine 2026",
-        "text": "Il quadro delineato da Claudio Descalzi, amministratore delegato di Eni, parla di un inverno europeo a rischio su prezzi e forniture. Si tratta di valutazioni del manager, riportate dal Corriere della Sera, e non di dati verificati in modo indipendente. Descalzi, intervenuto a margine degli Stati generali dell'energia alla Camera, collega il rischio a più fattori: le tensioni nel Golfo, le difficoltà a Hormuz, lo stop dal primo gennaio alle importazioni europee di gas russo colpite da sanzioni e stoccaggi continentali che, a suo dire, «sono partiti bassi». Secondo lui, con un inverno rigido la perdita di 20 miliardi di metri cubi l'anno potrebbe creare problemi. Ha però precisato che oggi è difficile quantificarne l'entità. Un inverno mite attenuerebbe la pressione.\n\nSul fronte dei carburanti, l'ad sostiene che il prezzo del greggio non basti a spiegare quello di benzina e diesel. Indica come fattori i costi di trasporto dal Golfo, che per un cargo possono aggiungere 25-30 dollari, e una scarsità di capacità di raffinazione. Stima il Brent intorno ai 90 dollari, sotto i picchi recenti.\n\nRiguardo al price cap sui carburanti, Descalzi ha confermato l'intenzione di prorogarlo e ha parlato di possibili nov",
-        "generated_at": "2026-11-25T16:34:30.881659+00:00",
-        "method": "AI_summary_from_readable_source_not_independent_fact_check"
       }
     },
     {
@@ -3197,7 +3063,7 @@
       "id": "PULSE-MEDIA-285728F348DE71E9",
       "story_fingerprint": "285728f348de71e9b98cf2a863a30d2c8987076e47624bf734587062caf15c8e",
       "published_at": "2026-11-24T10:33:41+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Prezzi delle case in Europa +11% nell’H1 2026, in Italia su del 5%",
       "reported_headline": "Prezzi delle case in Europa +11% nell’H1 2026, in Italia su del 5% - Requadro",
       "summary": "",
@@ -3293,7 +3159,7 @@
       "id": "PULSE-MEDIA-65F476363A859FF3",
       "story_fingerprint": "65f476363a859ff376e6934b5844e99baf4b249f79d2d919708564ca8b86d61e",
       "published_at": "2026-11-24T10:20:07+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Il mondo del fuori casa vale 243 miliardi di euro, per l'Italia export in crescita",
       "reported_headline": "Il mondo del fuori casa vale 243 miliardi di euro, per l'Italia export in crescita - Quotidiano Nazionale",
       "summary": "",
@@ -3382,41 +3248,6 @@
       }
     },
     {
-      "id": "PULSE-OFFICIAL-C325141991BDD06FB013",
-      "published_at": "2026-11-24T09:55:05+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
-      "headline": "Bando AriSLA 2026: i progetti del CNR premiati",
-      "summary": "",
-      "topic": "ALTRO",
-      "territories": [
-        "milano"
-      ],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14839/bando-arisla-2026-i-progetti-del-cnr-premiati",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12848/medium",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
-    },
-    {
       "id": "PULSE-MEDIA-02F00301100FBBDA",
       "story_fingerprint": "02f00301100fbbda4235fe320152923371c4c53c00056d44ad44c504119cf5f5",
       "published_at": "2026-11-24T09:35:00+00:00",
@@ -3466,7 +3297,7 @@
       "id": "PULSE-MEDIA-61CFE76C25A4989C",
       "story_fingerprint": "61cfe76c25a4989c69bbbca852f8b3d5e2cddea38a62fc702671807102290250",
       "published_at": "2026-11-24T09:28:51+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Mercato auto in Europa: ottobre a +2,6%. Le elettriche sfiorano il 30%",
       "reported_headline": "Mercato auto in Europa: ottobre a +2,6%. Le elettriche sfiorano il 30% - ACI Automobile Club d’Italia",
       "summary": "",
@@ -3516,7 +3347,7 @@
       "id": "PULSE-MEDIA-135B6B87AA679507",
       "story_fingerprint": "135b6b87aa6795070cfec6c6a86706b877a859a2893c8de5d8be86dafad6eba5",
       "published_at": "2026-11-24T08:58:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Mercato auto europeo a ottobre +2,6% nell’UE: BYD supera Fiat, Stellantis perde il 7% e le elettriche salgono al 29,8%",
       "reported_headline": "Mercato auto europeo a ottobre +2,6% nell’UE: BYD supera Fiat, Stellantis perde il 7% e le elettriche salgono al 29,8% - Motori.money",
       "summary": "",
@@ -4127,41 +3958,6 @@
       "primary_research_status": "primary_evidence_not_found"
     },
     {
-      "id": "PULSE-OFFICIAL-95798B55A6B112503925",
-      "published_at": "2026-11-23T17:15:34+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
-      "headline": "Il presidente Lenzi riceve il \"Premio Roma Capitale della Chimica Italiana\"",
-      "summary": "",
-      "topic": "ECONOMIA",
-      "territories": [
-        "roma"
-      ],
-      "pulse_score": 0,
-      "patterns": [],
-      "origin_kind": "pulse_source_only_official",
-      "public_source": {
-        "url": "https://www.cnr.it/it/news/14838/il-presidente-lenzi-riceve-il-premio-roma-capitale-della-chimica-italiana",
-        "domain": "CNR - Notizie ufficiali",
-        "role": "primary_statistical_source",
-        "verification_method": "official_rss_source_headline"
-      },
-      "publication_tier": "official_source_headline",
-      "geographic_scope": {
-        "country_code": "IT"
-      },
-      "publication_status": "published",
-      "editorial_status": "source_only_verified_link",
-      "image_url": "https://www.cnr.it/it/news/immagine/12847/medium",
-      "chart_spec": {
-        "type": "none",
-        "status": "source_only"
-      },
-      "table_spec": {
-        "status": "source_only",
-        "rows": []
-      }
-    },
-    {
       "id": "PULSE-MEDIA-8DB802BEDADE4C7A",
       "story_fingerprint": "8db802bedade4c7a7b31e4bae1d52c84e50cb0b72275f2c74950ad2f7acea7de",
       "published_at": "2026-11-23T17:11:13+00:00",
@@ -4263,7 +4059,7 @@
       "id": "PULSE-MEDIA-D6CCCC8FB1DA6EC2",
       "story_fingerprint": "d6cccc8fb1da6ec288cd3641a81f0064b277809e7f486b261c6cb942b54bc6a6",
       "published_at": "2026-11-23T15:10:30+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Italia Paese di automobilisti: auto e moto per il 69,1% delle persone. I mezzi pubblici si fermano al 9,7%, dietro Francia e Germania. I dati",
       "reported_headline": "Italia Paese di automobilisti: auto e moto per il 69,1% delle persone. I mezzi pubblici si fermano al 9,7%, dietro Francia e Germania. I dati - Orizzonte Scuola Notizie",
       "summary": "",
@@ -4315,7 +4111,7 @@
       "id": "PULSE-MEDIA-449D8FB07F54946E",
       "story_fingerprint": "449d8fb07f54946e2810a0cc21cf7938f4307dff0fc602d3ac1a6bb71a5f2668",
       "published_at": "2026-11-23T14:47:19+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Montagne Italia 2026: +174 mila residenti in sette anni. La montagna non è solo un luogo da cui partire",
       "reported_headline": "Montagne Italia 2026: +174 mila residenti in sette anni. La montagna non è solo un luogo da cui partire - PlanetMountain.com",
       "summary": "",
@@ -4363,7 +4159,7 @@
       "id": "PULSE-MEDIA-C725B2D9F97472CD",
       "story_fingerprint": "c725b2d9f97472cdcbc8de91e1b75e4bc5d7e31df61c78dd5e13eb14e0d79873",
       "published_at": "2026-11-23T14:26:00+00:00",
-      "last_seen_at": "2026-11-25T11:09:58.798822+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Perché 25 milioni di italiani non hanno redditi per il Fisco? Il paradosso Irpef e gli incentivi al sommerso",
       "reported_headline": "Perché 25 milioni di italiani non hanno redditi per il Fisco? Il paradosso Irpef e gli incentivi al sommerso - Milano Finanza",
       "summary": "",
@@ -4465,7 +4261,7 @@
       "id": "PULSE-MEDIA-96B41611CFCC9402",
       "story_fingerprint": "96b41611cfcc9402d2f90829d85c9606f79c703d6d62f97c9df615e0a62bd4fd",
       "published_at": "2026-11-23T12:15:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Bond per proteggersi dall’inflazione: 4 obbligazioni indicizzate che rendono oltre il 5,5%",
       "reported_headline": "Bond per proteggersi dall’inflazione: 4 obbligazioni indicizzate che rendono oltre il 5,5% - Milano Finanza",
       "summary": "",
@@ -4515,15 +4311,15 @@
       "id": "PULSE-MEDIA-C338A0C34C9B670E",
       "story_fingerprint": "c338a0c34c9b670e09dd068e37b6a0b53b63cb904cb8348d3929ffc69d63af32",
       "published_at": "2026-11-23T11:55:05+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Il 30% degli italiani versa il 78% di Irpef e 24 milioni non dichiarano reddito",
-      "reported_headline": "Il 30% degli italiani versa il 78% di Irpef e 24 milioni non dichiarano reddito - Quotidiano Nazionale",
+      "reported_headline": "Il 30% degli italiani versa il 78% di Irpef e 24 milioni non dichiarano reddito - La Gazzetta del Mezzogiorno",
       "summary": "",
       "topic": "ALTRO",
       "pulse_score": 0,
       "public_source": {
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdmtBdzZVV01OZ2VmdnVsalVEdEoweU1tall4N2NNeEFJM01XcWp1eVd5U3R1NThGMDFpQUNDNkxFcmZjamxsbkFObUpIZ2JpbUxldVFGd19Oa2t0WEdjb2Z5VDRsbzJuU3JKM2R3UWVBSU9pWUtjeG1MUDdHSWg2OGxkVFBIY0Iw?oc=5",
-        "domain": "Quotidiano Nazionale",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQS1V3SzQybTBtbjJVYkJqU2ZfLVJRZElpbHhQVU92N2g3dkF6S2VMeXllbzg0R2tpMkJMMFFfNlp3dGZyNUhFOHhPcm1xNE9Wdlk1Wkx0bmU4REVXMUxHZ296NzRqbGJTRUhpbTVQOVJCUlNCYWlaU2NXZDk0QVV2c2pFWlY5X1dhdzU1NmtveFh6dEFDVHh1OHphbDV3TGZIZUthV2RLS0VpM081SUM3OVA0TVVoZ3hpeE5HLWJYRlgzVVdiUkN0Uy1qMGNOa3pQOVJfUDc2dmFLZTlZTzNr0gHeAUFVX3lxTE1rTVYzYTEwYjFpbHk0a1pIaW5WaVpDYW5ZMzBib2JaRUNKR2dJUGlmRVUzNi04VkVUSngzSVVRR3hfVUdyVUxvZFFmdFAybTY2NVhROHpKeE9yS0FBZFBseFQwSTdvNTBaZ2NFQU5yQk9yMnpjWVpHS3hNa1NXeHZsbERIVE13eDl1NVBCbnUweS01VlVvODUwbVVZUGZDOVNEb0lTLXVpbjRDUWtxUXdCWmFDN3p1bkFPWDQtbk5GUmpVSDJkM2lPUFlOcU9YNXE5R2o3VDYzcGZDcEhjdw?oc=5",
+        "domain": "La Gazzetta del Mezzogiorno",
         "role": "journalistic_source",
         "verification_method": "rss_dated_media_report_not_primary_statistical_verification",
         "verification_score": 0
@@ -4560,8 +4356,8 @@
       },
       "discovery": {
         "role": "journalistic_radar",
-        "outlet": "Quotidiano Nazionale",
-        "original_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdmtBdzZVV01OZ2VmdnVsalVEdEoweU1tall4N2NNeEFJM01XcWp1eVd5U3R1NThGMDFpQUNDNkxFcmZjamxsbkFObUpIZ2JpbUxldVFGd19Oa2t0WEdjb2Z5VDRsbzJuU3JKM2R3UWVBSU9pWUtjeG1MUDdHSWg2OGxkVFBIY0Iw?oc=5",
+        "outlet": "La Gazzetta del Mezzogiorno",
+        "original_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQS1V3SzQybTBtbjJVYkJqU2ZfLVJRZElpbHhQVU92N2g3dkF6S2VMeXllbzg0R2tpMkJMMFFfNlp3dGZyNUhFOHhPcm1xNE9Wdlk1Wkx0bmU4REVXMUxHZ296NzRqbGJTRUhpbTVQOVJCUlNCYWlaU2NXZDk0QVV2c2pFWlY5X1dhdzU1NmtveFh6dEFDVHh1OHphbDV3TGZIZUthV2RLS0VpM081SUM3OVA0TVVoZ3hpeE5HLWJYRlgzVVdiUkN0Uy1qMGNOa3pQOVJfUDc2dmFLZTlZTzNr0gHeAUFVX3lxTE1rTVYzYTEwYjFpbHk0a1pIaW5WaVpDYW5ZMzBib2JaRUNKR2dJUGlmRVUzNi04VkVUSngzSVVRR3hfVUdyVUxvZFFmdFAybTY2NVhROHpKeE9yS0FBZFBseFQwSTdvNTBaZ2NFQU5yQk9yMnpjWVpHS3hNa1NXeHZsbERIVE13eDl1NVBCbnUweS01VlVvODUwbVVZUGZDOVNEb0lTLXVpbjRDUWtxUXdCWmFDN3p1bkFPWDQtbk5GUmpVSDJkM2lPUFlOcU9YNXE5R2o3VDYzcGZDcEhjdw?oc=5",
         "evidence_gate": "journalistic_rss_report_not_verified"
       },
       "primary_research_last_attempt_at": "2026-11-23T12:18:20.235329+00:00",
@@ -4673,7 +4469,7 @@
       "id": "PULSE-MEDIA-302EFB8DC5686CEF",
       "story_fingerprint": "302efb8dc5686cef7b8ba7b7743af5ec2d5af0260afe549bd81be05712156012",
       "published_at": "2026-11-23T11:14:03+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "L’Ue apre indagine antitrust sull’imbottigliatore Coca-Cola in 8 Paesi europei",
       "reported_headline": "L’Ue apre indagine antitrust sull’imbottigliatore Coca-Cola in 8 Paesi europei - Il Sole 24 ORE",
       "summary": "",
@@ -4716,7 +4512,7 @@
       "id": "PULSE-MEDIA-D632A21C12EBA35B",
       "story_fingerprint": "d632a21c12eba35b7381fd31f4e870aa9a5e22eb287cb07ab689897a1ab8812a",
       "published_at": "2026-11-23T11:03:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Turismo, Istat: arrivi -0,5%, presenze +3%",
       "reported_headline": "Turismo, Istat: arrivi -0,5%, presenze +3% - RaiNews",
       "summary": "",
@@ -4862,7 +4658,7 @@
       "id": "PULSE-MEDIA-45DC0C798D590028",
       "story_fingerprint": "45dc0c798d590028148eae47f7579202911f28ae092c695d131f5abcf84817b2",
       "published_at": "2026-11-23T10:33:00+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat)",
       "reported_headline": "Turismo: in 3* trim arrivi in calo dello 0,5%, presenze +3% trainate da stranieri (Istat) - Milano Finanza",
       "summary": "",
@@ -5072,7 +4868,7 @@
     {
       "id": "PULSE-OFFICIAL-5E3BA3B6FD97918F251F",
       "published_at": "2026-11-23T09:01:15+00:00",
-      "last_seen_at": "2026-11-25T15:20:54.202788+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Flussi turistici – III trimestre 2026",
       "summary": "",
       "topic": "ALTRO",
@@ -12543,7 +12339,7 @@
       "id": "PULSE-MEDIA-3F8B344CCD1B001C",
       "story_fingerprint": "3f8b344ccd1b001cdcec1cc8c564919faa0f3ff449a0b3d2ac97c96678cc86b7",
       "published_at": "2026-11-18T06:00:25+00:00",
-      "last_seen_at": "2026-11-25T07:37:47.426061+00:00",
+      "last_seen_at": "2026-11-25T17:14:04.941038+00:00",
       "headline": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3%",
       "reported_headline": "Inflazione al 5,5%, ai massimi del 2023. Previsioni europee per l'Italia: debito record e deficit sopra il 3% - Giornale Radio",
       "summary": "",
