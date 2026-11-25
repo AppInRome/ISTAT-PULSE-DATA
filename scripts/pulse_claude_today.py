@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-time Claude 5.5 summaries for TODAY PULSE items, through one budgeted gateway.
+"""One-time Claude 5.5 summaries for current PULSE items across News, Territory and GREEN, through one budgeted gateway.
 
 Never calls Anthropic directly, stores no AI key, never fabricates article content
 from a title, skips inaccessible sources and Google News transport pages.
@@ -39,14 +39,23 @@ def text_from_original(url):
 
 def publish(articles_file,index_file,endpoint,token):
     data=json.loads(Path(articles_file).read_text(encoding="utf-8"))
-    index=json.loads(Path(index_file).read_text(encoding="utf-8"))
+    paths=[Path(index_file)]
+    paths.extend(p for p in (Path(index_file).with_name("territori_index.json"), Path(index_file).with_name("green_index.json")) if p.exists())
+    indices=[json.loads(p.read_text(encoding="utf-8")) for p in paths]
     by_id={a["id"]:a for a in data.get("articles",[])}
-    today=index.get("oggi",[])
-    if not isinstance(today,list):raise ValueError("invalid_news_index")
+    today=[]
+    # Round-robin across sections, newest day first; one shared limit.
+    for day in ("oggi","ieri"):
+        buckets=[index.get(day,[]) for index in indices]
+        if any(not isinstance(b,list) for b in buckets):raise ValueError("invalid_news_index")
+        for i in range(max(map(len,buckets),default=0)):
+            for b in buckets:
+                if i<len(b) and b[i] not in today:today.append(b[i])
     report={"today":len(today),"created":0,"already_present":0,"unavailable_source":0,
             "rejected":0,"budget_exhausted":False}
+    attempts=0
     for article_id in today:
-        if report["created"]>=MAX_NEW:break
+        if attempts>=MAX_NEW:break
         item=by_id.get(article_id)
         if not item:continue
         if item.get("ai_article",{}).get("status")=="published":
@@ -58,6 +67,7 @@ def publish(articles_file,index_file,endpoint,token):
         original=text_from_original(url)
         if not original:
             report["unavailable_source"]+=1;continue
+        attempts+=1
         try:
             response=requests.post(endpoint.rstrip("/")+"/pulse/draft",json={
                 "source_url":url,"headline":headline,"source_text":original},
@@ -68,8 +78,11 @@ def publish(articles_file,index_file,endpoint,token):
         if response.status_code in (402,429):
             report["budget_exhausted"]=True;break
         if response.status_code!=200:
-            report["rejected"]+=1;continue
-        payload=response.json()
+            report["rejected"]+=1;break
+        try:
+            payload=response.json()
+        except ValueError:
+            report["rejected"]+=1;break
         text=str(payload.get("text") or "").strip()
         if not 180<=len(text)<=7000 or payload.get("model")!="claude-sonnet-5-5":
             report["rejected"]+=1;continue
