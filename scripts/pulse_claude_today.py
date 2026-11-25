@@ -67,6 +67,9 @@ def publish(articles_file,index_file,endpoint,token):
         seen_urls.update(canonical_url(a["source_url"]) for a in json.loads(recovery.read_text(encoding="utf-8"))["articles"])
     ledger=Path(articles_file).with_name("ai_attempts.json")
     attempted=json.loads(ledger.read_text(encoding="utf-8")) if ledger.exists() else {}
+    archive=Path(articles_file).with_name("ai_published_archive.json")
+    permanent=json.loads(archive.read_text(encoding="utf-8")) if archive.exists() else {"articles":[]}
+    seen_urls.update(canonical_url(a["ai_article"]["source_url"]) for a in permanent["articles"] if (a.get("ai_article") or {}).get("source_url"))
     for article_id in today:
         if attempts>=MAX_NEW:break
         item=by_id.get(article_id)
@@ -111,6 +114,8 @@ def publish(articles_file,index_file,endpoint,token):
             "generated_at":datetime.now(timezone.utc).isoformat(),
             "method":"AI_summary_from_readable_source_not_independent_fact_check"}
         report["created"]+=1
+        permanent["articles"].append(item)
+        write_json(archive,permanent)
         write_json(articles_file,data)
     if report["created"]:
         path=Path(articles_file)
