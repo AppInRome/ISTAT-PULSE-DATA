@@ -33,3 +33,34 @@ class ClaudeNewsTests(TestCase):
     def test_no_paid_call_if_disabled(self):
         with patch.dict("os.environ",{"PULSE_CLAUDE_ENABLED":"false"}):
             self.assertEqual(editor.main(),0)
+
+    def test_sections_yesterday_and_shared_deduplication(self):
+        with TemporaryDirectory() as directory:
+            root=Path(directory); data=root/"articles.json"; index=root/"index.json"
+            ids=["news","territory","green","yesterday"]
+            headline="Rapporto statistico ufficiale con data corretta"
+            url="https://www.istat.it/comunicato-stampa/example"
+            data.write_text(json.dumps({"articles":[{"id":i,"public_source":{"url":url},"headline":headline} for i in ids]}))
+            index.write_text(json.dumps({"oggi":["news"],"ieri":["yesterday"]}))
+            (root/"territori_index.json").write_text(json.dumps({"oggi":["territory","news"]}))
+            (root/"green_index.json").write_text(json.dumps({"oggi":["green","territory"]}))
+            class Response:
+                status_code=200
+                def json(self):return {"text":"X"*200,"source_url":url,"source_headline":headline,"model":"claude-sonnet-5-5"}
+            with patch.object(editor,"text_from_original",return_value="Fonte valida "*100), patch.object(editor.requests,"post",return_value=Response()) as send:
+                self.assertEqual(editor.publish(data,index,"https://worker.test","job")["created"],4)
+                self.assertEqual(editor.publish(data,index,"https://worker.test","job")["created"],0)
+                self.assertEqual(send.call_count,4)
+
+    def test_failed_responses_count_toward_shared_limit(self):
+        with TemporaryDirectory() as directory:
+            root=Path(directory); data=root/"articles.json"; index=root/"index.json"
+            ids=[str(i) for i in range(25)]
+            data.write_text(json.dumps({"articles":[{"id":i,"public_source":{"url":"https://www.istat.it/example"},"headline":"Rapporto statistico ufficiale con data corretta"} for i in ids]}))
+            index.write_text(json.dumps({"oggi":ids}))
+            class Response:
+                status_code=200
+                def json(self):return {"text":"invalid"}
+            with patch.object(editor,"text_from_original",return_value="Fonte valida "*100), patch.object(editor.requests,"post",return_value=Response()) as send:
+                self.assertEqual(editor.publish(data,index,"https://worker.test","job")["created"],0)
+                self.assertEqual(send.call_count,20)
