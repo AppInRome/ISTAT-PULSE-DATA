@@ -1,9 +1,9 @@
-name: PULSE - Sonnet 5.5 articoli Oggi (spesa disabilitata per default)
+name: PULSE - Sonnet 5.5 Notizie, Territorio e GREEN (budget condiviso)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "25 20 * * *"
+    - cron: "25 8,12,16,20 * * *"
       timezone: "Europe/Rome"
   pull_request:
     paths:
@@ -43,7 +43,7 @@ jobs:
       - name: Verify original title, dates and links unchanged
         if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
         run: python -m json.tool data/news/articles.json > /dev/null
-      - name: Save same IDs to today's original news feed
+      - name: Save same IDs to original news feed
         if: github.ref == 'refs/heads/main' && vars.PULSE_CLAUDE_ENABLED == 'true'
         run: |
           git config user.name "PULSE verified feed bot"
