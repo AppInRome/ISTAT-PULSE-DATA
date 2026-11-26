@@ -119,7 +119,8 @@ def rss_items(url):
                         candidate.lower().split("?")[0].endswith((".jpg",".jpeg",".png",".webp"))):
                     image_url=candidate
                     break
-        if title and link: out.append({"title":title,"url":link,"summary":clean_text(desc),
+        rights=" ".join((el.text or el.attrib.get("resource","") or el.attrib.get("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource","")) for el in item if el.tag.rsplit("}",1)[-1].lower() in ("rights","license","copyright"))
+        if title and link: out.append({"title":title,"url":link,"summary":clean_text(desc),"source_rights":rights,
                                        "published_raw":pub,"publisher":publisher,
                                        "image_url":image_url})
     return out if os.environ.get("PULSE_SOURCE_ONLY") == "1" else out[:MAX_ITEMS_PER_FEED]
@@ -930,6 +931,41 @@ def source_relevance(title, summary=""):
         return False
     return title_topic or title_evidence or (summary_topic and summary_evidence)
 
+def licensed_source_preview(feed, entry):
+    """Publisher-supplied original RSS text only, with explicit reuse permission.
+    Never scrape full press articles, bypass paywalls or repurpose generated summaries.
+    ISTAT direct official RSS: site terms CC BY 4.0 unless otherwise indicated.
+    """
+    url=str(entry.get("url") or "")
+    host=canonical_host(url)
+    feed_host=canonical_host(str(feed.get("url") or ""))
+    if not host or host=="news.google.com" or feed_host!=host:
+        return {}
+    rights=str(entry.get("source_rights") or "").casefold()
+    body=clean_text(entry.get("summary") or "")
+    title=clean_text(entry.get("title") or "")
+    if not body or body==title or len(body)<30:
+        return {}
+    if re.search(r"tutti i diritti riservati|all rights reserved|riproduzione riservata|non riproducibile",rights+" "+body,re.I):
+        return {}
+    license_name=""
+    if "creativecommons.org/licenses/by/4.0" in rights or re.search(r"\bcc[\s-]+by[\s-]+4\.0\b",rights):
+        license_name="CC BY 4.0"
+    elif "creativecommons.org/publicdomain/zero/1.0" in rights or "cc0" in rights:
+        license_name="CC0"
+    elif host=="istat.it" and bool(feed.get("primary_source")) and not rights:
+        license_name="CC BY 4.0"
+    if not license_name:
+        return {}
+    def clip(text,n):
+        return text if len(text)<=n else text[:n].rsplit(" ",1)[0]+"…"
+    return {"source_excerpt":clip(body,240),
+            "source_original_text":clip(body,6000),
+            "source_excerpt_license":license_name,
+            "source_excerpt_origin":"publisher_rss_description",
+            "source_license_url":"https://creativecommons.org/licenses/by/4.0/" if license_name=="CC BY 4.0" else "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source_terms_url":"https://www.istat.it/note-legali/" if host=="istat.it" else ""}
+
 def publish_source_only(by_id, feed_items, candidates, now):
     """Publish RSS source headlines and genuine links, never PULSE prose/graphs.
 
@@ -1002,6 +1038,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
                        "ilfattoquotidiano.it":"Il Fatto Quotidiano","open.online":"Open"}
                 name=names.get(host.removeprefix("www."),name)
             public[id_]={
+                **licensed_source_preview(feed,entry),
                 "id":id_,"published_at":dt.isoformat(),"last_seen_at":now.isoformat(),
                 "headline":title,"reported_headline":title,"summary":"","source_topic_policy":"v2",
                 "topic":classify_topic(context),"territories":detect_geo(context),
