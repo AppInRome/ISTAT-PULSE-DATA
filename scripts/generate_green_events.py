@@ -2282,7 +2282,7 @@ def run_copernicus(source):
     client=cdsapi.Client(
         url="https://cds.climate.copernicus.eu/api",
         key=token,
-        quiet=True,
+        quiet=True, timeout=60, retry_max=2, sleep_max=30,
     )
     dataset_id="reanalysis-era5-single-levels-monthly-means"
 
@@ -2335,12 +2335,42 @@ def run_copernicus(source):
             raise RuntimeError(f"Variabili ERA5 non trovate: {found_vars}")
         return row
 
+    cache_dir=Path(os.environ.get("PULSE_ERA5_CACHE_DIR","data/era5_cache"))
+    cache_dir.mkdir(parents=True,exist_ok=True)
+    def get_month(y,m):
+        period=f"{y}-{m:02d}"
+        cached=cache_dir/(period+".json")
+        if cached.exists():
+            try:
+                row=json.loads(cached.read_text(encoding="utf-8"))
+                recent=(date.today().year-y)*12+date.today().month-m<=4
+                max_age=7*86400 if recent else 180*86400
+                if (row.get("method")=="era5_italy_box_v1" and row.get("period")==period
+                        and all(math.isfinite(float(row[k])) for k in ("temperature_c","precipitation_mm_day"))
+                        and time.time()-cached.stat().st_mtime<max_age):
+                    return row
+            except (ValueError,TypeError,KeyError,OSError):
+                pass
+        target=Path(tempfile.gettempdir())/f"pulse_era5_{period}.nc"
+        retrieve_month(y,m,target)
+        files=netcdf_files(target,period)
+        if not files: raise RuntimeError("nessun NetCDF")
+        row=decode_single_month(files,period)
+        if not all(k in row and math.isfinite(float(row[k])) for k in ("temperature_c","precipitation_mm_day")):
+            raise RuntimeError("ERA5: osservazione incompleta")
+        row["method"]="era5_italy_box_v1"
+        stage=cached.with_suffix(".tmp")
+        stage.write_text(json.dumps(row,ensure_ascii=False),encoding="utf-8")
+        stage.replace(cached)
+        return row
+
     # Discover the latest actually published ERA5 month. Searching backwards
     # makes the connector independent from calendar assumptions and publication
     # delays.
     first=date.today().replace(day=1)
     candidates=[]
-    y,m=first.year,first.month
+    y,m=first.year,first.month-1
+    if m==0: y-=1; m=12
     for _ in range(6):
         candidates.append((y,m))
         m-=1
@@ -2353,12 +2383,7 @@ def run_copernicus(source):
     for y,m in candidates:
         target=Path(tempfile.gettempdir())/f"pulse_era5_latest_{y}_{m:02d}.nc"
         try:
-            retrieve_month(y,m,target)
-            files=netcdf_files(target,f"latest_{y}_{m:02d}")
-            if not files:
-                raise RuntimeError("Pacchetto ERA5 scaricato ma nessun file NetCDF trovato")
-            period=f"{y}-{m:02d}"
-            latest_row=decode_single_month(files,period)
+            latest_row=get_month(y,m)
             checked.append(latest_row)
             latest_tuple=(y,m)
             break
@@ -2395,11 +2420,7 @@ def run_copernicus(source):
             continue
         target=Path(tempfile.gettempdir())/f"pulse_era5_hist_{y}_{m:02d}.nc"
         try:
-            retrieve_month(y,m,target)
-            files=netcdf_files(target,f"hist_{y}_{m:02d}")
-            if not files:
-                raise RuntimeError("nessun NetCDF")
-            history.append(decode_single_month(files,period))
+            history.append(get_month(y,m))
         except Exception as exc:
             errors.append({"period":period,"error":clean(exc)})
 
@@ -2518,6 +2539,8 @@ def run_copernicus(source):
         "history_months_requested":30,
         "history_months_acquired":len(history),
         "history_errors":errors[-8:],
+        "refresh_degraded":bool(errors) or (date.today().day>=8 and latest!=f"{candidates[0][0]}-{candidates[0][1]:02d}"),
+        "spatial_scope":"Media sul riquadro 47.5N, 6E, 35.5N, 18.5E; non media sui soli confini nazionali.",
         "note":(
             f"Copernicus ERA5 {'attivo come feed PULSE' if status=='feed' else 'collegato'}. "
             f"Ultimo mese acquisito: {latest}; {len(history)}/30 mesi disponibili per il motore statistico. "
