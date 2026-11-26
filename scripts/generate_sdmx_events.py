@@ -12,6 +12,7 @@ import hashlib
 import json
 import math
 import urllib.request
+import urllib.error
 import time
 import threading
 import xml.etree.ElementTree as ET
@@ -284,7 +285,7 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
         raise RuntimeError("SDMX upstream unavailable or temporarily rate-limited: circuit breaker open")
     # Valid agency-qualified SDMX flow reference, with an unbounded latest end
     # to avoid the ISTAT known endPeriod off-by-one defect.
-    url=f"{BASE}/IT1,{flow}/all?startPeriod={start}"
+    url=f"{BASE}/IT1,{flow}/all?startPeriod={start}&lastNObservations=36"
     req=urllib.request.Request(
         url,
         headers={
@@ -312,6 +313,10 @@ def fetch(dataset: dict) -> tuple[bytes,str]:
         except Exception as exc:
             last = exc
             print(f"SDMX REQUEST ERROR {flow} attempt {attempt}/1: {exc!r}", flush=True)
+            if isinstance(exc,urllib.error.HTTPError) and exc.code in (403,429):
+                _CONSECUTIVE_FAILURES=_CIRCUIT_BREAKER_LIMIT
+                print("::warning::SDMX rate/access limit: stop, retry in a later scheduled batch",flush=True)
+                raise
     _CONSECUTIVE_FAILURES += 1
     if _CONSECUTIVE_FAILURES >= _CIRCUIT_BREAKER_LIMIT:
         print("::warning::ISTAT SDMX upstream likely blocked; halt further remote requests and keep last good data",flush=True)
