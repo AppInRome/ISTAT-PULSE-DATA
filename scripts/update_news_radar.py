@@ -122,7 +122,7 @@ def rss_items(url):
         if title and link: out.append({"title":title,"url":link,"summary":clean_text(desc),
                                        "published_raw":pub,"publisher":publisher,
                                        "image_url":image_url})
-    return out[:MAX_ITEMS_PER_FEED]
+    return out if os.environ.get("PULSE_SOURCE_ONLY") == "1" else out[:MAX_ITEMS_PER_FEED]
 
 def score_candidate(text):
     low=text.lower()
@@ -898,6 +898,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
                 not str(src.get("url","")).startswith("https://")):
             continue
         item=dict(raw)
+        item.pop("ai_article",None)
         item.pop("pulse_article_body",None)
         item.pop("pulse_summary",None)
         item.pop("pulse_title",None)
@@ -910,50 +911,57 @@ def publish_source_only(by_id, feed_items, candidates, now):
         public[item["id"]]=item
 
     for feed, items in feed_items:
-        if not feed.get("primary_source"):
-            continue
+        official=bool(feed.get("primary_source"))
         for entry in items:
             url=str(entry.get("url") or "").strip()
-            title=clean_text(entry.get("title") or "").strip()[:220]
-            dt=None
+            title=clean_text(entry.get("title") or "").strip()
+            publisher=str(entry.get("publisher") or "").strip()
+            host=urllib.parse.urlsplit(url).hostname or ""
+            if host=="news.google.com" and publisher and title.endswith(" - "+publisher):
+                title=title[:-len(" - "+publisher)].rstrip()
             try:
                 dt=parsedate_to_datetime(entry.get("published_raw",""))
                 if dt.tzinfo is None: continue
                 dt=dt.astimezone(timezone.utc)
                 if not timedelta(0)<=now-dt<=timedelta(days=3): continue
-            except (ValueError,TypeError,OverflowError):
+            except (ValueError,TypeError,OverflowError,IndexError):
                 continue
-            if (not url.startswith("https://") or len(title)<25 or
-                    disallowed_headline(title)):
+            if not url.startswith("https://") or not host or not title:
                 continue
-            # Stable publisher URL + title; same item is not republished tomorrow.
-            identity=hashlib.sha256((url+"|"+title.casefold()).encode()).hexdigest()
-            id_="PULSE-OFFICIAL-"+identity[:20].upper()
-            old=public.get(id_) or by_id.get(id_) or {}
-            original_date=old.get("published_at") or dt.isoformat()
-            topic=classify_topic(title+" "+str(entry.get("summary") or ""))
-            geos=detect_geo(title+" "+str(entry.get("summary") or ""))
-            src_host=urllib.parse.urlsplit(url).hostname or ""
-            candidate_image=str(entry.get("image_url") or "").strip()
-            image_host=urllib.parse.urlsplit(candidate_image).hostname or ""
-            image_ok=(candidate_image.startswith("https://") and image_host and
-                      (image_host==src_host or image_host.endswith("."+src_host)))
+            # Topic-specific search feeds already select relevance upstream.
+            # General news feeds only need a lightweight topic match, never a
+            # numerical claim, evidence score, official document or AI.
+            feed_url=str(feed.get("url") or "")
+            focused=official or "news.google.com/rss/search" in feed_url or any(
+                word in str(feed.get("name","")).casefold()
+                for word in ("economia","energia","ambiente"))
+            context=title+" "+str(entry.get("summary") or "")
+            if not focused and not any(re.search(r"\b"+re.escape(term)+r"\b",context,re.I)
+                                       for term in STAT_TERMS):
+                continue
+            # Preserve each publisher's article, deduplicate repeated feed hits.
+            identity=hashlib.sha256(url.encode()).hexdigest()
+            id_=("PULSE-OFFICIAL-" if official else "PULSE-MEDIA-")+identity[:20].upper()
+            name=publisher or str(feed.get("name") or host)
+            if not publisher and not official:
+                names={"corriere.it":"Corriere della Sera","repubblica.it":"la Repubblica",
+                       "ilsole24ore.com":"Il Sole 24 Ore","ansa.it":"ANSA",
+                       "adnkronos.com":"Adnkronos","agi.it":"AGI","rainews.it":"RaiNews",
+                       "ilmessaggero.it":"Il Messaggero","fanpage.it":"Fanpage",
+                       "ilfattoquotidiano.it":"Il Fatto Quotidiano","open.online":"Open"}
+                name=names.get(host.removeprefix("www."),name)
             public[id_]={
-                **({"ai_article":old["ai_article"]} if
-                   isinstance(old.get("ai_article"),dict) and
-                   old["ai_article"].get("source_url")==url and
-                   old["ai_article"].get("source_headline")==title else {}),
-                "id":id_,"published_at":original_date,"last_seen_at":now.isoformat(),
-                "headline":title,"summary":"","topic":topic,"territories":geos,
-                "pulse_score":0,"patterns":[],"origin_kind":"pulse_source_only_official",
-                "public_source":{"url":url,"domain":str(feed.get("name") or src_host),
-                                 "role":"primary_statistical_source",
-                                 "verification_method":"official_rss_source_headline"},
-                "publication_tier":"official_source_headline",
+                "id":id_,"published_at":dt.isoformat(),"last_seen_at":now.isoformat(),
+                "headline":title,"reported_headline":title,"summary":"",
+                "topic":classify_topic(context),"territories":detect_geo(context),
+                "pulse_score":0,"patterns":[],
+                "origin_kind":"pulse_source_only_official" if official else "pulse_media_radar",
+                "public_source":{"url":url,"domain":name,
+                                 "role":"primary_statistical_source" if official else "journalistic_source",
+                                 "verification_method":"rss_source_headline"},
+                "publication_tier":"official_source_headline" if official else "reported_by_media_pending_primary_verification",
                 "geographic_scope":{"country_code":"IT"},
-                "publication_status":"published",
-                "editorial_status":"source_only_verified_link",
-                "image_url":candidate_image if image_ok else "",
+                "publication_status":"published","editorial_status":"source_only_verified_link",
                 "chart_spec":{"type":"none","status":"source_only"},
                 "table_spec":{"status":"source_only","rows":[]},
             }
@@ -963,7 +971,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
     idx={"generated_at":now.isoformat(),"oggi":[],"ieri":[],"archivio":[]}
     for item in items:
         source=item.get("public_source") or {}
-        key=(source.get("url",""),item["headline"].casefold())
+        key=source.get("url","")
         if key in seen:continue
         seen.add(key)
         idx[bucket_date(item.get("published_at",""),now).lower()].append(item["id"])
@@ -996,6 +1004,23 @@ def main():
     ROOT.mkdir(parents=True,exist_ok=True)
     cfg=load_json(CFG,{})
     old_articles=load_json(ARTICLES,{"articles":[]}).get("articles",[])
+    if os.environ.get("PULSE_SOURCE_ONLY") == "1":
+        from concurrent.futures import ThreadPoolExecutor
+        now=datetime.now(timezone.utc)
+        configured=cfg.get("feeds",[])
+        old_by_id={x["id"]:x for x in old_articles if isinstance(x,dict) and x.get("id")}
+        def scan(feed):
+            try:
+                entries=rss_items(feed["url"])
+                return feed,entries,{"radar":feed.get("name"),"status":"radar_fetched","items_fetched":len(entries)}
+            except Exception as exc:
+                return feed,[],{"radar":feed.get("name"),"status":"radar_error","error":str(exc)[:180]}
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            results=list(pool.map(scan,configured))
+        feed_items=[(feed,entries) for feed,entries,record in results if record["status"]=="radar_fetched"]
+        candidates=[record for feed,entries,record in results]
+        publish_source_only(old_by_id,feed_items,candidates,now)
+        return
     cleaned_articles=[]
     # Migrate old day-dependent IDs into one permanent story identity.
     # When duplicates already exist across days, keep the earliest first-seen
