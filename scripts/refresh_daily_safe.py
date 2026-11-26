@@ -306,7 +306,7 @@ def green_refresh(temp: Path) -> dict:
     changed=merge_events(new) if new else 0
     blocked=[]
     for name,source in stats["sources"].items():
-        if source.get("status") in ("error","credential_required") or source.get("fallback_last_good") or source.get("http_ok") is False:
+        if source.get("status") in ("error","credential_required") or source.get("fallback_last_good") or source.get("refresh_degraded") or source.get("http_ok") is False:
             blocked.append({"source":name,"status":source.get("status"),
                             "error":source.get("refresh_error") or source.get("note",""),
                             "latest_period":source.get("latest_period","")})
@@ -369,7 +369,7 @@ def sdmx_refresh(temp: Path) -> dict:
 
 def main() -> int:
     p=argparse.ArgumentParser()
-    p.add_argument("--mode",choices=("all","news","stats","demo"),default="all")
+    p.add_argument("--mode",choices=("all","news","stats","demo","audit"),default="all")
     p.add_argument("--dry-run",action="store_true",help="Convalida risorse locali; non effettua download")
     args=p.parse_args()
     if args.dry_run:
@@ -382,7 +382,7 @@ def main() -> int:
     status = read_json(STATUS, {"version":1,"sections":{}})
     sections=status.setdefault("sections",{})
     status["last_check_at"]=now_iso()
-    tasks = [("regioni",demo_refresh)] if args.mode=="demo" else [("notizie",news_refresh)] if args.mode=="news" else (
+    tasks = [("green",green_refresh),("territori",sdmx_refresh),("regioni",demo_refresh)] if args.mode=="audit" else [("regioni",demo_refresh)] if args.mode=="demo" else [("notizie",news_refresh)] if args.mode=="news" else (
             [("notizie",news_refresh),("green",green_refresh),("territori",sdmx_refresh)] if args.mode=="all"
             else [("green",green_refresh),("territori",sdmx_refresh)])
     failed=0
@@ -427,6 +427,7 @@ def main() -> int:
         "territori": {"events": "data/pulse_events.tsv", "observations": "data/pulse_observations.tsv",
                        "manifest": "data/pulse_observations_manifest.json",
                        "editorial_news_index":"data/news/territori_index.json"},
+        "regioni": {"events":"data/pulse_events.tsv","observations":"data/pulse_observations.tsv","manifest":"data/pulse_manifest.json"},
         "green": {"events": "data/pulse_events.tsv", "status": "data/pulse_green_status.json",
                   "editorial_news_index":"data/news/green_index.json"},
     }
