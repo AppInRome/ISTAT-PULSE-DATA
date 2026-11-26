@@ -65,3 +65,16 @@ class SourceStreamTest(unittest.TestCase):
                 self.assertEqual(idx["source_topic_policy"],"v2")
                 articles=json.loads((root/"articles.json").read_text())["articles"]
                 self.assertEqual({a["public_source"]["domain"] for a in articles},{"Testata A","Testata B"})
+
+    def test_licensed_preview_only(self):
+        entry={"title":"Titolo statistico","url":"https://www.istat.it/comunicato-stampa/esempio/",
+               "summary":"Un testo originale di prova che contiene informazioni statistiche di pubblico interesse."}
+        feed={"url":"https://www.istat.it/feed","primary_source":True}
+        preview=radar.licensed_source_preview(feed,entry)
+        self.assertEqual(preview["source_excerpt_license"],"CC BY 4.0")
+        self.assertEqual(preview["source_excerpt"],entry["summary"])
+        self.assertEqual(radar.licensed_source_preview(feed,{**entry,"source_rights":"Tutti i diritti riservati"}),{})
+        press={**entry,"url":"https://example.org/news/1"}
+        self.assertEqual(radar.licensed_source_preview({"url":"https://example.org/feed"},press),{})
+        self.assertEqual(radar.licensed_source_preview({"url":"https://news.google.com/rss/search?q=istat"},entry),{})
+        self.assertEqual(radar.licensed_source_preview({"url":"https://example.org/feed"},{**press,"source_rights":"https://creativecommons.org/licenses/by/4.0/"})["source_excerpt_license"],"CC BY 4.0")
