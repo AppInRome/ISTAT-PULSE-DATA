@@ -1,36 +1,6 @@
 {
-  "generated_at": "2026-11-25T20:05:29.368843+00:00",
+  "generated_at": "2026-11-26T02:52:36.615966+00:00",
   "candidates": [
-    {
-      "radar": "PULSE 80 testate · specializzate · gruppo 14",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · specializzate · gruppo 15",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · locali · gruppo 16",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · locali · gruppo 17",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · locali · gruppo 18",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
-    {
-      "radar": "PULSE 80 testate · locali · gruppo 19",
-      "status": "radar_fetched",
-      "items_fetched": 60
-    },
     {
       "radar": "PULSE 80 testate · locali · gruppo 20",
       "status": "radar_fetched",
@@ -39,17 +9,17 @@
     {
       "radar": "Google News - statistiche Italia",
       "status": "radar_fetched",
-      "items_fetched": 22
+      "items_fetched": 60
     },
     {
       "radar": "Google News - economia lavoro",
       "status": "radar_fetched",
-      "items_fetched": 6
+      "items_fetched": 5
     },
     {
       "radar": "Google News - salute scuola ambiente",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 33
     },
     {
       "radar": "Repubblica Economia",
@@ -99,7 +69,7 @@
     {
       "radar": "Google News - Italia scuola e università",
       "status": "radar_fetched",
-      "items_fetched": 60
+      "items_fetched": 59
     },
     {
       "radar": "Google News - Italia ambiente energia mobilità",
@@ -154,12 +124,12 @@
     {
       "radar": "PULSE osservatori ufficiali 9/9",
       "status": "radar_fetched",
-      "items_fetched": 18
+      "items_fetched": 19
     },
     {
       "radar": "PULSE Italia - dati di regioni province comuni",
       "status": "radar_fetched",
-      "items_fetched": 26
+      "items_fetched": 46
     },
     {
       "radar": "PULSE Italia - stampa locale e agenzie",
@@ -169,12 +139,12 @@
     {
       "radar": "PULSE Italia - Nord e Centro",
       "status": "radar_fetched",
-      "items_fetched": 54
+      "items_fetched": 33
     },
     {
       "radar": "PULSE Italia - Sud e Isole",
       "status": "radar_fetched",
-      "items_fetched": 28
+      "items_fetched": 32
     },
     {
       "radar": "RaiNews - Notizie italiane",
@@ -223,8 +193,8 @@
     },
     {
       "radar": "Il Messaggero - Notizie",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "radar": "Adnkronos - Notizie",
@@ -244,7 +214,7 @@
     {
       "radar": "Google News - MSN Italia dati statistici",
       "status": "radar_fetched",
-      "items_fetched": 10
+      "items_fetched": 11
     },
     {
       "radar": "Google News - Il Fatto Quotidiano dati",
@@ -274,17 +244,17 @@
     {
       "radar": "Google News - Tasse redditi casa",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 28
     },
     {
       "radar": "Google News - Disuguaglianze e famiglie",
       "status": "radar_fetched",
-      "items_fetched": 56
+      "items_fetched": 26
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 01",
-      "status": "radar_error",
-      "error": "provider_rate_limited"
+      "status": "radar_fetched",
+      "items_fetched": 60
     },
     {
       "radar": "PULSE 80 testate · nazionali · gruppo 02",
@@ -347,6 +317,36 @@
       "items_fetched": 60
     },
     {
+      "radar": "PULSE 80 testate · specializzate · gruppo 14",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · specializzate · gruppo 15",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 16",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 17",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 18",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
+      "radar": "PULSE 80 testate · locali · gruppo 19",
+      "status": "radar_fetched",
+      "items_fetched": 60
+    },
+    {
       "radar": "ISTAT - Aggiornamenti ufficiali",
       "status": "radar_fetched",
       "items_fetched": 10
@@ -358,8 +358,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_fetched",
-      "items_fetched": 20
+      "status": "radar_error",
+      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
