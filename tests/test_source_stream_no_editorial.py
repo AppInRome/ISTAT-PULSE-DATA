@@ -33,3 +33,35 @@ class SourceStreamTest(unittest.TestCase):
                 # Empty refresh preserves the archive rather than erasing it.
                 retained=radar.publish_source_only({a["id"]:a for a in articles},[],[],now)
                 self.assertEqual(retained["oggi"],idx["oggi"])
+
+    def test_topic_selection_without_numbers(self):
+        for title in ("Il mercato del lavoro cambia", "Famiglie e welfare: nuove prospettive",
+                      "Economia italiana: le imprese guardano al futuro",
+                      "Istat: nuova indagine sulla popolazione",
+                      "Le statistiche del calciomercato secondo Istat"):
+            self.assertTrue(radar.source_relevance(title),title)
+        for title in ("Calciomercato, arriva il nuovo attaccante",
+                      "Gossip, il nuovo amore della star",
+                      "Arrestato dopo una rapina",
+                      "Nuovo trailer del film", "Il nuovo look della cantante"):
+            self.assertFalse(radar.source_relevance(title),title)
+
+    def test_google_search_is_not_automatic_approval(self):
+        now=datetime(2026,11,26,15,0,tzinfo=timezone.utc)
+        def item(title,url,publisher):
+            return {"title":title,"url":url,"publisher":publisher,
+                    "published_raw":format_datetime(now-timedelta(minutes=1)),"summary":""}
+        feed={"name":"Google News","url":"https://news.google.com/rss/search?q=dati"}
+        records=[item("Nuove prospettive per le famiglie","https://example.org/a","Testata A"),
+                 item("Nuove prospettive per le famiglie","https://example.net/b","Testata B"),
+                 item("Gossip: nuovo amore","https://example.org/c","Testata A")]
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            with patch.multiple(radar,ROOT=root,ARTICLES=root/"articles.json",
+                                INDEX=root/"index.json",CANDIDATES=root/"candidates.json"):
+                idx=radar.publish_source_only({},[(feed,records)],[],now)
+                self.assertEqual(len(idx["oggi"]),2)
+                self.assertEqual(idx["counts"]["rejected_new"],1)
+                self.assertEqual(idx["source_topic_policy"],"v2")
+                articles=json.loads((root/"articles.json").read_text())["articles"]
+                self.assertEqual({a["public_source"]["domain"] for a in articles},{"Testata A","Testata B"})
