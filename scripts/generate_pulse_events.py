@@ -13,6 +13,7 @@ analyses and packages the data before the Android build.
 from __future__ import annotations
 
 import hashlib
+import os
 import io
 import json
 import time
@@ -40,7 +41,8 @@ ASSET_DIR = Path("app/src/main/assets")
 OUT_TSV = ASSET_DIR / "pulse_events.tsv"
 OUT_MANIFEST = ASSET_DIR / "pulse_manifest.json"
 TERRITORY_TSV = ASSET_DIR / "territories.tsv"
-CACHE_DIR = Path(".pulse_cache")
+CACHE_DIR = Path(os.environ.get("PULSE_DEMO_CACHE_DIR", ".pulse_cache"))
+OUT_OBSERVATIONS = ASSET_DIR / "pulse_observations_demo.tsv"
 EPS = 1e-9
 
 COLS = [
@@ -228,8 +230,12 @@ def _fetch_api_slice(
     by_code: pd.DataFrame,
 ) -> list[dict]:
     cache = CACHE_DIR / "demo_rpc" / str(year) / f"{month:02d}_{province_code}.json"
-    if cache.exists():
-        result = json.loads(cache.read_text(encoding="utf-8"))
+    # Revalidate provisional current-year slices periodically, not on every
+    # run. Old complete years remain cacheable; the national month probe is live.
+    use_cache=cache.exists() and (year < date.today().year or
+                                time.time()-cache.stat().st_mtime < 7*86400)
+    if use_cache:
+        result=json.loads(cache.read_text(encoding="utf-8"))
     else:
         payload = [
             ("territorio", "procom"),
@@ -243,8 +249,7 @@ def _fetch_api_slice(
             ("hid-tavola", "tavola-form-1"),
         ]
         result = _post_demo(payload)
-        cache.parent.mkdir(parents=True, exist_ok=True)
-        cache.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
+
 
     rows = result.get("datatable", {}).get("data", [])
     out = []
@@ -269,6 +274,9 @@ def _fetch_api_slice(
         if region_code is None:
             raise RuntimeError(f"Unknown region mapping for {region!r}")
 
+        numeric_fields=("nati_vivi","morti","imm_altrocomune","emi_altrocomune","imm_estero","emi_estero","var_terr","pop_iniziale","pop_finale")
+        if any(field not in row or row[field] is None or str(row[field]).strip()=="" for field in numeric_fields):
+            raise RuntimeError(f"DEMO: valori mancanti per {raw_code}, {year}-{month:02d}")
         out.append({
             "Anno": year,
             "Mese": month,
@@ -290,6 +298,13 @@ def _fetch_api_slice(
             "Regione": region,
             "date": pd.Timestamp(year=year, month=month, day=1),
         })
+    if not out:
+        raise RuntimeError(f"DEMO: nessun comune valido per {year}-{month:02d}/{province_code}")
+    if not use_cache:
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        stage=cache.with_suffix(".tmp")
+        stage.write_text(json.dumps(result,ensure_ascii=False),encoding="utf-8")
+        stage.replace(cache)
     return out
 
 
@@ -309,7 +324,7 @@ def _load_demo_api_year(
         f"Downloading DEMO ISTAT {year} via official query API "
         f"({latest_month} months × {len(province_codes)} provinces)…"
     )
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=4) as pool:
         futures = {
             pool.submit(
                 _fetch_api_slice, year, month, province_code, by_code
@@ -1422,6 +1437,52 @@ def make_detail_payload(feed, monthly, annual):
     return pd.DataFrame(rows)
 
 
+def write_demo_observations(monthly, detail):
+    """Publish official municipal observations for actual feed events and
+    regional totals only where the latest ISTAT registry coverage is complete.
+    No synthetic figures and no forced article when patterns do not trigger.
+    """
+    fields=["area","indicator","territory","period","value","unit","source","url","note","status"]
+    current_year=int(monthly["Anno"].max())
+    recent=monthly[monthly["Anno"].eq(current_year)].copy()
+    registry,_,_=_territory_lookup()
+    expected=registry.groupby("region")["municipality_code"].nunique().to_dict()
+    latest=recent[recent["date"].eq(recent["date"].max())]
+    actual=latest.groupby("Regione")["Codice comune"].nunique().to_dict()
+    if len(expected)<20 or any(actual.get(region,0)<0.98*count for region,count in expected.items()):
+        raise RuntimeError("DEMO: copertura comunale insufficiente nell'ultimo mese")
+    rows=[]
+    def add(ind,territory,period,value,note):
+        if pd.isna(value):
+            raise RuntimeError("DEMO: osservazione mancante")
+        rows.append({"area":"Demografia","indicator":ind,"territory":territory,
+                     "period":period,"value":format(float(value),".10g"),"unit":"persone",
+                     "source":"DEMO ISTAT — Bilancio demografico mensile",
+                     "url":DEMO_APP.format(year=current_year),"note":note,
+                     "status":"dato ufficiale osservato"})
+    for (month,region),block in recent.groupby(["Mese","Regione"]):
+        if block["Codice comune"].nunique()!=expected.get(region,-1):
+            continue
+        for ind,col in INDICATOR_COLUMN.items():
+            add(ind,region,f"{current_year}-{int(month):02d}",block[col].sum(),"Somma dei comuni con copertura completa del registro ISTAT.")
+    for month,block in recent.groupby("Mese"):
+        if block["Codice comune"].nunique()!=sum(expected.values()):
+            continue
+        for ind,col in INDICATOR_COLUMN.items():
+            add(ind,"Italia",f"{current_year}-{int(month):02d}",block[col].sum(),"Somma dei comuni con copertura completa del registro ISTAT.")
+    for event in detail[["municipality_code","municipality","indicator"]].drop_duplicates().itertuples(index=False):
+        if event.indicator not in INDICATOR_COLUMN: continue
+        block=recent[recent["Codice comune"].eq(str(event.municipality_code).zfill(6))]
+        for _,row in block.iterrows():
+            add(event.indicator,f"{event.municipality} [{str(event.municipality_code).zfill(6)}]",
+                f"{current_year}-{int(row['Mese']):02d}",row[INDICATOR_COLUMN[event.indicator]],"Bilancio mensile comunale, non rolling 12 mesi.")
+    pd.DataFrame(rows,columns=fields).drop_duplicates(["indicator","territory","period"]).to_csv(OUT_OBSERVATIONS,sep="\t",index=False)
+    return {"latest_period":recent["date"].max().strftime("%Y-%m"),
+            "municipalities_latest":int(latest["Codice comune"].nunique()),
+            "municipalities_registry":int(registry["municipality_code"].nunique()),
+            "observations":len(rows)}
+
+
 def main():
     global YEARS, COMPLETE_YEARS, LATEST_PERIOD
 
@@ -1441,9 +1502,11 @@ def main():
     print(f"Complete years for annual Radar: {YEARS}")
     print(f"Latest monthly period: {LATEST_PERIOD.strftime('%Y-%m')}")
 
+    monthly_unfiltered=monthly
     monthly, annual, passport, meta, stable_codes = normalize(monthly)
     feed = build_feed(monthly, annual, meta)
     detail = make_detail_payload(feed, monthly, annual)
+    coverage=write_demo_observations(monthly_unfiltered,detail)
     detail.to_csv(OUT_TSV, sep="\t", index=False)
     feed_sha256 = hashlib.sha256(OUT_TSV.read_bytes()).hexdigest()
 
@@ -1458,6 +1521,7 @@ def main():
         "latest_period_provisional": LATEST_PERIOD.year > max(COMPLETE_YEARS),
         "quality_A_municipalities": len(stable_codes),
         "feed_events": len(feed),
+        "demo_coverage": coverage,
         "indicators": sorted(feed["Indicatore"].unique().tolist()),
         "sources": source_info,
         "disclaimer": (
