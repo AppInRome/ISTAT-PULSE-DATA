@@ -44,7 +44,8 @@ jobs:
     timeout-minutes: 47
     env:
       PYTHONUNBUFFERED: '1'
-      PULSE_SOURCE_ONLY: '1' # Preserve daily RSS/newspapers and official links; disable generated editorial articles
+      PULSE_SOURCE_ONLY: '0'
+      PULSE_EDITORIAL_240: '1' # Verified deterministic articles only, no model calls.
       PULSE_HTTP_CACHE_DIR: ${{ github.workspace }}/.pulse_http_cache
     steps:
       - name: Scegli aggiornamento leggero o completo
@@ -89,6 +90,7 @@ jobs:
         if: steps.refresh_mode.outputs.mode == 'all'
         run: |
           python -m unittest discover -s tests -p test_original_editorial.py -v
+          python -m unittest discover -s tests -p test_pulse_editorial_240.py -v
           python -m unittest discover -s tests -p test_quantity_evidence.py -v
           python -m unittest discover -s tests -p test_radar_coverage.py -v
           python -m unittest discover -s tests -p test_media_radar.py -v
@@ -122,6 +124,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          from scripts.update_news_radar import full_statistical_article
           root=Path('data/news')
           ids=json.loads((root/'index.json').read_text())
           by_id={x['id']:x for x in json.loads((root/'articles.json').read_text())['articles']}
@@ -130,6 +133,7 @@ jobs:
               assert len(values)==len(set(values)),f'{key}: articoli duplicati'
               for rid in values:
                   article=by_id[rid]
+                  assert full_statistical_article(article), f'{rid}: not a complete verified article'
                   if article.get('origin_kind')=='pulse_media_radar':
                       assert article['public_source']['role']=='journalistic_source'
                       assert article['chart_spec']['status']!='verified'
