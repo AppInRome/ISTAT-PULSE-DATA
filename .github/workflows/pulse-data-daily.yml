@@ -1,7 +1,7 @@
 name: PULSE - aggiorna solo dati e notizie
 
 on:
-  # A change to this workflow can run one verification with "news" mode.
+  # Workflow edits trigger a complete statistical audit; ordinary data pushes do not.
   # Ordinary code/data pushes never trigger extra expensive data jobs.
   push:
     paths:
@@ -17,6 +17,8 @@ on:
       timezone: "Europe/Rome"
     - cron: '17 3 * * *'           # One overnight light news check
       timezone: "Europe/Rome"
+    - cron: '27 4 * * *'           # DEMO municipal balance, separate acquisition
+      timezone: "Europe/Rome"
   workflow_dispatch:
     inputs:
       mode:
@@ -28,6 +30,8 @@ on:
           - all
           - news
           - stats
+          - demo
+          - audit
 
 permissions:
   contents: write
@@ -41,11 +45,13 @@ jobs:
     # Do not run a write-enabled data refresh from experimental branches.
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 47
+    timeout-minutes: 140
     env:
       PYTHONUNBUFFERED: '1'
       PULSE_SOURCE_ONLY: '1' # Topic policy v2; no numerical gates, generated prose or AI
       PULSE_HTTP_CACHE_DIR: ${{ github.workspace }}/.pulse_http_cache
+      PULSE_DEMO_CACHE_DIR: ${{ github.workspace }}/.pulse_demo_cache
+      PULSE_ERA5_CACHE_DIR: ${{ github.workspace }}/.pulse_era5_cache
     steps:
       - name: Scegli aggiornamento leggero o completo
         id: refresh_mode
@@ -56,10 +62,12 @@ jobs:
         run: |
           mode="${MODE_REQUESTED:-all}"
           case "${{ github.event_name }}" in
-            push) mode=news ;;
+            push) mode=audit ;;
             schedule)
               if [ "$SCHEDULE" = '17 8,20 * * *' ]; then
                 mode=all
+              elif [ "$SCHEDULE" = '27 4 * * *' ]; then
+                mode=demo
               else
                 mode=news
               fi ;;
@@ -78,6 +86,16 @@ jobs:
           key: pulse-http-cache-${{ github.run_id }}
           restore-keys: |
             pulse-http-cache-
+      - name: Ripristina cache DEMO ed ERA5
+        if: steps.refresh_mode.outputs.mode != 'news'
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .pulse_demo_cache
+            .pulse_era5_cache
+          key: pulse-territory-cache-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            pulse-territory-cache-
       - name: Python
         uses: actions/setup-python@v5
         with:
@@ -85,6 +103,15 @@ jobs:
       - name: Dipendenze dati essenziali
         run: |
           python -m pip install --disable-pip-version-check 'numpy<3' 'pandas<3' 'scipy<2' 'beautifulsoup4<5' 'trafilatura>=2,<3' 'requests<3' 'openpyxl<4' 'pypdf<7' 'pdfplumber<1' 'xlrd<3' 'odfpy<2'
+      - name: Dipendenze CDS ufficiali (solo statistiche)
+        if: steps.refresh_mode.outputs.mode != 'news'
+        run: python -m pip install --disable-pip-version-check cdsapi xarray netCDF4
+      - name: Verifica sintassi e test audit Territorio
+        if: steps.refresh_mode.outputs.mode != 'news'
+        run: |
+          python -m py_compile scripts/generate_pulse_events.py scripts/generate_territories.py scripts/generate_sdmx_events.py scripts/generate_green_events.py scripts/refresh_daily_safe.py
+          python -m unittest discover -s tests -p test_territory_audit.py -v
+          python -m unittest discover -s tests -p test_sdmx_breaker.py -v
       - name: Test radar titoli originali e pertinenza tematica v2
         run: python -m unittest discover -s tests -p test_source_stream_no_editorial.py -v
       - name: Test redazione originale, grafici e fonti
@@ -116,6 +143,7 @@ jobs:
         shell: bash
         env:
           PULSE_REFRESH_MODE: ${{ steps.refresh_mode.outputs.mode }}
+          CDS_API_KEY: ${{ secrets.CDS_API_KEY }}
         run: |
           echo "PULSE DATA mode=$PULSE_REFRESH_MODE"
           python scripts/refresh_daily_safe.py --mode "$PULSE_REFRESH_MODE"
@@ -159,7 +187,7 @@ jobs:
           git add -- data/news/articles.json data/news/candidates.json data/news/index.json data/news/editorial_quality_status.json data/news/green_index.json data/news/territori_index.json \
             data/pulse_events.tsv data/pulse_manifest.json data/pulse_observations.tsv \
             data/pulse_observations_manifest.json data/pulse_events_sdmx_last_good.tsv \
-            data/pulse_green_status.json data/sources_catalog.json data/refresh_status.json data/live_data_index.json \
+            data/pulse_green_status.json data/sources_catalog.json data/refresh_status.json data/live_data_index.json data/gse_fer_last_good.json \
             data/news/observer_articles.json data/observer_refresh_status.json
           if git diff --cached --quiet; then echo 'Nessun dato modificato'; exit 0; fi
           git commit -m 'PULSE DATA: aggiornamenti verificati delle fonti'
@@ -169,6 +197,14 @@ jobs:
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main
+      - name: Salva cache DEMO ed ERA5 anche con fonti degradate
+        if: always() && steps.refresh_mode.outputs.mode != 'news'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .pulse_demo_cache
+            .pulse_era5_cache
+          key: pulse-territory-cache-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Riporta errore se una sezione dati e' incompleta
         if: always()
         shell: bash
