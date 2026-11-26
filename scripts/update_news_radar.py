@@ -880,7 +880,7 @@ def bucket_date(iso, now):
 
 # The source stream selects topics, never editorial merit or numeric content.
 SOURCE_TOPIC = re.compile(
-    r"\b(?:statistic[ah][a-z]*|istat|eurostat|censis|inps|inail|ispra|copernicus|"
+    r"\b(?:statistic[a-z]*|istat|eurostat|censis|inps|inail|ispra|copernicus|"
     r"demografi[a-z]*|popolazion[a-z]*|natalit[aà]|mortalit[aà]|nascit[ae]|migr[ae][a-z]*|"
     r"resident[ei]|spopolament[a-z]*|invecchiament[a-z]*|"
     r"economi[a-z]*|inflazion[a-z]*|deflazion[a-z]*|pil|reddit[oi]|salari[oi]|stipendi[oi]|"
@@ -898,7 +898,7 @@ SOURCE_TOPIC = re.compile(
     r"presenze turistiche|territori[a-z]*|infrastruttur[a-z]*|"
     r"divario digitale|connettivit[aà]|disabilit[aà]|pari opportunit[aà]|violenza di genere)\b",re.I)
 SOURCE_EVIDENCE = re.compile(
-    r"\b(?:istat|eurostat|censis|ispra|inps|inail|statistic[ah][a-z]*|"
+    r"\b(?:istat|eurostat|censis|ispra|inps|inail|statistic[a-z]*|"
     r"indagine|rilevazion[a-z]*|sondagg[a-z]*|monitoraggio|censiment[a-z]*|"
     r"rapporto annuale|dati ufficiali|dati nazionali|dati regionali|"
     r"osservatorio|studio scientifico|serie storic[ahe]*)\b",re.I)
@@ -1016,15 +1016,37 @@ def publish_source_only(by_id, feed_items, candidates, now):
                 "chart_spec":{"type":"none","status":"source_only"},
                 "table_spec":{"status":"source_only","rows":[]},
             }
-    items=sorted(public.values(),key=lambda x:x.get("published_at",""),reverse=True)
-    # Keep the index stable and date-correct even after a feed goes offline.
-    seen=set()
+    # Deduplicate repeated links and identical headlines from the same outlet.
+    # Prefer the publisher URL over a Google News redirect when both exist.
+    def publisher_key(item):
+        source=item.get("public_source") or {}
+        url=source.get("url","")
+        host=(urllib.parse.urlsplit(url).hostname or "").removeprefix("www.")
+        aliases={"corriere.it":"corrieredellasera","repubblica.it":"larepubblica",
+                 "ilsole24ore.com":"ilsole24ore","ansa.it":"ansa","adnkronos.com":"adnkronos",
+                 "agi.it":"agi","rainews.it":"rainews","ilmessaggero.it":"ilmessaggero",
+                 "fanpage.it":"fanpage","ilfattoquotidiano.it":"ilfattoquotidiano","open.online":"open"}
+        name=str(source.get("domain","")).casefold().strip().removeprefix("www.")
+        return aliases.get(host) or aliases.get(name) or re.sub(r"[^\w]","",name)
+    def direct(item):
+        return (urllib.parse.urlsplit((item.get("public_source") or {}).get("url","")).hostname
+                or "") != "news.google.com"
+    unique=[]
+    seen_urls=set()
+    seen_titles=set()
+    for item in sorted(public.values(),key=lambda x:(direct(x),x.get("published_at","")),reverse=True):
+        source=item.get("public_source") or {}
+        url=source.get("url","")
+        title=re.sub(r"[^\w]+"," ",item.get("headline","").casefold()).strip()
+        key=(publisher_key(item),title)
+        if url in seen_urls or (key[0] and key[1] and key in seen_titles):
+            continue
+        seen_urls.add(url)
+        seen_titles.add(key)
+        unique.append(item)
+    items=sorted(unique,key=lambda x:x.get("published_at",""),reverse=True)
     idx={"generated_at":now.isoformat(),"source_topic_policy":"v2","oggi":[],"ieri":[],"archivio":[]}
     for item in items:
-        source=item.get("public_source") or {}
-        key=source.get("url","")
-        if key in seen:continue
-        seen.add(key)
         idx[bucket_date(item.get("published_at",""),now).lower()].append(item["id"])
     idx["counts"]={name:len(idx[name]) for name in ("oggi","ieri","archivio")}
     idx["counts"].update({"withheld":rejected_old+rejected_new,"candidates":len(candidates),"rejected_old":rejected_old,"rejected_new":rejected_new})
