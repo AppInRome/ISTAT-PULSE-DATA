@@ -12,6 +12,7 @@ import csv
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -43,7 +44,9 @@ def read_json(path: Path, default=None):
 
 def write_json(path: Path, content: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(content, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    stage=path.with_suffix(path.suffix+".stage")
+    stage.write_text(json.dumps(content, ensure_ascii=False, indent=2, sort_keys=True)+"\n",encoding="utf-8")
+    stage.replace(path)
 
 
 def copy_if_exists(source: Path, destination: Path) -> None:
@@ -87,31 +90,108 @@ def write_tsv(path: Path, fields: list[str], rows: list[dict]) -> None:
     tmp.replace(path)
 
 
+def period_key(value):
+    """Sort calendar months, quarters and annual references chronologically."""
+    match=re.fullmatch(r"(\d{4})(?:-(?:(\d{2})|Q([1-4])))?",str(value or ""))
+    if not match: return (0,0,0)
+    year,month,quarter=match.groups()
+    return (int(year),int(month) if month else int(quarter)*3 if quarter else 12,
+            2 if month else 1 if quarter else 0)
+
+
+def refresh_manifest(**extra):
+    path=DATA/"pulse_events.tsv"
+    rows=read_tsv(path,EVENT_FIELDS)
+    manifest=read_json(DATA/"pulse_manifest.json",{}) or {}
+    by_source={}
+    latest={}
+    for row in rows:
+        family=row["source_family"]
+        by_source[family]=by_source.get(family,0)+1
+        if period_key(row["period"])>period_key(latest.get(family)):
+            latest[family]=row["period"]
+    digest=hashlib.sha256(path.read_bytes()).hexdigest()
+    if manifest.get("feed_sha256")!=digest or not manifest.get("generated_at"):
+        manifest["generated_at"]=now_iso()
+    manifest.update({"feed_sha256":digest,"feed_events":len(rows),
+                     "events_by_source":by_source,
+                     "green_events":sum(r["scope"]=="GREEN" for r in rows),
+                     "indicators":sorted({r["indicator"] for r in rows}),
+                     "latest_period":max(latest.values(),key=period_key,default=""),
+                     "latest_period_by_source":latest,"last_checked_at":now_iso(),
+                     "note_refresh":"Periodi statistici reali; last_checked_at non equivale a una nuova osservazione."})
+    manifest.update(extra)
+    write_json(DATA/"pulse_manifest.json",manifest)
+
+
 def merge_events(rows: list[dict]) -> int:
     """Never delete old sources when a service is temporarily unavailable."""
-    path = DATA / "pulse_events.tsv"
-    old = read_tsv(path, EVENT_FIELDS, minimum=1)
-    by_id = {r["id"]: r for r in old if r.get("id")}
-    added_or_changed = 0
+    path=DATA/"pulse_events.tsv"
+    old=read_tsv(path,EVENT_FIELDS,minimum=1)
+    by_id={r["id"]:r for r in old if r.get("id")}
+    changed=0
     for item in rows:
-        if not all(str(item.get(k, "")).strip() for k in ("id", "indicator", "period", "source_family", "source_url")):
+        if not all(str(item.get(k,"")).strip() for k in ("id","indicator","period","source_family","source_url")):
             raise ValueError("Evento privo di ID, periodo, fonte o indicatore")
-        prior = by_id.get(item["id"])
-        if prior and str(item["period"]) < str(prior.get("period", "")):
-            continue  # never downgrade a verified period
-        if prior != item:
-            by_id[item["id"]] = item
-            added_or_changed += 1
-    if added_or_changed:
-        write_tsv(path, EVENT_FIELDS, sorted(by_id.values(), key=lambda x: (x.get("id", ""))))
-        manifest = read_json(DATA / "pulse_manifest.json", {})
-        if manifest:
-            manifest["feed_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
-            manifest["feed_events"] = len(by_id)
-            manifest["generated_at"] = now_iso()
-            manifest["note_refresh"] = "Incrementale: mantiene gli ultimi dati validi; le date dei periodi statistici restano originali."
-            write_json(DATA / "pulse_manifest.json", manifest)
-    return added_or_changed
+        prior=by_id.get(item["id"])
+        if prior and period_key(item["period"])<period_key(prior["period"]):
+            continue
+        if prior!=item:
+            by_id[item["id"]]=item
+            changed+=1
+    if changed:
+        write_tsv(path,EVENT_FIELDS,sorted(by_id.values(),key=lambda x:x["id"]))
+    refresh_manifest()
+    return changed
+
+
+def merge_observations(observations):
+    path=DATA/"pulse_observations.tsv"
+    old=read_tsv(path,OBS_FIELDS)
+    key=lambda r:(r["source"],r["indicator"],r["territory"],r["period"])
+    by_key={key(r):r for r in old}
+    changed=0
+    for row in observations:
+        if not all(str(row.get(x,"")).strip() for x in ("indicator","territory","period","source","url","value")):
+            raise ValueError("Osservazione incompleta")
+        import math
+        if not math.isfinite(float(row["value"])):
+            raise ValueError("Valore statistico non finito")
+        if by_key.get(key(row))!=row:
+            by_key[key(row)]=row
+            changed+=1
+    if changed:
+        write_tsv(path,OBS_FIELDS,list(by_key.values()))
+        write_json(DATA/"pulse_observations_manifest.json",{
+            "generated_at":now_iso(),"rows":len(by_key),
+            "sha256":hashlib.sha256(path.read_bytes()).hexdigest(),
+            "file":"pulse_observations.tsv","note":"Serie osservate, periodo originale."})
+    return changed
+
+
+def demo_refresh(temp: Path) -> dict:
+    work=temp/"demo"
+    asset=init_statistics_work(work)
+    run_original("generate_territories.py",work,seconds=180)
+    run_original("generate_pulse_events.py",work,seconds=4800)
+    events=read_tsv(asset/"pulse_events.tsv",EVENT_FIELDS,minimum=50)
+    observations=read_tsv(asset/"pulse_observations_demo.tsv",OBS_FIELDS,minimum=1)
+    meta=read_json(asset/"pulse_manifest.json",{})
+    period=meta.get("latest_period","")
+    prior=read_json(DATA/"pulse_manifest.json",{})
+    prior_period=(prior.get("demo") or {}).get("latest_period","")
+    if not period or period_key(period)<period_key(prior_period):
+        raise ValueError("DEMO: periodo precedente all'ultimo dato valido")
+    if any(row["source_family"]!="DEMO ISTAT — Bilancio demografico mensile" or row["period"]!=period for row in events):
+        raise ValueError("DEMO: eventi di provenienza o periodo incoerenti")
+    changed_obs=merge_observations(observations)
+    changed=merge_events(events)
+    refresh_manifest(demo=meta)
+    return {"status":"ok","latest_period":period,
+            "events_validated":len(events),"events_added_or_updated":changed,
+            "observations_new_or_revised":changed_obs,
+            "coverage":meta.get("demo_coverage",{}),
+            "message":"DEMO: acquisizione e motore statistico originali, nessuna generazione forzata."}
 
 
 def news_refresh(temp: Path) -> dict:
@@ -216,74 +296,80 @@ def init_statistics_work(work: Path) -> Path:
 
 
 def green_refresh(temp: Path) -> dict:
-    work = temp / "green"
-    asset = init_statistics_work(work)
-    run_original("generate_green_events.py", work, seconds=850)
-    new = read_tsv(asset / "pulse_events_green.tsv", EVENT_FIELDS, minimum=1)
-    stats = read_json(asset / "pulse_green_status.json", {})
-    ok = int(stats.get("feed_sources", 0))
-    if ok < 1 or not stats.get("sources"):
-        raise ValueError("GREEN: nessuna fonte numerica verificata; mantengo ultimo dato valido")
-    changed = merge_events(new)
-    # SOURCE statuses are diagnostics, not proof that every indicator was updated.
-    write_json(DATA / "pulse_green_status.json", stats)
-    copy_if_exists(asset / "sources_catalog.json", DATA / "sources_catalog.json")
-    return {"status":"ok", "events_validated":len(new), "events_added_or_updated":changed,
-            "sources_total":int(stats.get("sources_total",0)), "sources_with_events":ok,
+    work=temp/"green"
+    asset=init_statistics_work(work)
+    run_original("generate_green_events.py",work,seconds=1200)
+    new=read_tsv(asset/"pulse_events_green.tsv",EVENT_FIELDS,minimum=0)
+    stats=read_json(asset/"pulse_green_status.json",{}) or {}
+    if not stats.get("sources"):
+        raise ValueError("GREEN: diagnostica delle fonti assente")
+    changed=merge_events(new) if new else 0
+    blocked=[]
+    for name,source in stats["sources"].items():
+        if source.get("status") in ("error","credential_required") or source.get("fallback_last_good") or source.get("http_ok") is False:
+            blocked.append({"source":name,"status":source.get("status"),
+                            "error":source.get("refresh_error") or source.get("note",""),
+                            "latest_period":source.get("latest_period","")})
+    write_json(DATA/"pulse_green_status.json",stats)
+    copy_if_exists(asset/"sources_catalog.json",DATA/"sources_catalog.json")
+    copy_if_exists(work/"data"/"gse_fer_last_good.json",DATA/"gse_fer_last_good.json")
+    refresh_manifest()
+    return {"status":"degraded" if blocked or not new else "ok",
+            "events_validated":len(new),"events_added_or_updated":changed,
+            "sources_total":int(stats.get("sources_total",0)),
+            "sources_with_events":int(stats.get("feed_sources",0)),
             "sources_error":int(stats.get("error_sources",0)),
-            "message":"Indicatori aggiornati solo quando la rispettiva fonte ha fornito dati verificati."}
+            "sources_blocked":blocked,
+            "message":"Controllo Green: cache e credenziali mancanti non sono nuovi dati."}
 
 
 def sdmx_refresh(temp: Path) -> dict:
-    work = temp / "territori"
-    asset = init_statistics_work(work)
-    run_original("generate_sdmx_events.py", work, seconds=850)
-    # SDMX reports individual sources and preserves last-good for offline API gaps.
-    records = read_tsv(asset / "pulse_events_sdmx.tsv", EVENT_FIELDS, minimum=1)
-    # A server outage can leave a valid cached event list but NO newly acquired
-    # observations. Preserve previous data and report degraded, not healthy.
-    observations = read_tsv(asset / "pulse_observations_sdmx.tsv", OBS_FIELDS, minimum=0)
-    meta = read_json(asset / "pulse_sdmx_meta.json", {})
-    connected = int(meta.get("connected_series", 0))
-    fallback = int(meta.get("fallback_series", 0))
-    if connected < 1 or not observations:
-        return {"status": "degraded", "connected_series": connected,
-                "fallback_series": fallback,
-                "events_validated": len(records),
-                "observations_new_or_revised": 0,
-                "message": "SDMX senza osservazioni nuove verificabili: mantenuta cache precedente, riprovare al controllo seguente."}
-    changes = merge_events(records)
-    # Merge observations without erasing other datasets or historical periods.
-    old_path = DATA / "pulse_observations.tsv"
-    old = read_tsv(old_path, OBS_FIELDS, minimum=1)
-    by_key = {(r["source"],r["indicator"],r["territory"],r["period"]): r for r in old}
-    new_count = 0
-    for row in observations:
-        if not all(str(row.get(x,"")).strip() for x in ("indicator","territory","period","source","url","value")):
-            raise ValueError("Osservazione SDMX incompleta")
-        try: float(row["value"])
-        except ValueError as exc: raise ValueError("Valore SDMX non numerico") from exc
-        key=(row["source"],row["indicator"],row["territory"],row["period"])
-        if by_key.get(key) != row:
-            by_key[key]=row
-            new_count+=1
-    if new_count:
-        write_tsv(old_path, OBS_FIELDS, list(by_key.values()))
-        manifest={"generated_at":now_iso(),"rows":len(by_key),"sha256":hashlib.sha256(old_path.read_bytes()).hexdigest(),
-                  "file":"pulse_observations.tsv","note":"Serie osservate con anno statistico originale, aggiornamento incrementale."}
-        write_json(DATA / "pulse_observations_manifest.json",manifest)
-    copy_if_exists(asset / "sources_catalog.json", DATA / "sources_catalog.json")
-    # Keep last-good source cache only after verified inputs.
-    copy_if_exists(work / "data" / "pulse_events_sdmx_last_good.tsv", DATA / "pulse_events_sdmx_last_good.tsv")
-    return {"status":"ok", "connected_series":connected,"fallback_series":fallback,
-            "events_validated":len(records), "events_added_or_updated":changes,
-            "observations_new_or_revised":new_count,
-            "message":"Serie SDMX: i periodi statistici originali restano visibili."}
+    work=temp/"territori"
+    asset=init_statistics_work(work)
+    run_original("generate_sdmx_events.py",work,seconds=950)
+    records=read_tsv(asset/"pulse_events_sdmx.tsv",EVENT_FIELDS,minimum=0)
+    observations=read_tsv(asset/"pulse_observations_sdmx.tsv",OBS_FIELDS,minimum=0)
+    meta=read_json(asset/"pulse_sdmx_meta.json",{}) or {}
+    sources=meta.get("sources",[])
+    if not sources:
+        raise ValueError("SDMX: diagnostica per serie assente")
+    previous=(read_json(DATA/"pulse_manifest.json",{}) or {}).get("istatdata_sdmx",{})
+    prev_by_name={x.get("name"):x for x in previous.get("sources",[])}
+    now=datetime.now(timezone.utc)
+    stale=[]
+    for row in sources:
+        prior=prev_by_name.get(row.get("name"),{})
+        if row.get("acquisition_status")=="ok":
+            row["last_success_at"]=now_iso()
+        else:
+            row["last_success_at"]=prior.get("last_success_at")
+            row["latest_period"]=row.get("cached_period") or prior.get("latest_period") or ""
+        try:
+            age=(now-datetime.fromisoformat(row["last_success_at"])).total_seconds()/3600
+        except (TypeError,KeyError,ValueError):
+            age=None
+        row["hours_since_verified"]=round(age,1) if age is not None else None
+        if age is None or age>72 or row.get("acquisition_status") in ("fetch_error","series_not_found"):
+            stale.append(row["name"])
+    meta["latest_period"]=max((x.get("latest_period","") for x in sources),key=period_key,default="")
+    changes=merge_events(records) if records else 0
+    new_count=merge_observations(observations)
+    refresh_manifest(istatdata_sdmx=meta)
+    copy_if_exists(asset/"sources_catalog.json",DATA/"sources_catalog.json")
+    copy_if_exists(work/"data"/"pulse_events_sdmx_last_good.tsv",DATA/"pulse_events_sdmx_last_good.tsv")
+    return {"status":"degraded" if stale or not observations else "ok",
+            "connected_series":int(meta.get("connected_series",0)),
+            "fallback_series":int(meta.get("fallback_series",0)),
+            "deferred_series":int(meta.get("deferred_series",0)),
+            "failed_series":int(meta.get("failed_series",0)),
+            "stale_or_failed_series":stale,"events_validated":len(records),
+            "events_added_or_updated":changes,"observations_new_or_revised":new_count,
+            "message":"SDMX: serie non previste nel lotto distinte da errori e ultimo periodo verificato."}
 
 
 def main() -> int:
     p=argparse.ArgumentParser()
-    p.add_argument("--mode",choices=("all","news","stats"),default="all")
+    p.add_argument("--mode",choices=("all","news","stats","demo"),default="all")
     p.add_argument("--dry-run",action="store_true",help="Convalida risorse locali; non effettua download")
     args=p.parse_args()
     if args.dry_run:
@@ -296,7 +382,7 @@ def main() -> int:
     status = read_json(STATUS, {"version":1,"sections":{}})
     sections=status.setdefault("sections",{})
     status["last_check_at"]=now_iso()
-    tasks = [("notizie",news_refresh)] if args.mode=="news" else (
+    tasks = [("regioni",demo_refresh)] if args.mode=="demo" else [("notizie",news_refresh)] if args.mode=="news" else (
             [("notizie",news_refresh),("green",green_refresh),("territori",sdmx_refresh)] if args.mode=="all"
             else [("green",green_refresh),("territori",sdmx_refresh)])
     failed=0
@@ -321,7 +407,7 @@ def main() -> int:
                 print(f"::warning::{name}: {type(exc).__name__}: {exc}",flush=True)
     status["sections"]=sections
     status["latest_check_errors"]=failed
-    status["note"]=("La raccolta Notizie viene controllata ogni tre ore; Green e Territori "
+    status["note"]=("Notizie, DEMO, Green e SDMX hanno controlli distinti; "
                     "seguono la frequenza dei rispettivi servizi API. Un controllo non equivale "
                     "a nuove osservazioni. Le APK installate non sono modificate dal repository.")
     write_json(STATUS,status)
