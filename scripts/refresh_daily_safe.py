@@ -137,7 +137,7 @@ def news_refresh(temp: Path) -> dict:
     # Reapply separately retained, independently reviewed Italian longforms.
     # A normal RSS refresh must never silently erase approved PULSE journalism.
     approved_store = DATA / "editorial_italia" / "published_articles.json"
-    if approved_store.exists():
+    if approved_store.exists() and os.environ.get('PULSE_SOURCE_ONLY') != '1':
         try:
             from scripts.pulse_italia_reviewed_publish import overlay_approved
         except ModuleNotFoundError:
@@ -194,7 +194,7 @@ def news_refresh(temp: Path) -> dict:
             "oggi_stampa": int(daily["oggi"].get("media_reports_not_primary_verified",0)),
             "ieri_verificati": int(daily["ieri"].get("original_pulse_verified",0)),
             "ieri_stampa": int(daily["ieri"].get("media_reports_not_primary_verified",0)),
-            "message": "Le notizie di stampa sono identificate come segnalazioni: solo dati primari verificati generano grafici PULSE."}
+            "message": "Radar titoli originali: nessuna elaborazione editoriale, grafico o AI."}
 
 
 def init_statistics_work(work: Path) -> Path:
