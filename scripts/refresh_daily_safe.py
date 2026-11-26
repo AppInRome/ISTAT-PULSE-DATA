@@ -150,7 +150,11 @@ def news_refresh(temp: Path) -> dict:
               "approfondimenti verificati nel feed", flush=True)
     article_list = arts.get("articles", [])
     old_list = read_json(DATA / "news" / "articles.json", {}).get("articles", [])
-    if not isinstance(article_list, list) or len(article_list) < max(15, len(old_list)//2):
+    topical_stream=(os.environ.get("PULSE_SOURCE_ONLY")=="1"
+                    and idx.get("source_topic_policy")=="v2")
+    if not isinstance(article_list,list) or not article_list:
+        raise ValueError("Archivio RSS vuoto: non sostituisco la copia valida")
+    if not topical_stream and len(article_list) < max(15, len(old_list)//2):
         raise ValueError("Archivio RSS incompleto: non sostituisco la copia valida")
     if not isinstance(candidates.get("candidates"), list):
         raise ValueError("Diagnostica RSS assente")
@@ -159,6 +163,8 @@ def news_refresh(temp: Path) -> dict:
     successes = len(success_records)
     if successes < 1:
         raise ValueError("Tutti i feed RSS risultano irraggiungibili")
+    if topical_stream and len(article_list)<len(old_list) and successes < max(1,len(feeds)//2):
+        raise ValueError("Pulizia archivio sospesa: raggiunto meno di metà delle fonti")
     article_ids = {x.get("id") for x in article_list}
     subsets = []
     for key in ("oggi", "ieri", "archivio"):
@@ -173,6 +179,8 @@ def news_refresh(temp: Path) -> dict:
     audit = read_json(base / "editorial_quality_status.json", None)
     if not isinstance(audit, dict) or audit.get("discovery_feeds_reached") != successes:
         raise ValueError("Diagnostica editoriale nuova incoerente con i feed raggiunti")
+    if topical_stream and audit.get("source_topic_policy")!="v2":
+        raise ValueError("Diagnostica filtro tematico incoerente")
     daily = audit.get("daily", {})
     if not isinstance(daily, dict) or not all(key in daily for key in ("oggi", "ieri", "archivio")):
         raise ValueError("Contatori OGGI/IERI/ARCHIVIO non presenti nell'audit")
