@@ -44,7 +44,7 @@ jobs:
     timeout-minutes: 47
     env:
       PYTHONUNBUFFERED: '1'
-      PULSE_SOURCE_ONLY: '1' # Preserve daily RSS/newspapers and official links; disable generated editorial articles
+      PULSE_SOURCE_ONLY: '1' # Collect all relevant RSS headlines; no editorial gates or AI
       PULSE_HTTP_CACHE_DIR: ${{ github.workspace }}/.pulse_http_cache
     steps:
       - name: Scegli aggiornamento leggero o completo
@@ -85,6 +85,8 @@ jobs:
       - name: Dipendenze dati essenziali
         run: |
           python -m pip install --disable-pip-version-check 'numpy<3' 'pandas<3' 'scipy<2' 'beautifulsoup4<5' 'trafilatura>=2,<3' 'requests<3' 'openpyxl<4' 'pypdf<7' 'pdfplumber<1' 'xlrd<3' 'odfpy<2'
+      - name: Test radar titoli originali senza filtri editoriali
+        run: python -m unittest discover -s tests -p test_source_stream_no_editorial.py -v
       - name: Test redazione originale, grafici e fonti
         if: steps.refresh_mode.outputs.mode == 'all'
         run: |
