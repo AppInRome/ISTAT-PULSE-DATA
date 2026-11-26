@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:09:59.499526+00:00",
+  "generated_at": "2026-11-26T15:34:23.237435+00:00",
   "candidates": [
     {
       "radar": "ISTAT - Aggiornamenti ufficiali",
@@ -173,8 +173,8 @@
     },
     {
       "radar": "CNR - Notizie ufficiali",
-      "status": "radar_error",
-      "error": "<urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1018)>"
+      "status": "radar_fetched",
+      "items_fetched": 20
     },
     {
       "radar": "SINAB - Notizie ufficiali bio",
