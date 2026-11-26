@@ -1207,13 +1207,13 @@ def main():
         except ModuleNotFoundError:
             from pulse_auto_promotion import run_pending_research
         auto_report = run_pending_research(
-            by_id, cfg.get("official_domains", []), now, budget=2)
+            by_id, cfg.get("official_domains", []), now, budget=4 if strict_newsroom_enabled() else 2)
         print(f"[PULSE AUTO EDITORIALE] {auto_report}", flush=True)
 
     # Interleave outlets: first story from every source, then second and so on.
     # Search and verification consume the remaining bounded runtime.
     for round_idx in range(3):
-        for feed, items in feed_items:
+        for feed, items in (sorted(feed_items, key=lambda pair: not bool(pair[0].get("primary_source"))) if strict_newsroom_enabled() else feed_items):
             if runtime_exceeded() or len(candidates)>=MAX_CANDIDATES_TOTAL:
                 break
             if round_idx>=len(items):continue
@@ -1483,6 +1483,8 @@ def main():
         a.get("published_at") or ""), reverse=True)
     idx={"generated_at":now.isoformat(),"counts":{},
          "oggi":[],"ieri":[],"archivio":[]}
+    if strict_newsroom_enabled():
+        idx["editorial_policy"]="deterministic_verified_240"
     bucket_seen=set()
     for a in public:
         fp=a.get("story_fingerprint") or story_fingerprint(
@@ -1491,6 +1493,12 @@ def main():
             [c.get("raw_value","") for c in a.get("statistical_claims",[]) if c.get("verified")]
         )
         if fp in bucket_seen: continue
+        if strict_newsroom_enabled():
+            try:
+                pub = datetime.fromisoformat(a["published_at"].replace("Z","+00:00"))
+                if pub.tzinfo is None or pub > now: continue
+            except (KeyError, ValueError, TypeError):
+                continue
         bucket_seen.add(fp)
         b=bucket_date(a.get("published_at",""),now)
         idx[b.lower()].append(a["id"])
