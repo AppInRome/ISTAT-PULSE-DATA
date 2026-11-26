@@ -22,6 +22,8 @@ import math
 import os
 import re
 import statistics
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
@@ -52,7 +54,7 @@ SOURCES=[
  {"name":"ACI - Open data mobilità e parco veicoli","category":"GREEN_IT","topics":["MOBILITA"],"pillar":"Mobilità sostenibile","url":"https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/","kind":"aci","keywords":["annuario","prime iscrizioni","alimentazione","elettrico","ibrido"]},
  {"name":"ARERA - Statistiche del servizio idrico","category":"GREEN_IT","topics":["ACQUA"],"pillar":"Risorse idriche e suolo","url":"https://www.arera.it/dati-e-statistiche/dettaglio/rqsii","kind":"arera","keywords":["idrico","qualita","xlsx"]},
  {"name":"Copernicus - Climate Data Store","category":"GREEN_EU","topics":["CLIMA"],"pillar":"Crisi climatica e decarbonizzazione","url":"https://cds.climate.copernicus.eu/","kind":"copernicus","keywords":[]},
- {"name":"EEA - Dati ambientali europei","category":"GREEN_EU","topics":["CLIMA"],"pillar":"Crisi climatica e decarbonizzazione","url":"https://www.eea.europa.eu/en/datahub/datahubitem-view/3b7fe76c-524a-439a-bfd2-a6e4046302a2?activeAccordion=1096150","kind":"eea","keywords":["greenhouse","emission","csv"]},
+ {"name":"EEA - Dati ambientali europei","category":"GREEN_EU","topics":["CLIMA"],"pillar":"Crisi climatica e decarbonizzazione","url":"https://www.eea.europa.eu/en/datahub/datahubitem-view/d22b842a-53f7-4c63-aa94-74d5fa1f4d40","kind":"eea","keywords":["greenhouse","emission","csv"]},
  {"name":"ENEA - Rapporto annuale efficienza energetica","category":"GREEN_IT","topics":["ENERGIA"],"pillar":"Transizione energetica","url":"https://www.efficienzaenergetica.enea.it/vi-segnaliamo/rapporto-annuale-sullefficienza-energetica-2026-schede-regionali.html","kind":"discover","keywords":["xls","lazio","region"]},
  {"name":"Eurostat - Statistiche ambientali ed energia","category":"GREEN_EU","topics":["MULTITEMA"],"pillar":"Multi-pilastro GREEN","url":"https://ec.europa.eu/eurostat/web/environment","kind":"eurostat","keywords":[]},
  {"name":"GSE - Statistiche delle rinnovabili","category":"GREEN_IT","topics":["ENERGIA"],"pillar":"Transizione energetica","url":"https://www.gse.it/dati-e-scenari/statistiche","kind":"discover","keywords":["rinnovabili","statistiche","xlsx"]},
@@ -126,8 +128,18 @@ def probe_structured(url:str, timeout=90)->dict:
 
 def get(url:str,timeout=90,accept="*/*")->bytes:
     req=urllib.request.Request(url,headers={"User-Agent":UA,"Accept":accept})
-    with urllib.request.urlopen(req,timeout=timeout) as r:
-        return r.read()
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req,timeout=timeout) as response:
+                return response.read()
+        except urllib.error.HTTPError as exc:
+            # 403/404 are not transient: do not circumvent access controls.
+            if attempt or exc.code not in (408,500,502,503,504):
+                raise
+        except (urllib.error.URLError,TimeoutError):
+            if attempt: raise
+        time.sleep(3)
+    raise RuntimeError("Download non riuscito")
 
 def clean(x)->str:
     return re.sub(r"\s+"," ",str(x or "")).strip().replace("\t"," ")
@@ -749,7 +761,10 @@ def run_eea(source):
     and is maintained annually by EEA.
     """
     indicator_page="https://www.eea.europa.eu/en/datahub/datahubitem-view/d22b842a-53f7-4c63-aa94-74d5fa1f4d40"
-    page_html,_=page_links(indicator_page)
+    try:
+        page_html,_=page_links(indicator_page)
+    except (urllib.error.URLError,TimeoutError):
+        page_html=""  # official resolver remains available independently
     soup=BeautifulSoup(page_html,"html.parser")
 
     direct=None
@@ -763,7 +778,10 @@ def run_eea(source):
         # Stable current EEA data-package resolver for the final 1990-2024 dataset.
         direct="https://sdi.eea.europa.eu/data/6dee7ee7-ae9c-4017-a3b1-bbef822c74f8"
 
-    landing=get(direct,timeout=90,accept="text/html")
+    try:
+        landing=get(direct,timeout=45,accept="text/html")
+    except (urllib.error.URLError,TimeoutError):
+        landing=b""
     landing_soup=BeautifulSoup(landing,"html.parser")
     package_url=None
     for a in landing_soup.find_all("a",href=True):
@@ -1150,7 +1168,7 @@ def run_gse(source):
             "latest_value":values[-1],
             "unit":unit,
             "observations":len(values),
-            "status":"latest_public",
+            "status":"fallback_last_good" if used_snapshot else "latest_public",
             "territory":"Italia",
         })
         prev,cur=float(values[-2]),float(values[-1])
@@ -1599,9 +1617,35 @@ def run_ispra_soil(source):
     annual net soil-consumption increments from 2015-2016 through 2023-2024,
     aggregated nationally and retained by region.
     """
-    url="https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/consumo_di_suolo_estratto_dati_2025_anni_2006_2024.xlsx"
-    raw=excel_bytes(url,120)
-    frame=pd.read_excel(io.BytesIO(raw),sheet_name="Regioni_2006_2024")
+    # Discover the current official workbook; the 2026 edition has 2025 data.
+    # The fixed URL is a documented official link, not an invented endpoint.
+    current="https://www.snpambiente.it/wp-content/uploads/2026/10/consumo_suolo_2026_dati_principali-1.xlsx"
+    candidates=[current]
+    try:
+        _,links=page_links(source["url"])
+        discovered=[u for u in links if re.search(r"(?:consumo[_-](?:di[_-])?suolo|consumo_di_suolo).*\.xlsx(?:\?|$)",u,re.I)
+                    and urllib.parse.urlsplit(u).hostname in ("www.isprambiente.gov.it","www.snpambiente.it","snpambiente.it")]
+        candidates=sorted(set(discovered+candidates),reverse=True)
+    except (urllib.error.URLError,TimeoutError):
+        pass
+    # Prefer the newest named release and reject stale/invalid regional tables.
+    errors=[]; choices=[]
+    for candidate in candidates:
+        try:
+            book=pd.ExcelFile(io.BytesIO(excel_bytes(candidate,120)))
+            sheets=[name for name in book.sheet_names if name.casefold().startswith("region")]
+            for name in sheets:
+                table=pd.read_excel(book,sheet_name=name)
+                if "Nome_Regione" not in table.columns: continue
+                years=[int(m.group(1)) for col in table.columns
+                       if (m:=re.match(r"Incremento netto 20\d{2}-(20\d{2}) \[ettari\]",clean(col)))]
+                if years: choices.append((max(years),candidate,table))
+            if choices and max(c[0] for c in choices)>=2025: break
+        except Exception as exc:
+            errors.append(clean(exc))
+    if not choices: raise RuntimeError("ISPRA suolo: workbook regionale non valido; "+"; ".join(errors[-3:]))
+    latest_year,url,frame=max(choices,key=lambda item:item[0])
+    if latest_year<2025: raise RuntimeError("ISPRA suolo: disponibile edizione 2026 ma tabella acquisita non aggiornata")
 
     if "Nome_Regione" not in frame.columns:
         raise RuntimeError(f"Foglio ISPRA suolo inatteso: {list(frame.columns)}")
@@ -1666,7 +1710,7 @@ def run_ispra_soil(source):
             ev["municipality"]=region
             events.append(ev)
 
-    latest_col="Suolo consumato 2024 [%]"
+    latest_col=f"Suolo consumato {periods[-1]} [%]"
     latest_pct={}
     if latest_col in frame.columns:
         for _,row in frame.iterrows():
@@ -1679,19 +1723,17 @@ def run_ispra_soil(source):
         "status":"feed" if events else "connected",
         "http_ok":True,
         "frequency":"Annuale",
-        "release":"Rapporto 2025",
-        "publication_date":"2025-10-24",
-        "latest_period":"2024",
-        "temporal_coverage":"2006-2024",
+        "release":f"Workbook ufficiale ISPRA/SNPA, anno statistico {periods[-1]}",
+        "latest_period":periods[-1],
+        "temporal_coverage":f"{periods[0]}-{periods[-1]}",
+        "document_url":url,
         "pulse_annual_series":f"{periods[0]}-{periods[-1]}",
         "administrative_levels":["Comune","Provincia","Regione","Italia"],
         "series":series,
         "latest_region_soil_share_pct":latest_pct,
         "note":(
-            f"ISPRA/SNPA Consumo di suolo collegato al workbook ufficiale del Rapporto 2025. "
-            f"Dati definitivi fino al 2024; copertura 2006-2024 a livello comunale, provinciale e regionale. "
-            f"PULSE usa gli incrementi netti annuali comparabili {periods[0]}-{periods[-1]} per Italia e regioni. "
-            f"Aggiornamento annuale. I dati preliminari 2025 sono in consultazione e ISPRA prevede i definitivi a fine ottobre 2026."
+            f"ISPRA/SNPA Consumo di suolo: workbook ufficiale, dati fino al {periods[-1]}. "
+            f"PULSE usa gli incrementi netti annuali comparabili {periods[0]}-{periods[-1]} per Italia e regioni. Aggiornamento annuale."
         ),
     },events
 
@@ -1919,7 +1961,19 @@ def run_ispra_water(source):
         "bigbang100/excel_tables/bigbang100_tables_italy_01/download/en/1/"
         "BIGBANG100_TABLES_ITALY_01.xlsx"
     )
-    raw=excel_bytes(url,180)
+    try:
+        raw=excel_bytes(url,120)
+    except urllib.error.HTTPError as original:
+        if original.code!=404: raise
+        landing="https://groupware.sinanet.isprambiente.it/bigbang-data/library/bigbang100/excel_tables/bigbang100_tables_italy_01"
+        _,links=page_links(landing)
+        files=[u for u in links if urllib.parse.urlsplit(u).hostname=="groupware.sinanet.isprambiente.it"
+               and "bigbang" in u.casefold() and u.casefold().split("?")[0].endswith(".xlsx")]
+        alternatives=[u for u in files if u!=url]
+        if not alternatives:
+            raise RuntimeError("ISPRA BIGBANG: collegamento ufficiale restituisce 404; nessun download alternativo pubblicato") from original
+        url=alternatives[0]
+        raw=excel_bytes(url,120)
     df=pd.read_excel(io.BytesIO(raw),sheet_name="Annuale (Annual)",header=0)
 
     required={"ANNO (YEAR)","TP","IF","GR","IF.1","GR.1"}
@@ -1996,15 +2050,15 @@ def run_ispra_water(source):
                 })
 
     latest=periods[-1]
-    if latest!="2025":
+    if int(latest)<2025:
         raise RuntimeError(f"BIGBANG 10.0 non arriva al 2025: ultimo={latest}")
 
     return {
         "status":"feed" if events else "connected",
         "http_ok":True,
         "frequency":"Annuale (stime disponibili anche mensilmente)",
-        "latest_period":"2025",
-        "temporal_coverage":"1951-2025",
+        "latest_period":latest,
+        "temporal_coverage":f"{periods[0]}-{latest}",
         "administrative_levels":["Italia","Regione","Distretto idrografico"],
         "series":series,
         "note":(
