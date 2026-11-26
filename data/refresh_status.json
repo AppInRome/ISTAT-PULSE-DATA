@@ -1,18 +1,44 @@
 {
-  "last_check_at": "2026-11-26T15:34:23+00:00",
-  "latest_check_errors": 0,
-  "note": "La raccolta Notizie viene controllata ogni tre ore; Green e Territori seguono la frequenza dei rispettivi servizi API. Un controllo non equivale a nuove osservazioni. Le APK installate non sono modificate dal repository.",
+  "last_check_at": "2026-11-26T16:49:22+00:00",
+  "latest_check_errors": 2,
+  "note": "Notizie, DEMO, Green e SDMX hanno controlli distinti; seguono la frequenza dei rispettivi servizi API. Un controllo non equivale a nuove osservazioni. Le APK installate non sono modificate dal repository.",
   "sections": {
     "green": {
-      "events_added_or_updated": 0,
+      "events_added_or_updated": 15,
       "events_validated": 424,
-      "last_attempt_at": "2026-11-25T20:08:56+00:00",
+      "last_attempt_at": "2026-11-26T16:56:16+00:00",
       "last_success_at": "2026-11-25T20:08:56+00:00",
-      "message": "Indicatori aggiornati solo quando la rispettiva fonte ha fornito dati verificati.",
+      "message": "Controllo Green: cache e credenziali mancanti non sono nuovi dati.",
+      "sources_blocked": [
+        {
+          "error": "Connettore ERA5 pronto ma download bloccato finché non viene configurata CDS_API_KEY e accettata la licenza del dataset nel Climate Data Store.",
+          "latest_period": "",
+          "source": "Copernicus - Climate Data Store",
+          "status": "credential_required"
+        },
+        {
+          "error": "Errore di collegamento nell'ultimo refresh: <urlopen error timed out>",
+          "latest_period": "",
+          "source": "EEA - Dati ambientali europei",
+          "status": "error"
+        },
+        {
+          "error": "HTTP Error 403: Forbidden",
+          "latest_period": "2024",
+          "source": "GSE - Statistiche delle rinnovabili",
+          "status": "feed"
+        },
+        {
+          "error": "Errore di collegamento nell'ultimo refresh: HTTP Error 404: Not Found",
+          "latest_period": "",
+          "source": "ISPRA - Risorse idriche",
+          "status": "error"
+        }
+      ],
       "sources_error": 2,
       "sources_total": 19,
       "sources_with_events": 14,
-      "status": "ok"
+      "status": "degraded"
     },
     "notizie": {
       "articles_total": 2020,
@@ -30,16 +56,52 @@
       "oggi_verificati": 0,
       "status": "ok"
     },
+    "regioni": {
+      "coverage": {
+        "latest_period": "2026-08",
+        "municipalities_latest": 7894,
+        "municipalities_registry": 7894,
+        "observations": 3080
+      },
+      "events_added_or_updated": 259,
+      "events_validated": 259,
+      "last_attempt_at": "2026-11-26T17:06:36+00:00",
+      "last_success_at": "2026-11-26T17:06:36+00:00",
+      "latest_period": "2026-08",
+      "message": "DEMO: acquisizione e motore statistico originali, nessuna generazione forzata.",
+      "observations_new_or_revised": 3080,
+      "status": "ok"
+    },
     "territori": {
       "connected_series": 5,
-      "events_added_or_updated": 0,
+      "deferred_series": 16,
+      "events_added_or_updated": 5,
       "events_validated": 21,
+      "failed_series": 0,
       "fallback_series": 16,
-      "last_attempt_at": "2026-11-25T20:11:07+00:00",
+      "last_attempt_at": "2026-11-26T16:58:40+00:00",
       "last_success_at": "2026-11-25T20:11:07+00:00",
-      "message": "Serie SDMX: i periodi statistici originali restano visibili.",
-      "observations_new_or_revised": 0,
-      "status": "ok"
+      "message": "SDMX: serie non previste nel lotto distinte da errori e ultimo periodo verificato.",
+      "observations_new_or_revised": 5,
+      "stale_or_failed_series": [
+        "Prezzi al consumo NIC",
+        "Tasso di occupazione",
+        "Occupati",
+        "Posizioni lavorative dipendenti",
+        "Produzione industriale",
+        "Fatturato industriale",
+        "Fatturato dei servizi",
+        "Vendite al dettaglio",
+        "Clima di fiducia delle imprese",
+        "Fiducia delle costruzioni",
+        "Fiducia del commercio",
+        "Fiducia dei consumatori",
+        "Prezzi alla produzione dell'industria",
+        "Prezzi all'importazione",
+        "Arrivi turistici",
+        "Presenze turistiche"
+      ],
+      "status": "degraded"
     }
   },
   "version": 1

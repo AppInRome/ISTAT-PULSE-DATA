@@ -4,7 +4,7 @@
   "error_sources": 2,
   "events": 424,
   "feed_sources": 14,
-  "generated_at": "2026-11-25T20:08:56.407724+00:00",
+  "generated_at": "2026-11-26T16:56:16.407863+00:00",
   "pillars": [
     "Crisi climatica e decarbonizzazione",
     "Economia circolare",
@@ -16,7 +16,7 @@
   ],
   "sources": {
     "ACI - Open data mobilità e parco veicoli": {
-      "checked_at": "2026-11-25T20:06:15.725463+00:00",
+      "checked_at": "2026-11-26T16:49:27.048809+00:00",
       "data_reference_year": "2025",
       "http_ok": true,
       "licence": "CC BY 4.0",
@@ -103,7 +103,7 @@
           "year": 2023
         }
       ],
-      "checked_at": "2026-11-25T20:06:27.084489+00:00",
+      "checked_at": "2026-11-26T16:49:38.297143+00:00",
       "detailed_workbooks_through": 2021,
       "errors": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.arera.it/dati-e-statistiche/dettaglio/rqsii"
     },
     "Copernicus - Climate Data Store": {
-      "checked_at": "2026-11-25T20:06:27.084539+00:00",
+      "checked_at": "2026-11-26T16:49:38.297196+00:00",
       "dataset": "ERA5 monthly averaged data on single levels",
       "dataset_id": "reanalysis-era5-single-levels-monthly-means",
       "frequency": "Mensile",
@@ -240,14 +240,14 @@
       "url": "https://cds.climate.copernicus.eu/"
     },
     "EEA - Dati ambientali europei": {
-      "checked_at": "2026-11-25T20:07:58.771135+00:00",
+      "checked_at": "2026-11-26T16:55:17.195275+00:00",
       "note": "Errore di collegamento nell'ultimo refresh: <urlopen error timed out>",
       "pillar": "Crisi climatica e decarbonizzazione",
       "status": "error",
-      "url": "https://www.eea.europa.eu/en/datahub/datahubitem-view/3b7fe76c-524a-439a-bfd2-a6e4046302a2?activeAccordion=1096150"
+      "url": "https://www.eea.europa.eu/en/datahub/datahubitem-view/d22b842a-53f7-4c63-aa94-74d5fa1f4d40"
     },
     "ENEA - Rapporto annuale efficienza energetica": {
-      "checked_at": "2026-11-25T20:08:09.219932+00:00",
+      "checked_at": "2026-11-26T16:55:27.911834+00:00",
       "failed_regions": [],
       "http_ok": true,
       "note": "RAEE 2026: 20/20 schede regionali acquisite; 3 segnali PULSE da serie TEE 2015-2025.",
@@ -459,7 +459,7 @@
       "url": "https://www.efficienzaenergetica.enea.it/vi-segnaliamo/rapporto-annuale-sullefficienza-energetica-2026-schede-regionali.html"
     },
     "Eurostat - Statistiche ambientali ed energia": {
-      "checked_at": "2026-11-25T20:08:11.324794+00:00",
+      "checked_at": "2026-11-26T16:55:30.525494+00:00",
       "note": "3/3 dataset Eurostat collegati; 3 segnali PULSE emessi.",
       "pillar": "Multi-pilastro GREEN",
       "series": [
@@ -489,7 +489,7 @@
       "url": "https://ec.europa.eu/eurostat/web/environment"
     },
     "GSE - Statistiche delle rinnovabili": {
-      "checked_at": "2026-11-25T20:08:11.953148+00:00",
+      "checked_at": "2026-11-26T16:55:31.332135+00:00",
       "direct_official_document": "https://www.gse.it/documenti_site/Documenti%20GSE/Rapporti%20statistici/Rapporto%20Statistico%20GSE%20-%20Energia%20da%20FER%20in%20Italia%20-%20anno%202024.pdf",
       "fallback_last_good": true,
       "frequency": "Annuale",
@@ -506,7 +506,7 @@
           "latest_value": 74509.0,
           "name": "Potenza efficiente lorda degli impianti elettrici FER",
           "observations": 4,
-          "status": "latest_public",
+          "status": "fallback_last_good",
           "territory": "Italia",
           "unit": "MW"
         },
@@ -515,7 +515,7 @@
           "latest_value": 134358.0,
           "name": "Produzione lorda di energia elettrica da FER",
           "observations": 4,
-          "status": "latest_public",
+          "status": "fallback_last_good",
           "territory": "Italia",
           "unit": "GWh"
         },
@@ -524,7 +524,7 @@
           "latest_value": 49.6,
           "name": "Quota FER sulla produzione elettrica complessiva",
           "observations": 4,
-          "status": "latest_public",
+          "status": "fallback_last_good",
           "territory": "Italia",
           "unit": "%"
         }
@@ -533,7 +533,7 @@
       "url": "https://www.gse.it/dati-e-scenari/statistiche"
     },
     "ISPRA - Catasto nazionale rifiuti": {
-      "checked_at": "2026-11-25T20:08:19.804494+00:00",
+      "checked_at": "2026-11-26T16:55:38.528661+00:00",
       "failed_years": [],
       "frequency": "Annuale",
       "http_ok": true,
@@ -774,244 +774,244 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-25T20:08:21.503007+00:00",
+      "checked_at": "2026-11-26T16:55:41.355967+00:00",
+      "document_url": "https://www.snpambiente.it/wp-content/uploads/2026/10/consumo_suolo_2026_dati_principali-1.xlsx",
       "frequency": "Annuale",
       "http_ok": true,
-      "latest_period": "2024",
+      "latest_period": "2025",
       "latest_region_soil_share_pct": {
-        "Abruzzo": 5.050546874,
-        "Basilicata": 3.212757223,
-        "Calabria": 5.099700129,
-        "Campania": 10.60508639,
-        "Emilia-Romagna": 8.990483133,
-        "Friuli-Venezia Giulia": 8.053004063,
-        "Italia": 7.169666808314301,
-        "Lazio": 8.235727878,
-        "Liguria": 7.29927285,
-        "Lombardia": 12.22173033,
-        "Marche": 7.003243283,
-        "Molise": 3.951834493,
-        "Piemonte": 6.740075077,
-        "Puglia": 8.187266391,
-        "Sardegna": 3.394533139,
-        "Sicilia": 6.56131588,
-        "Toscana": 6.198240669,
-        "Trentino-Alto Adige": 2.900425164,
-        "Umbria": 5.283899977,
-        "Valle d'Aosta": 2.161209402,
-        "Veneto": 11.85560341
+        "Abruzzo": 5.070062638163033,
+        "Basilicata": 3.22889016587943,
+        "Calabria": 5.11122581157254,
+        "Campania": 10.65466134283557,
+        "Emilia-Romagna": 8.95296433836357,
+        "Friuli-Venezia Giulia": 8.069732376134404,
+        "Italia": 7.192595752568258,
+        "Lazio": 8.3292871910563,
+        "Liguria": 7.307178738683122,
+        "Lombardia": 12.26783700751439,
+        "Marche": 7.019613405773684,
+        "Molise": 3.962576571965311,
+        "Piemonte": 6.775102585119329,
+        "Puglia": 8.177151738824069,
+        "Sardegna": 3.409267762696897,
+        "Sicilia": 6.623701780332346,
+        "Toscana": 6.215466599619729,
+        "Trentino-Alto Adige": 2.901107530907493,
+        "Umbria": 5.291097350618171,
+        "Valle d'Aosta": 2.170569141338901,
+        "Veneto": 11.87193983060794
       },
-      "note": "ISPRA/SNPA Consumo di suolo collegato al workbook ufficiale del Rapporto 2025. Dati definitivi fino al 2024; copertura 2006-2024 a livello comunale, provinciale e regionale. PULSE usa gli incrementi netti annuali comparabili 2016-2024 per Italia e regioni. Aggiornamento annuale. I dati preliminari 2025 sono in consultazione e ISPRA prevede i definitivi a fine ottobre 2026.",
+      "note": "ISPRA/SNPA Consumo di suolo: workbook ufficiale, dati fino al 2025. PULSE usa gli incrementi netti annuali comparabili 2016-2025 per Italia e regioni. Aggiornamento annuale.",
       "pillar": "Risorse idriche e suolo",
-      "publication_date": "2025-10-24",
-      "pulse_annual_series": "2016-2024",
-      "release": "Rapporto 2025",
+      "pulse_annual_series": "2016-2025",
+      "release": "Workbook ufficiale ISPRA/SNPA, anno statistico 2025",
       "series": [
         {
-          "latest_period": "2024",
-          "latest_value": 7850.369999999999,
+          "latest_period": "2025",
+          "latest_value": 9496.949999999999,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Italia",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 503.22,
+          "latest_period": "2025",
+          "latest_value": 781.1,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Piemonte",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 10.3,
+          "latest_period": "2025",
+          "latest_value": 30.48,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Valle d'Aosta",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 767.98,
+          "latest_period": "2025",
+          "latest_value": 982.09,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Lombardia",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 134.43,
+          "latest_period": "2025",
+          "latest_value": 108.44,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Trentino-Alto Adige",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 654.98,
+          "latest_period": "2025",
+          "latest_value": 518.68,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Veneto",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 169.47,
+          "latest_period": "2025",
+          "latest_value": 214.18,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Friuli-Venezia Giulia",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 23.27,
+          "latest_period": "2025",
+          "latest_value": 30.6,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Liguria",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 869.6,
+          "latest_period": "2025",
+          "latest_value": 357.27,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Emilia-Romagna",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 264.72,
+          "latest_period": "2025",
+          "latest_value": 467.76,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Toscana",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 141.21,
+          "latest_period": "2025",
+          "latest_value": 83.0,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Umbria",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 171.52,
+          "latest_period": "2025",
+          "latest_value": 169.35,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Marche",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 759.69,
+          "latest_period": "2025",
+          "latest_value": 1416.94,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Lazio",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 299.29,
+          "latest_period": "2025",
+          "latest_value": 218.73,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Abruzzo",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 41.46,
+          "latest_period": "2025",
+          "latest_value": 69.49,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Molise",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 453.69,
+          "latest_period": "2025",
+          "latest_value": 671.45,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Campania",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 807.44,
+          "latest_period": "2025",
+          "latest_value": 1095.56,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Puglia",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 107.69,
+          "latest_period": "2025",
+          "latest_value": 126.9,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Basilicata",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 230.92,
+          "latest_period": "2025",
+          "latest_value": 163.56,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Calabria",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 772.97,
+          "latest_period": "2025",
+          "latest_value": 1595.28,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Sicilia",
           "unit": "ettari"
         },
         {
-          "latest_period": "2024",
-          "latest_value": 666.52,
+          "latest_period": "2025",
+          "latest_value": 396.09,
           "name": "Consumo netto annuale di suolo",
-          "observations": 9,
+          "observations": 10,
           "pillar": "Risorse idriche e suolo",
           "status": "latest_public",
           "territory": "Sardegna",
@@ -1019,7 +1019,7 @@
         }
       ],
       "status": "feed",
-      "temporal_coverage": "2006-2024",
+      "temporal_coverage": "2016-2025",
       "url": "https://www.isprambiente.gov.it/it/attivita/suolo-e-territorio/suolo/il-consumo-di-suolo/i-dati-sul-consumo-di-suolo"
     },
     "ISPRA - IdroGEO": {
@@ -1029,20 +1029,20 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-25T20:08:22.801950+00:00",
+      "checked_at": "2026-11-26T16:55:42.820846+00:00",
       "frequency": "Periodico / secondo aggiornamento IFFI-IdroGEO",
       "http_ok": true,
       "latest_period": "Inventario corrente",
       "note": "IdroGEO collegato e verificato tramite i pacchetti OpenData ufficiali IFFI (GeoJSON e Shapefile). Fonte territoriale a dettaglio puntuale/comunale, provinciale, regionale e nazionale. Aggiornamento periodico secondo gli aggiornamenti dell'inventario IFFI/IdroGEO; non viene forzata una frequenza annuale perché la fonte è un inventario geospaziale corrente e non una serie storica annuale omogenea.",
       "packages": [
         {
-          "content_length": 33762698.0,
+          "content_length": 33754818.0,
           "content_type": "application/zip",
           "name": "IFFI landslide points GeoJSON",
           "url": "https://idrogeo.isprambiente.it/opendata/frane/frane_piff_ispra_opendata.json.zip"
         },
         {
-          "content_length": 38151106.0,
+          "content_length": 38147726.0,
           "content_type": "application/zip",
           "name": "IFFI landslide points Shapefile",
           "url": "https://idrogeo.isprambiente.it/opendata/frane/frane_piff_ispra_opendata.zip"
@@ -1068,7 +1068,7 @@
       "administrative_levels": [
         "Italia"
       ],
-      "checked_at": "2026-11-25T20:08:22.802695+00:00",
+      "checked_at": "2026-11-26T16:55:42.821367+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2025",
@@ -1105,9 +1105,9 @@
       "candidate_downloads": [
         "https://emissioni.sina.isprambiente.it/wp-content/uploads/2026/04/Emissioni-GHG-Sintesi-2026.xlsx"
       ],
-      "checked_at": "2026-11-25T20:08:25.599932+00:00",
+      "checked_at": "2026-11-26T16:55:45.931608+00:00",
       "http_ok": true,
-      "landing_sha256": "cd374f3d262e52f0db26b072e5edfeef230495127a28eca606b0dd1afcc2fe56",
+      "landing_sha256": "7e977f6cf89903341420f34400e6ee4ff1d0f799417473f84f29b725977bf475",
       "latest_period": "2024",
       "note": "Inventario GHG ISPRA 1990-2024 acquisito dal workbook ufficiale; 2 serie monitorate e 2 segnali PULSE.",
       "pillar": "Crisi climatica e decarbonizzazione",
@@ -1142,7 +1142,7 @@
       "url": "https://emissioni.sina.isprambiente.it/serie-storiche-emissioni-di-gas-serra-sintesi/"
     },
     "ISPRA - Risorse idriche": {
-      "checked_at": "2026-11-25T20:08:26.370990+00:00",
+      "checked_at": "2026-11-26T16:55:47.351817+00:00",
       "note": "Errore di collegamento nell'ultimo refresh: HTTP Error 404: Not Found",
       "pillar": "Risorse idriche e suolo",
       "status": "error",
@@ -1156,7 +1156,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-25T20:08:36.096917+00:00",
+      "checked_at": "2026-11-26T16:55:52.533680+00:00",
       "frequency": "Annuale; dati quasi-real-time aggiornati giornalmente",
       "http_ok": true,
       "latest_assessment_period": "2025",
@@ -1204,7 +1204,7 @@
         "Comuni capoluogo di provincia",
         "Città metropolitane"
       ],
-      "checked_at": "2026-11-25T20:08:38.589654+00:00",
+      "checked_at": "2026-11-26T16:55:55.207414+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2024",
@@ -5947,7 +5947,7 @@
       "candidate_downloads": [
         "https://www.istat.it/wp-content/uploads/2026/07/Misure-statistiche-2004-2026.xlsx"
       ],
-      "checked_at": "2026-11-25T20:08:43.904837+00:00",
+      "checked_at": "2026-11-26T16:55:59.067890+00:00",
       "note": "Dataset Istat SDGs 2004-2026 acquisito: 71 serie nazionali GREEN semanticamente classificate; 36 segnali PULSE.",
       "pillar": "Multi-pilastro GREEN",
       "series": [
@@ -6743,7 +6743,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-25T20:08:49.573224+00:00",
+      "checked_at": "2026-11-26T16:56:06.979476+00:00",
       "frequency": "Archivio / snapshot; aggiornamento non corrente",
       "http_ok": true,
       "latest_period": "2018-01-01",
@@ -6776,9 +6776,9 @@
         "https://www.istat.it/wp-content/uploads/2026/03/Istat-GMA2026-Tavole-1.xlsx",
         "https://www.istat.it/wp-content/uploads/2026/03/Istat-GMA2026-Mappe.xlsx"
       ],
-      "checked_at": "2026-11-25T20:08:52.603809+00:00",
+      "checked_at": "2026-11-26T16:56:12.081253+00:00",
       "http_ok": true,
-      "landing_sha256": "f179a12977ac518f01ed64a3b6c84fbb821ce9641814a69f062a55ad4cf8b4d8",
+      "landing_sha256": "3d2886a0e298ce782c7c6f7807325e520c89b1e544f50e7e42433059d81a0467",
       "latest_release": "2026-03-20",
       "note": "Tavole ufficiali Acqua 2026 acquisite; 27 serie regionali pluriennali lette da Tavola 10; 17 segnali PULSE.",
       "pillar": "Risorse idriche e suolo",
@@ -7066,7 +7066,7 @@
       "url": "https://www.istat.it/comunicato-stampa/le-statistiche-sullacqua-anni-2023-2025/"
     },
     "Terna - Portale Dati del sistema elettrico": {
-      "checked_at": "2026-11-25T20:08:56.399711+00:00",
+      "checked_at": "2026-11-26T16:56:16.403114+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2025",

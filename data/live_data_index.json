@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26T15:34:23+00:00",
+  "checked_at": "2026-11-26T16:49:22+00:00",
   "green": {
     "editorial_news_index": "data/news/green_index.json",
     "events": "data/pulse_events.tsv",
@@ -17,23 +17,33 @@
     "sources": "data/observer_sources_registry.json",
     "status": "data/observer_refresh_status.json"
   },
+  "regioni": {
+    "events": "data/pulse_events.tsv",
+    "manifest": "data/pulse_manifest.json",
+    "observations": "data/pulse_observations.tsv"
+  },
   "repository": "AppInRome/ISTAT-PULSE-DATA",
   "schema_version": "pulse-data-route-v1",
   "sections": {
     "green": {
-      "last_attempt_at": "2026-11-25T20:08:56+00:00",
+      "last_attempt_at": "2026-11-26T16:56:16+00:00",
       "last_success_at": "2026-11-25T20:08:56+00:00",
-      "status": "ok"
+      "status": "degraded"
     },
     "notizie": {
       "last_attempt_at": "2026-11-26T15:34:29+00:00",
       "last_success_at": "2026-11-26T15:34:29+00:00",
       "status": "ok"
     },
-    "territori": {
-      "last_attempt_at": "2026-11-25T20:11:07+00:00",
-      "last_success_at": "2026-11-25T20:11:07+00:00",
+    "regioni": {
+      "last_attempt_at": "2026-11-26T17:06:36+00:00",
+      "last_success_at": "2026-11-26T17:06:36+00:00",
       "status": "ok"
+    },
+    "territori": {
+      "last_attempt_at": "2026-11-26T16:58:40+00:00",
+      "last_success_at": "2026-11-25T20:11:07+00:00",
+      "status": "degraded"
     }
   },
   "territori": {
