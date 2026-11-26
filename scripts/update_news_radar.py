@@ -878,6 +878,58 @@ def bucket_date(iso, now):
     if d==local_now-timedelta(days=1): return "IERI"
     return "ARCHIVIO"
 
+# The source stream selects topics, never editorial merit or numeric content.
+SOURCE_TOPIC = re.compile(
+    r"\b(?:statistic[ah][a-z]*|istat|eurostat|censis|inps|inail|ispra|copernicus|"
+    r"demografi[a-z]*|popolazion[a-z]*|natalit[aà]|mortalit[aà]|nascit[ae]|migr[ae][a-z]*|"
+    r"resident[ei]|spopolament[a-z]*|invecchiament[a-z]*|"
+    r"economi[a-z]*|inflazion[a-z]*|deflazion[a-z]*|pil|reddit[oi]|salari[oi]|stipendi[oi]|"
+    r"occupazion[a-z]*|disoccupazion[a-z]*|lavor[oa]|lavorator[a-z]*|precariat[a-z]*|"
+    r"imprese|aziende|industria[a-z]*|export|importazion[a-z]*|fatturat[a-z]*|"
+    r"consum[io]|prezzi|costo della vita|potere d.acquisto|tass[ae]|fiscal[a-z]*|mutu[oi]|"
+    r"mercato immobiliare|affitt[oi]|abitazion[a-z]*|alloggi[a-z]*|povert[aà]|"
+    r"disuguaglian[a-z]*|famigli[ae]|welfare|pension[a-z]*|servizi sociali|"
+    r"sanit[aà]|salute pubblica|ospedal[a-z]*|liste d.attesa|medici|vaccin[a-z]*|"
+    r"scuol[a-z]*|istruzion[a-z]*|universit[aà]|student[a-z]*|dispersione scolastica|"
+    r"ambient[a-z]*|clim[a-z]*|emission[a-z]*|rifiut[a-z]*|ricicl[a-z]*|"
+    r"energi[a-z]*|rinnovabil[a-z]*|fotovoltaic[a-z]*|siccit[aà]|consumo di suolo|"
+    r"biodiversit[aà]|risorse idriche|inquinament[a-z]*|"
+    r"trasport[a-z]*|mobilit[aà]|pendolar[a-z]*|traffico|turism[a-z]*|"
+    r"presenze turistiche|territori[a-z]*|infrastruttur[a-z]*|"
+    r"divario digitale|connettivit[aà]|disabilit[aà]|pari opportunit[aà]|violenza di genere)\b",re.I)
+SOURCE_EVIDENCE = re.compile(
+    r"\b(?:istat|eurostat|censis|ispra|inps|inail|statistic[ah][a-z]*|"
+    r"indagine|rilevazion[a-z]*|sondagg[a-z]*|monitoraggio|censiment[a-z]*|"
+    r"rapporto annuale|dati ufficiali|dati nazionali|dati regionali|"
+    r"osservatorio|studio scientifico|serie storic[ahe]*)\b",re.I)
+SOURCE_NOISE = re.compile(
+    r"\b(?:calciomercato|serie [ab]|champions league|europa league|"
+    r"gol|gossip|oroscop[a-z]*|reality|grande fratello|"
+    r"omicidi[oa]|arrestat[a-z]*|arresto|accoltell[a-z]*|sparatori[a-z]*|"
+    r"rapin[a-z]*|delitto|cadavere|incidente mortale|"
+    r"ricetta|look|red carpet|trailer|box office|"
+    r"formazioni ufficiali|pagelle|risultati live)\b",re.I)
+SOURCE_SOCIAL = re.compile(
+    r"\b(?:violenza (?:di genere|sulle donne)|femminicid[a-z]*|"
+    r"incidenti sul lavoro|morti sul lavoro|sicurezza stradale|"
+    r"criminalit[aà]|reati|incidentalit[aà])\b",re.I)
+
+def source_relevance(title, summary=""):
+    """Accept explicit socioeconomic topics, even without a number."""
+    title=clean_text(title)
+    summary=clean_text(summary)[:800]
+    title_topic=bool(SOURCE_TOPIC.search(title) or SOURCE_SOCIAL.search(title))
+    title_evidence=bool(SOURCE_EVIDENCE.search(title))
+    summary_topic=bool(SOURCE_TOPIC.search(summary) or SOURCE_SOCIAL.search(summary))
+    summary_evidence=bool(SOURCE_EVIDENCE.search(summary))
+    # Exclude episodic crime, sport and entertainment unless a real statistical
+    # or collective social angle is visible in the supplied headline/excerpt.
+    if SOURCE_NOISE.search(title) and not (
+            (title_evidence and (title_topic or summary_topic))
+            or (SOURCE_SOCIAL.search(title) and summary_evidence)):
+        return False
+    return title_topic or title_evidence or (summary_topic and summary_evidence)
+
 def publish_source_only(by_id, feed_items, candidates, now):
     """Publish RSS source headlines and genuine links, never PULSE prose/graphs.
 
@@ -886,6 +938,8 @@ def publish_source_only(by_id, feed_items, candidates, now):
     Failed feeds cannot erase previously downloaded press titles.
     """
     public={}
+    rejected_old=0
+    rejected_new=0
     for raw in by_id.values():
         kind=raw.get("origin_kind")
         if kind not in ("pulse_media_radar", "pulse_source_only_official"):
@@ -897,7 +951,11 @@ def publish_source_only(by_id, feed_items, candidates, now):
                 src.get("role")!=role or
                 not str(src.get("url","")).startswith("https://")):
             continue
+        if raw.get("source_topic_policy")!="v2" and not source_relevance(raw.get("headline","")):
+            rejected_old+=1
+            continue
         item=dict(raw)
+        item["source_topic_policy"]="v2"
         item.pop("ai_article",None)
         item.pop("pulse_article_body",None)
         item.pop("pulse_summary",None)
@@ -928,16 +986,9 @@ def publish_source_only(by_id, feed_items, candidates, now):
                 continue
             if not url.startswith("https://") or not host or not title:
                 continue
-            # Topic-specific search feeds already select relevance upstream.
-            # General news feeds only need a lightweight topic match, never a
-            # numerical claim, evidence score, official document or AI.
-            feed_url=str(feed.get("url") or "")
-            focused=official or "news.google.com/rss/search" in feed_url or any(
-                word in str(feed.get("name","")).casefold()
-                for word in ("economia","energia","ambiente"))
             context=title+" "+str(entry.get("summary") or "")
-            if not focused and not any(re.search(r"\b"+re.escape(term)+r"\b",context,re.I)
-                                       for term in STAT_TERMS):
+            if not source_relevance(title,entry.get("summary") or ""):
+                rejected_new+=1
                 continue
             # Preserve each publisher's article, deduplicate repeated feed hits.
             identity=hashlib.sha256(url.encode()).hexdigest()
@@ -952,7 +1003,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
                 name=names.get(host.removeprefix("www."),name)
             public[id_]={
                 "id":id_,"published_at":dt.isoformat(),"last_seen_at":now.isoformat(),
-                "headline":title,"reported_headline":title,"summary":"",
+                "headline":title,"reported_headline":title,"summary":"","source_topic_policy":"v2",
                 "topic":classify_topic(context),"territories":detect_geo(context),
                 "pulse_score":0,"patterns":[],
                 "origin_kind":"pulse_source_only_official" if official else "pulse_media_radar",
@@ -968,7 +1019,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
     items=sorted(public.values(),key=lambda x:x.get("published_at",""),reverse=True)
     # Keep the index stable and date-correct even after a feed goes offline.
     seen=set()
-    idx={"generated_at":now.isoformat(),"oggi":[],"ieri":[],"archivio":[]}
+    idx={"generated_at":now.isoformat(),"source_topic_policy":"v2","oggi":[],"ieri":[],"archivio":[]}
     for item in items:
         source=item.get("public_source") or {}
         key=source.get("url","")
@@ -976,7 +1027,7 @@ def publish_source_only(by_id, feed_items, candidates, now):
         seen.add(key)
         idx[bucket_date(item.get("published_at",""),now).lower()].append(item["id"])
     idx["counts"]={name:len(idx[name]) for name in ("oggi","ieri","archivio")}
-    idx["counts"].update({"withheld":0,"candidates":len(candidates)})
+    idx["counts"].update({"withheld":rejected_old+rejected_new,"candidates":len(candidates),"rejected_old":rejected_old,"rejected_new":rejected_new})
     ROOT.mkdir(parents=True,exist_ok=True)
     ARTICLES.write_text(json.dumps({"generated_at":now.isoformat(),"articles":items},
                                    ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
@@ -984,7 +1035,8 @@ def publish_source_only(by_id, feed_items, candidates, now):
     CANDIDATES.write_text(json.dumps({"generated_at":now.isoformat(),"candidates":candidates},
                                      ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     (ROOT/"editorial_quality_status.json").write_text(json.dumps({
-        "generated_at":now.isoformat(),"mode":"source_only",
+        "generated_at":now.isoformat(),"mode":"source_only","source_topic_policy":"v2",
+        "rejected_old":rejected_old,"rejected_new":rejected_new,
         "discovery_feeds_configured":len(feed_items),
         "discovery_feeds_reached":sum(c.get("status")=="radar_fetched" for c in candidates),
         "discovery_feeds_failed":sum(c.get("status")=="radar_error" for c in candidates),
