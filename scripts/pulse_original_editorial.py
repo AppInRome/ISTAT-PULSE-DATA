@@ -53,6 +53,12 @@ def series_for_story(raw, title, primary_url):
         accepted.append({"indicator":indicator[:140],"unit":unit[:40],
                          "observations":points[-12:],"source_url":doc,
                          "method":record.get("extraction_method",""),
+                         "extraction_method":record.get("extraction_method",""),
+                         "verified":True,
+                         "territory":record.get("territory",""),
+                         "population":record.get("population",""),
+                         "source_sha256":record.get("source_sha256",""),
+                         "location":record.get("location",""),
                          "relevance":len(words(indicator)&title_words)})
     return sorted(accepted,key=lambda x:(x["relevance"],len(x["observations"]),
                                          x["observations"][-1]["period"]),reverse=True)[:2]
