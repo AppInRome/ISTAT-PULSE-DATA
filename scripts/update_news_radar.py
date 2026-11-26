@@ -878,6 +878,71 @@ def bucket_date(iso, now):
     if d==local_now-timedelta(days=1): return "IERI"
     return "ARCHIVIO"
 
+
+# VALE 2.40: deterministic statistical newsroom.
+def strict_newsroom_enabled():
+    return os.environ.get("PULSE_EDITORIAL_240") == "1"
+
+def full_statistical_article(a):
+    import math
+    if a.get("publication_status") != "published":
+        return False
+    if (a.get("public_source") or {}).get("role") != "primary_statistical_source":
+        return False
+    if a.get("origin_kind") in ("pulse_verified_event", "pulse_source_only_official", "pulse_media_radar"):
+        return False
+    if a.get("publication_tier") == "verified_official_context_not_new_release":
+        return False
+    if a.get("editorial_format") not in ("automated_verified_analysis", "longform_verified",
+                                          "deterministic_source_locked_auto_audited"):
+        return False
+    if a.get("verification_tier") != "verified_comparable_series":
+        return False
+    body = a.get("pulse_article_body") or []
+    text = " ".join(str(p.get("text","")) for p in body if isinstance(p,dict))
+    if len(body) < 4 or len((str(a.get("summary",""))+" "+text).split()) < 250:
+        return False
+    chart, table = a.get("chart_spec") or {}, a.get("table_spec") or {}
+    if chart.get("status") != "verified" or table.get("status") != "verified":
+        return False
+    series = a.get("verified_series_relevant") or []
+    if not series:
+        return False
+    first=series[0]
+    if first.get("verified") is not True or not first.get("extraction_method") or not first.get("unit"):
+        return False
+    try:
+        from urllib.parse import urlsplit
+        source=(a.get("public_source") or {}).get("url","")
+        evidence=first.get("source_url","")
+        if urlsplit(source).scheme!="https" or urlsplit(evidence).scheme!="https" or urlsplit(source).hostname!=urlsplit(evidence).hostname:
+            return False
+        points=[(str(p["period"]),float(p["value"])) for p in first["observations"]]
+        plotted=[(str(p["period"]),float(p["value"])) for p in chart["data"]]
+        if len(points)<2 or len(points)>24 or points!=plotted:
+            return False
+        if len({p[0] for p in points})!=len(points) or not all(math.isfinite(p[1]) for p in points):
+            return False
+        if first["unit"]=="%" and not all(0<=p[1]<=100 for p in points):
+            return False
+        if not table.get("rows") or len(table["rows"])!=len(points):
+            return False
+        if not a.get("published_at"):
+            return False
+    except (TypeError,ValueError,KeyError,IndexError):
+        return False
+    return True
+
+def strict_article_key(a):
+    first=(a.get("verified_series_relevant") or [{}])[0]
+    return (canonical_story_url((a.get("public_source") or {}).get("url","")),
+            str(first.get("indicator","")).casefold().strip(),
+            str(first.get("territory","")).casefold().strip(),
+            str(first.get("population","")).casefold().strip(),
+            str(first.get("unit","")),
+            tuple(str(p.get("period","")) for p in first.get("observations",[])))
+
+
 def publish_source_only(by_id, feed_items, candidates, now):
     """Publish RSS source headlines and genuine links, never PULSE prose/graphs.
 
@@ -1012,13 +1077,14 @@ def main():
                            for d in (TRUSTED_PRIMARY_DOMAINS|producers))
         if (x.get("publication_status")=="published"
                 and x.get("editorial_status") not in ("journalistic_attributed","journalistic_sourced")
+                and not (strict_newsroom_enabled() and (full_statistical_article(x) or x.get("origin_kind")=="pulse_source_only_official"))
                 and (not substantive or not trusted_source)):
             continue
-        stable_kinds={"pulse_verified_event","pulse_casefile","pulse_media_radar"}
-        fp=(x.get("story_fingerprint") if x.get("origin_kind") in stable_kinds
+        stable_kinds={"pulse_verified_event","pulse_casefile","pulse_media_radar","pulse_primary_automatic","pulse_source_only_official"} if strict_newsroom_enabled() else {"pulse_verified_event","pulse_casefile","pulse_media_radar"}
+        fp=((x.get("story_fingerprint") or hashlib.sha256(str(x.get("id","")).encode()).hexdigest()) if x.get("origin_kind") in stable_kinds
             else story_fingerprint(source,x.get("topic",""),
                     x.get("original_discovery_headline") or x.get("headline",""),verified_raw))
-        permanent_id=(x["id"] if x.get("origin_kind") in {"pulse_casefile","pulse_media_radar"}
+        permanent_id=(x["id"] if x.get("origin_kind") in {"pulse_casefile","pulse_media_radar"} or (strict_newsroom_enabled() and (full_statistical_article(x) or x.get("origin_kind") in {"pulse_primary_automatic","pulse_source_only_official"}))
                       else "PULSE-"+fp[:16].upper())
         x=dict(x); x["id"]=permanent_id; x["story_fingerprint"]=fp
         # Historic articles sometimes pointed to a generic institutional home
@@ -1182,7 +1248,7 @@ def main():
             editorial_excluded=looks_editorially_irrelevant(item["title"])
             discovery=(item["title"]+" "+item.get("summary",""))[:7000]
             s,nums=score_candidate(discovery)
-            if s<45: continue
+            if s<45 and not (strict_newsroom_enabled() and primary_feed): continue
             processed_in_feed += 1
             # Discard duplicates BEFORE initiating costly HTML and primary-source
             # searches. Political/election, sports and promotional results must
@@ -1206,6 +1272,15 @@ def main():
                 ) if primary_feed else
                 resolve_primary(item["title"],combined,topic,nums,official_links,hints,cfg)
             )
+            if primary_feed and strict_newsroom_enabled() and not (resolved or {}).get("verified_series"):
+                # Official RSS releases may have no numbers in their title.
+                from scripts.pulse_primary_research import examine
+                checked = examine(item["url"], {"headline":item["title"], "public_source":{"url":item["url"]}}, cfg.get("official_domains",[]))
+                records = checked.get("candidate_evidence",[])
+                if records:
+                    resolved={"url":item["url"],"domain":canonical_host(item["url"]),
+                              "verified_series":records,"matched_numbers":nums,
+                              "verification_score":100,"method":"direct_official_rss"}
             if primary_feed and resolved:
                 resolved["method"] = "direct_official_rss"
             # A coincidental matching year or generic percentage in another
@@ -1247,7 +1322,7 @@ def main():
                 continue
             verified_nums=[n for n in resolved.get("matched_numbers",[])
                            if not re.fullmatch(r"20\d{2}", normalize_number_token(n))]
-            if not verified_nums: continue
+            if not verified_nums and not (strict_newsroom_enabled() and primary_feed and resolved.get("verified_series")): continue
             pulse=min(100,50+s//2+(10 if geos else 0)+(5 if len(verified_nums)>=2 else 0))
             chart,map_spec=make_visual_specs(topic,geos,verified_nums)
             # Preserve the actual reported title, never infer a region/year.
@@ -1295,7 +1370,7 @@ def main():
             }
             # Original editorial copy: source verified, no reprint of the media headline.
             article=compose_verified(article,resolved)
-            if article.get("verification_tier")=="verified_comparable_series":
+            if article.get("verification_tier")=="verified_comparable_series" and not strict_newsroom_enabled():
                 try:
                     from scripts.pulse_ai_newsroom import attempt_ai_edition
                 except ModuleNotFoundError:
@@ -1316,9 +1391,9 @@ def main():
     if runtime_exceeded():
         print("[RADAR] runtime budget reached; publishing partial verified results", flush=True)
 
-    added = augment_with_verified_events(by_id, ROOT.parent / "pulse_events.tsv", now)
+    added = 0 if strict_newsroom_enabled() else augment_with_verified_events(by_id, ROOT.parent / "pulse_events.tsv", now)
     print(f"[PULSE ORIGINALI] nuove analisi da dati già convalidati: {added}", flush=True)
-    casefiles = add_verified_casefiles(by_id, ROOT.parent / "editorial_casefiles.json", now)
+    casefiles = 0 if strict_newsroom_enabled() else add_verified_casefiles(by_id, ROOT.parent / "editorial_casefiles.json", now)
     print(f"[PULSE REPORTAGE] casi documentati pubblicati: {casefiles}", flush=True)
     # Backfill already-published verified features on every refresh: the new
     # reader prose is not limited to brand-new articles. Keep stable IDs,
@@ -1391,7 +1466,14 @@ def main():
                 and (a.get("public_source") or {}).get("role")=="primary_statistical_source"
                 and ((a.get("discovery") or {}).get("role")!="journalistic_radar"
                      or (a.get("discovery") or {}).get("evidence_gate")=="strong_primary_match"))
-    public=[a for a in arts if publicly_readable(a)]
+    public=[a for a in arts if (full_statistical_article(a) if strict_newsroom_enabled() else publicly_readable(a))]
+    if strict_newsroom_enabled():
+        distinct={}
+        for a in sorted(public, key=lambda x:x.get("published_at","")):
+            key=strict_article_key(a)
+            if key not in distinct:
+                distinct[key]=a
+        public=list(distinct.values())
     # Prioritise media-discovered, primary-verified stories within the same
     # publication day. If there are too few verified stories, do not invent
     # material to force an arbitrary 99% media quota.
@@ -1444,6 +1526,7 @@ def main():
         "discovery_feeds_failed":sum(1 for x in candidates if x.get("status")=="radar_error"),
         "articles_pending_research":sum(1 for a in arts if a.get("publication_status")=="quarantined"),
         "automatic_primary_research":auto_report,
+        "mode":"deterministic_verified_240" if strict_newsroom_enabled() else "legacy",
         "daily":by_day,
         "note":"Nessuna garanzia di articoli ogni giorno; non si attribuisce la data del crawl alla fonte."
     }
