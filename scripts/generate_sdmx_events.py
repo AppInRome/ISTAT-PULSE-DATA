@@ -6,6 +6,7 @@ news event; when one or more statistical PULSE patterns are detected, the same
 event is promoted to a PULSE signal. Coverage is also written to metadata.
 """
 from __future__ import annotations
+import re
 
 import hashlib
 import json
@@ -522,7 +523,7 @@ def main():
             for _,row in cached.iterrows():
                 name=str(row.get("indicator",""))
                 period=str(row.get("period",""))
-                if name and period.startswith("2026"):
+                if name and re.fullmatch(r"\d{4}(?:-\d{2}|-Q[1-4])?",period):
                     last_good[name]={col:str(row.get(col,"")) for col in COLUMNS}
         except Exception as exc:
             print("LAST_GOOD READ ERROR:",repr(exc))
@@ -534,6 +535,7 @@ def main():
         chosen=choose_series(parsed,dataset) if not error else None
         status="ok"
         event=None
+        acquisition_status="deferred" if error=="deferred_to_next_batch" else ("fetch_error" if error else ("series_not_found" if chosen is None else "ok"))
         if error:
             status="deferred" if error=="deferred_to_next_batch" else "fetch_error"
             if status=="fetch_error":
@@ -584,6 +586,10 @@ def main():
             "flow":dataset["flow"],
             "url":url or f"{BASE}/IT1,{dataset['flow']}/all?startPeriod={dataset['start']}",
             "status":status,
+            "acquisition_status":acquisition_status,
+            "error":str(error or ("aggregate series not found" if chosen is None else ""))[:300] if acquisition_status!="ok" else "",
+            "cached_period":last_good.get(dataset["name"],{}).get("period",""),
+            "checked_at":datetime.now(timezone.utc).isoformat() if acquisition_status!="deferred" else None,
             "bytes":len(raw),
             "sha256":hashlib.sha256(raw).hexdigest() if raw else "",
             "latest_period":chosen["obs"][-1][0] if chosen else "",
@@ -637,7 +643,9 @@ def main():
         "events":len(events),
         "monitored_series":len(DATASETS),
         # Only fresh SDMX responses count as connected; cached fallback != live.
-        "connected_series":sum(1 for s in sources if s["status"] == "ok"),
+        "connected_series":sum(1 for s in sources if s["acquisition_status"] == "ok"),
+        "deferred_series":sum(1 for s in sources if s["acquisition_status"] == "deferred"),
+        "failed_series":sum(1 for s in sources if s["acquisition_status"] in {"fetch_error","series_not_found"}),
         "fallback_series":sum(1 for s in sources if s["status"] == "fallback_last_good"),
         "remote_flow_batches":total_batches,
         "remote_flow_batch":batch_id + 1,
