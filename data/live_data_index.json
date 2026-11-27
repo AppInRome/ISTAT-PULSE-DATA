@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T01:00:40+00:00",
+  "checked_at": "2026-11-27T02:10:49+00:00",
   "green": {
     "editorial_news_index": "data/news/green_index.json",
     "events": "data/pulse_events.tsv",
@@ -26,13 +26,13 @@
   "schema_version": "pulse-data-route-v1",
   "sections": {
     "green": {
-      "last_attempt_at": "2026-11-26T17:50:18+00:00",
+      "last_attempt_at": "2026-11-27T02:17:49+00:00",
       "last_success_at": "2026-11-25T20:08:56+00:00",
       "status": "degraded"
     },
     "notizie": {
-      "last_attempt_at": "2026-11-27T01:01:43+00:00",
-      "last_success_at": "2026-11-27T01:01:43+00:00",
+      "last_attempt_at": "2026-11-27T02:10:58+00:00",
+      "last_success_at": "2026-11-27T02:10:58+00:00",
       "status": "ok"
     },
     "regioni": {
@@ -41,7 +41,7 @@
       "status": "ok"
     },
     "territori": {
-      "last_attempt_at": "2026-11-26T17:51:25+00:00",
+      "last_attempt_at": "2026-11-27T02:18:19+00:00",
       "last_success_at": "2026-11-25T20:11:07+00:00",
       "status": "degraded"
     }
