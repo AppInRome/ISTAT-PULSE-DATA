@@ -4,7 +4,7 @@
   "error_sources": 2,
   "events": 424,
   "feed_sources": 14,
-  "generated_at": "2026-11-27T02:17:49.818288+00:00",
+  "generated_at": "2026-11-27T17:35:15.972911+00:00",
   "pillars": [
     "Crisi climatica e decarbonizzazione",
     "Economia circolare",
@@ -16,7 +16,7 @@
   ],
   "sources": {
     "ACI - Open data mobilità e parco veicoli": {
-      "checked_at": "2026-11-27T02:11:03.241053+00:00",
+      "checked_at": "2026-11-27T17:28:18.731771+00:00",
       "data_reference_year": "2025",
       "http_ok": true,
       "licence": "CC BY 4.0",
@@ -103,7 +103,7 @@
           "year": 2023
         }
       ],
-      "checked_at": "2026-11-27T02:11:13.527593+00:00",
+      "checked_at": "2026-11-27T17:28:31.342002+00:00",
       "detailed_workbooks_through": 2021,
       "errors": [
         {
@@ -229,7 +229,7 @@
       "url": "https://www.arera.it/dati-e-statistiche/dettaglio/rqsii"
     },
     "Copernicus - Climate Data Store": {
-      "checked_at": "2026-11-27T02:11:13.527638+00:00",
+      "checked_at": "2026-11-27T17:28:31.342042+00:00",
       "dataset": "ERA5 monthly averaged data on single levels",
       "dataset_id": "reanalysis-era5-single-levels-monthly-means",
       "frequency": "Mensile",
@@ -240,14 +240,14 @@
       "url": "https://cds.climate.copernicus.eu/"
     },
     "EEA - Dati ambientali europei": {
-      "checked_at": "2026-11-27T02:16:51.670297+00:00",
+      "checked_at": "2026-11-27T17:34:10.462856+00:00",
       "note": "Errore di collegamento nell'ultimo refresh: <urlopen error timed out>",
       "pillar": "Crisi climatica e decarbonizzazione",
       "status": "error",
       "url": "https://www.eea.europa.eu/en/datahub/datahubitem-view/d22b842a-53f7-4c63-aa94-74d5fa1f4d40"
     },
     "ENEA - Rapporto annuale efficienza energetica": {
-      "checked_at": "2026-11-27T02:17:00.633728+00:00",
+      "checked_at": "2026-11-27T17:34:20.878646+00:00",
       "failed_regions": [],
       "http_ok": true,
       "note": "RAEE 2026: 20/20 schede regionali acquisite; 3 segnali PULSE da serie TEE 2015-2025.",
@@ -459,7 +459,7 @@
       "url": "https://www.efficienzaenergetica.enea.it/vi-segnaliamo/rapporto-annuale-sullefficienza-energetica-2026-schede-regionali.html"
     },
     "Eurostat - Statistiche ambientali ed energia": {
-      "checked_at": "2026-11-27T02:17:02.574390+00:00",
+      "checked_at": "2026-11-27T17:34:24.200531+00:00",
       "note": "3/3 dataset Eurostat collegati; 3 segnali PULSE emessi.",
       "pillar": "Multi-pilastro GREEN",
       "series": [
@@ -489,7 +489,7 @@
       "url": "https://ec.europa.eu/eurostat/web/environment"
     },
     "GSE - Statistiche delle rinnovabili": {
-      "checked_at": "2026-11-27T02:17:03.261373+00:00",
+      "checked_at": "2026-11-27T17:34:25.248298+00:00",
       "direct_official_document": "https://www.gse.it/documenti_site/Documenti%20GSE/Rapporti%20statistici/Rapporto%20Statistico%20GSE%20-%20Energia%20da%20FER%20in%20Italia%20-%20anno%202024.pdf",
       "fallback_last_good": true,
       "frequency": "Annuale",
@@ -533,7 +533,7 @@
       "url": "https://www.gse.it/dati-e-scenari/statistiche"
     },
     "ISPRA - Catasto nazionale rifiuti": {
-      "checked_at": "2026-11-27T02:17:16.551314+00:00",
+      "checked_at": "2026-11-27T17:34:33.721392+00:00",
       "failed_years": [],
       "frequency": "Annuale",
       "http_ok": true,
@@ -774,7 +774,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-27T02:17:19.816977+00:00",
+      "checked_at": "2026-11-27T17:34:37.606764+00:00",
       "document_url": "https://www.snpambiente.it/wp-content/uploads/2026/10/consumo_suolo_2026_dati_principali-1.xlsx",
       "frequency": "Annuale",
       "http_ok": true,
@@ -1029,20 +1029,20 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-27T02:17:21.117518+00:00",
+      "checked_at": "2026-11-27T17:34:39.358355+00:00",
       "frequency": "Periodico / secondo aggiornamento IFFI-IdroGEO",
       "http_ok": true,
       "latest_period": "Inventario corrente",
       "note": "IdroGEO collegato e verificato tramite i pacchetti OpenData ufficiali IFFI (GeoJSON e Shapefile). Fonte territoriale a dettaglio puntuale/comunale, provinciale, regionale e nazionale. Aggiornamento periodico secondo gli aggiornamenti dell'inventario IFFI/IdroGEO; non viene forzata una frequenza annuale perché la fonte è un inventario geospaziale corrente e non una serie storica annuale omogenea.",
       "packages": [
         {
-          "content_length": 33754818.0,
+          "content_length": 33761514.0,
           "content_type": "application/zip",
           "name": "IFFI landslide points GeoJSON",
           "url": "https://idrogeo.isprambiente.it/opendata/frane/frane_piff_ispra_opendata.json.zip"
         },
         {
-          "content_length": 38147726.0,
+          "content_length": 38146960.0,
           "content_type": "application/zip",
           "name": "IFFI landslide points Shapefile",
           "url": "https://idrogeo.isprambiente.it/opendata/frane/frane_piff_ispra_opendata.zip"
@@ -1068,7 +1068,7 @@
       "administrative_levels": [
         "Italia"
       ],
-      "checked_at": "2026-11-27T02:17:21.118084+00:00",
+      "checked_at": "2026-11-27T17:34:39.359140+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2025",
@@ -1105,9 +1105,9 @@
       "candidate_downloads": [
         "https://emissioni.sina.isprambiente.it/wp-content/uploads/2026/04/Emissioni-GHG-Sintesi-2026.xlsx"
       ],
-      "checked_at": "2026-11-27T02:17:23.807033+00:00",
+      "checked_at": "2026-11-27T17:34:43.370571+00:00",
       "http_ok": true,
-      "landing_sha256": "19b1694d66e4a0a58fa02037d0a600cb8fbf6cb2196aaafee5102d50d61beee7",
+      "landing_sha256": "41b819175eec55b6b37926a927cd11180aa310ce9c413b053e614d002bbc29ac",
       "latest_period": "2024",
       "note": "Inventario GHG ISPRA 1990-2024 acquisito dal workbook ufficiale; 2 serie monitorate e 2 segnali PULSE.",
       "pillar": "Crisi climatica e decarbonizzazione",
@@ -1142,7 +1142,7 @@
       "url": "https://emissioni.sina.isprambiente.it/serie-storiche-emissioni-di-gas-serra-sintesi/"
     },
     "ISPRA - Risorse idriche": {
-      "checked_at": "2026-11-27T02:17:24.972207+00:00",
+      "checked_at": "2026-11-27T17:34:44.858104+00:00",
       "note": "Errore di collegamento nell'ultimo refresh: HTTP Error 404: Not Found",
       "pillar": "Risorse idriche e suolo",
       "status": "error",
@@ -1156,7 +1156,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-27T02:17:29.373652+00:00",
+      "checked_at": "2026-11-27T17:34:52.192630+00:00",
       "frequency": "Annuale; dati quasi-real-time aggiornati giornalmente",
       "http_ok": true,
       "latest_assessment_period": "2025",
@@ -1204,7 +1204,7 @@
         "Comuni capoluogo di provincia",
         "Città metropolitane"
       ],
-      "checked_at": "2026-11-27T02:17:32.234908+00:00",
+      "checked_at": "2026-11-27T17:34:55.238523+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2024",
@@ -5947,7 +5947,7 @@
       "candidate_downloads": [
         "https://www.istat.it/wp-content/uploads/2026/07/Misure-statistiche-2004-2026.xlsx"
       ],
-      "checked_at": "2026-11-27T02:17:36.536751+00:00",
+      "checked_at": "2026-11-27T17:35:01.266470+00:00",
       "note": "Dataset Istat SDGs 2004-2026 acquisito: 71 serie nazionali GREEN semanticamente classificate; 36 segnali PULSE.",
       "pillar": "Multi-pilastro GREEN",
       "series": [
@@ -6743,7 +6743,7 @@
         "Regione",
         "Italia"
       ],
-      "checked_at": "2026-11-27T02:17:42.302110+00:00",
+      "checked_at": "2026-11-27T17:35:07.486879+00:00",
       "frequency": "Archivio / snapshot; aggiornamento non corrente",
       "http_ok": true,
       "latest_period": "2018-01-01",
@@ -6776,9 +6776,9 @@
         "https://www.istat.it/wp-content/uploads/2026/03/Istat-GMA2026-Tavole-1.xlsx",
         "https://www.istat.it/wp-content/uploads/2026/03/Istat-GMA2026-Mappe.xlsx"
       ],
-      "checked_at": "2026-11-27T02:17:45.406230+00:00",
+      "checked_at": "2026-11-27T17:35:11.667817+00:00",
       "http_ok": true,
-      "landing_sha256": "90b70506edb631ec71ef3d87eb27f4c68eb59e43412ae756f7b821dbaa801a88",
+      "landing_sha256": "3f3d89a2fb6075831faf817c681d1638cee13f4d21b670a20997c7fbf368afa8",
       "latest_release": "2026-03-20",
       "note": "Tavole ufficiali Acqua 2026 acquisite; 27 serie regionali pluriennali lette da Tavola 10; 17 segnali PULSE.",
       "pillar": "Risorse idriche e suolo",
@@ -7066,7 +7066,7 @@
       "url": "https://www.istat.it/comunicato-stampa/le-statistiche-sullacqua-anni-2023-2025/"
     },
     "Terna - Portale Dati del sistema elettrico": {
-      "checked_at": "2026-11-27T02:17:49.811946+00:00",
+      "checked_at": "2026-11-27T17:35:15.965250+00:00",
       "frequency": "Annuale",
       "http_ok": true,
       "latest_period": "2025",
