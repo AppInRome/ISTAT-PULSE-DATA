@@ -276,7 +276,7 @@ def news_refresh(temp: Path) -> dict:
                  "green_index.json", "territori_index.json"):
         copy_if_exists(base / name, DATA / "news" / name)
     return {"status": "ok", "feeds_configured": len(feeds), "feeds_reached": successes,
-            "feeds_failed": len(fail), "articles_total": len(article_list),
+            "feeds_failed": len(fail), "failed_feed_details": [{k: c.get(k) for k in ("name", "source", "url", "feed", "error", "reason", "status") if c.get(k) is not None} for c in fail], "articles_total": len(article_list),
             "oggi": len(idx["oggi"]), "ieri": len(idx["ieri"]),
             "oggi_verificati": int(daily["oggi"].get("original_pulse_verified",0)),
             "oggi_stampa": int(daily["oggi"].get("media_reports_not_primary_verified",0)),

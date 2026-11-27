@@ -1,0 +1,2 @@
+# Connectivity audit 256
+RSS: record failed feed identities in refresh status and allow 20 seconds for RSS responses. Do not substitute invented news. SDMX: existing rotating batches and last-good cache are intentional; do not increase request rate. EEA timeout and ISPRA upstream failures require live data validation, not fabricated values. GSE HTTP 403 must not be bypassed. Copernicus requires dataset licence acceptance and CDS_API_KEY repository secret, configured by the account owner. No AI calls.
