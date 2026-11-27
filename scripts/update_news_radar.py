@@ -94,7 +94,7 @@ def clean_text(raw):
     return re.sub(r"\s+"," ",BeautifulSoup(html.unescape(raw or ""),"html.parser").get_text(" ",strip=True)).strip()
 
 def rss_items(url):
-    raw,final,_=fetch(url,timeout=8)
+    raw,final,_=fetch(url,timeout=20)
     root=ET.fromstring(raw)
     out=[]
     for item in root.findall(".//item"):
