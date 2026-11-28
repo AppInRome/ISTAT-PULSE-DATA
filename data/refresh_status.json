@@ -1,6 +1,6 @@
 {
-  "last_check_at": "2026-11-27T17:28:01+00:00",
-  "latest_check_errors": 2,
+  "last_check_at": "2026-11-28T00:33:15+00:00",
+  "latest_check_errors": 0,
   "note": "Notizie, DEMO, Green e SDMX hanno controlli distinti; seguono la frequenza dei rispettivi servizi API. Un controllo non equivale a nuove osservazioni. Le APK installate non sono modificate dal repository.",
   "sections": {
     "green": {
@@ -41,17 +41,17 @@
       "status": "degraded"
     },
     "notizie": {
-      "articles_total": 3010,
+      "articles_total": 3149,
       "feeds_configured": 73,
       "feeds_failed": 3,
       "feeds_reached": 70,
-      "ieri": 647,
+      "ieri": 592,
       "ieri_stampa": 0,
       "ieri_verificati": 0,
-      "last_attempt_at": "2026-11-27T17:28:12+00:00",
-      "last_success_at": "2026-11-27T17:28:12+00:00",
+      "last_attempt_at": "2026-11-28T00:33:26+00:00",
+      "last_success_at": "2026-11-28T00:33:26+00:00",
       "message": "Radar titoli originali: nessuna elaborazione editoriale, grafico o AI.",
-      "oggi": 478,
+      "oggi": 5,
       "oggi_stampa": 0,
       "oggi_verificati": 0,
       "status": "ok"
