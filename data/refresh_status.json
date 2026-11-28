@@ -1,12 +1,12 @@
 {
-  "last_check_at": "2026-11-28T00:33:15+00:00",
-  "latest_check_errors": 0,
+  "last_check_at": "2026-11-28T01:59:20+00:00",
+  "latest_check_errors": 2,
   "note": "Notizie, DEMO, Green e SDMX hanno controlli distinti; seguono la frequenza dei rispettivi servizi API. Un controllo non equivale a nuove osservazioni. Le APK installate non sono modificate dal repository.",
   "sections": {
     "green": {
       "events_added_or_updated": 0,
       "events_validated": 424,
-      "last_attempt_at": "2026-11-27T17:35:16+00:00",
+      "last_attempt_at": "2026-11-28T02:06:20+00:00",
       "last_success_at": "2026-11-25T20:08:56+00:00",
       "message": "Controllo Green: cache e credenziali mancanti non sono nuovi dati.",
       "sources_blocked": [
@@ -41,17 +41,17 @@
       "status": "degraded"
     },
     "notizie": {
-      "articles_total": 3149,
+      "articles_total": 3191,
       "feeds_configured": 73,
-      "feeds_failed": 3,
-      "feeds_reached": 70,
-      "ieri": 592,
+      "feeds_failed": 4,
+      "feeds_reached": 69,
+      "ieri": 609,
       "ieri_stampa": 0,
       "ieri_verificati": 0,
-      "last_attempt_at": "2026-11-28T00:33:26+00:00",
-      "last_success_at": "2026-11-28T00:33:26+00:00",
+      "last_attempt_at": "2026-11-28T01:59:29+00:00",
+      "last_success_at": "2026-11-28T01:59:29+00:00",
       "message": "Radar titoli originali: nessuna elaborazione editoriale, grafico o AI.",
-      "oggi": 5,
+      "oggi": 19,
       "oggi_stampa": 0,
       "oggi_verificati": 0,
       "status": "ok"
@@ -73,26 +73,21 @@
       "status": "ok"
     },
     "territori": {
-      "connected_series": 4,
-      "deferred_series": 17,
-      "events_added_or_updated": 4,
+      "connected_series": 5,
+      "deferred_series": 16,
+      "events_added_or_updated": 5,
       "events_validated": 21,
       "failed_series": 0,
-      "fallback_series": 17,
-      "last_attempt_at": "2026-11-27T17:36:46+00:00",
+      "fallback_series": 16,
+      "last_attempt_at": "2026-11-28T02:07:31+00:00",
       "last_success_at": "2026-11-25T20:11:07+00:00",
       "message": "SDMX: serie non previste nel lotto distinte da errori e ultimo periodo verificato.",
-      "observations_new_or_revised": 4,
+      "observations_new_or_revised": 5,
       "stale_or_failed_series": [
         "Tasso di occupazione",
         "Occupati",
         "Posizioni lavorative dipendenti",
-        "Fatturato dei servizi",
-        "Vendite al dettaglio",
-        "Prezzi alla produzione dell'industria",
-        "Prezzi all'importazione",
-        "Arrivi turistici",
-        "Presenze turistiche"
+        "Prezzi alla produzione dell'industria"
       ],
       "status": "degraded"
     }
